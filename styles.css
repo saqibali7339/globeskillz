@@ -977,8 +977,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; letter-spac
 .portfolio__subhead:first-of-type { margin-top: 44px; }
 
 /* ---------- SEO proof wall (GSC screenshots only) ---------- */
-.seo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-.seo-grid--trio { grid-template-columns: repeat(3, 1fr); margin-top: 16px; }
+.seo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .seo-proof { display: block; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: #0a0e1a; text-decoration: none; transition: transform .5s var(--ease-out), border-color .4s ease, box-shadow .4s ease; }
 figure.seo-proof { margin: 0; }
 a.seo-proof:hover { transform: translateY(-4px); border-color: var(--border-strong); box-shadow: 0 24px 60px rgba(0,0,0,.5); }
@@ -988,7 +987,7 @@ a.seo-proof:hover { transform: translateY(-4px); border-color: var(--border-stro
 .seo-proof__cap span { font-family: var(--font-mono); font-size: 12px; color: var(--text-dim); letter-spacing: .03em; }
 .seo-proof__go { font-style: normal; font-size: 13px; color: var(--accent-3); white-space: nowrap; opacity: 0; transform: translateX(-6px); transition: opacity .35s ease, transform .35s ease; }
 a.seo-proof:hover .seo-proof__go { opacity: 1; transform: none; }
-@media (max-width: 820px) { .seo-grid, .seo-grid--trio { grid-template-columns: 1fr; } }
+@media (max-width: 820px) { .seo-grid { grid-template-columns: 1fr; } }
 
 /* ---------- Process: sticky animated visual ---------- */
 .process__grid { display: grid; grid-template-columns: minmax(280px, 360px) 1fr; gap: 64px; align-items: start; }
