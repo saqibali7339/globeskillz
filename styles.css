@@ -711,6 +711,12 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; letter-spac
 .testi-card.feature { background: linear-gradient(135deg, color-mix(in oklab, var(--accent-1) 15%, transparent), color-mix(in oklab, var(--accent-2) 8%, transparent)); border-color: color-mix(in oklab, var(--accent-1) 30%, var(--border)); }
 .testi-card.feature blockquote { font-size: clamp(20px, 2vw, 28px); }
 
+.testi__more { text-align: center; margin-top: 28px; font-size: 15px; } 
+
+.testi__more a { color: var(--accent-1); text-decoration: none; font-weight: 600; border-bottom: 1px solid color-mix(in oklab, var(--accent-1) 40%, transparent); padding-bottom: 2px; } 
+
+.testi__more a:hover { opacity: .85; }
+
 /* ---------- Marquee ---------- */
 .marquee {
   position: relative; overflow: hidden; padding: 40px 0;
