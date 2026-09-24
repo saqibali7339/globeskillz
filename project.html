@@ -108,6 +108,11 @@
       <div><h2>The results</h2><p id="projResults"></p></div>
     </div>
 
+    <div class="proj-proof" id="projProof" style="display:none">
+      <h2>The proof</h2>
+      <div class="proj-proof__grid" id="projProofGrid"></div>
+    </div>
+
     <div class="section-head" style="margin-top:60px">
       <span class="eyebrow">More projects</span>
       <h2 class="h-section" style="margin-top:14px">Other <span class="text-grad">recent wins.</span></h2>
@@ -178,9 +183,10 @@ const PROJECTS = {
     title: 'Jardine — 175k+ units per month',
     sub: 'Category-leading garden cushions & covers brand. We ran the SEO playbook that took them from a niche site to a multi-hundred-thousand-unit-per-month operation.',
     metrics: [{v:'2.81M', l:'impressions / qtr'}, {v:'79.9k', l:'clicks / qtr'}, {v:'175k+', l:'units / month'}, {v:'#18.6', l:'avg. position'}],
-    brief: 'Jardine had a great product and a small trickle of traffic. The category is competitive, seasonal and dominated by big-box retailers. They needed programmatic depth and technical polish.',
+    brief: 'Jardine had a great product and a small trickle of traffic. The category is competitive, seasonal and dominated by big-box retailers. They needed deep category content and serious technical polish to stand a chance.',
     built: ['Rewritten category and product architecture around real search demand', 'Hundreds of location + product landing pages', 'Full on-page + technical SEO cleanup', 'Reviews, badges and social proof stacked above the fold', 'Monthly content cadence around use-cases and seasons'],
     results: 'Live GSC screenshots show 2.81M impressions and 79.9k clicks per quarter — enough to sustain 175k+ units of monthly sales at a healthy margin.',
+    proof: [{img:'pr3.jpg', cap:'Google Search Console \u2014 2.81M impressions, 79.9K clicks (3 months)'}],
     shot: 'jardine.jpg'
   },
   'sandaoil': {
@@ -247,6 +253,7 @@ const PROJECTS = {
     brief: 'The client had a great product but a slow, generic site. They needed a rebuild that would push their Trustpilot 5-star record to the top and let riders configure and buy in a couple of taps.',
     built: ['Custom Shopify theme with a rugged, adventure-first hero', 'Trustpilot review strip pinned to the top of the page', 'Product configurator with clear pricing', 'Multi-language, multi-currency store'],
     results: '1.29M impressions and 19.8k organic clicks per quarter, sustaining a healthy 1.5% CTR while the brand scales.',
+    proof: [{img:'pr5.jpg', cap:'Google Search Console \u2014 1.29M impressions, 19.8K clicks (3 months)'}],
     shot: 'ebike.jpg'
   },
   'cellblog': {
@@ -258,6 +265,7 @@ const PROJECTS = {
     brief: 'The client wanted to build search authority in the smartphone-review niche — a very competitive space dominated by huge publishers.',
     built: ['Site architecture built around brand + model + comparison keywords', 'Programmatic pages for spec comparisons', 'Editorial cadence for high-intent reviews', 'Internal linking cluster around each brand'],
     results: '1.67M impressions and 22.5k clicks per quarter, with rankings continuing to climb as more content ships.',
+    proof: [{img:'pr4.jpg', cap:'Google Search Console \u2014 1.67M impressions, 22.5K clicks (3 months)'}],
     shot: 'cellblog.jpg'
   },
   'bubblebum2': {
@@ -292,6 +300,28 @@ const PROJECTS = {
     built: ['Story-first homepage with real project imagery', 'Multi-step donation flow with clear cost transparency', 'Field impact photography woven through every scroll', 'Newsletter capture and updates hub'],
     results: 'Donations from digital channels roughly doubled year-over-year after the new site launched.',
     shot: 'water.jpg'
+  },
+  'plurality': {
+    name: 'Plurality',
+    tag: 'Web3 \u00b7 Brand site',
+    title: 'Plurality \u2014 portable memory for the agentic web',
+    sub: 'A marketing site for a Web3 startup with a hard-to-explain product: portable memory for AI agents. Built to make the complex feel simple \u2014 and to book demos.',
+    metrics: [{v:'40+', l:'pages shipped'}, {v:'A+', l:'PageSpeed score'}, {v:'3', l:'audiences, one story'}, {v:'Demo', l:'first CTA'}],
+    brief: 'Plurality was launching the \u201cOpen Context Layer\u201d \u2014 a genuinely new idea in a space full of jargon. The site had to explain it to three audiences at once (app developers, agent builders, investors) without dumbing it down, and turn readers into demo bookings.',
+    built: ['Hero that explains the product in one diagram: your apps on the left, AI models on the right, Plurality in the middle', 'Use-case sections written in plain language \u2014 portable memory, AI companions, shared workspaces', 'Investor-grade social proof: partner and investor logos (Futureverse, Outlier Ventures) above the fold', 'Full FAQ section that answers every objection before the demo call', 'Blog engine so the team can publish thought leadership', '\u201cBook a demo\u201d as the single conversion goal, repeated at every scroll depth'],
+    results: 'The site gave the team a credible front door for fundraising and partnerships \u2014 clear enough for a non-technical investor, deep enough for a developer.',
+    shot: 'plurality.jpg'
+  },
+  'albarik': {
+    name: 'Albarik',
+    tag: 'Retail \u00b7 WooCommerce',
+    title: 'Albarik \u2014 everyday megastore, Pakistan',
+    sub: 'A full WooCommerce department store for the Pakistani market: men, women, kids, newborns, home decor \u2014 hundreds of products, one fast storefront.',
+    metrics: [{v:'6', l:'departments'}, {v:'100s', l:'of products'}, {v:'COD', l:'checkout ready'}, {v:'Rs.', l:'pricing throughout'}],
+    brief: 'Albarik sells everything from kids\u2019 school bags to wall clocks to undergarments. The challenge: a general store can easily feel like a mess. It needed clear departments, honest pricing in rupees, and a checkout that works for Pakistani shoppers \u2014 cash on delivery and all.',
+    built: ['WooCommerce store with six clear departments: Men, Women, Kids, Newborns, Home Decor, Accessories', 'Elementor-built homepage with seasonal promo banners and category merchandising', 'Brand strip featuring edenrobe, Khaas, Zellbury and more', 'Discount badges, stock flags and rupee pricing on every product card', 'Mobile-first layout \u2014 most Pakistani shoppers buy on their phones', 'Speed optimization so the image-heavy catalog still loads fast on 4G'],
+    results: 'A store that finally matches the ambition of the business: browsable like a mall, fast like it should be, and easy for the owner to update without calling a developer.',
+    shot: 'albarik.jpg'
   }
 };
 
@@ -321,6 +351,15 @@ const PROJECTS = {
   }).catch(() => {
     // keep image-slot fallback
   });
+
+  // Proof gallery (e.g. Search Console screenshots)
+  const proof = document.getElementById('projProof');
+  if (proof && p.proof && p.proof.length) {
+    proof.style.display = '';
+    document.getElementById('projProofGrid').innerHTML = p.proof.map(g =>
+      `<figure><img src="assets/projects/screenshots/${g.img}" alt="${g.cap}" loading="lazy"><figcaption>${g.cap}</figcaption></figure>`
+    ).join('');
+  }
 
   const related = Object.entries(PROJECTS).filter(([s]) => s !== slug).slice(0, 8);
   document.getElementById('projRelated').innerHTML = related.map(([s, x]) =>
