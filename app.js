@@ -392,4 +392,32 @@
     });
   }
 
-  })();
+  
+  /* ---------- Contact form -> saqibali7339@gmail.com via FormSubmit ---------- */
+  const contactForm = $('#contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = contactForm.querySelector('.contact__submit');
+      const original = btn.innerHTML;
+      btn.disabled = true;
+      btn.innerHTML = 'Sending&hellip;';
+      try {
+        const res = await fetch('https://formsubmit.co/ajax/saqibali7339@gmail.com', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(Object.fromEntries(new FormData(contactForm).entries()))
+        });
+        if (!res.ok) throw new Error('send failed');
+        btn.innerHTML = "\u2713 Sent \u2014 I\u2019ll reply within 24h";
+        btn.style.background = 'linear-gradient(135deg,#22c58a,#a3ff5c)';
+        contactForm.reset();
+      } catch (err) {
+        btn.disabled = false;
+        btn.innerHTML = original;
+        alert('Could not send just now \u2014 please email info@globeskillz.com directly.');
+      }
+    });
+  }
+
+})();
