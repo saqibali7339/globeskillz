@@ -78,6 +78,26 @@
     });
   }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
   $$('.reveal').forEach(el => io.observe(el));
+
+  /* ---------- Blog: latest 3 posts on homepage ---------- */
+  const blogGrid = $('#blogGrid');
+  if (blogGrid) {
+    const fmtD = iso => new Date(iso + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+    fetch('data/blog/index.json').then(r => r.json()).then(posts => {
+      const cards = posts.slice(0, 3).map(p => `
+        <a class="blog-card" href="blog.html?slug=${p.slug}">
+          <div class="blog-card__img"><img src="${p.image}" alt="${p.title.replace(/"/g, '')}" loading="lazy"></div>
+          <div class="blog-card__body">
+            <div class="blog-card__date">${fmtD(p.date)} · ${p.read_time} min read</div>
+            <h3>${p.title}</h3>
+            <p>${p.excerpt}</p>
+            <span class="blog-card__link">Read article →</span>
+          </div>
+        </a>`);
+      blogGrid.innerHTML = cards.join('');
+      $$('.blog-card', blogGrid).forEach(el => { el.classList.add('reveal'); io.observe(el); });
+    }).catch(() => { blogGrid.innerHTML = ''; });
+  }
   $$('.split').forEach(el => {
     if (!el.closest('#hero')) io.observe(el);
   });
@@ -392,32 +412,4 @@
     });
   }
 
-  
-  /* ---------- Contact form -> saqibali7339@gmail.com via FormSubmit ---------- */
-  const contactForm = $('#contactForm');
-  if (contactForm) {
-    contactForm.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const btn = contactForm.querySelector('.contact__submit');
-      const original = btn.innerHTML;
-      btn.disabled = true;
-      btn.innerHTML = 'Sending&hellip;';
-      try {
-        const res = await fetch('https://formsubmit.co/ajax/saqibali7339@gmail.com', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-          body: JSON.stringify(Object.fromEntries(new FormData(contactForm).entries()))
-        });
-        if (!res.ok) throw new Error('send failed');
-        btn.innerHTML = "\u2713 Sent \u2014 I\u2019ll reply within 24h";
-        btn.style.background = 'linear-gradient(135deg,#22c58a,#a3ff5c)';
-        contactForm.reset();
-      } catch (err) {
-        btn.disabled = false;
-        btn.innerHTML = original;
-        alert('Could not send just now \u2014 please email info@globeskillz.com directly.');
-      }
-    });
-  }
-
-})();
+  })();
