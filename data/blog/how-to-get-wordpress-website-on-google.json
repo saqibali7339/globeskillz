@@ -1,0 +1,69 @@
+{
+ "keyword": "how to get wordpress website on google",
+ "title": "How to Get Your WordPress Website on Google (Step by Step)",
+ "excerpt": "Launched a WordPress site but cannot find it on Google? Follow these seven steps to get indexed and start climbing the rankings.",
+ "meta": "How to get your WordPress website on Google: 7 steps from unblocking search engines to submitting your sitemap, fixing speed, and earning your first rankings.",
+ "intro": "You launched your WordPress website, typed your business name into Google, and nothing. Do not panic. Almost every new WordPress site is invisible at first, and most of the time the fix is simpler than you think. Here is the exact step-by-step process to get your WordPress site onto Google and start climbing.",
+ "sections": [
+  {
+   "heading": "Step 1: Make sure you are not blocking Google",
+   "body": [
+    "This sounds too simple, but it is the most common reason new WordPress sites do not show up. In your dashboard, go to Settings, then Reading, and look for the checkbox that says 'Discourage search engines from indexing this site'. If it is ticked, untick it and save.\n\nDevelopers often tick this box while building the site and forget to untick it at launch. I have seen businesses wait months for rankings with this one box checked."
+   ]
+  },
+  {
+   "heading": "Step 2: Set up Google Search Console",
+   "body": [
+    "Search Console is Google's free tool that tells you how your site appears in search. Sign up, add your website, and verify ownership. WordPress makes this easy: most SEO plugins have a field where you paste your verification code.\n\nOnce it is set up, this becomes your mission control. You will see which searches show your site, which pages get clicks, and what errors Google finds."
+   ]
+  },
+  {
+   "heading": "Step 3: Submit your sitemap",
+   "body": [
+    "A sitemap is a list of all your pages that helps Google discover them faster. If you have an SEO plugin like Rank Math or Yoast installed, it creates one automatically, usually at yourdomain.com/sitemap_index.xml.\n\nIn Search Console, go to Sitemaps in the left menu, paste that URL, and hit submit. Then use the URL Inspection tool to request indexing of your homepage and your most important pages. This alone can get a new site indexed within days."
+   ]
+  },
+  {
+   "heading": "Step 4: Fix your titles and your speed",
+   "body": [
+    "Every page needs a clear title that says what the page is about and who it is for. 'Welcome to our website' tells Google nothing. 'Emergency Plumber in Manchester, 24/7 Callouts' tells Google everything.\n\nSpeed matters too. Compress your images, remove plugins you do not use, and pick a fast theme. A slow site does not just annoy visitors, it makes Google crawl fewer of your pages. Test with PageSpeed Insights and fix what it flags."
+   ]
+  },
+  {
+   "heading": "Step 5: Publish pages that match real searches",
+   "body": [
+    "Google ranks pages that answer what people actually type. Think like your customer. A bakery does not just need a homepage, it needs pages for 'birthday cakes Leeds', 'wedding cakes Leeds', 'sourdough bread near me'.\n\nOne focused page per service per area beats one long page trying to cover everything. Write like a human, answer the obvious questions, and include your town or city naturally in the text."
+   ]
+  },
+  {
+   "heading": "Step 6: Get your first links and listings",
+   "body": [
+    "Links are still how Google decides who to trust. Start with the easy wins: your Google Business Profile, local directories, your suppliers' websites, local news, and any trade associations you belong to.\n\nThen create something worth linking to: a genuinely useful guide, local data, or a free tool. One real link from a respected local site beats a hundred spammy directory submissions."
+   ]
+  },
+  {
+   "heading": "Step 7: Be patient and keep going",
+   "body": [
+    "Here is the honest part. Even with everything done right, a brand-new site usually takes 3 to 6 months to rank for anything competitive. Google needs time to trust you.\n\nWhat separates the sites that rank from the ones that do not is consistency. Keep publishing useful pages, keep fixing technical issues, keep earning links. Most of your competitors will quit after a month. Do not be most competitors."
+   ]
+  }
+ ],
+ "faqs": [
+  {
+   "q": "How long does it take for a WordPress site to appear on Google?",
+   "a": "Indexing can happen within days once you submit your sitemap in Search Console. Rankings are slower: expect 3 to 6 months of consistent work before a new site competes for valuable keywords."
+  },
+  {
+   "q": "Why is my WordPress site not showing up on Google?",
+   "a": "The most common causes are the 'discourage search engines' checkbox being ticked, no sitemap submitted, or the site being brand new. Check those first in that order before assuming anything more complicated."
+  },
+  {
+   "q": "Do I need an SEO plugin for WordPress?",
+   "a": "You do not strictly need one, but Rank Math or Yoast makes life much easier: titles, meta descriptions, sitemaps, and schema without touching code. Install one, configure it properly, and do not install two at once."
+  }
+ ],
+ "slug": "how-to-get-wordpress-website-on-google",
+ "date": "2026-09-24",
+ "image": "assets/blog/how-to-get-wordpress-website-on-google.jpg",
+ "read_time": 4
+}
