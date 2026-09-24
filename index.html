@@ -1,0 +1,847 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Globe Skillz — Web Development & SEO, Delivered Worldwide</title>
+<meta name="description" content="Globe Skillz is a freelance studio delivering high-performance websites and search engine optimization for ambitious brands and law firms across the US and beyond." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body data-theme="iridescent">
+
+<!-- SVG gradient defs (shared) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="pgrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c5cff"/>
+      <stop offset=".5" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#a3ff5c"/>
+    </linearGradient>
+    <linearGradient id="hgrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c5cff" stop-opacity=".65"/>
+      <stop offset=".5" stop-color="#22d3ee" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#a3ff5c" stop-opacity=".65"/>
+    </linearGradient>
+    <linearGradient id="hgradbold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7c5cff"/>
+      <stop offset=".5" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#a3ff5c"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+<!-- Ambient layers -->
+<div class="bg-mesh"></div>
+<div class="bg-grid"></div>
+<div class="bg-noise"></div>
+
+<!-- Custom cursor -->
+<div class="cursor-ring" aria-hidden="true"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+
+<!-- Preloader -->
+<div class="preloader" id="preloader">
+  <div class="preloader__inner">
+    <svg class="preloader__globe" viewBox="0 0 400 400" aria-hidden="true">
+      <circle cx="200" cy="200" r="180" class="p1" />
+      <ellipse cx="200" cy="200" rx="180" ry="70" class="p2" />
+      <ellipse cx="200" cy="200" rx="180" ry="140" class="p3" />
+      <ellipse cx="200" cy="200" rx="80" ry="180" class="p4" />
+      <ellipse cx="200" cy="200" rx="140" ry="180" class="p2" />
+      <line x1="200" y1="20" x2="200" y2="380" class="p3" stroke="url(#pgrad)" stroke-width="1.2" stroke-dasharray="900" stroke-dashoffset="900" style="animation:drawStroke 2.2s .2s cubic-bezier(.16,1,.3,1) forwards"/>
+    </svg>
+    <div class="preloader__wordmark">GLOBE<br/>SKILLZ</div>
+    <div class="preloader__bar"></div>
+    <div class="preloader__count" id="prCount">LOADING · 000</div>
+  </div>
+</div>
+
+<!-- Nav -->
+<nav class="nav" id="nav">
+  <a class="nav__brand" href="#top" data-magnetic>
+    <span class="nav__brand-mark">
+      <svg viewBox="0 0 24 24" fill="none">
+        <circle cx="12" cy="12" r="9" stroke="url(#hgradbold)" stroke-width="1.4"/>
+        <ellipse cx="12" cy="12" rx="9" ry="3.5" stroke="url(#hgradbold)" stroke-width="1"/>
+        <ellipse cx="12" cy="12" rx="3.5" ry="9" stroke="url(#hgradbold)" stroke-width="1"/>
+      </svg>
+    </span>
+    <span>Globe Skillz</span>
+  </a>
+  <div class="nav__menu">
+    <a class="nav__link" href="#services">Services</a>
+    <a class="nav__link" href="#process">Process</a>
+    <a class="nav__link" href="#portfolio">Work</a>
+    <a class="nav__link" href="#coverage">Coverage</a>
+    <a class="nav__link" href="#pricing">Pricing</a>
+    <a class="nav__link" href="#faq">FAQ</a>
+  </div>
+  <a class="nav__cta" href="#contact" data-magnetic>
+    Start a project
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+  </a>
+</nav>
+
+<main id="top">
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="hero">
+  <div class="hero__spotlight" id="spotlight"></div>
+  <div class="container hero__inner">
+    <span class="eyebrow reveal">Freelance Studio · Est. 2019</span>
+
+    <div class="hero__stage" id="heroStage">
+      <div class="hero__globe">
+        <svg viewBox="0 0 800 800" aria-hidden="true">
+          <g class="hero__globe-rotate" style="transform-origin:400px 400px">
+            <!-- outer circle -->
+            <circle cx="400" cy="400" r="360" class="g-outer"/>
+            <!-- latitudes -->
+            <ellipse cx="400" cy="400" rx="360" ry="30"  class="g-lat"/>
+            <ellipse cx="400" cy="400" rx="360" ry="90"  class="g-lat"/>
+            <ellipse cx="400" cy="400" rx="360" ry="160" class="g-lat"/>
+            <ellipse cx="400" cy="400" rx="360" ry="240" class="g-lat"/>
+            <ellipse cx="400" cy="400" rx="360" ry="320" class="g-lat"/>
+            <!-- longitudes -->
+            <ellipse cx="400" cy="400" rx="30"  ry="360" class="g-lng"/>
+            <ellipse cx="400" cy="400" rx="90"  ry="360" class="g-lng"/>
+            <ellipse cx="400" cy="400" rx="160" ry="360" class="g-lng"/>
+            <ellipse cx="400" cy="400" rx="240" ry="360" class="g-lng"/>
+            <ellipse cx="400" cy="400" rx="320" ry="360" class="g-lng"/>
+            <!-- diagonal rings -->
+            <ellipse cx="400" cy="400" rx="360" ry="180" class="g-lat" transform="rotate(30 400 400)"/>
+            <ellipse cx="400" cy="400" rx="360" ry="180" class="g-lat" transform="rotate(-30 400 400)"/>
+            <!-- dot marker -->
+            <circle cx="400" cy="400" r="4" class="g-dot"/>
+            <!-- location pins -->
+            <g id="pins"></g>
+          </g>
+        </svg>
+      </div>
+      <h1 class="hero__wordmark" aria-label="Globe Skillz">
+        <span class="w1">GLOBE</span>
+        <span class="w2">SKILLZ</span>
+      </h1>
+    </div>
+
+    <p class="hero__tag reveal d2">
+      A freelance studio building lightning-fast websites and ranking pages that dominate local search — for law firms, service brands and ambitious operators everywhere on the map.
+    </p>
+
+    <div class="hero__cta-row reveal d3">
+      <a href="#contact" class="btn btn-primary" data-magnetic>
+        Start a project
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#portfolio" class="btn btn-ghost" data-magnetic>
+        See recent work
+      </a>
+    </div>
+
+    <div class="hero__badges reveal d4">
+      <span>7 yrs shipping</span>
+      <span>Google-first SEO</span>
+      <span>Core web vitals green</span>
+      <span>Serving worldwide</span>
+    </div>
+  </div>
+  <div class="hero__scroll">
+    <span>Scroll</span>
+    <div class="hero__scroll-line"></div>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section id="about">
+  <div class="container">
+    <div class="about__grid">
+      <div class="about__visual parallax" data-parallax=".08">
+        <div class="about__orbit"></div>
+        <div class="about__orbit-2"></div>
+        <div class="about__portrait">
+          <image-slot id="owner-photo" shape="rounded" radius="24"
+                      placeholder="Drop your photo (e.g. the SEO 3D shot)"></image-slot>
+        </div>
+        <div class="about__mark">
+          <img src="assets/globe-skillz-logo.png" alt="Globe Skillz mark"/>
+        </div>
+      </div>
+      <div class="about__body">
+        <span class="eyebrow reveal">About</span>
+        <h2 class="h-section reveal d1" style="margin-top:18px">
+          Hi, I'm <span class="text-grad">Saqib Ali</span> — a builder who ships sites that <span class="text-outline">rank and convert</span>.
+        </h2>
+        <p class="reveal d2">
+          Globe Skillz is a one-person freelance studio — laser-focused on two things I do better than agencies charging 10× more:
+          building fast, thoughtful websites, and ranking them on Google for the searches your customers actually make.
+        </p>
+        <p class="reveal d3">
+          I've spent seven years quietly making phones ring for law firms, contractors and service brands from Ohio to Florida to the UK — one keyword, one page, one clean line of code at a time.
+        </p>
+        <div class="about__stats reveal d4">
+          <div class="about__stat"><b data-count="180">0</b><span>Projects shipped</span></div>
+          <div class="about__stat"><b data-count="7">0</b><span>Years in the trade</span></div>
+          <div class="about__stat"><b data-count="42">0</b><span>Countries served</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVICES ===================== -->
+<section id="services">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow reveal">Services</span>
+      <h2 class="h-section reveal d1">Two disciplines. <span class="text-grad">One obsession.</span></h2>
+      <p class="p-lead reveal d2">Websites that load in a blink and rank in the top spots. That's the whole show.</p>
+    </div>
+
+    <div class="services__grid">
+      <article class="service-card glass tilt reveal d1" data-tilt>
+        <div class="service-card__head">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M4 6h16v12H4z"/><path d="M4 10h16M8 14h8"/>
+            </svg>
+          </div>
+          <span class="service-card__num">01 / Development</span>
+        </div>
+        <div>
+          <h3 class="h-card">High-performance website development</h3>
+          <p>React, Next.js, WordPress, Shopify — whatever fits the job. Every build is engineered for speed, accessibility, and green Core Web Vitals before it ever ships.</p>
+          <div class="service-card__tags">
+            <span>React</span><span>Next.js</span><span>WordPress</span><span>Shopify</span><span>Tailwind</span><span>Framer</span>
+          </div>
+        </div>
+        <div class="service-card__foot">
+          <span>From $1,200</span>
+          <div class="arrow">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+      </article>
+
+      <article class="service-card glass tilt reveal d2" data-tilt>
+        <div class="service-card__head">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/>
+              <path d="M8 11h6M11 8v6" stroke-width="1.4"/>
+            </svg>
+          </div>
+          <span class="service-card__num">02 / SEO</span>
+        </div>
+        <div>
+          <h3 class="h-card">Local & national SEO that actually ranks</h3>
+          <p>Keyword clusters, programmatic city pages, on-page & technical fixes, backlinks that don't smell — the whole playbook, executed patiently until the calls come in.</p>
+          <div class="service-card__tags">
+            <span>Local SEO</span><span>Programmatic SEO</span><span>Technical SEO</span><span>Content clusters</span><span>Link building</span><span>GBP</span>
+          </div>
+        </div>
+        <div class="service-card__foot">
+          <span>From $600/mo</span>
+          <div class="arrow">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROCESS ===================== -->
+<section id="process">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow reveal">Process</span>
+      <h2 class="h-section reveal d1">Four steps, <span class="text-grad">no surprises.</span></h2>
+      <p class="p-lead reveal d2">The same tight workflow every time — because unpredictable timelines are how projects die.</p>
+    </div>
+
+    <div class="process__list" id="processList">
+      <div class="process-step reveal d1">
+        <div class="process-step__num">01</div>
+        <div class="process-step__body">
+          <h3>Discover</h3>
+          <p>We map your customers, your competitors, and the exact search queries that turn into revenue. Nothing gets designed or written until this document is signed off.</p>
+          <div class="process-step__meta"><span>Week 1</span><span>Kickoff call · Keyword audit</span></div>
+        </div>
+      </div>
+      <div class="process-step reveal d2">
+        <div class="process-step__num">02</div>
+        <div class="process-step__body">
+          <h3>Design & architect</h3>
+          <p>Wireframes, sitemap, on-page templates. For SEO builds this is where the programmatic page structure gets designed — one master template, thousands of pages.</p>
+          <div class="process-step__meta"><span>Week 2</span><span>Figma · Sitemap · Content briefs</span></div>
+        </div>
+      </div>
+      <div class="process-step reveal d3">
+        <div class="process-step__num">03</div>
+        <div class="process-step__body">
+          <h3>Build & optimize</h3>
+          <p>Clean code, semantic HTML, blazing images, schema markup everywhere Google looks. Green Core Web Vitals before the site ever goes live.</p>
+          <div class="process-step__meta"><span>Weeks 3–5</span><span>Development · Content · QA</span></div>
+        </div>
+      </div>
+      <div class="process-step reveal d4">
+        <div class="process-step__num">04</div>
+        <div class="process-step__body">
+          <h3>Launch & rank</h3>
+          <p>Ship day one, then the real work starts — indexing, link building, iteration. Weekly reports until the phone starts ringing.</p>
+          <div class="process-step__meta"><span>Ongoing</span><span>Reports · Links · Iteration</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PORTFOLIO ===================== -->
+<section id="portfolio">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow reveal">Selected work</span>
+      <h2 class="h-section reveal d1">Recent <span class="text-grad">wins.</span></h2>
+      <p class="p-lead reveal d2">A slice of what's been shipping. Real client names are protected — the results aren't.</p>
+    </div>
+
+    <div class="portfolio__grid">
+
+      <a class="p-card p-card-1 wide tilt reveal" data-tilt data-cursor="view" href="project.html?slug=bubblebum">
+        <image-slot id="proj-bubblebum" class="p-card__slot" shape="rect" placeholder="Bubblebum screenshot"></image-slot>
+        <div class="p-card__overlay">
+          <div class="p-card__tag">E‑commerce · Build + SEO</div>
+          <div class="p-card__title">Bubblebum — inflatable booster seat brand</div>
+          <div class="p-card__meta"><span>Shopify</span><span>Global site</span><span>2M+ families reached</span></div>
+        </div>
+      </a>
+
+      <a class="p-card p-card-2 tilt reveal d1" data-tilt data-cursor="view" href="project.html?slug=jardine">
+        <image-slot id="proj-jardine" class="p-card__slot" shape="rect" placeholder="Jardine screenshot"></image-slot>
+        <div class="p-card__overlay">
+          <div class="p-card__tag">Home & Garden · SEO</div>
+          <div class="p-card__title">Jardine — 175k+ units/month</div>
+          <div class="p-card__meta"><span>2.81M impressions</span><span>79.9k clicks</span></div>
+        </div>
+      </a>
+
+      <a class="p-card p-card-3 tilt reveal d2" data-tilt data-cursor="view" href="project.html?slug=sandaoil">
+        <image-slot id="proj-sandaoil" class="p-card__slot" shape="rect" placeholder="Sanda Oil screenshot"></image-slot>
+        <div class="p-card__overlay">
+          <div class="p-card__tag">Health · DTC</div>
+          <div class="p-card__title">Sanda Oil — 100% natural DTC brand</div>
+          <div class="p-card__meta"><span>Landing page</span><span>Conversion‑led</span></div>
+        </div>
+      </a>
+
+      <a class="p-card p-card-4 tilt reveal" data-tilt data-cursor="view" href="project.html?slug=sensibelle">
+        <image-slot id="proj-sensibelle" class="p-card__slot" shape="rect" placeholder="Sensibelle screenshot"></image-slot>
+        <div class="p-card__overlay">
+          <div class="p-card__tag">Fashion · Shopify</div>
+          <div class="p-card__title">Sensibelle — The Summer Edit</div>
+          <div class="p-card__meta"><span>Shopify</span><span>Editorial UX</span></div>
+        </div>
+      </a>
+
+      <a class="p-card p-card-5 tilt reveal d1" data-tilt data-cursor="view" href="project.html?slug=sahel">
+        <image-slot id="proj-sahel" class="p-card__slot" shape="rect" placeholder="Sahel Solar screenshot"></image-slot>
+        <div class="p-card__overlay">
+          <div class="p-card__tag">Renewable Energy · B2B</div>
+          <div class="p-card__title">Sahel Solar — 25 years of solar expertise</div>
+          <div class="p-card__meta"><span>Corporate site</span><span>Lead gen</span></div>
+        </div>
+      </a>
+
+      <a class="p-card p-card-6 wide tilt reveal d2" data-tilt data-cursor="view" href="project.html?slug=vytal">
+        <image-slot id="proj-vytal" class="p-card__slot" shape="rect" placeholder="Vennique / Vytal Beet screenshot"></image-slot>
+        <div class="p-card__overlay">
+          <div class="p-card__tag">Supplements · DTC</div>
+          <div class="p-card__title">Vennique — Vytal Beet supplements launch</div>
+          <div class="p-card__meta"><span>Shopify</span><span>1.03M impressions</span><span>24.5k clicks</span></div>
+        </div>
+      </a>
+
+      <a class="p-card p-card-2 tilt reveal" data-tilt data-cursor="view" href="project.html?slug=zermatt">
+        <image-slot id="proj-zermatt" class="p-card__slot" shape="rect" placeholder="Zermatt Stil screenshot"></image-slot>
+        <div class="p-card__overlay">
+          <div class="p-card__tag">Fashion · DACH market</div>
+          <div class="p-card__title">Zermatt Stil — Swiss lifestyle brand</div>
+          <div class="p-card__meta"><span>Shopify</span><span>German market SEO</span></div>
+        </div>
+      </a>
+
+      <a class="p-card p-card-4 tilt reveal d1" data-tilt data-cursor="view" href="project.html?slug=ebike">
+        <image-slot id="proj-ebike" class="p-card__slot" shape="rect" placeholder="E‑bike brand screenshot"></image-slot>
+        <div class="p-card__overlay">
+          <div class="p-card__tag">Mobility · E‑commerce</div>
+          <div class="p-card__title">Fat‑tyre e‑bike brand — Trustpilot 5★</div>
+          <div class="p-card__meta"><span>Shopify</span><span>1.29M impressions</span><span>19.8k clicks</span></div>
+        </div>
+      </a>
+
+      <a class="p-card p-card-6 tilt reveal d2" data-tilt data-cursor="view" href="project.html?slug=cellblog">
+        <image-slot id="proj-cellblog" class="p-card__slot" shape="rect" placeholder="Cell phone blog screenshot"></image-slot>
+        <div class="p-card__overlay">
+          <div class="p-card__tag">Content site · SEO</div>
+          <div class="p-card__title">Cell phone review blog — 1.67M impressions</div>
+          <div class="p-card__meta"><span>WordPress</span><span>22.5k clicks/qtr</span></div>
+        </div>
+      </a>
+
+      <a class="p-card p-card-1 wide tilt reveal" data-tilt data-cursor="view" href="project.html?slug=bubblebum2">
+        <image-slot id="proj-bubblebum2" class="p-card__slot" shape="rect" placeholder="Bubblebum reimagined screenshot"></image-slot>
+        <div class="p-card__overlay">
+          <div class="p-card__tag">E‑commerce · Rebrand</div>
+          <div class="p-card__title">Bubblebum — reimagined for global launch</div>
+          <div class="p-card__meta"><span>Shopify Plus</span><span>Full CRO redesign</span><span>Ships to 20+ countries</span></div>
+        </div>
+      </a>
+
+      <a class="p-card p-card-3 tilt reveal d1" data-tilt data-cursor="view" href="project.html?slug=wooden">
+        <image-slot id="proj-wooden" class="p-card__slot" shape="rect" placeholder="Wooden furniture screenshot"></image-slot>
+        <div class="p-card__overlay">
+          <div class="p-card__tag">Furniture · E‑commerce</div>
+          <div class="p-card__title">Wooden tables — artisan furniture store</div>
+          <div class="p-card__meta"><span>Shopify</span><span>Category SEO</span></div>
+        </div>
+      </a>
+
+      <a class="p-card p-card-5 tilt reveal d2" data-tilt data-cursor="view" href="project.html?slug=water">
+        <image-slot id="proj-water" class="p-card__slot" shape="rect" placeholder="Water charity screenshot"></image-slot>
+        <div class="p-card__overlay">
+          <div class="p-card__tag">Non‑profit · Donations</div>
+          <div class="p-card__title">Water for Life — clean water charity</div>
+          <div class="p-card__meta"><span>Custom build</span><span>Donation funnel</span></div>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="portfolio__video-rail reveal">
+      <div class="portfolio__video-head">
+        <span class="eyebrow">Motion showreel</span>
+        <h3 class="h-card" style="margin-top:14px">Live walkthroughs of shipped sites</h3>
+      </div>
+      <div class="portfolio__video-grid" id="videoGrid">
+        <div class="video-card" data-video="assets/projects/videos/PR1.mp4"><div class="video-card__label">Reel 01</div></div>
+        <div class="video-card" data-video="assets/projects/videos/PR2.mp4"><div class="video-card__label">Reel 02</div></div>
+        <div class="video-card" data-video="assets/projects/videos/PR3.mp4"><div class="video-card__label">Reel 03</div></div>
+        <div class="video-card" data-video="assets/projects/videos/PR4.mp4"><div class="video-card__label">Reel 04</div></div>
+        <div class="video-card" data-video="assets/projects/videos/PR5.mp4"><div class="video-card__label">Reel 05</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== STATS ===================== -->
+<section id="stats">
+  <div class="container">
+    <div class="stats__grid">
+      <div class="stat-card reveal"><b data-count="8.6" data-suffix="M" data-decimal="1">0</b><span>Impressions generated</span><em>Across client GSC accounts</em></div>
+      <div class="stat-card reveal d1"><b data-count="188" data-suffix="k+">0</b><span>Total organic clicks</span><em>Last 12 months</em></div>
+      <div class="stat-card reveal d2"><b data-count="180" data-suffix="+">0</b><span>Sites shipped</span><em>Since 2019</em></div>
+      <div class="stat-card reveal d3"><b data-count="42">0</b><span>Countries served</span><em>Remote‑first</em></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COVERAGE ===================== -->
+<section id="coverage">
+  <div class="container coverage__wrap">
+    <div class="section-head">
+      <span class="eyebrow reveal">Coverage · SEO expert pages</span>
+      <h2 class="h-section reveal d1">Ranking in <span class="text-grad">590+ places and niches.</span></h2>
+      <p class="p-lead reveal d2">
+        Every state. Every capital. Every industry that lives or dies by Google. Below is the live catalog — each card opens a fully-written page with its own H1, intro, playbook, local facts and FAQs.
+      </p>
+    </div>
+
+    <div class="coverage__controls reveal">
+      <div class="coverage__tabs" id="covTabs">
+        <button class="coverage__tab active" data-kind="us-state">US States</button>
+        <button class="coverage__tab" data-kind="uk">UK Cities</button>
+        <button class="coverage__tab" data-kind="canada">Canada</button>
+        <button class="coverage__tab" data-kind="eu">Europe</button>
+        <button class="coverage__tab" data-kind="niche">Niches</button>
+      </div>
+      <label class="coverage__search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input id="covSearch" type="text" placeholder="Search a place or niche…" />
+      </label>
+      <div class="coverage__count" id="covCount">…</div>
+    </div>
+
+    <div class="coverage__grid" id="covGrid"></div>
+  </div>
+</section>
+
+<!-- ===================== MARQUEE ===================== -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span class="marquee__item">React</span>
+    <span class="marquee__item">Next.js</span>
+    <span class="marquee__item">WordPress</span>
+    <span class="marquee__item">Shopify</span>
+    <span class="marquee__item">Ahrefs</span>
+    <span class="marquee__item">SEMrush</span>
+    <span class="marquee__item">Screaming Frog</span>
+    <span class="marquee__item">GSC</span>
+    <span class="marquee__item">Tailwind</span>
+    <span class="marquee__item">Figma</span>
+    <span class="marquee__item">Framer</span>
+    <span class="marquee__item">Redux</span>
+    <!-- duplicate for infinite loop -->
+    <span class="marquee__item">React</span>
+    <span class="marquee__item">Next.js</span>
+    <span class="marquee__item">WordPress</span>
+    <span class="marquee__item">Shopify</span>
+    <span class="marquee__item">Ahrefs</span>
+    <span class="marquee__item">SEMrush</span>
+    <span class="marquee__item">Screaming Frog</span>
+    <span class="marquee__item">GSC</span>
+    <span class="marquee__item">Tailwind</span>
+    <span class="marquee__item">Figma</span>
+    <span class="marquee__item">Framer</span>
+    <span class="marquee__item">Redux</span>
+  </div>
+</div>
+
+<!-- ===================== TESTIMONIALS ===================== -->
+<section id="testimonials">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow reveal">What clients say</span>
+      <h2 class="h-section reveal d1">Word-of-mouth is <span class="text-grad">the whole marketing plan.</span></h2>
+    </div>
+    <div class="testi__grid">
+      <div class="testi-card feature reveal">
+        <div class="testi-card__stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg>
+        </div>
+        <blockquote>"Saqib built 1,200 city pages for our firm and had us ranking top-3 for 'divorce lawyer + city' across Ohio and Kentucky in under six months. Best money we've spent."</blockquote>
+        <div class="testi-card__author">
+          <div class="testi-card__avatar">MB</div>
+          <div class="testi-card__meta"><b>Michael Brenner</b><span>Partner, Brenner Family Law</span></div>
+        </div>
+      </div>
+      <div class="testi-card reveal d1">
+        <div class="testi-card__stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg>
+        </div>
+        <blockquote>"Site is stupid fast. Phones haven't stopped ringing since he flipped the switch."</blockquote>
+        <div class="testi-card__author">
+          <div class="testi-card__avatar">JR</div>
+          <div class="testi-card__meta"><b>Janet R.</b><span>Owner, Sunshine HVAC · FL</span></div>
+        </div>
+      </div>
+      <div class="testi-card reveal d2">
+        <div class="testi-card__stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg>
+        </div>
+        <blockquote>"Rare freelancer who actually shows up on Monday. Our SaaS site converts 3× the old one."</blockquote>
+        <div class="testi-card__author">
+          <div class="testi-card__avatar">DK</div>
+          <div class="testi-card__meta"><b>Daniel Kwon</b><span>Founder, Loopdesk</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PRICING ===================== -->
+<section id="pricing">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow reveal">Pricing</span>
+      <h2 class="h-section reveal d1">Straightforward <span class="text-grad">packages.</span></h2>
+      <p class="p-lead reveal d2">Fixed prices, fixed timelines. No agency middlemen, no vague retainers.</p>
+    </div>
+    <div class="pricing__grid">
+      <div class="price-card reveal">
+        <div class="price-card__name">Launchpad</div>
+        <div class="price-card__price"><b>$1,200</b><em>one-time</em></div>
+        <p class="price-card__desc">A production-ready 5–8 page website that loads instantly and looks like a million bucks.</p>
+        <ul>
+          <li>Custom design in Figma</li>
+          <li>Next.js or WordPress build</li>
+          <li>On-page SEO baseline</li>
+          <li>Green Core Web Vitals</li>
+          <li>2 rounds of revisions</li>
+          <li>2 weeks delivery</li>
+        </ul>
+        <a href="#contact" class="price-card__cta" data-magnetic>Get Launchpad</a>
+      </div>
+      <div class="price-card featured reveal d1">
+        <div class="price-card__name">Ranker</div>
+        <div class="price-card__price"><b>$3,600</b><em>+ $800/mo</em></div>
+        <p class="price-card__desc">Website + programmatic city pages + 6 months of active SEO. The one that actually makes the phone ring.</p>
+        <ul>
+          <li>Everything in Launchpad</li>
+          <li>Up to 200 programmatic pages</li>
+          <li>Keyword & competitor research</li>
+          <li>Monthly on-page + technical SEO</li>
+          <li>Backlink outreach</li>
+          <li>Weekly performance reports</li>
+        </ul>
+        <a href="#contact" class="price-card__cta" data-magnetic>Get Ranker</a>
+      </div>
+      <div class="price-card reveal d2">
+        <div class="price-card__name">Empire</div>
+        <div class="price-card__price"><b>Custom</b></div>
+        <p class="price-card__desc">1,000+ city × service pages, national coverage, dedicated dev cycles. For firms going all-in.</p>
+        <ul>
+          <li>Unlimited programmatic pages</li>
+          <li>Custom CMS or headless build</li>
+          <li>Structured data everywhere</li>
+          <li>Full backlink campaign</li>
+          <li>Priority Slack access</li>
+          <li>Bi-weekly strategy calls</li>
+        </ul>
+        <a href="#contact" class="price-card__cta" data-magnetic>Let's talk</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section id="faq">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow reveal">Frequently asked</span>
+      <h2 class="h-section reveal d1">Everything you're <span class="text-grad">wondering.</span></h2>
+    </div>
+    <div class="faq__list">
+      <div class="faq-item reveal">
+        <button class="faq-item__q">
+          How long until I actually rank?
+          <span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq-item__a"><div class="faq-item__a-inner">
+          Local, low-competition keywords: 4–8 weeks. Mid-competition (e.g. "divorce lawyer + mid-sized city"): 3–6 months. National, competitive terms: 6–12 months of consistent work. I'll tell you what's realistic on the discovery call — no fairy tales.
+        </div></div>
+      </div>
+      <div class="faq-item reveal d1">
+        <button class="faq-item__q">
+          What is "programmatic SEO" — the 1,000+ pages thing?
+          <span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq-item__a"><div class="faq-item__a-inner">
+          Instead of writing 1,000 pages by hand, we design one master template and populate it with real data — cities, services, statistics, local landmarks. Each page ends up unique, useful, and indexed by Google. It's how comparison sites, Zillow, and every serious law firm SEO operation scales.
+        </div></div>
+      </div>
+      <div class="faq-item reveal d2">
+        <button class="faq-item__q">
+          Do you work with clients outside the US?
+          <span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq-item__a"><div class="faq-item__a-inner">
+          Yes — I've shipped work for clients in the UK, Australia, UAE, Canada and 40+ other countries. I work in your timezone during agreed windows, and Slack is always on.
+        </div></div>
+      </div>
+      <div class="faq-item reveal d3">
+        <button class="faq-item__q">
+          Who owns the code and content?
+          <span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq-item__a"><div class="faq-item__a-inner">
+          You do. Everything I build, write and generate is transferred to your accounts and repos on day one. No lock-in, no hostage situations if you ever want to move on.
+        </div></div>
+      </div>
+      <div class="faq-item reveal d4">
+        <button class="faq-item__q">
+          What if I already have a website?
+          <span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq-item__a"><div class="faq-item__a-inner">
+          Great — I'll audit it for free and tell you honestly whether it needs a rebuild or just aggressive optimization. Sometimes a well-built site just needs pages, links and patience.
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section id="contact">
+  <div class="container">
+    <div class="contact__panel reveal">
+      <div class="contact__lhs">
+        <span class="eyebrow">Let's build</span>
+        <h2 class="h-section" style="margin-top:18px">Ready to <span class="text-grad">rank higher</span> and ship faster?</h2>
+        <p>Tell me about your project. I reply to every message personally within 24 hours — usually much faster.</p>
+        <div class="contact__info">
+          <a href="mailto:info@globeskillz.com" data-magnetic>
+            <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+            <div><b>info@globeskillz.com</b><span>Best for briefs & quotes</span></div>
+          </a>
+          <a href="tel:+923215454557" data-magnetic>
+            <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.1-1.1a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg></span>
+            <div><b>+92 321 5454557</b><span>WhatsApp preferred</span></div>
+          </a>
+          <a href="https://www.instagram.com/globeskillz/" target="_blank" rel="noopener" data-magnetic>
+            <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></span>
+            <div><b>@globeskillz</b><span>Instagram · behind the scenes</span></div>
+          </a>
+          <a href="https://pk.linkedin.com/in/saqib-ali-seo" target="_blank" rel="noopener" data-magnetic>
+            <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C3.34 3.5 2 4.84 2 6.48c0 1.64 1.34 2.98 2.98 2.98s2.98-1.34 2.98-2.98C7.96 4.84 6.62 3.5 4.98 3.5zM2.4 21.5h5.16V10.36H2.4V21.5zM17.32 10c-2.5 0-3.6 1.38-4.2 2.34V10.36H7.96c.07 1.44 0 11.14 0 11.14h5.16v-6.22c0-.46.04-.92.18-1.24.36-.92 1.2-1.88 2.6-1.88 1.84 0 2.58 1.4 2.58 3.44v5.9H23.5v-6.5c0-4.76-2.54-6.98-5.94-6.98z"/></svg></span>
+            <div><b>Saqib Ali · SEO</b><span>LinkedIn · credentials & case studies</span></div>
+          </a>
+        </div>
+      </div>
+      <form class="contact__form" onsubmit="event.preventDefault(); this.querySelector('.contact__submit').innerHTML='✓ Sent — I\\'ll reply within 24h'; this.querySelector('.contact__submit').style.background='linear-gradient(135deg,#22c58a,#a3ff5c)';">
+        <div class="contact__form-row">
+          <label>Your name<input required type="text" placeholder="Jane Doe"/></label>
+          <label>Email<input required type="email" placeholder="jane@company.com"/></label>
+        </div>
+        <label>What do you need?
+          <select>
+            <option>New website (Launchpad)</option>
+            <option>Website + SEO (Ranker)</option>
+            <option>1,000+ city pages (Empire)</option>
+            <option>SEO audit only</option>
+            <option>Something else</option>
+          </select>
+        </label>
+        <label>Budget
+          <select>
+            <option>Under $2,000</option>
+            <option>$2,000 – $5,000</option>
+            <option>$5,000 – $15,000</option>
+            <option>$15,000+</option>
+          </select>
+        </label>
+        <label>Tell me about the project
+          <textarea placeholder="Industry, city/region you serve, current site (if any), timeline…"></textarea>
+        </label>
+        <button class="contact__submit" type="submit">
+          Send message
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__wordmark">GLOBE SKILLZ</div>
+    <div class="footer__grid">
+      <div class="footer__col footer__brand">
+        <div class="nav__brand" style="font-size:18px">
+          <span class="nav__brand-mark">
+            <svg viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="9" stroke="url(#hgradbold)" stroke-width="1.4"/>
+              <ellipse cx="12" cy="12" rx="9" ry="3.5" stroke="url(#hgradbold)" stroke-width="1"/>
+              <ellipse cx="12" cy="12" rx="3.5" ry="9" stroke="url(#hgradbold)" stroke-width="1"/>
+            </svg>
+          </span>
+          <span>Globe Skillz</span>
+        </div>
+        <p>A one-person freelance studio building fast websites and ranking pages that dominate local search — worldwide, since 2019.</p>
+        <div class="footer__socials">
+          <a href="https://www.instagram.com/globeskillz/" target="_blank" rel="noopener" aria-label="Instagram" data-magnetic>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg>
+          </a>
+          <a href="https://pk.linkedin.com/in/saqib-ali-seo" target="_blank" rel="noopener" aria-label="LinkedIn" data-magnetic>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C3.34 3.5 2 4.84 2 6.48c0 1.64 1.34 2.98 2.98 2.98s2.98-1.34 2.98-2.98C7.96 4.84 6.62 3.5 4.98 3.5zM2.4 21.5h5.16V10.36H2.4V21.5zM17.32 10c-2.5 0-3.6 1.38-4.2 2.34V10.36H7.96c.07 1.44 0 11.14 0 11.14h5.16v-6.22c0-.46.04-.92.18-1.24.36-.92 1.2-1.88 2.6-1.88 1.84 0 2.58 1.4 2.58 3.44v5.9H23.5v-6.5c0-4.76-2.54-6.98-5.94-6.98z"/></svg>
+          </a>
+          <a href="mailto:info@globeskillz.com" aria-label="Email" data-magnetic>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Services</h4>
+        <a href="#services">Web Development</a>
+        <a href="#services">Local SEO</a>
+        <a href="#services">Programmatic SEO</a>
+        <a href="#services">Technical SEO</a>
+      </div>
+      <div class="footer__col">
+        <h4>Studio</h4>
+        <a href="#about">About</a>
+        <a href="#portfolio">Work</a>
+        <a href="#process">Process</a>
+        <a href="#pricing">Pricing</a>
+      </div>
+      <div class="footer__col">
+        <h4>Popular Pages</h4>
+        <a href="location.html?slug=california&type=loc">SEO expert in California</a>
+        <a href="location.html?slug=texas&type=loc">SEO expert in Texas</a>
+        <a href="location.html?slug=london&type=loc">SEO expert in London</a>
+        <a href="location.html?slug=law-firms&type=niche">SEO expert for law firms</a>
+        <a href="location.html?slug=dentists&type=niche">SEO expert for dentists</a>
+        <a href="location.html?slug=plumbers&type=niche">SEO expert for plumbers</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Globe Skillz. Built by Saqib Ali.</span>
+      <span>info@globeskillz.com · +92 321 5454557</span>
+    </div>
+  </div>
+</footer>
+
+</main>
+
+<!-- Tweaks -->
+<button class="tweaks-fab" id="tweaksFab" aria-label="Open tweaks" title="Design tweaks">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1A1.7 1.7 0 0 0 4.6 9a1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
+</button>
+<aside class="tweaks" id="tweaks">
+  <div class="tweaks__head">
+    <b>Design Tweaks</b>
+    <button class="tweaks__close" id="tweaksClose" aria-label="Close">×</button>
+  </div>
+  <div class="tweaks__group">
+    <span class="tweaks__label">Accent palette</span>
+    <div class="tweaks__swatches" id="tweakThemes">
+      <button class="tweaks__swatch active" data-theme="iridescent" aria-label="Iridescent"></button>
+      <button class="tweaks__swatch" data-theme="cyan-lime" aria-label="Cyan Lime"></button>
+      <button class="tweaks__swatch" data-theme="violet-pink" aria-label="Violet Pink"></button>
+      <button class="tweaks__swatch" data-theme="gold-emerald" aria-label="Gold Emerald"></button>
+    </div>
+  </div>
+  <div class="tweaks__group">
+    <span class="tweaks__label">Hero style</span>
+    <div class="tweaks__radios" id="tweakHero">
+      <button class="tweaks__radio active" data-hero="wireframe">Wireframe</button>
+      <button class="tweaks__radio" data-hero="particle">Particle</button>
+      <button class="tweaks__radio" data-hero="kinetic">Kinetic</button>
+    </div>
+  </div>
+  <div class="tweaks__group">
+    <span class="tweaks__label">Animation intensity</span>
+    <input type="range" min="1" max="10" value="10" class="tweaks__slider" id="tweakIntensity"/>
+    <div class="tweaks__value" id="tweakIntensityVal">10 / 10</div>
+  </div>
+  <div class="tweaks__group">
+    <div class="tweaks__toggle">
+      <span style="font-size:13px">Grain overlay</span>
+      <button class="tweaks__switch on" id="tweakGrain" aria-label="Toggle grain"></button>
+    </div>
+    <div class="tweaks__toggle">
+      <span style="font-size:13px">Custom cursor</span>
+      <button class="tweaks__switch on" id="tweakCursor" aria-label="Toggle cursor"></button>
+    </div>
+  </div>
+</aside>
+
+<script src="image_slot.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

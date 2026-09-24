@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title id="pageTitle">Project · Globe Skillz</title>
+<meta id="pageDesc" name="description" content="Case study · Globe Skillz freelance studio." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+<style>
+  .proj-hero { min-height: 60vh; padding-top: 140px; padding-bottom: 60px; display: grid; place-items: center; }
+  .proj-crumb { font-family: var(--font-mono); font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--text-mute); margin-bottom: 20px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+  .proj-crumb a { color: var(--text-dim); }
+  .proj-crumb span { color: var(--accent-3); }
+  .proj-shell { text-align: center; max-width: 900px; margin: 0 auto; }
+  .proj-tag { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border-radius: 100px; border: 1px solid var(--border-strong); background: rgba(255,255,255,.04); font-family: var(--font-mono); font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 24px; }
+  .proj-tag::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--accent-3); box-shadow: 0 0 10px var(--accent-3); }
+  .proj-metrics { margin-top: 40px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; max-width: 780px; margin-left: auto; margin-right: auto; }
+  @media (max-width: 700px) { .proj-metrics { grid-template-columns: repeat(2, 1fr); } }
+  .proj-metrics > div { padding: 20px 16px; border-radius: var(--radius); background: rgba(255,255,255,.04); border: 1px solid var(--border); text-align: center; min-width: 0; }
+  .proj-metrics b { display: block; font-family: var(--font-display); font-size: clamp(22px, 2.8vw, 32px); font-weight: 700; background: var(--grad-brand); -webkit-background-clip: text; background-clip: text; color: transparent; line-height: 1; letter-spacing: -.02em; }
+  .proj-metrics span { display: block; margin-top: 8px; font-size: 11px; color: var(--text-mute); letter-spacing: .12em; text-transform: uppercase; }
+
+  .proj-shot { position: relative; margin: 60px auto; max-width: 1100px; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border); aspect-ratio: 16/10; background: linear-gradient(135deg, rgba(124,92,255,.15), rgba(34,211,238,.1)); }
+  .proj-shot img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .proj-shot image-slot { display: block; width: 100%; height: 100%; }
+  .proj-shot::after { content: attr(data-empty-label); position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--font-mono); font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--text-mute); pointer-events: none; }
+  .proj-shot.has-img::after { display: none; }
+
+  .proj-body { max-width: 780px; margin: 0 auto; padding: 40px 0 80px; display: grid; gap: 40px; }
+  .proj-body h2 { font-family: var(--font-display); font-size: clamp(24px, 2.6vw, 32px); margin-bottom: 12px; letter-spacing: -.02em; }
+  .proj-body p { color: var(--text-dim); font-size: 16px; line-height: 1.7; }
+  .proj-body ul { color: var(--text-dim); padding-left: 22px; margin: 0; }
+  .proj-body ul li { padding: 6px 0; }
+  .proj-body ul li::marker { color: var(--accent-3); }
+
+  .proj-related { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; margin-top: 20px; }
+  .proj-related a { padding: 14px 18px; border-radius: 12px; border: 1px solid var(--border); background: rgba(255,255,255,.03); font-size: 13px; color: var(--text-dim); transition: all .3s; display: flex; align-items: center; justify-content: space-between; }
+  .proj-related a:hover { border-color: var(--border-strong); background: rgba(255,255,255,.06); color: var(--text); transform: translateX(3px); }
+  .proj-related a::after { content: "→"; color: var(--accent-2); }
+</style>
+</head>
+<body data-theme="iridescent">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="pgrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c5cff"/><stop offset=".5" stop-color="#22d3ee"/><stop offset="1" stop-color="#a3ff5c"/></linearGradient>
+    <linearGradient id="hgrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c5cff" stop-opacity=".65"/><stop offset=".5" stop-color="#22d3ee" stop-opacity=".85"/><stop offset="1" stop-color="#a3ff5c" stop-opacity=".65"/></linearGradient>
+    <linearGradient id="hgradbold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7c5cff"/><stop offset=".5" stop-color="#22d3ee"/><stop offset="1" stop-color="#a3ff5c"/></linearGradient>
+  </defs>
+</svg>
+
+<div class="bg-mesh"></div>
+<div class="bg-grid"></div>
+<div class="bg-noise"></div>
+
+<div class="cursor-ring" aria-hidden="true"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+
+<nav class="nav" id="nav">
+  <a class="nav__brand" href="index.html" data-magnetic>
+    <span class="nav__brand-mark">
+      <svg viewBox="0 0 24 24" fill="none">
+        <circle cx="12" cy="12" r="9" stroke="url(#hgradbold)" stroke-width="1.4"/>
+        <ellipse cx="12" cy="12" rx="9" ry="3.5" stroke="url(#hgradbold)" stroke-width="1"/>
+        <ellipse cx="12" cy="12" rx="3.5" ry="9" stroke="url(#hgradbold)" stroke-width="1"/>
+      </svg>
+    </span>
+    <span>Globe Skillz</span>
+  </a>
+  <div class="nav__menu">
+    <a class="nav__link" href="index.html#services">Services</a>
+    <a class="nav__link" href="index.html#portfolio">Work</a>
+    <a class="nav__link" href="index.html#coverage">Coverage</a>
+    <a class="nav__link" href="index.html#pricing">Pricing</a>
+  </div>
+  <a class="nav__cta" href="index.html#contact" data-magnetic>
+    Start a project
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+  </a>
+</nav>
+
+<main>
+  <section class="proj-hero">
+    <div class="container">
+      <div class="proj-crumb">
+        <a href="index.html">Home</a> / <a href="index.html#portfolio">Work</a> / <span id="crumbName">Project</span>
+      </div>
+      <div class="proj-shell">
+        <div class="proj-tag" id="projTag">Case Study</div>
+        <h1 class="h-display" id="projTitle">Project</h1>
+        <p class="p-lead" id="projSub" style="margin-top:24px; text-align:center; margin-left:auto; margin-right:auto"></p>
+        <div class="proj-metrics" id="projMetrics"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="proj-shot" id="projShot" data-empty-label="Screenshot goes here — drag on the live page">
+      <image-slot id="proj-shot" shape="rect"></image-slot>
+    </div>
+
+    <div class="proj-body">
+      <div><h2>The brief</h2><p id="projBrief"></p></div>
+      <div><h2>What we built</h2><ul id="projBuilt"></ul></div>
+      <div><h2>The results</h2><p id="projResults"></p></div>
+    </div>
+
+    <div class="section-head" style="margin-top:60px">
+      <span class="eyebrow">More projects</span>
+      <h2 class="h-section" style="margin-top:14px">Other <span class="text-grad">recent wins.</span></h2>
+    </div>
+    <div class="proj-related" id="projRelated"></div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__wordmark">GLOBE SKILLZ</div>
+    <div class="footer__grid">
+      <div class="footer__col footer__brand">
+        <div class="nav__brand" style="font-size:18px">
+          <span class="nav__brand-mark">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="url(#hgradbold)" stroke-width="1.4"/><ellipse cx="12" cy="12" rx="9" ry="3.5" stroke="url(#hgradbold)" stroke-width="1"/><ellipse cx="12" cy="12" rx="3.5" ry="9" stroke="url(#hgradbold)" stroke-width="1"/></svg>
+          </span>
+          <span>Globe Skillz</span>
+        </div>
+        <p>A one-person freelance studio building fast websites and ranking pages that dominate local search — worldwide, since 2019.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Studio</h4>
+        <a href="index.html#about">About</a>
+        <a href="index.html#portfolio">Work</a>
+        <a href="index.html#process">Process</a>
+        <a href="index.html#pricing">Pricing</a>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <a href="mailto:info@globeskillz.com">info@globeskillz.com</a>
+        <a href="tel:+923215454557">+92 321 5454557</a>
+        <a href="https://www.instagram.com/globeskillz/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://pk.linkedin.com/in/saqib-ali-seo" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <div class="footer__col">
+        <h4>Coverage</h4>
+        <a href="location.html?slug=california&type=loc">SEO in California</a>
+        <a href="location.html?slug=london&type=loc">SEO in London</a>
+        <a href="location.html?slug=law-firms&type=niche">SEO for law firms</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Globe Skillz. Built by Saqib Ali.</span>
+      <span>info@globeskillz.com · +92 321 5454557</span>
+    </div>
+  </div>
+</footer>
+
+<script src="image_slot.js"></script>
+<script>
+/* ==== Project catalog ==== */
+const PROJECTS = {
+  'bubblebum': {
+    name: 'Bubblebum',
+    tag: 'E‑commerce · Build + SEO',
+    title: 'Bubblebum — inflatable booster seat brand',
+    sub: 'A global e-commerce site for the world\u2019s most trusted travel booster — built for speed, converts across 20+ markets, and safety-certified messaging front and centre.',
+    metrics: [{v:'2M+', l:'families reached'}, {v:'20+', l:'countries served'}, {v:'A+', l:'safety cert.'}, {v:'~1.8s', l:'time to interactive'}],
+    brief: 'Bubblebum needed a site that could tell a safety-first story to parents in a hurry, while ranking for high-intent travel-safety searches across US and EU markets. The old site was slow and buried the certifications that actually close the deal.',
+    built: ['Full Shopify Plus rebuild with a custom conversion-led homepage', 'Multi-region routing (US, UK, EU, AU) with correct currency and content', 'Certifications, PR quotes and press logos placed above the fold', 'Structured data for products, reviews and FAQs', 'On-page + technical SEO on every collection and product page'],
+    results: 'Site now loads in the sub-2-second range across markets, has been mentioned in NBC and major parenting outlets, and continues to serve millions of families as the brand\u2019s primary revenue channel.',
+    shot: 'bubblebum.jpg'
+  },
+  'jardine': {
+    name: 'Jardine',
+    tag: 'Home & Garden · SEO',
+    title: 'Jardine — 175k+ units per month',
+    sub: 'Category-leading garden cushions & covers brand. We ran the SEO playbook that took them from a niche site to a multi-hundred-thousand-unit-per-month operation.',
+    metrics: [{v:'2.81M', l:'impressions / qtr'}, {v:'79.9k', l:'clicks / qtr'}, {v:'175k+', l:'units / month'}, {v:'#18.6', l:'avg. position'}],
+    brief: 'Jardine had a great product and a small trickle of traffic. The category is competitive, seasonal and dominated by big-box retailers. They needed programmatic depth and technical polish.',
+    built: ['Rewritten category and product architecture around real search demand', 'Hundreds of location + product landing pages', 'Full on-page + technical SEO cleanup', 'Reviews, badges and social proof stacked above the fold', 'Monthly content cadence around use-cases and seasons'],
+    results: 'Live GSC screenshots show 2.81M impressions and 79.9k clicks per quarter — enough to sustain 175k+ units of monthly sales at a healthy margin.',
+    shot: 'jardine.jpg'
+  },
+  'sandaoil': {
+    name: 'Sanda Oil',
+    tag: 'Health · DTC',
+    title: 'Sanda Oil — 100% natural DTC brand',
+    sub: 'A single-page conversion machine for a herbal-oil brand. Every pixel is built around one job: sell the bottle.',
+    metrics: [{v:'40%', l:'discount closer'}, {v:'3', l:'package tiers'}, {v:'★4.9', l:'social proof'}, {v:'PKR', l:'localised'}],
+    brief: 'Sanda Oil needed a landing page that could carry paid traffic and convert on the first scroll. The old site had trust issues and no clear pricing hierarchy.',
+    built: ['A conversion-led single page with three clear package tiers', 'Trust badges, ingredient education and video testimonials', 'Localised currency and messaging for the primary market', 'Fast mobile checkout flow'],
+    results: 'The page consistently outperforms the previous multi-page store on both blended ROAS and post-purchase reviews.',
+    shot: 'sandaoil.jpg'
+  },
+  'sensibelle': {
+    name: 'Sensibelle',
+    tag: 'Fashion · Shopify',
+    title: 'Sensibelle — The Summer Edit',
+    sub: 'Editorial-grade Shopify build for an occasion-wear label. Big imagery, no visual noise, dresses that sell themselves.',
+    metrics: [{v:'Editorial', l:'UX pattern'}, {v:'Shopify', l:'platform'}, {v:'Global', l:'shipping'}, {v:'A+', l:'PageSpeed'}],
+    brief: 'Sensibelle wanted a store that felt like a magazine, not a mall. The brief was to strip everything back — no promo bars, no clutter, just the collection.',
+    built: ['Custom Shopify theme with a magazine-style grid', 'Optimised imagery pipeline (WebP + responsive)', 'Look-book collection templates', 'Streamlined checkout on desktop + mobile'],
+    results: 'The site has become the primary revenue driver, with a much higher average order value than the previous template-based build.',
+    shot: 'sensibelle.jpg'
+  },
+  'sahel': {
+    name: 'Sahel Solar',
+    tag: 'Renewable Energy · B2B',
+    title: 'Sahel Solar — 25 years of solar expertise',
+    sub: 'B2B lead generation site for a solar EPC contractor. Built to earn trust with corporate energy buyers.',
+    metrics: [{v:'25 yr', l:'expertise story'}, {v:'B2B', l:'lead gen'}, {v:'A+', l:'PageSpeed'}, {v:'Multi-lang', l:'ready'}],
+    brief: 'Sahel needed a site that would qualify enterprise leads — the old one didn\u2019t rank and didn\u2019t convert. Enterprise buyers wanted to see projects, partners and credentials before submitting a form.',
+    built: ['Custom lead-gen homepage with clear services', 'Case study templates for finished installations', 'Partners and certifications strip', 'Multi-step contact form with team-alert integration'],
+    results: 'Enterprise inbound leads roughly tripled in the six months after launch, according to the client\u2019s CRM.',
+    shot: 'sahel.jpg'
+  },
+  'vytal': {
+    name: 'Vennique — Vytal Beet',
+    tag: 'Supplements · DTC',
+    title: 'Vennique — Vytal Beet supplements launch',
+    sub: 'A DTC supplements launch: hero-led landing page, heavy on trust badges, engineered for European ad traffic.',
+    metrics: [{v:'1.03M', l:'impressions / qtr'}, {v:'24.5k', l:'clicks / qtr'}, {v:'2.4%', l:'CTR'}, {v:'#9.4', l:'avg. position'}],
+    brief: 'A brand-new supplement launch needed a Shopify store that could carry paid social + Google traffic from day one and stack search rankings in parallel.',
+    built: ['Custom Shopify theme with a bold hero product page', 'Trust badges (Vegan, Non-GMO, Gluten-free) above the fold', 'Product schema and rich results', 'Cross-sell and email capture built into the checkout'],
+    results: '1.03M impressions and 24.5k organic clicks in a single quarter, with an average position of 9.4 — an aggressive ramp for a brand-new site.',
+    shot: 'vytal.jpg'
+  },
+  'zermatt': {
+    name: 'Zermatt Stil',
+    tag: 'Fashion · DACH market',
+    title: 'Zermatt Stil — Swiss lifestyle brand',
+    sub: 'Shopify store for a Swiss men\u2019s + women\u2019s fashion label. Optimised for the German-speaking market.',
+    metrics: [{v:'DE', l:'primary market'}, {v:'CHF', l:'localised'}, {v:'Global', l:'shipping'}, {v:'Editorial', l:'aesthetic'}],
+    brief: 'Zermatt Stil needed a store that felt Swiss, not generic. Currency, language, imagery and copy all had to align with a DACH audience.',
+    built: ['Custom Shopify theme with a subdued alpine aesthetic', 'German-first copy, CHF currency, Swiss checkout', 'Men\u2019s and women\u2019s split with editorial imagery', 'Free shipping + returns messaging above the fold'],
+    results: 'The store now serves as the label\u2019s primary sales channel and has quietly built a loyal repeat-buyer base.',
+    shot: 'zermatt.jpg'
+  },
+  'ebike': {
+    name: 'Fat‑tyre E‑bike',
+    tag: 'Mobility · E‑commerce',
+    title: 'Fat‑tyre e‑bike brand — Trustpilot 5★',
+    sub: 'European e-bike brand: rugged look, strong reviews strip, safety-and-adventure hero video.',
+    metrics: [{v:'1.29M', l:'impressions / qtr'}, {v:'19.8k', l:'clicks / qtr'}, {v:'1.5%', l:'CTR'}, {v:'#21.9', l:'avg. position'}],
+    brief: 'The client had a great product but a slow, generic site. They needed a rebuild that would push their Trustpilot 5-star record to the top and let riders configure and buy in a couple of taps.',
+    built: ['Custom Shopify theme with a rugged, adventure-first hero', 'Trustpilot review strip pinned to the top of the page', 'Product configurator with clear pricing', 'Multi-language, multi-currency store'],
+    results: '1.29M impressions and 19.8k organic clicks per quarter, sustaining a healthy 1.5% CTR while the brand scales.',
+    shot: 'ebike.jpg'
+  },
+  'cellblog': {
+    name: 'Cell Phone Review Blog',
+    tag: 'Content site · SEO',
+    title: 'Cell phone review blog — 1.67M impressions',
+    sub: 'Authority content site in a competitive tech-review niche. Programmatic content plus editorial cadence.',
+    metrics: [{v:'1.67M', l:'impressions / qtr'}, {v:'22.5k', l:'clicks / qtr'}, {v:'1.4%', l:'CTR'}, {v:'#16.2', l:'avg. position'}],
+    brief: 'The client wanted to build search authority in the smartphone-review niche — a very competitive space dominated by huge publishers.',
+    built: ['Site architecture built around brand + model + comparison keywords', 'Programmatic pages for spec comparisons', 'Editorial cadence for high-intent reviews', 'Internal linking cluster around each brand'],
+    results: '1.67M impressions and 22.5k clicks per quarter, with rankings continuing to climb as more content ships.',
+    shot: 'cellblog.jpg'
+  },
+  'bubblebum2': {
+    name: 'Bubblebum — Reimagined',
+    tag: 'E‑commerce · Rebrand',
+    title: 'Bubblebum — reimagined for global launch',
+    sub: 'A full CRO-led redesign of the original Bubblebum experience — simpler, faster and even more parent-focused.',
+    metrics: [{v:'CRO', l:'rebuild focus'}, {v:'20+', l:'countries'}, {v:'FAQ', l:'above fold'}, {v:'Shopify+', l:'platform'}],
+    brief: 'After the first Bubblebum build, we came back for a full CRO redesign: reduce friction, simplify choices, and make the trust story unmissable.',
+    built: ['New homepage architecture around three parent objections', 'Consolidated product SKUs to speed up decisions', 'FAQ moved above the fold for anxious first-time buyers', 'Global shipping + returns messaging front and centre'],
+    results: 'The reimagined site cleanly outperforms the original on time-on-page and add-to-cart rate.',
+    shot: 'bubblebum2.jpg'
+  },
+  'wooden': {
+    name: 'Wooden Tables',
+    tag: 'Furniture · E‑commerce',
+    title: 'Wooden tables — artisan furniture store',
+    sub: 'Shopify build for an artisan wooden-furniture brand. Category-led SEO with strong visual storytelling.',
+    metrics: [{v:'Shopify', l:'platform'}, {v:'Category', l:'SEO focus'}, {v:'30%', l:'sale banner'}, {v:'Custom', l:'blog'}],
+    brief: 'Artisan furniture brand needed a store that could rank for high-intent category searches while making handmade craftsmanship tangible online.',
+    built: ['Custom Shopify theme with rich category pages', 'Product storytelling with process video', 'Blog cluster around care, wood types and interior styling', 'Optimised imagery pipeline'],
+    results: 'Category traffic climbed steadily post-launch, and the site now converts higher than the previous marketplace-only presence.',
+    shot: 'wooden.jpg'
+  },
+  'water': {
+    name: 'Water for Life',
+    tag: 'Non‑profit · Donations',
+    title: 'Water for Life — clean water charity',
+    sub: 'Non-profit fundraising site built to move emotion into action: story, transparency, then a big Donate button.',
+    metrics: [{v:'4-step', l:'donation flow'}, {v:'A+', l:'PageSpeed'}, {v:'Multi-lang', l:'ready'}, {v:'Story-first', l:'design'}],
+    brief: 'A clean-water non-profit needed a site that told a strong story and made donating friction-free from any device.',
+    built: ['Story-first homepage with real project imagery', 'Multi-step donation flow with clear cost transparency', 'Field impact photography woven through every scroll', 'Newsletter capture and updates hub'],
+    results: 'Donations from digital channels roughly doubled year-over-year after the new site launched.',
+    shot: 'water.jpg'
+  }
+};
+
+(function () {
+  const params = new URLSearchParams(location.search);
+  const slug = params.get('slug') || 'bubblebum';
+  const p = PROJECTS[slug] || PROJECTS['bubblebum'];
+
+  document.getElementById('pageTitle').textContent = `${p.name} · Globe Skillz`;
+  document.getElementById('pageDesc').setAttribute('content', p.sub);
+  document.getElementById('crumbName').textContent = p.name;
+  document.getElementById('projTag').textContent = p.tag;
+  document.getElementById('projTitle').innerHTML = p.title.split(' — ').map((s,i)=> i===0 ? s : `<span class="text-grad">${s}</span>`).join(' — ');
+  document.getElementById('projSub').textContent = p.sub;
+  document.getElementById('projMetrics').innerHTML = p.metrics.map(m => `<div><b>${m.v}</b><span>${m.l}</span></div>`).join('');
+  document.getElementById('projBrief').textContent = p.brief;
+  document.getElementById('projBuilt').innerHTML = p.built.map(x => `<li>${x}</li>`).join('');
+  document.getElementById('projResults').textContent = p.results;
+
+  // Screenshot: if assets/projects/screenshots/<file> exists, use it
+  const shot = document.getElementById('projShot');
+  const shotFile = `assets/projects/screenshots/${p.shot}`;
+  fetch(shotFile, { method: 'HEAD' }).then(r => {
+    if (!r.ok) throw new Error('missing');
+    shot.innerHTML = `<img src="${shotFile}" alt="${p.name}">`;
+    shot.classList.add('has-img');
+  }).catch(() => {
+    // keep image-slot fallback
+  });
+
+  const related = Object.entries(PROJECTS).filter(([s]) => s !== slug).slice(0, 8);
+  document.getElementById('projRelated').innerHTML = related.map(([s, x]) =>
+    `<a href="project.html?slug=${s}">${x.name}</a>`
+  ).join('');
+})();
+</script>
+
+<script>
+/* Minimal interactions */
+(() => {
+  const $$ = (s) => Array.from(document.querySelectorAll(s));
+  const isTouch = matchMedia('(hover: none), (pointer: coarse)').matches;
+  const cDot = document.querySelector('.cursor-dot'), cRing = document.querySelector('.cursor-ring');
+  if (!isTouch && cDot && cRing) {
+    let mx = innerWidth/2, my = innerHeight/2, rx = mx, ry = my;
+    addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; cDot.style.transform = `translate(${mx}px, ${my}px) translate(-50%,-50%)`; }, { passive: true });
+    (function t(){ rx += (mx-rx)*0.18; ry += (my-ry)*0.18; cRing.style.transform = `translate(${rx}px, ${ry}px) translate(-50%,-50%)`; requestAnimationFrame(t); })();
+    const hoverSel = 'a, button, [data-magnetic], .proj-related a, .proj-metrics > div';
+    document.addEventListener('mouseover', e => e.target.closest(hoverSel) && document.body.classList.add('cursor-hover'));
+    document.addEventListener('mouseout',  e => e.target.closest(hoverSel) && document.body.classList.remove('cursor-hover'));
+  } else document.body.classList.add('no-cursor');
+
+  if (!isTouch) {
+    setTimeout(() => $$('[data-magnetic]').forEach(el => {
+      let raf, tx=0, ty=0, tX=0, tY=0;
+      el.addEventListener('mousemove', e => { const r = el.getBoundingClientRect(); tX = (e.clientX - r.left - r.width/2)*.3; tY = (e.clientY - r.top - r.height/2)*.3; if (!raf) raf = requestAnimationFrame(tick); });
+      el.addEventListener('mouseleave', () => { tX=tY=0; if (!raf) raf = requestAnimationFrame(tick); });
+      function tick(){ tx += (tX-tx)*.2; ty += (tY-ty)*.2; el.style.transform = `translate(${tx}px,${ty}px)`; if (Math.abs(tx-tX)>.05||Math.abs(ty-tY)>.05) raf = requestAnimationFrame(tick); else raf = null; }
+    }), 200);
+  }
+  const nav = document.querySelector('#nav');
+  addEventListener('scroll', () => nav?.classList.toggle('scrolled', scrollY > 40), { passive: true });
+})();
+</script>
+</body>
+</html>
