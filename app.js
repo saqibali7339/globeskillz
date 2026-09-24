@@ -305,26 +305,6 @@
   });
 
   /* ============================================
-     PORTFOLIO VIDEO RAIL — probe then mount
-     ============================================ */
-  $$('#videoGrid .video-card').forEach(card => {
-    const src = card.dataset.video;
-    if (!src) return;
-    fetch(src, { method: 'HEAD' }).then(r => {
-      if (!r.ok) throw new Error('missing');
-      const v = document.createElement('video');
-      v.src = src; v.muted = true; v.loop = true; v.playsInline = true; v.preload = 'metadata';
-      card.insertBefore(v, card.firstChild);
-      card.addEventListener('mouseenter', () => v.play().catch(()=>{}));
-      card.addEventListener('mouseleave', () => v.pause());
-    }).catch(() => {
-      // Video file missing — show a subtle placeholder
-      card.style.background = 'linear-gradient(135deg, rgba(124,92,255,.18), rgba(34,211,238,.12))';
-      card.style.opacity = '.55';
-    });
-  });
-
-  /* ============================================
      COVERAGE — real SEO pages catalog
      ============================================ */
   const covGrid = $('#covGrid');
