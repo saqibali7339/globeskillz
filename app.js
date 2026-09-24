@@ -116,8 +116,8 @@
     }, { passive: true });
 
     const tickCursor = () => {
-      rx += (mx - rx) * 0.18;
-      ry += (my - ry) * 0.18;
+      rx += (mx - rx) * 0.35;
+      ry += (my - ry) * 0.35;
       cRing.style.transform = `translate(${rx}px, ${ry}px) translate(-50%,-50%)`;
       requestAnimationFrame(tickCursor);
     };
