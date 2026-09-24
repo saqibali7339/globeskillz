@@ -305,46 +305,67 @@
   });
 
   /* ============================================
-     COVERAGE — real SEO pages catalog
+     WHERE WE SERVE — location cards
      ============================================ */
   const covGrid = $('#covGrid');
-  const covCount = $('#covCount');
   const covSearch = $('#covSearch');
   let covIndex = null;
   let activeKind = 'us-state';
   let query = '';
 
-  function renderCoverage() {
-    if (!covGrid || !covIndex) return;
-    let pool;
-    if (activeKind === 'niche') {
-      pool = covIndex.niches.map(n => ({ ...n, kind: 'niche', label: 'Niche', display: n.niche, keyword: n.keyword }));
-    } else {
-      pool = covIndex.locations
-        .filter(l => l.type === activeKind)
-        .map(l => ({ ...l, kind: 'loc', label: kindLabel(l.type), display: l.place, keyword: l.keyword }));
-    }
-    const q = query.toLowerCase();
-    const filtered = q ? pool.filter(p => p.display.toLowerCase().includes(q) || p.keyword.toLowerCase().includes(q)) : pool;
-    const shown = filtered.slice(0, 120);
-    covGrid.innerHTML = shown.map(p => `
-      <a class="loc-card" href="location.html?slug=${p.slug}&type=${p.kind}">
-        <div class="loc-card__service">${p.label}</div>
-        <div class="loc-card__title">${p.keyword}</div>
-        <div class="loc-card__meta"><span>${p.display}</span><span class="arrow">→</span></div>
-      </a>
-    `).join('');
-    if (covCount) covCount.textContent = `${filtered.length.toLocaleString()} of ${(covIndex.locations.length + covIndex.niches.length).toLocaleString()} pages`;
-  }
   function kindLabel(t) {
     return { 'us-state': 'US State', 'uk': 'United Kingdom', 'canada': 'Canada', 'eu-country': 'Europe', 'city': 'City' }[t] || 'Location';
+  }
+
+  function renderCoverage() {
+    if (!covGrid || !covIndex) return;
+    const pool = covIndex.locations
+      .filter(l => l.type === activeKind)
+      .map(l => ({ slug: l.slug, label: kindLabel(l.type), title: l.place }));
+    const q = query.toLowerCase();
+    const filtered = q ? pool.filter(x => x.title.toLowerCase().includes(q)) : pool;
+    covGrid.innerHTML = filtered.slice(0, 120).map(x => `
+      <a class="loc-card" href="location.html?slug=${x.slug}&type=loc">
+        <div class="loc-card__service">${x.label}</div>
+        <div class="loc-card__title">${x.title}</div>
+        <div class="loc-card__meta"><span class="arrow">\u2192</span></div>
+      </a>
+    `).join('');
+  }
+
+  /* ============================================
+     WHO WE SERVE — niche cards
+     ============================================ */
+  const nicheGrid = $('#nicheGrid');
+  const nicheSearch = $('#nicheSearch');
+  let nicheQuery = '';
+
+  function titleCase(str) {
+    return str.split(' ').map(w => w ? w[0].toUpperCase() + w.slice(1) : w).join(' ');
+  }
+
+  function renderNiches() {
+    if (!nicheGrid || !covIndex) return;
+    const q = nicheQuery.toLowerCase();
+    const pool = covIndex.niches.map(n => ({ slug: n.slug, title: titleCase(n.niche) }));
+    const filtered = q ? pool.filter(x => x.title.toLowerCase().includes(q)) : pool;
+    nicheGrid.innerHTML = filtered.slice(0, 120).map(x => `
+      <a class="loc-card" href="location.html?slug=${x.slug}&type=niche">
+        <div class="loc-card__service">Industry</div>
+        <div class="loc-card__title">${x.title}</div>
+        <div class="loc-card__meta"><span class="arrow">\u2192</span></div>
+      </a>
+    `).join('');
   }
 
   fetch('data/index.json').then(r => r.json()).then(idx => {
     covIndex = idx;
     renderCoverage();
+    renderNiches();
   }).catch(err => {
-    if (covGrid) covGrid.innerHTML = '<div style="padding:40px;color:var(--text-mute)">Catalog is loading… make sure to open this via http:// (not file://).</div>';
+    const msg = '<div style="padding:40px;color:var(--text-mute)">Loading… please open this site over http:// (not file://).</div>';
+    if (covGrid) covGrid.innerHTML = msg;
+    if (nicheGrid) nicheGrid.innerHTML = msg;
     console.warn('coverage index load failed', err);
   });
 
@@ -362,6 +383,12 @@
     covSearch.addEventListener('input', (e) => {
       query = e.target.value.trim();
       renderCoverage();
+    });
+  }
+  if (nicheSearch) {
+    nicheSearch.addEventListener('input', (e) => {
+      nicheQuery = e.target.value.trim();
+      renderNiches();
     });
   }
 
