@@ -250,6 +250,20 @@
         const sr = s.getBoundingClientRect();
         s.classList.toggle('active', sr.top < innerHeight * 0.55);
       });
+      // Sticky visual: show the current step number + title
+      const pNum = $('#processNum');
+      const pLabel = $('#processLabel');
+      if (pNum && pLabel) {
+        let cur = -1;
+        steps.forEach((s, i) => { if (s.classList.contains('active')) cur = i; });
+        if (cur >= 0 && pNum.dataset.i !== String(cur)) {
+          pNum.dataset.i = String(cur);
+          pNum.textContent = String(cur + 1).padStart(2, '0');
+          pLabel.textContent = steps[cur].querySelector('h3').textContent;
+          const orb = $('#processOrb');
+          if (orb) { orb.classList.remove('pop'); void orb.offsetWidth; orb.classList.add('pop'); }
+        }
+      }
     }
   };
   window.addEventListener('scroll', onScroll, { passive: true });
