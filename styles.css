@@ -692,7 +692,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; letter-spac
 .coverage__note span { color: var(--text-dim); font-size: 14px; flex: 1; min-width: 220px; }
 
 /* ---------- Testimonials ---------- */
-.testi__grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 20px; }
+.testi__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 @media (max-width: 900px) { .testi__grid { grid-template-columns: 1fr; } }
 .testi-card {
   padding: 34px; border-radius: var(--radius-lg);
@@ -1029,3 +1029,5 @@ a.seo-proof:hover .seo-proof__go { opacity: 1; transform: none; }
   .process__grid { grid-template-columns: 1fr; gap: 24px; }
   .process__visual { position: static; padding: 0; }
   .process__orb { width: 230px; height: 230px; }
+
+.testi-card__stars svg.dim { opacity: .25; }
