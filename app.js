@@ -413,3 +413,41 @@
   }
 
   })();
+
+/* Contact form: deliver enquiries to Gmail via FormSubmit */
+(function () {
+  var form = document.getElementById('contactForm');
+  if (!form) return;
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var btn = form.querySelector('.contact__submit');
+    var original = btn.innerHTML;
+    btn.disabled = true;
+    btn.innerHTML = 'Sending\u2026';
+    var fd = new FormData(form);
+    var data = {
+      name: String(fd.get('name') || '').trim(),
+      email: String(fd.get('email') || '').trim(),
+      service: String(fd.get('service') || ''),
+      budget: String(fd.get('budget') || ''),
+      message: String(fd.get('message') || '').trim(),
+      _subject: 'New enquiry from globeskillz.com',
+      _template: 'table',
+      _captcha: 'false'
+    };
+    fetch('https://formsubmit.co/ajax/saqibali7339@gmail.com', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(data)
+    }).then(function (res) {
+      if (!res.ok) throw new Error('send failed');
+      btn.innerHTML = '\u2713 Sent \u2014 I\u0027ll reply within 24h';
+      btn.style.background = 'linear-gradient(135deg,#22c58a,#a3ff5c)';
+      form.reset();
+    }).catch(function () {
+      btn.disabled = false;
+      btn.innerHTML = original;
+      alert('Something went wrong sending your message. Please email me directly at info@globeskillz.com');
+    });
+  });
+})();
