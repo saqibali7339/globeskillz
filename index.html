@@ -871,13 +871,16 @@
           </a>
         </div>
       </div>
-      <form class="contact__form" onsubmit="event.preventDefault(); this.querySelector('.contact__submit').innerHTML='✓ Sent — I\\'ll reply within 24h'; this.querySelector('.contact__submit').style.background='linear-gradient(135deg,#22c58a,#a3ff5c)';">
+      <form class="contact__form" id="contactForm">
+        <input type="hidden" name="_subject" value="New inquiry from globeskillz site" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="false" />
         <div class="contact__form-row">
-          <label>Your name<input required type="text" placeholder="Jane Doe"/></label>
-          <label>Email<input required type="email" placeholder="jane@company.com"/></label>
+          <label>Your name<input required type="text" name="name" placeholder="Jane Doe"/></label>
+          <label>Email<input required type="email" name="email" placeholder="jane@company.com"/></label>
         </div>
         <label>What do you need?
-          <select>
+          <select name="service">
             <option>New website (Launchpad)</option>
             <option>Website + SEO (Ranker)</option>
             <option>1,000+ city pages (Empire)</option>
@@ -886,7 +889,7 @@
           </select>
         </label>
         <label>Budget
-          <select>
+          <select name="budget">
             <option>Under $2,000</option>
             <option>$2,000 – $5,000</option>
             <option>$5,000 – $15,000</option>
@@ -894,7 +897,7 @@
           </select>
         </label>
         <label>Tell me about the project
-          <textarea placeholder="Industry, city/region you serve, current site (if any), timeline…"></textarea>
+          <textarea name="message" placeholder="Industry, city/region you serve, current site (if any), timeline…"></textarea>
         </label>
         <button class="contact__submit" type="submit">
           Send message
