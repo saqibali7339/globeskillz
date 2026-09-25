@@ -1,0 +1,83 @@
+{
+  "slug": "wordpress-website-cost",
+  "keyword": "wordpress website cost",
+  "title": "How Much Does a WordPress Website Cost? (Honest Breakdown)",
+  "date": "2026-09-25",
+  "image": "assets/blog/wordpress-website-cost.jpg",
+  "excerpt": "WordPress website prices range from a weekend DIY build to five-figure agency projects. Here is what you actually pay for at each level and how to avoid overpaying.",
+  "meta": "How much does a WordPress website cost? A practical breakdown of real prices, hidden costs, and what a small business should actually budget.",
+  "intro": "Ask three web developers what a WordPress website costs and you will get three very different answers. One says you can do it yourself for almost nothing, another quotes a few hundred, and a third hands you a five-figure proposal. They can all be right, which is exactly why the question is so confusing.\n\nI build WordPress websites for a living, so here is the honest version: what a WordPress site actually costs, what pushes the price up or down, the hidden costs that catch people off guard, and how much a small business should realistically budget.",
+  "sections": [
+    {
+      "heading": "Typical WordPress website prices at a glance",
+      "body": [
+        "The cheapest route is doing it yourself. A domain name costs roughly ten to fifteen a year, basic shared hosting runs a few pounds a month, and the WordPress software itself is free. With a free theme and free plugins, your cash outlay for year one can stay well under two hundred.",
+        "The trade is your time, and it is a bigger trade than most people expect. Learning hosting, themes, page builders, and security basics takes real evenings and weekends, and a first attempt rarely looks professional.",
+        "Hiring a freelancer for a template-based site usually lands between a few hundred and a couple of thousand, depending on pages and features. A custom-designed freelancer build, where the design is made for your business instead of adapted from a theme, typically runs from around fifteen hundred up to five thousand.",
+        "Agencies start higher, often five thousand and up, and large custom projects with ecommerce, booking systems, or integrations can run into five figures. For a simple brochure site that is overkill. For a site that has to drive serious revenue, it can be worth it."
+      ]
+    },
+    {
+      "heading": "What makes one quote a few hundred and another ten thousand",
+      "body": [
+        "The biggest price driver is features. A five-page brochure site is one thing. Add online booking, a shop, a customer login area, or multiple languages, and the work multiplies fast. Every feature needs to be built, tested, and maintained.",
+        "Design matters too. Adapting a ready-made theme is quick. Designing something unique for your brand takes a designer real hours, and that shows up in the quote.",
+        "Content is the silent budget killer. If you hand over finished text and photos, the build moves fast. If the developer has to chase you for content for six weeks, or write it themselves, expect the price to reflect that.",
+        "Integrations add up as well. Connecting payment gateways, a CRM, email marketing, or booking software each takes setup and testing. And a rushed deadline almost always costs more, because it means evenings and weekends for the developer."
+      ]
+    },
+    {
+      "heading": "The hidden costs nobody quotes upfront",
+      "body": [
+        "The build quote is only part of the story. Hosting renewals are the classic surprise: many hosts advertise a cheap first year, then the price doubles or triples on renewal. Check the renewal price before you buy, not after.",
+        "Premium themes and plugins usually come with yearly licences. They are worth paying for, but add them to your annual budget so they do not ambush you.",
+        "Then there is maintenance. WordPress needs regular updates to its core, themes, and plugins, plus backups and security monitoring. Skip this and your site becomes slow, then hacked. You either pay for a care plan or spend your own time on it every month.",
+        "Smaller extras add up too: business email hosting, stock photos, an SSL certificate if your host charges for one, and any paid tools like advanced form builders or SEO plugins."
+      ]
+    },
+    {
+      "heading": "DIY vs hiring a developer",
+      "body": [
+        "Building it yourself makes sense when money is tight, the site is simple, and you genuinely have time to learn. For a basic site that just needs to exist, like a portfolio or a one-page presence, DIY is a reasonable choice.",
+        "Hire someone when the site needs to bring you customers. If slow loading, broken mobile layouts, or an amateur look will cost you enquiries, the developer pays for themselves. Also hire when your own time is worth more than the build cost: ten weekends of your life is not free.",
+        "There is a middle ground many businesses miss. Have a developer build the site properly, then learn just enough to update text, photos, and blog posts yourself. You get a professional foundation without paying someone every time you need a phone number changed."
+      ]
+    },
+    {
+      "heading": "Red flags in cheap quotes",
+      "body": [
+        "A quote with no written scope is a warning sign. If it does not say exactly what is included, how many pages, what features, and what happens after launch, you will argue about it later.",
+        "Watch out for anyone who registers your domain and hosting in their own name. If you ever part ways, you can lose control of your own website. Everything should be in your name, always.",
+        "Be wary of rock-bottom prices paired with big promises. Extremely cheap builds often use pirated themes and plugins, which are a security disaster, or the developer disappears the moment the final payment clears.",
+        "No portfolio, no reviews, no real business details: walk away. A legitimate developer can show you live sites they built and clients who will vouch for them."
+      ]
+    },
+    {
+      "heading": "How much should a small business actually budget?",
+      "body": [
+        "For a local business that needs a professional brochure site, a realistic range with a freelancer is a few hundred to around two thousand. That gets you a clean, fast, mobile-friendly site built on a solid theme, with basic SEO setup.",
+        "If the website has to generate leads or sales, treat it as an investment, not an expense. Spend more on custom design, proper speed optimisation, and SEO foundations from day one. A site that brings in customers every month is cheap at twice the price.",
+        "Whatever you budget for the build, also budget for year one of running it: hosting, domain, plugin renewals, and either a maintenance plan or your own time. A website is not a one-time purchase. It is a business asset that needs looking after."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I build a WordPress website for free?",
+      "a": "Almost. The WordPress software itself is free and open source. What costs money is everything around it: a domain name, hosting, and optionally premium themes or plugins. Then there is the biggest hidden cost of all, your time. A serious business site needs its own domain and decent hosting, so budget at least a small amount of cash plus a lot of hours."
+    },
+    {
+      "q": "Do I need to pay for WordPress itself?",
+      "a": "No. WordPress is free, forever. You pay for a domain name, web hosting, and if you want them, premium themes and plugins with yearly licences. You also pay for a developer's time and skill if you hire one. Anyone asking you to pay for WordPress itself is selling you something you can get for nothing."
+    },
+    {
+      "q": "Why do WordPress developers charge so much?",
+      "a": "Because a website is not just pages on a screen. A good developer handles design, mobile responsiveness, loading speed, security, backups, and basic SEO setup, then tests everything before launch. A cheap site that loads slowly, looks broken on phones, and brings in zero customers is the expensive option. You are paying for the result, not the hours."
+    },
+    {
+      "q": "How long does a WordPress website take to build?",
+      "a": "It depends on the route. Doing it yourself with a page builder can take a few days to a few weeks of spare time. A freelancer building a small business site usually needs one to four weeks. An agency project with custom design and lots of features can run six to twelve weeks or more. Anyone promising a full custom site in two days is cutting corners somewhere."
+    }
+  ],
+  "read_time": 6
+}
