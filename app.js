@@ -36,7 +36,7 @@
       document.body.classList.add('loaded');
       revealHero();
       honorHash();
-    }, 1200);
+    }, 700);
   };
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', liftPreloader);
