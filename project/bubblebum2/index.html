@@ -32,8 +32,23 @@
   .proj-metrics b { display: block; font-family: var(--font-display); font-size: clamp(22px, 2.8vw, 32px); font-weight: 700; background: var(--grad-brand); -webkit-background-clip: text; background-clip: text; color: transparent; line-height: 1; letter-spacing: -.02em; }
   .proj-metrics span { display: block; margin-top: 8px; font-size: 11px; color: var(--text-mute); letter-spacing: .12em; text-transform: uppercase; }
 
-  .proj-shot { position: relative; margin: 60px auto; max-width: 1100px; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border); aspect-ratio: 16/10; background: linear-gradient(135deg, rgba(124,92,255,.15), rgba(34,211,238,.1)); }
-  .proj-shot img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .proj-shot { position: relative; margin: 60px auto; max-width: 1100px; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border); height: min(72vh, 720px); background: linear-gradient(135deg, rgba(124,92,255,.15), rgba(34,211,238,.1)); }
+  .proj-shot img { width: 100%; height: auto; display: block; }
+  /* Scrolling screenshot: first paint shown, full site revealed on hover (desktop) or swipe (touch) */
+  .proj-shot.has-img { cursor: ns-resize; }
+  @keyframes shotScroll { from { transform: translateY(0); } to { transform: translateY(calc(-100% + min(72vh, 720px))); } }
+  @media (hover: hover) {
+    .proj-shot.has-img:hover img { animation: shotScroll 18s ease-in-out infinite alternate; }
+  }
+  @media (hover: none) {
+    .proj-shot.has-img { overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling: touch; scrollbar-width: thin; }
+    .proj-shot.has-img img { animation: none; }
+    .proj-shot.has-img::before { content: 'Swipe to explore'; position: absolute; left: 50%; bottom: 16px; transform: translateX(-50%); z-index: 2; font-family: var(--font-mono); font-size: 11px; letter-spacing: .25em; text-transform: uppercase; color: #fff; background: rgba(10,10,15,.72); border: 1px solid var(--border-strong); padding: 10px 18px 10px 21px; border-radius: 999px; pointer-events: none; white-space: nowrap; backdrop-filter: blur(6px); animation: hintFade 1s ease 5s forwards; }
+  }
+  @keyframes hintFade { to { opacity: 0; visibility: hidden; } }
+  @media (prefers-reduced-motion: reduce) {
+    .proj-shot.has-img img, .proj-shot.has-img::before { animation: none; }
+  }
   .proj-shot image-slot { display: block; width: 100%; height: 100%; }
   .proj-shot::after { content: attr(data-empty-label); position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--font-mono); font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--text-mute); pointer-events: none; }
   .proj-shot.has-img::after { display: none; }
