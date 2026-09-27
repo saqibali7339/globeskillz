@@ -930,6 +930,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; letter-spac
 .loc-hero {
   min-height: 82vh; padding-top: 140px; display: grid; place-items: center;
   position: relative;
+  overflow-x: clip;
 }
 .loc-hero__breadcrumb { font-family: var(--font-mono); font-size: 12px; letter-spacing: .15em; text-transform: uppercase; color: var(--text-mute); margin-bottom: 20px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
 .loc-hero__breadcrumb a { color: var(--text-dim); }
