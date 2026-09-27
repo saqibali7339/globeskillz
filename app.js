@@ -337,17 +337,21 @@
     return { 'us-state': 'US State', 'uk': 'United Kingdom', 'canada': 'Canada', 'eu-country': 'Europe', 'city': 'City' }[t] || 'Location';
   }
 
+  let cardDesc = {};
+  const escHtml = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
   function renderCoverage() {
     if (!covGrid || !covIndex) return;
     const pool = covIndex.locations
       .filter(l => l.type === activeKind)
-      .map(l => ({ slug: l.slug, label: kindLabel(l.type), title: l.place }));
+      .map(l => ({ slug: l.slug, label: kindLabel(l.type), title: l.place, desc: cardDesc['loc:' + l.slug] || '' }));
     const q = query.toLowerCase();
     const filtered = q ? pool.filter(x => x.title.toLowerCase().includes(q)) : pool;
     covGrid.innerHTML = filtered.slice(0, 120).map(x => `
       <a class="loc-card" href="location.html?slug=${x.slug}&type=loc">
         <div class="loc-card__service">${x.label}</div>
         <div class="loc-card__title">${x.title}</div>
+        <div class="loc-card__desc">${escHtml(x.desc)}</div>
         <div class="loc-card__meta"><span class="arrow">\u2192</span></div>
       </a>
     `).join('');
@@ -367,21 +371,53 @@
   function renderNiches() {
     if (!nicheGrid || !covIndex) return;
     const q = nicheQuery.toLowerCase();
-    const pool = covIndex.niches.map(n => ({ slug: n.slug, title: titleCase(n.niche) }));
+    const pool = covIndex.niches.map(n => ({ slug: n.slug, title: titleCase(n.niche), desc: cardDesc['niche:' + n.slug] || '' }));
     const filtered = q ? pool.filter(x => x.title.toLowerCase().includes(q)) : pool;
     nicheGrid.innerHTML = filtered.slice(0, 120).map(x => `
       <a class="loc-card" href="location.html?slug=${x.slug}&type=niche">
         <div class="loc-card__service">Industry</div>
         <div class="loc-card__title">${x.title}</div>
+        <div class="loc-card__desc">${escHtml(x.desc)}</div>
         <div class="loc-card__meta"><span class="arrow">\u2192</span></div>
       </a>
     `).join('');
   }
 
-  fetch('data/index.json').then(r => r.json()).then(idx => {
+  function injectItemList() {
+    if (window.__gsItemListDone || !covIndex) return;
+    window.__gsItemListDone = true;
+    const items = [];
+    let pos = 1;
+    covIndex.locations.forEach(l => items.push({
+      '@type': 'ListItem', position: pos++,
+      name: l.keyword,
+      url: 'https://saqibali7339.github.io/globeskillz/location.html?slug=' + l.slug + '&type=loc'
+    }));
+    covIndex.niches.forEach(n => items.push({
+      '@type': 'ListItem', position: pos++,
+      name: n.keyword,
+      url: 'https://saqibali7339.github.io/globeskillz/location.html?slug=' + n.slug + '&type=niche'
+    }));
+    const el = document.createElement('script');
+    el.type = 'application/ld+json';
+    el.textContent = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      name: 'Globe Skillz service coverage and industries',
+      itemListElement: items
+    });
+    document.head.appendChild(el);
+  }
+
+  Promise.all([
+    fetch('data/index.json').then(r => r.json()),
+    fetch('data/card_descriptions.json').then(r => r.json()).catch(() => ({}))
+  ]).then(([idx, descs]) => {
     covIndex = idx;
+    cardDesc = descs || {};
     renderCoverage();
     renderNiches();
+    injectItemList();
   }).catch(err => {
     const msg = '<div style="padding:40px;color:var(--text-mute)">Loading… please open this site over http:// (not file://).</div>';
     if (covGrid) covGrid.innerHTML = msg;
