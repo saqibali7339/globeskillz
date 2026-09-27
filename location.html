@@ -9,6 +9,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/png" href="favicon.png" />
+<link id="pageCanon" rel="canonical" href="https://saqibali7339.github.io/globeskillz/location.html" />
+<meta property="og:type" content="website" />
+<meta property="og:title" id="ogTitle" content="Globe Skillz" />
+<meta property="og:description" id="ogDesc" content="Globe Skillz — SEO expert delivering ranking pages worldwide." />
+<meta property="og:url" id="ogUrl" content="https://saqibali7339.github.io/globeskillz/location.html" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" id="ogTitle" content="Globe Skillz" />
+<meta name="twitter:description" id="ogDesc" content="Globe Skillz — SEO expert delivering ranking pages worldwide." />
 </head>
 <body data-theme="iridescent">
 
@@ -292,8 +301,40 @@
   const displayName = isNiche ? data.niche : data.place;
   const typeLabel = isNiche ? 'Niche' : 'Location';
 
-  document.getElementById('pageTitle').textContent = `${data.keyword} · Globe Skillz`;
+  document.getElementById('pageTitle').textContent = `${data.keyword} \u00b7 Globe Skillz`;
   document.getElementById('pageDesc').setAttribute('content', data.intro.slice(0, 160));
+  const canonUrl = 'https://saqibali7339.github.io/globeskillz/location.html?slug=' + slug + '&type=' + type;
+  document.getElementById('pageCanon').setAttribute('href', canonUrl);
+  document.getElementById('ogTitle').setAttribute('content', data.keyword + ' \u00b7 Globe Skillz');
+  document.getElementById('ogDesc').setAttribute('content', data.intro.slice(0, 160));
+  document.getElementById('ogUrl').setAttribute('content', canonUrl);
+  // JSON-LD: Service + FAQPage for this page
+  (function () {
+    const serviceLd = {
+      '@context': 'https://schema.org',
+      '@type': 'Service',
+      name: data.keyword,
+      description: data.intro.slice(0, 200),
+      url: canonUrl,
+      provider: { '@type': 'Organization', name: 'Globe Skillz', url: 'https://saqibali7339.github.io/globeskillz/' },
+      areaServed: displayName
+    };
+    const faqLd = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: (data.faqs || []).map(f => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a }
+      }))
+    };
+    [serviceLd, faqLd].forEach(o => {
+      const el = document.createElement('script');
+      el.type = 'application/ld+json';
+      el.textContent = JSON.stringify(o);
+      document.head.appendChild(el);
+    });
+  })();
 
   document.getElementById('crumbType').textContent = typeLabel;
   document.getElementById('crumbName').textContent = displayName;
