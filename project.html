@@ -69,7 +69,7 @@
 <div class="cursor-dot" aria-hidden="true"></div>
 
 <nav class="nav" id="nav">
-  <a class="nav__brand" href="index.html" data-magnetic>
+  <a class="nav__brand" href="./" data-magnetic>
     <span class="nav__brand-mark">
       <svg viewBox="0 0 24 24" fill="none">
         <circle cx="12" cy="12" r="9" stroke="url(#hgradbold)" stroke-width="1.4"/>
@@ -80,12 +80,12 @@
     <span>Globe Skillz</span>
   </a>
   <div class="nav__menu">
-    <a class="nav__link" href="index.html#services">Services</a>
-    <a class="nav__link" href="index.html#portfolio">Work</a>
-    <a class="nav__link" href="index.html#coverage">Coverage</a>
-    <a class="nav__link" href="index.html#pricing">Pricing</a>
+    <a class="nav__link" href="./#services">Services</a>
+    <a class="nav__link" href="./#portfolio">Work</a>
+    <a class="nav__link" href="./#coverage">Coverage</a>
+    <a class="nav__link" href="./#pricing">Pricing</a>
   </div>
-  <a class="nav__cta" href="index.html#contact" data-magnetic>
+  <a class="nav__cta" href="./#contact" data-magnetic data-contact-link>
     Start a project
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
   </a>
@@ -95,7 +95,7 @@
   <section class="proj-hero">
     <div class="container">
       <div class="proj-crumb">
-        <a href="index.html">Home</a> / <a href="index.html#portfolio">Work</a> / <span id="crumbName">Project</span>
+        <a href="./">Home</a> / <a href="./#portfolio">Work</a> / <span id="crumbName">Project</span>
       </div>
       <div class="proj-shell">
         <div class="proj-tag" id="projTag">Case Study</div>
@@ -145,10 +145,10 @@
       </div>
       <div class="footer__col">
         <h4>Studio</h4>
-        <a href="index.html#about">About</a>
-        <a href="index.html#portfolio">Work</a>
-        <a href="index.html#process">Process</a>
-        <a href="index.html#pricing">Pricing</a>
+        <a href="./#about">About</a>
+        <a href="./#portfolio">Work</a>
+        <a href="./#process">Process</a>
+        <a href="./#pricing">Pricing</a>
       </div>
       <div class="footer__col">
         <h4>Contact</h4>
@@ -159,9 +159,9 @@
       </div>
       <div class="footer__col">
         <h4>Coverage</h4>
-        <a href="location.html?slug=california&type=loc">SEO in California</a>
-        <a href="location.html?slug=london&type=loc">SEO in London</a>
-        <a href="location.html?slug=law-firms&type=niche">SEO for law firms</a>
+        <a href="locations/california/">SEO in California</a>
+        <a href="locations/london/">SEO in London</a>
+        <a href="industries/law-firms/">SEO for law firms</a>
       </div>
     </div>
     <div class="footer__bottom">
@@ -332,12 +332,17 @@ const PROJECTS = {
 };
 
 (function () {
+  const RP = (typeof PAGE_DEPTH !== 'undefined' && PAGE_DEPTH) ? '../'.repeat(PAGE_DEPTH) : '';
+  const GS_SITE = 'https://saqibali7339.github.io/globeskillz';
   const params = new URLSearchParams(location.search);
-  const slug = params.get('slug') || 'bubblebum';
+  const slug = (typeof PAGE_SLUG !== 'undefined' && PAGE_SLUG) || params.get('slug') || 'bubblebum';
+  // Contact links: point at the homepage contact form on both hosts
+  const base = location.hostname.endsWith('github.io') ? '/globeskillz' : '';
+  document.querySelectorAll('[data-contact-link]').forEach(a => { a.href = base + '/#contact'; });
   const p = PROJECTS[slug] || PROJECTS['bubblebum'];
 
   document.getElementById('pageTitle').textContent = `${p.title} \u00b7 Globe Skillz`;
-  const canonUrl = 'https://saqibali7339.github.io/globeskillz/project.html?slug=' + slug;
+  const canonUrl = GS_SITE + '/project/' + slug + '/';
   document.getElementById('pageCanon').setAttribute('href', canonUrl);
   document.getElementById('ogTitle').setAttribute('content', p.title + ' \u00b7 Globe Skillz');
   document.getElementById('ogDesc').setAttribute('content', p.sub);
@@ -350,12 +355,26 @@ const PROJECTS = {
       name: p.title,
       description: p.sub,
       url: canonUrl,
-      creator: { '@type': 'Organization', name: 'Globe Skillz', url: 'https://saqibali7339.github.io/globeskillz/' }
+      creator: { '@type': 'Organization', name: 'Globe Skillz', url: GS_SITE + '/' }
     };
     const el = document.createElement('script');
     el.type = 'application/ld+json';
     el.textContent = JSON.stringify(ld);
     document.head.appendChild(el);
+    // JSON-LD: BreadcrumbList (Home > Work > this project)
+    const bc = {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: GS_SITE + '/' },
+        { '@type': 'ListItem', position: 2, name: 'Work', item: GS_SITE + '/#portfolio' },
+        { '@type': 'ListItem', position: 3, name: p.name, item: canonUrl }
+      ]
+    };
+    const bcEl = document.createElement('script');
+    bcEl.type = 'application/ld+json';
+    bcEl.textContent = JSON.stringify(bc);
+    document.head.appendChild(bcEl);
   })();
   document.getElementById('pageDesc').setAttribute('content', p.sub);
   document.getElementById('crumbName').textContent = p.name;
@@ -369,7 +388,7 @@ const PROJECTS = {
 
   // Screenshot: if assets/projects/screenshots/<file> exists, use it
   const shot = document.getElementById('projShot');
-  const shotFile = `assets/projects/screenshots/${p.shot}`;
+  const shotFile = RP + `assets/projects/screenshots/${p.shot}`;
   fetch(shotFile, { method: 'HEAD' }).then(r => {
     if (!r.ok) throw new Error('missing');
     shot.innerHTML = `<img src="${shotFile}" alt="${p.name}">`;
@@ -383,13 +402,13 @@ const PROJECTS = {
   if (proof && p.proof && p.proof.length) {
     proof.style.display = '';
     document.getElementById('projProofGrid').innerHTML = p.proof.map(g =>
-      `<figure><img src="assets/projects/screenshots/${g.img}" alt="${g.cap}" loading="lazy"><figcaption>${g.cap}</figcaption></figure>`
+      `<figure><img src="${RP}assets/projects/screenshots/${g.img}" alt="${g.cap}" loading="lazy"><figcaption>${g.cap}</figcaption></figure>`
     ).join('');
   }
 
   const related = Object.entries(PROJECTS).filter(([s]) => s !== slug).slice(0, 8);
   document.getElementById('projRelated').innerHTML = related.map(([s, x]) =>
-    `<a href="project.html?slug=${s}">${x.name}</a>`
+    `<a href="${RP}project/${s}/">${x.name}</a>`
   ).join('');
 })();
 </script>

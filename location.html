@@ -44,7 +44,7 @@
 
 <!-- Nav -->
 <nav class="nav" id="nav">
-  <a class="nav__brand" href="index.html" data-magnetic>
+  <a class="nav__brand" href="./" data-magnetic>
     <span class="nav__brand-mark">
       <svg viewBox="0 0 24 24" fill="none">
         <circle cx="12" cy="12" r="9" stroke="url(#hgradbold)" stroke-width="1.4"/>
@@ -55,12 +55,12 @@
     <span>Globe Skillz</span>
   </a>
   <div class="nav__menu">
-    <a class="nav__link" href="index.html#services">Services</a>
-    <a class="nav__link" href="index.html#process">Process</a>
-    <a class="nav__link" href="index.html#portfolio">Work</a>
-    <a class="nav__link" href="index.html#coverage">Coverage</a>
-    <a class="nav__link" href="index.html#pricing">Pricing</a>
-    <a class="nav__link" href="blogs.html">Blog</a>
+    <a class="nav__link" href="./#services">Services</a>
+    <a class="nav__link" href="./#process">Process</a>
+    <a class="nav__link" href="./#portfolio">Work</a>
+    <a class="nav__link" href="./#coverage">Coverage</a>
+    <a class="nav__link" href="./#pricing">Pricing</a>
+    <a class="nav__link" href="blogs/">Blog</a>
   </div>
   <a class="nav__cta" href="#contact" data-magnetic>
     Start a project
@@ -74,14 +74,14 @@
 <section class="loc-hero">
   <div class="container">
     <div class="loc-hero__breadcrumb reveal">
-      <a href="index.html">Home</a> / <a href="index.html#coverage">Coverage</a> / <span id="crumbType">Page</span> / <span id="crumbName">…</span>
+      <a href="./">Home</a> / <a href="./#coverage">Coverage</a> / <span id="crumbType">Page</span> / <span id="crumbName">…</span>
     </div>
     <h1 class="h-display loc-hero__title" id="locH1"><span class="split" data-split="words">Loading…</span></h1>
     <p class="loc-hero__sub reveal" id="locSub"></p>
 
     <div class="hero__cta-row reveal" style="margin-top:36px">
       <a href="#contact" class="btn btn-primary" data-magnetic>Get a free audit</a>
-      <a href="index.html#pricing" class="btn btn-ghost" data-magnetic>See pricing</a>
+      <a href="./#pricing" class="btn btn-ghost" data-magnetic>See pricing</a>
     </div>
 
     <div class="loc-hero__stats reveal">
@@ -172,6 +172,17 @@
   </div>
 </section>
 
+<!-- ================= RELATED READING ================= -->
+<section id="relatedReading">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow reveal">Related reading</span>
+      <h2 class="h-section reveal d1">SEO guides for <span class="text-grad" id="rrName">your market.</span></h2>
+    </div>
+    <div class="blog__grid" id="rrGrid"></div>
+  </div>
+</section>
+
 <!-- ================= CTA ================= -->
 <section id="contact">
   <div class="container">
@@ -191,21 +202,21 @@
           </a>
         </div>
       </div>
-      <form class="contact__form" onsubmit="event.preventDefault(); this.querySelector('.contact__submit').innerHTML='✓ Sent — I\\'ll reply within 24h'; this.querySelector('.contact__submit').style.background='linear-gradient(135deg,#22c58a,#a3ff5c)';">
+      <form class="contact__form" id="contactForm">
         <div class="contact__form-row">
-          <label>Your name<input required type="text" placeholder="Jane Doe"/></label>
-          <label>Email<input required type="email" placeholder="jane@company.com"/></label>
+          <label>Your name<input required type="text" name="name" placeholder="Jane Doe"/></label>
+          <label>Email<input required type="email" name="email" placeholder="jane@company.com"/></label>
         </div>
         <label>Your business
-          <input type="text" placeholder="Company name"/>
+          <input type="text" name="business" placeholder="Company name"/>
         </label>
         <label>Current monthly leads
-          <select>
+          <select name="leads">
             <option>0 – 5</option><option>5 – 20</option><option>20 – 50</option><option>50+</option>
           </select>
         </label>
         <label>Tell me about your goals
-          <textarea placeholder="What keywords do you want to rank for?"></textarea>
+          <textarea name="message" placeholder="What keywords do you want to rank for?"></textarea>
         </label>
         <button class="contact__submit" type="submit">
           Book my free audit
@@ -249,18 +260,18 @@
       </div>
       <div class="footer__col">
         <h4>Services</h4>
-        <a href="index.html#services">SEO expert services</a>
-        <a href="index.html#services">Web development</a>
-        <a href="index.html#services">Programmatic SEO</a>
-        <a href="index.html#services">Technical SEO</a>
+        <a href="./#services">SEO expert services</a>
+        <a href="./#services">Web development</a>
+        <a href="./#services">Programmatic SEO</a>
+        <a href="./#services">Technical SEO</a>
       </div>
       <div class="footer__col">
         <h4>Studio</h4>
-        <a href="index.html#about">About</a>
-        <a href="index.html#portfolio">Work</a>
-        <a href="index.html#process">Process</a>
-        <a href="index.html#pricing">Pricing</a>
-        <a href="blogs.html">Blog</a>
+        <a href="./#about">About</a>
+        <a href="./#portfolio">Work</a>
+        <a href="./#process">Process</a>
+        <a href="./#pricing">Pricing</a>
+        <a href="blogs/">Blog</a>
       </div>
       <div class="footer__col">
         <h4>Contact</h4>
@@ -280,14 +291,16 @@
 <script>
 /* ==== Load dynamic page data ==== */
 (async () => {
+  const RP = (typeof PAGE_DEPTH !== 'undefined' && PAGE_DEPTH) ? '../'.repeat(PAGE_DEPTH) : '';
+  const GS_SITE = 'https://saqibali7339.github.io/globeskillz';
   const params = new URLSearchParams(location.search);
-  const slug = params.get('slug') || params.get('loc') || 'alabama';
-  const type = params.get('type') || (params.get('niche') ? 'niche' : 'loc');
+  const slug = (typeof PAGE_SLUG !== 'undefined' && PAGE_SLUG) || params.get('slug') || params.get('loc') || 'alabama';
+  const type = (typeof PAGE_TYPE !== 'undefined' && PAGE_TYPE) || params.get('type') || (params.get('niche') ? 'niche' : 'loc');
   const folder = type === 'niche' ? 'niche' : 'loc';
 
   let data;
   try {
-    const res = await fetch(`data/${folder}/${slug}.json`);
+    const res = await fetch(RP + `data/${folder}/${slug}.json`);
     if (!res.ok) throw new Error('not found');
     data = await res.json();
   } catch (e) {
@@ -303,7 +316,8 @@
 
   document.getElementById('pageTitle').textContent = `${data.keyword} \u00b7 Globe Skillz`;
   document.getElementById('pageDesc').setAttribute('content', data.intro.slice(0, 160));
-  const canonUrl = 'https://saqibali7339.github.io/globeskillz/location.html?slug=' + slug + '&type=' + type;
+  const cleanPath = (type === 'niche' ? '/industries/' : '/locations/') + data.slug + '/';
+  const canonUrl = GS_SITE + cleanPath;
   document.getElementById('pageCanon').setAttribute('href', canonUrl);
   document.getElementById('ogTitle').setAttribute('content', data.keyword + ' \u00b7 Globe Skillz');
   document.getElementById('ogDesc').setAttribute('content', data.intro.slice(0, 160));
@@ -316,7 +330,7 @@
       name: data.keyword,
       description: data.intro.slice(0, 200),
       url: canonUrl,
-      provider: { '@type': 'Organization', name: 'Globe Skillz', url: 'https://saqibali7339.github.io/globeskillz/' },
+      provider: { '@type': 'Organization', name: 'Globe Skillz', url: GS_SITE + '/' },
       areaServed: displayName
     };
     const faqLd = {
@@ -334,6 +348,20 @@
       el.textContent = JSON.stringify(o);
       document.head.appendChild(el);
     });
+    // JSON-LD: BreadcrumbList (Home > Locations/Industries > this page)
+    const bc = {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: GS_SITE + '/' },
+        { '@type': 'ListItem', position: 2, name: isNiche ? 'Industries' : 'Locations', item: GS_SITE + '/#' + (isNiche ? 'niches' : 'coverage') },
+        { '@type': 'ListItem', position: 3, name: data.keyword, item: canonUrl }
+      ]
+    };
+    const bcEl = document.createElement('script');
+    bcEl.type = 'application/ld+json';
+    bcEl.textContent = JSON.stringify(bc);
+    document.head.appendChild(bcEl);
   })();
 
   document.getElementById('crumbType').textContent = typeLabel;
@@ -383,15 +411,40 @@
 
   // Load index for related pages
   try {
-    const idx = await (await fetch('data/index.json')).json();
+    const idx = await (await fetch(RP + 'data/index.json')).json();
     const pool = isNiche ? idx.niches : idx.locations;
     const others = pool.filter(x => x.slug !== data.slug).sort(() => Math.random() - 0.5).slice(0, 12);
     const relatedGrid = document.getElementById('relatedGrid');
     relatedGrid.innerHTML = others.map(o => {
       const name = isNiche ? o.niche : o.place;
-      return `<a href="location.html?slug=${o.slug}&type=${isNiche ? 'niche' : 'loc'}">${o.keyword} · ${name}</a>`;
+      return `<a href="${RP}${isNiche ? 'industries' : 'locations'}/${o.slug}/">${o.keyword} · ${name}</a>`;
     }).join('');
   } catch (e) {}
+
+  // Related reading: blog posts matched by keyword overlap (max 3)
+  try {
+    const posts = await (await fetch(RP + 'data/blog/index.json')).json();
+    const words = (data.keyword + ' ' + displayName).toLowerCase().split(/[^a-z]+/).filter(w => w.length > 3);
+    const scored = posts.map(bp => {
+      const hay = (bp.title + ' ' + (bp.keyword || '') + ' ' + bp.excerpt).toLowerCase();
+      let s = 0; words.forEach(w => { if (hay.includes(w)) s++; });
+      return { bp, s };
+    }).filter(x => x.s > 0).sort((a, b) => b.s - a.s).slice(0, 3);
+    if (scored.length) {
+      document.getElementById('rrName').textContent = displayName + '.';
+      document.getElementById('rrGrid').innerHTML = scored.map(({ bp }) => `
+        <a class="blog-card" href="${RP}blog/${bp.slug}/">
+          <div class="blog-card__img"><img src="${RP}${bp.image}" alt="${bp.title}" loading="lazy"></div>
+          <div class="blog-card__body">
+            <h3>${bp.title}</h3>
+            <p>${bp.excerpt}</p>
+            <span class="blog-card__link">Read article \u2192</span>
+          </div>
+        </a>`).join('');
+    } else {
+      document.getElementById('relatedReading').style.display = 'none';
+    }
+  } catch (e) { document.getElementById('relatedReading').style.display = 'none'; }
 
   // Wire up FAQ toggle
   document.querySelectorAll('.faq-item').forEach(item => {
@@ -419,6 +472,47 @@
     document.querySelectorAll('.loc-hero .split').forEach(el => {
       el.querySelectorAll('.word').forEach((c, j) => c.style.transitionDelay = (j * 0.06) + 's');
       el.classList.add('in');
+    });
+  });
+})();
+</script>
+
+<!-- Contact form: deliver enquiries to Gmail via FormSubmit (same as index) -->
+<script>
+(function () {
+  var form = document.getElementById('contactForm');
+  if (!form) return;
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var btn = form.querySelector('.contact__submit');
+    var original = btn.innerHTML;
+    btn.disabled = true;
+    btn.innerHTML = 'Sending\u2026';
+    var fd = new FormData(form);
+    var data = {
+      name: String(fd.get('name') || '').trim(),
+      email: String(fd.get('email') || '').trim(),
+      business: String(fd.get('business') || '').trim(),
+      leads: String(fd.get('leads') || ''),
+      message: String(fd.get('message') || '').trim(),
+      page: location.href,
+      _subject: 'New enquiry from globeskillz.com',
+      _template: 'table',
+      _captcha: 'false'
+    };
+    fetch('https://formsubmit.co/ajax/saqibali7339@gmail.com', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(data)
+    }).then(function (res) {
+      if (!res.ok) throw new Error('send failed');
+      btn.innerHTML = '\u2713 Sent \u2014 I\u0027ll reply within 24h';
+      btn.style.background = 'linear-gradient(135deg,#22c58a,#a3ff5c)';
+      form.reset();
+    }).catch(function () {
+      btn.disabled = false;
+      btn.innerHTML = original;
+      alert('Something went wrong sending your message. Please email me directly at info@globeskillz.com');
     });
   });
 })();

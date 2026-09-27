@@ -905,6 +905,11 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; letter-spac
 .footer__col h4 { font-family: var(--font-mono); font-size: 11px; letter-spacing: .25em; text-transform: uppercase; color: var(--text-mute); margin-bottom: 18px; font-weight: 500; }
 .footer__col a { display: block; padding: 6px 0; color: var(--text-dim); font-size: 14px; transition: color .3s; }
 .footer__col a:hover { color: var(--text); }
+.footer__more { display: flex; flex-direction: column; gap: 14px; padding: 28px 0; border-bottom: 1px solid var(--border); }
+.footer__more-group { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px; font-size: 13.5px; }
+.footer__more-group > span { font-family: var(--font-mono); font-size: 11px; letter-spacing: .22em; text-transform: uppercase; color: var(--text-mute); margin-right: 6px; }
+.footer__more-group a { color: var(--text-dim); transition: color .3s; }
+.footer__more-group a:hover { color: var(--text); }
 .footer__brand { max-width: 320px; }
 .footer__brand p { color: var(--text-dim); font-size: 14px; margin: 14px 0 20px; }
 .footer__socials { display: flex; gap: 10px; }

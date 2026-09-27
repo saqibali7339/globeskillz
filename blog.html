@@ -44,7 +44,7 @@
 
 <!-- Nav -->
 <nav class="nav" id="nav">
-  <a class="nav__brand" href="index.html" data-magnetic>
+  <a class="nav__brand" href="./" data-magnetic>
     <span class="nav__brand-mark">
       <svg viewBox="0 0 24 24" fill="none">
         <circle cx="12" cy="12" r="9" stroke="url(#hgradbold)" stroke-width="1.4"/>
@@ -55,14 +55,14 @@
     <span>Globe Skillz</span>
   </a>
   <div class="nav__menu">
-    <a class="nav__link" href="index.html#services">Services</a>
-    <a class="nav__link" href="index.html#process">Process</a>
-    <a class="nav__link" href="index.html#portfolio">Work</a>
-    <a class="nav__link" href="index.html#coverage">Coverage</a>
-    <a class="nav__link" href="index.html#pricing">Pricing</a>
-    <a class="nav__link" href="blogs.html">Blog</a>
+    <a class="nav__link" href="./#services">Services</a>
+    <a class="nav__link" href="./#process">Process</a>
+    <a class="nav__link" href="./#portfolio">Work</a>
+    <a class="nav__link" href="./#coverage">Coverage</a>
+    <a class="nav__link" href="./#pricing">Pricing</a>
+    <a class="nav__link" href="blogs/">Blog</a>
   </div>
-  <a class="nav__cta" href="#contact" data-magnetic>
+  <a class="nav__cta" href="./#contact" data-magnetic data-contact-link>
     Start a project
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
   </a>
@@ -74,7 +74,7 @@
 <article class="article">
   <div class="container article__wrap">
     <div class="loc-hero__breadcrumb reveal">
-      <a href="index.html">Home</a> / <a href="blogs.html">Blog</a> / <span id="crumbTitle">…</span>
+      <a href="./">Home</a> / <a href="blogs/">Blog</a> / <span id="crumbTitle">…</span>
     </div>
     <span class="eyebrow reveal">Blog</span>
     <h1 class="h-display article__title" id="artTitle">Loading…</h1>
@@ -96,7 +96,7 @@
     <span class="eyebrow">Free SEO audit</span>
     <h2 class="h-section" style="margin:16px 0">Want this done <span class="text-grad">for you?</span></h2>
     <p class="p-lead" style="margin:0 auto 32px">I will check your website and send you a short breakdown of exactly what is holding your rankings back and what I would fix first. No charge, no strings attached.</p>
-    <a href="index.html#contact" class="btn btn-primary" data-magnetic>Get my free audit</a>
+    <a href="./#contact" class="btn btn-primary" data-magnetic data-contact-link>Get my free audit</a>
   </div>
 </section>
 
@@ -108,6 +108,17 @@
       <h2 class="h-section">More from <span class="text-grad">the blog.</span></h2>
     </div>
     <div class="blog__grid" id="relatedGrid"></div>
+  </div>
+</section>
+
+<!-- ================= WHERE THIS APPLIES ================= -->
+<section id="applies">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Where this applies</span>
+      <h2 class="h-section">Good <span class="text-grad">everywhere.</span></h2>
+    </div>
+    <div class="loc-related" id="appliesGrid"></div>
   </div>
 </section>
 
@@ -142,18 +153,18 @@
       </div>
       <div class="footer__col">
         <h4>Services</h4>
-        <a href="index.html#services">SEO expert services</a>
-        <a href="index.html#services">Web development</a>
-        <a href="index.html#services">Programmatic SEO</a>
-        <a href="index.html#services">Technical SEO</a>
+        <a href="./#services">SEO expert services</a>
+        <a href="./#services">Web development</a>
+        <a href="./#services">Programmatic SEO</a>
+        <a href="./#services">Technical SEO</a>
       </div>
       <div class="footer__col">
         <h4>Studio</h4>
-        <a href="index.html#about">About</a>
-        <a href="index.html#portfolio">Work</a>
-        <a href="index.html#process">Process</a>
-        <a href="index.html#pricing">Pricing</a>
-        <a href="blogs.html">Blog</a>
+        <a href="./#about">About</a>
+        <a href="./#portfolio">Work</a>
+        <a href="./#process">Process</a>
+        <a href="./#pricing">Pricing</a>
+        <a href="blogs/">Blog</a>
       </div>
       <div class="footer__col">
         <h4>Contact</h4>
@@ -171,14 +182,19 @@
 </footer><script>
 (async () => {
   const $ = (s, r = document) => r.querySelector(s);
+  const RP = (typeof PAGE_DEPTH !== 'undefined' && PAGE_DEPTH) ? '../'.repeat(PAGE_DEPTH) : '';
+  const GS_SITE = 'https://saqibali7339.github.io/globeskillz';
   const params = new URLSearchParams(location.search);
-  const slug = params.get('slug') || '';
+  const slug = (typeof PAGE_SLUG !== 'undefined' && PAGE_SLUG) || params.get('slug') || '';
+  // Contact links: point at the homepage contact form on both hosts
+  const base = location.hostname.endsWith('github.io') ? '/globeskillz' : '';
+  document.querySelectorAll('[data-contact-link]').forEach(a => { a.href = base + '/#contact'; });
   const fmtDate = iso => new Date(iso + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
   const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;');
 
   let data;
   try {
-    const res = await fetch('data/blog/' + slug + '.json');
+    const res = await fetch(RP + 'data/blog/' + slug + '.json');
     if (!res.ok) throw new Error('not found');
     data = await res.json();
   } catch (e) {
@@ -188,7 +204,7 @@
 
   document.getElementById('pageTitle').textContent = data.title + ' \u00b7 Globe Skillz Blog';
   document.getElementById('pageDesc').setAttribute('content', data.meta);
-  const canonUrl = 'https://saqibali7339.github.io/globeskillz/blog.html?slug=' + slug;
+  const canonUrl = GS_SITE + '/blog/' + slug + '/';
   document.getElementById('pageCanon').setAttribute('href', canonUrl);
   document.getElementById('ogTitle').setAttribute('content', data.title);
   document.getElementById('ogDesc').setAttribute('content', data.meta);
@@ -201,7 +217,7 @@
       headline: data.title,
       description: data.meta,
       datePublished: data.date,
-      author: { '@type': 'Organization', name: 'Globe Skillz', url: 'https://saqibali7339.github.io/globeskillz/' },
+      author: { '@type': 'Organization', name: 'Globe Skillz', url: GS_SITE + '/' },
       url: canonUrl
     };
     const faqLd = {
@@ -219,13 +235,27 @@
       el.textContent = JSON.stringify(o);
       document.head.appendChild(el);
     });
+    // JSON-LD: BreadcrumbList (Home > Blog > this article)
+    const bc = {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: GS_SITE + '/' },
+        { '@type': 'ListItem', position: 2, name: 'Blog', item: GS_SITE + '/blogs/' },
+        { '@type': 'ListItem', position: 3, name: data.title, item: canonUrl }
+      ]
+    };
+    const bcEl = document.createElement('script');
+    bcEl.type = 'application/ld+json';
+    bcEl.textContent = JSON.stringify(bc);
+    document.head.appendChild(bcEl);
   })();
   $('#crumbTitle').textContent = data.title;
   $('#artTitle').textContent = data.title;
   $('#artDate').textContent = fmtDate(data.date);
   $('#artRead').textContent = data.read_time + ' min read';
   const img = $('#artImg');
-  img.src = data.image; img.alt = data.title;
+  img.src = RP + data.image; img.alt = data.title;
 
   $('#artBody').innerHTML =
     data.intro.split('\n\n').map(p => '<p>' + esc(p) + '</p>').join('') +
@@ -249,16 +279,41 @@
     });
   });
 
-  // related posts
+  // related posts: keyword-overlap match first, newest fallback, max 3
   try {
-    const idx = await (await fetch('data/blog/index.json')).json();
-    const others = idx.filter(x => x.slug !== data.slug).slice(0, 3);
-    $('#relatedGrid').innerHTML = others.map(cardHTML).join('');
+    const idx = await (await fetch(RP + 'data/blog/index.json')).json();
+    const words = ((data.keyword || '') + ' ' + data.title).toLowerCase().split(/[^a-z]+/).filter(w => w.length > 3);
+    const others = idx.filter(x => x.slug !== data.slug);
+    const scored = others.map(bp => {
+      const hay = (bp.title + ' ' + (bp.keyword || '') + ' ' + bp.excerpt).toLowerCase();
+      let s = 0; words.forEach(w => { if (hay.includes(w)) s++; });
+      return { bp, s };
+    }).sort((a, b) => b.s - a.s).map(x => x.bp).slice(0, 3);
+    $('#relatedGrid').innerHTML = scored.map(cardHTML).join('');
   } catch (e) { /* no related */ }
 
+  // Where this applies: up to 3 related location/industry pages by keyword overlap
+  try {
+    const cov = await (await fetch(RP + 'data/index.json')).json();
+    const pool = [...cov.locations.map(x => ({ ...x, seg: 'locations' })),
+                  ...cov.niches.map(x => ({ ...x, seg: 'industries' }))];
+    const words = ((data.keyword || '') + ' ' + data.title).toLowerCase().split(/[^a-z]+/).filter(w => w.length > 3);
+    const scored = pool.map(x => {
+      const hay = (x.keyword || '').toLowerCase();
+      let s = 0; words.forEach(w => { if (hay.includes(w)) s++; });
+      return { x, s };
+    }).filter(o => o.s > 0).sort((a, b) => b.s - a.s).slice(0, 3);
+    if (scored.length) {
+      document.getElementById('appliesGrid').innerHTML = scored.map(({ x }) =>
+        `<a href="${RP}${x.seg}/${x.slug}/">${x.keyword}</a>`).join('');
+    } else {
+      document.getElementById('applies').style.display = 'none';
+    }
+  } catch (e) { document.getElementById('applies').style.display = 'none'; }
+
   function cardHTML(p) {
-    return `<a class="blog-card" href="blog.html?slug=${p.slug}">
-      <div class="blog-card__img"><img src="${p.image}" alt="${esc(p.title)}" loading="lazy"></div>
+    return `<a class="blog-card" href="${RP}blog/${p.slug}/">
+      <div class="blog-card__img"><img src="${RP}${p.image}" alt="${esc(p.title)}" loading="lazy"></div>
       <div class="blog-card__body">
         <div class="blog-card__date">${fmtDate(p.date)} · ${p.read_time} min read</div>
         <h3>${esc(p.title)}</h3>

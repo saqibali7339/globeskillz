@@ -18,15 +18,25 @@
     if (prVal >= 100) clearInterval(prTick);
   }, 90);
 
+  // If the URL carries a hash (e.g. #contact from a blog CTA), the
+  // preloader overlay defeats the browser's native anchor jump, so re-apply it
+  // once the preloader lifts, with a retry for late layout shifts.
+  const honorHash = () => {
+    if (!location.hash) return;
+    const go = () => { const el = document.querySelector(location.hash); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); };
+    setTimeout(go, 150);
+    setTimeout(go, 1400);
+  };
   window.addEventListener('load', () => {
     setTimeout(() => {
       preloader?.classList.add('done');
       document.body.classList.add('loaded');
       revealHero();
+      honorHash();
     }, 1600);
   });
   // fallback in case load never fires
-  setTimeout(() => { if (!preloader.classList.contains('done')) { preloader.classList.add('done'); revealHero(); } }, 3200);
+  setTimeout(() => { if (!preloader.classList.contains('done')) { preloader.classList.add('done'); revealHero(); honorHash(); } }, 3200);
 
   /* ---------- Split text (chars) ---------- */
   $$('.split[data-split="chars"]').forEach(el => {
@@ -85,7 +95,7 @@
     const fmtD = iso => new Date(iso + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
     fetch('data/blog/index.json').then(r => r.json()).then(posts => {
       const cards = posts.slice(0, 3).map(p => `
-        <a class="blog-card" href="blog.html?slug=${p.slug}">
+        <a class="blog-card" href="blog/${p.slug}/">
           <div class="blog-card__img"><img src="${p.image}" alt="${p.title.replace(/"/g, '')}" loading="lazy"></div>
           <div class="blog-card__body">
             <div class="blog-card__date">${fmtD(p.date)} · ${p.read_time} min read</div>
@@ -348,7 +358,7 @@
     const q = query.toLowerCase();
     const filtered = q ? pool.filter(x => x.title.toLowerCase().includes(q)) : pool;
     covGrid.innerHTML = filtered.slice(0, 120).map(x => `
-      <a class="loc-card" href="location.html?slug=${x.slug}&type=loc">
+      <a class="loc-card" href="locations/${x.slug}/">
         <div class="loc-card__service">${x.label}</div>
         <div class="loc-card__title">${x.title}</div>
         <div class="loc-card__desc">${escHtml(x.desc)}</div>
@@ -374,7 +384,7 @@
     const pool = covIndex.niches.map(n => ({ slug: n.slug, title: titleCase(n.niche), desc: cardDesc['niche:' + n.slug] || '' }));
     const filtered = q ? pool.filter(x => x.title.toLowerCase().includes(q)) : pool;
     nicheGrid.innerHTML = filtered.slice(0, 120).map(x => `
-      <a class="loc-card" href="location.html?slug=${x.slug}&type=niche">
+      <a class="loc-card" href="industries/${x.slug}/">
         <div class="loc-card__service">Industry</div>
         <div class="loc-card__title">${x.title}</div>
         <div class="loc-card__desc">${escHtml(x.desc)}</div>
@@ -383,6 +393,7 @@
     `).join('');
   }
 
+  var GS_SITE = 'https://saqibali7339.github.io/globeskillz';
   function injectItemList() {
     if (window.__gsItemListDone || !covIndex) return;
     window.__gsItemListDone = true;
@@ -391,12 +402,12 @@
     covIndex.locations.forEach(l => items.push({
       '@type': 'ListItem', position: pos++,
       name: l.keyword,
-      url: 'https://saqibali7339.github.io/globeskillz/location.html?slug=' + l.slug + '&type=loc'
+      url: GS_SITE + '/locations/' + l.slug + '/'
     }));
     covIndex.niches.forEach(n => items.push({
       '@type': 'ListItem', position: pos++,
       name: n.keyword,
-      url: 'https://saqibali7339.github.io/globeskillz/location.html?slug=' + n.slug + '&type=niche'
+      url: GS_SITE + '/industries/' + n.slug + '/'
     }));
     const el = document.createElement('script');
     el.type = 'application/ld+json';

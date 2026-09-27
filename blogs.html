@@ -10,11 +10,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css" />
 <link rel="icon" type="image/png" href="favicon.png" />
-<link rel="canonical" href="https://saqibali7339.github.io/globeskillz/blogs.html" />
+<link rel="canonical" href="https://saqibali7339.github.io/globeskillz/blogs/" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Blog · Globe Skillz" />
 <meta property="og:description" content="Practical SEO and website growth articles for business owners, from the Globe Skillz studio." />
-<meta property="og:url" content="https://saqibali7339.github.io/globeskillz/blogs.html" />
+<meta property="og:url" content="https://saqibali7339.github.io/globeskillz/blogs/" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Blog · Globe Skillz" />
 <meta name="twitter:description" content="Practical SEO and website growth articles for business owners, from the Globe Skillz studio." />
@@ -44,7 +44,7 @@
 
 <!-- Nav -->
 <nav class="nav" id="nav">
-  <a class="nav__brand" href="index.html" data-magnetic>
+  <a class="nav__brand" href="./" data-magnetic>
     <span class="nav__brand-mark">
       <svg viewBox="0 0 24 24" fill="none">
         <circle cx="12" cy="12" r="9" stroke="url(#hgradbold)" stroke-width="1.4"/>
@@ -55,14 +55,14 @@
     <span>Globe Skillz</span>
   </a>
   <div class="nav__menu">
-    <a class="nav__link" href="index.html#services">Services</a>
-    <a class="nav__link" href="index.html#process">Process</a>
-    <a class="nav__link" href="index.html#portfolio">Work</a>
-    <a class="nav__link" href="index.html#coverage">Coverage</a>
-    <a class="nav__link" href="index.html#pricing">Pricing</a>
-    <a class="nav__link" href="blogs.html">Blog</a>
+    <a class="nav__link" href="./#services">Services</a>
+    <a class="nav__link" href="./#process">Process</a>
+    <a class="nav__link" href="./#portfolio">Work</a>
+    <a class="nav__link" href="./#coverage">Coverage</a>
+    <a class="nav__link" href="./#pricing">Pricing</a>
+    <a class="nav__link" href="blogs/">Blog</a>
   </div>
-  <a class="nav__cta" href="#contact" data-magnetic>
+  <a class="nav__cta" href="./#contact" data-contact-link data-magnetic>
     Start a project
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
   </a>
@@ -74,7 +74,7 @@
 <section class="blogs-hero">
   <div class="container">
     <div class="loc-hero__breadcrumb reveal">
-      <a href="index.html">Home</a> / <span>Blog</span>
+      <a href="./">Home</a> / <span>Blog</span>
     </div>
     <span class="eyebrow reveal">The blog</span>
     <h1 class="h-display reveal">SEO tips that <span class="text-grad">actually help.</span></h1>
@@ -119,18 +119,18 @@
       </div>
       <div class="footer__col">
         <h4>Services</h4>
-        <a href="index.html#services">SEO expert services</a>
-        <a href="index.html#services">Web development</a>
-        <a href="index.html#services">Programmatic SEO</a>
-        <a href="index.html#services">Technical SEO</a>
+        <a href="./#services">SEO expert services</a>
+        <a href="./#services">Web development</a>
+        <a href="./#services">Programmatic SEO</a>
+        <a href="./#services">Technical SEO</a>
       </div>
       <div class="footer__col">
         <h4>Studio</h4>
-        <a href="index.html#about">About</a>
-        <a href="index.html#portfolio">Work</a>
-        <a href="index.html#process">Process</a>
-        <a href="index.html#pricing">Pricing</a>
-        <a href="blogs.html">Blog</a>
+        <a href="./#about">About</a>
+        <a href="./#portfolio">Work</a>
+        <a href="./#process">Process</a>
+        <a href="./#pricing">Pricing</a>
+        <a href="blogs/">Blog</a>
       </div>
       <div class="footer__col">
         <h4>Contact</h4>
@@ -147,13 +147,17 @@
   </div>
 </footer><script>
 (async () => {
+  const RP = (typeof PAGE_DEPTH !== 'undefined' && PAGE_DEPTH) ? '../'.repeat(PAGE_DEPTH) : '';
   const fmtDate = iso => new Date(iso + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
   const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;');
+  // Contact links: point at the homepage contact form on both hosts
+  const base = location.hostname.endsWith('github.io') ? '/globeskillz' : '';
+  document.querySelectorAll('[data-contact-link]').forEach(a => { a.href = base + '/#contact'; });
   try {
-    const idx = await (await fetch('data/blog/index.json')).json();
+    const idx = await (await fetch(RP + 'data/blog/index.json')).json();
     document.getElementById('allGrid').innerHTML = idx.map(p => `
-      <a class="blog-card" href="blog.html?slug=${p.slug}">
-        <div class="blog-card__img"><img src="${p.image}" alt="${esc(p.title)}" loading="lazy"></div>
+      <a class="blog-card" href="${RP}blog/${p.slug}/">
+        <div class="blog-card__img"><img src="${RP}${p.image}" alt="${esc(p.title)}" loading="lazy"></div>
         <div class="blog-card__body">
           <div class="blog-card__date">${fmtDate(p.date)} · ${p.read_time} min read</div>
           <h3>${esc(p.title)}</h3>
