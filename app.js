@@ -27,14 +27,22 @@
     setTimeout(go, 150);
     setTimeout(go, 1400);
   };
-  window.addEventListener('load', () => {
+  // Lift on DOMContentLoaded (not window load): load waits for every asset,
+  // which kept the overlay up ~3s on mobile and hurt LCP. The intro still plays.
+  const liftPreloader = () => {
     setTimeout(() => {
-      preloader?.classList.add('done');
+      if (preloader?.classList.contains('done')) return;
+      preloader.classList.add('done');
       document.body.classList.add('loaded');
       revealHero();
       honorHash();
-    }, 500); // shortened for PageSpeed: preloader still plays, lifts sooner
-  });
+    }, 1200);
+  };
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', liftPreloader);
+  } else {
+    liftPreloader();
+  }
   // fallback in case load never fires
   setTimeout(() => { if (!preloader.classList.contains('done')) { preloader.classList.add('done'); revealHero(); honorHash(); } }, 3200);
 
