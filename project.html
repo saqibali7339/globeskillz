@@ -9,6 +9,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/png" href="favicon.png" />
+<link id="pageCanon" rel="canonical" href="https://saqibali7339.github.io/globeskillz/project.html" />
+<meta property="og:type" content="website" />
+<meta property="og:title" id="ogTitle" content="Project · Globe Skillz" />
+<meta property="og:description" id="ogDesc" content="Case study · Globe Skillz freelance studio." />
+<meta property="og:url" id="ogUrl" content="https://saqibali7339.github.io/globeskillz/project.html" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" id="ogTitle" content="Project · Globe Skillz" />
+<meta name="twitter:description" id="ogDesc" content="Case study · Globe Skillz freelance studio." />
 <style>
   .proj-hero { min-height: 60vh; padding-top: 140px; padding-bottom: 60px; display: grid; place-items: center; }
   .proj-crumb { font-family: var(--font-mono); font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--text-mute); margin-bottom: 20px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
@@ -327,7 +336,27 @@ const PROJECTS = {
   const slug = params.get('slug') || 'bubblebum';
   const p = PROJECTS[slug] || PROJECTS['bubblebum'];
 
-  document.getElementById('pageTitle').textContent = `${p.name} · Globe Skillz`;
+  document.getElementById('pageTitle').textContent = `${p.title} \u00b7 Globe Skillz`;
+  const canonUrl = 'https://saqibali7339.github.io/globeskillz/project.html?slug=' + slug;
+  document.getElementById('pageCanon').setAttribute('href', canonUrl);
+  document.getElementById('ogTitle').setAttribute('content', p.title + ' \u00b7 Globe Skillz');
+  document.getElementById('ogDesc').setAttribute('content', p.sub);
+  document.getElementById('ogUrl').setAttribute('content', canonUrl);
+  // JSON-LD: CreativeWork for this project
+  (function () {
+    const ld = {
+      '@context': 'https://schema.org',
+      '@type': 'CreativeWork',
+      name: p.title,
+      description: p.sub,
+      url: canonUrl,
+      creator: { '@type': 'Organization', name: 'Globe Skillz', url: 'https://saqibali7339.github.io/globeskillz/' }
+    };
+    const el = document.createElement('script');
+    el.type = 'application/ld+json';
+    el.textContent = JSON.stringify(ld);
+    document.head.appendChild(el);
+  })();
   document.getElementById('pageDesc').setAttribute('content', p.sub);
   document.getElementById('crumbName').textContent = p.name;
   document.getElementById('projTag').textContent = p.tag;
