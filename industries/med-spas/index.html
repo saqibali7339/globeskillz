@@ -316,12 +316,12 @@
   const typeLabel = isNiche ? 'Niche' : 'Location';
 
   document.getElementById('pageTitle').textContent = `${data.keyword} \u00b7 Globe Skillz`;
-  document.getElementById('pageDesc').setAttribute('content', data.intro.slice(0, 160));
+  document.getElementById('pageDesc').setAttribute('content', (data.intro.length>160?data.intro.slice(0,data.intro.lastIndexOf(' ',160))+'...':data.intro));
   const cleanPath = (type === 'niche' ? '/industries/' : '/locations/') + data.slug + '/';
   const canonUrl = GS_SITE + cleanPath;
   document.getElementById('pageCanon').setAttribute('href', canonUrl);
   document.getElementById('ogTitle').setAttribute('content', data.keyword + ' \u00b7 Globe Skillz');
-  document.getElementById('ogDesc').setAttribute('content', data.intro.slice(0, 160));
+  document.getElementById('ogDesc').setAttribute('content', (data.intro.length>160?data.intro.slice(0,data.intro.lastIndexOf(' ',160))+'...':data.intro));
   document.getElementById('ogUrl').setAttribute('content', canonUrl);
   // JSON-LD: Service + FAQPage for this page
   (function () {
@@ -329,7 +329,7 @@
       '@context': 'https://schema.org',
       '@type': 'Service',
       name: data.keyword,
-      description: data.intro.slice(0, 200),
+      description: (data.intro.length>200?data.intro.slice(0,data.intro.lastIndexOf(' ',200))+'...':data.intro),
       url: canonUrl,
       provider: { '@type': 'Organization', name: 'Globe Skillz', url: GS_SITE + '/' },
       areaServed: displayName
