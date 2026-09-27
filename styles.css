@@ -695,6 +695,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; letter-spac
 /* ---------- Testimonials ---------- */
 .testi__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 @media (max-width: 900px) { .testi__grid { grid-template-columns: 1fr; } }
+.testi__more { text-align: center; margin-top: 48px; }
 .testi-card {
   padding: 34px; border-radius: var(--radius-lg);
   background: linear-gradient(135deg, rgba(255,255,255,.05), rgba(255,255,255,.01));
