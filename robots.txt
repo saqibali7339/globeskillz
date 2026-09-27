@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://saqibali7339.github.io/globeskillz/sitemap.xml
