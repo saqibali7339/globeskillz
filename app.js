@@ -401,7 +401,7 @@
     `).join('');
   }
 
-  var GS_SITE = 'https://saqibali7339.github.io/globeskillz';
+  var GS_SITE = 'https://globeskillz.com';
   function injectItemList() {
     if (window.__gsItemListDone || !covIndex) return;
     window.__gsItemListDone = true;
