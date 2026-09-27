@@ -917,6 +917,9 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; letter-spac
 .footer__socials a { width: 40px; height: 40px; padding: 0; border-radius: 50%; border: 1px solid var(--border); display: grid; place-items: center; transition: all .3s; }
 .footer__socials a:hover { background: var(--grad-brand); color: #06070d; border-color: transparent; transform: translateY(-2px); }
 .footer__bottom { padding-top: 30px; display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; color: var(--text-mute); font-size: 13px; font-family: var(--font-mono); }
+.footer__legal { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: center; padding: 22px 0 6px; margin-top: 26px; border-top: 1px solid var(--border); }
+.footer__legal a { font-size: 13px; color: var(--text-mute); transition: color .3s; }
+.footer__legal a:hover { color: var(--text); }
 
 /* ---------- Tweaks Panel ---------- */
  to { opacity: 1; transform: none; } }
