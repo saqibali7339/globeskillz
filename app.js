@@ -33,7 +33,7 @@
       document.body.classList.add('loaded');
       revealHero();
       honorHash();
-    }, 1600);
+    }, 500); // shortened for PageSpeed: preloader still plays, lifts sooner
   });
   // fallback in case load never fires
   setTimeout(() => { if (!preloader.classList.contains('done')) { preloader.classList.add('done'); revealHero(); honorHash(); } }, 3200);
