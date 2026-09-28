@@ -1154,3 +1154,9 @@ a.seo-proof:hover .seo-proof__go { opacity: 1; transform: none; }
   .data-table th, .data-table td, .compare th, .compare td { padding: 10px 12px; font-size: 13px; }
   .data-table th:first-child, .data-table td:first-child { white-space: nowrap; }
 }
+
+/* Base table styles for any unclassed tables */
+section table:not([class]) { width: 100%; border-collapse: collapse; font-size: 14px; margin: 24px 0; border-radius: 16px; overflow: hidden; border: 1px solid var(--border); display: block; overflow-x: auto; }
+section table:not([class]) th { text-align: left; padding: 14px 16px; background: rgba(255,255,255,.04); font-weight: 600; border-bottom: 1px solid var(--border); white-space: nowrap; }
+section table:not([class]) td { padding: 14px 16px; border-bottom: 1px solid var(--border); color: var(--text-dim); line-height: 1.6; }
+section table:not([class]) tr:last-child td { border-bottom: none; }
