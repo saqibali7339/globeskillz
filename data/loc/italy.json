@@ -2,7 +2,11 @@
  "slug": "italy",
  "place": "Italy",
  "keyword": "SEO expert in Italy",
+<<<<<<< HEAD
+ "h1": "SEO Expert in Italy for Businesses Tired of Being Invisible",
+=======
  "h1": "SEO Expert in Italy: More Calls, More Customers, More Revenue",
+>>>>>>> origin/main
  "intro": "If you run a business in Italy, you already know visibility is everything. Customers here search online before they call, visit, or buy — and the businesses at the top of Google get the lion's share of that demand. Italian-language search dominates, with strong regional identities shaping queries. Milan leads business and fashion, Rome draws tourism, the south stays quieter. Food, wine and design brands give the market unmistakable local flavour. Family-run firms dominate, and personal reputation drives search behaviour. The businesses winning in Italy right now are the ones that invested in local SEO early. There is still room at the top — but not for long.",
  "why": {
   "heading": "Why Generic SEO Fails in Italy",
@@ -25,6 +29,25 @@
  "faqs": [
   {
    "q": "Is local SEO different from regular SEO in Italy?",
+<<<<<<< HEAD
+   "a": "Yes. Local SEO targets the map pack, local-intent keywords, and review signals. A generic national strategy will not win you customers searching with local intent in Milan or Rome. The tactics overlap, but the priorities are completely different."
+  },
+  {
+   "q": "Can I do SEO for my Italian business myself?",
+   "a": "You can handle the basics: claim your profile, ask for reviews, keep your hours accurate. The technical work, Italian keyword research, and authority building are where a specialist earns their keep. Most owners run out of hours before they run out of tasks."
+  },
+  {
+   "q": "Why is my competitor outranking me in Italy?",
+   "a": "Usually stronger reviews, better Italian-language relevance, or more links from Italian sites. I check all three in the audit and tell you which one is actually costing you the ranking, so we fix the right thing first."
+  },
+  {
+   "q": "Do I need a Google Business Profile in Italy?",
+   "a": "Absolutely. It is free and often the first thing customers see. In Italy's relationship-driven market, a complete profile with genuine reviews beats a beautiful website with an empty profile every time."
+  }
+ ],
+ "meta": "SEO expert in Italy: I fix the mistakes costing Italian businesses customers, then build local SEO that ranks. Free audit, no jargon, plain reporting.",
+ "subhead": "I find the SEO mistakes costing you customers, fix them, then build what actually ranks."
+=======
    "a": "Yes — local SEO targets map rankings, local intent keywords, and review signals. Food, wine and design brands give the market unmistakable local flavour, so a strategy built for local search outperforms generic national SEO here."
   },
   {
@@ -42,4 +65,5 @@
  ],
  "meta": "SEO expert in Italy: Local SEO for Italy — rank higher on Google and turn searches into calls. Free audit.",
  "subhead": "Local SEO for Italy — more calls, more bookings, more customers."
+>>>>>>> origin/main
 }

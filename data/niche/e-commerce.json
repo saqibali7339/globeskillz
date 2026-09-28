@@ -1,0 +1,43 @@
+{
+ "slug": "e-commerce",
+ "niche": "e-commerce businesses",
+ "keyword": "e-commerce SEO services",
+ "h1": "E-commerce SEO Services That Turn Browsers Into Buyers",
+ "meta": "E-commerce SEO services for Shopify and WooCommerce stores: product pages, collections and buyer guides that rank, convert and compound. Free audit.",
+ "subhead": "Product pages, collections and buyer guides that rank and sell, on Shopify and WooCommerce.",
+ "intro": "A customer has three of your products in her cart. She found you through Instagram three weeks ago. Tonight she typed the product name into Google, and the store that showed up first was not yours. E-commerce SEO services capture demand at the exact moment someone is ready to buy: product pages that rank for what buyers type, collections that read like buying guides, and content that catches people while they are still deciding. On Shopify or WooCommerce, the playbook is different but the goal is identical.",
+ "subcategories": [
+  "shopify-stores",
+  "woocommerce-stores"
+ ],
+ "faqs": [
+  {
+   "q": "How long does e-commerce SEO take to pay off?",
+   "a": "Technical fixes can move things within weeks, especially speed and duplicate-URL cleanup. Rankings and revenue compound over three to six months as the rebuilt product and collection pages settle in. The technical work pays off fastest; the content keeps paying longer."
+  },
+  {
+   "q": "Shopify or WooCommerce: which is better for SEO?",
+   "a": "WooCommerce can win because you control everything: URLs, schema, speed stack, content. But control only helps if someone uses it well, which is where most stores fall short. Shopify stores fight platform limits instead. Both are winnable; they just need different playbooks."
+  },
+  {
+   "q": "Do I need a blog for my store?",
+   "a": "Not a big unfocused one. Buyers search questions your products answer, and a small set of buying guides tied to your collections usually outperforms a sprawling blog. The guides catch people while they are still deciding and funnel them to your products."
+  },
+  {
+   "q": "Will SEO work break my store, theme, or apps?",
+   "a": "No. I work within your theme and keep every app or plugin you need. If something is killing your speed, I will show you the numbers and suggest a lighter alternative before touching anything, and on WooCommerce every meaningful change passes staging first."
+  },
+  {
+   "q": "Why don't my product pages rank?",
+   "a": "The usual suspects: descriptions copied from the supplier that Google has already seen elsewhere, thin collection pages above them passing no authority, duplicate URLs splitting your own rankings, or a slow store Google struggles to crawl. The audit finds which ones are hurting you, in order of impact."
+  },
+  {
+   "q": "How is e-commerce SEO different from regular SEO?",
+   "a": "It lives on product and category pages, faceted navigation, and buyer-intent content instead of articles and local listings. Every page has to rank and convert at the same time, and the technical layer is store-specific: carts, variants, filters, and feeds. It is a different playbook from local or content SEO."
+  },
+  {
+   "q": "What do you need from me to start?",
+   "a": "Admin access to your store, plus Search Console. On WooCommerce, hosting or FTP access helps for the speed work. I handle the audit, the fixes, and the content, document every change, and you approve and keep selling."
+  }
+ ]
+}

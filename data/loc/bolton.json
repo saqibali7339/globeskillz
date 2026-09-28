@@ -1,4 +1,54 @@
 {
+<<<<<<< HEAD
+  "slug": "bolton",
+  "place": "Bolton",
+  "keyword": "SEO Services Bolton",
+  "h1": "SEO Services Bolton: Own Your Town Before Manchester Does",
+  "intro": "If you run a business in Bolton, SEO services in Bolton are what decide whether local customers find you or the competitor down the road. Bolton is a proud Greater Manchester town with its own distinct market, from the historic market hall and town centre retail to the business parks along the M61, and people here search with Bolton-first intent. They do not want a Manchester agency result; they want someone local. My SEO services in Bolton are built for exactly that: Google Business Profile dominance, location pages that match how Bolton actually searches, and a website fast enough to convert the click. Whether you serve the town centre, Horwich, Westhoughton, or Farnworth, showing up first on Google is what fills the diary.",
+  "why": {
+    "heading": "Understanding Search Behavior in Bolton",
+    "body": "Bolton searches carry strong town-level intent. People type plumber Bolton or solicitor near me and expect genuinely local results, and Google rewards businesses with real Bolton relevance: reviews from Bolton customers, Bolton-area content, and a properly optimized local footprint. The town sits in Manchester's commuter shadow, which means many businesses compete both locally and against bigger Manchester agencies. Winning here means owning the Bolton map pack first, then expanding outward, not the other way around. Matchday traffic around the Toughsheet Community Stadium and the Middlebrook retail and leisure complex also creates distinct local search spikes smart businesses capture."
+  },
+  "section1": {
+    "heading": "Technical SEO Without the Jargon",
+    "body": "If Google cannot crawl, load, and understand your site fast, nothing else matters. I fix the foundations first: Core Web Vitals, mobile experience, crawlability, and clean site architecture. Most Bolton business sites I audit are slow, template-built websites quietly leaking enquiries every day. A fast, technically sound site is the platform everything else in your SEO services in Bolton campaign builds on."
+  },
+  "section2": {
+    "heading": "Content That Earns the Click",
+    "body": "Rankings without clicks are vanity. I build service and location content around the exact phrases your customers type, and every page is written to convert the visit into a call, booking, or quote request. Traffic that does not convert is just a hosting bill, so conversion is designed in from the first draft."
+  },
+  "facts": [
+    "A proud Greater Manchester town where searchers expect genuinely local results.",
+    "The Toughsheet Community Stadium and Middlebrook create distinct local search spikes.",
+    "Business parks along the M61 corridor widen the commercial catchment.",
+    "Competing against bigger Manchester agencies means owning the Bolton map pack first."
+  ],
+  "faqs": [
+    {
+      "q": "Can a Bolton business outrank Manchester agencies?",
+      "a": "In Bolton searches, yes, and regularly. Local relevance beats distant authority: a complete Bolton profile with local reviews will outrank a generic Manchester agency page for Bolton-intent searches."
+    },
+    {
+      "q": "How long does it take?",
+      "a": "Early movement in two to three months, meaningful change in four to six. The map pack often moves first, because that is where most competitors are weakest."
+    },
+    {
+      "q": "Do you understand the local market?",
+      "a": "That is the entire premise. Stadium spikes, Middlebrook retail patterns, the M61 business corridor: your campaign is built around how Bolton actually searches, not a template."
+    },
+    {
+      "q": "What do SEO services Bolton businesses pay each month?",
+      "a": "I price after the audit, based on your competition and goals. Sustained monthly work beats one-off fixes, and you will always know what the money does."
+    },
+    {
+      "q": "Is there a contract?",
+      "a": "No. Month to month, plain-English reporting. The work earns its place or you walk away."
+    }
+  ],
+  "meta": "SEO services Bolton: own the Bolton map pack before Manchester agencies do. Local specialist, plain-English reporting. Free audit.",
+  "subhead": "SEO services for Bolton businesses that want the local map pack."
+}
+=======
  "slug": "bolton",
  "place": "Bolton",
  "keyword": "SEO Services Bolton",
@@ -43,3 +93,4 @@
  "meta": "SEO Services Bolton: Local SEO for Bolton — rank higher on Google and turn searches into calls. Free audit.",
  "subhead": "Local SEO for Bolton — more calls, more bookings, more customers."
 }
+>>>>>>> origin/main

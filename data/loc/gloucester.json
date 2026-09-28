@@ -1,4 +1,14 @@
 {
+<<<<<<< HEAD
+  "slug": "gloucester",
+  "place": "Gloucester",
+  "keyword": "Best Gloucester SEO Specialists",
+  "h1": "The Best Gloucester SEO Specialists Work Like This",
+  "intro": "Finding the best SEO specialists in Gloucester should not feel like a gamble. Too many businesses have been burned by agencies that overpromised, underdelivered, and hid behind jargon-filled reports. I do things differently: senior-level SEO, done personally, with complete transparency about what I do and what it earns you.\n\nGloucester businesses — from the Docks to the Quays to the wider county — deserve SEO that treats their budget like it matters. That means a proper audit first, an honest strategy, and hands-on execution across technical SEO, content, and authority. No juniors, no lock-ins, no mystery.",
+  "why": {
+    "heading": "SEO in Gloucester Is Not Like SEO Anywhere Else",
+    "body": "A historic docks city where the Quays outlet draws regional shoppers. The cathedral and rugby club anchor tourism and event searches.\n\nAerospace and manufacturing employers around the city add B2B demand. Commuter links to Cheltenham split some professional-service searches. Businesses that understand this outperform those running generic national campaigns. City-level competition in the UK is intense, and Google's local pack decides most outcomes. Winning here means owning your map presence, your reviews, and your location pages — not just your homepage."
+=======
  "slug": "gloucester",
  "place": "Gloucester",
  "keyword": "Best Gloucester SEO specialists",
@@ -26,6 +36,7 @@
   {
    "q": "How do I choose the best SEO specialist in Gloucester?",
    "a": "Ask who does the actual work, ask to see a sample report, ask what happens if you cancel, and ask for a client you can call. Whoever you choose, those four questions reveal more than any sales pitch — and I answer all four plainly."
+>>>>>>> origin/main
   },
   {
    "q": "Do you guarantee page-one rankings in Gloucester?",
@@ -35,6 +46,39 @@
    "q": "Is local SEO different from regular SEO in Gloucester?",
    "a": "Yes — local SEO targets map rankings, local intent keywords, and review signals. Aerospace and manufacturing employers around the city add B2B demand, so a strategy built for local search outperforms generic national SEO here."
   },
+<<<<<<< HEAD
+  "facts": [
+    "A historic docks city where the Quays outlet draws regional shoppers.",
+    "The cathedral and rugby club anchor tourism and event searches.",
+    "Aerospace and manufacturing employers around the city add B2B demand.",
+    "Commuter links to Cheltenham split some professional-service searches."
+  ],
+  "faqs": [
+    {
+      "q": "How do I choose between Gloucester SEO specialists?",
+      "a": "Ask three questions: will I work directly with the person doing the work, what exactly will you do in the first month, and how will you report results. Vague answers to any of these are a red flag. I answer all three before you pay anything, starting with a free audit."
+    },
+    {
+      "q": "Is SEO worth it for a small Gloucester business?",
+      "a": "If your customers search on Google before buying, almost certainly. The Quays, the docks, and the city centre create concentrated local intent, which means a well-ranked local business can dominate its niche without a big budget. I will tell you honestly if your market is too thin to justify it."
+    },
+    {
+      "q": "Do you require long contracts?",
+      "a": "No. I work month to month. Long lock-ins protect agencies, not clients. My reports keep me accountable, and you stay because the numbers move, not because a contract says you must."
+    },
+    {
+      "q": "Can you help with my Google Business Profile?",
+      "a": "Yes, it is usually the first thing I fix. Categories, services, photos, review process, posts: the full profile optimised to win the map pack. For many Gloucester businesses this single job delivers the fastest visible improvement."
+    },
+    {
+      "q": "What makes you different from a Gloucester SEO agency?",
+      "a": "Agencies hand you to juniors and account managers. I am the strategist, the writer, and the technician. You get senior-level work at freelancer rates, one point of contact, and reports written in plain English instead of agency jargon."
+    }
+  ],
+  "meta": "Looking for the best Gloucester SEO specialists? I help Gloucester businesses rank higher on Google and win local customers. Free audit, no jargon.",
+  "subhead": "One specialist, no account managers: SEO for Gloucester businesses that want the top spots."
+}
+=======
   {
    "q": "Can I do SEO for my Gloucester business myself?",
    "a": "You can handle basics like claiming listings and asking for reviews. But commuter links to Cheltenham split some professional-service searches, which is exactly where professional SEO earns its keep — technical fixes, content, and authority building."
@@ -47,3 +91,4 @@
  "meta": "Best Gloucester SEO specialists: Local SEO for Gloucester — rank higher on Google and turn searches into calls. Free audit.",
  "subhead": "Local SEO for Gloucester — more calls, more bookings, more customers."
 }
+>>>>>>> origin/main

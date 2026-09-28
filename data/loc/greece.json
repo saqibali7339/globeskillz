@@ -2,7 +2,11 @@
  "slug": "greece",
  "place": "Greece",
  "keyword": "SEO expert in Greece",
+<<<<<<< HEAD
+ "h1": "SEO Expert in Greece for Businesses That Live on Summer",
+=======
  "h1": "Greece SEO Expert for Businesses That Want Real Growth",
+>>>>>>> origin/main
  "intro": "Running a business in Greece means competing in a market with its own rules. Local customers search with local intent, and generic, one-size-fits-all SEO simply does not cut it here. Greek-language search dominates, using the Greek alphabet for local queries. Athens holds business while the islands create a fragmented tourism market. Summer tourism causes extreme seasonal swings in hospitality searches. Shipping and family businesses shape a relationship-driven B2B culture. Smart SEO for Greece does not chase vanity rankings; it targets the searches that bring paying customers through your door. Local SEO is a long game, but every month of consistent work compounds: better rankings bring more calls, more calls bring more reviews, and more reviews push rankings higher still. Businesses that commit to the process pull away from competitors that dabble.",
  "why": {
   "heading": "SEO in Greece Is Not Like SEO Anywhere Else",
@@ -25,6 +29,25 @@
  "faqs": [
   {
    "q": "Is local SEO different from regular SEO in Greece?",
+<<<<<<< HEAD
+   "a": "Yes. Local SEO wins the map pack and Greek-language local searches; generic SEO chases broad traffic that rarely converts for local businesses. In Greece's seasonal economy, timing matters too: the two disciplines need different calendars."
+  },
+  {
+   "q": "Can I do SEO for my Greek business myself?",
+   "a": "The basics are manageable: claim your profile, gather reviews, keep information accurate in Greek. The technical work, Greek keyword research, and seasonal content planning are where a specialist earns their keep."
+  },
+  {
+   "q": "Why is my competitor outranking me in Greece?",
+   "a": "Usually stronger Greek-language relevance, more reviews, or better seasonal preparation. I audit all three and show you which gap is actually costing you customers, so we fix the right thing first."
+  },
+  {
+   "q": "Do I need a Google Business Profile in Greece?",
+   "a": "Yes, it is free and decisive for local searches. Tourists rely on it heavily: reviews, photos, and accurate hours in both Greek and English will win you bookings that a website alone cannot."
+  }
+ ],
+ "meta": "SEO expert in Greece: Greek-language local SEO that fills your summer season and keeps winter bookings coming. Free audit to start.",
+ "subhead": "Greek-language SEO that fills your high season and keeps winter from going quiet."
+=======
    "a": "Yes — local SEO targets map rankings, local intent keywords, and review signals. Summer tourism causes extreme seasonal swings in hospitality searches, so a strategy built for local search outperforms generic national SEO here."
   },
   {
@@ -42,4 +65,5 @@
  ],
  "meta": "SEO expert in Greece: Local SEO for Greece — rank higher on Google and turn searches into calls. Free audit.",
  "subhead": "Local SEO for Greece — more calls, more bookings, more customers."
+>>>>>>> origin/main
 }

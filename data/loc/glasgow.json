@@ -1,4 +1,14 @@
 {
+<<<<<<< HEAD
+  "slug": "glasgow",
+  "place": "Glasgow",
+  "keyword": "Glasgow SEO Services",
+  "h1": "Glasgow SEO Services Built for the Map Pack",
+  "intro": "My Glasgow SEO services help local businesses stand out in Scotland’s biggest and most competitive market. From the West End to the Southside, Glasgow customers search Google before they buy — and the businesses on page one get the calls while everyone else fights for scraps.\n\nI provide senior-level SEO directly: no agency layers, no junior staff learning on your budget. Technical fixes, content built around how Glaswegians actually search, and genuine backlinks from relevant websites. Transparent monthly reporting shows exactly what your investment earned.",
+  "why": {
+    "heading": "Why Generic SEO Fails in Glasgow",
+    "body": "Scotland's largest city, with a music and nightlife scene that drives entertainment searches. Shipbuilding past gave way to business services, retail and a growing digital sector.\n\nDistinct neighbourhoods like the West End and Merchant City anchor hyperlocal SEO. Football rivalries and concert venues create predictable spikes in local search demand. Businesses that understand this outperform those running generic national campaigns. City-level competition in the UK is intense, and Google's local pack decides most outcomes. Winning here means owning your map presence, your reviews, and your location pages — not just your homepage."
+=======
  "slug": "glasgow",
  "place": "Glasgow",
  "keyword": "Glasgow SEO services",
@@ -26,6 +36,7 @@
   {
    "q": "Why choose a freelancer over a Glasgow SEO agency?",
    "a": "You get the senior expert directly, faster decisions, and pricing where your budget buys actual SEO work instead of account management overhead. For most small and mid-size businesses, that means better results per pound."
+>>>>>>> origin/main
   },
   {
    "q": "Can you help my Glasgow business rank across Scotland?",
@@ -35,6 +46,39 @@
    "q": "Is local SEO different from regular SEO in Glasgow?",
    "a": "Yes — local SEO targets map rankings, local intent keywords, and review signals. Distinct neighbourhoods like the West End and Merchant City anchor hyperlocal SEO, so a strategy built for local search outperforms generic national SEO here."
   },
+<<<<<<< HEAD
+  "facts": [
+    "Scotland's largest city, with a music and nightlife scene that drives entertainment searches.",
+    "Shipbuilding past gave way to business services, retail and a growing digital sector.",
+    "Distinct neighbourhoods like the West End and Merchant City anchor hyperlocal SEO.",
+    "Football rivalries and concert venues create predictable spikes in local search demand."
+  ],
+  "faqs": [
+    {
+      "q": "How competitive is SEO in Glasgow?",
+      "a": "Very, in the centre and hospitality. But neighbourhood and trade niches have real openings, and most competitors neglect their profiles, which is the fastest gap to close."
+    },
+    {
+      "q": "How long until I rank?",
+      "a": "Early movement in two to three months, meaningful change in four to six. Dense niches take longer; the audit will give you an honest read on your specific market."
+    },
+    {
+      "q": "Do you only work with Glasgow businesses?",
+      "a": "No, I work across the UK and worldwide, but every market gets its own strategy. Glasgow targeting looks nothing like my Edinburgh work, and that is the point."
+    },
+    {
+      "q": "How do Glasgow SEO services usually report results?",
+      "a": "Rankings for the keywords that matter, calls and enquiries, what I did, what is next. Plain English, no vanity metrics, no 40-page PDFs."
+    },
+    {
+      "q": "Can you fix a suspended Business Profile?",
+      "a": "Often, yes. Suspensions usually come from guideline violations or bad edits. I diagnose the cause, fix it properly, and handle the reinstatement process."
+    }
+  ],
+  "meta": "Glasgow SEO services: win the map pack from the West End to the Southside. Local specialist with honest monthly reporting. Free audit.",
+  "subhead": "Glasgow SEO services that win the searches that matter."
+}
+=======
   {
    "q": "Can I do SEO for my Glasgow business myself?",
    "a": "You can handle basics like claiming listings and asking for reviews. But football rivalries and concert venues create predictable spikes in local search demand, which is exactly where professional SEO earns its keep — technical fixes, content, and authority building."
@@ -47,3 +91,4 @@
  "meta": "Glasgow SEO services: Local SEO for Glasgow — rank higher on Google and turn searches into calls. Free audit.",
  "subhead": "Local SEO for Glasgow — more calls, more bookings, more customers."
 }
+>>>>>>> origin/main

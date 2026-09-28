@@ -1,4 +1,14 @@
 {
+<<<<<<< HEAD
+  "slug": "birmingham",
+  "place": "Birmingham",
+  "keyword": "SEO Company Birmingham",
+  "h1": "SEO Company Birmingham Owners Call When Rankings Stall",
+  "intro": "As an SEO company working with Birmingham businesses, I know how competitive the UK’s second city is online. From the Jewellery Quarter to Digbeth startups to established firms across the West Midlands, everyone is fighting for the same page-one spots — and most are losing to competitors with better SEO.\n\nI help Birmingham businesses win that fight. Direct, senior-level SEO with no account managers and no junior handoffs: technical fixes, content that ranks, and real backlinks from relevant sites. You always know exactly what was done and what it earned you.",
+  "why": {
+    "heading": "Why Generic SEO Fails in Birmingham",
+    "body": "The West Midlands' commercial hub with strong manufacturing and professional services. Neighbourhoods like Digbeth, Moseley, and Sutton Coldfield each need separate targeting.\n\nA large commuter catchment across the Black Country widens the 'near me' radius. Balti Triangle fame and a big student population fuel food and nightlife searches. Businesses that understand this outperform those running generic national campaigns. City-level competition in the UK is intense, and Google's local pack decides most outcomes. Winning here means owning your map presence, your reviews, and your location pages — not just your homepage."
+=======
  "slug": "birmingham",
  "place": "Birmingham",
  "keyword": "SEO company Birmingham",
@@ -26,6 +36,7 @@
   {
    "q": "What makes your SEO company different from Birmingham agencies?",
    "a": "You work directly with the senior specialist doing the work — not through account managers, and never handed to juniors. Your budget buys SEO execution, not agency overhead, which usually means more results per pound."
+>>>>>>> origin/main
   },
   {
    "q": "Do you only work with Birmingham businesses?",
@@ -35,6 +46,39 @@
    "q": "Is local SEO different from regular SEO in Birmingham?",
    "a": "Yes — local SEO targets map rankings, local intent keywords, and review signals. A large commuter catchment across the Black Country widens the 'near me' radius, so a strategy built for local search outperforms generic national SEO here."
   },
+<<<<<<< HEAD
+  "facts": [
+    "The West Midlands' commercial hub with strong manufacturing and professional services.",
+    "Neighbourhoods like Digbeth, Moseley, and Sutton Coldfield each need separate targeting.",
+    "A large commuter catchment across the Black Country widens the 'near me' radius.",
+    "Balti Triangle fame and a big student population fuel food and nightlife searches."
+  ],
+  "faqs": [
+    {
+      "q": "How much does SEO cost in Birmingham?",
+      "a": "It depends on your competition, but most serious local campaigns need sustained monthly work. I price honestly after the audit, and you will know exactly what the money does. Beware anyone quoting a fixed price before looking at your market."
+    },
+    {
+      "q": "How long until I see results?",
+      "a": "Early movement in two to three months is typical, with meaningful change in four to six. Competitive niches in the city centre take longer; suburban and trade niches can move faster."
+    },
+    {
+      "q": "Do I need to target specific Birmingham neighbourhoods?",
+      "a": "Usually yes. Digbeth searches behave differently from Sutton Coldfield searches, and neighbourhood terms convert better because the intent is sharper. I build targeting around where your customers actually are."
+    },
+    {
+      "q": "Why pick your SEO company Birmingham over a bigger agency?",
+      "a": "I am one person, you talk to me directly, and my reporting ties work to enquiries rather than vanity metrics. Month to month, no lock-in, plain English throughout."
+    },
+    {
+      "q": "Can you help if I also serve the Black Country?",
+      "a": "Absolutely. Wolverhampton, Walsall and Dudley each get honest, distinct targeting as part of the same campaign, since the catchment overlaps heavily."
+    }
+  ],
+  "meta": "SEO company Birmingham: local SEO for Brum businesses that want calls, not reports. Neighbourhood-level targeting, honest pricing. Free audit.",
+  "subhead": "Local SEO for Birmingham businesses that brings in real enquiries."
+}
+=======
   {
    "q": "Can I do SEO for my Birmingham business myself?",
    "a": "You can handle basics like claiming listings and asking for reviews. But balti Triangle fame and a big student population fuel food and nightlife searches, which is exactly where professional SEO earns its keep — technical fixes, content, and authority building."
@@ -47,3 +91,4 @@
  "meta": "SEO company Birmingham: Local SEO for Birmingham — rank higher on Google and turn searches into calls. Free audit.",
  "subhead": "Local SEO for Birmingham — more calls, more bookings, more customers."
 }
+>>>>>>> origin/main

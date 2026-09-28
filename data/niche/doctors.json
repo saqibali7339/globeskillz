@@ -1,5 +1,60 @@
 {
  "slug": "doctors",
+<<<<<<< HEAD
+ "place": "doctors",
+ "keyword": "SEO for doctors",
+ "h1": "SEO for Doctors That Fills Appointment Books",
+ "subhead": "Trusted visibility for your practice, on Google and beyond.",
+ "meta": "SEO for doctors: rank higher for your specialty, help patients find and trust your practice. Free audit, no obligations.",
+ "intro": "Patients choose doctors the way they choose everything else now: they search. Symptoms, conditions, 'best cardiologist near me', and they judge your practice by what they find. Medical SEO operates under Google's strictest quality standards, because health information affects lives. That means thin content and generic clinic pages do not just underperform, they can actively undermine trust. I build medical practices a web presence that ranks and reassures: accurate, expert-reviewed content and profiles that make choosing you the easy decision.",
+ "why": {
+  "heading": "How patients find a doctor",
+  "body": "The patient journey usually starts with a condition or symptom search, moves to comparing specialists, and ends with practical checks: location, availability, insurance, reviews. Google holds health content to its highest standard, favoring content with clear expertise behind it. Your profiles matter enormously: Healthgrades, Zocdoc, Google, patients cross-check everywhere. The practices that win make every one of those touchpoints consistent, credible, and easy to act on."
+ },
+ "section1": {
+  "heading": "Condition and treatment pages that rank",
+  "body": "I build dedicated pages for the conditions you treat and the procedures you perform, written in language patients understand and structured around their real questions. Every medical claim is drafted for your review, because accuracy is non-negotiable and you sign off on all of it. Doctor bio pages get proper depth: credentials, special interests, philosophy of care, because patients choose people. This content earns rankings because it genuinely serves the searcher, which is exactly what Google wants for health queries."
+ },
+ "section2": {
+  "heading": "Profiles, reviews, and local trust",
+  "body": "Your Google Business Profile, health directories, and review footprint get rebuilt consistently: correct specialties, services, hours, insurance information, and real photos of your practice. Patient reviews are handled carefully and within healthcare rules: I set up compliant ways to encourage feedback and respond professionally. Local SEO ties it together so 'near me' searches for your specialty surface your practice first. The goal is simple: when a patient compares you against two alternatives, you are the obvious choice."
+ },
+ "facts": [
+  "Google applies its strictest quality standards to health and medical content.",
+  "Most patients research conditions online before choosing a specialist.",
+  "Patients cross-check doctors across Google, health directories, and review sites.",
+  "Doctor bio pages heavily influence which practice a patient contacts.",
+  "Healthcare review solicitation must follow strict compliance rules."
+ ],
+ "faqs": [
+  {
+   "q": "Is medical SEO different from regular SEO?",
+   "a": "The foundations are the same, but health content faces stricter quality evaluation and every medical claim has to be accurate and expert-approved. The bar is higher, so the process is more careful. That is the whole difference."
+  },
+  {
+   "q": "Who writes the medical content?",
+   "a": "I draft it from reputable sources and your input, then you or your clinical lead approves every word before publication. Nothing medical goes live without a qualified sign-off."
+  },
+  {
+   "q": "Can you help us get more patient reviews?",
+   "a": "Yes, using compliant methods only. I set up ethical review flows and response templates that respect healthcare regulations: no incentives, no cherry-picking, and no responses that reveal anything about a patient's care."
+  },
+  {
+   "q": "How long before SEO brings new patients?",
+   "a": "Typically four to eight months for competitive specialties, with local and profile work often moving sooner. Medical SEO is slow by design, because trust is built carefully, not manufactured."
+  },
+  {
+   "q": "Do you work with single-doctor practices?",
+   "a": "Yes. Smaller practices often have an advantage: a real doctor's voice and genuine expertise beat corporate clinic copy every time."
+  },
+  {
+   "q": "Will you promise a number of new patients?",
+   "a": "No. I will not promise patient volumes or specific ranking positions to anyone, in any industry. What you get is honest work, clear reporting, and content your peers would respect."
+  }
+ ],
+ "niche": "doctors"
+}
+=======
  "niche": "doctors",
  "keyword": "SEO expert for doctors",
  "h1": "Doctors SEO Expert That Turns Searches into Paying Clients",
@@ -43,3 +98,4 @@
  "meta": "SEO expert for doctors: Turn searches into enquiries — technical SEO, content and links that win customers. Free audit.",
  "subhead": "SEO for doctors — more visibility, more enquiries, more work."
 }
+>>>>>>> origin/main

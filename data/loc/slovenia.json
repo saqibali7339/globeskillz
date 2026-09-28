@@ -2,7 +2,11 @@
  "slug": "slovenia",
  "place": "Slovenia",
  "keyword": "SEO expert in Slovenia",
+<<<<<<< HEAD
+ "h1": "SEO Expert in Slovenia: Small Country, Big Search Opportunity",
+=======
  "h1": "SEO Expert in Slovenia for Companies Tired of Being Invisible Online",
+>>>>>>> origin/main
  "intro": "Slovenia is a market where being found online decides who grows and who stalls. Every day, potential customers search for exactly what you offer — the only question is whether they find you or a competitor. Slovenian dominates search, though English proficiency is solid. Ljubljana concentrates business while Maribor anchors the eastern market. Tourism around Lake Bled and the coast drives strong seasonal search. Small market where a handful of rankings decides most local visibility. That is where specialist SEO for Slovenia comes in: a strategy built around how this market actually searches, built to turn rankings into revenue. Local SEO is a long game, but every month of consistent work compounds: better rankings bring more calls, more calls bring more reviews, and more reviews push rankings higher still. Businesses that commit to the process pull away from competitors that dabble.",
  "why": {
   "heading": "What Makes SEO Different in Slovenia",
@@ -24,6 +28,27 @@
  ],
  "faqs": [
   {
+<<<<<<< HEAD
+   "q": "Is Slovenia too small for SEO to matter?",
+   "a": "Small is an advantage. With two million people, a focused business can achieve near-total visibility in its trade with proper Slovenian pages, a finished profile, and steady reviews. The investment is modest and the market share available is large."
+  },
+  {
+   "q": "How long does SEO take in Slovenia?",
+   "a": "Faster than in most of Europe. Early movement in 6 to 10 weeks is typical, with solid results in 3 to 5 months, because so few Slovenian businesses have proper Slovenian-language SEO. Ljubljana takes a little longer than the rest of the country."
+  },
+  {
+   "q": "Should my site be in Slovenian only?",
+   "a": "Slovenian is the foundation for local customers. Add Italian for the coast, German for the northern border, and English for tourism, matched to who actually buys from you. Each language is a separate ranking opportunity most competitors ignore."
+  },
+  {
+   "q": "How do I handle the tourist seasons?",
+   "a": "Plan backwards. Decide which summer or winter keywords must rank, then do the content and profile work 4 to 6 months before the season. Seasonal SEO rewards the businesses that build in the quiet months."
+  }
+ ],
+ "meta": "SEO expert in Slovenia: Slovenian-language local SEO for a small market where a few rankings decide everything. Free audit.",
+ "subhead": "Slovenian-language SEO for Ljubljana, Maribor and the coast."
+}
+=======
    "q": "Why is my competitor outranking me in Slovenia?",
    "a": "Usually it comes down to stronger reviews, better local relevance, or more authoritative content. Slovenian dominates search, though English proficiency is solid, and a proper audit reveals the exact gaps to close."
   },
@@ -43,3 +68,4 @@
  "meta": "SEO expert in Slovenia: Local SEO for Slovenia — rank higher on Google and turn searches into calls. Free audit.",
  "subhead": "Local SEO for Slovenia — more calls, more bookings, more customers."
 }
+>>>>>>> origin/main

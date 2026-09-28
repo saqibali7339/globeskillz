@@ -2,7 +2,11 @@
  "slug": "sweden",
  "place": "Sweden",
  "keyword": "SEO expert in Sweden",
+<<<<<<< HEAD
+ "h1": "SEO Expert in Sweden: Turn Local Searches into Paying Customers",
+=======
  "h1": "SEO Expert in Sweden: Rank Higher, Win More Local Customers",
+>>>>>>> origin/main
  "intro": "If you run a business in Sweden, you already know visibility is everything. Customers here search online before they call, visit, or buy — and the businesses at the top of Google get the lion's share of that demand. Swedish dominates local search despite near-universal English proficiency. Stockholm leads, with Gothenburg and Malmö as strong regional markets. Tech startups, design and engineering exports define the business landscape. Highly digital shoppers rely heavily on reviews and price comparison. The businesses winning in Sweden right now are the ones that invested in local SEO early. There is still room at the top — but not for long.",
  "why": {
   "heading": "Why Generic SEO Fails in Sweden",
@@ -24,6 +28,31 @@
  ],
  "faqs": [
   {
+<<<<<<< HEAD
+   "q": "How long does SEO take to work in Sweden?",
+   "a": "Most Swedish businesses see early movement in 2 to 3 months and meaningful results in 4 to 6. Stockholm's competitive keywords take longer; Gothenburg, Malmö, and regional markets often move faster because fewer businesses invest properly in Swedish-language SEO."
+  },
+  {
+   "q": "Should my website be in Swedish or English?",
+   "a": "Swedish, for anything targeting local customers. Nearly all local searches in Sweden happen in Swedish, even though most Swedes speak excellent English. An English version is a fine extra for B2B or international clients, but the Swedish pages do the ranking work."
+  },
+  {
+   "q": "Do Swedes use Google, or a local search engine?",
+   "a": "Google dominates completely. Unlike some European markets with strong local engines, Sweden is a Google market, which keeps the technical playbook familiar: Business Profile, reviews, Swedish content, and clean site structure."
+  },
+  {
+   "q": "How important are reviews for ranking in Sweden?",
+   "a": "Very. Swedish buyers research heavily before contacting anyone, and Google weighs review quantity, recency, and responses in local rankings. A steady flow of genuine Swedish-language reviews is one of the highest-leverage things a local business can build."
+  },
+  {
+   "q": "Can you help a business outside Stockholm?",
+   "a": "Yes, and those are often my favourite projects. Competition outside Stockholm is thinner, so focused Swedish-language local SEO in Gothenburg, Malmö, Uppsala, or further north can win page one faster than most owners expect."
+  }
+ ],
+ "meta": "SEO expert in Sweden: I help Swedish businesses rank on Google with local SEO in Swedish, winning more calls and bookings. Free audit.",
+ "subhead": "Swedish-language local SEO for businesses that want the phone to ring."
+}
+=======
    "q": "Is local SEO different from regular SEO in Sweden?",
    "a": "Yes — local SEO targets map rankings, local intent keywords, and review signals. Tech startups, design and engineering exports define the business landscape, so a strategy built for local search outperforms generic national SEO here."
   },
@@ -43,3 +72,4 @@
  "meta": "SEO expert in Sweden: Local SEO for Sweden — rank higher on Google and turn searches into calls. Free audit.",
  "subhead": "Local SEO for Sweden — more calls, more bookings, more customers."
 }
+>>>>>>> origin/main

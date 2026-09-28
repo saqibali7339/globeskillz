@@ -1,8 +1,13 @@
 {
  "slug": "towing-companies",
  "niche": "towing companies",
+<<<<<<< HEAD
+ "keyword": "SEO for towing companies",
+ "h1": "SEO for towing companies that wins the 2am search",
+=======
  "keyword": "SEO expert for towing companies",
  "h1": "Grow Your towing companies Business with Expert SEO Built for Your Industry",
+>>>>>>> origin/main
  "intro": "Marketing a towing company is nothing like marketing a generic local business. Your clients research carefully, compare options, and trust signals matter more than slogans. Stranded driver searches happen on phones at night, so local pack ranking is survival. Impound and private property tow pages target the B2B contracts consumers never see. Flatbed and long-distance tow keywords signal premium jobs beyond basic jumpstarts. Upfront per-mile pricing content converts because stranded drivers fear price gouging. With industry-specific SEO, your towing company can own the searches that matter instead of fighting for scraps. Local SEO is a long game, but every month of consistent work compounds: better rankings bring more calls, more calls bring more reviews, and more reviews push rankings higher still. Businesses that commit to the process pull away from competitors that dabble.",
  "why": {
   "heading": "SEO for Towing companies Is Not Like SEO for Other Businesses",
@@ -10,7 +15,11 @@
  },
  "section1": {
   "heading": "What Top Towing companies Are Doing Online",
+<<<<<<< HEAD
+  "body": "Someone in your market is already winning the searches you want. Stranded driver searches happen on phones at night, so local pack ranking is survival. We reverse-engineer exactly why they rank: their keywords, content, links, and reviews \u2014 then build a plan to beat them at their own game, gap by gap."
+=======
   "body": "Someone in your market is already winning the searches you want. Stranded driver searches happen on phones at night, so local pack ranking is survival. We reverse-engineer exactly why they rank: their keywords, content, links, and reviews — then build a plan to beat them at their own game, gap by gap."
+>>>>>>> origin/main
  },
  "section2": {
   "heading": "Reviews That Actually Win Clients",
@@ -24,6 +33,42 @@
  ],
  "faqs": [
   {
+<<<<<<< HEAD
+   "q": "How fast can SEO work for a towing company?",
+   "a": "Faster than in most trades, because the intent is so urgent. A fixed Google Business Profile, click-to-call pages, and service-area clarity can move the needle in weeks for near me searches. Competitive metro markets take longer, but emergency intent means every position you gain converts immediately."
+  },
+  {
+   "q": "What keywords should a towing company target?",
+   "a": "The money is in urgent, specific searches: tow truck near me, 24 hour towing, accident recovery, motorcycle towing, plus each job type combined with the towns you serve. Broad terms matter less than the exact phrase a stranded driver types at 2am."
+  },
+  {
+   "q": "Is roadside assistance SEO different from towing SEO?",
+   "a": "Yes, and that is why it has its own section on this page. Towing keywords centre on moving the vehicle, while roadside keywords centre on fixing it on the spot: jump start, lockout service, fuel delivery. The pages, the proof points, and the caller's mindset all differ, so they get separate pages and separate proof."
+  },
+  {
+   "q": "Do I need separate pages for each town I serve?",
+   "a": "Yes, but they must be real pages, not cloned templates with the town name swapped. Each service-area page should mention the corridors, landmarks, and job types relevant to that town. Thin doorway pages hurt you; genuinely useful local pages rank."
+  },
+  {
+   "q": "How do I compete with the big motoring clubs on roadside calls?",
+   "a": "You do not compete on brand; you compete on speed and locality. Club members wait in a dispatch queue. Your advantage is a direct phone number, faster arrival, and near me visibility at the exact moment of need. SEO puts you in front of non-members and lapsed members the clubs never see."
+  },
+  {
+   "q": "How important are reviews for towing SEO?",
+   "a": "Critical. Reviews are the trust signal a stressed searcher reads before calling, and review velocity plus words like fast and arrived quickly feed directly into map rankings. A steady flow of recent, detailed reviews is the single highest-leverage activity for most towers."
+  },
+  {
+   "q": "Should I pay for ads or invest in SEO?",
+   "a": "Ads buy you tonight's calls at a price that rises every year. SEO builds an asset that keeps ringing without a per-click cost. Most towing companies I work with do both at first, then lean harder into organic as the rankings compound."
+  }
+ ],
+ "meta": "SEO for towing companies: own the map pack for urgent tow searches and roadside assistance callouts. Get found first. Free audit.",
+ "subhead": "Towing SEO plus roadside assistance: own the urgent searches in your service area.",
+ "subcategories": [
+  "roadside-assistance-companies"
+ ]
+}
+=======
    "q": "Do towing companies really get clients from Google?",
    "a": "Yes — Flatbed and long-distance tow keywords signal premium jobs beyond basic jumpstarts. Search captures clients at the exact moment they decide to act, which is why organic leads close at such high rates."
   },
@@ -43,3 +88,4 @@
  "meta": "SEO expert for towing companies: Turn searches into enquiries — technical SEO, content and links that win customers. Free audit.",
  "subhead": "SEO for towing companies — more visibility, more enquiries, more work."
 }
+>>>>>>> origin/main

@@ -2,7 +2,11 @@
  "slug": "ireland",
  "place": "Ireland",
  "keyword": "Monthly local SEO packages Ireland",
+<<<<<<< HEAD
+ "h1": "Monthly Local SEO Packages in Ireland With No Lock-In",
+=======
  "h1": "Local SEO Packages for Ireland, Monthly & Transparent",
+>>>>>>> origin/main
  "intro": "My monthly local SEO packages for Ireland give businesses across the Emerald Isle — from Dublin to Cork, Galway to Limerick — a clear, affordable path to local Google dominance. No lock-in contracts, no mystery deliverables: just published monthly work that moves your Maps rankings, reviews, and local visibility.\n\nEach package includes Google Business Profile optimization, local citation building, review strategy, and location content — scaled to your market’s competitiveness. You will see every deliverable in a plain-English monthly report, and you can upgrade, downgrade, or cancel any month.",
  "why": {
   "heading": "The Ireland Search Market Plays by Its Own Rules",
@@ -25,6 +29,29 @@
  "faqs": [
   {
    "q": "What do your monthly local SEO packages in Ireland include?",
+<<<<<<< HEAD
+   "a": "Google Business Profile management, citation building and cleanup, a review strategy, on-page optimisation for your key local searches, one solid content piece per month, local link building, and a plain-English report. Everything is itemised, so you always know what the month bought."
+  },
+  {
+   "q": "Is there a long-term contract on Ireland SEO packages?",
+   "a": "No. All packages are month to month. I earn your business every 30 days with visible work and honest reporting. If I am not delivering value, you should be free to leave, and I would rather keep you with results than with paperwork."
+  },
+  {
+   "q": "How long until I see results in Ireland?",
+   "a": "Most Irish businesses see early movement in 2 to 3 months and meaningful results in 4 to 6 months. Ireland's smaller market is actually an advantage here: fewer entrenched competitors means well-executed local SEO wins faster than in bigger countries."
+  },
+  {
+   "q": "How much do monthly SEO packages cost in Ireland?",
+   "a": "Pricing depends on your market and competition, and it is published openly on this site rather than hidden behind a sales call. Every engagement starts with a free audit, so you will see exactly what needs doing before choosing a package."
+  },
+  {
+   "q": "Can I just do local SEO myself in Ireland?",
+   "a": "You can cover the basics: claim your profile, ask for reviews, keep your site updated. The package exists for everything after that: the technical work, the content, the citations, and the consistency most owners cannot sustain alongside running a business."
+  }
+ ],
+ "meta": "Monthly local SEO packages Ireland: one clear plan each month covering your profile, citations, reviews, and content. No lock-in. Free audit.",
+ "subhead": "One clear monthly package. Everything done for you, reported in plain English."
+=======
    "a": "Google Business Profile management, local citations, review strategy, location page optimization, and monthly reporting — scaled by tier. Every package lists its exact deliverables before you commit."
   },
   {
@@ -46,4 +73,5 @@
  ],
  "meta": "Monthly local SEO packages Ireland: Local SEO for Ireland — rank higher on Google and turn searches into calls. Free audit.",
  "subhead": "Local SEO for Ireland — more calls, more bookings, more customers."
+>>>>>>> origin/main
 }

@@ -1,20 +1,34 @@
 {
  "slug": "tattoo-artists",
  "niche": "tattoo artists",
+<<<<<<< HEAD
+ "keyword": "SEO Expert for Tattoo Artists",
+ "h1": "SEO Expert for Tattoo Artists Who Win Dream Clients",
+ "intro": "Clients looking for a tattoo artist start with Google almost every time. Ranking well is not a nice-to-have in this industry \u2014 it is how the phone keeps ringing. Style-specific portfolios (fine-line, realism, traditional) rank the bookings. Artist Instagram following often matters more than Google rankings. Flash-day and guest-spot announcements create recurring search demand. Aftercare and healing content captures post-booking traffic that converts followers. That is why tattoo artists businesses need an SEO approach designed around how their clients actually search, compare, and choose. Local SEO is a long game, but every month of consistent work compounds: better rankings bring more calls, more calls bring more reviews, and more reviews push rankings higher still. Businesses that commit to the process pull away from competitors that dabble.",
+=======
  "keyword": "SEO expert for tattoo artists",
  "h1": "SEO Expert for tattoo artists — Dominate Local Search in Your Field",
  "intro": "Clients looking for a tattoo artist start with Google almost every time. Ranking well is not a nice-to-have in this industry — it is how the phone keeps ringing. Style-specific portfolios (fine-line, realism, traditional) rank the bookings. Artist Instagram following often matters more than Google rankings. Flash-day and guest-spot announcements create recurring search demand. Aftercare and healing content captures post-booking traffic that converts followers. That is why tattoo artists businesses need an SEO approach designed around how their clients actually search, compare, and choose. Local SEO is a long game, but every month of consistent work compounds: better rankings bring more calls, more calls bring more reviews, and more reviews push rankings higher still. Businesses that commit to the process pull away from competitors that dabble.",
+>>>>>>> origin/main
  "why": {
   "heading": "What Makes Tattoo artists SEO Different",
   "body": "Style-specific portfolios (fine-line, realism, traditional) rank the bookings. Artist Instagram following often matters more than Google rankings.\n\nFlash-day and guest-spot announcements create recurring search demand. Aftercare and healing content captures post-booking traffic that converts followers. SEO that respects these realities wins clients; SEO that ignores them burns budget."
  },
  "section1": {
   "heading": "Google Business Profile, Done Properly",
+<<<<<<< HEAD
+  "body": "Your Google Business Profile is your hardest-working salesperson: it shows your hours, services, photos, and reviews before anyone visits your site. Artist Instagram following often matters more than Google rankings. We tune every field \u2014 categories, services, attributes, posts, and Q&A \u2014 so the profile converts searchers instead of just existing."
+ },
+ "section2": {
+  "heading": "Technical SEO Without the Jargon",
+  "body": "If Google cannot crawl, load, and understand your site fast, nothing else matters. Artist Instagram following often matters more than Google rankings. We fix the foundations: site speed, mobile experience, structured data, and clean architecture \u2014 the unglamorous work that makes every other tactic perform better."
+=======
   "body": "Your Google Business Profile is your hardest-working salesperson: it shows your hours, services, photos, and reviews before anyone visits your site. Artist Instagram following often matters more than Google rankings. We tune every field — categories, services, attributes, posts, and Q&A — so the profile converts searchers instead of just existing."
  },
  "section2": {
   "heading": "Technical SEO Without the Jargon",
   "body": "If Google cannot crawl, load, and understand your site fast, nothing else matters. Artist Instagram following often matters more than Google rankings. We fix the foundations: site speed, mobile experience, structured data, and clean architecture — the unglamorous work that makes every other tactic perform better."
+>>>>>>> origin/main
  },
  "facts": [
   "Style-specific portfolios (fine-line, realism, traditional) rank the bookings.",
@@ -24,6 +38,35 @@
  ],
  "faqs": [
   {
+<<<<<<< HEAD
+   "q": "Will SEO bring me the right style of clients, or just anyone?",
+   "a": "The right ones, because style pages filter for you. A client who lands on your blackwork page and books a consultation already wants blackwork. That is the whole point of style-led SEO: it pre-qualifies clients before they ever message you, so you spend less time declining mismatched projects."
+  },
+  {
+   "q": "How long does tattoo SEO take?",
+   "a": "Style pages can start ranking within two to four months in most cities, because competition for specific styles is thinner than you would expect. Most studios never built these pages, so the field is open. Broader terms take longer, but the style pages are where the dream clients come from anyway."
+  },
+  {
+   "q": "I am already fully booked. Why would I need SEO?",
+   "a": "Two reasons: selectivity and security. Selectivity means a waitlist of ideal projects instead of whoever walks in, so you can raise rates and choose work you love. Security means the bookings keep coming when Instagram reach dips or a slow season hits. Fully booked today is the best time to build the pipeline."
+  },
+  {
+   "q": "Do I still need Instagram if my site ranks?",
+   "a": "Yes, they do different jobs. Instagram is your living portfolio and where clients check you are active. Google is where new clients with intent find you. The artists winning right now run both: Instagram for proof of life, search for a steady flow of consultations."
+  },
+  {
+   "q": "Can SEO help with flash days and events?",
+   "a": "Absolutely. A dedicated page for a flash day captures timely searches and gives people something to share and link to. Single flash day pages have pulled in dozens of bookings, because nobody else in the city bothers to build one."
+  },
+  {
+   "q": "My studio has several artists. Should each have their own page?",
+   "a": "Yes. Each resident artist deserves a dedicated page with their style, healed portfolio, and booking path. These pages rank for style-plus-city searches and for the artist's name, turning your roster into a set of landing pages instead of a single staff list."
+  }
+ ],
+ "meta": "SEO expert for tattoo artists: rank for your style and city so dream clients find your portfolio and book consultations. Free audit.",
+ "subhead": "Your style, found by the exact clients who already want it."
+}
+=======
    "q": "Should my tattoo artist focus on Google Ads or SEO?",
    "a": "Ads buy visibility today; SEO builds an asset that keeps producing. Style-specific portfolios (fine-line, realism, traditional) rank the bookings, so most successful tattoo artists run both — ads for now, SEO for compounding growth."
   },
@@ -43,3 +86,4 @@
  "meta": "SEO expert for tattoo artists: Turn searches into enquiries — technical SEO, content and links that win customers. Free audit.",
  "subhead": "SEO for tattoo artists — more visibility, more enquiries, more work."
 }
+>>>>>>> origin/main

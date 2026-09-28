@@ -2,7 +2,11 @@
  "slug": "bulgaria",
  "place": "Bulgaria",
  "keyword": "SEO expert in Bulgaria",
+<<<<<<< HEAD
+ "h1": "SEO Expert in Bulgaria: Cyrillic-Savvy SEO for Local Growth",
+=======
  "h1": "SEO Expert in Bulgaria: Rank Higher, Win More Local Customers",
+>>>>>>> origin/main
  "intro": "If you run a business in Bulgaria, you already know visibility is everything. Customers here search online before they call, visit, or buy — and the businesses at the top of Google get the lion's share of that demand. Bulgarian uses the Cyrillic alphabet, so keyword research needs native-script terms. Sofia's IT outsourcing sector competes for English-language B2B keywords. Black Sea resorts drive sharp summer peaks in tourism searches. Price sensitivity shapes search behaviour across retail and services. The businesses winning in Bulgaria right now are the ones that invested in local SEO early. There is still room at the top — but not for long.",
  "why": {
   "heading": "Why Generic SEO Fails in Bulgaria",
@@ -24,6 +28,31 @@
  ],
  "faqs": [
   {
+<<<<<<< HEAD
+   "q": "Do I really need Cyrillic keywords?",
+   "a": "Yes. Most Bulgarian local searches happen in Cyrillic, and Google Bulgaria ranks Cyrillic pages for them. Latin transliteration covers a slice of younger mobile users and works as a secondary layer, but a transliteration-only strategy misses most of the market."
+  },
+  {
+   "q": "How long does SEO take in Bulgaria?",
+   "a": "Faster than in most of Europe: early movement in 6 to 10 weeks, solid results in 3 to 5 months. Proper Bulgarian-language SEO is rare, so focused work moves quickly. The exception is Sofia's IT sector, where English B2B keywords compete globally."
+  },
+  {
+   "q": "Should coastal businesses target multiple languages?",
+   "a": "Yes. The Black Sea coast draws Bulgarians, Romanians, and Western tourists, each searching in their own language. Covering the right languages multiplies your customer streams while monolingual competitors fight over one."
+  },
+  {
+   "q": "How important are reviews in Bulgaria?",
+   "a": "Very important. Bulgarian buyers are careful and price-aware, and they rely on peer proof. Dozens of genuine Bulgarian reviews will out-convert a better-optimised site with none, and most competitors never systematise reviews."
+  },
+  {
+   "q": "Will I work with you directly?",
+   "a": "Yes. I run a one-person studio, so the person researching your Cyrillic keywords is the person building your pages and writing your reports. Direct, no handoffs."
+  }
+ ],
+ "meta": "SEO expert in Bulgaria: Bulgarian uses Cyrillic, so keyword research needs native-script terms. Local SEO done right. Free audit.",
+ "subhead": "Bulgarian SEO in Cyrillic, for Sofia, Plovdiv, Varna and the coast."
+}
+=======
    "q": "Is local SEO different from regular SEO in Bulgaria?",
    "a": "Yes — local SEO targets map rankings, local intent keywords, and review signals. Black Sea resorts drive sharp summer peaks in tourism searches, so a strategy built for local search outperforms generic national SEO here."
   },
@@ -43,3 +72,4 @@
  "meta": "SEO expert in Bulgaria: Local SEO for Bulgaria — rank higher on Google and turn searches into calls. Free audit.",
  "subhead": "Local SEO for Bulgaria — more calls, more bookings, more customers."
 }
+>>>>>>> origin/main

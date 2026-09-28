@@ -1,5 +1,50 @@
 {
  "slug": "schools",
+<<<<<<< HEAD
+ "niche": "schools and tutors",
+ "keyword": "SEO for local schools and tutors",
+ "h1": "SEO for Local Schools and Tutors That Fills Your Trial Lessons",
+ "meta": "SEO for local schools and tutors: driving, tutoring, music, dance, martial arts. Rank higher on Google, fill trial lessons. Free audit.",
+ "subhead": "Local SEO for lesson businesses that turns searches into trial bookings.",
+ "subcategories": [
+  "driving-schools",
+  "tutoring-companies",
+  "music-schools",
+  "dance-studios",
+  "martial-arts-schools"
+ ],
+ "faqs": [
+  {
+   "q": "Do schools really get students from Google?",
+   "a": "Yes. Lesson searches are overwhelmingly local, and parents compare a short list before booking a trial. The schools with dedicated class pages, visible proof of teaching quality, and easy trial booking win those comparisons. Word of mouth starts the idea; Google closes the decision."
+  },
+  {
+   "q": "Should each subject, instrument, or class have its own page?",
+   "a": "Yes. Each is a distinct search with distinct intent, and dedicated pages rank better and convert better than combined pages. Name the teacher, describe the approach, show proof, offer the trial. The rule is simple: if parents search for it by name, it gets a page."
+  },
+  {
+   "q": "What is the most important page on a school website?",
+   "a": "The trial, taster, or free assessment booking page. Every class and subject page should lead there. It is the lowest risk offer you have, and it is where the decision turns into a student."
+  },
+  {
+   "q": "How do I show safeguarding and trust on my website?",
+   "a": "State it plainly: background checks, child protection policies, instructor qualifications, and how sessions are supervised. Do not bury it in a PDF. Parents actively look for this, and addressing it openly builds more trust than any design ever could."
+  },
+  {
+   "q": "Is SEO or Google Ads better for a school?",
+   "a": "Most successful schools run both. Ads fill gaps immediately, which matters when you have empty class slots. SEO builds the asset: map pack presence and class pages that keep delivering trial bookings without per-click costs. Over any horizon longer than a few months, SEO wins."
+  },
+  {
+   "q": "How long until I see more trial bookings?",
+   "a": "Profile and review work can move the needle within weeks, because so much of this market is decided in the map pack. Website rankings typically take two to four months of consistent work. Either way, I report on trial bookings, not just traffic."
+  },
+  {
+   "q": "I teach adults, not children. Does this still work?",
+   "a": "Absolutely. Adult beginners search too, often with more hesitation and more loyalty once they start. Pages written directly to nervous adults face little competition. The trust mechanics are the same; only the message changes."
+  }
+ ]
+}
+=======
  "niche": "schools",
  "keyword": "SEO expert for schools",
  "h1": "Schools SEO Expert That Turns Searches into Paying Clients",
@@ -43,3 +88,4 @@
  "meta": "SEO expert for schools: Turn searches into enquiries — technical SEO, content and links that win customers. Free audit.",
  "subhead": "SEO for schools — more visibility, more enquiries, more work."
 }
+>>>>>>> origin/main

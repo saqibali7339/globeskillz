@@ -1,4 +1,14 @@
 {
+<<<<<<< HEAD
+  "slug": "sri-lanka",
+  "place": "Sri Lanka",
+  "keyword": "best seo expert in sri lanka",
+  "h1": "Best SEO Expert in Sri Lanka for Mobile-First Growth",
+  "intro": "Finding the best SEO expert in Sri Lanka means finding someone who understands both the local market and how Google actually works. Sri Lanka's digital economy is accelerating: Colombo's startup and corporate scene, a booming tourism sector, tea and apparel exporters selling to the world, and a generation of businesses moving online fast. But most local websites are invisible where it counts, on page two and beyond, while competitors capture the enquiries. I work with Sri Lankan businesses as a dedicated SEO expert: technical audits that fix what is broken, keyword strategies built for your market, whether that is Colombo, Kandy, Galle, or international buyers, and content that earns rankings and converts them. No jargon, no vanity metrics, just rankings that bring business.",
+  "why": {
+    "heading": "Understanding Search Behavior in Sri Lanka",
+    "body": "Sri Lanka's search market is bilingual and mobile-first, which most SEO advice ignores. A huge share of searches happen on phones, often mixing English and Sinhala or Tamil terms, and Google's local results in Colombo, Kandy, and Galle behave differently from international queries targeting tourists or export buyers. Tourism businesses compete globally for visitor searches while serving locally, and exporters need an entirely different keyword strategy aimed at overseas buyers. The best SEO expert in Sri Lanka has to handle both: dominating local map results at home while building the content authority that wins international rankings. Mobile speed is non-negotiable in a market where the phone is the primary device."
+=======
  "slug": "sri-lanka",
  "place": "Sri Lanka",
  "keyword": "Best SEO Expert in Sri Lanka",
@@ -26,6 +36,7 @@
   {
    "q": "Why is my competitor outranking me in Sri Lanka?",
    "a": "Usually a faster mobile site, stronger content, or better relevance signals. Many Sri Lankan business sites are technically neglected, so an audit typically finds quick wins your competitor already took."
+>>>>>>> origin/main
   },
   {
    "q": "Do I need a Google Business Profile in Sri Lanka?",
@@ -35,6 +46,39 @@
    "q": "How long does SEO take to work in Sri Lanka?",
    "a": "Most businesses see early movement in 2 to 3 months and meaningful results in 4 to 6. Less saturated than Western markets, so well-executed SEO often moves faster here."
   },
+<<<<<<< HEAD
+  "facts": [
+    "A bilingual, mobile-first search market most SEO advice ignores.",
+    "Tourism and exporters need dual strategies: local visibility plus international rankings.",
+    "Colombo, Kandy, and Galle each behave as distinct local search markets.",
+    "The phone is the primary device, so mobile speed directly decides revenue."
+  ],
+  "faqs": [
+    {
+      "q": "Why do most SEO strategies fail in Sri Lanka?",
+      "a": "Because they are built for Western markets: desktop-first, English-only, and obsessed with backlinks while the site loads slowly on the phones customers actually use. Sri Lanka needs mobile speed, bilingual content and easy contact paths first."
+    },
+    {
+      "q": "Should my website be in Sinhala, Tamil or English?",
+      "a": "Sinhala and English cover most local business needs; Tamil matters in the north and east and for specific audiences. I map your actual customer languages in the audit rather than guessing."
+    },
+    {
+      "q": "How important is WhatsApp for my business?",
+      "a": "Critical. A huge share of Sri Lankan enquiries happen over WhatsApp, not email or contact forms. If reaching you on WhatsApp is not effortless, you are losing customers daily."
+    },
+    {
+      "q": "How long does SEO take in Sri Lanka?",
+      "a": "Local competition is often weak, so fundamentals, speed, profile, reviews, bilingual content, can move rankings in 2 to 3 months. Tourism keywords targeting foreign planners need a longer runway."
+    },
+    {
+      "q": "Do you really understand the Sri Lankan market?",
+      "a": "I work across South Asia from Pakistan, in the same time zone, with the same mobile-first realities. I do not import Western playbooks; I build for how your customers actually search and buy."
+    }
+  ],
+  "meta": "Best SEO expert in Sri Lanka: mobile-first, bilingual SEO for Colombo, Kandy and Galle. Built for how Sri Lanka actually searches. Free audit.",
+  "subhead": "Local SEO for Sri Lanka, from someone who understands the region."
+}
+=======
   {
    "q": "How much should a business in Sri Lanka budget for SEO?",
    "a": "Budgets vary with competition and whether you target locally or internationally. Most serious campaigns run as ongoing monthly work, and the ROI case is strong in a fast-growing digital economy."
@@ -43,3 +87,4 @@
  "meta": "Best SEO Expert in Sri Lanka: Local SEO for Sri Lanka — rank higher on Google and turn searches into calls. Free audit.",
  "subhead": "Local SEO for Sri Lanka — more calls, more bookings, more customers."
 }
+>>>>>>> origin/main

@@ -1,4 +1,54 @@
 {
+<<<<<<< HEAD
+  "slug": "macclesfield",
+  "place": "Macclesfield",
+  "keyword": "SEO Services Macclesfield",
+  "h1": "SEO Services Macclesfield: Win the Searches That Matter",
+  "intro": "Macclesfield punches above its weight. A historic Cheshire silk town turned pharma and professional-services hub, home to major employers and affluent commuter stock, it has a search market far more competitive than its size suggests. SEO services in Macclesfield need to win in a town where buyers are sophisticated, competition includes Manchester agencies, and local intent is strong. That is exactly what I build: a technically flawless website, a Google Business Profile that dominates the local map pack, and content written for how Macclesfield actually searches, from the town centre to Prestbury, Bollington, and the Peak District fringe. Whether you serve Silk Road business parks or the high street, being first on Google is what keeps the phone ringing.",
+  "why": {
+    "heading": "Understanding Search Behavior in Macclesfield",
+    "body": "Macclesfield's affluence shapes its search market: higher average customer values justify stronger SEO investment, and buyers here research thoroughly before committing. The AstraZeneca campus and professional-services cluster create B2B search demand alongside the usual local trades and retail. Commuter links to Manchester and Stockport mean many searches carry dual intent, and Google often blends Macclesfield results with nearby towns, so your relevance signals have to be unambiguously local. Reviews carry extra weight with discerning buyers. SEO services in Macclesfield win by combining airtight local signals with the content depth that outranks bigger-budget Manchester competitors."
+  },
+  "section1": {
+    "heading": "Technical SEO Without the Jargon",
+    "body": "If Google cannot crawl, load, and understand your site fast, nothing else matters. I fix the foundations first: Core Web Vitals, mobile experience, crawlability, and clean site architecture. Sophisticated Macclesfield buyers bounce from slow, dated sites in seconds, so technical excellence here is table stakes for the clientele you want."
+  },
+  "section2": {
+    "heading": "Content That Earns the Click",
+    "body": "Rankings without clicks are vanity. I build service and location content around the exact phrases your customers type, written to the standard your market expects. Every page answers the real question behind the search and makes enquiring effortless, because traffic that does not convert is just a hosting bill."
+  },
+  "facts": [
+    "An affluent Cheshire town with higher-than-average customer values.",
+    "Pharma and professional-services cluster creates real B2B search demand.",
+    "Commuter links to Manchester blend search results, so local signals must be airtight.",
+    "Discerning buyers research deeply, reviews and content depth decide outcomes."
+  ],
+  "faqs": [
+    {
+      "q": "Is Macclesfield too small a market for SEO to be worth it?",
+      "a": "No. Higher customer values mean fewer conversions pay for the work, and competition is thinner than Manchester. It is one of the better ROI markets in Cheshire."
+    },
+    {
+      "q": "Do you handle B2B SEO?",
+      "a": "Yes. Longer cycles, stakeholder content, authority building: B2B local SEO follows the same fundamentals tuned to how businesses actually buy."
+    },
+    {
+      "q": "How long until results?",
+      "a": "Early movement in two to three months, meaningful change in four to six. Research-heavy markets reward patience because the wins compound."
+    },
+    {
+      "q": "Will you write the content?",
+      "a": "Yes, in plain English, matched to how your buyers search and decide. You approve everything before it goes live."
+    },
+    {
+      "q": "How do SEO services Macclesfield providers usually charge for B2B?",
+      "a": "Many charge bloated retainers for junior work. I price after the audit based on your market, work month to month, and report in plain English. If it is not earning its keep, walk away."
+    }
+  ],
+  "meta": "SEO services Macclesfield: win high-value local searches in Cheshire's affluent market. B2B and consumer SEO, honest reporting. Free audit.",
+  "subhead": "SEO services for Macclesfield businesses that value quality enquiries."
+}
+=======
  "slug": "macclesfield",
  "place": "Macclesfield",
  "keyword": "SEO Services Macclesfield",
@@ -43,3 +93,4 @@
  "meta": "SEO Services Macclesfield: Local SEO for Macclesfield — rank higher on Google and turn searches into calls. Free audit.",
  "subhead": "Local SEO for Macclesfield — more calls, more bookings, more customers."
 }
+>>>>>>> origin/main

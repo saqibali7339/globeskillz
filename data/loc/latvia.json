@@ -1,4 +1,54 @@
 {
+<<<<<<< HEAD
+  "slug": "latvia",
+  "place": "Latvia",
+  "keyword": "SEO expert in Latvia",
+  "h1": "SEO Expert in Latvia Who Fixes What Others Miss",
+  "intro": "Running a business in Latvia means competing in a market with its own rules. Local customers search with local intent, and generic, one-size-fits-all SEO simply does not cut it here. Latvian dominates search, with a Russian-speaking minority using Russian queries. Riga holds most business activity in a small, concentrated market. Jurmala's beach resorts create summer peaks in tourism searches. Small market size means niche keywords can rank with modest effort. Smart SEO for Latvia does not chase vanity rankings; it targets the searches that bring paying customers through your door. Local SEO is a long game, but every month of consistent work compounds: better rankings bring more calls, more calls bring more reviews, and more reviews push rankings higher still. Businesses that commit to the process pull away from competitors that dabble.",
+  "why": {
+    "heading": "Understanding Search Behavior in Latvia",
+    "body": "Latvian dominates search, with a Russian-speaking minority using Russian queries. Riga holds most business activity in a small, concentrated market.\n\nJurmala's beach resorts create summer peaks in tourism searches. Small market size means niche keywords can rank with modest effort. Businesses that understand this outperform those running generic national campaigns. Language is the first barrier: most customers search in their own language, so English-only SEO leaves most of the market untouched. Local directories, review platforms, and search habits differ by country too."
+  },
+  "section1": {
+    "heading": "Google Business Profile, Done Properly",
+    "body": "Your Google Business Profile is your hardest-working salesperson: it shows your hours, services, photos, and reviews before anyone visits your site. Riga holds most business activity in a small, concentrated market. We tune every field — categories, services, attributes, posts, and Q&A — so the profile converts searchers instead of just existing."
+  },
+  "section2": {
+    "heading": "Technical SEO Without the Jargon",
+    "body": "If Google cannot crawl, load, and understand your site fast, nothing else matters. Riga holds most business activity in a small, concentrated market. We fix the foundations: site speed, mobile experience, structured data, and clean architecture — the unglamorous work that makes every other tactic perform better."
+  },
+  "facts": [
+    "Latvian dominates search, with a Russian-speaking minority using Russian queries.",
+    "Riga holds most business activity in a small, concentrated market.",
+    "Jurmala's beach resorts create summer peaks in tourism searches.",
+    "Small market size means niche keywords can rank with modest effort."
+  ],
+  "faqs": [
+    {
+      "q": "Is it worth doing SEO in such a small market?",
+      "a": "Yes, precisely because it is small. Competition is thin, so good work ranks faster and cheaper than in large markets. Small pond, fewer fishermen, more fish per net."
+    },
+    {
+      "q": "Latvian or Russian content, which first?",
+      "a": "Latvian first, always, since it is the majority language of search. Add Russian versions of your top pages second. Together they cover the overwhelming majority of local queries."
+    },
+    {
+      "q": "How long does SEO take in Latvia?",
+      "a": "Local Latvian keywords often move in 2 to 3 months. The competition is thin enough that consistent fundamentals, profile, reviews, content, outperform most rivals quickly."
+    },
+    {
+      "q": "Can you help with Jurmala tourism seasonality?",
+      "a": "Yes. Tourism keywords need pages built well ahead of summer, in the languages visitors search in. Winter is build season; summer is harvest season."
+    },
+    {
+      "q": "What does SEO cost for a Latvian business?",
+      "a": "Less than in most of Europe, because the workload to outrank local competitors is smaller. After a free audit I quote a fixed monthly scope matched to your market."
+    }
+  ],
+  "meta": "SEO expert in Latvia: rank in Latvian and Russian search across Riga and beyond. Small market, fast wins with the right strategy. Free audit.",
+  "subhead": "Local SEO for Latvia, without the guesswork."
+}
+=======
  "slug": "latvia",
  "place": "Latvia",
  "keyword": "SEO expert in Latvia",
@@ -43,3 +93,4 @@
  "meta": "SEO expert in Latvia: Local SEO for Latvia — rank higher on Google and turn searches into calls. Free audit.",
  "subhead": "Local SEO for Latvia — more calls, more bookings, more customers."
 }
+>>>>>>> origin/main

@@ -1,4 +1,14 @@
 {
+<<<<<<< HEAD
+  "slug": "johannesburg",
+  "place": "Johannesburg",
+  "keyword": "Best SEO Marketing Johannesburg",
+  "h1": "Best SEO Marketing Johannesburg: Win Your Node, Then the City",
+  "intro": "If you want the best SEO marketing Johannesburg has competing for, you need to understand the battlefield. Joburg is South Africa's commercial capital: Sandton's corporate towers, Midrand's business parks, Rosebank's retail, and a small-business economy that lives or dies on Google. Search competition here is real, and the agencies fighting for it are aggressive. My SEO marketing for Johannesburg businesses cuts through that with fundamentals done properly: a technically excellent website, content that actually answers buyer questions, and authority building that earns rankings instead of renting them. No inflated promises, no jargon reports, just marketing-focused SEO where every ranking is tied to revenue.",
+  "why": {
+    "heading": "Understanding Search Behavior in Johannesburg",
+    "body": "Johannesburg searchers are value-conscious and comparison-driven. They search, compare three or four options, read reviews, and then decide, which means visibility alone is not enough; your search presence has to win the comparison. Suburb and node-level intent is strong: Sandton, Randburg, Fourways, and the East Rand behave as distinct markets. Mobile dominates, and data costs make users impatient with slow sites, so speed is a conversion factor, not just a ranking factor. Load shedding-era habits also mean people search and decide fast when they are online. The best SEO marketing in Johannesburg pairs map-pack dominance with content that wins the side-by-side comparison."
+=======
  "slug": "johannesburg",
  "place": "Johannesburg",
  "keyword": "Best SEO Marketing Johannesburg",
@@ -26,6 +36,7 @@
   {
    "q": "Why is my competitor outranking me in Johannesburg?",
    "a": "Usually stronger reviews, better node-level relevance, or content that wins the comparison. A proper audit shows whether you are losing on visibility, on the click, or on the comparison after it."
+>>>>>>> origin/main
   },
   {
    "q": "Do I need a Google Business Profile in Johannesburg?",
@@ -35,6 +46,39 @@
    "q": "How long does SEO take to work in Johannesburg?",
    "a": "Most businesses see early movement in 2 to 3 months and meaningful results in 4 to 6. Competitive Joburg niches reward sustained effort over quick fixes."
   },
+<<<<<<< HEAD
+  "facts": [
+    "South Africa's commercial capital with genuinely aggressive search competition.",
+    "Node-level intent: Sandton, Randburg, and the East Rand are distinct markets.",
+    "Comparison-driven buyers evaluate three or four options before deciding.",
+    "Mobile-first, impatient users make speed a conversion factor, not just a ranking factor."
+  ],
+  "faqs": [
+    {
+      "q": "How competitive is SEO in Johannesburg?",
+      "a": "Genuinely aggressive, especially in Sandton and the northern suburbs. But competition clusters: most businesses do the basics badly, which means methodical work on profiles, reviews, and node-specific content moves you faster than the raw competition suggests."
+    },
+    {
+      "q": "Should I target the whole of Johannesburg or just my area?",
+      "a": "Your area first, always. Node-level dominance is achievable and profitable; city-wide visibility follows as Google's trust in you grows. Trying to win the whole city from day one spreads your effort too thin to win anywhere."
+    },
+    {
+      "q": "How important are online reviews in South Africa?",
+      "a": "Decisive. Joburg buyers compare three or four options and reviews are the tiebreaker. Volume, recency, and detail all matter, and responding to every review signals a business that cares. I build this into every campaign as a core system, not an afterthought."
+    },
+    {
+      "q": "How long before SEO pays off in Johannesburg?",
+      "a": "Expect early movement in two to three months and meaningful, lead-generating visibility in four to six. Competitive nodes take longer, but the compounding effect means results keep growing after the work is done."
+    },
+    {
+      "q": "Do you work with businesses outside Johannesburg?",
+      "a": "Yes, across South Africa and worldwide. The node-based thinking applies to any fragmented market, from Cape Town's suburbs to multi-town regions anywhere."
+    }
+  ],
+  "meta": "The best SEO marketing in Johannesburg is the kind that outranks Sandton competitors. Node-level local SEO for Joburg businesses. Free audit.",
+  "subhead": "Sandton, Randburg, East Rand: I rank Johannesburg businesses node by node."
+}
+=======
   {
    "q": "How much should a business in Johannesburg budget for SEO?",
    "a": "Budgets vary with competition, but marketing-focused SEO should be judged on revenue, not rankings. Most serious campaigns run as ongoing monthly work tied to pipeline goals."
@@ -43,3 +87,4 @@
  "meta": "Best SEO Marketing Johannesburg: Local SEO for Johannesburg — rank higher on Google and turn searches into calls. Free audit.",
  "subhead": "Local SEO for Johannesburg — more calls, more bookings, more customers."
 }
+>>>>>>> origin/main

@@ -1,4 +1,14 @@
 {
+<<<<<<< HEAD
+  "slug": "luxembourg",
+  "place": "Luxembourg",
+  "keyword": "SEO expert in Luxembourg",
+  "h1": "SEO Expert in Luxembourg: Three Languages, One Strategy",
+  "intro": "In Luxembourg, the gap between page one and page two of Google is the gap between a full pipeline and an empty one. Local search drives the calls, visits, and bookings that keep businesses alive here. Trilingual market — Luxembourgish, French and German all appear in searches. Finance dominates the economy, with banks competing for high-value keywords. Tiny population but high wealth makes it a premium, low-volume market. Cross-border workers from three countries shape commuter search behaviour. With an SEO approach designed specifically for Luxembourg, your business can capture that demand instead of watching competitors take it. Local SEO is a long game, but every month of consistent work compounds: better rankings bring more calls, more calls bring more reviews, and more reviews push rankings higher still. Businesses that commit to the process pull away from competitors that dabble.",
+  "why": {
+    "heading": "SEO in Luxembourg Is Not Like SEO Anywhere Else",
+    "body": "Trilingual market — Luxembourgish, French and German all appear in searches. Finance dominates the economy, with banks competing for high-value keywords.\n\nTiny population but high wealth makes it a premium, low-volume market. Cross-border workers from three countries shape commuter search behaviour. Businesses that understand this outperform those running generic national campaigns. Language is the first barrier: most customers search in their own language, so English-only SEO leaves most of the market untouched. Local directories, review platforms, and search habits differ by country too."
+=======
  "slug": "luxembourg",
  "place": "Luxembourg",
  "keyword": "SEO expert in Luxembourg",
@@ -26,6 +36,7 @@
   {
    "q": "Is local SEO different from regular SEO in Luxembourg?",
    "a": "Yes — local SEO targets map rankings, local intent keywords, and review signals. Tiny population but high wealth makes it a premium, low-volume market, so a strategy built for local search outperforms generic national SEO here."
+>>>>>>> origin/main
   },
   {
    "q": "Can I do SEO for my Luxembourg business myself?",
@@ -35,6 +46,39 @@
    "q": "Why is my competitor outranking me in Luxembourg?",
    "a": "Usually it comes down to stronger reviews, better local relevance, or more authoritative content. Trilingual market — Luxembourgish, French and German all appear in searches, and a proper audit reveals the exact gaps to close."
   },
+<<<<<<< HEAD
+  "facts": [
+    "Trilingual market — Luxembourgish, French and German all appear in searches.",
+    "Finance dominates the economy, with banks competing for high-value keywords.",
+    "Tiny population but high wealth makes it a premium, low-volume market.",
+    "Cross-border workers from three countries shape commuter search behaviour."
+  ],
+  "faqs": [
+    {
+      "q": "Which language should my website target?",
+      "a": "Ideally the ones your customers use. For local services, French plus German covers most searches; Luxembourgish adds authenticity for local trust. English matters for finance and expats. The audit maps your specific customer languages."
+    },
+    {
+      "q": "Is SEO in Luxembourg expensive?",
+      "a": "Finance keywords are costly to compete for because the rewards are huge. Local service SEO is very reasonable, since competition is thin and each customer is high value. I scope honestly after the audit."
+    },
+    {
+      "q": "How do cross-border commuters affect my SEO?",
+      "a": "They search from France, Belgium or Germany for Luxembourg businesses, so your profiles and pages need to be visible and relevant across borders. Location targeting and language coverage handle this."
+    },
+    {
+      "q": "How long until results?",
+      "a": "Local service terms often move within 2 to 3 months. Finance and high-value B2B keywords are a 6 to 12 month game. I set expectations per keyword cluster, not with blanket promises."
+    },
+    {
+      "q": "Do you work in French and German?",
+      "a": "I plan and brief content in both, and work with native writers where nuance matters. Machine translation is never the strategy."
+    }
+  ],
+  "meta": "SEO expert in Luxembourg: trilingual SEO for Luxembourg City and beyond. French, German and English search, one coherent strategy. Free audit.",
+  "subhead": "Local SEO for Luxembourg in Luxembourgish, French, and German."
+}
+=======
   {
    "q": "Do I need a Google Business Profile in Luxembourg?",
    "a": "Absolutely — it is free and often the first thing customers see. Finance dominates the economy, with banks competing for high-value keywords, so a fully optimized profile with fresh reviews and posts is non-negotiable."
@@ -43,3 +87,4 @@
  "meta": "SEO expert in Luxembourg: Local SEO for Luxembourg — rank higher on Google and turn searches into calls. Free audit.",
  "subhead": "Local SEO for Luxembourg — more calls, more bookings, more customers."
 }
+>>>>>>> origin/main

@@ -1,8 +1,13 @@
 {
  "slug": "restaurant",
  "niche": "restaurants",
+<<<<<<< HEAD
+ "keyword": "SEO For Restaurants",
+ "h1": "SEO for Restaurants That Fills Tables on Weeknights",
+=======
  "keyword": "Restaurant SEO Services",
  "h1": "Restaurant SEO Services That Fill Tables Night After Night",
+>>>>>>> origin/main
  "intro": "Diners decide where to eat on Google. Restaurant SEO services make sure your restaurant is the one they find, choose, and book. When someone nearby searches best Italian near me or romantic dinner downtown, Google shows a local pack, and the restaurants in it get the covers. My restaurant SEO services are built for exactly that moment: a Google Business Profile tuned to win the map pack, a review engine that turns happy diners into social proof, menu and location pages optimized for the dishes and cuisines people actually search, and the technical foundation that keeps you ranking. Whether you run a fine-dining room, a busy brunch spot, or a takeaway fighting on delivery apps, being first on Google is what fills tables.",
  "why": {
   "heading": "How Diners Actually Choose Restaurants",
@@ -24,6 +29,45 @@
  ],
  "faqs": [
   {
+<<<<<<< HEAD
+   "q": "Can a food truck even do local SEO without a fixed address?",
+   "a": "Yes. Set the profile up as a service-area business covering your rotation, build home-base pages for your real locations like the commissary and your regular pitch, and keep one schedule page on the same URL updated weekly. Google needs geography, so you give it real anchors instead of a fake address, which would get you suspended."
+  },
+  {
+   "q": "Can I really compete with the big delivery apps on Google?",
+   "a": "Yes, and the math is on your side. Apps take up to 30 percent of every order while your own ranked site takes zero. Customers already search Google for pizza and food near them. A site that ranks turns those searches into direct orders, and every direct order is margin the apps never see."
+  },
+  {
+   "q": "Should my menu be on my website or just in photos?",
+   "a": "On your website, as real text. Google cannot read a menu from a PDF or an image. A typed menu with named dishes and prices ranks for dish-level searches, feeds Google's menu display, and keeps visitors on your site instead of sending them back to an app."
+  },
+  {
+   "q": "How do I rank for big occasions like wedding cakes?",
+   "a": "Give the occasion its own page: photos of your real work, reviews that mention it by name, clear ordering steps, and local terms in the copy. High-value searches like wedding cake plus your area deserve a dedicated page, not a line on a services list."
+  },
+  {
+   "q": "Do tourists really choose restaurants from Google?",
+   "a": "Constantly. They search on phones, often on weak signal, and pick from the top map results. A fast mobile site, correct hours, and great photos are the whole tourist playbook. If your site will not load quickly, they walk into the place that did."
+  },
+  {
+   "q": "Do I need SEO if most of my sales are walk-ins?",
+   "a": "Walk-ins start as searches more often than owners think: bakery open now, lunch near me, coffee near me. And the highest-margin revenue, custom cakes, catering, party orders, is almost entirely search-driven. SEO captures both."
+  },
+  {
+   "q": "How long until I see results?",
+   "a": "Profile and review work can move the map pack within weeks, which matters most for restaurants. Durable organic rankings for competitive food terms typically take three to six months. The compounding is worth it, because every ranking sends customers with zero commission attached."
+  }
+ ],
+ "meta": "SEO for restaurants that fills tables: map pack rankings, reviews and menus for cafes, bakeries, food trucks and pizza spots. Free audit.",
+ "subhead": "Map pack rankings, review engines, and menus that turn nearby searches into booked tables.",
+ "subcategories": [
+  "cafes",
+  "bakeries",
+  "food-trucks",
+  "pizza-restaurants"
+ ]
+}
+=======
    "q": "Why is my restaurant not showing up on Google Maps?",
    "a": "Usually an incomplete or unoptimized Google Business Profile, weak review velocity, or poor local relevance signals. Restaurants live or die in the map pack, and a proper audit shows exactly which signals are holding you back."
   },
@@ -43,3 +87,4 @@
  "meta": "Restaurant SEO Services: Turn searches into enquiries — technical SEO, content and links that win customers. Free audit.",
  "subhead": "SEO for restaurants — more visibility, more enquiries, more work."
 }
+>>>>>>> origin/main

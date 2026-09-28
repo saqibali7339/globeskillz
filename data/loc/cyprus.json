@@ -1,4 +1,18 @@
 {
+<<<<<<< HEAD
+  "slug": "cyprus",
+  "place": "Cyprus",
+  "keyword": "SEO expert in Cyprus",
+  "h1": "Your SEO Expert in Cyprus for Island-Wide Visibility",
+  "intro": "Cyprus is a market where being found online decides who grows and who stalls. Every day, potential customers search for exactly what you offer — the only question is whether they find you or a competitor. English is widely used in business, but Greek dominates everyday consumer search. Tourism and financial services are the twin pillars of the economy. The island's division creates two distinct search markets, Greek and Turkish. Expat communities generate steady English-language queries for services. That is where specialist SEO for Cyprus comes in: a strategy built around how this market actually searches, built to turn rankings into revenue.",
+  "why": {
+    "heading": "Why Cyprus Needs a Different SEO Playbook",
+    "body": "English is widely used in business, but Greek dominates everyday consumer search. Tourism and financial services are the twin pillars of the economy.\n\nThe island's division creates two distinct search markets, Greek and Turkish. Expat communities generate steady English-language queries for services. Businesses that understand this outperform those running generic national campaigns. Language is the first barrier: most customers search in their own language, so English-only SEO leaves most of the market untouched. Local directories, review platforms, and search habits differ by country too."
+  },
+  "section1": {
+    "heading": "What Your Cyprus Competitors Are Doing",
+    "body": "Someone in your market is already winning the searches you want. English is widely used in business, but Greek dominates everyday consumer search. We reverse-engineer exactly why they rank: their keywords, content, links, and reviews — then build a plan to beat them at their own game, gap by gap."
+=======
  "slug": "cyprus",
  "place": "Cyprus",
  "keyword": "SEO expert in Cyprus",
@@ -30,11 +44,45 @@
   {
    "q": "How much should a business in Cyprus budget for SEO?",
    "a": "Budgets vary with competition, but tourism and financial services are the twin pillars of the economy means underinvesting costs more in lost customers than the SEO itself. Most serious local campaigns need sustained monthly work, not a one-off fix."
+>>>>>>> origin/main
   },
   {
    "q": "Is local SEO different from regular SEO in Cyprus?",
    "a": "Yes — local SEO targets map rankings, local intent keywords, and review signals. The island's division creates two distinct search markets, Greek and Turkish, so a strategy built for local search outperforms generic national SEO here."
   },
+<<<<<<< HEAD
+  "facts": [
+    "English is widely used in business, but Greek dominates everyday consumer search.",
+    "Tourism and financial services are the twin pillars of the economy.",
+    "The island's division creates two distinct search markets, Greek and Turkish.",
+    "Expat communities generate steady English-language queries for services."
+  ],
+  "faqs": [
+    {
+      "q": "Do I really need content in three languages?",
+      "a": "It depends on your customers. If you only serve Greek-speaking locals, excellent Greek content is enough. But most Cyprus businesses leave money on the table by ignoring at least one of the other two markets. The audit shows you exactly where your buyers search."
+    },
+    {
+      "q": "How long does SEO take in Cyprus?",
+      "a": "Greek and Turkish local keywords often move within 2 to 3 months because competition is thin. English tourism keywords take longer, typically 4 to 6 months, since you compete internationally. Starting before the tourist season is critical."
+    },
+    {
+      "q": "Can you help businesses in the north of Cyprus too?",
+      "a": "Yes. The northern market is underserved by SEO providers, which makes Turkish-language optimization one of the highest-leverage moves available there."
+    },
+    {
+      "q": "What does local SEO cost in Cyprus?",
+      "a": "It scales with languages and markets. A single-language local campaign costs less than a three-language tourism plus local program. I quote fixed monthly scopes after the free audit, so there are no surprises."
+    },
+    {
+      "q": "Will SEO help my off-season bookings?",
+      "a": "That is exactly where it pays most. English-language planners book months ahead, so pages built in winter capture summer revenue. Businesses that only market during the season are always too late."
+    }
+  ],
+  "meta": "SEO expert in Cyprus: rank in Greek, Turkish and English search. Local SEO for Nicosia, Limassol and the tourist coast. Free audit.",
+  "subhead": "Local SEO for Cyprus: Greek, Turkish, and English search, covered."
+}
+=======
   {
    "q": "Can I do SEO for my Cyprus business myself?",
    "a": "You can handle basics like claiming listings and asking for reviews. But expat communities generate steady English-language queries for services, which is exactly where professional SEO earns its keep — technical fixes, content, and authority building."
@@ -43,3 +91,4 @@
  "meta": "SEO expert in Cyprus: Local SEO for Cyprus — rank higher on Google and turn searches into calls. Free audit.",
  "subhead": "Local SEO for Cyprus — more calls, more bookings, more customers."
 }
+>>>>>>> origin/main

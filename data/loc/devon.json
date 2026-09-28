@@ -1,4 +1,54 @@
 {
+<<<<<<< HEAD
+  "slug": "devon",
+  "place": "Devon",
+  "keyword": "SEO Services Devon",
+  "h1": "SEO Services Devon Businesses Need Before Peak Season Hits",
+  "intro": "From Exeter's professional services to Plymouth's waterfront businesses and the tourism economy stretching across Dartmoor and the Jurassic Coast, SEO services in Devon need to handle a county, not just a city. Devon's market is split: year-round local trade in its towns and cities, plus intense seasonal visitor demand that can make or break hospitality, retail, and attraction businesses. My SEO services in Devon are built for both. I make sure you dominate local search in your patch, whether that is Exeter, Torquay, Barnstaple, or a Dartmoor village, while capturing the visitor searches that spike every summer. A technically clean site, a strong Google Business Profile, and content written for how Devon actually searches: that is the formula.",
+  "why": {
+    "heading": "Understanding Search Behavior in Devon",
+    "body": "Devon search behavior has two gears. Residents search with town-level intent year-round, plumber Exeter or wedding venue near Torquay, while visitors search from outside the county with broader, experience-led queries like best beaches Devon or dog-friendly pubs Dartmoor. Businesses that only optimize for one gear lose half their market. The county's geography also matters: Google treats Exeter, Plymouth, Torbay, and North Devon as distinct search markets, and ranking county-wide means winning relevance in each. Tourism seasonality compresses the revenue window, so showing up first during the booking season is disproportionately valuable. SEO services in Devon have to be multi-location in thinking even for single-location businesses."
+  },
+  "section1": {
+    "heading": "Technical SEO Without the Jargon",
+    "body": "If Google cannot crawl, load, and understand your site fast, nothing else matters. I fix the foundations first: Core Web Vitals, mobile experience, crawlability, and clean site architecture. Rural broadband and patchy mobile signal mean Devon visitors are often on slow connections, so site speed here is not a nice-to-have, it directly decides whether a visitor waits or bounces to a competitor."
+  },
+  "section2": {
+    "heading": "Content That Earns the Click",
+    "body": "Rankings without clicks are vanity. I build service and location content around the exact phrases your customers type, split between resident intent and visitor intent, and every page is written to convert the visit into a booking, call, or enquiry. Seasonal content planned ahead of the booking window captures demand your competitors miss."
+  },
+  "facts": [
+    "A two-gear market: year-round resident searches plus intense seasonal visitor demand.",
+    "Exeter, Plymouth, Torbay, and North Devon are distinct Google search markets.",
+    "Tourism seasonality compresses the revenue window, so peak-season visibility is critical.",
+    "Patchy rural mobile signal makes site speed a direct revenue factor."
+  ],
+  "faqs": [
+    {
+      "q": "When should a Devon business start SEO for the summer season?",
+      "a": "In winter. SEO compounds over months, so work starting in January ranks by spring and peaks in summer. Starting in May means missing most of the season. Year-round resident searches are worth winning too, and that work never has a wrong starting month."
+    },
+    {
+      "q": "Is SEO different for tourism businesses vs local services in Devon?",
+      "a": "The foundations are the same, but the strategy splits. Tourism businesses need seasonal content, visual proof, and visitor-anxiety FAQs published months ahead. Local services need map-pack dominance and review velocity year-round. I run both tracks together for businesses that serve both audiences."
+    },
+    {
+      "q": "Do I need separate pages for Exeter, Plymouth, and Torbay?",
+      "a": "If you serve all three, yes. They are distinct search markets on Google, and one generic page ranks in none of them. Each page needs genuine local substance, not just a swapped place name."
+    },
+    {
+      "q": "How much does SEO cost in Devon?",
+      "a": "It depends on competition and ambition, but plan for sustained monthly work rather than a one-off project. I work month to month with transparent reporting. A free audit gives you an honest figure for your specific situation."
+    },
+    {
+      "q": "My site is slow on mobile. Is that an SEO problem?",
+      "a": "Yes, and in Devon it is a revenue problem. Visitors search on phones, often on patchy rural signal. Speed is both a ranking factor and a conversion factor. Fixing it is usually the highest-ROI job I do."
+    }
+  ],
+  "meta": "SEO services in Devon for tourism, hospitality and local businesses. Get found before peak season arrives. Free audit from a one-person studio.",
+  "subhead": "Rank across Devon before the summer rush, from Exeter to the North Devon coast."
+}
+=======
  "slug": "devon",
  "place": "Devon",
  "keyword": "SEO Services Devon",
@@ -43,3 +93,4 @@
  "meta": "SEO Services Devon: Local SEO for Devon — rank higher on Google and turn searches into calls. Free audit.",
  "subhead": "Local SEO for Devon — more calls, more bookings, more customers."
 }
+>>>>>>> origin/main

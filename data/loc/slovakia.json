@@ -2,7 +2,11 @@
  "slug": "slovakia",
  "place": "Slovakia",
  "keyword": "SEO expert in Slovakia",
+<<<<<<< HEAD
+ "h1": "SEO Expert in Slovakia: Own a Small Market Completely",
+=======
  "h1": "The Slovakia SEO Expert Behind Businesses That Dominate Local Search",
+>>>>>>> origin/main
  "intro": "Running a business in Slovakia means competing in a market with its own rules. Local customers search with local intent, and generic, one-size-fits-all SEO simply does not cut it here. Slovak-language search dominates in this small, concentrated market. Bratislava holds most business activity, with Kosice as the eastern hub. Automotive manufacturing is the flagship industry, plus growing IT services. Proximity to Vienna pulls cross-border search and commuter behaviour. Smart SEO for Slovakia does not chase vanity rankings; it targets the searches that bring paying customers through your door. Local SEO is a long game, but every month of consistent work compounds: better rankings bring more calls, more calls bring more reviews, and more reviews push rankings higher still. Businesses that commit to the process pull away from competitors that dabble.",
  "why": {
   "heading": "SEO in Slovakia Is Not Like SEO Anywhere Else",
@@ -24,6 +28,27 @@
  ],
  "faqs": [
   {
+<<<<<<< HEAD
+   "q": "Is Slovakia too small a market for SEO to be worth it?",
+   "a": "The opposite: small markets are where SEO pays best. Search volume is concentrated, competition is thin, and one well-built site can dominate its trade nationally. The investment is smaller than in big markets and the market share available is larger."
+  },
+  {
+   "q": "How long does SEO take in Slovakia?",
+   "a": "Often faster than in bigger markets. Early movement in 6 to 10 weeks is common, with solid results in 3 to 5 months, because so few Slovak businesses have properly optimised Slovak-language sites and profiles."
+  },
+  {
+   "q": "Should I target Austrian customers from Slovakia?",
+   "a": "If you are near Bratislava, yes, it is a genuine opportunity. Austrians cross the border for services that cost less in Slovakia. German-language pages aimed at cross-border searchers can open a wealthy neighbouring market your local competitors ignore."
+  },
+  {
+   "q": "Do Slovaks search in Slovak or English?",
+   "a": "Slovak for local services, without exception. English matters only for export B2B and the IT sector. Local visibility needs Slovak pages built from real Slovak search terms, not translations."
+  }
+ ],
+ "meta": "SEO expert in Slovakia: in a small concentrated market, the right local SEO wins everything. Slovak-language SEO. Free audit.",
+ "subhead": "Slovak-language local SEO for Bratislava, Kosice and beyond."
+}
+=======
    "q": "Is local SEO different from regular SEO in Slovakia?",
    "a": "Yes — local SEO targets map rankings, local intent keywords, and review signals. Automotive manufacturing is the flagship industry, plus growing IT services, so a strategy built for local search outperforms generic national SEO here."
   },
@@ -43,3 +68,4 @@
  "meta": "SEO expert in Slovakia: Local SEO for Slovakia — rank higher on Google and turn searches into calls. Free audit.",
  "subhead": "Local SEO for Slovakia — more calls, more bookings, more customers."
 }
+>>>>>>> origin/main

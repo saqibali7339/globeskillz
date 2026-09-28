@@ -2,7 +2,11 @@
  "slug": "france",
  "place": "France",
  "keyword": "SEO expert in France",
+<<<<<<< HEAD
+ "h1": "SEO Expert in France Turning Local Searches into Customers",
+=======
  "h1": "Rank at the Top in France: Expert SEO Built for Local Markets",
+>>>>>>> origin/main
  "intro": "In France, the gap between page one and page two of Google is the gap between a full pipeline and an empty one. Local search drives the calls, visits, and bookings that keep businesses alive here. French-language search dominates, so English-only SEO misses most local customers. Paris concentrates business but Lyon, Marseille and Bordeaux are strong regional markets. Strict advertising rules in regulated professions shape what SEO content can claim. Tourism-heavy regions create sharp seasonal swings in local search demand. With an SEO approach designed specifically for France, your business can capture that demand instead of watching competitors take it.",
  "why": {
   "heading": "Understanding Search Behavior in France",
@@ -25,6 +29,29 @@
  "faqs": [
   {
    "q": "Why is my competitor outranking me in France?",
+<<<<<<< HEAD
+   "a": "Usually it comes down to three things: stronger reviews in French, better local relevance on their pages, or more links from French sites. I audit all three before recommending anything, because the fix is different in each case. Most of the time it is not one big thing, it is ten small things done consistently."
+  },
+  {
+   "q": "Do I need a Google Business Profile in France?",
+   "a": "Yes. It is free, and for local searches it often appears before any website does. French customers read the avis section closely, so a complete profile with fresh reviews in French will beat a nicer website with an empty profile. I set these up and manage them as part of every engagement."
+  },
+  {
+   "q": "Is an English-only website enough to rank in France?",
+   "a": "No. The overwhelming majority of local searches in France happen in French, and Google.fr rewards pages written naturally in the searcher's language. Machine-translated pages read badly and convert worse. If you want French customers, your key pages need to be written in real French."
+  },
+  {
+   "q": "How long does SEO take to work in France?",
+   "a": "Most businesses see early movement in 2 to 3 months and meaningful results in 4 to 6 months of consistent work. Competitive Paris searches take longer than a quieter regional market. Anyone promising page one in 30 days is selling you something you do not want."
+  },
+  {
+   "q": "How much should a business in France budget for SEO?",
+   "a": "It depends on your city and competition, but serious local SEO is a monthly commitment, not a one-off project. Underinvesting usually costs more in lost customers than the SEO itself. My pricing is public on this site, and every engagement starts with a free audit so you know exactly what the money does."
+  }
+ ],
+ "meta": "SEO expert in France: I help French businesses rank higher on Google, win the map pack, and turn local searches into calls. Free audit, plain reporting.",
+ "subhead": "French-language SEO that turns Google searches into paying customers."
+=======
    "a": "Usually it comes down to stronger reviews, better local relevance, or more authoritative content. French-language search dominates, so English-only SEO misses most local customers, and a proper audit reveals the exact gaps to close."
   },
   {
@@ -42,4 +69,5 @@
  ],
  "meta": "SEO expert in France: Local SEO for France — rank higher on Google and turn searches into calls. Free audit.",
  "subhead": "Local SEO for France — more calls, more bookings, more customers."
+>>>>>>> origin/main
 }

@@ -1,4 +1,54 @@
 {
+<<<<<<< HEAD
+  "slug": "nottingham",
+  "place": "Nottingham",
+  "keyword": "Content Marketing SEO Services Nottingham",
+  "h1": "Content Marketing SEO Services Nottingham Built Around What Your Customers Search",
+  "intro": "My content marketing SEO services in Nottingham help businesses win Google with content worth ranking. Most business blogs fail because they publish generic posts nobody searches for. I do the opposite: keyword research first, then content engineered to rank — every piece mapped to real Nottingham and UK search demand.\n\nFrom strategy and briefs to writing, optimization, and promotion, I handle the full content engine personally. The result is content that climbs Google, earns links naturally, and turns readers into customers — not just traffic, but revenue.",
+  "why": {
+    "heading": "Understanding Search Behavior in Nottingham",
+    "body": "Robin Hood branding and two big universities drive tourism and student searches. The Lace Market and Hockley anchor independent retail and hospitality.\n\nA dense centre means 'near me' results cluster tightly around Old Market Square. Commuter links to Derby and Leicester blur market boundaries. Businesses that understand this outperform those running generic national campaigns. City-level competition in the UK is intense, and Google's local pack decides most outcomes. Winning here means owning your map presence, your reviews, and your location pages — not just your homepage."
+  },
+  "section1": {
+    "heading": "Content Marketing SEO Services Nottingham: How It Works",
+    "body": "Your Google Business Profile is your hardest-working salesperson: it shows your hours, services, photos, and reviews before anyone visits your site. The Lace Market and Hockley anchor independent retail and hospitality. We tune every field — categories, services, attributes, posts, and Q&A — so the profile converts searchers instead of just existing."
+  },
+  "section2": {
+    "heading": "Technical SEO Without the Jargon",
+    "body": "If Google cannot crawl, load, and understand your site fast, nothing else matters. The Lace Market and Hockley anchor independent retail and hospitality. We fix the foundations: site speed, mobile experience, structured data, and clean architecture — the unglamorous work that makes every other tactic perform better."
+  },
+  "facts": [
+    "Robin Hood branding and two big universities drive tourism and student searches.",
+    "The Lace Market and Hockley anchor independent retail and hospitality.",
+    "A dense centre means 'near me' results cluster tightly around Old Market Square.",
+    "Commuter links to Derby and Leicester blur market boundaries."
+  ],
+  "faqs": [
+    {
+      "q": "What is the difference between content marketing and SEO?",
+      "a": "They are two halves of the same job. SEO makes sure Google can find, understand, and trust your site. Content marketing gives Google something worth ranking: pages that answer real customer questions. I do both together, because content without SEO is invisible and SEO without content has nothing to rank."
+    },
+    {
+      "q": "How many blog posts do I need per month?",
+      "a": "Fewer than you think, and better than you expect. I do not sell post quotas, because quotas produce filler. Most Nottingham businesses I work with publish a handful of genuinely useful pages per quarter, each targeting searches with real buying intent, and outperform competitors publishing weekly fluff."
+    },
+    {
+      "q": "Will content marketing work for my industry in Nottingham?",
+      "a": "If your customers search before they buy, yes. That covers most local services, hospitality around the Lace Market and Hockley, professional firms, and trades. If nobody ever Googles what you do, I will tell you honestly and suggest where your budget is better spent."
+    },
+    {
+      "q": "How long until content starts bringing customers?",
+      "a": "Expect early traction in three to four months and compounding returns after six. Content is slower than ads and far more durable: a page that ranks keeps working for years without another penny of ad spend."
+    },
+    {
+      "q": "Do you write everything yourself?",
+      "a": "Yes. Research, writing, publishing, measurement: all me. No juniors, no outsourced content mills, no AI-generated filler published unchecked. The person who mapped your market writes every headline."
+    }
+  ],
+  "meta": "Content marketing SEO services in Nottingham: content that ranks on Google and converts readers into customers. Free audit from a one-person studio.",
+  "subhead": "I create content that ranks on Google and turns Nottingham readers into customers."
+}
+=======
  "slug": "nottingham",
  "place": "Nottingham",
  "keyword": "Content marketing SEO services Nottingham",
@@ -47,3 +97,4 @@
  "meta": "Content marketing SEO services Nottingham: Local SEO for Nottingham — rank higher on Google and turn searches into calls. Free audit.",
  "subhead": "Local SEO for Nottingham — more calls, more bookings, more customers."
 }
+>>>>>>> origin/main

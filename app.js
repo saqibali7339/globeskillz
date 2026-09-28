@@ -349,11 +349,11 @@
   const covGrid = $('#covGrid');
   const covSearch = $('#covSearch');
   let covIndex = null;
-  let activeKind = 'us-state';
+  let activeKind = 'us';
   let query = '';
 
   function kindLabel(t) {
-    return { 'us-state': 'US State', 'uk': 'United Kingdom', 'canada': 'Canada', 'eu-country': 'Europe', 'city': 'City' }[t] || 'Location';
+    return { 'us': 'United States', 'uk': 'United Kingdom', 'canada': 'Canada', 'eu': 'Europe', 'specialty': 'Specialty' }[t] || 'Location';
   }
 
   let cardDesc = {};
@@ -362,7 +362,7 @@
   function renderCoverage() {
     if (!covGrid || !covIndex) return;
     const pool = covIndex.locations
-      .filter(l => l.type === activeKind)
+      .filter(l => (l.region || l.type) === activeKind)
       .map(l => ({ slug: l.slug, label: kindLabel(l.type), title: l.place, desc: cardDesc['loc:' + l.slug] || '' }));
     const q = query.toLowerCase();
     const filtered = q ? pool.filter(x => x.title.toLowerCase().includes(q)) : pool;

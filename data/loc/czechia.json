@@ -2,7 +2,11 @@
  "slug": "czechia",
  "place": "Czechia",
  "keyword": "SEO expert in Czechia",
+<<<<<<< HEAD
+ "h1": "SEO Expert in Czechia: Be the Obvious Choice on Google",
+=======
  "h1": "Grow Your Czechia Business with an SEO Expert Who Knows the Market",
+>>>>>>> origin/main
  "intro": "In Czechia, the gap between page one and page two of Google is the gap between a full pipeline and an empty one. Local search drives the calls, visits, and bookings that keep businesses alive here. Czech-language search rules, with local engine Seznam still strong beside Google. Prague concentrates business and tourism, Brno anchors the Moravian tech scene. Manufacturing and engineering heritage shapes a strong B2B search market. Beer culture and spa towns like Karlovy Vary drive tourism keywords. With an SEO approach designed specifically for Czechia, your business can capture that demand instead of watching competitors take it. Local SEO is a long game, but every month of consistent work compounds: better rankings bring more calls, more calls bring more reviews, and more reviews push rankings higher still. Businesses that commit to the process pull away from competitors that dabble.",
  "why": {
   "heading": "SEO in Czechia Is Not Like SEO Anywhere Else",
@@ -24,6 +28,27 @@
  ],
  "faqs": [
   {
+<<<<<<< HEAD
+   "q": "How important is Seznam compared to Google in Czechia?",
+   "a": "Google leads, but Seznam still matters, particularly for older demographics and some local queries. The practical move is simple: a complete Firmy.cz listing plus Google-focused SEO covers both. It is a small effort most competitors skip."
+  },
+  {
+   "q": "How long does SEO take in Czechia?",
+   "a": "Early movement in 2 to 3 months, meaningful results in 4 to 6. Prague's competitive terms take longer; Brno, Ostrava, and regional markets usually move faster because proper Czech-language SEO is rare there."
+  },
+  {
+   "q": "Why can't I just translate my English keywords into Czech?",
+   "a": "Because Czechs do not search in translated English. Czech morphology, colloquial phrasing, and local service terms produce keywords that look nothing like translations. Real Czech keyword research starts from Czech search data, not a dictionary."
+  },
+  {
+   "q": "Do you work with businesses outside Prague?",
+   "a": "Yes, and they are often the best projects. Brno's B2B market, Ostrava's industrial base, and regional cities all have real demand with thin SEO competition. Focused Czech-language work wins page one there faster than most owners expect."
+  }
+ ],
+ "meta": "SEO expert in Czechia: Czech-language local SEO (yes, including Seznam) that puts Prague and Brno businesses first. Free audit.",
+ "subhead": "Czech-language SEO for Prague, Brno and businesses across Czechia."
+}
+=======
    "q": "Is local SEO different from regular SEO in Czechia?",
    "a": "Yes — local SEO targets map rankings, local intent keywords, and review signals. Manufacturing and engineering heritage shapes a strong B2B search market, so a strategy built for local search outperforms generic national SEO here."
   },
@@ -43,3 +68,4 @@
  "meta": "SEO expert in Czechia: Local SEO for Czechia — rank higher on Google and turn searches into calls. Free audit.",
  "subhead": "Local SEO for Czechia — more calls, more bookings, more customers."
 }
+>>>>>>> origin/main

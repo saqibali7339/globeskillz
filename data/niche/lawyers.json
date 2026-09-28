@@ -1,5 +1,60 @@
 {
  "slug": "lawyers",
+<<<<<<< HEAD
+ "place": "lawyers",
+ "keyword": "SEO for lawyers",
+ "h1": "SEO for Lawyers That Brings Consultations",
+ "subhead": "Ethical, authoritative visibility for your practice.",
+ "meta": "SEO for lawyers: rank higher for your practice areas, build trust with clients searching for counsel. Free audit, no obligations.",
+ "intro": "Legal clients search at stressful moments: an arrest, an injury, a divorce, a business dispute. They choose the firm that looks competent, trustworthy, and easy to contact. Law firm SEO is unlike any other kind, because Google holds legal content to its highest quality standard and bar rules limit what you can claim. I build lawyer websites that rank for their practice areas while staying firmly within ethical advertising rules: real expertise, clear credentials, and content that genuinely helps.",
+ "why": {
+  "heading": "How legal clients choose counsel",
+  "body": "A legal search is high-stakes and research-heavy. Clients compare several firms, read attorney bios, look for case results they are allowed to publish, and weigh reviews carefully. Google's quality standards for legal content are strict: thin pages and generic claims do not rank, and misleading content can hurt you. The firms that win combine deep practice-area pages, genuine attorney authority, and a reputation footprint that reassures a nervous searcher. That is a slower build than most SEO, but the case values make it worth it."
+ },
+ "section1": {
+  "heading": "Practice-area pages with real depth",
+  "body": "Each practice area gets a comprehensive page written around how clients actually search: 'divorce lawyer', 'personal injury attorney near me', the specific questions they ask first. These pages demonstrate expertise properly, with clear explanations, process outlines, and honest FAQ content. Attorney bio pages get the same treatment, because clients hire people, not firms. Everything is written to satisfy both Google's quality bar and your jurisdiction's advertising rules."
+ },
+ "section2": {
+  "heading": "Authority and trust signals",
+  "body": "For lawyers, trust is the ranking factor you can feel. I build it systematically: consistent profiles across legal directories, genuine client reviews handled within ethical bounds, local citations done right, and content that earns links because it is actually useful. Your Google Business Profile gets the same careful treatment as any local business, with categories and services exact. No shortcuts, no review schemes, nothing that risks your license or your reputation."
+ },
+ "facts": [
+  "Google applies its strictest content quality standards to legal websites.",
+  "Legal clients research heavily and compare multiple firms before contacting one.",
+  "Attorney bio pages are among the most visited pages on law firm sites.",
+  "Bar advertising rules vary by jurisdiction and constrain claims and testimonials.",
+  "Practice-area depth beats site breadth for law firm rankings."
+ ],
+ "faqs": [
+  {
+   "q": "Is SEO ethical for lawyers?",
+   "a": "Yes, when it is done honestly. Informative content, accurate attorney bios, and genuine client reviews sit comfortably inside the advertising rules of most jurisdictions. I avoid guaranteed outcomes, fabricated testimonials, and any claim your bar would question. If a tactic feels risky, I will talk you out of it."
+  },
+  {
+   "q": "How long does law firm SEO take?",
+   "a": "Longer than most industries, usually six to twelve months in a competitive market. Legal search is entrenched, and Google holds legal content to its highest quality standard, so authority has to be earned with real depth. The case values involved make the wait worthwhile."
+  },
+  {
+   "q": "Can you guarantee first-page rankings?",
+   "a": "No, and you should distrust anyone who offers that, especially in legal. What I do guarantee is transparency: you will see exactly what I am doing, what it costs, and what it produces, every single month."
+  },
+  {
+   "q": "What about Avvo and the legal directories?",
+   "a": "They matter for both visibility and trust. I make sure your profiles are complete, accurate, and consistent everywhere a potential client might check, because inconsistency anywhere reads as carelessness everywhere."
+  },
+  {
+   "q": "Who writes the legal content?",
+   "a": "I draft it in plain language from your expertise, and you approve every word before it goes live. Legal accuracy stays with you; readability is my job. Nothing publishes without your sign-off."
+  },
+  {
+   "q": "Do you work with solo practices or only large firms?",
+   "a": "Both. Solo and small firms often have an edge: a real attorney's voice and genuine specialization beat generic big-firm pages. Depth in one or two practice areas can outrank breadth."
+  }
+ ],
+ "niche": "lawyers"
+}
+=======
  "niche": "lawyers",
  "keyword": "SEO expert for lawyers",
  "h1": "Rank #1 as a lawyer: Expert, Industry-Specific SEO That Converts",
@@ -43,3 +98,4 @@
  "meta": "SEO expert for lawyers: Turn searches into enquiries — technical SEO, content and links that win customers. Free audit.",
  "subhead": "SEO for lawyers — more visibility, more enquiries, more work."
 }
+>>>>>>> origin/main

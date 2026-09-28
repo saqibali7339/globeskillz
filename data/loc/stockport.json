@@ -1,4 +1,54 @@
 {
+<<<<<<< HEAD
+  "slug": "stockport",
+  "place": "Stockport",
+  "keyword": "SEO Online Marketing Services Stockport",
+  "h1": "SEO Online Marketing Services Stockport: Beat the Manchester Blur",
+  "intro": "Stockport's business scene is on the rise, and SEO online marketing services in Stockport are how local businesses make sure they rise with it. From the historic market hall and Underbank to the business parks at Cheadle and Hazel Grove, Stockport has a diverse economy where buyers still prefer dealing with local firms, but find them on Google first. I provide SEO and online marketing services built for that reality: search optimization that wins the Stockport map pack, plus the wider online marketing, content, reviews, and conversion work, that turns visibility into revenue. Whether your customers are in the town centre, Bramhall, Marple, or across Greater Manchester, being found first is what grows the business.",
+  "why": {
+    "heading": "Understanding Search Behavior in Stockport",
+    "body": "Stockport searches carry strong local intent with a Manchester-adjacent twist. People want Stockport providers, but Google often blends in Manchester results, so your local relevance signals have to be decisive: Stockport reviews, Stockport-anchored content, flawless NAP consistency. The town's growth, boosted by the ongoing town centre regeneration and its appeal to Manchester commuters, is bringing new residents who search for everything from scratch, a constant stream of new-customer queries. SEO online marketing services in Stockport win by owning the local map pack while building the content and review footprint that keeps Manchester competitors from poaching your market."
+  },
+  "section1": {
+    "heading": "Technical SEO Without the Jargon",
+    "body": "If Google cannot crawl, load, and understand your site fast, nothing else matters. I fix the foundations first: Core Web Vitals, mobile experience, crawlability, and clean site architecture. Most Stockport business sites I audit are dated builds quietly losing enquiries, and a fast technical base is the quickest win in this market."
+  },
+  "section2": {
+    "heading": "Content That Earns the Click",
+    "body": "Rankings without clicks are vanity. I build service and location content around the exact phrases your customers type, and pair it with the online marketing essentials, review generation, conversion-focused pages, and clear calls to action, that turn Stockport searches into Stockport customers."
+  },
+  "facts": [
+    "A rising Greater Manchester town where buyers prefer local firms found on Google.",
+    "Town centre regeneration plus commuter appeal creates constant new-customer searches.",
+    "Google blends Manchester results in, so Stockport relevance signals must be decisive.",
+    "Market hall to business parks: a diverse economy with distinct search pockets."
+  ],
+  "faqs": [
+    {
+      "q": "Why do Manchester businesses outrank me in Stockport searches?",
+      "a": "Because Google blends Greater Manchester into one market and your Stockport relevance signals are weaker than their Manchester ones. The fix is making every signal decisively Stockport: profile, content, reviews, and listings. Once Google is confident, the blur stops hurting you."
+    },
+    {
+      "q": "Should I target Manchester keywords for more traffic?",
+      "a": "Almost never. The competition is fiercer, the intent is worse, and Manchester searchers prefer Manchester firms. Owning Stockport first gives you better customers at lower cost. Expand outward only once the town is won."
+    },
+    {
+      "q": "What does online marketing include beyond SEO?",
+      "a": "For most Stockport businesses, SEO plus a strong Google Business Profile plus review management covers 90 percent of online customer acquisition. I focus budget where buying intent lives: the search box. If paid ads or social make sense for you, I will say so honestly."
+    },
+    {
+      "q": "How long until I see results?",
+      "a": "Early movement in two to three months, meaningful visibility in four to six. The Manchester-blur fix often delivers the fastest visible improvement, because it is about clarity, not just authority building."
+    },
+    {
+      "q": "Do you work with businesses outside Stockport?",
+      "a": "Yes, across Greater Manchester, the UK, and worldwide. The Stockport test works anywhere geography matters, which is everywhere in local SEO."
+    }
+  ],
+  "meta": "SEO and online marketing services in Stockport: outrank the Manchester blur and win local customers. Free audit, plain-English reports, no jargon.",
+  "subhead": "I help Stockport businesses stand out on Google, even when Manchester results crowd in."
+}
+=======
  "slug": "stockport",
  "place": "Stockport",
  "keyword": "SEO Online Marketing Services Stockport",
@@ -43,3 +93,4 @@
  "meta": "SEO Online Marketing Services Stockport: Local SEO for Stockport — rank higher on Google and turn searches into calls. Free audit.",
  "subhead": "Local SEO for Stockport — more calls, more bookings, more customers."
 }
+>>>>>>> origin/main

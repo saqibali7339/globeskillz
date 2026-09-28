@@ -2,7 +2,11 @@
  "slug": "spain",
  "place": "Spain",
  "keyword": "SEO expert in Spain",
+<<<<<<< HEAD
+ "h1": "SEO Expert in Spain for Businesses That Want More Bookings",
+=======
  "h1": "Rank at the Top in Spain: Expert SEO Built for Local Markets",
+>>>>>>> origin/main
  "intro": "In Spain, the gap between page one and page two of Google is the gap between a full pipeline and an empty one. Local search drives the calls, visits, and bookings that keep businesses alive here. Spanish dominates, but Catalan, Basque and Galician matter in their regions. Madrid and Barcelona lead, with Valencia, Seville and Bilbao as regional centres. Tourism is enormous and highly seasonal along the coasts and islands. Strong regional identities mean Barcelona campaigns often need Catalan targeting. With an SEO approach designed specifically for Spain, your business can capture that demand instead of watching competitors take it.",
  "why": {
   "heading": "The Spain Search Market Plays by Its Own Rules",
@@ -25,6 +29,25 @@
  "faqs": [
   {
    "q": "How long does SEO take to work in Spain?",
+<<<<<<< HEAD
+   "a": "Most businesses see early movement in 2 to 3 months and meaningful results in 4 to 6 months. Tourist markets need work timed ahead of the season: start in winter to rank by summer. Competitive Madrid and Barcelona searches take longer than regional cities."
+  },
+  {
+   "q": "How much should a business in Spain budget for SEO?",
+   "a": "It depends on your city and sector, but effective local SEO is a monthly commitment. My pricing is public on this site, and every engagement starts with a free audit so you know exactly what your budget buys before you spend it."
+  },
+  {
+   "q": "Do I need a Google Business Profile in Spain?",
+   "a": "Yes, it is free and often outranks websites for local searches. Spanish customers check reviews and photos before calling, so a complete, active profile is one of the highest-return things you can do."
+  },
+  {
+   "q": "Can I do SEO for my Spanish business myself?",
+   "a": "The basics, yes: claim listings, gather reviews, publish in Spanish. The technical foundation, multilingual keyword research, and link building are where a specialist pays for themselves. Be honest about how many hours you actually have."
+  }
+ ],
+ "meta": "SEO expert in Spain: Spanish-language local SEO for Madrid, Barcelona, and beyond, built for tourism seasons and local demand. Free audit included.",
+ "subhead": "Local SEO in Spanish (and Catalan, Basque, or Galician where it counts)."
+=======
    "a": "Most businesses in Spain see early movement in 2–3 months and meaningful results in 4–6, because Spanish dominates, but Catalan, Basque and Galician matter in their regions. Competitive markets take longer; consistent effort compounds."
   },
   {
@@ -42,4 +65,5 @@
  ],
  "meta": "SEO expert in Spain: Local SEO for Spain — rank higher on Google and turn searches into calls. Free audit.",
  "subhead": "Local SEO for Spain — more calls, more bookings, more customers."
+>>>>>>> origin/main
 }

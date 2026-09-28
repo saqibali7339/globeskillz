@@ -1,20 +1,34 @@
 {
  "slug": "pest-control-companies",
  "niche": "pest control companies",
+<<<<<<< HEAD
+ "keyword": "SEO Expert for Pest Control Companies",
+ "h1": "SEO Expert for Pest Control Companies Built for Emergency Search",
+ "intro": "Clients looking for a pest control company start with Google almost every time. Ranking well is not a nice-to-have in this industry \u2014 it is how the phone keeps ringing. Nobody plans a pest problem, so emergency intent and same-day keywords carry the whole funnel. Treatment-specific pages for termites, bed bugs, and rodents outrank generic pest control pages. Recurring quarterly plans are the margin, so subscription content and retention reviews matter most. Seasonal invasion content for wasps, ants, and mice captures searches before the infestation peaks. That is why pest control companies businesses need an SEO approach designed around how their clients actually search, compare, and choose.",
+=======
  "keyword": "SEO expert for pest control companies",
  "h1": "SEO Expert for pest control companies — Dominate Local Search in Your Field",
  "intro": "Clients looking for a pest control company start with Google almost every time. Ranking well is not a nice-to-have in this industry — it is how the phone keeps ringing. Nobody plans a pest problem, so emergency intent and same-day keywords carry the whole funnel. Treatment-specific pages for termites, bed bugs, and rodents outrank generic pest control pages. Recurring quarterly plans are the margin, so subscription content and retention reviews matter most. Seasonal invasion content for wasps, ants, and mice captures searches before the infestation peaks. That is why pest control companies businesses need an SEO approach designed around how their clients actually search, compare, and choose.",
+>>>>>>> origin/main
  "why": {
   "heading": "Why Pest control companies Need a Different Kind of SEO",
   "body": "Nobody plans a pest problem, so emergency intent and same-day keywords carry the whole funnel. Treatment-specific pages for termites, bed bugs, and rodents outrank generic pest control pages.\n\nRecurring quarterly plans are the margin, so subscription content and retention reviews matter most. Seasonal invasion content for wasps, ants, and mice captures searches before the infestation peaks. SEO that respects these realities wins clients; SEO that ignores them burns budget."
  },
  "section1": {
   "heading": "Google Business Profile, Done Properly",
+<<<<<<< HEAD
+  "body": "Your Google Business Profile is your hardest-working salesperson: it shows your hours, services, photos, and reviews before anyone visits your site. Treatment-specific pages for termites, bed bugs, and rodents outrank generic pest control pages. We tune every field \u2014 categories, services, attributes, posts, and Q&A \u2014 so the profile converts searchers instead of just existing."
+ },
+ "section2": {
+  "heading": "Technical SEO Without the Jargon",
+  "body": "If Google cannot crawl, load, and understand your site fast, nothing else matters. Treatment-specific pages for termites, bed bugs, and rodents outrank generic pest control pages. We fix the foundations: site speed, mobile experience, structured data, and clean architecture \u2014 the unglamorous work that makes every other tactic perform better."
+=======
   "body": "Your Google Business Profile is your hardest-working salesperson: it shows your hours, services, photos, and reviews before anyone visits your site. Treatment-specific pages for termites, bed bugs, and rodents outrank generic pest control pages. We tune every field — categories, services, attributes, posts, and Q&A — so the profile converts searchers instead of just existing."
  },
  "section2": {
   "heading": "Technical SEO Without the Jargon",
   "body": "If Google cannot crawl, load, and understand your site fast, nothing else matters. Treatment-specific pages for termites, bed bugs, and rodents outrank generic pest control pages. We fix the foundations: site speed, mobile experience, structured data, and clean architecture — the unglamorous work that makes every other tactic perform better."
+>>>>>>> origin/main
  },
  "facts": [
   "Nobody plans a pest problem, so emergency intent and same-day keywords carry the whole funnel.",
@@ -24,6 +38,35 @@
  ],
  "faqs": [
   {
+<<<<<<< HEAD
+   "q": "How long does SEO take for a pest control company?",
+   "a": "Profile and review fixes can move the map pack within weeks, which matters enormously for emergency searches. Durable organic rankings for treatment terms typically take three to six months. The honest upside: even early visibility gains convert fast here, because the intent behind the search is so urgent."
+  },
+  {
+   "q": "Should I have a page for every pest?",
+   "a": "For every pest worth real money, yes: bed bugs, termites, rodents, wasps, ants. Each is a distinct search with distinct intent, and a dedicated page matches it. Minor pests can share a page. The rule is simple: if customers search for it by name, it gets a page."
+  },
+  {
+   "q": "How do I win property manager contracts through SEO?",
+   "a": "Build a commercial page that speaks their language: response times, documentation, multi-unit pricing, and proof of similar accounts. Then make sure it ranks for commercial pest control terms, which most residential-focused competitors ignore entirely. One property manager relationship can mean dozens of units on recurring plans."
+  },
+  {
+   "q": "Are seasonal pest pages really worth building?",
+   "a": "Absolutely. Wasp, ant, and mosquito searches spike hard and predictably every year. A page published in winter is ranking by the time the spike hits, capturing weeks of high-intent traffic while competitors scramble. It is some of the highest-return content in the trade."
+  },
+  {
+   "q": "What kills most pest control websites?",
+   "a": "Trying to rank one generic page for everything, hiding pricing entirely, and neglecting the review flow. Fix those three and most local competitors are already behind you."
+  },
+  {
+   "q": "Do you guarantee first-page rankings?",
+   "a": "No, and you should be wary of anyone who does. Nobody controls Google's results, and ranking guarantees in SEO are a red flag, not a selling point. What I do guarantee is the work itself: a full audit in week one, plain-English reporting you can verify, and a strategy built specifically for how pest control customers search."
+  }
+ ],
+ "meta": "SEO expert for pest control companies: emergency termite, bed bug and rodent pages that capture panic searches. Free audit.",
+ "subhead": "Termite, bed bug and rodent pages that capture panic searches."
+}
+=======
    "q": "How long does SEO take for pest control companies?",
    "a": "Typically 3–6 months for meaningful traction, because Nobody plans a pest problem, so emergency intent and same-day keywords carry the whole funnel. Competitive niches take longer, but the clients you win are worth far more than the wait."
   },
@@ -43,3 +86,4 @@
  "meta": "SEO expert for pest control companies: Turn searches into enquiries — technical SEO, content and links that win customers. Free audit.",
  "subhead": "SEO for pest control companies — more visibility, more enquiries, more work."
 }
+>>>>>>> origin/main

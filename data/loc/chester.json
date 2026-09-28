@@ -1,4 +1,14 @@
 {
+<<<<<<< HEAD
+  "slug": "chester",
+  "place": "Chester",
+  "keyword": "SEO Company Chester",
+  "h1": "SEO Company Chester for Businesses Inside the Walls and Beyond",
+  "intro": "As an SEO company serving Chester, I help local businesses turn Google into their best salesperson. In Chester, the gap between page one and page two is the gap between a full pipeline and an empty one. Local search drives the calls, visits, and bookings that keep businesses alive here.\n\nUnlike big agencies where your account gets handed to juniors, you work directly with me — a specialist who has been doing SEO since 2019. Every audit, every fix, every piece of content is done by the person you hired, with reporting you can actually understand.",
+  "why": {
+    "heading": "Understanding Search Behavior in Chester",
+    "body": "A Roman-walled city where the Rows and racecourse drive visitor searches. An affluent Cheshire catchment raises average customer value for local services.\n\nTourism and retail dominate the centre; services spread to the suburbs. Commuter links to Liverpool and Manchester widen the market. Businesses that understand this outperform those running generic national campaigns. City-level competition in the UK is intense, and Google's local pack decides most outcomes. Winning here means owning your map presence, your reviews, and your location pages — not just your homepage."
+=======
  "slug": "chester",
  "place": "Chester",
  "keyword": "SEO company Chester",
@@ -26,6 +36,7 @@
   {
    "q": "Why hire an SEO company in Chester instead of doing it myself?",
    "a": "Because effective SEO takes 10-20 hours a month of skilled work — technical fixes, content, outreach — and mistakes can cost you rankings. As your Chester SEO company, I bring years of experience, proven systems, and tools that would cost you hundreds a month, all for less than a part-time hire."
+>>>>>>> origin/main
   },
   {
    "q": "How long before my Chester business ranks higher?",
@@ -35,6 +46,39 @@
    "q": "Why is my competitor outranking me in Chester?",
    "a": "Usually it comes down to stronger reviews, better local relevance, or more authoritative content. A Roman-walled city where the Rows and racecourse drive visitor searches, and a proper audit reveals the exact gaps to close."
   },
+<<<<<<< HEAD
+  "facts": [
+    "A Roman-walled city where the Rows and racecourse drive visitor searches.",
+    "An affluent Cheshire catchment raises average customer value for local services.",
+    "Tourism and retail dominate the centre; services spread to the suburbs.",
+    "Commuter links to Liverpool and Manchester widen the market."
+  ],
+  "faqs": [
+    {
+      "q": "Should our SEO target tourists or locals?",
+      "a": "It depends entirely on where your revenue comes from. Hospitality usually wants both, weighted by season; services almost always want locals. I help you decide at audit stage and build for that choice."
+    },
+    {
+      "q": "How does the racecourse affect local SEO?",
+      "a": "It creates predictable seasonal spikes in hospitality, transport and retail searches. Prepared businesses capture them with timely content and offers; unprepared ones just watch the surge pass."
+    },
+    {
+      "q": "How long does SEO take in Chester?",
+      "a": "Two to three months for early movement, four to six for meaningful results. Affluent catchments reward precision, so the audit focuses on the searches worth winning."
+    },
+    {
+      "q": "Do you work with businesses outside the city walls?",
+      "a": "Yes. Suburban Chester is where most service demand lives, and those \"near me\" searches convert best. The walls are a landmark, not a boundary."
+    },
+    {
+      "q": "What should I ask an SEO company Chester shortlist before signing?",
+      "a": "Ask what they will do in month one, how they report, and whether there is a contract. Vague answers are your warning sign. My answers: a full audit, plain-English reporting tied to enquiries, and no lock-in."
+    }
+  ],
+  "meta": "SEO company Chester: local SEO for the Roman city, from the Rows to the suburbs. Tourist and local targeting done right. Free audit.",
+  "subhead": "SEO for Chester businesses, from the city centre to the suburbs."
+}
+=======
   {
    "q": "Do I need a Google Business Profile in Chester?",
    "a": "Absolutely — it is free and often the first thing customers see. An affluent Cheshire catchment raises average customer value for local services, so a fully optimized profile with fresh reviews and posts is non-negotiable."
@@ -47,3 +91,4 @@
  "meta": "SEO company Chester: Local SEO for Chester — rank higher on Google and turn searches into calls. Free audit.",
  "subhead": "Local SEO for Chester — more calls, more bookings, more customers."
 }
+>>>>>>> origin/main

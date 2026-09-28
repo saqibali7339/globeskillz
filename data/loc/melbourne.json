@@ -1,4 +1,54 @@
 {
+<<<<<<< HEAD
+  "slug": "melbourne",
+  "place": "Melbourne",
+  "keyword": "Affordable SEO Packages Melbourne",
+  "h1": "Affordable SEO Packages Melbourne: Every Dollar Accounted For",
+  "intro": "Affordable SEO packages in Melbourne are easy to find and hard to trust. This city has one of Australia's most competitive agency markets, and too many packages hide behind lock-in contracts, vague deliverables, and reports full of vanity metrics. My affordable SEO packages in Melbourne are built differently: transparent monthly work, honest reporting you can actually read, and pricing a small business can sustain. You get the technical fixes, the content, and the authority building that actually move rankings, scoped to what your market needs, nothing padded. Whether you serve Fitzroy, South Yarra, the CBD, or greater Victoria, you should know exactly what you are paying for and what it is earning you.",
+  "why": {
+    "heading": "Understanding Search Behavior in Melbourne",
+    "body": "Melbourne is Australia's most search-savvy major market after Sydney: high commercial intent, suburb-level search behavior, and buyers who compare providers ruthlessly. People search with suburb intent, plumber Fitzroy or cafe South Melbourne, and Google rewards genuine local relevance at that granularity. The agency density also means your competitors are likely already investing in SEO, so package-based, consistent monthly work beats sporadic efforts. Affordable SEO packages in Melbourne win by focusing spend where it converts: technical health, suburb-level relevance, review velocity, and content that answers buyer questions better than the agency down the road."
+  },
+  "section1": {
+    "heading": "Technical SEO Without the Jargon",
+    "body": "If Google cannot crawl, load, and understand your site fast, nothing else matters. Every package starts with the foundations: Core Web Vitals, mobile experience, crawlability, and clean architecture. Most Melbourne small-business sites I audit are slow, plugin-bloated WordPress builds, and fixing that alone often unlocks the first ranking movement."
+  },
+  "section2": {
+    "heading": "Content That Earns the Click",
+    "body": "Rankings without clicks are vanity. I build service and suburb content around the exact phrases your customers type, and every page is written to convert. Your monthly package includes content with a job to do, not filler to pad a report."
+  },
+  "facts": [
+    "One of Australia's most competitive agency markets, buyers compare ruthlessly.",
+    "Suburb-level search intent means Fitzroy and Footscray are different markets.",
+    "High commercial intent: Melbourne searchers are ready to buy.",
+    "Consistent monthly work beats sporadic efforts against invested competitors."
+  ],
+  "faqs": [
+    {
+      "q": "What is a realistic budget for SEO in Melbourne?",
+      "a": "It depends on your competition, but most small businesses need sustained monthly work rather than a one-off project. Be wary of anything suspiciously cheap: real SEO is manual work, and manual work has a floor. A free audit gives you an honest figure for your market."
+    },
+    {
+      "q": "Are affordable SEO packages effective or just cheap?",
+      "a": "They are effective when the price reflects low overhead, not missing work. My packages are affordable because I am one person with no agency costs, not because I skip the audit, the profile work, or the reporting. Ask any provider to itemise the work; the answer tells you everything."
+    },
+    {
+      "q": "How long until I see results?",
+      "a": "Early movement in two to three months, meaningful results in four to six. Melbourne's competition means there are no shortcuts, but consistent monthly work beats sporadic efforts against invested competitors every time."
+    },
+    {
+      "q": "Do you require a long-term contract?",
+      "a": "No. Month to month, always. I would rather earn your renewal every thirty days than lock you in for a year."
+    },
+    {
+      "q": "Can you work with my existing website?",
+      "a": "Almost always. Most sites need fixing, not replacing. If your site is genuinely holding you back, I build fast WordPress and Shopify sites myself, but I will never sell you a rebuild you do not need."
+    }
+  ],
+  "meta": "Affordable SEO packages in Melbourne with everything itemised and nothing hidden. Real SEO for smaller budgets. Free audit, no lock-in contracts.",
+  "subhead": "Honest, itemised SEO packages for Melbourne small businesses. No lock-ins, no mystery."
+}
+=======
  "slug": "melbourne",
  "place": "Melbourne",
  "keyword": "Affordable SEO Packages Melbourne",
@@ -43,3 +93,4 @@
  "meta": "Affordable SEO Packages Melbourne: Local SEO for Melbourne — rank higher on Google and turn searches into calls. Free audit.",
  "subhead": "Local SEO for Melbourne — more calls, more bookings, more customers."
 }
+>>>>>>> origin/main

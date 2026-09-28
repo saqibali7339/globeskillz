@@ -2,7 +2,11 @@
  "slug": "belgium",
  "place": "Belgium",
  "keyword": "SEO expert in Belgium",
+<<<<<<< HEAD
+ "h1": "SEO Expert in Belgium for Flanders, Wallonia, and Brussels",
+=======
  "h1": "Rank at the Top in Belgium: Expert SEO Built for Local Markets",
+>>>>>>> origin/main
  "intro": "In Belgium, the gap between page one and page two of Google is the gap between a full pipeline and an empty one. Local search drives the calls, visits, and bookings that keep businesses alive here. Dutch in Flanders, French in Wallonia, German in the east — SEO must split by region. Brussels hosts EU institutions, creating a bubble of international B2B demand. Dense population and strong e-commerce make local delivery keywords competitive. English works in business, but consumers search in their own language. With an SEO approach designed specifically for Belgium, your business can capture that demand instead of watching competitors take it.",
  "why": {
   "heading": "The Belgium Search Market Plays by Its Own Rules",
@@ -25,6 +29,29 @@
  "faqs": [
   {
    "q": "How long does SEO take to work in Belgium?",
+<<<<<<< HEAD
+   "a": "Most businesses see early movement in 2 to 3 months and meaningful results in 4 to 6 months. Multilingual setups take slightly longer to build properly, but they are much harder for competitors to copy once they are in place."
+  },
+  {
+   "q": "Do I need separate websites for Dutch and French?",
+   "a": "Usually not. One well-structured site with proper language targeting beats two thin sites. The key is clean separation: Dutch pages for Flanders, French pages for Wallonia, and hreflang done correctly so Google serves the right version."
+  },
+  {
+   "q": "How much should a business in Belgium budget for SEO?",
+   "a": "Multilingual SEO costs more than single-language work because you are effectively building for two or three markets. My pricing is public, and the free audit shows exactly what your situation needs before you spend anything."
+  },
+  {
+   "q": "Is local SEO different from regular SEO in Belgium?",
+   "a": "Yes, and more so than in most countries. Local SEO here means winning the map pack in the right language for each region. A French page will not win Dutch searches in Ghent, no matter how good it is."
+  },
+  {
+   "q": "Can I do SEO for my Belgian business myself?",
+   "a": "You can manage the basics in one language, but the multilingual structure is where most DIY efforts break. Wrong hreflang, mixed-language pages, and duplicate content across languages are the classic self-inflicted wounds I get called in to fix."
+  }
+ ],
+ "meta": "SEO expert in Belgium: rank in Dutch, French, and German across Flanders, Wallonia, and Brussels. One clear plan, free audit.",
+ "subhead": "One country, three languages. I build SEO that ranks in each of them."
+=======
    "a": "Most businesses in Belgium see early movement in 2–3 months and meaningful results in 4–6, because Dutch in Flanders, French in Wallonia, German in the east — SEO must split by region. Competitive markets take longer; consistent effort compounds."
   },
   {
@@ -42,4 +69,5 @@
  ],
  "meta": "SEO expert in Belgium: Local SEO for Belgium — rank higher on Google and turn searches into calls. Free audit.",
  "subhead": "Local SEO for Belgium — more calls, more bookings, more customers."
+>>>>>>> origin/main
 }

@@ -2,7 +2,11 @@
  "slug": "romania",
  "place": "Romania",
  "keyword": "SEO expert in Romania",
+<<<<<<< HEAD
+ "h1": "SEO Expert in Romania: From Bucharest to Cluj, Get Found First",
+=======
  "h1": "SEO Expert in Romania: More Calls, More Customers, More Revenue",
+>>>>>>> origin/main
  "intro": "If you run a business in Romania, you already know visibility is everything. Customers here search online before they call, visit, or buy — and the businesses at the top of Google get the lion's share of that demand. Romanian-language search dominates; English is common among young urban professionals. Bucharest concentrates business, with Cluj-Napoca, Timisoara and Iasi as tech hubs. IT outsourcing and manufacturing are the economic engines of the market. Price-sensitive market where eMAG shapes how shoppers search and compare. The businesses winning in Romania right now are the ones that invested in local SEO early. There is still room at the top — but not for long.",
  "why": {
   "heading": "Why Romania Needs a Different SEO Playbook",
@@ -24,6 +28,31 @@
  ],
  "faqs": [
   {
+<<<<<<< HEAD
+   "q": "How long does SEO take in Romania?",
+   "a": "Early movement in 2 to 3 months, meaningful results in 4 to 6. Bucharest's competitive keywords take longer; Cluj-Napoca, Timisoara, Iasi, and regional cities usually move faster because proper Romanian-language SEO is still rare there."
+  },
+  {
+   "q": "Should my website be in Romanian or English?",
+   "a": "Romanian for local customers, always. Romanians search in Romanian for local services. English only makes sense for the IT outsourcing sector targeting foreign clients or export B2B."
+  },
+  {
+   "q": "Are Romanian buyers really that price sensitive?",
+   "a": "They are comparison driven, which is slightly different. They will pay for quality, but they need to understand what they are paying for. Transparent pages that explain value convert; vague pages that hide pricing do not."
+  },
+  {
+   "q": "Which city should I focus on first?",
+   "a": "Wherever your customers are, but growth cities deserve attention: Cluj-Napoca, Timisoara, and Iasi all have rising demand with thinner SEO competition than Bucharest. Winning a growth city first builds momentum for the capital."
+  },
+  {
+   "q": "Do you write the Romanian content?",
+   "a": "I plan everything around real Romanian keyword research, and the final copy reads naturally to native Romanian speakers. Translated English content is never used for ranking pages."
+  }
+ ],
+ "meta": "SEO expert in Romania: Romanian-language local SEO for Bucharest, Cluj-Napoca, Timisoara and Iasi. Rank higher. Free audit.",
+ "subhead": "Romanian-language local SEO for Bucharest, Cluj, Timisoara and Iasi."
+}
+=======
    "q": "How long does SEO take to work in Romania?",
    "a": "Most businesses in Romania see early movement in 2–3 months and meaningful results in 4–6, because Romanian-language search dominates; English is common among young urban professionals. Competitive markets take longer; consistent effort compounds."
   },
@@ -43,3 +72,4 @@
  "meta": "SEO expert in Romania: Local SEO for Romania — rank higher on Google and turn searches into calls. Free audit.",
  "subhead": "Local SEO for Romania — more calls, more bookings, more customers."
 }
+>>>>>>> origin/main
