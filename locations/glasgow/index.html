@@ -548,6 +548,13 @@
     });
   }, { threshold: 0.1 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  // Fallback: force-reveal above-fold elements after 1s
+  setTimeout(() => {
+    document.querySelectorAll('.reveal:not(.in)').forEach(el => {
+      const r = el.getBoundingClientRect();
+      if (r.top < window.innerHeight && r.bottom > 0) el.classList.add('in');
+    });
+  }, 1000);
 
   // Kick hero words
   requestAnimationFrame(() => {
