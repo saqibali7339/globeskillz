@@ -450,7 +450,6 @@
       $$('#covTabs .coverage__tab').forEach(t => t.classList.remove('active'));
       tab.classList.add('active');
       let kind = tab.dataset.kind;
-      if (kind === 'eu') kind = 'eu-country';
       activeKind = kind;
       renderCoverage();
     });

@@ -479,6 +479,7 @@ Mittelstand SMEs value precision and credentials, shaping how content must read.
   const displayName = isNiche ? data.niche : data.place;
   const typeLabel = isNiche ? 'Niche' : 'Location';
 
+  try {
   document.getElementById('pageTitle').textContent = `${data.keyword} \u00b7 Globe Skillz`;
   document.getElementById('pageDesc').setAttribute('content', data.meta || data.intro.slice(0, 160));
   const cleanPath = (type === 'niche' ? '/industries/' : '/locations/') + data.slug + '/';
@@ -573,6 +574,8 @@ Mittelstand SMEs value precision and credentials, shaping how content must read.
   `).join('');
 
   document.getElementById('ctaH2').innerHTML = `Ready to improve your visibility in <span class="text-grad">${displayName}</span>?`;
+
+  } catch (e) { /* static content already present */ }
 
   // Load index for related pages
   try {
