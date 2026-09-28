@@ -79,5 +79,10 @@
       "a": "It depends on the route. Doing it yourself with a page builder can take a few days to a few weeks of spare time. A freelancer building a small business site usually needs one to four weeks. An agency project with custom design and lots of features can run six to twelve weeks or more. Anyone promising a full custom site in two days is cutting corners somewhere."
     }
   ],
-  "read_time": 6
+  "read_time": 6,
+  "service": {
+    "path": "services/web-development/",
+    "label": "Web Development",
+    "blurb": "Want a straight answer on what your WordPress site should cost? Tell me what you need."
+  }
 }
