@@ -1160,3 +1160,8 @@ section table:not([class]) { width: 100%; border-collapse: collapse; font-size: 
 section table:not([class]) th { text-align: left; padding: 14px 16px; background: rgba(255,255,255,.04); font-weight: 600; border-bottom: 1px solid var(--border); white-space: nowrap; }
 section table:not([class]) td { padding: 14px 16px; border-bottom: 1px solid var(--border); color: var(--text-dim); line-height: 1.6; }
 section table:not([class]) tr:last-child td { border-bottom: none; }
+
+/* CTA band text wrapper */
+.cta-band__text { flex: 1; min-width: 0; }
+.cta-band__text h3 { font-family: var(--font-display); font-size: clamp(22px,2.6vw,30px); font-weight: 600; letter-spacing: -.02em; margin: 0 0 10px; }
+.cta-band__text p { color: var(--text-dim); font-size: 15px; line-height: 1.7; margin: 0; }
