@@ -1050,3 +1050,12 @@ a.seo-proof:hover .seo-proof__go { opacity: 1; transform: none; }
   .process__orb { width: 230px; height: 230px; }
 
 .testi-card__stars svg.dim { opacity: .25; }
+
+/* ---------- Author bio (blog posts) ---------- */
+.author-box { margin: 64px 0 0; padding: 32px; border: 1px solid var(--border); border-radius: 20px; background: linear-gradient(135deg, rgba(124,92,255,.06), rgba(34,211,238,.04)); }
+.author-box__id { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
+.author-box__avatar { width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; font-family: var(--font-display); font-weight: 700; font-size: 20px; color: #0b0b10; background: linear-gradient(135deg, var(--accent), var(--accent-2)); flex-shrink: 0; }
+.author-box__name { font-family: var(--font-display); font-weight: 700; font-size: 18px; color: var(--text); }
+.author-box__role { font-size: 13px; color: var(--text-mute); letter-spacing: .04em; margin-top: 2px; }
+.author-box p { margin: 0; color: var(--text-dim); font-size: 16px; line-height: 1.7; }
+.author-box a { color: var(--accent-2); font-weight: 600; }

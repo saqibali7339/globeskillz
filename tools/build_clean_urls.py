@@ -117,7 +117,7 @@ def esc(s):
 def meta_desc(keyword, intro, limit=160):
     """Keyword-led meta description: primary keyword first, then intro,
     truncated at a word boundary so the keyword always appears."""
-    raw = (keyword.strip() + ' \u2014 ' + intro.strip()).strip()
+    raw = (keyword.strip() + ': ' + intro.strip()).strip()
     if len(raw) <= limit:
         return esc(raw)
     return esc(raw[:limit].rsplit(' ', 1)[0])

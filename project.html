@@ -411,12 +411,33 @@ const PROJECTS = {
   document.getElementById('projBuilt').innerHTML = p.built.map(x => `<li>${x}</li>`).join('');
   document.getElementById('projResults').textContent = p.results;
 
+  // Natural dimensions for CLS-safe width/height + responsive srcset
+  const SHOT_DIMS = {
+    'albarik.jpg': [800, 3766],
+    'bubblebum.jpg': [800, 2603],
+    'bubblebum2.jpg': [800, 2142],
+    'cellblog.jpg': [800, 2479],
+    'ebike.jpg': [800, 4002],
+    'jardine.jpg': [800, 2653],
+    'plurality.jpg': [800, 2943],
+    'sahel.jpg': [800, 3595],
+    'sandaoil.jpg': [800, 2680],
+    'sensibelle.jpg': [800, 2231],
+    'vytal.jpg': [800, 908],
+    'water.jpg': [800, 2791],
+    'wooden.jpg': [800, 4237],
+    'zermatt.jpg': [800, 2205]
+  };
+
   // Screenshot: if assets/projects/screenshots/<file> exists, use it
   const shot = document.getElementById('projShot');
   const shotFile = RP + `assets/projects/screenshots/${p.shot}`;
   fetch(shotFile, { method: 'HEAD' }).then(r => {
     if (!r.ok) throw new Error('missing');
-    shot.innerHTML = `<img src="${shotFile}" alt="${p.name}">`;
+    const webp = shotFile.replace(/\.jpe?g$/, '.webp');
+    const small = shotFile.replace(/\.jpe?g$/, '-480.webp');
+    const d = SHOT_DIMS[p.shot] || [800, 600];
+    shot.innerHTML = `<picture><source type="image/webp" srcset="${small} 480w, ${webp} 800w" sizes="(max-width: 1180px) 100vw, 1100px"><img src="${shotFile}" width="${d[0]}" height="${d[1]}" alt="${p.name} website screenshot" loading="lazy"></picture>`;
     shot.classList.add('has-img');
   }).catch(() => {
     // keep image-slot fallback
@@ -426,9 +447,13 @@ const PROJECTS = {
   const proof = document.getElementById('projProof');
   if (proof && p.proof && p.proof.length) {
     proof.style.display = '';
-    document.getElementById('projProofGrid').innerHTML = p.proof.map(g =>
-      `<figure><img src="${RP}assets/projects/screenshots/${g.img}" alt="${g.cap}" loading="lazy"><figcaption>${g.cap}</figcaption></figure>`
-    ).join('');
+    document.getElementById('projProofGrid').innerHTML = p.proof.map(g => {
+      const gJpg = `${RP}assets/projects/screenshots/${g.img}`;
+      const gWebp = gJpg.replace(/\.jpe?g$/, '.webp');
+      const gSmall = gJpg.replace(/\.jpe?g$/, '-480.webp');
+      const d = SHOT_DIMS[g.img] || [800, 600];
+      return `<figure><picture><source type="image/webp" srcset="${gSmall} 480w, ${gWebp} 800w" sizes="(max-width: 720px) 100vw, 560px"><img src="${gJpg}" width="${d[0]}" height="${d[1]}" alt="${g.cap}" loading="lazy"></picture><figcaption>${g.cap}</figcaption></figure>`;
+    }).join('');
   }
 
   const related = Object.entries(PROJECTS).filter(([s]) => s !== slug).slice(0, 8);
