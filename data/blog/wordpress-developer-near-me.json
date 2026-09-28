@@ -1,1 +1,78 @@
-{"date":"2026-09-28","excerpt":"Searching for a WordPress developer near you? Here is how to judge one properly, what to ask before you pay, and the red flags that mean walk away.","faqs":[{"a":"Not necessarily. WordPress work is done online, so a remote developer can be just as good as one in your town. The advantage of local is meeting face to face and same-timezone calls. The advantage of remote is a bigger pool of talent, often at better rates.","q":"Does my WordPress developer need to be local?"},{"a":"A simple brochure site or refresh can take one to two weeks. A custom theme or a complex build with booking, payments, or integrations can take three to six weeks. Anyone who promises a full custom site in two days is cutting corners you will pay for later.","q":"How long does a WordPress project usually take?"},{"a":"Ask for recent WordPress sites they built, then actually visit them on your phone. Check speed, layout, and whether the contact forms work. Then ask one past client for a short reference call. Ten minutes of checking saves you months of regret.","q":"How do I check if a developer is actually good?"},{"a":"Most independent developers take a deposit before starting, commonly around half. Never pay the full amount upfront. Tie the final payment to the site going live and working as agreed.","q":"Should I pay a deposit before the work starts?"}],"image":"assets/blog/wordpress-developer-near-me.jpg","intro":"When something breaks on your website, or you finally want a site that actually brings in customers, the first thing most business owners do is search for a WordPress developer near them. It feels like the safe move: someone local, someone you can meet, someone who picks up the phone.\n\nLocal is nice, but it is not what makes a developer good. A bad developer is bad whether they sit two streets away or two countries away. What matters is how they work, what they have built before, and whether they understand that your website is a sales tool, not a decoration.\n\nThis guide walks you through how to find the right person, the questions that separate the pros from the cowboys, and the warning signs that should make you walk away before you hand over a penny.","keyword":"wordpress developer near me","meta":"Looking for a WordPress developer near you? Learn how to judge one, what to ask before paying, and the red flags to avoid.","read_time":5,"sections":[{"body":["Start with the obvious places: Google, but look past the ads and check the organic results. A developer who cannot rank their own site is a bad sign. Then look at directories like Clutch or Bark, and ask in local business groups on Facebook or LinkedIn where owners share honest experiences.","When you find candidates, make a shortlist of three to five. Ignore the ones with no portfolio or a portfolio of template screenshots. You want to see real, live websites they built for real businesses."],"heading":"Where to look, and what to put on your shortlist"},{"body":["Open every site in their portfolio on your phone. If their work looks broken, slow, or dated on mobile, that tells you everything: more than half your visitors will come from phones, and the developer clearly does not care about them.","Click around. Do the forms work? Do pages load fast? Is it easy to find the phone number and the booking button? A good developer builds sites that make it effortless for a visitor to become a customer."],"heading":"Judge their work like a customer, not a designer"},{"body":["Ask who will actually do the work. Some agencies show you a polished portfolio then hand your project to an intern. Ask how many revisions are included, who owns the site and domain when it is done, and what happens if something breaks a month after launch.","Get the answers in writing, in a simple contract or even an email summary. Verbal promises about support and deadlines evaporate the moment there is a problem."],"heading":"Ask these questions before you agree to anything"},{"body":["Be wary of anyone who cannot show you a live site they built. Be wary of prices that seem too good to be true, because a site built for pennies will cost you a fortune to fix. And be wary of developers who will not give you admin access or who register your domain in their own name: that is how business owners end up held hostage by their own website.","Another red flag is a developer who talks only about how the site will look and never asks about your customers, your services, or how you get business. They are building a picture, not a tool."],"heading":"Red flags that mean walk away"},{"body":["A simple site refresh from a freelancer often costs less than you fear, while a fully custom build from an agency costs more than you hope. What matters more than the number is what is included: content, images, speed work, basic SEO, and a handover where they show you how to update things yourself.","Get itemised quotes from your shortlist so you are comparing like for like. The cheapest quote is rarely the cheapest project."],"heading":"What about price?"},{"body":["Good developers do not disappear after launch. WordPress needs updates, backups, and the occasional fix, and having the same person who built the site look after it is worth a small monthly arrangement.","Ask upfront what maintenance costs and what it covers. A developer who offers ongoing care is a developer who plans for the site to work long term, which is exactly the kind of person you want building it in the first place."],"heading":"Think about after the launch, not just the launch"}],"slug":"wordpress-developer-near-me","title":"How to Find a Good WordPress Developer Near You"}
+{
+  "date": "2026-09-28",
+  "excerpt": "Searching for a WordPress developer near you? Here is how to judge one properly, what to ask before you pay, and the red flags that mean walk away.",
+  "faqs": [
+    {
+      "a": "Not necessarily. WordPress work is done online, so a remote developer can be just as good as one in your town. The advantage of local is meeting face to face and same-timezone calls. The advantage of remote is a bigger pool of talent, often at better rates.",
+      "q": "Does my WordPress developer need to be local?"
+    },
+    {
+      "a": "A simple brochure site or refresh can take one to two weeks. A custom theme or a complex build with booking, payments, or integrations can take three to six weeks. Anyone who promises a full custom site in two days is cutting corners you will pay for later.",
+      "q": "How long does a WordPress project usually take?"
+    },
+    {
+      "a": "Ask for recent WordPress sites they built, then actually visit them on your phone. Check speed, layout, and whether the contact forms work. Then ask one past client for a short reference call. Ten minutes of checking saves you months of regret.",
+      "q": "How do I check if a developer is actually good?"
+    },
+    {
+      "a": "Most independent developers take a deposit before starting, commonly around half. Never pay the full amount upfront. Tie the final payment to the site going live and working as agreed.",
+      "q": "Should I pay a deposit before the work starts?"
+    }
+  ],
+  "image": "assets/blog/wordpress-developer-near-me.jpg",
+  "intro": "When something breaks on your website, or you finally want a site that actually brings in customers, the first thing most business owners do is search for a WordPress developer near them. It feels like the safe move: someone local, someone you can meet, someone who picks up the phone.\n\nLocal is nice, but it is not what makes a developer good. A bad developer is bad whether they sit two streets away or two countries away. What matters is how they work, what they have built before, and whether they understand that your website is a sales tool, not a decoration.\n\nThis guide walks you through how to find the right person, the questions that separate the pros from the cowboys, and the warning signs that should make you walk away before you hand over a penny.",
+  "keyword": "wordpress developer near me",
+  "meta": "Looking for a WordPress developer near you? Learn how to judge one, what to ask before paying, and the red flags to avoid.",
+  "read_time": 5,
+  "sections": [
+    {
+      "body": [
+        "Start with the obvious places: Google, but look past the ads and check the organic results. A developer who cannot rank their own site is a bad sign. Then look at directories like Clutch or Bark, and ask in local business groups on Facebook or LinkedIn where owners share honest experiences.",
+        "When you find candidates, make a shortlist of three to five. Ignore the ones with no portfolio or a portfolio of template screenshots. You want to see real, live websites they built for real businesses."
+      ],
+      "heading": "Where to look, and what to put on your shortlist"
+    },
+    {
+      "body": [
+        "Open every site in their portfolio on your phone. If their work looks broken, slow, or dated on mobile, that tells you everything: more than half your visitors will come from phones, and the developer clearly does not care about them.",
+        "Click around. Do the forms work? Do pages load fast? Is it easy to find the phone number and the booking button? A good developer builds sites that make it effortless for a visitor to become a customer."
+      ],
+      "heading": "Judge their work like a customer, not a designer"
+    },
+    {
+      "body": [
+        "Ask who will actually do the work. Some agencies show you a polished portfolio then hand your project to an intern. Ask how many revisions are included, who owns the site and domain when it is done, and what happens if something breaks a month after launch.",
+        "Get the answers in writing, in a simple contract or even an email summary. Verbal promises about support and deadlines evaporate the moment there is a problem."
+      ],
+      "heading": "Ask these questions before you agree to anything"
+    },
+    {
+      "body": [
+        "Be wary of anyone who cannot show you a live site they built. Be wary of prices that seem too good to be true, because a site built for pennies will cost you a fortune to fix. And be wary of developers who will not give you admin access or who register your domain in their own name: that is how business owners end up held hostage by their own website.",
+        "Another red flag is a developer who talks only about how the site will look and never asks about your customers, your services, or how you get business. They are building a picture, not a tool."
+      ],
+      "heading": "Red flags that mean walk away"
+    },
+    {
+      "body": [
+        "A simple site refresh from a freelancer often costs less than you fear, while a fully custom build from an agency costs more than you hope. What matters more than the number is what is included: content, images, speed work, basic SEO, and a handover where they show you how to update things yourself.",
+        "Get itemised quotes from your shortlist so you are comparing like for like. The cheapest quote is rarely the cheapest project."
+      ],
+      "heading": "What about price?"
+    },
+    {
+      "body": [
+        "Good developers do not disappear after launch. WordPress needs updates, backups, and the occasional fix, and having the same person who built the site look after it is worth a small monthly arrangement.",
+        "Ask upfront what maintenance costs and what it covers. A developer who offers ongoing care is a developer who plans for the site to work long term, which is exactly the kind of person you want building it in the first place."
+      ],
+      "heading": "Think about after the launch, not just the launch"
+    }
+  ],
+  "slug": "wordpress-developer-near-me",
+  "title": "How to Find a Good WordPress Developer Near You",
+  "service": {
+    "path": "services/web-development/",
+    "label": "Web Development",
+    "blurb": "Need the developer, not just the advice? I build WordPress websites for small businesses."
+  }
+}
