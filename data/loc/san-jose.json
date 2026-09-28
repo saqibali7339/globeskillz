@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "slug": "san-jose",
   "place": "San Jose",
   "keyword": "SEO Marketing Services San Jose",
@@ -48,49 +47,3 @@
   "meta": "SEO marketing services in San Jose for B2B tech and local companies. Sophisticated SEO for a sophisticated market. Free audit, no fluff.",
   "subhead": "No fluff, no thin content: SEO that survives scrutiny in the capital of Silicon Valley."
 }
-=======
- "slug": "san-jose",
- "place": "San Jose",
- "keyword": "SEO Marketing Services San Jose",
- "h1": "SEO Marketing Services in San Jose for Companies That Need to Win",
- "intro": "San Jose is the capital of Silicon Valley, which makes it one of the most brutally competitive local search markets on earth. SEO marketing services in San Jose are not competing against the shop down the street; they are competing against venture-backed startups, national brands, and agencies with enormous budgets. Winning here takes precision: flawless technical SEO, genuinely differentiated content, and authority that cannot be faked. That is what I deliver. I work with San Jose businesses that need search to perform like a growth channel, not a checkbox: B2B tech companies, professional services, and local businesses fighting above their weight. Every engagement is marketing-led, every ranking tied to pipeline.",
- "why": {
-  "heading": "Understanding Search Behavior in San Jose",
-  "body": "San Jose searchers are the most sophisticated in the world. They see through thin content instantly, compare deeply, and decide on expertise signals: depth of content, quality of backlinks, technical polish. Generic SEO playbooks die here because everyone, including your competitors, runs them. The market also splits three ways: hyper-competitive B2B tech terms with national competition, professional services with Bay-Area-wide intent, and local consumer searches where the map pack still rules. SEO marketing services in San Jose have to pick their battles: owning a defensible niche with exceptional content beats spreading thin across unwinnable head terms. Speed and technical excellence are assumed; differentiation is the entire game."
- },
- "section1": {
-  "heading": "Technical SEO Without the Jargon",
-  "body": "If Google cannot crawl, load, and understand your site fast, nothing else matters. I fix the foundations first: Core Web Vitals, mobile experience, crawlability, log-file-informed architecture, and schema done properly. In San Jose, technical excellence is table stakes, but most sites still fail the basics, which is your opening."
- },
- "section2": {
-  "heading": "Content That Earns the Click",
-  "body": "Rankings without clicks are vanity, and in Silicon Valley thin content is invisible. I build genuinely authoritative content: original data, real expertise, depth your competitors will not bother to match. Every page is engineered to earn the click, win the comparison, and convert sophisticated buyers."
- },
- "facts": [
-  "The capital of Silicon Valley: among the most competitive local markets on earth.",
-  "Searchers are deeply sophisticated and see through thin content instantly.",
-  "Three-way market split: B2B tech, Bay-Area services, and local consumer searches.",
-  "Differentiation beats volume: owning a defensible niche wins here."
- ],
- "faqs": [
-  {
-   "q": "Why is my competitor outranking me in San Jose?",
-   "a": "Usually deeper content, stronger backlinks, or better technical execution. In this market, surface-level SEO never wins, and a proper audit shows the exact authority and content gaps to close."
-  },
-  {
-   "q": "Do I need a Google Business Profile in San Jose?",
-   "a": "For local consumer searches, absolutely, the map pack still rules. For B2B, your content authority and review footprint matter more, but the profile remains foundational."
-  },
-  {
-   "q": "How long does SEO take to work in San Jose?",
-   "a": "Expect 4 to 6 months for meaningful movement in competitive niches; this market punishes impatience and rewards sustained, high-quality effort. Less contested local terms can move in 2 to 3 months."
-  },
-  {
-   "q": "How much should a business in San Jose budget for SEO?",
-   "a": "More than in most markets, because the competition demands genuine quality. But the revenue per customer in the Bay Area makes the ROI case straightforward for serious businesses."
-  }
- ],
- "meta": "SEO Marketing Services San Jose: Local SEO for San Jose — rank higher on Google and turn searches into calls. Free audit.",
- "subhead": "Local SEO for San Jose — more calls, more bookings, more customers."
-}
->>>>>>> origin/main

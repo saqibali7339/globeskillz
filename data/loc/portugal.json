@@ -2,12 +2,7 @@
  "slug": "portugal",
  "place": "Portugal",
  "keyword": "SEO expert in Portugal",
-<<<<<<< HEAD
- "h1": "An SEO Expert in Portugal Who Knows Where Your Customers Search",
-=======
- "h1": "Grow Your Portugal Business with an SEO Expert Who Knows the Market",
->>>>>>> origin/main
- "intro": "In Portugal, the gap between page one and page two of Google is the gap between a full pipeline and an empty one. Local search drives the calls, visits, and bookings that keep businesses alive here. Portuguese dominates search; English works best in Lisbon, Porto and tourist zones. Lisbon and Porto anchor business, while the Algarve runs on seasonal tourism. Tourism, tech startups and real estate are the standout growth sectors. Summer tourism creates sharp seasonal swings in Algarve local search demand. With an SEO approach designed specifically for Portugal, your business can capture that demand instead of watching competitors take it.",
+ "h1": "An SEO Expert in Portugal Who Knows Where Your Customers Search", "intro": "In Portugal, the gap between page one and page two of Google is the gap between a full pipeline and an empty one. Local search drives the calls, visits, and bookings that keep businesses alive here. Portuguese dominates search; English works best in Lisbon, Porto and tourist zones. Lisbon and Porto anchor business, while the Algarve runs on seasonal tourism. Tourism, tech startups and real estate are the standout growth sectors. Summer tourism creates sharp seasonal swings in Algarve local search demand. With an SEO approach designed specifically for Portugal, your business can capture that demand instead of watching competitors take it.",
  "why": {
   "heading": "Understanding Search Behavior in Portugal",
   "body": "Portuguese dominates search; English works best in Lisbon, Porto and tourist zones. Lisbon and Porto anchor business, while the Algarve runs on seasonal tourism.\n\nTourism, tech startups and real estate are the standout growth sectors. Summer tourism creates sharp seasonal swings in Algarve local search demand. Businesses that understand this outperform those running generic national campaigns. Language is the first barrier: most customers search in their own language, so English-only SEO leaves most of the market untouched. Local directories, review platforms, and search habits differ by country too."
@@ -29,7 +24,6 @@
  "faqs": [
   {
    "q": "Why is my competitor outranking me in Portugal?",
-<<<<<<< HEAD
    "a": "Usually stronger reviews, better Portuguese-language relevance, or more local authority. Lisbon is the most competitive market; the Algarve is seasonal. I check all three factors in the audit and tell you which one is actually costing you."
   },
   {
@@ -46,24 +40,4 @@
   }
  ],
  "meta": "SEO expert in Portugal: local SEO for Lisbon, Porto, and the Algarve, built around how the Portuguese really search. Free audit.",
- "subhead": "From Lisbon startups to Algarve hotels: SEO built around how Portugal really searches."
-=======
-   "a": "Usually it comes down to stronger reviews, better local relevance, or more authoritative content. Portuguese dominates search; English works best in Lisbon, Porto and tourist zones, and a proper audit reveals the exact gaps to close."
-  },
-  {
-   "q": "Do I need a Google Business Profile in Portugal?",
-   "a": "Absolutely — it is free and often the first thing customers see. Lisbon and Porto anchor business, while the Algarve runs on seasonal tourism, so a fully optimized profile with fresh reviews and posts is non-negotiable."
-  },
-  {
-   "q": "How long does SEO take to work in Portugal?",
-   "a": "Most businesses in Portugal see early movement in 2–3 months and meaningful results in 4–6, because Portuguese dominates search; English works best in Lisbon, Porto and tourist zones. Competitive markets take longer; consistent effort compounds."
-  },
-  {
-   "q": "How much should a business in Portugal budget for SEO?",
-   "a": "Budgets vary with competition, but lisbon and Porto anchor business, while the Algarve runs on seasonal tourism means underinvesting costs more in lost customers than the SEO itself. Most serious local campaigns need sustained monthly work, not a one-off fix."
-  }
- ],
- "meta": "SEO expert in Portugal: Local SEO for Portugal — rank higher on Google and turn searches into calls. Free audit.",
- "subhead": "Local SEO for Portugal — more calls, more bookings, more customers."
->>>>>>> origin/main
-}
+ "subhead": "From Lisbon startups to Algarve hotels: SEO built around how Portugal really searches."}

@@ -2,12 +2,7 @@
  "slug": "spain",
  "place": "Spain",
  "keyword": "SEO expert in Spain",
-<<<<<<< HEAD
- "h1": "SEO Expert in Spain for Businesses That Want More Bookings",
-=======
- "h1": "Rank at the Top in Spain: Expert SEO Built for Local Markets",
->>>>>>> origin/main
- "intro": "In Spain, the gap between page one and page two of Google is the gap between a full pipeline and an empty one. Local search drives the calls, visits, and bookings that keep businesses alive here. Spanish dominates, but Catalan, Basque and Galician matter in their regions. Madrid and Barcelona lead, with Valencia, Seville and Bilbao as regional centres. Tourism is enormous and highly seasonal along the coasts and islands. Strong regional identities mean Barcelona campaigns often need Catalan targeting. With an SEO approach designed specifically for Spain, your business can capture that demand instead of watching competitors take it.",
+ "h1": "SEO Expert in Spain for Businesses That Want More Bookings", "intro": "In Spain, the gap between page one and page two of Google is the gap between a full pipeline and an empty one. Local search drives the calls, visits, and bookings that keep businesses alive here. Spanish dominates, but Catalan, Basque and Galician matter in their regions. Madrid and Barcelona lead, with Valencia, Seville and Bilbao as regional centres. Tourism is enormous and highly seasonal along the coasts and islands. Strong regional identities mean Barcelona campaigns often need Catalan targeting. With an SEO approach designed specifically for Spain, your business can capture that demand instead of watching competitors take it.",
  "why": {
   "heading": "The Spain Search Market Plays by Its Own Rules",
   "body": "Spanish dominates, but Catalan, Basque and Galician matter in their regions. Madrid and Barcelona lead, with Valencia, Seville and Bilbao as regional centres.\n\nTourism is enormous and highly seasonal along the coasts and islands. Strong regional identities mean Barcelona campaigns often need Catalan targeting. Businesses that understand this outperform those running generic national campaigns. Language is the first barrier: most customers search in their own language, so English-only SEO leaves most of the market untouched. Local directories, review platforms, and search habits differ by country too."
@@ -29,7 +24,6 @@
  "faqs": [
   {
    "q": "How long does SEO take to work in Spain?",
-<<<<<<< HEAD
    "a": "Most businesses see early movement in 2 to 3 months and meaningful results in 4 to 6 months. Tourist markets need work timed ahead of the season: start in winter to rank by summer. Competitive Madrid and Barcelona searches take longer than regional cities."
   },
   {
@@ -46,24 +40,4 @@
   }
  ],
  "meta": "SEO expert in Spain: Spanish-language local SEO for Madrid, Barcelona, and beyond, built for tourism seasons and local demand. Free audit included.",
- "subhead": "Local SEO in Spanish (and Catalan, Basque, or Galician where it counts)."
-=======
-   "a": "Most businesses in Spain see early movement in 2–3 months and meaningful results in 4–6, because Spanish dominates, but Catalan, Basque and Galician matter in their regions. Competitive markets take longer; consistent effort compounds."
-  },
-  {
-   "q": "How much should a business in Spain budget for SEO?",
-   "a": "Budgets vary with competition, but madrid and Barcelona lead, with Valencia, Seville and Bilbao as regional centres means underinvesting costs more in lost customers than the SEO itself. Most serious local campaigns need sustained monthly work, not a one-off fix."
-  },
-  {
-   "q": "Is local SEO different from regular SEO in Spain?",
-   "a": "Yes — local SEO targets map rankings, local intent keywords, and review signals. Tourism is enormous and highly seasonal along the coasts and islands, so a strategy built for local search outperforms generic national SEO here."
-  },
-  {
-   "q": "Can I do SEO for my Spain business myself?",
-   "a": "You can handle basics like claiming listings and asking for reviews. But strong regional identities mean Barcelona campaigns often need Catalan targeting, which is exactly where professional SEO earns its keep — technical fixes, content, and authority building."
-  }
- ],
- "meta": "SEO expert in Spain: Local SEO for Spain — rank higher on Google and turn searches into calls. Free audit.",
- "subhead": "Local SEO for Spain — more calls, more bookings, more customers."
->>>>>>> origin/main
-}
+ "subhead": "Local SEO in Spanish (and Catalan, Basque, or Galician where it counts)."}

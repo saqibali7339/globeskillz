@@ -2,12 +2,7 @@
  "slug": "germany",
  "place": "Germany",
  "keyword": "SEO expert in Germany",
-<<<<<<< HEAD
- "h1": "SEO Expert in Germany Who Gets Local Businesses Found",
-=======
- "h1": "SEO Expert in Germany: Rank Higher, Win More Local Customers",
->>>>>>> origin/main
- "intro": "If you run a business in Germany, you already know visibility is everything. Customers here search online before they call, visit, or buy — and the businesses at the top of Google get the lion's share of that demand. German-language search dominates, and English-only sites miss most buyers. Berlin, Munich and Hamburg form distinct regional markets with different industries. Mittelstand SMEs value precision and credentials, shaping how content must read. Strict privacy rules limit tracking, so first-party data and content matter more. The businesses winning in Germany right now are the ones that invested in local SEO early. There is still room at the top — but not for long.",
+ "h1": "SEO Expert in Germany Who Gets Local Businesses Found", "intro": "If you run a business in Germany, you already know visibility is everything. Customers here search online before they call, visit, or buy — and the businesses at the top of Google get the lion's share of that demand. German-language search dominates, and English-only sites miss most buyers. Berlin, Munich and Hamburg form distinct regional markets with different industries. Mittelstand SMEs value precision and credentials, shaping how content must read. Strict privacy rules limit tracking, so first-party data and content matter more. The businesses winning in Germany right now are the ones that invested in local SEO early. There is still room at the top — but not for long.",
  "why": {
   "heading": "Why Germany Needs a Different SEO Playbook",
   "body": "German-language search dominates, and English-only sites miss most buyers. Berlin, Munich and Hamburg form distinct regional markets with different industries.\n\nMittelstand SMEs value precision and credentials, shaping how content must read. Strict privacy rules limit tracking, so first-party data and content matter more. Businesses that understand this outperform those running generic national campaigns. Language is the first barrier: most customers search in their own language, so English-only SEO leaves most of the market untouched. Local directories, review platforms, and search habits differ by country too."
@@ -29,7 +24,6 @@
  "faqs": [
   {
    "q": "How long does SEO take to work in Germany?",
-<<<<<<< HEAD
    "a": "Most businesses see early movement in 2 to 3 months and meaningful results in 4 to 6 months. German markets reward consistency: steady content, steady reviews, steady technical health. Berlin takes longer than a smaller city, simply because more competitors are doing the work."
   },
   {
@@ -50,24 +44,4 @@
   }
  ],
  "meta": "SEO expert in Germany: methodical local SEO, from technical audits to German-language content that ranks. Free audit to start, plain reporting.",
- "subhead": "Methodical SEO for German businesses. Audited, fixed, and reported in plain language."
-=======
-   "a": "Most businesses in Germany see early movement in 2–3 months and meaningful results in 4–6, because German-language search dominates, and English-only sites miss most buyers. Competitive markets take longer; consistent effort compounds."
-  },
-  {
-   "q": "How much should a business in Germany budget for SEO?",
-   "a": "Budgets vary with competition, but berlin, Munich and Hamburg form distinct regional markets with different industries means underinvesting costs more in lost customers than the SEO itself. Most serious local campaigns need sustained monthly work, not a one-off fix."
-  },
-  {
-   "q": "Is local SEO different from regular SEO in Germany?",
-   "a": "Yes — local SEO targets map rankings, local intent keywords, and review signals. Mittelstand SMEs value precision and credentials, shaping how content must read, so a strategy built for local search outperforms generic national SEO here."
-  },
-  {
-   "q": "Can I do SEO for my Germany business myself?",
-   "a": "You can handle basics like claiming listings and asking for reviews. But strict privacy rules limit tracking, so first-party data and content matter more, which is exactly where professional SEO earns its keep — technical fixes, content, and authority building."
-  }
- ],
- "meta": "SEO expert in Germany: Local SEO for Germany — rank higher on Google and turn searches into calls. Free audit.",
- "subhead": "Local SEO for Germany — more calls, more bookings, more customers."
->>>>>>> origin/main
-}
+ "subhead": "Methodical SEO for German businesses. Audited, fixed, and reported in plain language."}
