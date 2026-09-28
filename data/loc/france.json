@@ -1,47 +1,53 @@
 {
- "slug": "france",
- "place": "France",
- "keyword": "SEO expert in France",
- "h1": "SEO Expert in France Turning Local Searches into Customers", "intro": "In France, the gap between page one and page two of Google is the gap between a full pipeline and an empty one. Local search drives the calls, visits, and bookings that keep businesses alive here. French-language search dominates, so English-only SEO misses most local customers. Paris concentrates business but Lyon, Marseille and Bordeaux are strong regional markets. Strict advertising rules in regulated professions shape what SEO content can claim. Tourism-heavy regions create sharp seasonal swings in local search demand. With an SEO approach designed specifically for France, your business can capture that demand instead of watching competitors take it.",
- "why": {
-  "heading": "Understanding Search Behavior in France",
-  "body": "French-language search dominates, so English-only SEO misses most local customers. Paris concentrates business but Lyon, Marseille and Bordeaux are strong regional markets.\n\nStrict advertising rules in regulated professions shape what SEO content can claim. Tourism-heavy regions create sharp seasonal swings in local search demand. Businesses that understand this outperform those running generic national campaigns. Language is the first barrier: most customers search in their own language, so English-only SEO leaves most of the market untouched. Local directories, review platforms, and search habits differ by country too."
- },
- "section1": {
-  "heading": "Location Pages That Rank in France",
-  "body": "One generic page cannot rank in ten different places or for ten different services. Tourism-heavy regions create sharp seasonal swings in local search demand. We build dedicated, genuinely useful pages for each area and offering — real local content, not thin doorway pages — so you capture searches your competitors never see."
- },
- "section2": {
-  "heading": "Local Links That Move Rankings in France",
-  "body": "Links from relevant, trusted sites remain one of the strongest ranking factors. Tourism-heavy regions create sharp seasonal swings in local search demand. We earn links the right way: local partnerships, genuine PR, and content worth referencing — never spammy schemes that put your site at risk."
- },
- "facts": [
-  "French-language search dominates, so English-only SEO misses most local customers.",
-  "Paris concentrates business but Lyon, Marseille and Bordeaux are strong regional markets.",
-  "Strict advertising rules in regulated professions shape what SEO content can claim.",
-  "Tourism-heavy regions create sharp seasonal swings in local search demand."
- ],
- "faqs": [
-  {
-   "q": "Why is my competitor outranking me in France?",
-   "a": "Usually it comes down to three things: stronger reviews in French, better local relevance on their pages, or more links from French sites. I audit all three before recommending anything, because the fix is different in each case. Most of the time it is not one big thing, it is ten small things done consistently."
+  "facts": [
+    "France has about 68 million people, with roughly 12 million in the Paris metropolitan area alone.",
+    "France is the most visited country in the world, receiving around 89 million international visitors in a typical year.",
+    "The overwhelming majority of local searches in France happen in French; English-only pages miss most of the market.",
+    "In September 2025 the CNIL fined Google 325 million euros and Shein 150 million euros over cookie consent, bringing its 2025 sanctions total to about 487 million euros.",
+    "Qwant, the French privacy-focused search engine, plus a rising Bing, are slowly chipping at Google's historically dominant share.",
+    "PagesJaunes is France's legacy yellow-pages directory turned digital citation source.",
+    "Regulated professions such as lawyers and doctors face strict advertising rules from their professional ordres, which shapes what SEO content may claim.",
+    "Many French businesses slow down or close in August for les grandes vacances, creating a predictable annual dip in B2B search demand."
+  ],
+  "faqs": [
+    {
+      "a": "Yes, and it affects your SEO data directly. The CNIL is Europe's most active cookie regulator: in September 2025 it fined Google 325 million euros and Shein 150 million euros for consent violations. Your banner must make refusing as easy as accepting, consent is valid for about 13 months, and scripts must actually be blocked until the visitor agrees. Most French sites I audit fail at least one of these. I fix the banner and the tag firing order together, so your analytics become both compliant and accurate.",
+      "q": "Do I need CNIL-compliant cookie consent, and does it affect my SEO data?"
+    },
+    {
+      "a": "Yes, but within strict limits. Lawyers (avocats), doctors and other regulated professions answer to their ordres, which restrict comparative claims, superlatives and sometimes even client testimonials. That does not rule out SEO: informational content, local relevance, reviews on permitted platforms and a strong Google Business Profile are all allowed. I build strategies that stay inside the rules, because a sanction from your ordre costs far more than any ranking is worth.",
+      "q": "Can a regulated professional like a lawyer or doctor do SEO in France?"
+    },
+    {
+      "a": "As a citation, yes. PagesJaunes is still a trusted source of business data that Google reads when verifying your existence, and a correct listing there supports your local rankings. As an advertising channel, it depends on your sector. I always claim and correct the listing, because it is free trust signal work, and then we judge paid placement on its own merits. What you should never do is rely on PagesJaunes instead of your Google Business Profile, which is where the customers actually decide.",
+      "q": "Is a PagesJaunes listing still worth having?"
+    },
+    {
+      "a": "Start where your customers are. If you serve one city, dominate it first: a plumber in Lyon should own Lyon before thinking about Paris. Paris is the biggest prize and the most competitive market in the country, with national brands and big budgets fighting over every keyword. Regional cities like Bordeaux, Lille, Toulouse and Nantes often deliver faster wins with genuinely local content and reviews. My audits map the competition per city so we attack where the return is highest first.",
+      "q": "Should I target Paris or focus on my region first?"
+    },
+    {
+      "a": "Very carefully. The avis section of your Google Business Profile is often the deciding factor: French customers read reviews before calling, and they notice whether you reply. A steady flow of recent French-language reviews, with thoughtful owner responses, will beat a competitor with a nicer website and an empty profile. I set up a review process that asks in French at the right moment, because in France the business with the best-reviewed profile usually gets the call, not the business with the best-designed site.",
+      "q": "How do French customers use reviews when choosing a business?"
+    }
+  ],
+  "h1": "SEO Expert in France for Businesses That Want French Customers",
+  "intro": "France is a market where language decides everything, and most SEO strategies fail at exactly that point. About 68 million people live here, with roughly 12 million in the Paris metropolitan area, and the overwhelming majority of local searches happen in French. Google.fr rewards pages written naturally in the searcher's language, and an English-only website, or worse, a machine-translated one, simply does not compete for the queries that bring customers. French customers search in French, read reviews in French and decide in French. If your key pages are not written in real French, you are invisible to most of the market before the competition even starts.\n\nThe economy gives France its search character. Paris concentrates headquarters, agencies and luxury brands, but Lyon, Marseille, Bordeaux, Lille, Toulouse and Nantes are strong regional markets with their own search behavior and lighter competition. France is the most visited country in the world, around 89 million international visitors in a typical year, which makes tourism and hospitality searches enormous and fiercely seasonal. Aerospace clusters around Toulouse, luxury around Paris, wine and agriculture across the regions. Each sector searches differently, and a national generic campaign captures none of this texture. The businesses that win in France build for their city and their trade, not for an abstract national average.\n\nThen there is the regulatory layer, which is stricter here than almost anywhere in Europe. The CNIL is the continent's most active cookie regulator: in September 2025 it fined Google 325 million euros and Shein 150 million euros for consent violations, bringing its 2025 sanctions total to roughly 487 million euros. Your cookie banner must make refusing as easy as accepting, and your tracking must actually respect the choice. Most French business sites I audit fail this test, which means their analytics are both non-compliant and unreliable. Regulated professions face another layer: lawyers, doctors and similar professions answer to ordres that restrict what marketing may claim. SEO has to be built inside those rules.\n\nSearch itself is shifting under France's feet. Google's share has been slipping across the EU, down 4.6 percentage points in France in recent data, while Bing rises and Qwant, the French privacy-focused engine, holds its niche. French consumers care about privacy more than most, and that shapes both engine choice and buying behavior. Add the August slowdown, when much of French business pauses for les grandes vacances, and you have a market with real rhythm: plan content and campaigns around it instead of fighting it. My SEO work in France starts from these facts. Real French copy, CNIL-clean tracking, regional strategy instead of Paris-only thinking, and review systems built for how French customers actually decide.",
+  "keyword": "SEO expert in France",
+  "meta": "SEO expert in France: I help French businesses rank higher on Google, win the map pack, and turn local searches into calls. Free audit, plain reporting.",
+  "place": "France",
+  "section1": {
+    "body": "Citations in France revolve around one domestic giant and the global platforms everyone knows. PagesJaunes, the former yellow pages, remains the country's legacy directory: a correct listing there is a trust signal Google reads when verifying that your business exists, and older French customers still use it directly. Alongside it sits 118712.fr and the international aggregators, plus your SIRET number appearing consistently wherever business identity data is published. French business identity is formal and documented, and your citations should reflect that: exact legal name, exact address format, one phone number everywhere.\n\nMy citation audits in France always start with the NAP fundamentals done the French way. Addresses follow French conventions, street type abbreviations, cedex codes where they apply, arrondissement numbers in Paris, Lyon and Marseille that actually matter for local relevance. Accents must survive intact: when e becomes e or c becomes c through sloppy data feeds, Google sees a different business. I check PagesJaunes, 118712.fr, the major aggregators and Facebook for every variation, merge duplicates, close dead listings from old addresses and make sure multi-location businesses have clean, separate listings per site rather than one confused profile.\n\nSector directories deserve special attention in France. Hospitality lives on TripAdvisor and LaFourchette as much as on Google, restaurants get discovered through food platforms, and trades have their own French-language listing sites. A restaurant with a perfect Google profile but a stale TripAdvisor page is losing the comparison where French diners actually decide. I map the directories that matter for your trade, not a generic list, and bring them all into consistency. Then we maintain the footprint: new locations, changed hours, seasonal closures, every update pushed everywhere at once. In France's formal business culture, inconsistent listings do not just weaken rankings. They make the business look careless, and French customers notice. The payoff is compounding: every consistent listing strengthens the entity Google associates with your brand, and in France that entity is what the map pack ranks.",
+    "heading": "PagesJaunes, 118712 and the French Citation Footprint"
   },
-  {
-   "q": "Do I need a Google Business Profile in France?",
-   "a": "Yes. It is free, and for local searches it often appears before any website does. French customers read the avis section closely, so a complete profile with fresh reviews in French will beat a nicer website with an empty profile. I set these up and manage them as part of every engagement."
+  "section2": {
+    "body": "In France, the Google Business Profile is where the decision happens. It sits above the organic results with your avis, your hours, your photos and a call button, and French customers read the avis section closely before contacting anyone. A complete profile with fresh French-language reviews will beat a nicer website with an empty profile, consistently. The map pack is the storefront, and in competitive French cities it is a crowded one. Your profile has to earn its place there every week.\n\nI rebuild French profiles around how French customers evaluate them. Categories chosen for the French terms with real search volume. A business description written in natural French, not translated marketing English, spelling out services and service areas the way people actually search. Photos matter enormously: real images of your premises, your team and your work, because French customers are visual and skeptical in equal measure. Opening hours must be exact, including the August period when many businesses reduce hours, and holiday closures posted in advance. Nothing damages trust like a customer arriving at a closed door the profile said was open.\n\nReviews are the core of the French profile. I install a review process that asks in French at the right moment, with a direct link that removes friction, and I prepare reply templates in proper French so every review gets a genuine response. French reviewers write in detail and expect to be heard; an unanswered critical review sits there costing you customers for months. Then we keep the profile alive: posts about offers, events and seasonal news, questions answered promptly, products and services current. Google rewards active profiles, and in France, where the avis section decides, an actively managed profile is the highest-return marketing asset most local businesses own. It is free, it is visible, and almost none of your competitors maintain theirs properly.",
+    "heading": "Google Business Profile: Where French Customers Decide"
   },
-  {
-   "q": "Is an English-only website enough to rank in France?",
-   "a": "No. The overwhelming majority of local searches in France happen in French, and Google.fr rewards pages written naturally in the searcher's language. Machine-translated pages read badly and convert worse. If you want French customers, your key pages need to be written in real French."
-  },
-  {
-   "q": "How long does SEO take to work in France?",
-   "a": "Most businesses see early movement in 2 to 3 months and meaningful results in 4 to 6 months of consistent work. Competitive Paris searches take longer than a quieter regional market. Anyone promising page one in 30 days is selling you something you do not want."
-  },
-  {
-   "q": "How much should a business in France budget for SEO?",
-   "a": "It depends on your city and competition, but serious local SEO is a monthly commitment, not a one-off project. Underinvesting usually costs more in lost customers than the SEO itself. My pricing is public on this site, and every engagement starts with a free audit so you know exactly what the money does."
+  "slug": "france",
+  "subhead": "Real French copy, French directories, French reviews. SEO that speaks your customer's language.",
+  "why": {
+    "body": "France needs specialized SEO because the default approaches break against three very French realities. The first is language, and it is non-negotiable. The overwhelming majority of local searches happen in French, and Google.fr is tuned to reward natural French content. English pages rank for almost nothing that matters locally, and machine-translated French reads badly enough to kill conversions even when it ranks. Keyword research has to start in French, from how French people actually type, including the abbreviations, the verlan-free formal phrasing and the regional terms that never appear in translation dictionaries. I have seen businesses spend years on English-first SEO in France and wonder why the phone never rings. The answer is always the language.\n\nThe second reality is regulation. The CNIL does not issue guidance and hope for the best: it fined Google 325 million euros and Shein 150 million euros in a single day in September 2025. Cookie consent in France must make refusing as easy as accepting, consent lasts about 13 months, and the technical implementation must actually block tracking until consent is given. Most French sites fail at least one of these, which means their analytics are unreliable and their owners are exposed. Add the ordres governing regulated professions, and SEO in France has legal boundaries that generic playbooks walk straight through. My audits treat compliance as part of technical SEO, because here it genuinely is.\n\nThe third reality is geography and rhythm. Paris is the biggest market and the most expensive battlefield; the regional cities offer faster wins for businesses willing to be genuinely local. Tourism creates violent seasonal swings in hospitality searches. August empties the B2B market. A specialized French strategy plans around this calendar instead of ignoring it: content built in spring for summer demand, B2B pushes timed for September, review generation steady year-round. Generic SEO treats France as a language setting. Specialized SEO treats it as what it is: a large, formal, regulation-heavy market where the details decide who gets the customer.",
+    "heading": "Why France Needs Its Own SEO Playbook"
   }
- ],
- "meta": "SEO expert in France: I help French businesses rank higher on Google, win the map pack, and turn local searches into calls. Free audit, plain reporting.",
- "subhead": "French-language SEO that turns Google searches into paying customers."}
+}
