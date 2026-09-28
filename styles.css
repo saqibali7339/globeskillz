@@ -924,7 +924,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; letter-spac
 .footer { padding: 80px 0 40px; border-top: 1px solid var(--border); position: relative; }
 .footer__wordmark {
   font-family: var(--font-display); font-weight: 700;
-  font-size: clamp(60px, 14vw, 220px);
+  font-size: clamp(40px, 12vw, 220px);
   line-height: .9; letter-spacing: -.05em;
   text-align: center;
   color: transparent; -webkit-text-stroke: 1.2px rgba(255,255,255,.25);
