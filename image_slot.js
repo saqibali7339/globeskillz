@@ -224,7 +224,7 @@
 
   class ImageSlot extends HTMLElement {
     static get observedAttributes() {
-      return ['shape', 'radius', 'mask', 'fit', 'position', 'placeholder', 'src', 'id'];
+      return ['shape', 'radius', 'mask', 'fit', 'position', 'placeholder', 'src', 'fallback', 'id'];
     }
 
     constructor() {
@@ -284,6 +284,18 @@
       // naturalWidth/Height aren't known until load — re-apply so the cover
       // baseline is computed from real dimensions, not the 100%×100% fallback.
       this._img.addEventListener('load', () => this._applyView());
+      // JPEG fallback: if the primary src (e.g. a .webp) fails to load and a
+      // `fallback` attribute is set, swap to it once. Not applied to
+      // user-dropped overrides (this._userUrl) — those are the user's own file.
+      this._fellBack = false;
+      this._img.addEventListener('error', () => {
+        const fb = this.getAttribute('fallback');
+        if (fb && !this._fellBack && !this._userUrl) {
+          this._fellBack = true;
+          this._img.src = fb;
+          this._ghost.src = fb;
+        }
+      });
       // Gated on editable + fit=cover so share links and contain/fill slots
       // stay static.
       this.addEventListener('dblclick', (e) => {
@@ -617,6 +629,7 @@
       // the display:flex / display:block rules in the stylesheet above.
       if (url) {
         if (this._img.getAttribute('src') !== url) {
+          this._fellBack = false;
           this._img.src = url;
           this._ghost.src = url;
         }

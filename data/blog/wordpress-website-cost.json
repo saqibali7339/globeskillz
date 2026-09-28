@@ -85,5 +85,7 @@
     "label": "Web Development",
     "blurb": "Want a straight answer on what your WordPress site should cost? Tell me what you need."
   },
-  "faq_topic": "WordPress website cost"
+  "faq_topic": "WordPress website cost",
+  "image_w": 2048,
+  "image_h": 1152
 }

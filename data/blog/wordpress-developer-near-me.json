@@ -22,7 +22,7 @@
   "image": "assets/blog/wordpress-developer-near-me.jpg",
   "intro": "When something breaks on your website, or you finally want a site that actually brings in customers, the first thing most business owners do is search for a WordPress developer near them. It feels like the safe move: someone local, someone you can meet, someone who picks up the phone.\n\nLocal is nice, but it is not what makes a developer good. A bad developer is bad whether they sit two streets away or two countries away. What matters is how they work, what they have built before, and whether they understand that your website is a sales tool, not a decoration.\n\nThis guide walks you through how to find the right person, the questions that separate the pros from the cowboys, and the warning signs that should make you walk away before you hand over a penny.",
   "keyword": "wordpress developer near me",
-  "meta": "Looking for a WordPress developer near you? Learn how to judge one, what to ask before paying, and the red flags to avoid.",
+  "meta": "Looking for a WordPress developer near me? Learn how to judge one, what to ask before paying, and the red flags to avoid.",
   "read_time": 5,
   "sections": [
     {
@@ -69,11 +69,13 @@
     }
   ],
   "slug": "wordpress-developer-near-me",
-  "title": "How to Find a Good WordPress Developer Near You",
+  "title": "WordPress Developer Near Me: How to Find a Good One",
   "service": {
     "path": "services/web-development/",
     "label": "Web Development",
     "blurb": "Need the developer, not just the advice? I build WordPress websites for small businesses."
   },
-  "faq_topic": "WordPress developer"
+  "faq_topic": "WordPress developer",
+  "image_w": 2048,
+  "image_h": 1152
 }

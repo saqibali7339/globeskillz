@@ -23,7 +23,7 @@
   // once the preloader lifts, with a retry for late layout shifts.
   const honorHash = () => {
     if (!location.hash) return;
-    const go = () => { const el = document.querySelector(location.hash); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); };
+    const go = () => { let el = null; try { el = document.querySelector(location.hash); } catch (e) {} if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); };
     setTimeout(go, 150);
     setTimeout(go, 1400);
   };
@@ -31,7 +31,8 @@
   // which kept the overlay up ~3s on mobile and hurt LCP. The intro still plays.
   const liftPreloader = () => {
     setTimeout(() => {
-      if (preloader?.classList.contains('done')) return;
+      if (!preloader) { revealHero(); honorHash(); return; }
+      if (preloader.classList.contains('done')) return;
       preloader.classList.add('done');
       document.body.classList.add('loaded');
       revealHero();
@@ -44,7 +45,7 @@
     liftPreloader();
   }
   // fallback in case load never fires
-  setTimeout(() => { if (!preloader.classList.contains('done')) { preloader.classList.add('done'); revealHero(); honorHash(); } }, 3200);
+  setTimeout(() => { if (!preloader) return; if (!preloader.classList.contains('done')) { preloader.classList.add('done'); revealHero(); honorHash(); } }, 3200);
 
   /* ---------- Split text (chars) ---------- */
   $$('.split[data-split="chars"]').forEach(el => {
@@ -476,9 +477,8 @@
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     var btn = form.querySelector('.contact__submit');
-    var original = btn.innerHTML;
-    btn.disabled = true;
-    btn.innerHTML = 'Sending\u2026';
+    var original = btn ? btn.innerHTML : '';
+    if (btn) { btn.disabled = true; btn.innerHTML = 'Sending\u2026'; }
     var fd = new FormData(form);
     var data = {
       name: String(fd.get('name') || '').trim(),
@@ -496,12 +496,13 @@
       body: JSON.stringify(data)
     }).then(function (res) {
       if (!res.ok) throw new Error('send failed');
-      btn.innerHTML = '\u2713 Sent \u2014 I\u0027ll reply within 24h';
-      btn.style.background = 'linear-gradient(135deg,#22c58a,#a3ff5c)';
+      if (btn) {
+        btn.innerHTML = '\u2713 Sent \u2014 I\u0027ll reply within 24h';
+        btn.style.background = 'linear-gradient(135deg,#22c58a,#a3ff5c)';
+      }
       form.reset();
     }).catch(function () {
-      btn.disabled = false;
-      btn.innerHTML = original;
+      if (btn) { btn.disabled = false; btn.innerHTML = original; }
       alert('Something went wrong sending your message. Please email me directly at info@globeskillz.com');
     });
   });

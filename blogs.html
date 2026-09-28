@@ -177,7 +177,7 @@
     const idx = await (await fetch(RP + 'data/blog/index.json')).json();
     document.getElementById('allGrid').innerHTML = idx.map(p => `
       <a class="blog-card" href="${RP}blog/${p.slug}/">
-        <div class="blog-card__img"><img src="${RP}${p.image}" alt="${esc(p.title)}" loading="lazy"></div>
+        <div class="blog-card__img"><picture><source type="image/webp" srcset="${RP}${p.image.replace(/\.jpe?g$/, '')}-800.webp 800w, ${RP}${p.image.replace(/\.jpe?g$/, '')}-1200.webp 1200w" sizes="(max-width: 720px) 100vw, 400px"><img src="${RP}${p.image}" alt="${esc(p.title)}" loading="lazy" width="800" height="450"></picture></div>
         <div class="blog-card__body">
           <div class="blog-card__date">${fmtDate(p.date)} · ${p.read_time} min read</div>
           <h3>${esc(p.title)}</h3>

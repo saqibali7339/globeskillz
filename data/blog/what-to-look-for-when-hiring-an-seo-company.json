@@ -71,5 +71,7 @@
     "label": "SEO Audits",
     "blurb": "Judge me by the same checklist: start with a free mini-audit and see how I work."
   },
-  "faq_topic": "Hiring an SEO company"
+  "faq_topic": "Hiring an SEO company",
+  "image_w": 2048,
+  "image_h": 1152
 }
