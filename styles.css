@@ -386,7 +386,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; letter-spac
   animation: wordmarkPop 1.1s .3s cubic-bezier(.16,1,.3,1) both;
 }
 @media (max-width: 640px) {
-  .hero__headline { font-size: clamp(30px, 8.6vw, 44px); }
+  .hero__headline { font-size: clamp(28px, 8vw, 44px); max-width: 18ch; }
 }
 
 .hero__tag {
@@ -549,6 +549,10 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; letter-spac
 }
 .service-card__icon svg { width: 34px; height: 34px; color: white; }
 .service-card__num { font-family: var(--font-mono); font-size: 12px; letter-spacing: .3em; color: var(--text-mute); }
+@media (max-width: 640px) {
+  .service-card { padding: 24px; min-height: 0; }
+  .service-card__head { gap: 12px; }
+}
 .service-card h3 { margin-top: 28px; }
 .service-card p { color: var(--text-dim); font-size: 15px; margin-top: 12px; }
 .service-card__tags { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 8px; }
