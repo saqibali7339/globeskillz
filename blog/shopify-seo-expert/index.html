@@ -226,6 +226,7 @@
       '@type': 'BlogPosting',
       headline: data.title,
       description: data.meta,
+      image: GS_SITE + '/' + data.image,
       datePublished: data.date,
       author: { '@type': 'Organization', name: 'Globe Skillz', url: GS_SITE + '/' },
       url: canonUrl
@@ -273,6 +274,16 @@
       '<h2>' + esc(s.heading) + '</h2>' +
       s.body.map(p => '<p>' + esc(p) + '</p>').join('')
     ).join('');
+
+  // Contextual service link: one genuinely relevant service per article (from post JSON)
+  if (data.service && data.service.path) {
+    const svcAside = document.createElement('aside');
+    svcAside.className = 'article__service';
+    svcAside.innerHTML = '<span class="eyebrow">Want this done for you?</span><p>' +
+      esc(data.service.blurb) + ' <a class="ctx-link" href="' + RP + data.service.path + '">Explore ' +
+      esc(data.service.label) + ' &rarr;</a></p>';
+    $('#artBody').appendChild(svcAside);
+  }
 
   $('#artFaq').innerHTML = data.faqs.map(f => `
     <div class="faq-item">
