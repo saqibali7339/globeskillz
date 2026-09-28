@@ -390,7 +390,7 @@
   function renderNiches() {
     if (!nicheGrid || !covIndex) return;
     const q = nicheQuery.toLowerCase();
-    const pool = covIndex.niches.map(n => ({ slug: n.slug, title: titleCase(n.niche), desc: cardDesc['niche:' + n.slug] || '' }));
+    const pool = covIndex.niches.map(n => ({ slug: n.slug, title: titleCase(n.niche || n.keyword || n.slug), desc: cardDesc['niche:' + n.slug] || '' }));
     const filtered = q ? pool.filter(x => x.title.toLowerCase().includes(q)) : pool;
     nicheGrid.innerHTML = filtered.slice(0, 120).map(x => `
       <a class="loc-card" href="industries/${x.slug}/">
