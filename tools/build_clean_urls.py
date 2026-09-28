@@ -27,9 +27,9 @@ import sys
 
 # ---------------------------------------------------------------------------
 # FLIP THIS when globeskillz.com is registered:
-#   SITE_BASE = 'https://globeskillz.com'
+SITE_BASE = 'https://globeskillz.com'
 # ---------------------------------------------------------------------------
-SITE_BASE = 'https://saqibali7339.github.io/globeskillz'
+# SITE_BASE = 'https://saqibali7339.github.io/globeskillz'  # old github.io base
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OLD_SITE = 'https://saqibali7339.github.io/globeskillz'
