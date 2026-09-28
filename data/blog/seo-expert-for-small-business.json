@@ -80,5 +80,6 @@
     "path": "services/local-seo/",
     "label": "Local SEO",
     "blurb": "Small business serving a local area? Here is how I would put you on the map."
-  }
+  },
+  "faq_topic": "Small-business SEO"
 }

@@ -29,7 +29,7 @@ import sys
 # FLIP THIS when globeskillz.com is registered:
 #   SITE_BASE = 'https://globeskillz.com'
 # ---------------------------------------------------------------------------
-SITE_BASE = 'https://saqibali7339.github.io/globeskillz'
+SITE_BASE = 'https://globeskillz.com'
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OLD_SITE = 'https://saqibali7339.github.io/globeskillz'
@@ -114,10 +114,168 @@ def esc(s):
     return s.replace('&', '&amp;').replace('<', '&lt;').replace('"', '&quot;')
 
 
+def meta_desc(keyword, intro, limit=160):
+    """Keyword-led meta description: primary keyword first, then intro,
+    truncated at a word boundary so the keyword always appears."""
+    raw = (keyword.strip() + ' \u2014 ' + intro.strip()).strip()
+    if len(raw) <= limit:
+        return esc(raw)
+    return esc(raw[:limit].rsplit(' ', 1)[0])
+
+
 def js_unescape(s):
     """Decode JS \\uXXXX escapes found in the PROJECTS map into real chars."""
     return re.sub(r'\\u([0-9a-fA-F]{4})',
                   lambda m: chr(int(m.group(1), 16)), s)
+
+
+# ---------------------------------------------------------------------------
+# Heading bake: raw-HTML H1/H2s (2026-09-28 audit fix).
+# The templates render these via JavaScript, so non-rendering crawlers saw
+# "Loading…" H1s and identical H2s across pages. These post-processors bake
+# the same values the runtime JS computes into the static HTML of each
+# generated page. Templates keep their generic fallbacks for ?slug= URLs.
+# ---------------------------------------------------------------------------
+
+def bake_h1_words(h1_text):
+    """Replicate location.html's runtime H1 word-split: last 2-3 words get
+    the gradient span, everything else plain word spans."""
+    words = esc(h1_text).split()
+    n = len(words)
+    out = []
+    for i, w in enumerate(words):
+        if i >= max(0, n - 3):
+            out.append('<span class="word"><span class="text-grad">%s</span></span>' % w)
+        else:
+            out.append('<span class="word">%s</span>' % w)
+    return ' '.join(out)
+
+
+# Display-name overrides for the H2 bake: two niche pages share the display
+# name "restaurants" (slugs `restaurants` and `restaurant`, different
+# keywords/H1s). Qualify the latter by its own keyword angle so every page
+# still renders a unique H2 set.
+LOC_DN_OVERRIDES = {
+    'restaurant': 'restaurant SEO',
+}
+
+
+def bake_loc_headings(path, data, ptype, slug):
+    """Bake real H1 + unique per-page H2s into a generated loc/niche page."""
+    with open(path, encoding='utf-8') as f:
+        html = f.read()
+    raw_dn = data['niche'] if ptype == 'niche' else data['place']
+    dn = esc(LOC_DN_OVERRIDES.get(slug, raw_dn))
+
+    # H1: replace the "Loading…" placeholder with the runtime word-split HTML
+    html = html.replace(
+        '<span class="split" data-split="words">Loading…</span>',
+        '<span class="split" data-split="words">%s</span>'
+        % bake_h1_words(data['h1']), 1)
+
+    # H2s: same values the runtime JS computes, baked statically
+    why = data.get('why', {}).get('heading')
+    why_html = esc(why) if why else \
+        'Why %s <span class="text-grad">needs specialist SEO.</span>' % dn
+    html = html.replace(
+        '<h2 class="h-section reveal d1" id="whyHeading">Why this matters</h2>',
+        '<h2 class="h-section reveal d1" id="whyHeading">%s</h2>' % why_html, 1)
+
+    html = html.replace(
+        '<h2 class="h-section reveal d1" id="factsHeading">Local intelligence '
+        '<span class="text-grad">we build on.</span></h2>',
+        '<h2 class="h-section reveal d1" id="factsHeading">Local intelligence '
+        '<span class="text-grad">for %s.</span></h2>' % dn, 1)
+
+    html = html.replace(
+        '<h2 class="h-section reveal d1" id="faqHeading">Questions we '
+        '<span class="text-grad">get asked.</span></h2>',
+        '<h2 class="h-section reveal d1" id="faqHeading">%s '
+        '<span class="text-grad">questions, answered.</span></h2>' % dn, 1)
+
+    if ptype == 'niche':
+        rel_html = ('More industries we rank in '
+                    '<span class="text-grad">beyond %s.</span>' % dn)
+    else:
+        rel_html = ('More places we rank in '
+                    '<span class="text-grad">beyond %s.</span>' % dn)
+    html = html.replace(
+        '<h2 class="h-section reveal d1">More places we '
+        '<span class="text-grad">rank in.</span></h2>',
+        '<h2 class="h-section reveal d1">%s</h2>' % rel_html, 1)
+
+    html = html.replace(
+        'SEO guides for <span class="text-grad" id="rrName">your market.</span>',
+        'SEO guides for <span class="text-grad" id="rrName">%s.</span>' % dn, 1)
+
+    html = html.replace(
+        '<h2 class="h-section" style="margin-top:18px" id="ctaH2">'
+        'Ready to dominate <span class="text-grad">your market</span>?</h2>',
+        '<h2 class="h-section" style="margin-top:18px" id="ctaH2">'
+        'Ready to dominate <span class="text-grad">%s</span>?</h2>' % dn, 1)
+
+    with open(path, 'w', encoding='utf-8') as f:
+        f.write(html)
+
+
+def bake_blog_headings(path, data):
+    """Bake the post title as H1 + a per-topic FAQ H2 into a blog post."""
+    with open(path, encoding='utf-8') as f:
+        html = f.read()
+
+    html = html.replace(
+        '<h1 class="h-display article__title" id="artTitle">Loading…</h1>',
+        '<h1 class="h-display article__title" id="artTitle">%s</h1>'
+        % esc(data['title']), 1)
+
+    topic = esc(data.get('faq_topic', 'SEO'))
+    html = html.replace(
+        '<h2 class="h-section">Questions, '
+        '<span class="text-grad">answered.</span></h2>',
+        '<h2 class="h-section">%s '
+        '<span class="text-grad">questions, answered.</span></h2>' % topic, 1)
+
+    with open(path, 'w', encoding='utf-8') as f:
+        f.write(html)
+
+
+# Short per-project labels for unique section H2s ("The brief: <label>", …).
+PROJECT_H2_LABELS = {
+    'bubblebum': 'Bubblebum TelePort launch',
+    'jardine': 'Jardine garden cushions',
+    'sandaoil': 'Sanda Oil DTC brand',
+    'sensibelle': 'Sensibelle Summer Edit',
+    'sahel': 'Sahel Solar site',
+    'vytal': 'Vytal Beet supplements launch',
+    'zermatt': 'Zermatt Stil lifestyle brand',
+    'ebike': 'fat-tyre e-bike brand',
+    'cellblog': 'cell phone review blog',
+    'bubblebum2': 'Bubblebum global relaunch',
+    'wooden': 'wooden tables store',
+    'water': 'Water for Life charity',
+    'plurality': 'Plurality agentic web app',
+    'albarik': 'Albarik Pakistan megastore',
+}
+
+
+def bake_project_headings(path, slug):
+    """Make the four section H2s unique per project in the baked page."""
+    label = PROJECT_H2_LABELS.get(slug)
+    if not label:
+        return
+    with open(path, encoding='utf-8') as f:
+        html = f.read()
+    for section in ('The brief', 'What we built', 'The results', 'The proof'):
+        html = html.replace('<h2>%s</h2>' % section,
+                            '<h2>%s: %s</h2>' % (section, esc(label)), 1)
+    # Related-projects section heading: same per-project treatment
+    html = html.replace(
+        '<h2 class="h-section" style="margin-top:14px">Other '
+        '<span class="text-grad">recent wins.</span></h2>',
+        '<h2 class="h-section" style="margin-top:14px">Other recent wins '
+        '<span class="text-grad">beyond %s.</span></h2>' % esc(label), 1)
+    with open(path, 'w', encoding='utf-8') as f:
+        f.write(html)
 
 
 def gen_locations():
@@ -132,9 +290,10 @@ def gen_locations():
             keyword = data.get('keyword', slug)
             intro = data.get('intro', '')
             title = esc(keyword) + ' \u00b7 Globe Skillz'
-            desc = esc(intro[:160])
-            bake_page('location.html', os.path.join(seg, slug), ptype, slug, 2,
-                      '/%s/%s/' % (seg, slug), title, desc)
+            desc = meta_desc(keyword, intro)
+            out = bake_page('location.html', os.path.join(seg, slug), ptype, slug, 2,
+                            '/%s/%s/' % (seg, slug), title, desc)
+            bake_loc_headings(out, data, ptype, slug)
             n += 1
     return n
 
@@ -151,8 +310,9 @@ def gen_blogs(only=None):
                               encoding='utf-8'))
         title = esc(data['title']) + ' \u00b7 Globe Skillz Blog'
         desc = esc(data.get('meta', data.get('excerpt', ''))[:160])
-        bake_page('blog.html', os.path.join('blog', slug), 'post', slug, 2,
-                  '/blog/%s/' % slug, title, desc)
+        out = bake_page('blog.html', os.path.join('blog', slug), 'post', slug, 2,
+                        '/blog/%s/' % slug, title, desc)
+        bake_blog_headings(out, data)
         n += 1
     if only and n == 0:
         sys.exit('unknown blog slug: %s' % only)
@@ -177,9 +337,10 @@ def project_catalog():
 def gen_projects():
     n = 0
     for slug, title, sub in project_catalog():
-        bake_page('project.html', os.path.join('project', slug), 'project',
-                  slug, 2, '/project/%s/' % slug,
-                  esc(title) + ' \u00b7 Globe Skillz', esc(sub[:160]))
+        out = bake_page('project.html', os.path.join('project', slug), 'project',
+                        slug, 2, '/project/%s/' % slug,
+                        esc(title) + ' \u00b7 Globe Skillz', esc(sub[:160]))
+        bake_project_headings(out, slug)
         n += 1
     return n
 

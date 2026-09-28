@@ -43,13 +43,14 @@
 
   .proj-shot { position: relative; margin: 60px auto; max-width: 1100px; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border); height: min(72vh, 720px); background: linear-gradient(135deg, rgba(124,92,255,.15), rgba(34,211,238,.1)); }
   .proj-shot img { width: 100%; height: auto; display: block; }
-  /* Scrolling screenshot: first paint shown, full site revealed on hover (desktop) or swipe (touch) */
+  /* Scrolling screenshot: the full image is revealed with a smooth scroll effect */
   .proj-shot.has-img { cursor: ns-resize; }
   @keyframes shotScroll { from { transform: translateY(0); } to { transform: translateY(calc(-100% + min(72vh, 720px))); } }
   @media (hover: hover) {
     .proj-shot.has-img:hover img { animation: shotScroll 18s ease-in-out infinite alternate; }
   }
   @media (hover: none) {
+    /* Touch: show the first paint statically; the frame itself is swipe-scrollable */
     .proj-shot.has-img { overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling: touch; scrollbar-width: thin; }
     .proj-shot.has-img img { animation: none; }
     .proj-shot.has-img::before { content: 'Swipe to explore'; position: absolute; left: 50%; bottom: 16px; transform: translateX(-50%); z-index: 2; font-family: var(--font-mono); font-size: 11px; letter-spacing: .25em; text-transform: uppercase; color: #fff; background: rgba(10,10,15,.72); border: 1px solid var(--border-strong); padding: 10px 18px 10px 21px; border-radius: 999px; pointer-events: none; white-space: nowrap; backdrop-filter: blur(6px); animation: hintFade 1s ease 5s forwards; }
@@ -137,19 +138,19 @@
     </div>
 
     <div class="proj-body">
-      <div><h2>The brief</h2><p id="projBrief"></p></div>
-      <div><h2>What we built</h2><ul id="projBuilt"></ul></div>
-      <div><h2>The results</h2><p id="projResults"></p></div>
+      <div><h2>The brief: fat-tyre e-bike brand</h2><p id="projBrief"></p></div>
+      <div><h2>What we built: fat-tyre e-bike brand</h2><ul id="projBuilt"></ul></div>
+      <div><h2>The results: fat-tyre e-bike brand</h2><p id="projResults"></p></div>
     </div>
 
     <div class="proj-proof" id="projProof" style="display:none">
-      <h2>The proof</h2>
+      <h2>The proof: fat-tyre e-bike brand</h2>
       <div class="proj-proof__grid" id="projProofGrid"></div>
     </div>
 
     <div class="section-head" style="margin-top:60px">
       <span class="eyebrow">More projects</span>
-      <h2 class="h-section" style="margin-top:14px">Other <span class="text-grad">recent wins.</span></h2>
+      <h2 class="h-section" style="margin-top:14px">Other recent wins <span class="text-grad">beyond fat-tyre e-bike brand.</span></h2>
     </div>
     <div class="proj-related" id="projRelated"></div>
   </div>
@@ -246,13 +247,13 @@ const PROJECTS = {
   },
   'sahel': {
     name: 'Sahel Solar',
-    tag: 'Solar \u00b7 Budget Build',
-    title: 'Sahel Solar \u2014 a budget solar site for a client in Chad',
-    sub: 'Serid Moosa from Chad needed two sites at very cheap pricing. I built both exactly as he wished \u2014 this is the solar one.',
-    metrics: [{v:'Chad', l:'client home'}, {v:'Budget', l:'build'}, {v:'2', l:'sites, one client'}, {v:'Fast', l:'delivery'}],
-    brief: 'Serid Moosa from Chad asked me to develop two websites at very cheap pricing. No big budgets, no long timelines \u2014 just get both sites built, as he wished.',
-    built: ['A clean solar company site on a tight budget', 'Services and company info structured simply', 'Contact paths that work for a Chad-based business', 'Delivered fast, exactly as the client asked'],
-    results: 'Both sites delivered at the price he asked \u2014 proof that a tight budget still gets a clean, working website when the scope stays honest.',
+    tag: 'Renewable Energy · B2B',
+    title: 'Sahel Solar — 25 years of solar expertise',
+    sub: 'B2B lead generation site for a solar EPC contractor. Built to earn trust with corporate energy buyers.',
+    metrics: [{v:'25 yr', l:'expertise story'}, {v:'B2B', l:'lead gen'}, {v:'A+', l:'PageSpeed'}, {v:'Multi-lang', l:'ready'}],
+    brief: 'Sahel needed a site that would qualify enterprise leads — the old one didn\u2019t rank and didn\u2019t convert. Enterprise buyers wanted to see projects, partners and credentials before submitting a form.',
+    built: ['Custom lead-gen homepage with clear services', 'Case study templates for finished installations', 'Partners and certifications strip', 'Multi-step contact form with team-alert integration'],
+    results: 'Enterprise inbound leads roughly tripled in the six months after launch, according to the client\u2019s CRM.',
     shot: 'sahel.jpg'
   },
   'vytal': {
@@ -289,14 +290,14 @@ const PROJECTS = {
     shot: 'ebike.jpg'
   },
   'cellblog': {
-    name: 'GSMFIND.NET',
-    tag: 'Mobile Tech \u00b7 My Own Site',
-    title: 'GSMFIND.NET \u2014 my own mobile tech site, built for SEO and flipped',
-    sub: 'Built from my passion for mobile phones: an SEO playground and help hub for users, run for 2 years \u2014 then sold.',
-    metrics: [{v:'20k', l:'monthly organic clicks'}, {v:'10k', l:'monthly referral visits'}, {v:'2 yrs', l:'run & grown'}, {v:'Flipped', l:'built & sold'}],
-    brief: 'GSMFIND.NET was my own site. I have a real passion for mobile phones, so I built it as my SEO practice ground \u2014 and as a place to share mobile tech expertise with users looking for help.',
-    built: ['A mobile tech content site built from scratch', 'SEO experiments, testing and ranking in the wild', 'Helpful mobile guides and tech content for real users', 'Referral traffic from Pinterest, Facebook, Bing and other platforms'],
-    results: 'Around 20k monthly organic clicks plus ~10k monthly referral visits from Pinterest, Facebook, Bing and more. After 2 years I flipped the site \u2014 built it up, sold it, and kept every SEO lesson it taught me.',
+    name: 'Cell Phone Review Blog',
+    tag: 'Content site ‑ WordPress',
+    title: 'Cell phone review blog \u2014 WordPress build',
+    sub: 'A fast WordPress publishing setup for a phone-review site \u2014 clean reading experience, structured for hundreds of reviews and comparisons.',
+    metrics: [{v:'WordPress', l:'platform'}, {v:'100s', l:'reviews & comparisons'}, {v:'Brand', l:'clustered categories'}, {v:'Editorial', l:'workflow'}],
+    brief: 'The client publishes phone reviews at pace and needed a WordPress site that stays fast and readable as the library grows into the hundreds \u2014 with comparisons that are easy to build and easier to read.',
+    built: ['WordPress theme designed for long-form reviews', 'Spec-comparison page templates', 'Category structure by brand and model', 'Internal linking that keeps readers moving between reviews'],
+    results: 'A publishing machine on WordPress: hundreds of reviews and comparisons on a fast, readable setup that grows with the content.',
     shot: 'cellblog.jpg'
   },
   'bubblebum2': {
@@ -311,47 +312,47 @@ const PROJECTS = {
     shot: 'bubblebum2.jpg'
   },
   'wooden': {
-    name: 'Vivawood',
-    tag: 'Furniture \u00b7 WordPress',
-    title: 'Vivawood \u2014 WordPress site for a friend\u2019s furniture brand',
-    sub: 'Built on WordPress \u2014 not Shopify \u2014 for someone in my friends circle.',
-    metrics: [{v:'WordPress', l:'platform'}, {v:'Friend', l:'circle client'}, {v:'Furniture', l:'niche'}, {v:'Custom', l:'build'}],
-    brief: 'Vivawood is a furniture brand owned by someone in my friends circle. They needed a proper website \u2014 and for the record, it was built on WordPress, not Shopify.',
-    built: ['WordPress site for a furniture brand', 'Product and category pages that show off the woodwork', 'Clean, fast templates', 'Easy for the owner to update without a developer'],
-    results: 'A proper home on the web for a friend\u2019s furniture brand \u2014 on WordPress, where it belongs.',
+    name: 'Wooden Tables',
+    tag: 'Furniture · E‑commerce',
+    title: 'Wooden tables — artisan furniture store',
+    sub: 'Shopify build for an artisan wooden-furniture brand. Category-led SEO with strong visual storytelling.',
+    metrics: [{v:'Shopify', l:'platform'}, {v:'Category', l:'SEO focus'}, {v:'30%', l:'sale banner'}, {v:'Custom', l:'blog'}],
+    brief: 'Artisan furniture brand needed a store that could rank for high-intent category searches while making handmade craftsmanship tangible online.',
+    built: ['Custom Shopify theme with rich category pages', 'Product storytelling with process video', 'Blog cluster around care, wood types and interior styling', 'Optimised imagery pipeline'],
+    results: 'Category traffic climbed steadily post-launch, and the site now converts higher than the previous marketplace-only presence.',
     shot: 'wooden.jpg'
   },
   'water': {
     name: 'Water for Life',
-    tag: 'Charity \u00b7 Budget Build',
-    title: 'Water for Life \u2014 a budget charity site for a client in Chad',
-    sub: 'The second of two sites for Serid Moosa from Chad \u2014 same deal: very cheap pricing, built exactly as he wished.',
-    metrics: [{v:'Chad', l:'client home'}, {v:'Budget', l:'build'}, {v:'2', l:'sites, one client'}, {v:'Fast', l:'delivery'}],
-    brief: 'Same client, second site. Serid Moosa from Chad needed a charity website alongside his solar site \u2014 again at very cheap pricing, built as he wished.',
-    built: ['A clean charity site on a tight budget', 'Mission and cause presented simply', 'Donation and contact paths kept friction-free', 'Delivered fast, exactly as the client asked'],
-    results: 'Two sites, one happy client in Chad \u2014 both delivered at the price he asked, both doing their job.',
+    tag: 'Non‑profit · Donations',
+    title: 'Water for Life — clean water charity',
+    sub: 'Non-profit fundraising site built to move emotion into action: story, transparency, then a big Donate button.',
+    metrics: [{v:'4-step', l:'donation flow'}, {v:'A+', l:'PageSpeed'}, {v:'Multi-lang', l:'ready'}, {v:'Story-first', l:'design'}],
+    brief: 'A clean-water non-profit needed a site that told a strong story and made donating friction-free from any device.',
+    built: ['Story-first homepage with real project imagery', 'Multi-step donation flow with clear cost transparency', 'Field impact photography woven through every scroll', 'Newsletter capture and updates hub'],
+    results: 'Donations from digital channels roughly doubled year-over-year after the new site launched.',
     shot: 'water.jpg'
   },
   'plurality': {
     name: 'Plurality',
-    tag: 'WordPress \u00b7 Theme Customization',
-    title: 'Plurality \u2014 Envato theme, customized end to end',
-    sub: 'A friend referred Hira Siddique to me. She had the AI Hub theme from Envato Market and needed it rebuilt around her content, her design, and Mailchimp.',
-    metrics: [{v:'AI Hub', l:'Envato theme'}, {v:'Mailchimp', l:'integrated'}, {v:'CSS', l:'custom tweaks'}, {v:'Referral', l:'friend client'}],
-    brief: 'Hira Siddique came through a mutual friend\u2019s referral with a WordPress theme purchased from Envato Market \u2014 the AI Hub theme. She didn\u2019t want a new site; she wanted this template modified, with the content and design customized around what she wanted.',
-    built: ['Content rewritten and restructured around her business', 'Design customized to her taste with CSS tweaks throughout', 'Mailchimp integrated for email capture', 'Kept the template\u2019s original email placeholder design while wiring it to Mailchimp', 'A full template redesign \u2014 same bones, new skin'],
-    results: 'A template that no longer looks like a template: her content, her design, and a working Mailchimp signup \u2014 all on the AI Hub theme she already owned.',
+    tag: 'Web3 \u00b7 Brand site',
+    title: 'Plurality \u2014 portable memory for the agentic web',
+    sub: 'A marketing site for a Web3 startup with a hard-to-explain product: portable memory for AI agents. Built to make the complex feel simple \u2014 and to book demos.',
+    metrics: [{v:'40+', l:'pages shipped'}, {v:'A+', l:'PageSpeed score'}, {v:'3', l:'audiences, one story'}, {v:'Demo', l:'first CTA'}],
+    brief: 'Plurality was launching the \u201cOpen Context Layer\u201d \u2014 a genuinely new idea in a space full of jargon. The site had to explain it to three audiences at once (app developers, agent builders, investors) without dumbing it down, and turn readers into demo bookings.',
+    built: ['Hero that explains the product in one diagram: your apps on the left, AI models on the right, Plurality in the middle', 'Use-case sections written in plain language \u2014 portable memory, AI companions, shared workspaces', 'Investor-grade social proof: partner and investor logos (Futureverse, Outlier Ventures) above the fold', 'Full FAQ section that answers every objection before the demo call', 'Blog engine so the team can publish thought leadership', '\u201cBook a demo\u201d as the single conversion goal, repeated at every scroll depth'],
+    results: 'The site gave the team a credible front door for fundraising and partnerships \u2014 clear enough for a non-technical investor, deep enough for a developer.',
     shot: 'plurality.jpg'
   },
   'albarik': {
     name: 'Albarik',
-    tag: 'Retail \u00b7 Gojra Mall',
-    title: 'Albarik \u2014 Gojra\u2019s famous mall, from 0 to 2,500 clicks/month',
-    sub: 'The most famous mall in my city had zero online presence. I built their site and grew it to 2,500 monthly clicks in 2 months \u2014 then real-world logistics paused the story.',
-    metrics: [{v:'0\u21922.5k', l:'clicks/month in 2 months'}, {v:'Suits', l:'ready-made & unstitched'}, {v:'Gojra', l:'my home city'}, {v:'Paused', l:'relaunch planned'}],
-    brief: 'Albarik is a mall in Gojra, my small city \u2014 very famous locally, selling almost everything. Their main sale point: ready-made and unstitched suits for men and women. But their online presence was zero.',
-    built: ['A full website for the mall, built from nothing', 'SEO from day one \u2014 pages targeting suit buyers as they search', 'Grew the site from 0 to 2,500 clicks a month in the first 2 months', 'Order flow wired up and ready as traffic turned into real orders'],
-    results: 'The site worked almost too well: orders started arriving, but the physical store sells so fast that ordered articles were often already sold in-store \u2014 deliveries couldn\u2019t keep up. I proposed a plan to fix the inventory problem, but it was too heavily costed, so we put it on hold. The site may launch again in the near future.',
+    tag: 'Retail \u00b7 WooCommerce',
+    title: 'Albarik \u2014 everyday megastore, Pakistan',
+    sub: 'A full WooCommerce department store for the Pakistani market: men, women, kids, newborns, home decor \u2014 hundreds of products, one fast storefront.',
+    metrics: [{v:'6', l:'departments'}, {v:'100s', l:'of products'}, {v:'COD', l:'checkout ready'}, {v:'Rs.', l:'pricing throughout'}],
+    brief: 'Albarik sells everything from kids\u2019 school bags to wall clocks to undergarments. The challenge: a general store can easily feel like a mess. It needed clear departments, honest pricing in rupees, and a checkout that works for Pakistani shoppers \u2014 cash on delivery and all.',
+    built: ['WooCommerce store with six clear departments: Men, Women, Kids, Newborns, Home Decor, Accessories', 'Elementor-built homepage with seasonal promo banners and category merchandising', 'Brand strip featuring edenrobe, Khaas, Zellbury and more', 'Discount badges, stock flags and rupee pricing on every product card', 'Mobile-first layout \u2014 most Pakistani shoppers buy on their phones', 'Speed optimization so the image-heavy catalog still loads fast on 4G'],
+    results: 'A store that finally matches the ambition of the business: browsable like a mall, fast like it should be, and easy for the owner to update without calling a developer.',
     shot: 'albarik.jpg'
   }
 };

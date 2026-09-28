@@ -84,5 +84,6 @@
     "path": "services/web-development/",
     "label": "Web Development",
     "blurb": "Want a straight answer on what your WordPress site should cost? Tell me what you need."
-  }
+  },
+  "faq_topic": "WordPress website cost"
 }

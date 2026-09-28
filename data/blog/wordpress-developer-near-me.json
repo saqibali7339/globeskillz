@@ -74,5 +74,6 @@
     "path": "services/web-development/",
     "label": "Web Development",
     "blurb": "Need the developer, not just the advice? I build WordPress websites for small businesses."
-  }
+  },
+  "faq_topic": "WordPress developer"
 }

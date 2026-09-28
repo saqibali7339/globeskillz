@@ -86,7 +86,7 @@
     <div class="loc-hero__breadcrumb reveal">
       <a href="../../">Home</a> / <a href="../../#coverage">Coverage</a> / <span id="crumbType">Page</span> / <span id="crumbName">…</span>
     </div>
-    <h1 class="h-display loc-hero__title" id="locH1"><span class="split" data-split="words">Loading…</span></h1>
+    <h1 class="h-display loc-hero__title" id="locH1"><span class="split" data-split="words"><span class="word">Rank</span> <span class="word">#1</span> <span class="word">as</span> <span class="word">a</span> <span class="word">accounting</span> <span class="word">firm:</span> <span class="word">Industry-Specific</span> <span class="word"><span class="text-grad">SEO</span></span> <span class="word"><span class="text-grad">That</span></span> <span class="word"><span class="text-grad">Converts</span></span></span></h1>
     <p class="loc-hero__sub reveal" id="locSub"></p>
 
     <div class="hero__cta-row reveal" style="margin-top:36px">
@@ -108,7 +108,7 @@
   <div class="container">
     <div class="section-head">
       <span class="eyebrow reveal" id="introEyebrow">Overview</span>
-      <h2 class="h-section reveal d1" id="whyHeading">Why this matters</h2>
+      <h2 class="h-section reveal d1" id="whyHeading">SEO for Accounting firms Is Not Like SEO for Other Businesses</h2>
     </div>
     <div style="display:grid; grid-template-columns: 1fr 1fr; gap: clamp(30px,5vw,60px);">
       <p class="reveal d1" id="introText" style="font-size:17px; color:var(--text-dim); line-height:1.7"></p>
@@ -154,7 +154,7 @@
   <div class="container">
     <div class="section-head">
       <span class="eyebrow reveal">Facts on the ground</span>
-      <h2 class="h-section reveal d1" id="factsHeading">Local intelligence <span class="text-grad">we build on.</span></h2>
+      <h2 class="h-section reveal d1" id="factsHeading">Local intelligence <span class="text-grad">for accounting firms.</span></h2>
     </div>
     <ul class="facts" id="factsList"></ul>
   </div>
@@ -165,7 +165,7 @@
   <div class="container">
     <div class="section-head center">
       <span class="eyebrow reveal">FAQs</span>
-      <h2 class="h-section reveal d1" id="faqHeading">Questions we <span class="text-grad">get asked.</span></h2>
+      <h2 class="h-section reveal d1" id="faqHeading">accounting firms <span class="text-grad">questions, answered.</span></h2>
     </div>
     <div class="faq__list" id="faqList"></div>
   </div>
@@ -176,7 +176,7 @@
   <div class="container">
     <div class="section-head">
       <span class="eyebrow reveal">Related pages</span>
-      <h2 class="h-section reveal d1">More places we <span class="text-grad">rank in.</span></h2>
+      <h2 class="h-section reveal d1">More industries we rank in <span class="text-grad">beyond accounting firms.</span></h2>
     </div>
     <div class="loc-related" id="relatedGrid"></div>
   </div>
@@ -187,7 +187,7 @@
   <div class="container">
     <div class="section-head">
       <span class="eyebrow reveal">Related reading</span>
-      <h2 class="h-section reveal d1">SEO guides for <span class="text-grad" id="rrName">your market.</span></h2>
+      <h2 class="h-section reveal d1">SEO guides for <span class="text-grad" id="rrName">accounting firms.</span></h2>
     </div>
     <div class="blog__grid" id="rrGrid"></div>
   </div>
@@ -199,7 +199,7 @@
     <div class="contact__panel reveal">
       <div class="contact__lhs">
         <span class="eyebrow">Let's rank</span>
-        <h2 class="h-section" style="margin-top:18px" id="ctaH2">Ready to dominate <span class="text-grad">your market</span>?</h2>
+        <h2 class="h-section" style="margin-top:18px" id="ctaH2">Ready to dominate <span class="text-grad">accounting firms</span>?</h2>
         <p>Book a free 30-minute strategy call. I'll audit your current visibility live and tell you exactly what it would take to reach the top 3.</p>
         <div class="contact__info">
           <a href="mailto:info@globeskillz.com" data-magnetic>
@@ -325,12 +325,12 @@
   const typeLabel = isNiche ? 'Niche' : 'Location';
 
   document.getElementById('pageTitle').textContent = `${data.keyword} \u00b7 Globe Skillz`;
-  document.getElementById('pageDesc').setAttribute('content', (data.intro.length>160?data.intro.slice(0,data.intro.lastIndexOf(' ',160))+'...':data.intro));
+  document.getElementById('pageDesc').setAttribute('content', data.intro.slice(0, 160));
   const cleanPath = (type === 'niche' ? '/industries/' : '/locations/') + data.slug + '/';
   const canonUrl = GS_SITE + cleanPath;
   document.getElementById('pageCanon').setAttribute('href', canonUrl);
   document.getElementById('ogTitle').setAttribute('content', data.keyword + ' \u00b7 Globe Skillz');
-  document.getElementById('ogDesc').setAttribute('content', (data.intro.length>160?data.intro.slice(0,data.intro.lastIndexOf(' ',160))+'...':data.intro));
+  document.getElementById('ogDesc').setAttribute('content', data.intro.slice(0, 160));
   document.getElementById('ogUrl').setAttribute('content', canonUrl);
   // JSON-LD: Service + FAQPage for this page
   (function () {
@@ -338,7 +338,7 @@
       '@context': 'https://schema.org',
       '@type': 'Service',
       name: data.keyword,
-      description: (data.intro.length>200?data.intro.slice(0,data.intro.lastIndexOf(' ',200))+'...':data.intro),
+      description: data.intro.slice(0, 200),
       url: canonUrl,
       provider: { '@type': 'Organization', name: 'Globe Skillz', url: GS_SITE + '/' },
       areaServed: displayName

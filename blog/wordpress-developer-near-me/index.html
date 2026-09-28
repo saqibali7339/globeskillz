@@ -12,7 +12,7 @@
 </script>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="canonical" href="https://saqibali7339.github.io/globeskillz/blog/wordpress-developer-near-me/" />
+<link rel="canonical" href="https://globeskillz.com/blog/wordpress-developer-near-me/" />
 <title id="pageTitle">How to Find a Good WordPress Developer Near You · Globe Skillz Blog</title>
 <meta id="pageDesc" name="description" content="Looking for a WordPress developer near you? Learn how to judge one, what to ask before paying, and the red flags to avoid." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,11 +20,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../styles.css" />
 <link rel="icon" type="image/png" href="../../favicon.png" />
-<link id="pageCanon" rel="canonical" href="https://saqibali7339.github.io/globeskillz/blog/wordpress-developer-near-me/" />
+<link id="pageCanon" rel="canonical" href="https://globeskillz.com/blog/wordpress-developer-near-me/" />
 <meta property="og:type" content="website" />
 <meta property="og:title" id="ogTitle" content="How to Find a Good WordPress Developer Near You · Globe Skillz Blog" />
 <meta property="og:description" id="ogDesc" content="Looking for a WordPress developer near you? Learn how to judge one, what to ask before paying, and the red flags to avoid." />
-<meta property="og:url" id="ogUrl" content="https://saqibali7339.github.io/globeskillz/blog/wordpress-developer-near-me/" />
+<meta property="og:url" id="ogUrl" content="https://globeskillz.com/blog/wordpress-developer-near-me/" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" id="ogTitle" content="How to Find a Good WordPress Developer Near You · Globe Skillz Blog" />
 <meta name="twitter:description" id="ogDesc" content="Looking for a WordPress developer near you? Learn how to judge one, what to ask before paying, and the red flags to avoid." />
@@ -89,13 +89,13 @@
       <a href="../../">Home</a> / <a href="../../blogs/">Blog</a> / <span id="crumbTitle">…</span>
     </div>
     <span class="eyebrow reveal">Blog</span>
-    <h1 class="h-display article__title" id="artTitle">Loading…</h1>
+    <h1 class="h-display article__title" id="artTitle">How to Find a Good WordPress Developer Near You</h1>
     <div class="article__meta reveal"><span id="artDate"></span> · <span id="artRead"></span></div>
     <figure class="article__hero reveal"><img id="artImg" src="" alt=""></figure>
     <div class="article__body" id="artBody"></div>
     <div class="article__faq">
       <div class="section-head">
-        <h2 class="h-section">Questions, <span class="text-grad">answered.</span></h2>
+        <h2 class="h-section">WordPress developer <span class="text-grad">questions, answered.</span></h2>
       </div>
       <div class="faq__list" id="artFaq"></div>
     </div>
@@ -106,7 +106,8 @@
 <section class="article__cta">
   <div class="container">
     <span class="eyebrow">Free SEO audit</span>
-    <h2 class="h-section" style="margin:16px 0">Want this done <span class="text-grad">for you?</span></h2>
+    <!-- H3: identical CTA chrome on every post; kept out of the H2 outline -->
+    <h3 class="h-section" style="margin:16px 0">Want this done <span class="text-grad">for you?</span></h3>
     <p class="p-lead" style="margin:0 auto 32px">I will check your website and send you a short breakdown of exactly what is holding your rankings back and what I would fix first. No charge, no strings attached.</p>
     <a href="../../#contact" class="btn btn-primary" data-magnetic data-contact-link>Get my free audit</a>
   </div>
@@ -117,7 +118,8 @@
   <div class="container">
     <div class="section-head">
       <span class="eyebrow">Keep reading</span>
-      <h2 class="h-section">More from <span class="text-grad">the blog.</span></h2>
+      <!-- H3: identical related-posts chrome on every post -->
+        <h3 class="h-section">More from <span class="text-grad">the blog.</span></h3>
     </div>
     <div class="blog__grid" id="relatedGrid"></div>
   </div>
@@ -128,7 +130,8 @@
   <div class="container">
     <div class="section-head">
       <span class="eyebrow">Where this applies</span>
-      <h2 class="h-section">Good <span class="text-grad">everywhere.</span></h2>
+      <!-- H3: identical applies-to chrome on every post -->
+        <h3 class="h-section">Good <span class="text-grad">everywhere.</span></h3>
     </div>
     <div class="loc-related" id="appliesGrid"></div>
   </div>
@@ -282,7 +285,7 @@
     const svcAside = document.createElement('aside');
     svcAside.className = 'article__service';
     svcAside.innerHTML = '<span class="eyebrow">Want this done for you?</span><p>' +
-      esc(data.service.blurb) + ' <a class="ctx-link" href="' + RP + data.service.path + '">Explore ' +
+      esc(data.service.blurb) + ' <a class="ctx-link" href="../../' + RP + data.service.path + '">Explore ' +
       esc(data.service.label) + ' &rarr;</a></p>';
     $('#artBody').appendChild(svcAside);
   }

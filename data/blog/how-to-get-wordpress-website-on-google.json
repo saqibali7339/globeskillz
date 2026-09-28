@@ -70,5 +70,6 @@
     "path": "services/seo-audits/",
     "label": "SEO Audits",
     "blurb": "Rather have me check it for you? A free mini-audit shows exactly what is holding your site back on Google."
-  }
+  },
+  "faq_topic": "WordPress SEO"
 }
