@@ -363,7 +363,7 @@
     if (!covGrid || !covIndex) return;
     const pool = covIndex.locations
       .filter(l => (l.region || l.type) === activeKind)
-      .map(l => ({ slug: l.slug, label: kindLabel(l.type), title: l.place, desc: cardDesc['loc:' + l.slug] || '' }));
+      .map(l => ({ slug: l.slug, label: kindLabel(l.region), title: l.place, desc: cardDesc['loc:' + l.slug] || '' }));
     const q = query.toLowerCase();
     const filtered = q ? pool.filter(x => x.title.toLowerCase().includes(q)) : pool;
     covGrid.innerHTML = filtered.slice(0, 120).map(x => `
