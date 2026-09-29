@@ -253,12 +253,99 @@
 .lw2-ccard span{color:#a2a9bb;font-size:15px;line-height:1.6;}
 @media(max-width:860px){.lw2-consult__grid{grid-template-columns:1fr !important;}}
 
+
+.lw2-fix{width:100%;padding:90px 24px;background:#06070d;}
+.lw2-fix__in{max-width:1120px;margin:0 auto;}
+.lw2-fix h2,.lw2-why h2,.lw2-price h2,.lw2-ctaband h2{color:#eef1f7;font-size:clamp(30px,4vw,48px);margin:18px 0 40px;font-family:Georgia,serif;font-weight:700;line-height:1.15;}
+.lw2-grad{background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.lw2-fix__grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.lw2-fstep{display:flex;gap:20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:30px;}
+.lw2-fstep>span{flex-shrink:0;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);color:#06070d;font-weight:900;font-size:20px;display:flex;align-items:center;justify-content:center;}
+.lw2-fstep strong{display:block;color:#eef1f7;font-size:18px;margin-bottom:8px;}
+.lw2-fstep em{color:#a2a9bb;font-size:14.5px;font-style:normal;line-height:1.6;}
+.lw2-why{width:100%;padding:90px 24px;background:#0a0e1a;}
+.lw2-why__in{max-width:1120px;margin:0 auto;}
+.lw2-why__grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.lw2-wcard{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:32px;}
+.lw2-wcard strong{display:block;color:#eef1f7;font-size:19px;margin-bottom:10px;}
+.lw2-wcard span{color:#a2a9bb;font-size:15px;line-height:1.6;}
+.lw2-price{width:100%;padding:90px 24px;background:#06070d;}
+.lw2-price__in{max-width:720px;margin:0 auto;text-align:center;}
+.lw2-price__in h2{margin-bottom:36px;}
+.lw2-price__card{background:rgba(255,255,255,.03);border:1px solid rgba(163,255,92,.35);border-radius:24px;padding:44px 40px;text-align:left;}
+.lw2-price__top{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px;flex-wrap:wrap;gap:12px;}
+.lw2-price__top strong{color:#eef1f7;font-size:22px;}
+.lw2-price__amt{font-size:44px;font-weight:900;background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.lw2-price__amt span{font-size:16px;font-weight:400;color:#a2a9bb;-webkit-text-fill-color:#a2a9bb;}
+.lw2-price__card ul{margin:0 0 32px;padding:0;list-style:none;}
+.lw2-price__card li{display:flex;gap:14px;align-items:flex-start;color:#a2a9bb;font-size:15.5px;padding:9px 0;border-top:1px solid rgba(255,255,255,.07);}
+.lw2-price__card li span{color:#a3ff5c;font-weight:900;}
+.lw2-price__note{color:#a2a9bb;font-size:14px;margin:20px 0 0;text-align:center;}
+.lw2-price__note a{color:#a3ff5c;}
+.lw2-ctaband{width:100%;padding:100px 24px;background:radial-gradient(ellipse at 50% 0%,#0a0e1a 0%,#06070d 65%);text-align:center;}
+.lw2-ctaband__in{max-width:760px;margin:0 auto;}
+.lw2-ctaband p{color:#a2a9bb;font-size:18px;line-height:1.7;margin:0 0 36px;}
+@media(max-width:860px){.lw2-fix__grid,.lw2-why__grid{grid-template-columns:1fr !important;}}
+
 </style>
 <script src="../../assets/js/lottie.min.js"></script>
 <script>
 (function(){document.querySelectorAll('[data-lot]').forEach(function(el){if(typeof lottie==='undefined')return;try{lottie.loadAnimation({container:el,renderer:'svg',loop:true,autoplay:true,path:'../../assets/lottie/'+el.getAttribute('data-lot')});}catch(e){}});})();
 </script>
 <!-- ============ /LAWYERS v3 ============ -->
+<section class="lw2-fix">
+<div class="lw2-fix__in">
+<span class="lw2-label">THE FIX</span>
+<h2>Here&rsquo;s exactly <span class="lw2-grad">what I do.</span></h2>
+<div class="lw2-fix__grid lw2-newgrid">
+<div class="lw2-fstep"><span>1</span><div><strong>Own the crisis searches</strong><em>&ldquo;DUI lawyer near me&rdquo;, &ldquo;divorce attorney [city]&rdquo; &mdash; practice-area pages matching exactly what they type at 2am.</em></div></div>
+<div class="lw2-fstep"><span>2</span><div><strong>Turn clicks into consultations</strong><em>Click-to-call, intake forms, trust signals &mdash; your site answers before your office opens.</em></div></div>
+<div class="lw2-fstep"><span>3</span><div><strong>Reviews that survive scrutiny</strong><em>Clients check reviews before trusting a lawyer with their case &mdash; build and protect that proof.</em></div></div>
+<div class="lw2-fstep"><span>4</span><div><strong>Stay visible</strong><em>Fresh case-type content, new reviews, tracked consultations every month.</em></div></div>
+</div>
+</div>
+</section>
+
+<section class="lw2-why">
+<div class="lw2-why__in">
+<span class="lw2-label">WHY ME</span>
+<h2>Why law firms <span class="lw2-grad">pick me.</span></h2>
+<div class="lw2-why__grid lw2-newgrid">
+<div class="lw2-wcard"><strong>You talk to me</strong><span>No account managers, no handoffs. The person who audits your presence is the person who fixes it.</span></div>
+<div class="lw2-wcard"><strong>Law isn&rsquo;t a sideline</strong><span>I do SEO for law firms specifically &mdash; not &ldquo;we do everything for everyone.&rdquo;</span></div>
+<div class="lw2-wcard"><strong>Plain numbers, no jargon</strong><span>You&rsquo;ll see rankings, reviews, and consultations. If a report needs a dictionary, it&rsquo;s hiding something.</span></div>
+<div class="lw2-wcard"><strong>One clear plan</strong><span>A single monthly price with visible work every month. No bloated agency layers eating your budget.</span></div>
+</div>
+</div>
+</section>
+
+<section class="lw2-price">
+<div class="lw2-price__in">
+<span class="lw2-label">PRICING</span>
+<h2>One plan. <span class="lw2-grad">Everything included.</span></h2>
+<div class="lw2-price__card">
+<div class="lw2-price__top"><strong>Law Firm SEO</strong><span class="lw2-price__amt">$700<span>/month</span></span></div>
+<ul>
+<li><span>&check;</span> Google Business Profile fully managed &mdash; practice areas, posts, Q&amp;A</li>
+<li><span>&check;</span> Practice-area ranking pages &mdash; built for consultations</li>
+<li><span>&check;</span> Review engine &mdash; requests, responses, damage control</li>
+<li><span>&check;</span> Monthly report &mdash; rankings, reviews, consultations in plain English</li>
+<li><span>&check;</span> Direct line to me &mdash; no ticket queues</li>
+</ul>
+<a href="#contact" class="lw2-cta cta-final">Start With a Free Audit &rarr;</a>
+<p class="lw2-price__note">Same SEO plan as on the homepage &mdash; no industry markup. Multiple practice areas or offices? <a href="#contact">Ask for a custom quote.</a></p>
+</div>
+</div>
+</section>
+
+<section class="lw2-ctaband">
+<div class="lw2-ctaband__in">
+<span class="lw2-label">FREE AUDIT</span>
+<h2>Someone in your city is Googling <span class="lw2-grad">their legal problem right now.</span></h2>
+<p>Tell me about your practice &mdash; I&rsquo;ll send back a free audit of your Google presence: what shows up, what&rsquo;s missing, and which cases you&rsquo;re losing to other firms.</p>
+<a href="#contact" class="lw2-cta cta-final">Get My Free Audit &rarr;</a>
+</div>
+</section>
 <section id="faq">
   <div class="container">
     <div class="section-head center">
