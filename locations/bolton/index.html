@@ -400,6 +400,22 @@
     </div>
   </div>
 </section>
+<script>
+/* Independent FAQ toggle - runs regardless of data loader */
+(function(){
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    var q = item.querySelector('.faq-item__q');
+    var a = item.querySelector('.faq-item__a');
+    if (q && a && !q.dataset.wired) {
+      q.dataset.wired = '1';
+      q.addEventListener('click', function(){
+        var open = item.classList.toggle('open');
+        a.style.maxHeight = open ? a.scrollHeight + 'px' : '0px';
+      });
+    }
+  });
+})();
+</script>
 </main>
 
 <footer class="footer">
