@@ -273,7 +273,7 @@ body.no-cursor, body.no-cursor button, body.no-cursor a { cursor: auto; }
 }
 
 /* ---------- Section base ---------- */
-section { position: relative; padding: clamp(80px, 12vw, 160px) 0; }
+section { position: relative; padding: clamp(48px, 7vw, 96px) 0; }
 .eyebrow {
   display: inline-flex; align-items: center; gap: 10px;
   padding: 6px 14px; border-radius: 100px;
@@ -475,7 +475,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; letter-spac
 }
 
 /* ---------- Section headers ---------- */
-.section-head { display: flex; flex-direction: column; align-items: flex-start; gap: 18px; margin-bottom: 60px; max-width: 720px; }
+.section-head { display: flex; flex-direction: column; align-items: flex-start; gap: 18px; margin-bottom: 36px; max-width: 720px; }
 .section-head.center { align-items: center; text-align: center; margin-left: auto; margin-right: auto; }
 
 /* ---------- About ---------- */
@@ -967,10 +967,6 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; letter-spac
 .footer__legal a:hover { color: var(--text); }
 
 /* ---------- Tweaks Panel ---------- */
- to { opacity: 1; transform: none; } }
-
-
-
 
 @keyframes fabFloat { to { transform: translateY(-6px); } }
 
@@ -1085,6 +1081,7 @@ a.seo-proof:hover .seo-proof__go { opacity: 1; transform: none; }
   .process__grid { grid-template-columns: 1fr; gap: 24px; }
   .process__visual { position: static; padding: 0; }
   .process__orb { width: 230px; height: 230px; }
+}
 
 .testi-card__stars svg.dim { opacity: .25; }
 
