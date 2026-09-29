@@ -690,6 +690,11 @@
     });
   });
 
+})(); /* end data loader — reveal runs independently below */
+</script>
+<script>
+/* ==== Reveal animations (independent of data loading) ==== */
+(function () {
   // Reveal
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => {
