@@ -41,7 +41,7 @@
 .res-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:56px 0}
 @media(max-width:1020px){.res-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:680px){.res-grid{grid-template-columns:1fr}}
-.cs-card{background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:26px;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);display:flex;flex-direction:column;gap:14px;transition:transform .25s,border-color .25s}
+.cs-card{scroll-margin-top:150px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:26px;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);display:flex;flex-direction:column;gap:14px;transition:transform .25s,border-color .25s}
 .cs-card:hover{transform:translateY(-4px);border-color:rgba(124,92,255,.45)}
 .cs-card--wide{grid-column:1/-1}
 .cs-tag{font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:#22d3ee}
@@ -89,7 +89,7 @@
 
 <div class="res-grid">
 
-<article class="cs-card cs-card--wide reveal">
+<article id="case-jewelry" class="cs-card cs-card--wide reveal">
 <span class="cs-tag">E-commerce &middot; Jewelry &middot; Since 2022 (ongoing)</span>
 <h3>Jewelry brand — built from zero</h3>
 <figure class="cs-shot"><img src="../assets/projects/screenshots/pr3.jpg" alt="Search Console: 79.9K clicks and 2.81M impressions over 3 months for a confidential jewelry client" loading="lazy"></figure>
@@ -97,7 +97,7 @@
 <p class="cs-ctx">Brand-new jewelry store launched in 2022 with zero organic clicks. I have run its SEO since day one — technical, content and authority work, continuously. Still growing.</p>
 <div><p class="cs-vidcap">Watch the data — one month of this same campaign: 23K clicks, 931K impressions</p><div class="cs-vid"><video controls preload="none" poster="../assets/projects/screenshots/pr3.jpg"><source src="../assets/projects/videos/case-jewelry-1mo.mp4" type="video/mp4"></video></div></div></article>
 
-<article class="cs-card reveal d1">
+<article id="case-bookstore" class="cs-card reveal d1">
 <span class="cs-tag">E-commerce &middot; Books</span>
 <h3>Online bookstore</h3>
 <figure class="cs-shot"><img src="../assets/projects/screenshots/pr9.jpg" alt="Search Console: 25.9K clicks and 1.81M impressions over 3 months for a confidential bookstore client" loading="lazy"></figure>
@@ -105,7 +105,7 @@
 <p class="cs-ctx">Online bookstore. Search Console data from a three-month window.</p>
 </article>
 
-<article class="cs-card reveal d2">
+<article id="case-diamonds" class="cs-card reveal d2">
 <span class="cs-tag">E-commerce &middot; Diamonds</span>
 <h3>Diamond retailer</h3>
 <figure class="cs-shot"><img src="../assets/projects/screenshots/pr4.jpg" alt="Search Console: 22.5K clicks and 1.67M impressions over 3 months for a confidential diamond retailer" loading="lazy"></figure>
@@ -113,7 +113,7 @@
 <p class="cs-ctx">Diamond retailer. Search Console data from a three-month window.</p>
 <div><p class="cs-vidcap">Watch the data</p><div class="cs-vid"><video controls preload="none" poster="../assets/projects/screenshots/pr4.jpg"><source src="../assets/projects/videos/case-diamonds.mp4" type="video/mp4"></video></div></div></article>
 
-<article class="cs-card reveal">
+<article id="case-courses" class="cs-card reveal">
 <span class="cs-tag">Education &middot; Online courses</span>
 <h3>Course-selling education site</h3>
 <figure class="cs-shot"><img src="../assets/projects/screenshots/pr5.jpg" alt="Search Console: 19.8K clicks and 1.29M impressions over 3 months for a confidential online-courses client" loading="lazy"></figure>
@@ -121,7 +121,7 @@
 <p class="cs-ctx">Education site selling courses. Search Console data from a three-month window.</p>
 <div><p class="cs-vidcap">Watch the data</p><div class="cs-vid"><video controls preload="none" poster="../assets/projects/screenshots/pr5.jpg"><source src="../assets/projects/videos/case-courses.mp4" type="video/mp4"></video></div></div></article>
 
-<article class="cs-card reveal d1">
+<article id="case-shopify-growth" class="cs-card reveal d1">
 <span class="cs-tag">E-commerce &middot; Shopify</span>
 <h3>Shopify store &mdash; growth engagement</h3>
 <figure class="cs-shot"><img src="../assets/projects/screenshots/vytal-gsc.jpg" alt="Search Console: 24.5K clicks and 1.03M impressions over 3 months for a confidential Shopify store" loading="lazy"></figure>
@@ -129,7 +129,7 @@
 <p class="cs-ctx">Shopify ecommerce store. Search Console data from a three-month window.</p>
 </article>
 
-<article class="cs-card reveal d2">
+<article id="case-shopify-scale" class="cs-card reveal d2">
 <span class="cs-tag">E-commerce &middot; Shopify</span>
 <h3>Shopify store &mdash; scale engagement</h3>
 <figure class="cs-shot"><img src="../assets/projects/screenshots/pr7.jpg" alt="Search Console: 14.7K clicks and 805K impressions over 3 months for a confidential Shopify store" loading="lazy"></figure>
@@ -137,7 +137,7 @@
 <p class="cs-ctx">Second Shopify ecommerce store. Search Console data from a three-month window.</p>
 </article>
 
-<article class="cs-card reveal">
+<article id="case-albarik" class="cs-card reveal">
 <span class="cs-tag">Shopping mall &middot; Albarik</span>
 <h3>Albarik &mdash; mall website</h3>
 <figure class="cs-shot"><img src="../assets/projects/screenshots/pr6.jpg" alt="Search Console: 2.67K clicks and 185K impressions over 3 months for the Albarik mall website" loading="lazy"></figure>
@@ -145,7 +145,7 @@
 <p class="cs-ctx">Mall website built from zero online presence — it reached about 2,500 monthly clicks within its first two months.</p>
 </article>
 
-<article class="cs-card reveal d1">
+<article id="case-pet-products" class="cs-card reveal d1">
 <span class="cs-tag">E-commerce &middot; Shopify &middot; Pets</span>
 <h3>Pet products store</h3>
 <figure class="cs-shot"><img src="../assets/projects/screenshots/pr2.jpg" alt="Search Console: 1.18K clicks and 125K impressions over 3 months for a confidential pet-products store" loading="lazy"></figure>
@@ -153,7 +153,7 @@
 <p class="cs-ctx">Shopify pet-products store. Search Console data from a three-month window — the video also shows the longer growth curve.</p>
 <div><p class="cs-vidcap">Watch the data</p><div class="cs-vid"><video controls preload="none" poster="../assets/projects/screenshots/pr2.jpg"><source src="../assets/projects/videos/case-pet-products.mp4" type="video/mp4"></video></div></div></article>
 
-<article class="cs-card reveal d2">
+<article id="case-lashes-brows" class="cs-card reveal d2">
 <span class="cs-tag">E-commerce &middot; Beauty</span>
 <h3>Lashes &amp; brows beauty brand</h3>
 <figure class="cs-shot"><img src="../assets/projects/screenshots/pr1.jpg" alt="Search Console: 4.52K clicks and 87.4K impressions over 3 months for a confidential beauty brand" loading="lazy"></figure>
