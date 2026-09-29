@@ -267,12 +267,99 @@
 .ec2-cat__list strong{display:block;color:#eef1f7;font-size:17px;margin-bottom:6px;}
 .ec2-cat__list em{color:#a2a9bb;font-size:14.5px;font-style:normal;}
 
+
+.ec2-fix{width:100%;padding:90px 24px;background:#06070d;}
+.ec2-fix__in{max-width:1120px;margin:0 auto;}
+.ec2-fix h2,.ec2-why h2,.ec2-price h2,.ec2-ctaband h2{color:#eef1f7;font-size:clamp(30px,4vw,48px);margin:18px 0 40px;font-family:Georgia,serif;font-weight:700;line-height:1.15;}
+.ec2-grad{background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.ec2-fix__grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.ec2-fstep{display:flex;gap:20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:30px;}
+.ec2-fstep>span{flex-shrink:0;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);color:#06070d;font-weight:900;font-size:20px;display:flex;align-items:center;justify-content:center;}
+.ec2-fstep strong{display:block;color:#eef1f7;font-size:18px;margin-bottom:8px;}
+.ec2-fstep em{color:#a2a9bb;font-size:14.5px;font-style:normal;line-height:1.6;}
+.ec2-why{width:100%;padding:90px 24px;background:#0a0e1a;}
+.ec2-why__in{max-width:1120px;margin:0 auto;}
+.ec2-why__grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.ec2-wcard{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:32px;}
+.ec2-wcard strong{display:block;color:#eef1f7;font-size:19px;margin-bottom:10px;}
+.ec2-wcard span{color:#a2a9bb;font-size:15px;line-height:1.6;}
+.ec2-price{width:100%;padding:90px 24px;background:#06070d;}
+.ec2-price__in{max-width:720px;margin:0 auto;text-align:center;}
+.ec2-price__in h2{margin-bottom:36px;}
+.ec2-price__card{background:rgba(255,255,255,.03);border:1px solid rgba(163,255,92,.35);border-radius:24px;padding:44px 40px;text-align:left;}
+.ec2-price__top{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px;flex-wrap:wrap;gap:12px;}
+.ec2-price__top strong{color:#eef1f7;font-size:22px;}
+.ec2-price__amt{font-size:44px;font-weight:900;background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.ec2-price__amt span{font-size:16px;font-weight:400;color:#a2a9bb;-webkit-text-fill-color:#a2a9bb;}
+.ec2-price__card ul{margin:0 0 32px;padding:0;list-style:none;}
+.ec2-price__card li{display:flex;gap:14px;align-items:flex-start;color:#a2a9bb;font-size:15.5px;padding:9px 0;border-top:1px solid rgba(255,255,255,.07);}
+.ec2-price__card li span{color:#a3ff5c;font-weight:900;}
+.ec2-price__note{color:#a2a9bb;font-size:14px;margin:20px 0 0;text-align:center;}
+.ec2-price__note a{color:#a3ff5c;}
+.ec2-ctaband{width:100%;padding:100px 24px;background:radial-gradient(ellipse at 50% 0%,#0a0e1a 0%,#06070d 65%);text-align:center;}
+.ec2-ctaband__in{max-width:760px;margin:0 auto;}
+.ec2-ctaband p{color:#a2a9bb;font-size:18px;line-height:1.7;margin:0 0 36px;}
+@media(max-width:860px){.ec2-fix__grid,.ec2-why__grid{grid-template-columns:1fr !important;}}
+
 </style>
 <script src="../../assets/js/lottie.min.js"></script>
 <script>
 (function(){document.querySelectorAll('[data-lot]').forEach(function(el){if(typeof lottie==='undefined')return;try{lottie.loadAnimation({container:el,renderer:'svg',loop:true,autoplay:true,path:'../../assets/lottie/'+el.getAttribute('data-lot')});}catch(e){}});})();
 </script>
 <!-- ============ /ECOMMERCE v3 ============ -->
+<section class="ec2-fix">
+<div class="ec2-fix__in">
+<span class="ec2-label">THE FIX</span>
+<h2>Here&rsquo;s exactly <span class="ec2-grad">what I do.</span></h2>
+<div class="ec2-fix__grid ec2-newgrid">
+<div class="ec2-fstep"><span>1</span><div><strong>Fix the money pages</strong><em>Product and category pages rebuilt for buyer-intent searches &mdash; &ldquo;buy [product]&rdquo; finds you, not a marketplace.</em></div></div>
+<div class="ec2-fstep"><span>2</span><div><strong>Kill the leaks</strong><em>Speed, mobile friction, thin descriptions &mdash; every fix measured in conversion, not traffic.</em></div></div>
+<div class="ec2-fstep"><span>3</span><div><strong>Own the comparisons</strong><em>&ldquo;vs&rdquo; pages, buying guides, review content &mdash; be the answer when they&rsquo;re choosing.</em></div></div>
+<div class="ec2-fstep"><span>4</span><div><strong>Scale what works</strong><em>Track revenue per keyword, double down on what converts every month.</em></div></div>
+</div>
+</div>
+</section>
+
+<section class="ec2-why">
+<div class="ec2-why__in">
+<span class="ec2-label">WHY ME</span>
+<h2>Why store owners <span class="ec2-grad">pick me.</span></h2>
+<div class="ec2-why__grid ec2-newgrid">
+<div class="ec2-wcard"><strong>You talk to me</strong><span>No account managers, no handoffs. The person who audits your store is the person who fixes it.</span></div>
+<div class="ec2-wcard"><strong>E-commerce isn&rsquo;t a sideline</strong><span>I do SEO for Shopify and WordPress stores specifically &mdash; not &ldquo;we do everything for everyone.&rdquo;</span></div>
+<div class="ec2-wcard"><strong>I speak revenue, not rankings</strong><span>You&rsquo;ll see sales, conversion rate, and revenue per keyword &mdash; not vanity traffic charts.</span></div>
+<div class="ec2-wcard"><strong>One clear plan</strong><span>A single monthly price with visible work every month. No bloated agency layers eating your budget.</span></div>
+</div>
+</div>
+</section>
+
+<section class="ec2-price">
+<div class="ec2-price__in">
+<span class="ec2-label">PRICING</span>
+<h2>One plan. <span class="ec2-grad">Everything included.</span></h2>
+<div class="ec2-price__card">
+<div class="ec2-price__top"><strong>E-commerce SEO</strong><span class="ec2-price__amt">$700<span>/month</span></span></div>
+<ul>
+<li><span>&check;</span> Product &amp; category pages rebuilt for buyer searches</li>
+<li><span>&check;</span> Technical fixes &mdash; speed, mobile, crawl issues</li>
+<li><span>&check;</span> Comparison &amp; buying-guide content that converts</li>
+<li><span>&check;</span> Monthly report &mdash; rankings, traffic, revenue in plain English</li>
+<li><span>&check;</span> Direct line to me &mdash; no ticket queues</li>
+</ul>
+<a href="#contact" class="ec2-cta cta-final">Start With a Free Audit &rarr;</a>
+<p class="ec2-price__note">Same SEO plan as on the homepage &mdash; no industry markup. Large catalog or multi-store setup? <a href="#contact">Ask for a custom quote.</a></p>
+</div>
+</div>
+</section>
+
+<section class="ec2-ctaband">
+<div class="ec2-ctaband__in">
+<span class="ec2-label">FREE AUDIT</span>
+<h2>Your next customer is comparing products <span class="ec2-grad">right now.</span></h2>
+<p>Tell me about your store &mdash; I&rsquo;ll send back a free audit: what ranks, what&rsquo;s leaking, and which searches your competitors are stealing.</p>
+<a href="#contact" class="ec2-cta cta-final">Get My Free Audit &rarr;</a>
+</div>
+</section>
 <section id="faq">
   <div class="container">
     <div class="section-head center">
