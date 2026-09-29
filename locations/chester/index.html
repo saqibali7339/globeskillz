@@ -101,8 +101,130 @@
   ]
 }
 </script>
+
+<style>
+
+/* ===== ch7 base ===== */
+.ch7-grad{background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.ch7-hero{width:100%;min-height:88vh;display:flex;align-items:center;justify-content:center;padding:118px 24px 84px;position:relative;overflow:hidden;overflow-x:clip;text-align:center;background:radial-gradient(ellipse 90% 60% at 50% -10%,#0d1226 0%,#06070d 60%),#06070d;}
+.ch7-hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(124,92,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(124,92,255,.05) 1px,transparent 1px);background-size:44px 44px;mask-image:radial-gradient(ellipse 70% 70% at 50% 40%,#000 30%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse 70% 70% at 50% 40%,#000 30%,transparent 75%);pointer-events:none;}
+.ch7-hero__in{position:relative;max-width:940px;margin:0 auto;min-width:0;width:100%;}
+.ch7-hero h1{color:#eef1f7;font-family:var(--font-display);font-weight:700;font-size:clamp(34px,5.4vw,62px);line-height:1.12;margin:0 0 20px;}
+.ch7-sub{color:#a2a9bb;font-size:clamp(15.5px,2vw,18.5px);line-height:1.75;max-width:700px;margin:0 auto 38px;}
+.ch7-ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:0 0 24px;}
+.ch7-cta{display:inline-block;background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);color:#06070d;font-weight:800;font-size:16.5px;padding:16px 42px;border-radius:100px;text-decoration:none;transition:transform .25s;}
+.ch7-cta:hover{transform:scale(1.05);}
+.ch7-ghost{display:inline-block;color:#eef1f7;font-weight:700;font-size:16.5px;padding:15px 38px;border-radius:100px;text-decoration:none;border:1px solid rgba(255,255,255,.2);transition:border-color .25s,background .25s;}
+.ch7-ghost:hover{border-color:rgba(124,92,255,.6);background:rgba(124,92,255,.08);}
+.ch7-in{max-width:1120px;margin:0 auto;padding:0 24px;min-width:0;}
+.ch7-sec{padding:92px 0;overflow-x:clip;}
+.ch7-sec--alt{background:#0a0e1a;}
+.ch7-lede{color:#a2a9bb;font-size:17px;line-height:1.75;max-width:760px;margin:0 auto;}
+/* problem / solution */
+.ch7-prob__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:44px 0 40px;}
+.ch7-pcard{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:28px;backdrop-filter:blur(10px);min-width:0;}
+.ch7-pcard .ch7-pnum{font-size:12px;font-weight:800;letter-spacing:2.5px;color:#f87171;margin-bottom:12px;}
+.ch7-pcard strong{display:block;color:#eef1f7;font-size:17px;margin-bottom:8px;font-family:var(--font-display);}
+.ch7-pcard p{color:#a2a9bb;font-size:14.5px;line-height:1.65;margin:0;}
+.ch7-sol{max-width:820px;margin:0 auto;background:rgba(163,255,92,.05);border:1px solid rgba(163,255,92,.28);border-radius:22px;padding:38px 42px;}
+.ch7-sol strong{display:block;color:#eef1f7;font-size:21px;margin-bottom:12px;font-family:var(--font-display);}
+.ch7-sol p{color:#a2a9bb;font-size:16px;line-height:1.75;margin:0;}
+/* splits */
+.ch7-split__grid{max-width:1120px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,64px);align-items:center;min-width:0;}
+.ch7-split--flip .ch7-split__grid{direction:rtl;}
+.ch7-split--flip .ch7-split__grid>*{direction:ltr;}
+.ch7-shot{margin:0;border-radius:24px;overflow:hidden;border:1px solid rgba(255,255,255,.1);position:relative;min-width:0;}
+.ch7-shot img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;}
+.ch7-shot figcaption{position:absolute;left:16px;bottom:14px;font-size:12.5px;color:#eef1f7;background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.15);padding:8px 14px;border-radius:100px;backdrop-filter:blur(8px);}
+.ch7-scopy{min-width:0;}
+.ch7-scopy h2{color:#eef1f7;font-size:clamp(28px,3.6vw,42px);margin:14px 0 18px;font-family:var(--font-display);font-weight:700;line-height:1.15;}
+.ch7-scopy p{color:#a2a9bb;font-size:16px;line-height:1.75;margin:0 0 16px;}
+.ch7-ticks{list-style:none;margin:22px 0 0;padding:0;}
+.ch7-ticks li{display:flex;gap:12px;align-items:flex-start;color:#cdd3e1;font-size:15.5px;padding:10px 0;border-top:1px solid rgba(255,255,255,.08);line-height:1.55;}
+.ch7-tick{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);color:#06070d;font-weight:900;font-size:14px;display:flex;align-items:center;justify-content:center;margin-top:1px;}
+.ch7-overlay{position:relative;border-radius:24px;overflow:hidden;border:1px solid rgba(255,255,255,.1);min-height:380px;display:flex;align-items:flex-end;min-width:0;}
+.ch7-overlay img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.ch7-overlay::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,7,13,.05) 30%,rgba(6,7,13,.88) 100%);}
+.ch7-ocard{position:relative;z-index:1;margin:22px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:24px 26px;backdrop-filter:blur(12px);}
+.ch7-ocard strong{display:block;color:#eef1f7;font-size:16.5px;margin-bottom:6px;font-family:var(--font-display);}
+.ch7-ocard span{color:#a2a9bb;font-size:14px;line-height:1.6;}
+/* fix */
+.ch7-fix__grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:44px;}
+.ch7-fstep{display:flex;gap:18px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:28px;min-width:0;}
+.ch7-fstep>span{flex-shrink:0;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);color:#06070d;font-weight:900;font-size:19px;display:flex;align-items:center;justify-content:center;}
+.ch7-fstep strong{display:block;color:#eef1f7;font-size:17.5px;margin-bottom:8px;font-family:var(--font-display);}
+.ch7-fstep em{color:#a2a9bb;font-size:14.5px;font-style:normal;line-height:1.65;}
+/* why */
+.ch7-why__grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:44px;}
+.ch7-wcard{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:30px;min-width:0;}
+.ch7-wcard .ch7-wico{font-size:26px;margin-bottom:14px;display:block;}
+.ch7-wcard strong{display:block;color:#eef1f7;font-size:18.5px;margin-bottom:10px;font-family:var(--font-display);}
+.ch7-wcard span{color:#a2a9bb;font-size:15px;line-height:1.65;}
+/* price */
+.ch7-price__in{max-width:720px;margin:0 auto;text-align:center;min-width:0;}
+.ch7-price__card{background:rgba(255,255,255,.03);border:1px solid rgba(163,255,92,.35);border-radius:24px;padding:42px 38px;text-align:left;margin-top:40px;}
+.ch7-price__top{display:flex;justify-content:space-between;align-items:center;margin-bottom:26px;flex-wrap:wrap;gap:12px;}
+.ch7-price__top strong{color:#eef1f7;font-size:21px;font-family:var(--font-display);}
+.ch7-price__amt{font-size:44px;font-weight:900;background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;white-space:nowrap;}
+.ch7-price__amt span{font-size:15px;font-weight:400;color:#a2a9bb;-webkit-text-fill-color:#a2a9bb;}
+.ch7-price__card ul{margin:0 0 30px;padding:0;list-style:none;}
+.ch7-price__card li{display:flex;gap:12px;align-items:flex-start;color:#a2a9bb;font-size:15.5px;padding:9px 0;border-top:1px solid rgba(255,255,255,.07);line-height:1.55;}
+.ch7-price__card li b{color:#a3ff5c;font-weight:900;}
+.ch7-price__note{color:#a2a9bb;font-size:14px;margin:0;text-align:center;}
+/* cta band */
+.ch7-ctaband{padding:100px 24px;background:radial-gradient(ellipse at 50% 0%,#0d1226 0%,#06070d 65%);text-align:center;overflow-x:clip;}
+.ch7-ctaband__in{max-width:760px;margin:0 auto;min-width:0;}
+.ch7-ctaband h2{color:#eef1f7;font-size:clamp(30px,4vw,48px);margin:16px 0 18px;font-family:var(--font-display);font-weight:700;line-height:1.15;}
+.ch7-ctaband p{color:#a2a9bb;font-size:17.5px;line-height:1.7;margin:0 0 36px;}
+/* chips */
+.ch7-chips{padding:36px 24px;overflow-x:clip;}
+.ch7-chips__in{max-width:1120px;margin:0 auto;display:flex;flex-wrap:wrap;gap:10px;align-items:center;}
+.ch7-chips__t{color:#a2a9bb;font-size:13px;letter-spacing:2px;font-weight:700;margin-right:8px;}
+.ch7-chips__in span:not(.ch7-chips__t){color:#eef1f7;font-size:14px;padding:9px 18px;border-radius:100px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03);cursor:default;}
+/* faq */
+.ch7-faq__intro{color:#a2a9bb;font-size:16.5px;line-height:1.7;max-width:640px;margin:6px auto 0;}
+.ch7-faq__list{max-width:820px;margin:40px auto 0;display:flex;flex-direction:column;gap:14px;}
+.ch7-faq__empty{max-width:820px;margin:40px auto 0;text-align:center;color:#a2a9bb;font-size:16px;line-height:1.7;background:rgba(255,255,255,.03);border:1px dashed rgba(255,255,255,.18);border-radius:18px;padding:34px 30px;}
+.ch7-faq__empty a{color:#22d3ee;font-weight:700;}
+/* related reading */
+.ch7-rr__grid{max-width:1120px;margin:44px auto 0;padding:0 24px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.ch7-rrcard{display:block;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:28px;text-decoration:none;transition:border-color .25s,transform .25s;min-width:0;}
+.ch7-rrcard:hover{border-color:rgba(124,92,255,.55);transform:translateY(-4px);}
+.ch7-rrcard .ch7-rrk{font-size:11.5px;font-weight:800;letter-spacing:2.5px;color:#22d3ee;margin-bottom:12px;}
+.ch7-rrcard strong{display:block;color:#eef1f7;font-size:17.5px;line-height:1.4;margin-bottom:10px;font-family:var(--font-display);}
+.ch7-rrcard span{color:#a2a9bb;font-size:14.5px;line-height:1.6;}
+.ch7-rrcard .ch7-rrmore{display:inline-block;margin-top:14px;color:#a3ff5c;font-weight:700;font-size:14px;}
+@media(max-width:860px){
+ .ch7-prob__grid,.ch7-fix__grid,.ch7-why__grid,.ch7-split__grid,.ch7-rr__grid{grid-template-columns:1fr !important;gap:22px;}
+ .ch7-split--flip .ch7-split__grid{direction:ltr;}
+ .ch7-sol,.ch7-price__card{padding:30px 24px;}
+ .ch7-hero{padding:104px 18px 64px;}
+ .ch7-sec{padding:64px 0;}
+ .ch7-fstep{padding:22px;}
+}
+
+.ch7-checkcard{max-width:560px;margin:0 auto;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:34px 36px;backdrop-filter:blur(12px);text-align:left;}
+.ch7-checkcard>strong{display:block;color:#eef1f7;font-size:19px;margin-bottom:22px;font-family:var(--font-display);}
+.ch7-citem{display:flex;gap:16px;align-items:flex-start;padding:13px 0;border-top:1px solid rgba(255,255,255,.08);}
+.ch7-cbox{flex-shrink:0;width:30px;height:30px;border-radius:9px;background:rgba(163,255,92,.1);border:1px solid rgba(163,255,92,.45);display:flex;align-items:center;justify-content:center;}
+.ch7-cbox svg path{stroke-dasharray:24;stroke-dashoffset:24;animation:ch7-draw .8s ease forwards;}
+.ch7-citem:nth-child(2) .ch7-cbox svg path{animation-delay:.25s;}.ch7-citem:nth-child(3) .ch7-cbox svg path{animation-delay:.5s;}.ch7-citem:nth-child(4) .ch7-cbox svg path{animation-delay:.75s;}.ch7-citem:nth-child(5) .ch7-cbox svg path{animation-delay:1s;}
+@keyframes ch7-draw{to{stroke-dashoffset:0;}}
+.ch7-citem div strong{display:block;color:#eef1f7;font-size:15.5px;margin-bottom:3px;}
+.ch7-citem div span{color:#a2a9bb;font-size:13.5px;line-height:1.55;}
+
+</style>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Service", "name": "SEO expert in Chester", "description": "SEO company in Chester: I help Chester businesses rank higher on Google and turn local searches into calls and bookings. Affluent Cheshire market expertise. Free audit.", "url": "https://globeskillz.com/locations/chester/", "provider": {"@type": "Organization", "name": "Globe Skillz", "url": "https://globeskillz.com/"}, "areaServed": {"@type": "Country", "name": "Chester"}, "offers": {"@type": "Offer", "price": "700", "priceCurrency": "USD", "description": "Monthly SEO plan: audit, keyword mapping, on-page, Business Profile, content, reporting."}}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://globeskillz.com/"}, {"@type": "ListItem", "position": 2, "name": "Locations", "item": "https://globeskillz.com/#coverage"}, {"@type": "ListItem", "position": 3, "name": "Chester", "item": "https://globeskillz.com/locations/chester/"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "My shop is in the Rows — how do I stand out when tourists just walk past?", "acceptedAnswer": {"@type": "Answer", "text": "Tourists in the Rows search by category and rating on their phones, not by your shop's name — they've never heard of you. The fix is a photo-rich Google Business Profile (50+ real images of the interior and products), correct opening hours including bank holidays, and review volume from visitors. Add a 'near the Rows' landing page on your site for searches like 'independent shops in the Rows Chester'. Businesses that do this capture the walk-past trade; businesses that don't are invisible to it."}}, {"@type": "Question", "name": "Does the racecourse fixture list really affect my search traffic?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — measurably, for hospitality, hotels, taxis and restaurants. Every Chester Races meeting creates a spike in searches like 'restaurants near Chester Racecourse' and 'hotels for Chester Races'. The businesses that publish fixture-aware content two months before each meeting rank when the surge arrives. If your content calendar ignores the fixture list, you're handing that traffic to competitors who don't."}}, {"@type": "Question", "name": "I'm based in Hoole, not the city centre — can I still rank for Chester searches?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, but not by pretending you're inside the walls. Google's proximity bias favours city-centre addresses for 'near me' searches, so the honest fix is suburb-specific service pages with real local proof — jobs done in Hoole, areas covered, genuine photos — plus reviews that mention the areas you serve. A fake city-centre address gets your profile suspended; real local content gets you ranked."}}, {"@type": "Question", "name": "How do I compete with Liverpool and Manchester firms targeting Chester?", "acceptedAnswer": {"@type": "Answer", "text": "You out-local them. Big-city firms rank on domain authority but usually have thin Chester relevance: no Chester reviews, no local photos, no Chester-specific content. A Chester business with a fully optimised profile, 100+ local reviews, suburb pages and links from Chester organisations (BID, local press, charities) beats a Manchester agency's landing page in the map pack almost every time. Local relevance is the one ranking factor money can't shortcut."}}, {"@type": "Question", "name": "What should a Chester business budget for SEO per month?", "acceptedAnswer": {"@type": "Answer", "text": "Realistic answer: the audit and the Business Profile rebuild are small one-off projects, and ongoing SEO is one simple monthly plan — the single plan on this page, everything included. Chester's affluent catchment means each converted search is worth more than average, so the payback math is usually better here than in cheaper markets — which is also why cutting corners on SEO is the most expensive option."}}]}
+</script>
 </head>
-<body data-theme="iridescent">
+<body data-pagep="ch7" data-theme="iridescent">
 <script>var PAGE_TYPE='loc';var PAGE_SLUG='chester';var PAGE_DEPTH=2;</script>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -152,284 +274,85 @@
 </nav>
 
 <main>
-
-<!-- ================= LOC HERO ================= -->
-<section class="loc-hero">
-  <div class="container">
-    <div class="loc-hero__breadcrumb reveal">
-      <a href="../../">Home</a> / <a href="../../#coverage">Coverage</a> / <span id="crumbType">Location</span> / <span id="crumbName">Chester</span>
+<section class="ch7-hero">
+    <div class="ch7-hero__in">
+      <h1>SEO Expert in <span class="ch7-grad">Chester</span></h1>
+      <p class="ch7-sub">The Rows, the racecourse, Hoole and the villages beyond — Chester customers search local and buy local. I help Chester businesses turn those searches into footfall and enquiries.</p>
+      <div class="ch7-ctas">
+      <a class="ch7-cta" href="#contact">Get my free audit</a>
+      <a class="ch7-ghost" href="#fix">See how it works</a>
     </div>
-    <h1 class="h-display loc-hero__title" id="locH1"><span class="split" data-split="words"><span class="word">SEO</span> <span class="word">Company</span> <span class="word">Chester</span> <span class="word">for</span> <span class="word">Businesses</span> <span class="word">Inside</span> <span class="word">the</span> <span class="word"><span class="text-grad">Walls</span></span> <span class="word"><span class="text-grad">and</span></span> <span class="word"><span class="text-grad">Beyond</span></span></span></h1>
-    <p class="loc-hero__sub reveal" id="locSub">Local SEO for Chester — more calls, more bookings, more customers.</p>
+      <div class="ch7-checkcard"><strong>Your Chester SEO checklist — handled</strong><div class="ch7-citem"><span class="ch7-cbox"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a3ff5c" stroke-width="3"><path d="M4 12l6 6L20 6"/></svg></span><div><strong>Google Business Profile rebuilt</strong><span>Categories, services, photos and posts — tuned for Chester search.</span></div></div><div class="ch7-citem"><span class="ch7-cbox"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a3ff5c" stroke-width="3"><path d="M4 12l6 6L20 6"/></svg></span><div><strong>Rows & racecourse intent covered</strong><span>Pages for the searches tourists and locals actually make.</span></div></div><div class="ch7-citem"><span class="ch7-cbox"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a3ff5c" stroke-width="3"><path d="M4 12l6 6L20 6"/></svg></span><div><strong>Review system installed</strong><span>A steady flow of fresh reviews, not a one-off ask.</span></div></div><div class="ch7-citem"><span class="ch7-cbox"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a3ff5c" stroke-width="3"><path d="M4 12l6 6L20 6"/></svg></span><div><strong>Technical issues fixed</strong><span>Speed, mobile and structure repaired in priority order.</span></div></div><div class="ch7-citem"><span class="ch7-cbox"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a3ff5c" stroke-width="3"><path d="M4 12l6 6L20 6"/></svg></span><div><strong>Monthly content & reporting</strong><span>New pages each month, reported in plain English.</span></div></div></div>
+    </div></section>
 
-    <div class="hero__cta-row reveal" style="margin-top:36px">
-      <a href="#contact" class="btn btn-primary" data-magnetic>Get a free Chester audit</a>
-      <a href="../../#pricing" class="btn btn-ghost" data-magnetic>See pricing</a>
-    </div>
+<section class="ch7-sec"><div class="ch7-in">
+  <div class="section-head center"><span class="eyebrow">The problem</span>
+  <h2 class="h-section">Why Chester businesses <span class="text-grad">stay invisible</span></h2>
+  <p class="ch7-lede" style="text-align:center">Three patterns I see again and again — and the thinking behind fixing each one.</p></div>
+  <div class="ch7-prob__grid"><div class="ch7-pcard"><div class="ch7-pnum">PROBLEM 01</div><strong>Tourists walk past, then Google someone else</strong><p>The Rows bring footfall, but visitors search on their phones. If you're not in those results, the shop next door gets the sale.</p></div><div class="ch7-pcard"><div class="ch7-pnum">PROBLEM 02</div><strong>Race days spike — you're not ready</strong><p>Fixture lists drive huge search surges. Businesses without event-aware SEO miss the busiest days of the year.</p></div><div class="ch7-pcard"><div class="ch7-pnum">PROBLEM 03</div><strong>Liverpool and Manchester firms target Chester</strong><p>Bigger-city competitors bid on and rank for Chester terms. Local relevance is your unfair advantage — if you build it.</p></div></div>
+  <div class="ch7-sol"><strong>The fix, in one paragraph</strong><p>The checklist above is the programme: a rebuilt Business Profile, pages for Chester's real search moments, a review system, technical repairs and monthly content. I do all of it personally.</p></div>
+</div></section>
 
-    <div class="loc-hero__stats reveal">
-      <div><b>Deva Victrix</b><span>Founded as a Roman fortress</span></div>
-      <div><b>The Rows</b><span>Medieval two-tier shopping</span></div>
-      <div><b>The Roodee</b><span>One of the world&#x27;s oldest racecourses</span></div>
-      <div><b>£1bn+</b><span>Annual tourism economy, Chester &amp; Warrington</span></div>
-    </div>
+<section class="ch7-sec ch7-split ch7-sec--alt"><div class="ch7-split__grid">
+  <figure class="ch7-shot"><img src="../../assets/img/locations/chester-1.jpg" alt="Chester street with historic phone booth, England" loading="lazy"><figcaption>Chester street with historic phone booth</figcaption></figure>
+  <div class="ch7-scopy"><span class="eyebrow">Local approach</span><h2>Chester's search moments are specific</h2>
+  <p>“Shops in the Rows”, “restaurants near Chester racecourse”, “Hoole” plus every trade under the sun — Chester searches carry local intent you can plan for.</p><p>I map those moments to pages and Profile posts, so you're visible when tourists, racegoers and locals have their phones out.</p>
+  <ul class="ch7-ticks"><li><span class="ch7-tick">&#10003;</span><span>Event-aware keyword maps (races, festivals, seasons)</span></li><li><span class="ch7-tick">&#10003;</span><span>Google Business Profile with posts timed to demand</span></li><li><span class="ch7-tick">&#10003;</span><span>Technical fixes: speed, mobile, structure</span></li></ul></div>
+</div></section>
+
+<section class="ch7-sec ch7-split"><div class="ch7-split__grid ch7-split--flip">
+  <div class="ch7-overlay"><img src="../../assets/img/locations/chester-1.jpg" alt="Chester street with historic phone booth, England" loading="lazy" style="object-position:center 30%">
+  <div class="ch7-ocard"><strong>Location relevance, engineered</strong><span>Rank for Chester from anywhere in the area — the right way.</span></div></div>
+  <div class="ch7-scopy"><span class="eyebrow">Working with me</span><h2>Hoole or city centre — it works the same</h2>
+  <p>You don't need a Rows address to rank for Chester. What you need is relevance: the right pages, the right profile, the right reviews.</p><p>I build that relevance from wherever you're based — Hoole, Handbridge, Tarvin or the city centre — with honest, white-hat work.</p></div>
+</div></section>
+
+<section class="ch7-sec ch7-sec--alt" id="fix"><div class="ch7-in">
+  <div class="section-head center"><span class="eyebrow">The fix</span>
+  <h2 class="h-section">THE FIX: <span class="text-grad">four steps</span></h2>
+  <p class="ch7-lede" style="text-align:center">Four steps, timed to Chester's calendar.</p></div>
+  <div class="ch7-fix__grid"><div class="ch7-fstep"><span>1</span><div><strong>Deep-dive audit</strong><em>Your site, Business Profile and Chester competitors — every gap listed by priority.</em></div></div><div class="ch7-fstep"><span>2</span><div><strong>Search-moment mapping</strong><em>Keywords mapped to Chester's real moments: shopping, racing, dining, trades.</em></div></div><div class="ch7-fstep"><span>3</span><div><strong>Fix, build, publish</strong><em>Technical repairs, on-page work and Profile optimisation — by impact.</em></div></div><div class="ch7-fstep"><span>4</span><div><strong>Compound monthly</strong><em>Content and reviews each month, with posts timed to Chester's events.</em></div></div></div>
+</div></section>
+
+<section class="ch7-sec"><div class="ch7-in">
+  <div class="section-head center"><span class="eyebrow">Why me</span>
+  <h2 class="h-section">Why Chester businesses <span class="text-grad">choose Globe Skillz</span></h2>
+  <p class="ch7-lede" style="text-align:center">Why Chester businesses pick Globe Skillz.</p></div>
+  <div class="ch7-why__grid"><div class="ch7-wcard"><span class="ch7-wico">👨‍💻</span><strong>One person, whole job</strong><span>From audit to monthly content — I do it all. No juniors, no handoffs.</span></div><div class="ch7-wcard"><span class="ch7-wico">🏙️</span><strong>Event-aware local SEO</strong><span>Race days, festivals, seasons — your plan follows Chester's real calendar.</span></div><div class="ch7-wcard"><span class="ch7-wico">📊</span><strong>Plain-English reporting</strong><span>What I did, what moved, what's next — monthly, in minutes.</span></div><div class="ch7-wcard"><span class="ch7-wico">💬</span><strong>Direct contact</strong><span>You talk to the person doing the work. Always.</span></div></div>
+</div></section>
+
+<section class="ch7-sec ch7-sec--alt" id="pricing"><div class="ch7-in"><div class="ch7-price__in">
+  <div class="section-head center"><span class="eyebrow">Pricing</span>
+  <h2 class="h-section">One plan. <span class="text-grad">Everything included.</span></h2></div>
+  <div class="ch7-price__card">
+    <div class="ch7-price__top"><strong>Monthly SEO Plan</strong><div class="ch7-price__amt">$700<span>/month</span></div></div>
+    <ul><li><b>&#10003;</b><span>Full technical & on-page SEO audit</span></li><li><b>&#10003;</b><span>Event-aware keyword research & mapping</span></li><li><b>&#10003;</b><span>Google Business Profile management</span></li><li><b>&#10003;</b><span>Content plan + monthly publishing</span></li><li><b>&#10003;</b><span>Citations & review strategy</span></li><li><b>&#10003;</b><span>Plain-English monthly report</span></li></ul>
+    <p class="ch7-price__note">One plan. Everything above, every month. Month to month — cancel anytime.</p>
   </div>
-</section>
+</div></div></section>
 
-<style>
-  .loc-deep { padding: clamp(40px,6vw,80px) 0; }
-  .loc-deep .eyebrow { margin-bottom: 14px; display: inline-block; }
-  .loc-deep h2 { margin-bottom: 22px; }
-  .deep-body p { color: var(--text-dim); font-size: 16px; line-height: 1.75; margin: 0 0 18px; }
-  .deep-body p b, .deep-body li b { color: var(--text); }
-  .deep-body ul.tick { list-style: none; padding: 0; margin: 0 0 18px; }
-  .deep-body ul.tick li { color: var(--text-dim); font-size: 16px; line-height: 1.7; padding-left: 30px; position: relative; margin-bottom: 10px; }
-  .deep-body ul.tick li::before { content: "→"; position: absolute; left: 0; color: var(--accent-3); font-weight: 700; }
-  .data-table { width: 100%; border-collapse: collapse; margin: 26px 0 30px; font-size: 15px; line-height: 1.6; }
-  .data-table thead th { text-align: left; font-family: var(--font-mono); font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: var(--accent-3); padding: 12px 14px; border-bottom: 2px solid var(--border); white-space: nowrap; }
-  .data-table tbody td { padding: 14px; border-bottom: 1px solid var(--border); color: var(--text-dim); vertical-align: top; }
-  .data-table tbody tr:nth-child(odd) td { background: rgba(255,255,255,.02); }
-  .data-table tbody td:first-child { color: var(--text); font-weight: 600; }
-  .table-note { font-size: 13px; color: var(--text-dim); opacity: .75; margin-top: -18px; margin-bottom: 26px; }
-  .facts { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
-  .facts li { padding: 22px 24px; border-radius: var(--radius); background: rgba(255,255,255,.03); border: 1px solid var(--border); font-size: 15px; color: var(--text-dim); line-height: 1.55; position: relative; padding-left: 52px; }
-  .facts li::before { content: ""; position: absolute; left: 20px; top: 26px; width: 18px; height: 18px; border-radius: 50%; background: var(--grad-brand); }
-  .facts li::after { content: ""; position: absolute; left: 25px; top: 30px; width: 10px; height: 10px; border-radius: 50%; background: var(--bg); }
-  @media (max-width: 820px) { .data-table { display: block; overflow-x: auto; } }
-</style>
-<style>
-  .cta-wrap { padding-top: 0; padding-bottom: 0; }
-  .cta-band { display: flex; align-items: center; justify-content: space-between; gap: 28px; padding: clamp(28px,4vw,44px); border-radius: var(--radius-lg); background: linear-gradient(135deg, rgba(124,92,255,.12), rgba(34,211,238,.08)); border: 1px solid var(--border); }
-  .cta-band h3 { font-family: var(--font-display); font-size: clamp(22px,2.6vw,30px); font-weight: 600; letter-spacing: -.02em; margin: 0 0 10px; }
-  .cta-band p { color: var(--text-dim); font-size: 15px; line-height: 1.7; margin: 0; max-width: 640px; }
-  .cta-band .btn { white-space: nowrap; flex-shrink: 0; }
-  @media (max-width: 820px) { .cta-band { flex-direction: column; align-items: flex-start; } }
-  .author-wrap { padding-top: 0; padding-bottom: 0; }
-  .author-box { padding: 20px 26px; border-left: 3px solid var(--accent-3); background: rgba(255,255,255,.02); border-radius: 0 var(--radius) var(--radius) 0; }
-  .author-box p { color: var(--text-dim); font-size: 14.5px; line-height: 1.7; margin: 0; }
-  .author-box b { color: var(--text); }
-</style>
+<section class="ch7-ctaband"><div class="ch7-ctaband__in">
+  <span class="eyebrow">Free audit</span>
+  <h2>Get your free SEO audit <span class="ch7-grad">for your business</span></h2>
+  <p>I'll personally review your site and your Chester competitors and send you a prioritised fix list. Free, no strings.</p>
+  <a class="ch7-cta" href="#contact">Claim my free audit</a>
+</div></section>
 
-<section class="loc-deep">
-  <div class="container">
-    <span class="eyebrow reveal">Local market intelligence</span>
-    <h2 class="h-section reveal d1">Chester doesn't search like <span class="text-grad">other cities.</span></h2>
-    <div class="deep-body reveal d2">
-      <p>Most UK towns have one market: the people who live there. <b>Chester has two running side by side</b> — residents with some of the highest disposable incomes in the North West, and a constant stream of visitors who arrive already searching. On a race day at the Roodee, a wedding weekend, or the run-up to Christmas, thousands of people type "restaurants near Chester Racecourse", "parking near the Rows" or "hotels in Chester" into phones they brought with them. The businesses that rank for those searches don't just win locals; they win footfall that travelled in specifically to spend.</p>
-      <p>That double market is what makes Chester SEO different from, say, Warrington or Crewe. Your Google Business Profile is being judged by someone standing on Watergate Street deciding where to eat in the next twenty minutes <b>and</b> by a homeowner in Hoole comparing solicitors for a house purchase that will take three months to close. One search wants instant answers; the other wants deep trust signals. A page-one strategy in Chester has to win both, and most agencies here optimise for only one of them.</p>
-      <p>The affluence matters too. Chester sits in one of the wealthiest catchments in the North West — finance and professional services are major employers, with Lloyds Banking Group, Bank of America, M&S Bank and Virgin Money all running large offices around the city. That pushes average customer value up across the board: higher-value home improvement jobs, bigger legal and financial transactions, premium hospitality spend. When each converted search is worth more, the maths of SEO gets very attractive very quickly.</p>
-    </div>
+<section class="ch7-sec" id="faq"><div class="ch7-in">
+  <div class="ch7-faq__in">
+  <div class="section-head center"><span class="eyebrow">FAQs</span>
+  <h2 class="h-section">Chester <span class="text-grad">questions, answered.</span></h2>
+  <p class="ch7-faq__intro" style="text-align:center">Real questions from Chester businesses, answered honestly. Anything else — ask me below.</p></div>
+  <div class="ch7-faq__list"><div class="faq-item"><button class="faq-item__q" type="button">My shop is in the Rows — how do I stand out when tourists just walk past?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">Tourists in the Rows search by category and rating on their phones, not by your shop&#x27;s name — they&#x27;ve never heard of you. The fix is a photo-rich Google Business Profile (50+ real images of the interior and products), correct opening hours including bank holidays, and review volume from visitors. Add a &#x27;near the Rows&#x27; landing page on your site for searches like &#x27;independent shops in the Rows Chester&#x27;. Businesses that do this capture the walk-past trade; businesses that don&#x27;t are invisible to it.</div></div></div><div class="faq-item"><button class="faq-item__q" type="button">Does the racecourse fixture list really affect my search traffic?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">Yes — measurably, for hospitality, hotels, taxis and restaurants. Every Chester Races meeting creates a spike in searches like &#x27;restaurants near Chester Racecourse&#x27; and &#x27;hotels for Chester Races&#x27;. The businesses that publish fixture-aware content two months before each meeting rank when the surge arrives. If your content calendar ignores the fixture list, you&#x27;re handing that traffic to competitors who don&#x27;t.</div></div></div><div class="faq-item"><button class="faq-item__q" type="button">I&#x27;m based in Hoole, not the city centre — can I still rank for Chester searches?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">Yes, but not by pretending you&#x27;re inside the walls. Google&#x27;s proximity bias favours city-centre addresses for &#x27;near me&#x27; searches, so the honest fix is suburb-specific service pages with real local proof — jobs done in Hoole, areas covered, genuine photos — plus reviews that mention the areas you serve. A fake city-centre address gets your profile suspended; real local content gets you ranked.</div></div></div><div class="faq-item"><button class="faq-item__q" type="button">How do I compete with Liverpool and Manchester firms targeting Chester?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">You out-local them. Big-city firms rank on domain authority but usually have thin Chester relevance: no Chester reviews, no local photos, no Chester-specific content. A Chester business with a fully optimised profile, 100+ local reviews, suburb pages and links from Chester organisations (BID, local press, charities) beats a Manchester agency&#x27;s landing page in the map pack almost every time. Local relevance is the one ranking factor money can&#x27;t shortcut.</div></div></div><div class="faq-item"><button class="faq-item__q" type="button">What should a Chester business budget for SEO per month?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">Realistic answer: the audit and the Business Profile rebuild are small one-off projects, and ongoing SEO is one simple monthly plan — the single plan on this page, everything included. Chester&#x27;s affluent catchment means each converted search is worth more than average, so the payback math is usually better here than in cheaper markets — which is also why cutting corners on SEO is the most expensive option.</div></div></div></div>
   </div>
-</section>
+</div></section>
 
-<section class="loc-deep author-wrap">
-  <div class="container">
-    <div class="author-box reveal">
-      <p><b>Written by Saqib Ali</b> — SEO specialist since 2019. I run Globe Skillz as a one-person studio: every audit, fix and report is done by me, never handed to juniors. This guide is built from Chester-specific research — from the Rows&#x27; search patterns to the racecourse fixture calendar.</p>
-    </div>
-  </div>
-</section>
+<section class="ch7-chips"><div class="ch7-chips__in"><span class="ch7-chips__t">ALSO RANKED:</span><span>Manchester SEO Expert</span><span>Liverpool SEO Expert</span><span>Birmingham SEO Expert</span><span>Nottingham SEO Expert</span><span>Glasgow SEO Expert</span><span>Gloucester SEO Expert</span><span>Norwich SEO Expert</span><span>Edinburgh SEO Expert</span></div></section>
 
-<section class="loc-deep">
-  <div class="container">
-    <span class="eyebrow reveal">Where the money moves</span>
-    <h2 class="h-section reveal d1">Follow the footfall: <span class="text-grad">Rows, racecourse, business park.</span></h2>
-    <div class="deep-body reveal d2">
-      <p>Start with the obvious. The <b>Rows</b> — Chester's medieval two-tier shopping galleries running along Eastgate, Watergate, Bridge and Northgate streets — are one of the most photographed retail streets in Britain. They create a search pattern almost no other UK city has: people search "shops in the Rows", "restaurants in the Rows Chester", "things to do near the Rows" at huge volume relative to the city's size. Independents in the Rows compete with national brands for that footfall, and the winners are the ones whose Google profiles show up with great photos, correct hours and recent reviews while the tourist is still deciding.</p>
-      <p>Then there's the <b>racecourse</b>. Chester Racecourse on the Roodee is one of the oldest racecourses in the world still in use, and its fixture list is effectively a demand calendar for the whole city. Hospitality, taxis, hotels and restaurants see search spikes around every major meeting — and the businesses that publish event-aware content ("where to eat before racing at Chester", "parking near Chester Racecourse") capture traffic their competitors never think about. If you run a hospitality or transport business in Chester and your content calendar ignores the fixture list, you're leaving money on the table.</p>
-      <p>Away from the tourists, the real B2B and professional-services gravity sits at <b>Chester Business Park</b> and the city-centre professional quarter, plus Riverside and the newer City Place development. Solicitors, accountants, IT firms and consultants cluster here — Knights Solicitors, RSM and a dense Regus-served flexible office scene. These buyers search differently: "commercial solicitor Chester", "IT support Cheshire", "accountants Chester Business Park". They convert slowly and check credentials hard, which is exactly where authoritative content and a spotless review profile pay off.</p>
-      <p>And don't forget the suburbs. <b>Hoole</b> has become Chester's village-within-a-city, with its own high street of independents on Faulkner Street. Boughton, Upton, Waverton and the villages out toward Tarvin and Tarporley are high-value residential areas where trades, home services and private healthcare win serious money. A plumber who ranks for "emergency plumber Tarporley" earns more per job than one fighting over generic "plumber Chester" — and faces a fraction of the competition.</p>
-    </div>
-  </div>
-</section>
-
-<section class="loc-deep">
-  <div class="container">
-    <span class="eyebrow reveal">Sector breakdown</span>
-    <h2 class="h-section reveal d1">Chester's business landscape, <span class="text-grad">sector by sector.</span></h2>
-    <div class="deep-body reveal d2">
-      <p>Not every sector in Chester plays the same game. Here's how search demand actually breaks down across the city's main business clusters — and what separates the winners from the invisible in each one.</p>
-      <table class="data-table">
-        <thead><tr><th>Sector</th><th>Where it lives</th><th>How locals search</th><th>What wins the click</th></tr></thead>
-        <tbody>
-          <tr><td>Rows retail &amp; independents</td><td>Eastgate, Watergate, Bridge &amp; Northgate streets</td><td>"shops in the Rows", "independent shops Chester", "gifts Chester city centre"</td><td>Photo-rich Google profiles, "near the Rows" landing pages, review volume from visitors</td></tr>
-          <tr><td>Tourism &amp; hospitality</td><td>City centre, the Roodee, canal side, Chester Zoo corridor</td><td>"hotels Chester", "restaurants near Chester Racecourse", "things to do in Chester"</td><td>Event-calendar content tied to fixtures, booking-engine speed, review recency</td></tr>
-          <tr><td>Financial &amp; professional services</td><td>Chester Business Park, city-centre quarter</td><td>"solicitor Chester", "mortgage advisor Cheshire", "accountant Chester"</td><td>Expertise content, case studies, credentials and Trustpilot/Google review depth</td></tr>
-          <tr><td>Home services &amp; trades</td><td>Hoole, Upton, Boughton, Tarvin, Tarporley</td><td>"emergency plumber [village]", "kitchen fitter Chester", "gardener Hoole"</td><td>Suburb-specific service pages, same-day availability signals, photo proof of work</td></tr>
-          <tr><td>Health, legal &amp; private clinics</td><td>City centre, Boughton, Waverton</td><td>"private dentist Chester", "physio Chester", "family solicitor Cheshire"</td><td>Practitioner bios, condition-led content, strict review compliance</td></tr>
-        </tbody>
-      </table>
-      <p class="table-note">Patterns observed across Chester search results; competition and volumes vary by keyword.</p>
-      <p>The pattern to notice: the sectors closest to the visitor economy win on <b>speed signals</b> (hours, photos, instant booking), while the sectors in the affluent suburbs win on <b>trust signals</b> (reviews with detail, case studies, credentials). Most Chester businesses optimise for neither and just hope their homepage ranks. Hope is not a strategy.</p>
-    </div>
-  </div>
-</section>
-
-<section class="loc-deep">
-  <div class="container">
-    <span class="eyebrow reveal">The visitor calendar</span>
-    <h2 class="h-section reveal d1">Race days, rows and <span class="text-grad">the visitor pound.</span></h2>
-    <div class="deep-body reveal d2">
-      <p>Chester's tourism economy is worth over a billion pounds a year across Chester and Warrington — and Chester Zoo alone adds around £50 million to the regional economy. That visitor flow doesn't search like residents do. Nobody staying in a hotel near the racecourse knows the name of your restaurant; they search by category, distance and rating. "Best restaurant near me" from a phone on Foregate Street goes to the best-optimised profile within walking distance, not the best restaurant in any absolute sense.</p>
-      <p>This is where event-driven SEO earns its keep in Chester. The racecourse fixture list, Chester Races Ladies Day, the Christmas markets, summer at the Zoo, the university calendar — each creates a predictable surge in specific searches. A hotel that publishes "where to stay for Chester Races May meeting" two months early ranks when the surge arrives. A taxi firm with a dedicated racecourse page captures the "taxi to Chester Racecourse" spike every single fixture. Your competitors think about keywords; you should think about <b>dates</b>.</p>
-      <p>The Chester BID has reported a standout 2025 for the city centre, with independents and national brands raising the bar and new names choosing Chester — Spinners, Montezuma's, The Ivy, Café Barbette and H Beauty all arriving in 2026. Every new arrival is a new competitor in the map pack. The city centre is getting more competitive, not less, which is exactly why building review velocity and local authority <b>now</b> matters more than ever.</p>
-    </div>
-  </div>
-</section>
-
-<section class="loc-deep">
-  <div class="container">
-    <span class="eyebrow reveal">The map pack</span>
-    <h2 class="h-section reveal d1">The Chester map pack is <span class="text-grad">a three-way fight.</span></h2>
-    <div class="deep-body reveal d2">
-      <p>For most local searches in Chester, the decision happens before anyone reaches a website. The map pack shows three businesses, and the customer picks from those three. Reviews, photo quality and profile completeness are the tiebreakers — and in a city with this much visitor traffic, the tiebreakers decide an outsized share of revenue.</p>
-      <ul class="tick">
-        <li><b>Categories and services:</b> pick the primary category that matches how people actually search, then list every service as a separate service entry. A restaurant that doesn't list "Sunday roast" or "afternoon tea" as services is invisible for those searches.</li>
-        <li><b>Photos that sell the visit:</b> visitor businesses live and die on imagery. Upload real, recent photos of the interior, the food, the team — profiles with 50+ quality photos get dramatically more direction requests and calls than profiles with a logo and a stock image.</li>
-        <li><b>Review velocity, not just the score:</b> a 4.8 from reviews this month beats a 4.9 whose last review was in 2024. Build a review engine: ask at the moment of delight, make it a one-tap link, and respond to every review within 48 hours.</li>
-        <li><b>Citation consistency:</b> your NAP (name, address, phone) must match across the Chester BID directory, Visit Chester listings, Yell, Yelp, Thomson Local and every niche directory. Inconsistent listings dilute the trust signals Google uses to rank you.</li>
-        <li><b>Posts with a purpose:</b> Google Business posts are free billboards. Race-day offers, seasonal menus, new stock — post them. They show in the knowledge panel and on Maps, and almost nobody in Chester uses them consistently.</li>
-      </ul>
-      <p>One Chester-specific warning: businesses just outside the walls — in Hoole, Boughton, Saltney, or across the border in North Wales commuter towns — often struggle to appear in city-centre map packs because of proximity bias. The fix isn't a fake address (that gets you suspended); it's suburb-specific service pages, area-served content, and reviews that mention the areas you cover.</p>
-    </div>
-  </div>
-</section>
-
-<section class="loc-deep">
-  <div class="container">
-    <span class="eyebrow reveal">Honest timelines</span>
-    <h2 class="h-section reveal d1">What a Chester SEO timeline <span class="text-grad">really looks like.</span></h2>
-    <div class="deep-body reveal d2">
-      <p>No inflated promises. Here's the sequence I actually run for Chester businesses, and what you should expect to see at each stage.</p>
-      <table class="data-table">
-        <thead><tr><th>Phase</th><th>What I'm doing</th><th>What you'll notice</th></tr></thead>
-        <tbody>
-          <tr><td>Weeks 1–4</td><td>Full technical audit, Google Business Profile rebuild, citation cleanup, review engine setup</td><td>Profile views climb; map-pack impressions appear in Search Console for the first time</td></tr>
-          <tr><td>Months 2–3</td><td>Suburb and service pages (Hoole, Upton, Tarvin…), core money-page rewrites, speed fixes</td><td>Long-tail calls start — "emergency plumber Tarporley" type searches convert fast</td></tr>
-          <tr><td>Months 4–6</td><td>Event-calendar content, local link building (Chester BID, local press, sponsorships), review compounding</td><td>Map-pack entries for primary terms; first race-season or Christmas surge captured</td></tr>
-          <tr><td>Months 7–12</td><td>Authority content, neighbouring-town expansion (Tarporley, Neston, North Wales border towns), conversion tuning</td><td>Compounding enquiry growth; competitors start copying your pages (take it as a compliment)</td></tr>
-        </tbody>
-      </table>
-      <p class="table-note">Timelines assume an existing website with no penalties; brand-new domains take longer.</p>
-      <p>The honest caveat: if your niche in Chester is already dominated by two or three businesses with 500+ reviews each, the timeline stretches. I'll tell you that in the free audit before you spend a penny — I'd rather lose a sale than sell you six months of false hope.</p>
-    </div>
-  </div>
-</section>
-
-<section class="loc-deep">
-  <div class="container">
-    <section class="loc-deep cta-wrap">
-  <div class="container">
-    <div class="cta-band reveal">
-      <div class="cta-band__text">
-        <h3>Wondering what your Chester competitors are doing?</h3>
-        <p>I&#x27;ll audit your Google profile, your suburb pages and your top three competitors — live on a 30-minute call, free. You&#x27;ll see exactly where you&#x27;re losing clicks in Chester, whether you hire me or not.</p>
-      </div>
-      <a href="#contact" class="btn btn-primary" data-magnetic>Get my free Chester audit</a>
-    </div>
-  </div>
-</section>
-
-<span class="eyebrow reveal">Pricing</span>
-    <h2 class="h-section reveal d1">What SEO costs <span class="text-grad">in Chester.</span></h2>
-    <div class="deep-body reveal d2">
-      <p>Realistic UK pricing, no "it depends" dodging. Chester's affluent catchment means the return per converted search is higher than in most North West towns — which is exactly why cheap, corner-cutting SEO is the most expensive option here.</p>
-      <table class="data-table">
-        <thead><tr><th>Service</th><th>Price</th><th>Best for</th></tr></thead>
-        <tbody>
-          <tr><td>One-off SEO audit</td><td>£295</td><td>Any Chester business that wants a prioritised fix-list before committing to a retainer</td></tr>
-          <tr><td>Google Business Profile rebuild + review engine</td><td>£350</td><td>Rows retailers, hospitality and trades relying on map-pack calls</td></tr>
-          <tr><td>Local SEO — Starter</td><td>£495 / month</td><td>Single-location businesses targeting Chester + immediate suburbs</td></tr>
-          <tr><td>Local SEO — Growth</td><td>£895 / month</td><td>Competitive niches (legal, clinics, hospitality) or Chester + Cheshire-wide targeting</td></tr>
-          <tr><td>Multi-location SEO</td><td>£1,495 / month</td><td>Businesses with branches across Chester, North Wales and the wider Cheshire area</td></tr>
-        </tbody>
-      </table>
-      <p class="table-note">All retainers are rolling monthly with a plain-English report; no 12-month lock-ins.</p>
-    </div>
-  </div>
-</section>
-
-<section class="loc-deep">
-  <div class="container">
-    <span class="eyebrow reveal">The playbook</span>
-    <h2 class="h-section reveal d1">Rankings are rented. <span class="text-grad">Conversions are owned.</span></h2>
-    <div class="deep-body reveal d2">
-      <p>Here's the uncomfortable truth about Chester SEO: rankings bring the click, but the website has to convert it — and most local business sites here don't. Slow pages, hidden phone numbers, contact forms nobody answers, booking engines that need six clicks. In a city where a meaningful share of searches come from visitors on mobile with limited patience, a slow site isn't a minor issue; it's a revenue leak.</p>
-      <p>My playbook for Chester is deliberately boring, because boring compounds:</p>
-      <ul class="tick">
-        <li><b>Fix the profile first.</b> The map pack decides before the website does. GBP rebuild, review engine, photos, posts — weeks one to four.</li>
-        <li><b>Build suburb pages that deserve to rank.</b> Not thin "plumber in Upton" doorway pages — real pages with local proof: jobs done there, parking notes, areas covered, genuine photos.</li>
-        <li><b>Publish to the city's calendar.</b> Race fixtures, Christmas, Zoo events, university terms. Content timed to demand beats content published at random.</li>
-        <li><b>Earn Chester links.</b> The BID directory, local press, charity sponsorships, supplier pages. Local relevance beats generic domain authority for local rankings.</li>
-        <li><b>Convert the click.</b> Click-to-call everywhere, sub-minute contact options, pages that answer the searcher's question instead of talking about the business.</li>
-      </ul>
-      <p>No retainers full of mystery tasks. We agree on the target searches, I show you exactly what I'll do and why, then execute in order of impact. You always know what's happening and what it costs. Simple beats clever when it's your money on the line.</p>
-    </div>
-  </div>
-</section>
-
-<section class="loc-deep">
-  <div class="container">
-    <section class="loc-deep cta-wrap">
-  <div class="container">
-    <div class="cta-band reveal">
-      <div class="cta-band__text">
-        <h3>Race season waits for no one.</h3>
-        <p>Every fixture at the Roodee is a surge of searches your competitors are already planning for. The audit takes 30 minutes; the head start lasts all season.</p>
-      </div>
-      <a href="#contact" class="btn btn-primary" data-magnetic>Book my free audit</a>
-    </div>
-  </div>
-</section>
-
-<span class="eyebrow reveal">Facts on the ground</span>
-    <h2 class="h-section reveal d1">Local intelligence <span class="text-grad">for Chester.</span></h2>
-    <div class="deep-body reveal d2">
-      <ul class="facts">
-        <li>Chester was founded as the Roman fortress of Deva Victrix in the 1st century AD — the complete circuit of Roman and medieval walls still defines the city centre and its search geography.</li>
-        <li>The Rows are medieval two-tier shopping galleries along Eastgate, Watergate, Bridge and Northgate streets — a retail layout unique in Britain that shapes how visitors search.</li>
-        <li>Chester Racecourse on the Roodee is one of the oldest racecourses in the world still in use; its fixture list acts as a demand calendar for the city's hospitality and transport searches.</li>
-        <li>Chester Zoo alone contributes around £50 million a year to the regional economy, and the wider Chester and Warrington tourism economy is worth over £1 billion.</li>
-        <li>Chester is a financial-services hub: Lloyds Banking Group, Bank of America, M&S Bank and Virgin Money all run large offices in and around the city, alongside Chester Business Park's professional cluster.</li>
-        <li>The city centre is in a growth phase — Chester BID reported a standout 2025, with new arrivals including The Ivy, Montezuma's, Café Barbette and H Beauty choosing Chester in 2026.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-
-<!-- ================= FAQ ================= -->
-<section id="faq">
-  <div class="container">
-    <div class="section-head center">
-      <span class="eyebrow reveal">FAQs</span>
-      <h2 class="h-section reveal d1">Chester <span class="text-grad">questions, answered.</span></h2>
-    </div>
-    <div class="faq__list" id="faqList"></div>
-  </div>
-</section>
-
-<!-- ================= RELATED ================= -->
-<section id="related">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow reveal">Related pages</span>
-      <h2 class="h-section reveal d1">More places we rank in <span class="text-grad">beyond Chester.</span></h2>
-    </div>
-    <div class="loc-related" id="relatedGrid"></div>
-  </div>
-</section>
-
-<!-- ================= RELATED READING ================= -->
-<section id="relatedReading">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow reveal">Related reading</span>
-      <h2 class="h-section reveal d1">SEO guides for <span class="text-grad" id="rrName">Chester.</span></h2>
-    </div>
-    <div class="blog__grid" id="rrGrid"></div>
-  </div>
-</section>
+<section class="ch7-sec" id="relatedReading"><div class="ch7-in">
+  <div class="section-head center"><span class="eyebrow">Related reading</span>
+  <h2 class="h-section">SEO guides for Chester businesses.</h2></div>
+</div><div class="ch7-rr__grid"><a class="ch7-rrcard" href="../../blog.html?slug=how-much-does-seo-cost-uk"><div class="ch7-rrk">SEO PRICING</div><strong>How much does SEO cost in the UK?</strong><span>A plain-English breakdown of what SEO really costs, what drives the price, and the questions to ask before you sign anything.</span><span class="ch7-rrmore">Read the guide &rarr;</span></a><a class="ch7-rrcard" href="../../blog.html?slug=what-to-look-for-when-hiring-an-seo-company"><div class="ch7-rrk">HIRING GUIDE</div><strong>What to look for when hiring an SEO company</strong><span>Red flags, green flags and the exact questions that separate real SEO specialists from smooth salespeople.</span><span class="ch7-rrmore">Read the guide &rarr;</span></a><a class="ch7-rrcard" href="../../blog.html?slug=how-to-get-wordpress-website-on-google"><div class="ch7-rrk">GET FOUND</div><strong>How to get your WordPress website on Google</strong><span>The practical steps that take a WordPress site from invisible to indexed, ranking and earning clicks.</span><span class="ch7-rrmore">Read the guide &rarr;</span></a></div></section>
 
 <section id="contact">
   <div class="container">
@@ -474,7 +397,6 @@
   </div>
 </section>
 </main>
-
 <footer class="footer">
   <div class="container">
     <div class="footer__wordmark">GLOBE SKILLZ</div>
@@ -532,208 +454,6 @@
     </div>
   </div>
 </footer>
-
-<script>
-/* ==== Load dynamic page data ==== */
-(async () => {
-  const RP = (typeof PAGE_DEPTH !== 'undefined' && PAGE_DEPTH) ? '../'.repeat(PAGE_DEPTH) : '';
-  const GS_SITE = 'https://globeskillz.com';
-  const params = new URLSearchParams(location.search);
-  const slug = (typeof PAGE_SLUG !== 'undefined' && PAGE_SLUG) || params.get('slug') || params.get('loc') || 'alabama';
-  const type = (typeof PAGE_TYPE !== 'undefined' && PAGE_TYPE) || params.get('type') || (params.get('niche') ? 'niche' : 'loc');
-  const folder = type === 'niche' ? 'niche' : 'loc';
-
-  let data;
-  try {
-    const res = await fetch(RP + `data/${folder}/${slug}.json`);
-    if (!res.ok) throw new Error('not found');
-    data = await res.json();
-  } catch (e) {
-    document.getElementById('locH1').innerHTML = `<span class="split in"><span class="word">Page</span> <span class="word">not</span> <span class="word text-grad">found</span></span>`;
-    document.getElementById('locSub').textContent = 'That page slug is not in our catalog yet. Head back to the coverage grid and pick another.';
-    return;
-  }
-
-  const isNiche = !!data.niche;
-  const displayName = isNiche ? data.niche : data.place;
-  const typeLabel = isNiche ? 'Niche' : 'Location';
-  const setT = (id, v) => { const el = document.getElementById(id); if (el && v != null) el.textContent = v; };
-  const setH = (id, v) => { const el = document.getElementById(id); if (el && v != null) el.innerHTML = v; };
-
-  setT('pageTitle', `${data.keyword} \u00b7 Globe Skillz`);
-  document.getElementById('pageTitle') && document.title = `${data.keyword} \u00b7 Globe Skillz`;
-  const pd = document.getElementById('pageDesc'); if (pd) pd.setAttribute('content', data.meta || (data.intro || '').slice(0, 160));
-  const cleanPath = (type === 'niche' ? '/industries/' : '/locations/') + data.slug + '/';
-  const canonUrl = GS_SITE + cleanPath;
-  const pc = document.getElementById('pageCanon'); if (pc) pc.setAttribute('href', canonUrl);
-  const ogT = document.getElementById('ogTitle'); if (ogT) ogT.setAttribute('content', data.keyword + ' \u00b7 Globe Skillz');
-  const ogD = document.getElementById('ogDesc'); if (ogD) ogD.setAttribute('content', data.meta || (data.intro || '').slice(0, 160));
-  const ogU = document.getElementById('ogUrl'); if (ogU) ogU.setAttribute('content', canonUrl);
-  const twT = document.getElementById('twitterTitle'); if (twT) twT.setAttribute('content', data.keyword + ' \u00b7 Globe Skillz');
-  const twD = document.getElementById('twitterDesc'); if (twD) twD.setAttribute('content', data.meta || (data.intro || '').slice(0, 160));
-
-  // JSON-LD: Service + FAQPage (static FAQPage also in head; this mirrors the industry-page pattern)
-  (function () {
-    const serviceLd = {
-      '@context': 'https://schema.org',
-      '@type': 'Service',
-      name: data.keyword,
-      description: data.meta || (data.intro || '').slice(0, 200),
-      url: canonUrl,
-      provider: { '@type': 'Organization', name: 'Globe Skillz', url: GS_SITE + '/' },
-      areaServed: displayName
-    };
-    const faqLd = {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      mainEntity: (data.faqs || []).map(f => ({
-        '@type': 'Question',
-        name: f.q,
-        acceptedAnswer: { '@type': 'Answer', text: f.a }
-      }))
-    };
-    [serviceLd, faqLd].forEach(o => {
-      const el = document.createElement('script');
-      el.type = 'application/ld+json';
-      el.textContent = JSON.stringify(o);
-      document.head.appendChild(el);
-    });
-    const bc = {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: GS_SITE + '/' },
-        { '@type': 'ListItem', position: 2, name: isNiche ? 'Industries' : 'Locations', item: GS_SITE + '/#' + (isNiche ? 'niches' : 'coverage') },
-        { '@type': 'ListItem', position: 3, name: data.keyword, item: canonUrl }
-      ]
-    };
-    const bcEl = document.createElement('script');
-    bcEl.type = 'application/ld+json';
-    bcEl.textContent = JSON.stringify(bc);
-    document.head.appendChild(bcEl);
-  })();
-
-  setT('crumbType', typeLabel);
-  setT('crumbName', displayName);
-
-  // Split H1 into words for reveal (guarded: static HTML already carries the split)
-  const h1El = document.getElementById('locH1') && document.getElementById('locH1').querySelector('.split');
-  if (h1El && data.h1) {
-    h1El.innerHTML = '';
-    const words = data.h1.split(/\s+/);
-    const highlightIdx = new Set();
-    for (let k = Math.max(0, words.length - 3); k < words.length; k++) highlightIdx.add(k);
-    words.forEach((w, i) => {
-      const span = document.createElement('span');
-      span.className = 'word';
-      if (highlightIdx.has(i)) span.innerHTML = `<span class="text-grad"></span>`;
-      if (highlightIdx.has(i)) span.querySelector('.text-grad').textContent = w;
-      else span.textContent = w;
-      h1El.appendChild(span);
-    });
-  }
-
-  setT('locSub', data.subhead || data.intro);
-
-  const faqList = document.getElementById('faqList');
-  if (faqList && data.faqs) {
-    faqList.innerHTML = data.faqs.map((f, i) => `
-      <div class="faq-item reveal${i > 0 ? ' d' + Math.min(i,4) : ''}">
-        <button class="faq-item__q"></button>
-        <div class="faq-item__a"><div class="faq-item__a-inner"></div></div>
-      </div>
-    `).join('');
-    faqList.querySelectorAll('.faq-item').forEach((item, i) => {
-      item.querySelector('.faq-item__q').textContent = data.faqs[i].q;
-      const tg = document.createElement('span');
-      tg.className = 'faq-item__toggle';
-      tg.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>';
-      item.querySelector('.faq-item__q').appendChild(tg);
-      item.querySelector('.faq-item__a-inner').textContent = data.faqs[i].a;
-    });
-  }
-
-  setH('ctaH2', `Ready to dominate <span class="text-grad"></span>?`);
-  const ctaGrad = document.querySelector('#ctaH2 .text-grad'); if (ctaGrad) ctaGrad.textContent = displayName;
-
-  // Load index for related pages
-  try {
-    const idx = await (await fetch(RP + 'data/index.json')).json();
-    const pool = isNiche ? idx.niches : idx.locations;
-    const others = pool.filter(x => x.slug !== data.slug).sort(() => Math.random() - 0.5).slice(0, 12);
-    const relatedGrid = document.getElementById('relatedGrid');
-    if (relatedGrid) relatedGrid.innerHTML = others.map(o => {
-      const name = isNiche ? o.niche : o.place;
-      return `<a href="${RP}${isNiche ? 'industries' : 'locations'}/${o.slug}/">${o.keyword} \u00b7 ${name}</a>`;
-    }).join('');
-  } catch (e) {}
-
-  // Related reading: blog posts matched by keyword overlap (max 3)
-  try {
-    const posts = await (await fetch(RP + 'data/blog/index.json')).json();
-    const words = (data.keyword + ' ' + displayName).toLowerCase().split(/[^a-z]+/).filter(w => w.length > 3);
-    const scored = posts.map(bp => {
-      const hay = (bp.title + ' ' + (bp.keyword || '') + ' ' + bp.excerpt).toLowerCase();
-      let s = 0; words.forEach(w => { if (hay.includes(w)) s++; });
-      return { bp, s };
-    }).filter(x => x.s > 0).sort((a, b) => b.s - a.s).slice(0, 3);
-    if (scored.length) {
-      const rrN = document.getElementById('rrName'); if (rrN) rrN.textContent = displayName + '.';
-      const rrG = document.getElementById('rrGrid');
-      if (rrG) rrG.innerHTML = scored.map(({ bp }) => `
-        <a class="blog-card" href="${RP}blog/${bp.slug}/">
-          <div class="blog-card__img"><img src="${RP}${bp.image}" alt="${bp.title}" loading="lazy"></div>
-          <div class="blog-card__body">
-            <h3>${bp.title}</h3>
-            <p>${bp.excerpt}</p>
-            <span class="blog-card__link">Read article \u2192</span>
-          </div>
-        </a>`).join('');
-    } else {
-      const rr = document.getElementById('relatedReading'); if (rr) rr.style.display = 'none';
-    }
-  } catch (e) { const rr = document.getElementById('relatedReading'); if (rr) rr.style.display = 'none'; }
-
-  // Wire up FAQ toggle
-  document.querySelectorAll('.faq-item').forEach(item => {
-    const q = item.querySelector('.faq-item__q');
-    const a = item.querySelector('.faq-item__a');
-    q.addEventListener('click', () => {
-      const open = item.classList.toggle('open');
-      a.style.maxHeight = open ? a.scrollHeight + 'px' : '0px';
-    });
-  });
-
-  // Reveal
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('in');
-        io.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.1 });
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-  // Fallback: force-reveal above-fold elements after 1s
-  setTimeout(() => {
-    document.querySelectorAll('.reveal:not(.in)').forEach(el => {
-      const r = el.getBoundingClientRect();
-      if (r.top < window.innerHeight && r.bottom > 0) el.classList.add('in');
-    });
-  }, 1000);
-
-  // Kick hero words
-  requestAnimationFrame(() => {
-    document.querySelectorAll('.loc-hero .split').forEach(el => {
-      el.querySelectorAll('.word').forEach((c, j) => c.style.transitionDelay = (j * 0.06) + 's');
-      el.classList.add('in');
-    });
-  });
-})();
-</script>
-
-
-<!-- Contact form: deliver enquiries to Gmail via FormSubmit (same as index) -->
 <script>
 (function () {
   var form = document.getElementById('contactForm');
@@ -774,58 +494,31 @@
 })();
 </script>
 
-
-<!-- Cursor + magnetic + nav -->
 <script>
-(() => {
-  const $ = (s, r = document) => r.querySelector(s);
-  const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
-  const isTouch = matchMedia('(hover: none), (pointer: coarse)').matches;
-
-  const cDot = $('.cursor-dot'), cRing = $('.cursor-ring');
-  if (!isTouch && cDot && cRing) {
-    let mx = innerWidth/2, my = innerWidth/2, rx = mx, ry = my;
-    addEventListener('mousemove', e => {
-      mx = e.clientX; my = e.clientY;
-      cDot.style.transform = `translate(${mx}px, ${my}px) translate(-50%,-50%)`;
-    }, { passive: true });
-    (function tick() {
-      rx += (mx - rx) * 0.18; ry += (my - ry) * 0.18;
-      cRing.style.transform = `translate(${rx}px, ${ry}px) translate(-50%,-50%)`;
-      requestAnimationFrame(tick);
-    })();
-    const hoverSel = 'a, button, [data-magnetic], .faq-item__q, .loc-related a, .content-block';
-    document.addEventListener('mouseover', e => e.target.closest(hoverSel) && document.body.classList.add('cursor-hover'));
-    document.addEventListener('mouseout',  e => e.target.closest(hoverSel) && document.body.classList.remove('cursor-hover'));
-  } else {
-    document.body.classList.add('no-cursor');
-  }
-
-  if (!isTouch) {
-    setTimeout(() => {
-      $$('[data-magnetic]').forEach(el => {
-        let raf, tx = 0, ty = 0, targetX = 0, targetY = 0;
-        el.addEventListener('mousemove', e => {
-          const r = el.getBoundingClientRect();
-          targetX = (e.clientX - r.left - r.width/2) * 0.3;
-          targetY = (e.clientY - r.top - r.height/2) * 0.3;
-          if (!raf) raf = requestAnimationFrame(tick);
-        });
-        el.addEventListener('mouseleave', () => { targetX = targetY = 0; if (!raf) raf = requestAnimationFrame(tick); });
-        function tick() {
-          tx += (targetX - tx) * 0.2; ty += (targetY - ty) * 0.2;
-          el.style.transform = `translate(${tx}px,${ty}px)`;
-          if (Math.abs(tx-targetX) > 0.05 || Math.abs(ty-targetY) > 0.05) raf = requestAnimationFrame(tick);
-          else raf = null;
-        }
+(function(){
+  document.querySelectorAll('.faq-item__q').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.closest('.faq-item');
+      var ans = item.querySelector('.faq-item__a');
+      var open = item.classList.toggle('open');
+      ans.style.maxHeight = open ? ans.scrollHeight + 'px' : '0px';
+    });
+  });
+  var P = document.body.getAttribute('data-pagep');
+  if (P) {
+    document.querySelectorAll('.' + P + '-tcard').forEach(function(c){
+      c.addEventListener('click', function(){ c.classList.toggle(P + '-flipped'); });
+    });
+    document.querySelectorAll('.' + P + '-ahead').forEach(function(b){
+      b.addEventListener('click', function(){
+        var row = b.closest('.' + P + '-arow');
+        var body = row.querySelector('.' + P + '-abody');
+        var open = row.classList.toggle(P + '-open');
+        body.style.maxHeight = open ? body.scrollHeight + 'px' : '0px';
       });
-    }, 300);
+    });
   }
-
-  const nav = $('#nav');
-  addEventListener('scroll', () => nav?.classList.toggle('scrolled', scrollY > 40), { passive: true });
 })();
 </script>
 </body>
 </html>
-
