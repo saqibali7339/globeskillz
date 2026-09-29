@@ -1312,3 +1312,4 @@ section table:not([class]) tr:last-child td { border-bottom: none; }
 .whyme-card .anim-icon, .pain-card .anim-icon { width: 44px; height: 44px; min-width: 44px; min-height: 44px; }
 .whyme-card .anim-icon svg, .pain-card .anim-icon svg { width: 44px; height: 44px; }
 .conv-hero ~ section .prose { text-align: center; margin-left: auto; margin-right: auto; }
+main .conv-hero ~ section .prose, main .conv-hero ~ section .prose p { text-align: center !important; }
