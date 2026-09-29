@@ -104,7 +104,80 @@
 
 <section style="padding-top:0">
   <div class="container">
-    <div class="blog__grid" id="allGrid"></div>
+    <div class="blog__grid" id="allGrid">
+      <a class="blog-card" href="blog/how-many-keywords-use-in-seo/">
+        <div class="blog-card__img"><img src="assets/blog/how-many-keywords-use-in-seo.jpg" alt="How Many Keywords Should Your SEO Target?" loading="lazy"></div>
+        <div class="blog-card__body">
+          <div class="blog-card__date">Sep 29, 2026 &middot; 5 min read</div>
+          <h3>How Many Keywords Should Your SEO Target?</h3>
+          <p>You do not need dozens of keywords per page. Here is how many to target per page and across your whole site, and how to pick them.</p>
+          <span class="blog-card__link">Read article &rarr;</span>
+        </div>
+      </a>
+      <a class="blog-card" href="blog/wordpress-developer-near-me/">
+        <div class="blog-card__img"><img src="assets/blog/wordpress-developer-near-me.jpg" alt="How to Find a Good WordPress Developer Near You" loading="lazy"></div>
+        <div class="blog-card__body">
+          <div class="blog-card__date">Sep 28, 2026 &middot; 5 min read</div>
+          <h3>How to Find a Good WordPress Developer Near You</h3>
+          <p>Searching for a WordPress developer near you? Here is how to judge one properly, what to ask before you pay, and the red flags that mean walk away.</p>
+          <span class="blog-card__link">Read article &rarr;</span>
+        </div>
+      </a>
+      <a class="blog-card" href="blog/shopify-seo-expert/">
+        <div class="blog-card__img"><img src="assets/blog/shopify-seo-expert.jpg" alt="What a Shopify SEO Expert Actually Does for Your Store" loading="lazy"></div>
+        <div class="blog-card__body">
+          <div class="blog-card__date">Sep 27, 2026 &middot; 6 min read</div>
+          <h3>What a Shopify SEO Expert Actually Does for Your Store</h3>
+          <p>A Shopify SEO expert makes your store show up when buyers search for what you sell. Here is what the work really involves, what it should fix, and how to hire the right one.</p>
+          <span class="blog-card__link">Read article &rarr;</span>
+        </div>
+      </a>
+      <a class="blog-card" href="blog/seo-expert-for-small-business/">
+        <div class="blog-card__img"><img src="assets/blog/seo-expert-for-small-business.jpg" alt="What an SEO Expert for a Small Business Actually Does" loading="lazy"></div>
+        <div class="blog-card__body">
+          <div class="blog-card__date">Sep 26, 2026 &middot; 6 min read</div>
+          <h3>What an SEO Expert for a Small Business Actually Does</h3>
+          <p>An SEO expert for a small business is not a magician or a mystery. Here is what the job actually involves, what it should cost you in attention, and how to spot the good ones.</p>
+          <span class="blog-card__link">Read article &rarr;</span>
+        </div>
+      </a>
+      <a class="blog-card" href="blog/wordpress-website-cost/">
+        <div class="blog-card__img"><img src="assets/blog/wordpress-website-cost.jpg" alt="How Much Does a WordPress Website Cost? (Honest Breakdown)" loading="lazy"></div>
+        <div class="blog-card__body">
+          <div class="blog-card__date">Sep 25, 2026 &middot; 6 min read</div>
+          <h3>How Much Does a WordPress Website Cost? (Honest Breakdown)</h3>
+          <p>WordPress website prices range from a weekend DIY build to five-figure agency projects. Here is what you actually pay for at each level and how to avoid overpaying.</p>
+          <span class="blog-card__link">Read article &rarr;</span>
+        </div>
+      </a>
+      <a class="blog-card" href="blog/how-much-does-seo-cost-uk/">
+        <div class="blog-card__img"><img src="assets/blog/how-much-does-seo-cost-uk.jpg" alt="How Much Does SEO Cost in the UK? An Honest Breakdown" loading="lazy"></div>
+        <div class="blog-card__body">
+          <div class="blog-card__date">Sep 24, 2026 &middot; 4 min read</div>
+          <h3>How Much Does SEO Cost in the UK? An Honest Breakdown</h3>
+          <p>UK SEO prices range from £300 a month to £10,000+. Here is what you actually get at each price point, what drives the cost up, and how to avoid paying for nothing.</p>
+          <span class="blog-card__link">Read article &rarr;</span>
+        </div>
+      </a>
+      <a class="blog-card" href="blog/what-to-look-for-when-hiring-an-seo-company/">
+        <div class="blog-card__img"><img src="assets/blog/what-to-look-for-when-hiring-an-seo-company.jpg" alt="What to Look for When Hiring an SEO Company" loading="lazy"></div>
+        <div class="blog-card__body">
+          <div class="blog-card__date">Sep 24, 2026 &middot; 3 min read</div>
+          <h3>What to Look for When Hiring an SEO Company</h3>
+          <p>Choosing an SEO company feels like a gamble. Here are the seven things to check before you sign anything, from someone who does this work every day.</p>
+          <span class="blog-card__link">Read article &rarr;</span>
+        </div>
+      </a>
+      <a class="blog-card" href="blog/how-to-get-wordpress-website-on-google/">
+        <div class="blog-card__img"><img src="assets/blog/how-to-get-wordpress-website-on-google.jpg" alt="How to Get Your WordPress Website on Google (Step by Step)" loading="lazy"></div>
+        <div class="blog-card__body">
+          <div class="blog-card__date">Sep 24, 2026 &middot; 4 min read</div>
+          <h3>How to Get Your WordPress Website on Google (Step by Step)</h3>
+          <p>Launched a WordPress site but cannot find it on Google? Follow these seven steps to get indexed and start climbing the rankings.</p>
+          <span class="blog-card__link">Read article &rarr;</span>
+        </div>
+      </a>
+    </div>
   </div>
 </section>
 
@@ -175,7 +248,8 @@
   document.querySelectorAll('[data-contact-link]').forEach(a => { a.href = base + '/#contact'; });
   try {
     const idx = await (await fetch(RP + 'data/blog/index.json')).json();
-    document.getElementById('allGrid').innerHTML = idx.map(p => `
+    const __grid=document.getElementById('allGrid');
+    if(idx.length!==__grid.querySelectorAll('.blog-card').length){__grid.innerHTML = idx.map(p => `
       <a class="blog-card" href="${RP}blog/${p.slug}/">
         <div class="blog-card__img"><picture><source type="image/webp" srcset="${RP}${p.image.replace(/\.jpe?g$/, '')}-800.webp 800w, ${RP}${p.image.replace(/\.jpe?g$/, '')}-1200.webp 1200w" sizes="(max-width: 720px) 100vw, 400px"><img src="${RP}${p.image}" alt="${esc(p.title)}" loading="lazy" width="800" height="450"></picture></div>
         <div class="blog-card__body">
@@ -184,7 +258,7 @@
           <p>${esc(p.excerpt)}</p>
           <span class="blog-card__link">Read article →</span>
         </div>
-      </a>`).join('');
+      </a>`).join('');}
   } catch (e) {
     document.getElementById('allGrid').innerHTML = '<p style="color:var(--text-mute)">Articles are on the way. Check back soon.</p>';
   }
