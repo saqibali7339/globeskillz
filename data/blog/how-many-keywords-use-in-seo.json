@@ -1,0 +1,88 @@
+{
+ "slug": "how-many-keywords-use-in-seo",
+ "keyword": "how many keywords use in seo",
+ "title": "How Many Keywords Should Your SEO Target?",
+ "date": "2026-09-29",
+ "image": "assets/blog/how-many-keywords-use-in-seo.jpg",
+ "read_time": 5,
+ "excerpt": "You do not need dozens of keywords per page. Here is how many to target per page and across your whole site, and how to pick them.",
+ "meta": "How many keywords should your SEO target? One main keyword per page plus a few related terms works best. Here is a plain-English guide.",
+ "intro": "If you have ever stared at a keyword tool and wondered how many of those terms you are supposed to use, you are not alone. It is one of the most common questions business owners ask about SEO, and the answer is simpler than most tools make it look.\n\nThe short version: you do not target keywords across your whole site like a shopping list. You target one main keyword per page, support it with a few closely related terms, and build one good page for each topic you want to rank for.\n\nBelow is how to work out exactly how many keywords your site needs, without stuffing, guessing, or paying for tools you do not understand.",
+ "sections": [
+  {
+   "heading": "The Short Answer: One Main Keyword Per Page",
+   "body": [
+    "Forget the idea of a giant keyword list for your whole website. Google ranks pages, not websites. Each page on your site gets one main keyword, the single search phrase that page is built to answer.",
+    "That page can also naturally include a handful of related terms, the different ways people might phrase the same search. Three to five related terms per page is plenty. So a plumber's page about boiler repairs might also mention 'fix my boiler', 'boiler not working', and 'boiler repair cost', but the page is built around one main phrase.",
+    "This is the rule that everything else on this list hangs on. One page, one main keyword, a few close relatives."
+   ]
+  },
+  {
+   "heading": "Why Stuffing Keywords Stopped Working Years Ago",
+   "body": [
+    "In the early days of search, repeating your keyword dozens of times on a page actually helped. Some businesses still try it. It does not work anymore, and it makes your page read terribly.",
+    "Google now reads pages the way a person would. If your keyword appears in places that sound forced, that is a sign of a bad page, not a well optimized one. Worse, visitors who land on a page that reads like a robot wrote it will leave, and Google notices that too.",
+    "Use your keyword where it belongs: in the title, in a heading, in the opening paragraph, and wherever it fits naturally in the text. If you are counting how many times it appears, you are already thinking about it wrong."
+   ]
+  },
+  {
+   "heading": "How Many Keywords Per Page?",
+   "body": [
+    "Aim for one primary keyword and three to five related terms per page. That is it. The related terms are not extra keywords to squeeze in; they are phrases that would appear naturally if you wrote about the topic properly.",
+    "For example, a page targeting 'emergency dentist Manchester' will naturally mention 'dental emergency', 'tooth pain', and 'same day dentist'. You do not need to plan these. Write the page the way you would explain the service to a customer, and check afterwards whether your main keyword is in the title, the main heading, and the first paragraph.",
+    "If you find yourself forcing extra keywords in, step back. A readable page that covers the topic fully will beat a stuffed page every time."
+   ]
+  },
+  {
+   "heading": "How Many Keywords For Your Whole Site?",
+   "body": [
+    "Now scale the same rule up. Every topic you want to rank for gets its own page, and every page gets one main keyword. So the number of keywords your site targets equals the number of pages you have, roughly.",
+    "A small business site with 15 service and location pages targets around 15 main keywords. That is completely fine. You do not need hundreds of keywords to rank well; you need a good page for each service you sell and each area you serve.",
+    "If you sell five services in three towns, that is 15 topics and 15 main keywords, one per page. Keep that structure clean, and each page has its best chance of ranking for its phrase."
+   ]
+  },
+  {
+   "heading": "Picking the Right Keywords in the First Place",
+   "body": [
+    "The best keywords are the phrases your customers actually type when they need what you sell. Not industry jargon, not what you call the service in the office, but the words a normal person would say.",
+    "Start with the money keywords: phrases with clear buying intent like 'boiler replacement cost', 'book a haircut online', or '24 hour plumber near me'. These are the searches that turn into paying customers, so they come first.",
+    "Then add your location. 'Dentist' is a battle you will not win against national sites. 'Dentist in Leeds' is a battle a good local business can win. Every page for a local business should carry the town or area in its keyword.",
+    "Ignore the massive keyword lists that tools spit out. Pick the searches a customer would make on their phone at the moment they need you, and build pages around those."
+   ]
+  },
+  {
+   "heading": "Two Pages Should Never Fight Over One Keyword",
+   "body": [
+    "There is one mistake that quietly ruins more small business sites than keyword stuffing ever did: targeting the same keyword on two pages. Google then has to pick which one to rank, and it often picks wrong or ranks neither.",
+    "This is called keyword cannibalization, and the fix is simple. Each main keyword gets exactly one page. If you already have two pages about the same thing, merge them into one strong page and redirect the weaker one.",
+    "When you are planning keywords, write down each main keyword next to its page. If a keyword appears twice, something needs to change."
+   ]
+  },
+  {
+   "heading": "Signs You Are Doing It Right",
+   "body": [
+    "You will know your keyword targeting is working when pages start ranking for phrases you never directly optimized. A page built around 'boiler repair Leeds' will also pick up 'fix my boiler Leeds' and 'emergency boiler engineer'. That is Google understanding the topic, not you stuffing more keywords.",
+    "Another good sign: every page on your site reads naturally out loud. Read it. If it sounds like something you would say to a customer, your keyword count is fine.",
+    "And if a page is not ranking after a few months, the answer is rarely 'add more keywords'. It is usually a thin page, weak content, or too little authority. Fix the page, not the keyword count."
+   ]
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Is there a magic number of keywords per page?",
+   "a": "No, there is no official number. The rule of thumb that works for most businesses is one main keyword per page plus three to five closely related terms used naturally. What matters is that the page fully answers the search, not how many terms it contains."
+  },
+  {
+   "q": "Should I fill in the keyword meta tag on my site?",
+   "a": "No. Google stopped using the keyword meta tag years ago, and filling it in does nothing for your rankings. Spend that time on your page titles and content instead, where keywords actually count."
+  },
+  {
+   "q": "Can I target the same keyword on two different pages?",
+   "a": "You should not. Two pages fighting over one keyword splits your effort and confuses Google. Give each main keyword exactly one page. If you already have two, merge them into one stronger page."
+  },
+  {
+   "q": "How do I find the keywords my customers actually search?",
+   "a": "Start with the phrases customers say when they call or email you. Then check what Google suggests when you type those phrases into the search box, and look at the related searches at the bottom of the results page. Those are real searches from real people, and they are free to find."
+  }
+ ]
+}
