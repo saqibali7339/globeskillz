@@ -181,6 +181,32 @@
 
 <div class="cursor-ring" aria-hidden="true"></div>
 <div class="cursor-dot" aria-hidden="true"></div>
+<script>
+/* Custom cursor driver (matches site cursor divs) */
+(() => {
+  const $ = (s, r = document) => r.querySelector(s);
+  const isTouch = matchMedia('(hover: none), (pointer: coarse)').matches;
+  const cDot = $('.cursor-dot'), cRing = $('.cursor-ring');
+  if (!isTouch && cDot && cRing) {
+    let mx = innerWidth/2, my = innerHeight/2, rx = mx, ry = my;
+    addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      cDot.style.transform = 'translate(' + mx + 'px,' + my + 'px) translate(-50%,-50%)';
+    }, { passive: true });
+    (function tick() {
+      rx += (mx - rx) * 0.18; ry += (my - ry) * 0.18;
+      cRing.style.transform = 'translate(' + rx + 'px,' + ry + 'px) translate(-50%,-50%)';
+      requestAnimationFrame(tick);
+    })();
+    const hoverSel = 'a, button, .faq-item__q';
+    document.addEventListener('mouseover', e => { if (e.target.closest(hoverSel)) document.body.classList.add('cursor-hover'); });
+    document.addEventListener('mouseout',  e => { if (e.target.closest(hoverSel)) document.body.classList.remove('cursor-hover'); });
+  } else {
+    document.body.classList.add('no-cursor');
+  }
+})();
+</script>
+
 
 <!-- Nav -->
 <nav class="nav" id="nav">
