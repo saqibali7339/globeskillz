@@ -154,170 +154,115 @@
 <main>
 
 <!-- ================= LOC HERO ================= -->
-<style>
-/* Bolton: site-color palette (cyan #22d3ee, purple #7c5cff, green #a3ff5c) */
-.bol-hero { display:grid; grid-template-columns:1.1fr .9fr; gap:48px; align-items:center; padding:80px 0 60px; }
-.bol-hero h1 { font-size:clamp(36px,5vw,64px); line-height:1.1; margin:0 0 20px; font-family:var(--font-display); color:#fff; }
-.bol-hero h1 .grad { background:linear-gradient(90deg,#22d3ee,#a3ff5c); -webkit-background-clip:text; background-clip:text; color:transparent; }
-.bol-hero .sub { color:var(--text-dim); font-size:18px; line-height:1.7; margin-bottom:32px; }
-.bol-hero .ctas { display:flex; gap:16px; flex-wrap:wrap; }
-.bol-hero .visual { min-height:380px; border-radius:24px; background:rgba(34,211,238,.04); border:1px solid rgba(34,211,238,.15); display:flex; align-items:center; justify-content:center; }
-.bol-hero .visual .lottie-wrap { width:100%; max-width:440px; height:360px; }
-.bol-crumb { font-size:13px; letter-spacing:1px; color:var(--text-dim); margin-bottom:24px; text-transform:uppercase; }
-.bol-crumb a { color:#22d3ee; text-decoration:none; }
-.bol-pill { display:inline-block; padding:8px 20px; border:1px solid rgba(34,211,238,.35); border-radius:999px; font-size:12px; letter-spacing:2px; text-transform:uppercase; color:#22d3ee; margin-bottom:20px; }
-.bol-stats { display:grid; grid-template-columns:repeat(3,1fr); gap:32px; text-align:center; padding:40px 0; }
-.bol-stat__num { font-size:clamp(44px,5vw,68px); font-weight:800; color:#fff; font-family:var(--font-display); }
-.bol-stat__num .accent { color:#22d3ee; }
-.bol-stat__label { color:var(--text-dim); margin-top:10px; font-size:15px; line-height:1.6; }
-.bol-cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:24px; }
-.bol-card { background:linear-gradient(135deg,rgba(30,22,28,.72),rgba(18,16,24,.68)); border:1px solid rgba(255,255,255,.1); border-radius:20px; padding:36px 28px; transition:transform .3s,border-color .3s; backdrop-filter:blur(8px); }
-.bol-card:hover { transform:translateY(-4px); border-color:rgba(34,211,238,.35); }
-.bol-card h3 { color:#fff; font-size:20px; margin:18px 0 12px; }
-.bol-card p { color:rgba(255,255,255,.65); font-size:15px; line-height:1.7; margin:0; }
-.bol-card .bol-icon { width:52px; height:52px; border-radius:14px; background:linear-gradient(135deg,rgba(34,211,238,.15),rgba(124,92,255,.15)); display:flex; align-items:center; justify-content:center; font-size:26px; }
-.bol-split { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; }
-.bol-split h2 { color:#fff; font-size:clamp(28px,4vw,42px); margin:0 0 16px; font-family:var(--font-display); line-height:1.2; }
-.bol-split .lede { color:rgba(255,255,255,.65); font-size:16px; line-height:1.7; margin-bottom:28px; }
-.bol-check { display:flex; gap:14px; align-items:flex-start; margin-bottom:18px; color:#fff; font-size:15px; line-height:1.6; }
-.bol-check .tick { color:#a3ff5c; font-weight:700; flex-shrink:0; font-size:18px; }
-.bol-visual { border-radius:20px; overflow:hidden; background:linear-gradient(135deg,rgba(28,20,28,.6),rgba(16,14,22,.55)); border:1px solid rgba(255,255,255,.1); min-height:340px; display:flex; align-items:center; justify-content:center; backdrop-filter:blur(8px); }
-.bol-visual .lottie-wrap { width:100%; max-width:440px; height:340px; }
-.bol-audit { display:grid; grid-template-columns:1fr 1fr; gap:0; background:linear-gradient(135deg,rgba(30,22,28,.7),rgba(18,16,24,.65)); border-radius:24px; overflow:hidden; border:1px solid rgba(255,255,255,.1); backdrop-filter:blur(8px); }
-.bol-audit__text { padding:52px 44px; }
-.bol-audit__text .cyan-bar { width:72px; height:4px; background:linear-gradient(90deg,#22d3ee,#7c5cff); margin-bottom:26px; border-radius:2px; }
-.bol-audit__text p { color:rgba(255,255,255,.72); font-size:16px; line-height:1.8; margin-bottom:18px; }
-.bol-audit__form { background:#08080c; padding:52px 44px; border-left:1px solid rgba(255,255,255,.06); }
-.bol-audit__form h3 { color:#fff; font-size:28px; margin:0 0 6px; font-family:var(--font-display); }
-.bol-audit__form .cyan-bar { width:72px; height:4px; background:linear-gradient(90deg,#22d3ee,#7c5cff); margin-bottom:18px; border-radius:2px; }
-.bol-audit__form p.sub { color:rgba(255,255,255,.6); font-size:15px; margin-bottom:26px; line-height:1.6; }
-.faq__item { border:1px solid rgba(255,255,255,.1); border-radius:16px; margin-bottom:12px; overflow:hidden; background:linear-gradient(135deg,rgba(28,20,28,.6),rgba(16,14,22,.55)); backdrop-filter:blur(8px); }
-.faq__q { width:100%; background:none; border:none; color:#fff; font-size:16px; font-weight:600; padding:20px 24px; text-align:left; cursor:pointer; display:flex; justify-content:space-between; align-items:center; gap:16px; }
-.faq__icon { color:#22d3ee; font-size:22px; flex-shrink:0; transition:transform .3s; }
-.faq__item.open .faq__icon { transform:rotate(45deg); }
-.faq__a { max-height:0; overflow:hidden; transition:max-height .4s ease; }
-.faq__a p { color:rgba(255,255,255,.7); font-size:15px; line-height:1.7; padding:0 24px 20px; margin:0; }
-.faq__item.open .faq__a { max-height:500px; }
-@media (max-width:860px){ .bol-hero,.bol-split,.bol-audit{grid-template-columns:1fr} .bol-stats{grid-template-columns:1fr;gap:28px} }
-</style>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
 
 <main>
 <!-- ============ UNIQUE HERO ============ -->
-<section><div class="container">
-<div class="bol-hero">
-<div class="reveal">
-<div class="bol-crumb"><a href="/">Home</a> / <a href="/locations/">Locations</a> / Bolton</div>
-<h1>SEO for Bolton Businesses <span class="grad">Ready to Outrank Manchester</span></h1>
-<p class="sub">I'm a solo SEO specialist helping Bolton businesses get more calls, bookings, and customers from Google. No agencies, no account managers — just direct, honest SEO that works.</p>
-<div class="ctas">
+<main>
+<!-- ============ HERO (pain variant, Bolton content) ============ -->
+<section class="conv-hero conv-hero--pain">
+<div class="hero__bg"><div class="hero__grid"></div><div class="hero__glow"></div></div>
+<div class="container">
+<div class="hero__inner">
+<div class="crumb reveal"><a href="/">Home</a> <span>/</span> <a href="/locations/">Locations</a> <span>/</span> <span>Bolton</span></div>
+<h1 class="hero__title reveal d1">SEO for Bolton Businesses <span class="text-grad">Ready to Outrank Manchester</span></h1>
+<p class="hero__sub reveal d2">I'm a solo SEO specialist helping Bolton businesses get more calls, bookings, and customers from Google. No agencies, no account managers.</p>
+<div class="hero__ctas reveal d3">
 <a class="btn btn--primary btn--lg" href="#contact">Get a free audit</a>
-<a class="btn btn--ghost btn--lg" href="#results">See how I work</a>
+<a class="btn btn--ghost btn--lg" href="#how">See how I work</a>
+</div>
+<div class="trust-bar reveal d4">
+<span><strong>100%</strong> direct attention</span>
+<span><strong>24h</strong> response time</span>
+<span><strong>0</strong> long contracts</span>
 </div>
 </div>
-<div class="bol-hero__visual visual reveal d1"><div class="lottie-wrap" id="lottie-hero"></div></div>
+</div>
+</section>
+
+<!-- ============ HOW I GET RESULTS (whyme-grid, standard) ============ -->
+<section id="how"><div class="container">
+<div class="section-head">
+<span class="eyebrow reveal">How I work</span>
+<h2 class="h-section reveal d1">How I Get Results <span class="text-grad">for Bolton</span></h2>
+<p class="section-head__sub reveal d2">Tired of SEO agencies that disappear after the contract is signed? Here's what working with me actually looks like.</p>
+</div>
+<div class="whyme-grid">
+<div class="whyme-card reveal"><div class="anim-icon"><svg width="44" height="44" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="16" r="8" stroke="#7c5cff" stroke-width="2.5"/><path d="M8 42c0-9 7-16 16-16s16 7 16 16" stroke="#7c5cff" stroke-width="2.5"/></svg></div><h3>You Work With Me</h3><p>No juniors learning on your account. You'll work directly with me — an experienced SEO specialist who knows the Bolton market.</p></div>
+<div class="whyme-card reveal d1"><div class="anim-icon"><svg width="44" height="44" viewBox="0 0 48 48" fill="none"><path d="M8 12h32v20H28l-8 8v-8H8z" stroke="#22d3ee" stroke-width="2.5" stroke-linejoin="round"/></svg></div><h3>Clear Communication</h3><p>Straight talk, no jargon. You'll always know what I'm doing, why I'm doing it, and what it means for your business.</p></div>
+<div class="whyme-card reveal d2"><div class="anim-icon"><svg width="44" height="44" viewBox="0 0 48 48" fill="none"><rect x="8" y="26" width="8" height="14" rx="2" fill="#7c5cff"/><rect x="20" y="18" width="8" height="22" rx="2" fill="#22d3ee"/><rect x="32" y="8" width="8" height="32" rx="2" fill="#a3ff5c"/></svg></div><h3>Honest Reporting</h3><p>Real numbers, plain English. Monthly updates on rankings, traffic, and calls — no vanity metrics, no fluff.</p></div>
+<div class="whyme-card reveal d3"><div class="anim-icon"><svg width="44" height="44" viewBox="0 0 48 48" fill="none"><path d="M24 4c9 0 16 7 16 16 0 11-16 24-16 24S8 31 8 20C8 11 15 4 24 4z" stroke="#ff7a7a" stroke-width="2.5"/><circle cx="24" cy="20" r="6" stroke="#ff7a7a" stroke-width="2.5"/></svg></div><h3>Bolton-First Strategy</h3><p>Not generic templates. I target the specific searches your Bolton customers use — from Middlebrook to the town centre.</p></div>
 </div>
 </div></section>
 
-<!-- ============ STATS ============ -->
-<section><div class="container">
-<div class="bol-stats">
-<div class="reveal"><div class="bol-stat__num"><span class="accent">100</span>%</div><div class="bol-stat__label"><strong style="color:#fff">Dedicated attention</strong><br>You work with me directly.<br>No account managers.</div></div>
-<div class="reveal d1"><div class="bol-stat__num"><span class="accent">24</span>h</div><div class="bol-stat__label"><strong style="color:#fff">Response time</strong><br>I reply to every message<br>within 24 hours.</div></div>
-<div class="reveal d2"><div class="bol-stat__num"><span class="accent">0</span></div><div class="bol-stat__label"><strong style="color:#fff">Long contracts</strong><br>Month-to-month.<br>Cancel anytime.</div></div>
-</div>
-</div></section>
-
-<!-- ============ HOW I GET RESULTS ============ -->
-<section id="results"><div class="container">
-<div class="section-head reveal"><span class="bol-pill">How I work</span><h2 style="color:#fff">How I Get Results for Bolton</h2></div>
-<div class="bol-cards">
-<div class="bol-card reveal"><div class="bol-icon">👤</div><h3>You Work With Me</h3><p>No juniors learning on your account. You'll work directly with me — an experienced SEO specialist who knows the Bolton market, not an account manager relaying messages.</p></div>
-<div class="bol-card reveal d1"><div class="bol-icon">💬</div><h3>Clear Communication</h3><p>Straight talk, no jargon. You'll always know what I'm doing, why I'm doing it, and what it means for your business. Ask me anything, anytime.</p></div>
-<div class="bol-card reveal d2"><div class="bol-icon">📊</div><h3>Honest Reporting</h3><p>Real numbers, plain English. Monthly updates on rankings, traffic, and calls — no vanity metrics, no 40-page PDFs full of fluff.</p></div>
-<div class="bol-card reveal d3"><div class="bol-icon">🎯</div><h3>Bolton-First Strategy</h3><p>Not generic templates. I target the specific searches your Bolton customers use — from Middlebrook to the town centre, from trade to retail.</p></div>
-</div>
-</div></section>
-
-<!-- ============ PATH TO RANKINGS ============ -->
+<!-- ============ PATH TO RANKINGS (prose, standard) ============ -->
 <section class="sec--tint"><div class="container">
-<div class="bol-split">
-<div class="reveal">
-<span class="bol-pill">What you get</span>
-<h2>Your Path to Top Rankings in Bolton</h2>
-<p class="lede">My SEO process blends strategic insight with technical precision. Every action is designed to get your Bolton business more visible, more calls, and more customers.</p>
-<div class="bol-check"><span class="tick">✓</span><span><strong>Local SEO for the Bolton market</strong> — Google Business Profile, citations, and location pages that win the map pack.</span></div>
-<div class="bol-check"><span class="tick">✓</span><span><strong>Keyword research backed by data</strong> — targeting the exact terms your customers search, not vanity keywords.</span></div>
-<div class="bol-check"><span class="tick">✓</span><span><strong>Technical fixes that matter</strong> — speed, mobile, and structure issues that silently kill rankings.</span></div>
-<div class="bol-check"><span class="tick">✓</span><span><strong>Content that converts</strong> — pages written for Bolton customers, optimised for Google.</span></div>
-<div style="margin-top:32px"><a class="btn btn--primary btn--lg" href="#contact">Start with a free audit</a></div>
+<div class="section-head">
+<span class="eyebrow reveal">What you get</span>
+<h2 class="h-section reveal d1">Your Path to <span class="text-grad">Top Rankings</span></h2>
 </div>
-<div class="bol-visual reveal d1"><div class="lottie-wrap" id="lottie-growth"></div></div>
+<div class="prose reveal d2">
+<p><strong>Local SEO for the Bolton market.</strong> Google Business Profile optimisation, local citations, and location targeting that wins the map pack.</p>
+<p><strong>Keyword research backed by data.</strong> I target the exact terms your Bolton customers search — not vanity keywords that don't convert.</p>
+<p><strong>Technical fixes that matter.</strong> Site speed, mobile usability, and crawl issues that silently kill your rankings.</p>
+<p><strong>Content that converts.</strong> Pages written for Bolton customers first, optimised for Google second.</p>
+</div>
+<div class="center reveal d3" style="margin-top:36px"><a class="btn btn--primary btn--lg" href="#contact">Start with a free audit</a></div>
+</div></section>
+
+<!-- ============ TAILORED SOLUTIONS (pain-grid, standard) ============ -->
+<section><div class="container">
+<div class="section-head">
+<span class="eyebrow reveal">Solutions</span>
+<h2 class="h-section reveal d1">SEO Built for <span class="text-grad">How Bolton Buys</span></h2>
+<p class="section-head__sub reveal d2">Whether your customers are in Middlebrook, the town centre, or Logistics North — I build around how they search.</p>
+</div>
+<div class="pain-grid">
+<div class="pain-card reveal"><div class="anim-icon"><svg width="44" height="44" viewBox="0 0 48 48" fill="none"><circle cx="21" cy="21" r="13" stroke="#8fd8ff" stroke-width="2.5"/><path d="M31 31l11 11" stroke="#8fd8ff" stroke-width="3" stroke-linecap="round"/></svg></div><h3>Strategic Planning</h3><p>Custom SEO strategies based on your industry, Bolton competitors, and the customers you want.</p></div>
+<div class="pain-card reveal d1"><div class="anim-icon"><svg width="44" height="44" viewBox="0 0 48 48" fill="none"><path d="M24 4l16 6v12c0 10-7 18-16 22C15 40 8 32 8 22V10l16-6z" stroke="#a3ff5c" stroke-width="2.5" stroke-linejoin="round"/></svg></div><h3>Technical & On-Page</h3><p>From site speed to content optimisation — everything Google needs to rank you higher.</p></div>
+<div class="pain-card reveal d2"><div class="anim-icon"><svg width="44" height="44" viewBox="0 0 48 48" fill="none"><path d="M14 6h8l4 12-5 4c3 6 8 10 14 12l4-5 11 4v9c0 2-2 4-4 4C26 46 4 24 4 10c0-2 2-4 4-4h6z" stroke="#22d3ee" stroke-width="2.5"/></svg></div><h3>Local Domination</h3><p>Map pack rankings, review strategy, and citations that put you ahead of Bolton competitors.</p></div>
 </div>
 </div></section>
 
-<!-- ============ TAILORED SOLUTIONS ============ -->
+<!-- ============ FREE AUDIT (cta-band, standard) ============ -->
 <section><div class="container">
-<div class="bol-split">
-<div class="bol-visual reveal"><div class="lottie-wrap" id="lottie-strategy"></div></div>
-<div class="reveal d1">
-<span class="bol-pill">Solutions</span>
-<h2>SEO Built for How Bolton Buys</h2>
-<p class="lede">Whether your customers are in Middlebrook, the town centre, or trade parks at Logistics North — I build strategies around how they actually search and buy.</p>
-<div class="bol-check"><span class="tick">🔍</span><span><strong>Strategic planning</strong><br><span style="color:rgba(255,255,255,.6)">Custom SEO strategies based on your industry, Bolton competitors, and target customers.</span></span></div>
-<div class="bol-check"><span class="tick">⚙️</span><span><strong>Technical & on-page SEO</strong><br><span style="color:rgba(255,255,255,.6)">From site speed to content optimisation — everything Google needs to rank you higher.</span></span></div>
-<div class="bol-check"><span class="tick">📍</span><span><strong>Local domination</strong><br><span style="color:rgba(255,255,255,.6)">Map pack rankings, reviews strategy, and local citations that put you ahead.</span></span></div>
-</div>
+<div class="cta-band reveal">
+<h2>Free SEO Audit for Your Bolton Business</h2>
+<p>I'll show you exactly what's holding you back on Google — and what I'd fix first. No call required, no obligation.</p>
+<a class="btn btn--primary btn--lg" href="#contact">Get My Free Audit</a>
 </div>
 </div></section>
 
-<!-- ============ FREE AUDIT ============ -->
+<!-- ============ FAQ (standard) ============ -->
 <section><div class="container">
-<div class="bol-audit reveal">
-<div class="bol-audit__text">
-<div class="cyan-bar"></div>
-<p><strong style="color:#fff">Direct access, not account managers. Real work, not vanity metrics. Straight talk, not jargon.</strong></p>
-<p>I've spent years building SEO campaigns that actually move the needle — and I'm confident enough to prove it upfront. No long contracts, no run-around.</p>
-<p>Your free audit shows exactly what's holding your Bolton business back on Google — and what I'd fix first.</p>
+<div class="section-head">
+<span class="eyebrow reveal">FAQs</span>
+<h2 class="h-section reveal d1">Bolton <span class="text-grad">questions, answered.</span></h2>
 </div>
-<div class="bol-audit__form">
-<h3>Free SEO Audit</h3>
-<div class="cyan-bar"></div>
-<p class="sub">Get a free, no-obligation audit of your website and Google presence.</p>
-<a class="btn btn--primary btn--lg" href="#contact" style="width:100%;text-align:center;display:block">Get My Free Audit</a>
-<p class="sub" style="margin-top:18px;font-size:13px;margin-bottom:0">No call required — I can send it by email within 24 hours.</p>
-</div>
-</div>
-</div></section>
-
-<!-- ============ FAQ (STATIC) ============ -->
-<section><div class="container">
-<div class="section-head reveal"><span class="bol-pill">FAQs</span><h2 style="color:#fff">Bolton <span style="background:linear-gradient(90deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent">questions, answered.</span></h2></div>
-<div class="faq__list">
+<div class="faq__list" id="faqList">
 <div class="faq__item reveal">
-<button class="faq__q">My customers are split between Middlebrook and the town centre — where do I focus?<span class="faq__icon">+</span></button>
+<button class="faq__q" aria-expanded="false">My customers are split between Middlebrook and the town centre — where do I focus?<span class="faq__icon">+</span></button>
 <div class="faq__a"><p>Both, but with different content. Middlebrook traffic is shopper and office-worker intent — 'lunch near Middlebrook', 'parking at Middlebrook' — while town-centre traffic leans toward events, evenings and the Food & Drink Festival. Build separate location-aware pages or profile posts for each rather than one generic Bolton page. Google rewards the specificity, and you'll find the two audiences barely overlap in what they search.</p></div>
 </div>
 <div class="faq__item reveal">
-<button class="faq__q">How do I rank in Bolton when Manchester agencies dominate the results?<span class="faq__icon">+</span></button>
+<button class="faq__q" aria-expanded="false">How do I rank in Bolton when Manchester agencies dominate the results?<span class="faq__icon">+</span></button>
 <div class="faq__a"><p>You out-local them. Manchester firms rank on domain authority but usually have thin Bolton relevance — no Bolton reviews, no local photos, no suburb-specific content. A Bolton business with a fully optimised profile, 100+ local reviews, pages for Horwich, Farnworth and Westhoughton, and links from Bolton organisations beats a Manchester landing page in the map pack consistently. Local relevance is the ranking factor money can't shortcut.</p></div>
 </div>
 <div class="faq__item reveal">
-<button class="faq__q">We supply trade customers from Logistics North — is Google worth it for B2B?<span class="faq__icon">+</span></button>
+<button class="faq__q" aria-expanded="false">We supply trade customers from Logistics North — is Google worth it for B2B?<span class="faq__icon">+</span></button>
 <div class="faq__a"><p>Yes — B2B buyers start on Google exactly like consumers do. 'Warehouse space Bolton', 'palletised distribution Greater Manchester', 'industrial electrician North West' are all real, high-value searches. What closes B2B buyers is capability proof: real numbers, case studies, accreditations up front. Combine Google with trade-directory citations and LinkedIn telling the same story, and even a dozen detailed Google reviews from trade clients will separate you from competitors with empty profiles.</p></div>
 </div>
 <div class="faq__item reveal">
-<button class="faq__q">Do match days at the stadium actually change search demand?<span class="faq__icon">+</span></button>
+<button class="faq__q" aria-expanded="false">Do match days at the stadium actually change search demand?<span class="faq__icon">+</span></button>
 <div class="faq__a"><p>For businesses near the stadium and Middlebrook, yes — noticeably. Every home fixture creates a surge in 'near Bolton Wanderers' searches for food, drink, parking and hotels from visitors who don't know the area. Keep your profile hours accurate for fixtures, post match-day offers, and mention the stadium corridor naturally in your content. Almost nobody optimises for this, which is exactly why it works.</p></div>
 </div>
 <div class="faq__item reveal">
-<button class="faq__q">What's the fastest win for a Bolton business starting SEO from zero?<span class="faq__icon">+</span></button>
+<button class="faq__q" aria-expanded="false">What's the fastest win for a Bolton business starting SEO from zero?<span class="faq__icon">+</span></button>
 <div class="faq__a"><p>The Google Business Profile rebuild plus a review engine — typically a £350 one-off. Most Bolton businesses I audit have the wrong primary category, half their services unlisted, three photos from 2021 and a dozen stale reviews. Fixing that alone often moves the needle on 'near me' calls within weeks, before a single blog post is written. It's the highest-ROI first step in local SEO, and it's where every engagement I run starts.</p></div>
 </div></div>
 </div></section>
 
 <script>
-// FAQ accordion
+// FAQ accordion (standard)
 document.querySelectorAll('.faq__q').forEach(function(btn){
   btn.addEventListener('click', function(){
     var item = btn.closest('.faq__item');
@@ -326,19 +271,6 @@ document.querySelectorAll('.faq__q').forEach(function(btn){
     if (!wasOpen) item.classList.add('open');
   });
 });
-// Lottie animations
-(function(){
-  if (typeof lottie === 'undefined') return;
-  var anims = [
-    {id:'lottie-hero', path:'https://assets2.lottiefiles.com/packages/lf20_qp1q7mct.json'},
-    {id:'lottie-growth', path:'https://assets2.lottiefiles.com/packages/lf20_ikvz7qhc.json'},
-    {id:'lottie-strategy', path:'https://assets9.lottiefiles.com/packages/lf20_wd1vssir.json'}
-  ];
-  anims.forEach(function(a){
-    var el = document.getElementById(a.id);
-    if (el) { try { lottie.loadAnimation({container:el, renderer:'svg', loop:true, autoplay:true, path:a.path}); } catch(e){} }
-  });
-})();
 </script>
 </main>
 <section class="sec--tint"><div class="container"><div class="section-head"><p class="eyebrow reveal">Proof</p><h2 class="h-section reveal">Real reviews, <span class="text-grad">real clients.</span></h2><p class="section-head__sub reveal" style="color:var(--text-dim);max-width:62ch">I don't have case studies with made-up numbers. What I have is a public track record — here's what buyers said on Fiverr, verbatim.</p></div><div class="proof-cards"><div class="proof-card reveal"><div class="proof-card__stars">★★★★★</div><p>&ldquo;Quick filled order. Another great gig with Saqib. A+&rdquo;</p><div class="proof-card__who">ricksanchezc132 · Fiverr buyer · Spain</div></div><div class="proof-card reveal"><div class="proof-card__stars">★★★★★</div><p>&ldquo;very helpfull, thanks for the support&rdquo;</p><div class="proof-card__who">esek_rc · Fiverr buyer · Italy</div></div><div class="proof-card reveal"><div class="proof-card__stars">★★★★★</div><p>&ldquo;He did a great job and fast!&rdquo;</p><div class="proof-card__who">lariiscool · Fiverr buyer · United States</div></div></div><p class="reveal" style="margin-top:26px;color:var(--text-mute);font-size:13.5px">Full reviews with typos intact live on the <a href="../../#testimonials" style="color:#8fd8ff">homepage</a> — I show them verbatim, good and bad.</p></div></section>
