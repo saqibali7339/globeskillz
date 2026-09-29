@@ -264,12 +264,99 @@
 .ft2-ccard span{color:#a2a9bb;font-size:15px;line-height:1.6;}
 @media(max-width:860px){.ft2-coach__grid{grid-template-columns:1fr !important;}}
 
+
+.ft2-fix{width:100%;padding:90px 24px;background:#06070d;}
+.ft2-fix__in{max-width:1120px;margin:0 auto;}
+.ft2-fix h2,.ft2-why h2,.ft2-price h2,.ft2-ctaband h2{color:#eef1f7;font-size:clamp(30px,4vw,48px);margin:18px 0 40px;font-family:Georgia,serif;font-weight:700;line-height:1.15;}
+.ft2-grad{background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.ft2-fix__grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.ft2-fstep{display:flex;gap:20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:30px;}
+.ft2-fstep>span{flex-shrink:0;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);color:#06070d;font-weight:900;font-size:20px;display:flex;align-items:center;justify-content:center;}
+.ft2-fstep strong{display:block;color:#eef1f7;font-size:18px;margin-bottom:8px;}
+.ft2-fstep em{color:#a2a9bb;font-size:14.5px;font-style:normal;line-height:1.6;}
+.ft2-why{width:100%;padding:90px 24px;background:#0a0e1a;}
+.ft2-why__in{max-width:1120px;margin:0 auto;}
+.ft2-why__grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.ft2-wcard{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:32px;}
+.ft2-wcard strong{display:block;color:#eef1f7;font-size:19px;margin-bottom:10px;}
+.ft2-wcard span{color:#a2a9bb;font-size:15px;line-height:1.6;}
+.ft2-price{width:100%;padding:90px 24px;background:#06070d;}
+.ft2-price__in{max-width:720px;margin:0 auto;text-align:center;}
+.ft2-price__in h2{margin-bottom:36px;}
+.ft2-price__card{background:rgba(255,255,255,.03);border:1px solid rgba(163,255,92,.35);border-radius:24px;padding:44px 40px;text-align:left;}
+.ft2-price__top{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px;flex-wrap:wrap;gap:12px;}
+.ft2-price__top strong{color:#eef1f7;font-size:22px;}
+.ft2-price__amt{font-size:44px;font-weight:900;background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.ft2-price__amt span{font-size:16px;font-weight:400;color:#a2a9bb;-webkit-text-fill-color:#a2a9bb;}
+.ft2-price__card ul{margin:0 0 32px;padding:0;list-style:none;}
+.ft2-price__card li{display:flex;gap:14px;align-items:flex-start;color:#a2a9bb;font-size:15.5px;padding:9px 0;border-top:1px solid rgba(255,255,255,.07);}
+.ft2-price__card li span{color:#a3ff5c;font-weight:900;}
+.ft2-price__note{color:#a2a9bb;font-size:14px;margin:20px 0 0;text-align:center;}
+.ft2-price__note a{color:#a3ff5c;}
+.ft2-ctaband{width:100%;padding:100px 24px;background:radial-gradient(ellipse at 50% 0%,#0a0e1a 0%,#06070d 65%);text-align:center;}
+.ft2-ctaband__in{max-width:760px;margin:0 auto;}
+.ft2-ctaband p{color:#a2a9bb;font-size:18px;line-height:1.7;margin:0 0 36px;}
+@media(max-width:860px){.ft2-fix__grid,.ft2-why__grid{grid-template-columns:1fr !important;}}
+
 </style>
 <script src="../../assets/js/lottie.min.js"></script>
 <script>
 (function(){document.querySelectorAll('[data-lot]').forEach(function(el){if(typeof lottie==='undefined')return;try{lottie.loadAnimation({container:el,renderer:'svg',loop:true,autoplay:true,path:'../../assets/lottie/'+el.getAttribute('data-lot')});}catch(e){}});})();
 </script>
 <!-- ============ /FITNESS v3 ============ -->
+<section class="ft2-fix">
+<div class="ft2-fix__in">
+<span class="ft2-label">THE FIX</span>
+<h2>Here&rsquo;s exactly <span class="ft2-grad">what I do.</span></h2>
+<div class="ft2-fix__grid ft2-newgrid">
+<div class="ft2-fstep"><span>1</span><div><strong>Own the local fitness searches</strong><em>&ldquo;gym near me&rdquo;, &ldquo;personal trainer [area]&rdquo;, &ldquo;yoga classes&rdquo; &mdash; pages that rank where members search.</em></div></div>
+<div class="ft2-fstep"><span>2</span><div><strong>Turn searches into trial bookings</strong><em>Class schedules, trainer profiles, one-tap trial signup on every page.</em></div></div>
+<div class="ft2-fstep"><span>3</span><div><strong>Proof that fills classes</strong><em>Member results, reviews, real coach content &mdash; not stock abs.</em></div></div>
+<div class="ft2-fstep"><span>4</span><div><strong>Stay full</strong><em>Fresh class content, new reviews, tracked trial bookings every month.</em></div></div>
+</div>
+</div>
+</section>
+
+<section class="ft2-why">
+<div class="ft2-why__in">
+<span class="ft2-label">WHY ME</span>
+<h2>Why gym owners <span class="ft2-grad">pick me.</span></h2>
+<div class="ft2-why__grid ft2-newgrid">
+<div class="ft2-wcard"><strong>You talk to me</strong><span>No account managers, no handoffs. The person who audits your presence is the person who fixes it.</span></div>
+<div class="ft2-wcard"><strong>Fitness isn&rsquo;t a sideline</strong><span>I do SEO for gyms and trainers specifically &mdash; not &ldquo;we do everything for everyone.&rdquo;</span></div>
+<div class="ft2-wcard"><strong>Plain numbers, no jargon</strong><span>You&rsquo;ll see rankings, reviews, and trial bookings. If a report needs a dictionary, it&rsquo;s hiding something.</span></div>
+<div class="ft2-wcard"><strong>One clear plan</strong><span>A single monthly price with visible work every month. No bloated agency layers eating your budget.</span></div>
+</div>
+</div>
+</section>
+
+<section class="ft2-price">
+<div class="ft2-price__in">
+<span class="ft2-label">PRICING</span>
+<h2>One plan. <span class="ft2-grad">Everything included.</span></h2>
+<div class="ft2-price__card">
+<div class="ft2-price__top"><strong>Gym &amp; Fitness SEO</strong><span class="ft2-price__amt">$700<span>/month</span></span></div>
+<ul>
+<li><span>&check;</span> Google Business Profile fully managed &mdash; classes, trainers, posts</li>
+<li><span>&check;</span> Class &amp; trainer ranking pages &mdash; built for trial bookings</li>
+<li><span>&check;</span> Review engine &mdash; requests, responses, damage control</li>
+<li><span>&check;</span> Monthly report &mdash; rankings, reviews, trials in plain English</li>
+<li><span>&check;</span> Direct line to me &mdash; no ticket queues</li>
+</ul>
+<a href="#contact" class="ft2-cta cta-final">Start With a Free Audit &rarr;</a>
+<p class="ft2-price__note">Same SEO plan as on the homepage &mdash; no industry markup. Multiple locations or franchises? <a href="#contact">Ask for a custom quote.</a></p>
+</div>
+</div>
+</section>
+
+<section class="ft2-ctaband">
+<div class="ft2-ctaband__in">
+<span class="ft2-label">FREE AUDIT</span>
+<h2>Someone near your gym is searching <span class="ft2-grad">for a trainer right now.</span></h2>
+<p>Tell me about your gym &mdash; I&rsquo;ll send back a free audit of your Google presence: what shows up, what&rsquo;s missing, and which members you&rsquo;re losing to the gym down the road.</p>
+<a href="#contact" class="ft2-cta cta-final">Get My Free Audit &rarr;</a>
+</div>
+</section>
 <section id="faq">
   <div class="container">
     <div class="section-head center">
