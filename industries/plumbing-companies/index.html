@@ -200,10 +200,10 @@
 .pe2-title{font-size:clamp(46px,7.5vw,92px);line-height:1.02;color:#fff;margin:0 0 22px;font-family:var(--font-display);font-weight:900;letter-spacing:-1px;}
 .pe2-red{background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;}
 .pe2-sub{color:#c9a9a9;font-size:21px;margin:0 0 38px;}
-.pe2-ctas{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:52px;}
+.pe2-ctas{display:flex;gap:16px;justify-content:center;align-items:center;flex-wrap:wrap;margin-bottom:52px;}
 .pe2-cta{display:inline-block;background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);color:#06070d;font-weight:800;font-size:19px;padding:19px 52px;border-radius:100px;text-decoration:none;box-shadow:0 12px 44px rgba(163,255,92,.45);transition:transform .25s;}
 .pe2-cta:hover{transform:scale(1.05);}
-.pe2-ghost{display:inline-block;color:#d9f7b8;font-weight:700;font-size:17px;padding:19px 30px;text-decoration:none;border:1px solid rgba(255,255,255,.18);border-radius:100px;}
+.pe2-ghost{display:inline-block;color:#eef1f7;font-weight:700;font-size:17px;padding:19px 44px;text-decoration:none;border:1px solid rgba(255,255,255,.28);border-radius:100px;background:rgba(255,255,255,.05);}
 .pe2-chips{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
 .pe2-chip{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:18px 28px;backdrop-filter:blur(8px);}
 .pe2-chip strong{display:block;color:#fff;font-size:30px;font-family:var(--font-display);}
@@ -277,12 +277,99 @@
 .pe2-pcard strong{display:block;color:#eef1f7;font-size:18px;margin-bottom:10px;}
 .pe2-pcard span{color:#a2a9bb;font-size:15px;line-height:1.6;}
 
+
+.pe2-fix{width:100%;padding:90px 24px;background:#06070d;}
+.pe2-fix__in{max-width:1120px;margin:0 auto;}
+.pe2-fix h2,.pe2-why h2,.pe2-price h2,.pe2-ctaband h2{color:#eef1f7;font-size:clamp(30px,4vw,48px);margin:18px 0 40px;font-family:Georgia,serif;font-weight:700;line-height:1.15;}
+.pe2-grad{background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.pe2-fix__grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.pe2-fstep{display:flex;gap:20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:30px;}
+.pe2-fstep>span{flex-shrink:0;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);color:#06070d;font-weight:900;font-size:20px;display:flex;align-items:center;justify-content:center;}
+.pe2-fstep strong{display:block;color:#eef1f7;font-size:18px;margin-bottom:8px;}
+.pe2-fstep em{color:#a2a9bb;font-size:14.5px;font-style:normal;line-height:1.6;}
+.pe2-why{width:100%;padding:90px 24px;background:#0a0e1a;}
+.pe2-why__in{max-width:1120px;margin:0 auto;}
+.pe2-why__grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.pe2-wcard{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:32px;}
+.pe2-wcard strong{display:block;color:#eef1f7;font-size:19px;margin-bottom:10px;}
+.pe2-wcard span{color:#a2a9bb;font-size:15px;line-height:1.6;}
+.pe2-price{width:100%;padding:90px 24px;background:#06070d;}
+.pe2-price__in{max-width:720px;margin:0 auto;text-align:center;}
+.pe2-price__in h2{margin-bottom:36px;}
+.pe2-price__card{background:rgba(255,255,255,.03);border:1px solid rgba(163,255,92,.35);border-radius:24px;padding:44px 40px;text-align:left;}
+.pe2-price__top{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px;flex-wrap:wrap;gap:12px;}
+.pe2-price__top strong{color:#eef1f7;font-size:22px;}
+.pe2-price__amt{font-size:44px;font-weight:900;background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.pe2-price__amt span{font-size:16px;font-weight:400;color:#a2a9bb;-webkit-text-fill-color:#a2a9bb;}
+.pe2-price__card ul{margin:0 0 32px;padding:0;list-style:none;}
+.pe2-price__card li{display:flex;gap:14px;align-items:flex-start;color:#a2a9bb;font-size:15.5px;padding:9px 0;border-top:1px solid rgba(255,255,255,.07);}
+.pe2-price__card li span{color:#a3ff5c;font-weight:900;}
+.pe2-price__note{color:#a2a9bb;font-size:14px;margin:20px 0 0;text-align:center;}
+.pe2-price__note a{color:#a3ff5c;}
+.pe2-ctaband{width:100%;padding:100px 24px;background:radial-gradient(ellipse at 50% 0%,#0a0e1a 0%,#06070d 65%);text-align:center;}
+.pe2-ctaband__in{max-width:760px;margin:0 auto;}
+.pe2-ctaband p{color:#a2a9bb;font-size:18px;line-height:1.7;margin:0 0 36px;}
+@media(max-width:860px){.pe2-fix__grid,.pe2-why__grid{grid-template-columns:1fr !important;}}
+
 </style>
 <script src="../../assets/js/lottie.min.js"></script>
 <script>
 (function(){document.querySelectorAll('[data-lot]').forEach(function(el){if(typeof lottie==='undefined')return;try{lottie.loadAnimation({container:el,renderer:'svg',loop:true,autoplay:true,path:'../../assets/lottie/'+el.getAttribute('data-lot')});}catch(e){}});})();
 </script>
 <!-- ============ /PLUMBING v3 ============ -->
+<section class="pe2-fix">
+<div class="pe2-fix__in">
+<span class="pe2-label">THE FIX</span>
+<h2>Here&rsquo;s exactly <span class="pe2-grad">what I do.</span></h2>
+<div class="pe2-fix__grid pe2-newgrid">
+<div class="pe2-fstep"><span>1</span><div><strong>Own the emergency searches</strong><em>&ldquo;emergency plumber near me&rdquo; plus the map pack &mdash; when the pipe bursts, you&rsquo;re the first call.</em></div></div>
+<div class="pe2-fstep"><span>2</span><div><strong>A page for every job &amp; suburb</strong><em>Boiler installs, repipes, renovations &mdash; one ranking page per service per area you cover.</em></div></div>
+<div class="pe2-fstep"><span>3</span><div><strong>Turn reviews into trust</strong><em>Automatic requests after every job, every review answered &mdash; the proof that wins the call.</em></div></div>
+<div class="pe2-fstep"><span>4</span><div><strong>Stay booked</strong><em>Fresh pages, new reviews, tracked calls every month &mdash; momentum Google rewards.</em></div></div>
+</div>
+</div>
+</section>
+
+<section class="pe2-why">
+<div class="pe2-why__in">
+<span class="pe2-label">WHY ME</span>
+<h2>Why plumbers <span class="pe2-grad">pick me.</span></h2>
+<div class="pe2-why__grid pe2-newgrid">
+<div class="pe2-wcard"><strong>You talk to me</strong><span>No account managers, no handoffs. The person who audits your listing is the person who fixes it.</span></div>
+<div class="pe2-wcard"><strong>Trades aren&rsquo;t a sideline</strong><span>I do local SEO for plumbers and trades specifically &mdash; not &ldquo;we do everything for everyone.&rdquo;</span></div>
+<div class="pe2-wcard"><strong>Plain numbers, no jargon</strong><span>You&rsquo;ll see rankings, reviews, and calls. If a report needs a dictionary, it&rsquo;s hiding something.</span></div>
+<div class="pe2-wcard"><strong>One clear plan</strong><span>A single monthly price with visible work every month. No bloated agency layers eating your budget.</span></div>
+</div>
+</div>
+</section>
+
+<section class="pe2-price">
+<div class="pe2-price__in">
+<span class="pe2-label">PRICING</span>
+<h2>One plan. <span class="pe2-grad">Everything included.</span></h2>
+<div class="pe2-price__card">
+<div class="pe2-price__top"><strong>Plumber SEO</strong><span class="pe2-price__amt">$700<span>/month</span></span></div>
+<ul>
+<li><span>&check;</span> Google Business Profile fully managed &mdash; services, areas, posts</li>
+<li><span>&check;</span> Emergency + big-job ranking pages &mdash; built for calls</li>
+<li><span>&check;</span> Review engine &mdash; requests, responses, damage control</li>
+<li><span>&check;</span> Monthly report &mdash; rankings, reviews, calls in plain English</li>
+<li><span>&check;</span> Direct line to me &mdash; no ticket queues</li>
+</ul>
+<a href="#contact" class="pe2-cta cta-final">Start With a Free Audit &rarr;</a>
+<p class="pe2-price__note">Same SEO plan as on the homepage &mdash; no industry markup. Covering multiple service areas? <a href="#contact">Ask for a custom quote.</a></p>
+</div>
+</div>
+</section>
+
+<section class="pe2-ctaband">
+<div class="pe2-ctaband__in">
+<span class="pe2-label">FREE AUDIT</span>
+<h2>The next burst pipe in your city <span class="pe2-grad">is searching right now.</span></h2>
+<p>Tell me about your plumbing business &mdash; I&rsquo;ll send back a free audit of your Google presence: what shows up, what&rsquo;s missing, and which jobs you&rsquo;re losing to competitors.</p>
+<a href="#contact" class="pe2-cta cta-final">Get My Free Audit &rarr;</a>
+</div>
+</section>
 <section id="faq">
   <div class="container">
     <div class="section-head center">
