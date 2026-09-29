@@ -100,7 +100,7 @@
 
   /* ---------- Blog: latest 3 posts on homepage ---------- */
   const blogGrid = $('#blogGrid');
-  if (blogGrid) {
+  if (blogGrid && !blogGrid.children.length) {
     const fmtD = iso => new Date(iso + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
     fetch('data/blog/index.json').then(r => r.json()).then(posts => {
       const cards = posts.slice(0, 3).map(p => `
