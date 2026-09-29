@@ -55,8 +55,8 @@
 .ie8-crumb a{color:#a2a9bb;text-decoration:none;} .ie8-crumb a:hover{color:#22d3ee;}
 .ie8-hero{width:100%;padding:120px 24px 90px;background:radial-gradient(ellipse 90% 60% at 50% -10%,#101528 0%,#06070d 60%),#06070d;position:relative;overflow:hidden;text-align:center;}
 .ie8-hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(124,92,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(124,92,255,.05) 1px,transparent 1px);background-size:44px 44px;mask-image:radial-gradient(ellipse 70% 70% at 50% 40%,#000 30%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse 70% 70% at 50% 40%,#000 30%,transparent 75%);pointer-events:none;}
-.ie8-hero__in{position:relative;max-width:1000px;margin:0 auto;}
-.ie8-hero h1{color:#eef1f7;font-family:var(--font-display);font-weight:700;font-size:clamp(34px,5.4vw,64px);line-height:1.12;margin:0 0 22px;}
+.ie8-hero__in{position:relative;width:100%;max-width:1240px;margin:0 auto;}
+.ie8-hero h1{color:#eef1f7;font-family:var(--font-display);font-weight:700;font-size:clamp(38px,5.4vw,68px);line-height:1.12;margin:0 0 22px;max-width:1100px;margin-left:auto;margin-right:auto;text-wrap:balance;}
 .ie8-sub{color:#a2a9bb;font-size:clamp(16px,2vw,19px);line-height:1.75;max-width:720px;margin:0 auto 40px;}
 .ie8-ctas{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
 .ie8-split{width:100%;padding:90px 24px;background:#06070d;position:relative;overflow:hidden;}
@@ -122,6 +122,9 @@
 }
 @media(max-width:480px){.ie8-hero{padding:100px 18px 70px;}.ie8-sec{padding:70px 18px;}.ie8-split{padding:70px 18px;}}
 
+.ie8-xacc{display:grid;gap:12px;margin-top:36px;}.ie8-xacc__item{border:1px solid rgba(255,255,255,.1);border-radius:16px;background:rgba(255,255,255,.03);padding:2px 24px;}.ie8-xacc__item summary{cursor:pointer;list-style:none;color:#eef1f7;font-weight:700;font-size:17px;padding:18px 0;display:flex;justify-content:space-between;align-items:center;gap:16px;}.ie8-xacc__item summary::-webkit-details-marker{display:none;}.ie8-xacc__item summary::after{content:'+';color:#22d3ee;font-size:22px;font-weight:800;flex-shrink:0;}.ie8-xacc__item[open] summary::after{content:'\2013';}.ie8-xacc__item p{color:#a2a9bb;font-size:15.5px;line-height:1.7;margin:0 0 22px;}
+.ie8-xaud{padding:80px 24px;}.ie8-xaud__in{max-width:1120px;margin:0 auto;}.ie8-xaud__k{font-size:12px;font-weight:800;letter-spacing:3px;color:#22d3ee;}.ie8-xaud__in h2{color:#eef1f7;font-family:var(--font-display);font-size:clamp(28px,3.6vw,44px);margin:14px 0 12px;text-align:center;}.ie8-xaud__p{color:#a2a9bb;font-size:16.5px;line-height:1.75;text-align:center;max-width:720px;margin:0 auto 36px;}.ie8-xaud__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}.ie8-xaud__card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:28px 26px;}.ie8-xaud__lbl{font-size:11px;font-weight:800;letter-spacing:2.5px;color:#22d3ee;margin-bottom:10px;}.ie8-xaud__card strong{display:block;color:#eef1f7;font-size:17px;margin-bottom:10px;}.ie8-xaud__card p{color:#a2a9bb;font-size:15px;line-height:1.7;margin:0 0 18px;}.ie8-xaud__fix{color:#d7dce8 !important;}@media(max-width:860px){.ie8-xaud__grid{grid-template-columns:1fr;}}@media(max-width:640px){.ie8-xaud{padding:60px 20px;}}
+.ie8-lot{width:100%;max-width:380px;aspect-ratio:1;margin:0 auto;position:relative;display:grid;place-items:center;}.ie8-lot img{max-width:100%;height:auto;}
 </style>
 </head>
 <body data-theme="iridescent">
@@ -190,7 +193,7 @@
 
 <section class="ie8-split">
 <div class="ie8-split__grid">
-<div class="ie8-img reveal"><img src="/assets/img/locations/ireland-1.jpg" alt="Custom House on the river in Dublin" loading="lazy"></div>
+<div class="ie8-img reveal"><div class="ie8-lot lot" data-lot="pin-bounce.json"><img src="/assets/img/locations/ireland-1.jpg" alt="Custom House on the river in Dublin" loading="lazy"></div></div>
 <div class="reveal"><span class="ie8-eyebrow">MONTHLY RHYTHM</span>
 <h2>Local SEO is a habit, not a project.</h2><p>One-off SEO fades. My package is built around the monthly cadence that actually compounds: maintain, build, review, report — repeat.</p><ul class="ie8-ticks"><li><span>✓</span>Fixed monthly scope, no surprises</li><li><span>✓</span>Profile + citations maintained</li><li><span>✓</span>Content added steadily</li></ul></div>
 </div>
@@ -207,7 +210,7 @@
 <div class="ie8-in">
 <span class="ie8-eyebrow reveal">THE FIX</span>
 <h2 class="ie8-h2 reveal d1">What I actually do for your business.</h2>
-<p class="ie8-lede reveal d2">Four steps, repeated monthly. Unglamorous, thorough, and entirely done by me.</p>
+<p class="ie8-lede reveal d2">Four steps, repeated monthly. Unglamorous, thorough, and entirely done by me personally.</p>
 <div class="ie8-grid2"><div class="ie8-fstep reveal"><span>1</span><div><strong>Audit month</strong><em>Full technical, profile and competitor audit — the honest baseline.</em></div></div><div class="ie8-fstep reveal"><span>2</span><div><strong>Foundation fixes</strong><em>Technical issues fixed, GBP rebuilt, citations cleaned.</em></div></div><div class="ie8-fstep reveal"><span>3</span><div><strong>Build momentum</strong><em>Service and area pages, review flow, steady content.</em></div></div><div class="ie8-fstep reveal"><span>4</span><div><strong>Compound monthly</strong><em>Maintain, measure and improve — reported plainly every month.</em></div></div></div>
 </div></section>
 
@@ -215,23 +218,25 @@
 <div class="ie8-in">
 <span class="ie8-eyebrow reveal">WHY ME</span>
 <h2 class="ie8-h2 reveal d1">One senior person instead of an agency.</h2>
-<p class="ie8-lede reveal d2">No account managers, no juniors learning on your budget — just the person doing the work, accountable every month.</p>
-<div class="ie8-grid2"><div class="ie8-wcard reveal"><strong>Monthly discipline</strong><span>The package exists because consistency wins Irish local search.</span></div><div class="ie8-wcard reveal"><strong>I cover Bing too</strong><span>The 4% most SEOs ignore is still real customers.</span></div><div class="ie8-wcard reveal"><strong>$700 flat, month-to-month</strong><span>One package, one price, cancellable anytime.</span></div><div class="ie8-wcard reveal"><strong>Reports in five minutes</strong><span>Plain English: what I did, what changed, what is next.</span></div></div>
+<p class="ie8-lede reveal d2">No account managers, no juniors learning on your budget — just the person doing the work, accountable every single month.</p>
+<div class="ie8-xacc"><details class="ie8-xacc__item" open><summary><span>Monthly discipline</span></summary><p>The package exists because consistency wins Irish local search.</p></details><details class="ie8-xacc__item"><summary><span>I cover Bing too</span></summary><p>The 4% most SEOs ignore is still real customers.</p></details><details class="ie8-xacc__item"><summary><span>$700 flat, month-to-month</span></summary><p>One package, one price, cancellable anytime.</p></details><details class="ie8-xacc__item"><summary><span>Reports in five minutes</span></summary><p>Plain English: what I did, what changed, what is next.</p></details></div>
 </div></section>
 
 <section class="ie8-sec" id="pricing">
 <div class="ie8-in" style="text-align:center;">
 <span class="ie8-eyebrow reveal">PRICING</span>
 <h2 class="ie8-h2 reveal d1">One plan. One price.</h2>
-<p class="ie8-lede reveal d2">Everything local SEO needs, done monthly by one senior person.</p>
+<p class="ie8-lede reveal d2">Everything local SEO needs, handled monthly by one senior person.</p>
 <div class="ie8-pricecard reveal">
 <div class="ie8-pricetop"><strong>Local SEO, monthly</strong><div class="ie8-amt">$700<span>/month</span></div></div>
 <ul><li><b>✓</b>Google Business Profile optimisation + monthly posts</li><li><b>✓</b>Technical fixes, prioritised by impact</li><li><b>✓</b>Local keyword targeting for your towns</li><li><b>✓</b>Content: service and area pages that match real queries</li><li><b>✓</b>Review generation system</li><li><b>✓</b>Plain-English monthly report — what I did and why</li><li><b>✓</b>No contract. No setup fee. Cancel anytime.</li></ul>
 <div style="text-align:center;"><a href="#contact" class="ie8-cta">Start With a Free Audit</a></div>
 </div>
-<p class="reveal" style="color:#a2a9bb;font-size:14px;margin-top:22px;">The audit is free and comes with no obligation. If you want me to fix what it finds, that is the paid work.</p>
+<p class="reveal" style="color:#a2a9bb;font-size:14px;margin-top:22px;">The audit is free and comes with zero obligation. If you want me to fix what it finds, that is the paid work.</p>
 </div></section>
 
+
+<section class="ie8-xaud"><div class="ie8-xaud__in"><div style="text-align:center;"><span class="ie8-xaud__k">AUDIT SNAPSHOTS</span><h2>What the free audit <span class="text-grad">usually finds</span></h2><p class="ie8-xaud__p">Real patterns from the audits I run — paired with what fixing them looks like. Yours is free, and hand-done.</p></div><div class="ie8-xaud__grid"><div class="ie8-xaud__card reveal"><div class="ie8-xaud__lbl">PROBLEM SPOTTED</div><strong>The map pack is a monthly contest</strong><p>Rankings in Irish cities move as competitors act. A profile optimised once, two years ago, is a profile losing.</p><div class="ie8-xaud__lbl">WHAT THE AUDIT LEADS TO</div><p class="ie8-xaud__fix">Full technical, profile and competitor audit — the honest baseline.</p></div><div class="ie8-xaud__card reveal"><div class="ie8-xaud__lbl">PROBLEM SPOTTED</div><strong>Reviews are the tiebreaker</strong><p>In tight Irish markets, the business with recent, genuine reviews wins the click. Most have no system for getting them.</p><div class="ie8-xaud__lbl">WHAT THE AUDIT LEADS TO</div><p class="ie8-xaud__fix">Service and area pages, a review flow, steady content — momentum built monthly.</p></div><div class="ie8-xaud__card reveal"><div class="ie8-xaud__lbl">PROBLEM SPOTTED</div><strong>Sporadic SEO loses to routine</strong><p>One-off SEO fades. The winners show up consistently — fresh reviews, maintained profiles, steady content.</p><div class="ie8-xaud__lbl">WHAT THE AUDIT LEADS TO</div><p class="ie8-xaud__fix">Maintain, measure and improve — reported plainly every month.</p></div></div></div></section>
 <section class="ie8-ctaband">
 <div class="ie8-ctaband__in">
 <span class="ie8-eyebrow reveal">FREE AUDIT</span>
@@ -263,7 +268,7 @@
 
 <section id="faq"><div class="ie8-faq__in">
 <div class="section-head center"><span class="eyebrow reveal">FAQs</span><h2 class="h-section reveal d1">Ireland <span class="text-grad">questions, answered.</span></h2></div>
-<div class="reveal" style="max-width:760px;margin:0 auto 28px;text-align:center;"><p style="font-size:17px;color:var(--text-dim);line-height:1.75;">Straight answers, no sales talk. If your question is not here, the free audit covers it.</p></div>
+<div class="reveal" style="max-width:760px;margin:0 auto 28px;text-align:center;"><p style="font-size:17px;color:var(--text-dim);line-height:1.75;">Straight answers, no sales talk. If your question is not covered here, the free audit covers it.</p></div>
 <div class="faq__list">
 <div class="faq-item"><button class="faq-item__q" type="button">Is Google the only search engine that matters in Ireland?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">In practice, no. Google holds around 96% of Irish search, and the remaining share is split between Bing and Yahoo with no serious local engine. Bing still matters at the margins, especially for older demographics and default Windows searches, so I cover Bing Places and Bing's webmaster guidelines in every audit. But Ireland is a Google-first market, full stop: your Google Business Profile, your reviews and your organic rankings are where Irish customers find you.</div></div></div>
 <div class="faq-item"><button class="faq-item__q" type="button">Why do you recommend monthly SEO packages for Irish businesses?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">For most Irish businesses, the monthly rhythm is what works. Local SEO compounds: citation building, review generation, content and technical fixes each month stack into momentum that one-off projects rarely achieve. My packages have no lock-in: published monthly work, a plain-English report showing every deliverable, and the freedom to upgrade, downgrade or cancel any month. Irish businesses are rightly skeptical of long contracts from marketers, so I simply do not offer them.</div></div></div>
@@ -282,7 +287,7 @@
       <div class="contact__lhs">
         <span class="eyebrow">Let's rank</span>
         <h2 class="h-section" style="margin-top:18px" id="ctaH2">Ready to improve your visibility in <span class="text-grad">Ireland</span>?</h2>
-        <p>Book a free 30-minute strategy call. I'll audit your current visibility live and tell you exactly what it would take to reach the top 3.</p>
+        <p>Book a free 30-minute strategy call. I'll audit your Irish visibility live and tell you exactly what it would take to reach the top 3.</p>
         <div class="contact__info">
           <a href="mailto:info@globeskillz.com" data-magnetic>
             <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
@@ -528,5 +533,7 @@
   } catch (e) { document.getElementById('relatedReading').style.display = 'none'; }
 })();
 </script>
+<script src="../../assets/js/lottie.min.js"></script>
+<script>(function(){var els=document.querySelectorAll('[data-lot]');if(!els.length||typeof lottie==='undefined')return;els.forEach(function(el){try{var anim=lottie.loadAnimation({container:el,renderer:'svg',loop:true,autoplay:true,path:'../../assets/lottie/'+el.getAttribute('data-lot')});anim.addEventListener('DOMLoaded',function(){var img=el.querySelector('img');if(img)img.style.display='none';});}catch(e){}});})();</script>
 </body>
 </html>

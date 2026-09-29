@@ -29,9 +29,9 @@
 :root{--font-display:'Space Grotesk',sans-serif;--font-body:'Inter',sans-serif;}
 
 .pt6-hero{width:100%;min-height:94vh;display:flex;align-items:center;justify-content:center;padding:120px 24px 0;background:radial-gradient(ellipse 90% 55% at 50% -10%,#101a34 0%,#06070d 60%),#06070d;position:relative;overflow:hidden;overflow-x:clip;text-align:center;}
-.pt6-hero__in{position:relative;max-width:900px;margin:0 auto;width:100%;}
+.pt6-hero__in{position:relative;max-width:1240px;margin:0 auto;width:100%;}
 .pt6-eyebrow{background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;font-size:12px;font-weight:800;letter-spacing:3px;}
-.pt6-hero h1{color:#eef1f7;font-family:var(--font-display);font-weight:700;font-size:clamp(36px,5.6vw,66px);line-height:1.1;margin:18px 0 22px;}
+.pt6-hero h1{color:#eef1f7;font-family:var(--font-display);font-weight:700;font-size:clamp(38px,5.4vw,68px);line-height:1.1;margin:18px 0 22px;max-width:1100px;margin-left:auto;margin-right:auto;text-wrap:balance}
 .pt6-grad{background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;}
 .pt6-sub{color:#a2a9bb;font-size:clamp(16px,2vw,19px);line-height:1.75;max-width:680px;margin:0 auto 40px;}
 .pt6-ctas{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:70px;}
@@ -202,6 +202,24 @@ img{max-width:100%;}
 }
 
 
+.pt6-lot{width:100%;max-width:320px;aspect-ratio:1;margin:0 auto;position:relative;display:grid;place-items:center;}
+.pt6-lot svg{width:100%!important;height:100%!important;}
+@media(max-width:640px){.pt6-lot{max-width:260px;}}
+.pt6-xwrap{overflow-x:auto;margin:44px 0 8px;border-radius:18px;}
+.pt6-xtable{width:100%;min-width:560px;border-collapse:collapse;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.12);border-radius:18px;overflow:hidden;}
+.pt6-xtable th{font-family:var(--font-display);font-size:12px;letter-spacing:2.5px;text-transform:uppercase;text-align:left;padding:18px 24px;background:rgba(124,92,255,.08);color:#eef1f7;}
+.pt6-xtable th:last-child{color:#a3ff5c;}
+.pt6-xtable td{padding:22px 24px;border-top:1px solid rgba(255,255,255,.08);vertical-align:top;color:#a2a9bb;font-size:15px;line-height:1.7;}
+.pt6-xtable td strong{color:#eef1f7;display:block;margin-bottom:8px;font-family:var(--font-display);font-size:16px;}
+.pt6-xtable td:last-child{color:#d7dce8;}
+.pt6-xq{display:inline-block;font-family:ui-monospace,Menlo,monospace;font-size:12.5px;color:#eef1f7;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.09);border-radius:8px;padding:5px 10px;margin-bottom:10px;}
+@media(max-width:640px){.pt6-xtable td,.pt6-xtable th{padding:16px 18px;}}
+.pt6-n6{margin:70px 0;text-align:center;}
+.pt6-n6 h2{color:#eef1f7;font-family:var(--font-display);font-size:clamp(26px,3.4vw,38px);margin:0 0 12px;}
+.pt6-n6>p{color:#a2a9bb;font-size:16px;margin:0 0 30px;}
+.pt6-n6__chips{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
+.pt6-n6__chips span{font-family:var(--font-display);font-size:14px;color:#eef1f7;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:11px 20px;}
+@media(max-width:640px){.pt6-n6__chips span{padding:9px 16px;font-size:13px;}}
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TVYVGRLRW"></script>
@@ -292,10 +310,10 @@ The language trap catches outsiders constantly. European Portuguese and Brazilia
 Portuguese buyers are pragmatic: price and free delivery top the purchase drivers, 5.8 million shopped online in 2025 (up 4%), and 67.9% of the population now buys online. Reviews run through Google and through Portal da Queixa, the country's leading consumer review and complaint platform — Portuguese customers check it the way other markets check Trustpilot.
 
 My work in Portugal starts from this reality: European-Portuguese keyword research built from local queries, Google Business Profiles tuned for Lisbon, Porto and the Algarve's seasonal rhythms, citations on Páginas Amarelas and the sources Google trusts, and review strategies that cover both Google and Portal da Queixa. No hype, no promised rankings — just methodical work for a market where execution decides everything.</p>
-<p>I work with a small number of clients at a time, so every business gets <strong>hands-on work and direct answers</strong> — not a ticket queue, not a junior account manager.</p>
+<p>I keep my client list deliberately small, so your Portuguese business gets hands-on work and straight answers from me — no ticket queue, no junior account manager.</p>
 <ul class="pt6-ticks"><li><span class="pt6-tick">✓</span>Free audit shows exactly where you stand</li><li><span class="pt6-tick">✓</span>Fixed monthly plan — no hourly billing surprises</li><li><span class="pt6-tick">✓</span>Reports in plain language, every month</li></ul>
 </div>
-<div class="pt6-img reveal d1"><img src="assets/img/locations/portugal-1.jpg" alt="Alfama district rooftops and the Tagus river in Lisbon, Portugal" loading="lazy"></div>
+<div class="pt6-img reveal d1"><div class="pt6-lot lot" data-lot="bars-grow.json"><img src="/assets/img/locations/portugal-1.jpg" alt="Alfama district rooftops and the Tagus river in Lisbon, Portugal" loading="lazy"></div></div>
 </div>
 </div>
 </section>
@@ -305,9 +323,9 @@ My work in Portugal starts from this reality: European-Portuguese keyword resear
 <div class="pt6-fix__head">
 <span class="pt6-kicker" style="background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;font-size:12px;font-weight:800;letter-spacing:3px;">THE FIX</span>
 <h2>What I do for <span class="pt6-grad">Portugal businesses</span></h2>
-<p>Four steps. No jargon, no 40-page reports you will never read — just the work that moves the needle.</p>
+<p>Four steps, built for Portuguese search. No jargon, no 40-page reports you will never read — just the work that moves the needle.</p>
 </div>
-<div class="pt6-steps"><div class="pt6-step reveal d0"><span class="pt6-step__n">1</span><strong>We start with the truth</strong><p>A full audit of your Portugal visibility: where you rank, why competitors outrank you, and the three fixes that matter most.</p></div><div class="pt6-step reveal d1"><span class="pt6-step__n">2</span><strong>Your profile, rebuilt</strong><p>Your Google Business Profile finished properly — categories, services, photos, posts — so it turns searchers into callers.</p></div><div class="pt6-step reveal d2"><span class="pt6-step__n">3</span><strong>Pages that match local searches</strong><p>Service and area pages written for how people in Portugal search, not for keyword tools.</p></div><div class="pt6-step reveal d0"><span class="pt6-step__n">4</span><strong>Reviews on autopilot</strong><p>A simple system that asks happy customers at the right moment — so your review count grows while you work.</p></div></div>
+<div class="pt6-steps"><div class="pt6-step reveal d0"><span class="pt6-step__n">1</span><strong>We start with the truth</strong><p>A full audit of your Portugal visibility: where you rank, why competitors outrank you, and the three fixes that matter most.</p></div><div class="pt6-step reveal d1"><span class="pt6-step__n">2</span><strong>Your profile, rebuilt</strong><p>Your Google Business Profile finished properly for Portugal — categories, services, photos, posts — so Lisbon and Porto searchers turn into callers.</p></div><div class="pt6-step reveal d2"><span class="pt6-step__n">3</span><strong>Pages that match local searches</strong><p>Service and area pages written for how people in Portugal search, not for keyword tools.</p></div><div class="pt6-step reveal d0"><span class="pt6-step__n">4</span><strong>Reviews on autopilot</strong><p>A simple system that asks your happy Portuguese customers at the right moment — so your review count grows while you work.</p></div></div>
 </div>
 </section>
 
@@ -316,21 +334,21 @@ My work in Portugal starts from this reality: European-Portuguese keyword resear
 <div class="pt6-why__head">
 <span style="background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;font-size:12px;font-weight:800;letter-spacing:3px;">WHY ME</span>
 <h2>Why <span class="pt6-grad">Portugal</span> businesses hire me</h2>
-<p>I am not an agency with a sales team. I am the person who does the work — and the person who answers when you ask what is happening.</p>
+<p>I am not an agency with a sales team. I am the person doing the SEO for your Portuguese business — and the person who answers when you ask what is happening.</p>
 </div>
-<div class="pt6-cards"><div class="pt6-card reveal d0"><div class="pt6-card__icon">◈</div><strong>Small client list, on purpose</strong><p>I take on a limited number of Portugal businesses so each one gets real attention — never spread across fifty accounts.</p></div><div class="pt6-card reveal d1"><div class="pt6-card__icon">○</div><strong>You own everything</strong><p>Your profile, your site, your content. No lock-in, no hostage logins, no mystery “proprietary system”.</p></div><div class="pt6-card reveal d2"><div class="pt6-card__icon">▣</div><strong>Fixed price, no surprises</strong><p>One monthly plan. You always know what you pay and what you get — invoiced simply, cancelled simply.</p></div><div class="pt6-card reveal d0"><div class="pt6-card__icon">◎</div><strong>I answer my messages</strong><p>Questions get answers from the person doing the work, usually the same day. Try getting that from an agency.</p></div></div>
+<div class="pt6-xwrap reveal"><table class="pt6-xtable"><thead><tr><th>What you get</th><th>Why it matters</th></tr></thead><tbody><tr><td><strong>Small client list, on purpose</strong></td><td>I take on a limited number of Portugal businesses so each one gets real attention — never spread across fifty accounts.</td></tr><tr><td><strong>You own everything</strong></td><td>Your profile, your site, your content. No lock-in, no hostage logins, no mystery “proprietary system” — in Portugal or anywhere.</td></tr><tr><td><strong>Fixed price, no surprises</strong></td><td>One monthly plan for your Portugal SEO. You always know what you pay and what you get — invoiced simply, cancelled simply.</td></tr><tr><td><strong>I answer my messages</strong></td><td>Questions about your Portuguese campaign get answers from the person doing the work, usually the same day. Try getting that from an agency.</td></tr></tbody></table></div>
 </div>
 </section>
 
 <section class="pt6-sec2">
 <div class="pt6-sec2__in">
 <div class="pt6-split2">
-<div class="pt6-img2 reveal"><img src="assets/img/locations/portugal-1.jpg" alt="Alfama district rooftops and the Tagus river in Lisbon, Portugal" loading="lazy"></div>
+<div class="pt6-img2 reveal"><img src="/assets/img/locations/portugal-1.jpg" alt="Alfama district rooftops and the Tagus river in Lisbon, Portugal" loading="lazy"></div>
 <div class="reveal d1">
 <span class="pt6-kicker2" style="background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;font-size:12px;font-weight:800;letter-spacing:3px;">HOW IT WORKS</span>
 <h2>Local SEO for <span class="pt6-grad">Portugal</span>, done the honest way</h2>
 <p>Ranking in Portugal is not about tricks. It is about <strong>being the most complete, most trusted answer</strong> when a local customer searches — on your website, on your Google Business Profile, and across the local web.</p>
-<p>That is what I build: a profile that looks alive, pages that match how locals actually search, and a review flow that keeps working while you run your business.</p>
+<p>That is what I build in Portugal: a profile that looks alive, pages that match how locals actually search — from Lisbon to the Algarve — and a review flow that keeps working while you run your business.</p>
 </div>
 </div>
 </div>
@@ -386,10 +404,11 @@ My work in Portugal starts from this reality: European-Portuguese keyword resear
 })();
 </script>
 
+<section class="pt6-n6"><h2>Areas I cover in Portugal</h2><p>Portugal’s searches switch between Portuguese and English, and the map rewards whoever matches the searcher. These are the Portuguese areas I optimise for — each covered by the same hands-on local SEO.</p><div class="pt6-n6__chips reveal"><span>Lisbon</span><span>Porto</span><span>Braga</span><span>Coimbra</span><span>Faro</span><span>Setúbal</span><span>Cascais</span><span>Aveiro</span></div></section>
 <section class="pt6-ranked">
 <div class="pt6-ranked__in">
 <h2 class="reveal">ALSO RANKED</h2>
-<p class="reveal d1">I also help businesses in these nearby areas rank on Google.</p>
+<p class="reveal d1">I also help businesses in the neighbouring countries rank on Google.</p>
 <div class="pt6-rchips reveal d2"><span class="pt6-rchip">Lisbon</span><span class="pt6-rchip">Porto</span><span class="pt6-rchip">Braga</span><span class="pt6-rchip">Coimbra</span><span class="pt6-rchip">Faro</span><span class="pt6-rchip">Setúbal</span><span class="pt6-rchip">Cascais</span><span class="pt6-rchip">Aveiro</span></div>
 </div>
 </section>
@@ -397,7 +416,11 @@ My work in Portugal starts from this reality: European-Portuguese keyword resear
 <section class="pt6-rel">
 <div class="pt6-rel__in">
 <h2 class="reveal">Related reading</h2>
-<div class="pt6-rel__grid"><a class="pt6-rel__card reveal d0" href="/locations/spain/"><span>NEARBY</span><strong>SEO Expert in Spain</strong></a><a class="pt6-rel__card reveal d1" href="/locations/france/"><span>NEARBY</span><strong>SEO Expert in France</strong></a><a class="pt6-rel__card reveal d2" href="/locations/italy/"><span>NEARBY</span><strong>SEO Expert in Italy</strong></a></div>
+<div class="pt6-rel__grid">
+<a class="pt6-rel__card reveal d0" href="/locations/spain/"><span>NEARBY</span><strong>SEO expert in Spain</strong></a>
+<a class="pt6-rel__card reveal d1" href="/locations/france/"><span>ALSO SERVED</span><strong>SEO expert in France</strong></a>
+<a class="pt6-rel__card reveal d2" href="/locations/greece/"><span>ALSO SERVED</span><strong>SEO expert in Greece</strong></a>
+</div>
 </div>
 </section>
 
@@ -407,7 +430,7 @@ My work in Portugal starts from this reality: European-Portuguese keyword resear
       <div class="contact__lhs">
         <span class="eyebrow">Let's rank</span>
         <h2 class="h-section" style="margin-top:18px" id="ctaH2">Ready to dominate <span class="text-grad">Portugal</span>?</h2>
-        <p>Book a free 30-minute strategy call. I'll audit your current visibility live and tell you exactly what it would take to reach the top 3.</p>
+        <p>Book a free 30-minute strategy call. I’ll audit your Portuguese visibility live — your Lisbon or Porto listings, your reviews, your pages — and tell you exactly what it would take to crack the top 3.</p>
         <div class="contact__info">
           <a href="mailto:info@globeskillz.com" data-magnetic>
             <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
@@ -651,5 +674,7 @@ My work in Portugal starts from this reality: European-Portuguese keyword resear
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "SEO expert in Portugal", "description": "SEO expert in Portugal: local SEO for Lisbon, Porto, and the Algarve, built around how the Portuguese really search. Free audit.", "url": "https://globeskillz.com/locations/portugal/", "provider": {"@type": "Organization", "name": "Globe Skillz", "url": "https://globeskillz.com/"}, "areaServed": "Portugal"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://globeskillz.com/"}, {"@type": "ListItem", "position": 2, "name": "Locations", "item": "https://globeskillz.com/#coverage"}, {"@type": "ListItem", "position": 3, "name": "SEO expert in Portugal", "item": "https://globeskillz.com/locations/portugal/"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Should I write in European or Brazilian Portuguese?","acceptedAnswer":{"@type":"Answer","text":"European Portuguese, without exception, if your customers are in Portugal. The variants differ in spelling, vocabulary and tone — \"telemóvel\" vs \"celular\", \"casa de banho\" vs \"banheiro\" — and Brazilian Portuguese reads as foreign to Portuguese customers, which kills trust and conversion. The trap is that Brazilian content can rank for your queries because of Brazil's sheer content volume, so businesses copy what ranks and wonder why it does not sell. I build keyword maps from European Portuguese queries and write content in the variant your customers speak."}},{"@type":"Question","name":"How do I handle Algarve tourism seasonality in SEO?","acceptedAnswer":{"@type":"Answer","text":"With a seasonal calendar, not a flat retainer. Algarve hospitality searches peak sharply in summer and trough in winter, so the playbook is: publish seasonal content ahead of the curve (spring for summer demand), update your Google Business Profile hours, photos and posts for the season, and time review requests to the peak when guest volume is highest. Winter is for building — content, citations, technical fixes — so you enter spring already ranking. I build this calendar into the strategy from the start, because in the Algarve, ranking in July is worth multiples of ranking in January."}},{"@type":"Question","name":"Do I need a Google Business Profile in Portugal?","acceptedAnswer":{"@type":"Answer","text":"Absolutely — in a 94.5%-Google market it is often the first thing customers see. For local searches the map pack sits above organic results with your reviews, hours, photos and call button, and Portuguese customers compare the three options before contacting anyone. A complete profile with fresh reviews and seasonal updates is non-negotiable; an incomplete one loses both the ranking and the comparison that follows. I rebuild profiles for European Portuguese search behavior, not as an afterthought."}},{"@type":"Question","name":"How long does SEO take to work in Portugal?","acceptedAnswer":{"@type":"Answer","text":"It depends on competition, but the timelines are honest ones. For low-competition local terms, map-pack movement often shows within 6 to 12 weeks of fixing the technical foundation and the profile. Competitive Lisbon keywords and Algarve hospitality terms — where everyone fights over the same Google rankings — typically take three to six months of steady content and authority work, ideally timed ahead of the tourist season. Anyone promising first-page rankings in two weeks is selling something that will not last."}},{"@type":"Question","name":"What is Portal da Queixa and does it affect my SEO?","acceptedAnswer":{"@type":"Answer","text":"Portal da Queixa is Portugal's leading consumer review and complaint platform, and it affects your business whether you manage it or not. Portuguese customers check it before buying, the way other markets check Trustpilot — and unlike a star rating, it hosts detailed complaints that rank in search results. An unanswered complaint visible on the first page costs conversions directly. I include Portal da Queixa in the reputation strategy: claiming your presence, responding to entries professionally in European Portuguese, and building the positive review volume that puts complaints in context."}}]}</script>
+<script src="/assets/js/lottie.min.js"></script>
+<script>(function(){var els=document.querySelectorAll('[data-lot]');if(!els.length||typeof lottie==='undefined')return;els.forEach(function(el){try{var anim=lottie.loadAnimation({container:el,renderer:'svg',loop:true,autoplay:true,path:'/assets/lottie/'+el.getAttribute('data-lot')});anim.addEventListener('DOMLoaded',function(){var img=el.querySelector('img');if(img)img.style.display='none';});}catch(e){}});})();</script>
 </body>
 </html>

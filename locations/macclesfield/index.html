@@ -55,8 +55,8 @@
 .mc14-crumb a{color:#a2a9bb;text-decoration:none;} .mc14-crumb a:hover{color:#22d3ee;}
 .mc14-hero{width:100%;padding:120px 24px 90px;background:radial-gradient(ellipse 90% 60% at 50% -10%,#101528 0%,#06070d 60%),#06070d;position:relative;overflow:hidden;text-align:center;}
 .mc14-hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(124,92,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(124,92,255,.05) 1px,transparent 1px);background-size:44px 44px;mask-image:radial-gradient(ellipse 70% 70% at 50% 40%,#000 30%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse 70% 70% at 50% 40%,#000 30%,transparent 75%);pointer-events:none;}
-.mc14-hero__in{position:relative;max-width:1000px;margin:0 auto;}
-.mc14-hero h1{color:#eef1f7;font-family:var(--font-display);font-weight:700;font-size:clamp(34px,5.4vw,64px);line-height:1.12;margin:0 0 22px;}
+.mc14-hero__in{width:100%;position:relative;max-width:1240px;margin:0 auto;}
+.mc14-hero h1{color:#eef1f7;font-family:var(--font-display);font-weight:700;font-size:clamp(38px,5.4vw,68px);line-height:1.12;margin:0 auto 22px;max-width:1100px;text-wrap:balance;}
 .mc14-sub{color:#a2a9bb;font-size:clamp(16px,2vw,19px);line-height:1.75;max-width:720px;margin:0 auto 40px;}
 .mc14-ctas{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
 .mc14-split{width:100%;padding:90px 24px;background:#06070d;position:relative;overflow:hidden;}
@@ -125,7 +125,7 @@
 }
 @media(max-width:480px){.mc14-hero{padding:100px 18px 70px;}.mc14-sec{padding:70px 18px;}.mc14-split{padding:70px 18px;}}
 
-</style>
+.mc14-lot{width:100%;max-width:320px;aspect-ratio:1;margin:0 auto;position:relative;display:grid;place-items:center;}.mc14-xtablewrap{overflow-x:auto;margin:26px 0 0;border:1px solid rgba(255,255,255,.1);border-radius:16px;}.mc14-xtable{width:100%;min-width:560px;border-collapse:collapse;background:rgba(255,255,255,.02);}.mc14-xtable th{text-align:left;padding:16px 20px;font-family:var(--font-display);font-size:13px;letter-spacing:2.5px;text-transform:uppercase;color:#eef1f7;background:rgba(124,92,255,.09);}.mc14-xtable td{padding:20px;vertical-align:top;color:#aab1c4;font-size:15px;line-height:1.7;border-top:1px solid rgba(255,255,255,.08);}.mc14-xtable td strong{display:block;color:#eef1f7;font-family:var(--font-display);font-size:16px;margin-bottom:6px;}.mc14-n1{padding:60px 24px;}.mc14-n1chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px;}.mc14-n1chips span{padding:12px 22px;border-radius:100px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);color:#dfe4ef;font-size:15px;font-weight:600;}@media(max-width:640px){.mc14-xtable td{padding:14px;font-size:14px;}.mc14-n1chips span{padding:10px 18px;font-size:14px;}}</style>
 </head>
 <body data-theme="iridescent">
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -205,7 +205,7 @@
 
 <section class="mc14-split">
 <div class="mc14-split__grid">
-<div class="mc14-img reveal"><img src="/assets/img/locations/macclesfield-1.jpg" alt="Manchester street scene, near Macclesfield" loading="lazy"></div>
+<div class="mc14-img reveal"><div class="mc14-lot lot" data-lot="pin-bounce.json"><img src="/assets/img/locations/macclesfield-1.jpg" alt="Manchester street scene, near Macclesfield" loading="lazy"></div></div>
 <div class="reveal"><span class="mc14-eyebrow">TOWN BY TOWN</span>
 <h2>The commuter belt searches locally.</h2><p>Macclesfield, Prestbury, Bollington, Poynton — I build dedicated pages for the towns you serve, each matching how locals actually search.</p><ul class="mc14-ticks"><li><span>✓</span>Dedicated town pages</li><li><span>✓</span>B2B pharma-supply-chain content</li><li><span>✓</span>High-intent local targeting</li></ul></div>
 </div>
@@ -215,15 +215,15 @@
 <div class="reveal"><span class="mc14-eyebrow">STRAIGHTFORWARD</span>
 <h2>Senior work, plain reports.</h2><p>One experienced person, one clear monthly plan, reports you can read in minutes. No agency layers.</p><a href="#contact" class="mc14-cta">Get My Free Audit</a></div>
 <div class="mc14-card reveal"><span class="mc14-eyebrow">WHY IT MATTERS HERE</span>
-<p style="color:#a2a9bb;font-size:15.5px;line-height:1.7;margin:14px 0 0;">Local search is won on specifics: the right categories, fresh reviews, pages that match real queries. Generic national SEO misses all three — I do the local work properly, every month.</p></div>
+<p style="color:#a2a9bb;font-size:15.5px;line-height:1.7;margin:14px 0 0;">Local search is won on specifics: the right categories, fresh reviews, pages that match real Cheshire queries. Generic national SEO misses all three — I do the local work properly, every month.</p></div>
 </div>
 </section>
 
-<section class="mc14-sec" id="pricing-anchor">
+<section class="mc14-n1"><div class="mc14-in"><span class="mc14-eyebrow reveal">WHO I WORK WITH</span><h2 class="mc14-h2 reveal d1">Built for Cheshire's business mix.</h2><p class="mc14-lede reveal d2">From high-street solicitors to the pharma supply chain — the businesses I help get found.</p><div class="mc14-n1chips reveal d2"><span>Solicitors</span><span>Pharma supply chain</span><span>Restaurants</span><span>Local businesses</span></div></div></section><section class="mc14-sec" id="pricing-anchor">
 <div class="mc14-in">
 <span class="mc14-eyebrow reveal">THE FIX</span>
 <h2 class="mc14-h2 reveal d1">What I actually do for your business.</h2>
-<p class="mc14-lede reveal d2">Four steps, repeated monthly. Unglamorous, thorough, and entirely done by me.</p>
+<p class="mc14-lede reveal d2">Four steps, repeated monthly across Cheshire. Unglamorous, thorough, and entirely done by me.</p>
 <div class="mc14-grid2"><div class="mc14-fstep reveal"><span>1</span><div><strong>Commuter-belt keyword research</strong><em>How Macclesfield and the surrounding towns actually search — town by town.</em></div></div><div class="mc14-fstep reveal"><span>2</span><div><strong>B2B content where it counts</strong><em>Pages in the language pharma supply-chain buyers use.</em></div></div><div class="mc14-fstep reveal"><span>3</span><div><strong>Profiles + citations</strong><em>GBP and local citations, consistent and complete.</em></div></div><div class="mc14-fstep reveal"><span>4</span><div><strong>Reviews + momentum</strong><em>A review flow that builds the trust affluent buyers expect.</em></div></div></div>
 </div></section>
 
@@ -231,34 +231,34 @@
 <div class="mc14-in">
 <span class="mc14-eyebrow reveal">WHY ME</span>
 <h2 class="mc14-h2 reveal d1">One senior person instead of an agency.</h2>
-<p class="mc14-lede reveal d2">No account managers, no juniors learning on your budget — just the person doing the work, accountable every month.</p>
-<div class="mc14-grid2"><div class="mc14-wcard reveal"><strong>I know the Cheshire market</strong><span>Affluent commuter belt plus pharma B2B — I target both.</span></div><div class="mc14-wcard reveal"><strong>Town-level detail</strong><span>Not one “Cheshire” page — proper pages per town.</span></div><div class="mc14-wcard reveal"><strong>$700 flat, month-to-month</strong><span>One price, no contract.</span></div><div class="mc14-wcard reveal"><strong>Direct with the doer</strong><span>You talk to me. I do the work.</span></div></div>
+<p class="mc14-lede reveal d2">No account managers, no juniors practising on your budget — the person doing the work for your Macclesfield business answers to you, every single month.</p>
+<div class="mc14-xtablewrap reveal"><table class="mc14-xtable"><thead><tr><th>What you get</th><th>Why it matters</th></tr></thead><tbody><tr><td><strong>I know the Cheshire market</strong>Affluent commuter belt plus pharma B2B — I target both.</td><td></td></tr><tr><td><strong>Town-level detail</strong>Not one “Cheshire” page — proper pages per town.</td><td></td></tr><tr><td><strong>$700 flat, month-to-month</strong>One price, no contract.</td><td></td></tr><tr><td><strong>Direct with the doer</strong>You talk to me. I do the work.</td><td></td></tr></tbody></table></div>
 </div></section>
 
 <section class="mc14-sec" id="pricing">
 <div class="mc14-in" style="text-align:center;">
 <span class="mc14-eyebrow reveal">PRICING</span>
 <h2 class="mc14-h2 reveal d1">One plan. One price.</h2>
-<p class="mc14-lede reveal d2">Everything local SEO needs, done monthly by one senior person.</p>
+<p class="mc14-lede reveal d2">Everything Macclesfield local SEO needs, done monthly by one senior person.</p>
 <div class="mc14-pricecard reveal">
 <div class="mc14-pricetop"><strong>Local SEO, monthly</strong><div class="mc14-amt">$700<span>/month</span></div></div>
 <ul><li><b>✓</b>Google Business Profile optimisation + monthly posts</li><li><b>✓</b>Technical fixes, prioritised by impact</li><li><b>✓</b>Local keyword targeting for your towns</li><li><b>✓</b>Content: service and area pages that match real queries</li><li><b>✓</b>Review generation system</li><li><b>✓</b>Plain-English monthly report — what I did and why</li><li><b>✓</b>No contract. No setup fee. Cancel anytime.</li></ul>
 <div style="text-align:center;"><a href="#contact" class="mc14-cta">Start With a Free Audit</a></div>
 </div>
-<p class="reveal" style="color:#a2a9bb;font-size:14px;margin-top:22px;">The audit is free and comes with no obligation. If you want me to fix what it finds, that is the paid work.</p>
+<p class="reveal" style="color:#a2a9bb;font-size:14px;margin-top:22px;">The audit is free and comes with no obligation. If you want me to fix what it finds for your Macclesfield business, that is the paid work.</p>
 </div></section>
 
 <section class="mc14-ctaband">
 <div class="mc14-ctaband__in">
 <span class="mc14-eyebrow reveal">FREE AUDIT</span>
 <h2 class="reveal d1">See how Cheshire searches see you.</h2>
-<p class="reveal d2">A free hand-done audit of your site, profiles and local competitors — gaps and quick wins, plainly stated.</p>
+<p class="reveal d2">A free hand-done audit of your site, profiles and Cheshire competitors — gaps and quick wins, plainly stated.</p>
 <div class="reveal d3"><a href="#contact" class="mc14-cta">Get My Free Audit</a></div>
 </div></section>
 
 <section id="faq"><div class="mc14-faq__in">
 <div class="section-head center"><span class="eyebrow reveal">FAQs</span><h2 class="h-section reveal d1">Macclesfield <span class="text-grad">questions, answered.</span></h2></div>
-<div class="reveal" style="max-width:760px;margin:0 auto 28px;text-align:center;"><p style="font-size:17px;color:var(--text-dim);line-height:1.75;">Straight answers, no sales talk. If your question is not here, the free audit covers it.</p></div>
+<div class="reveal" style="max-width:760px;margin:0 auto 28px;text-align:center;"><p style="font-size:17px;color:var(--text-dim);line-height:1.75;">Straight answers, no sales talk. If your question is not here, the free Macclesfield audit covers it.</p></div>
 <div class="faq__list">
 <div class="faq-item"><button class="faq-item__q" type="button">We supply into the pharmaceutical supply chain — can SEO win us B2B contracts?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">Yes — and it's one of the highest-value SEO plays in Cheshire. Procurement teams and engineering managers at the big pharma sites search for specialist suppliers constantly: precision engineering, cleanroom services, validation, logistics, compliance consultancy. They compare on technical credibility, so the content that wins is detailed and proof-heavy — capability pages, case studies, certifications — not brochure copy. I also optimise for the exact phrasing engineers use, which is rarely the phrasing marketing teams guess.</div></div></div>
 <div class="faq-item"><button class="faq-item__q" type="button">Should a Macclesfield business also target Wilmslow and Alderley Edge?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">Almost always yes, but as separate targets. Searches like 'solicitor Wilmslow' or 'financial adviser Alderley Edge' carry different intent and competition than their Macclesfield equivalents — the villages skew wealthier and more private-client. I build a hub-and-spoke location structure: a strong Macclesfield core page, then dedicated pages for the satellite towns that earn their own rankings. Done right, the pages reinforce each other instead of splitting your authority.</div></div></div>
@@ -277,7 +277,7 @@
       <div class="contact__lhs">
         <span class="eyebrow">Let's rank</span>
         <h2 class="h-section" style="margin-top:18px" id="ctaH2">Get your free <span class="text-grad">Macclesfield</span> SEO audit</h2>
-        <p>Book a free 30-minute strategy call. I'll audit your current visibility live and show you exactly where you stand today, and what closing the gap would take.</p>
+        <p>Book a free 30-minute strategy call. I will audit your Macclesfield visibility live and show you exactly where you stand today — and what closing the gap would take.</p>
         <div class="contact__info">
           <a href="mailto:info@globeskillz.com" data-magnetic>
             <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
@@ -522,5 +522,7 @@
   } catch (e) { document.getElementById('relatedReading').style.display = 'none'; }
 })();
 </script>
+<script src="../../assets/js/lottie.min.js"></script>
+<script>(function(){var els=document.querySelectorAll('[data-lot]');if(!els.length||typeof lottie==='undefined')return;els.forEach(function(el){try{var anim=lottie.loadAnimation({container:el,renderer:'svg',loop:true,autoplay:true,path:'../../assets/lottie/'+el.getAttribute('data-lot')});anim.addEventListener('DOMLoaded',function(){var img=el.querySelector('img');if(img)img.style.display='none';});}catch(e){}});})();</script>
 </body>
 </html>

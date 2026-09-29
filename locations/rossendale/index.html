@@ -29,9 +29,9 @@
 :root{--font-display:'Space Grotesk',sans-serif;--font-body:'Inter',sans-serif;}
 
 .rs8-hero{width:100%;min-height:94vh;display:flex;align-items:center;justify-content:center;padding:110px 24px 80px;background:radial-gradient(ellipse 85% 55% at 50% -10%,#0e1630 0%,#06070d 60%),#06070d;position:relative;overflow:hidden;overflow-x:clip;text-align:center;}
-.rs8-hero__in{position:relative;max-width:1020px;margin:0 auto;width:100%;}
+.rs8-hero__in{position:relative;max-width:1240px;margin:0 auto;width:100%;}
 .rs8-eyebrow{background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;font-size:12px;font-weight:800;letter-spacing:3px;}
-.rs8-hero h1{color:#eef1f7;font-family:var(--font-display);font-weight:700;font-size:clamp(34px,5.4vw,64px);line-height:1.12;margin:18px 0 22px;}
+.rs8-hero h1{color:#eef1f7;font-family:var(--font-display);font-weight:700;font-size:clamp(38px,5.4vw,68px);line-height:1.12;margin:18px 0 22px;max-width:1100px;margin-left:auto;margin-right:auto;text-wrap:balance;}
 .rs8-grad{background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;}
 .rs8-sub{color:#a2a9bb;font-size:clamp(16px,2vw,19px);line-height:1.75;max-width:680px;margin:0 auto 40px;}
 .rs8-ctas{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:60px;}
@@ -202,6 +202,9 @@ img{max-width:100%;}
 }
 
 
+.rs8-xtl{overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 2px 18px;}.rs8-xtl__track{display:flex;gap:18px;min-width:680px;}.rs8-xtl__node{flex:1 0 220px;scroll-snap-align:start;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:26px 24px;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);}.rs8-xtl__n{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);color:#06070d;font-weight:800;font-size:18px;margin-bottom:16px;}.rs8-xtl__node strong{display:block;color:#eef1f7;font-size:17px;margin-bottom:10px;}.rs8-xtl__node p{color:#a2a9bb;font-size:15px;line-height:1.7;margin:0;}@media(max-width:640px){.rs8-xtl__track{flex-direction:column;min-width:0;}}
+.rs8-xwho{padding:70px 24px;}.rs8-xwho__in{max-width:1120px;margin:0 auto;text-align:center;}.rs8-xwho__k{font-size:12px;font-weight:800;letter-spacing:3px;color:#22d3ee;}.rs8-xwho__in h2{color:#eef1f7;font-family:var(--font-display);font-size:clamp(28px,3.6vw,44px);margin:14px 0 16px;}.rs8-xwho__p{color:#a2a9bb;font-size:16.5px;line-height:1.75;max-width:720px;margin:0 auto 30px;}.rs8-xwho__chips{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}.rs8-xwho__chips span{display:inline-block;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);color:#d7dce8;font-size:14.5px;font-weight:600;padding:12px 24px;border-radius:100px;cursor:default;}@media(max-width:640px){.rs8-xwho{padding:54px 20px;}}
+.rs8-lot{width:100%;max-width:420px;aspect-ratio:1;margin:0 auto;position:relative;display:grid;place-items:center;}.rs8-lot img{max-width:100%;height:auto;}
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TVYVGRLRW"></script>
@@ -272,10 +275,10 @@ img{max-width:100%;}
 <span class="rs8-kicker">SEO EXPERT &middot; ROSSENDALE</span>
 <h2>Why Rossendale businesses choose me</h2>
 <p>Rossendale isn’t a city — it’s a valley of around 70,000 people strung along the upper Irwell between Manchester and West Yorkshire. That changes the SEO game completely: one map pack covers Rawtenstall, Bacup, and Haslingden, reviews carry enormous weight, and a single strong website beats five thin ones. I help valley trades and independents win the searches that actually ring the phone.</p>
-<p>I work with a small number of clients at a time, so every business gets <strong>hands-on work and direct answers</strong> — not a ticket queue, not a junior account manager.</p>
+<p>I work with a small number of clients at a time, so every Rossendale business gets <strong>hands-on work and direct answers</strong> — not a ticket queue, not a junior account manager.</p>
 <ul class="rs8-ticks"><li><span class="rs8-tick">✓</span>Free audit shows exactly where you stand</li><li><span class="rs8-tick">✓</span>Fixed monthly plan — no hourly billing surprises</li><li><span class="rs8-tick">✓</span>Reports in plain language, every month</li></ul>
 </div>
-<div class="rs8-img reveal d1"><img src="assets/img/locations/rossendale-1.jpg" alt="Manchester waterfront at dusk, near Rossendale, England" loading="lazy"></div>
+<div class="rs8-img reveal d1"><div class="rs8-lot lot" data-lot="bars-grow.json"><img src="/assets/img/locations/rossendale-1.jpg" alt="Manchester waterfront at dusk, near Rossendale, England — hero visual" loading="lazy"></div></div>
 </div>
 </div>
 </section>
@@ -285,9 +288,9 @@ img{max-width:100%;}
 <div class="rs8-fix__head">
 <span class="rs8-kicker" style="background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;font-size:12px;font-weight:800;letter-spacing:3px;">THE FIX</span>
 <h2>What I do for <span class="rs8-grad">Rossendale businesses</span></h2>
-<p>Four steps. No jargon, no 40-page reports you will never read — just the work that moves the needle.</p>
+<p>Four steps, shaped for the valley. No jargon, no 40-page reports you will never read — just the work that moves the needle.</p>
 </div>
-<div class="rs8-steps"><div class="rs8-step reveal d0"><span class="rs8-step__n">1</span><strong>Know your starting line</strong><p>A scored audit across your site, profile and reviews, benchmarked against the Rossendale competitors winning your searches.</p></div><div class="rs8-step reveal d1"><span class="rs8-step__n">2</span><strong>Fix what leaks first</strong><p>The quick wins: profile gaps, wrong categories, broken basics — fixed in the first weeks, not someday.</p></div><div class="rs8-step reveal d2"><span class="rs8-step__n">3</span><strong>Build the moat</strong><p>Ongoing pages, reviews and authority that make your Rossendale rankings harder to take every month.</p></div><div class="rs8-step reveal d0"><span class="rs8-step__n">4</span><strong>Watch it compound</strong><p>Monthly reporting in plain language, so you always know what the work bought you.</p></div></div>
+<div class="rs8-xtl"><div class="rs8-xtl__track"><div class="rs8-xtl__node reveal"><span class="rs8-xtl__n">1</span><strong>Know your starting line</strong><p>A scored audit across your site, profile and reviews, benchmarked against the Rossendale competitors winning your searches.</p></div><div class="rs8-xtl__node reveal"><span class="rs8-xtl__n">2</span><strong>Fix what leaks first</strong><p>The quick wins: gaps in your profile, wrong categories, broken basics — fixed in the first weeks, not someday.</p></div><div class="rs8-xtl__node reveal"><span class="rs8-xtl__n">3</span><strong>Build the moat</strong><p>Ongoing pages, reviews and authority that make your Rossendale rankings harder to take every month.</p></div><div class="rs8-xtl__node reveal"><span class="rs8-xtl__n">4</span><strong>Watch it compound</strong><p>Monthly reporting in plain language, so you always know exactly what the work bought you.</p></div></div></div>
 </div>
 </section>
 
@@ -306,27 +309,29 @@ img{max-width:100%;}
 </div>
 </div>
 </section>
+<section class="rs8-xwho"><div class="rs8-xwho__in"><span class="rs8-xwho__k">WHO I WORK WITH</span><h2>Built for <span class="rs8-grad">businesses like yours</span></h2><p class="rs8-xwho__p">Valley trades and independents — businesses that win when the phone rings from local searches.</p><div class="rs8-xwho__chips"><span>Valley trades</span><span>Independents</span></div></div></section>
+
 
 <section class="rs8-why">
 <div class="rs8-why__in">
 <div class="rs8-why__head">
 <span style="background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;font-size:12px;font-weight:800;letter-spacing:3px;">WHY ME</span>
 <h2>Why <span class="rs8-grad">Rossendale</span> businesses hire me</h2>
-<p>I am not an agency with a sales team. I am the person who does the work — and the person who answers when you ask what is happening.</p>
+<p>I am not an agency with a sales team. I am the person who does the work — and the person who answers when you ask what is happening in your valley market.</p>
 </div>
-<div class="rs8-cards"><div class="rs8-card reveal d0"><div class="rs8-card__icon">◈</div><strong>I have done this before</strong><p>Years of ranking local businesses across Rossendale. The patterns are the same; the local details are what I get right.</p></div><div class="rs8-card reveal d1"><div class="rs8-card__icon">○</div><strong>Strategy, not checklists</strong><p>Every Rossendale market is different. Your plan is built from your audit and your competitors — not a template.</p></div><div class="rs8-card reveal d2"><div class="rs8-card__icon">▣</div><strong>Honest about timelines</strong><p>Local SEO takes months, not days. I will tell you what is realistic for your market instead of selling a fantasy.</p></div><div class="rs8-card reveal d0"><div class="rs8-card__icon">◎</div><strong>You see all the work</strong><p>Every change documented, every month. Nothing hidden, nothing vague, nothing you cannot verify yourself.</p></div></div>
+<div class="rs8-cards"><div class="rs8-card reveal d0"><div class="rs8-card__icon">◈</div><strong>I have done this before</strong><p>Years of ranking local businesses across Rossendale. The patterns are the same; the local details are what I get right.</p></div><div class="rs8-card reveal d1"><div class="rs8-card__icon">○</div><strong>Strategy, not checklists</strong><p>Every Rossendale market is different. Your plan is built from your audit and your competitors — not a template.</p></div><div class="rs8-card reveal d2"><div class="rs8-card__icon">▣</div><strong>Honest about timelines</strong><p>Local SEO in the valley takes months, not days. I will tell you what is realistic for Rossendale instead of selling a fantasy.</p></div><div class="rs8-card reveal d0"><div class="rs8-card__icon">◎</div><strong>You see all the work</strong><p>Every change documented, every single month. Nothing hidden, nothing vague, nothing you cannot verify yourself.</p></div></div>
 </div>
 </section>
 
 <section class="rs8-sec2">
 <div class="rs8-sec2__in">
 <div class="rs8-split2">
-<div class="rs8-img2 reveal"><img src="assets/img/locations/rossendale-1.jpg" alt="Manchester waterfront at dusk, near Rossendale, England" loading="lazy"></div>
+<div class="rs8-img2 reveal"><img src="/assets/img/locations/rossendale-1.jpg" alt="Manchester waterfront at dusk, near Rossendale, England" loading="lazy"></div>
 <div class="reveal d1">
 <span class="rs8-kicker2" style="background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;font-size:12px;font-weight:800;letter-spacing:3px;">HOW IT WORKS</span>
 <h2>Local SEO for <span class="rs8-grad">Rossendale</span>, done the honest way</h2>
 <p>Ranking in Rossendale is not about tricks. It is about <strong>being the most complete, most trusted answer</strong> when a local customer searches — on your website, on your Google Business Profile, and across the local web.</p>
-<p>That is what I build: a profile that looks alive, pages that match how locals actually search, and a review flow that keeps working while you run your business.</p>
+<p>That is what I build for you: a profile that looks alive, pages that match how Rossendale customers actually search, and a review flow that keeps working while you run your business.</p>
 </div>
 </div>
 </div>
@@ -385,7 +390,7 @@ img{max-width:100%;}
 <section class="rs8-ranked">
 <div class="rs8-ranked__in">
 <h2 class="reveal">ALSO RANKED</h2>
-<p class="reveal d1">I also help businesses in these nearby areas rank on Google.</p>
+<p class="reveal d1">I also help businesses in these nearby valley areas rank on Google.</p>
 <div class="rs8-rchips reveal d2"><span class="rs8-rchip">Manchester</span><span class="rs8-rchip">Burnley</span><span class="rs8-rchip">Blackburn</span><span class="rs8-rchip">Bury</span><span class="rs8-rchip">Rochdale</span><span class="rs8-rchip">Accrington</span><span class="rs8-rchip">Preston</span><span class="rs8-rchip">Bolton</span></div>
 </div>
 </section>
@@ -403,7 +408,7 @@ img{max-width:100%;}
       <div class="contact__lhs">
         <span class="eyebrow">Let's rank</span>
         <h2 class="h-section" style="margin-top:18px" id="ctaH2">Ready to dominate <span class="text-grad">Rossendale</span>?</h2>
-        <p>Book a free 30-minute strategy call. I'll audit your current visibility live and tell you exactly what it would take to reach the top 3.</p>
+        <p>Book a free 30-minute strategy call. I'll audit your Rossendale visibility live and tell you exactly what it would take to reach the top 3.</p>
         <div class="contact__info">
           <a href="mailto:info@globeskillz.com" data-magnetic>
             <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
@@ -621,7 +626,7 @@ img{max-width:100%;}
   try {
     const RP = '../../';
     const posts = await (await fetch(RP + 'data/blog/index.json')).json();
-    const words = "SEO expert USA local map pack".toLowerCase().split(/[^a-z]+/).filter(w => w.length > 3);
+    const words = "SEO expert Rossendale local trades Lancashire reviews".toLowerCase().split(/[^a-z]+/).filter(w => w.length > 3);
     const scored = posts.map(bp => {
       const hay = (bp.title + ' ' + (bp.keyword || '') + ' ' + bp.excerpt).toLowerCase();
       let s = 0; words.forEach(w => { if (hay.includes(w)) s++; });
@@ -647,5 +652,7 @@ img{max-width:100%;}
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Rossendale SEO Services", "description": "Rossendale SEO services: rank across Rawtenstall, Bacup and Haslingden. Valley-focused local SEO for trades and independents. Free audit.", "url": "https://globeskillz.com/locations/rossendale/", "provider": {"@type": "Organization", "name": "Globe Skillz", "url": "https://globeskillz.com/"}, "areaServed": "Rossendale"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://globeskillz.com/"}, {"@type": "ListItem", "position": 2, "name": "Locations", "item": "https://globeskillz.com/#coverage"}, {"@type": "ListItem", "position": 3, "name": "Rossendale SEO Services", "item": "https://globeskillz.com/locations/rossendale/"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Should I target “Rossendale” keywords or my town name?","acceptedAnswer":{"@type":"Answer","text":"Both, in layers. “Rossendale” terms carry the biggest valley-wide volume — put them on your homepage and main service pages. Town terms like “plumber Rawtenstall” convert sharper — give them supporting pages or sections with genuinely local content. Never build thin doorway pages for every town; Google punishes them and customers see through them."}},{"@type":"Question","name":"Can a Haslingden business rank for Bacup searches?","acceptedAnswer":{"@type":"Answer","text":"Yes. The valley is effectively one search market — Google’s local results mix businesses from all three towns, ranked on relevance, reviews, and profile strength rather than postcode. A Haslingden business with 120 reviews will outrank a Bacup competitor with 12 for “Bacup” searches. Strength beats location in a valley this compact."}},{"@type":"Question","name":"Is SEO worth it in a valley of around 70,000 people?","acceptedAnswer":{"@type":"Answer","text":"More than in a city, pound for pound. Competition is thin, so the fundamentals — a complete profile, steady reviews, a relevant website — can win you the whole valley’s map pack, not just one neighbourhood. And every “near me” search on a phone in Rawtenstall, Bacup, or Haslingden is a customer choosing between you and whoever bothered to show up."}},{"@type":"Question","name":"Do I even need a website, or is Facebook enough in Rossendale?","acceptedAnswer":{"@type":"Answer","text":"Facebook is excellent for community and repeat customers — keep it. But new customers search Google, not Facebook, when they don’t know your name yet. “Plumber Rossendale” is typed into Google. The valley’s winners do both: Facebook for community, Google for capture. A simple, fast, honest website plus a proper Business Profile covers the Google side."}},{"@type":"Question","name":"How do I get reviews as a Rossendale trades business?","acceptedAnswer":{"@type":"Answer","text":"Ask at the moment of maximum goodwill — right when the job’s finished and the customer’s happy — with a direct link, not a vague “please review us”. A short text with the link outperforms email by a mile. Then reply to each review; in a valley where everyone knows everyone, visible replies are reputation advertising. I set this system up for clients in week one because it’s the highest-ROI work in valley SEO."}}]}</script>
+<script src="../../assets/js/lottie.min.js"></script>
+<script>(function(){var els=document.querySelectorAll('[data-lot]');if(!els.length||typeof lottie==='undefined')return;els.forEach(function(el){try{var anim=lottie.loadAnimation({container:el,renderer:'svg',loop:true,autoplay:true,path:'../../assets/lottie/'+el.getAttribute('data-lot')});anim.addEventListener('DOMLoaded',function(){var img=el.querySelector('img');if(img)img.style.display='none';});}catch(e){}});})();</script>
 </body>
 </html>

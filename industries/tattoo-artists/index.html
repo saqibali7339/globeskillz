@@ -30,6 +30,29 @@
 <style>
 :root{--font-display:"Space Grotesk","Inter",ui-sans-serif,system-ui,sans-serif;--font-body:"Inter",ui-sans-serif,system-ui,sans-serif;}
 body{font-family:var(--font-body);}
+.ta5-lot{width:100%;max-width:320px;aspect-ratio:1;margin:0 auto;position:relative;display:grid;place-items:center}
+.ta5-lot img{width:100%;height:auto;border-radius:20px;display:block;border:1px solid rgba(255,255,255,.1)}
+@media (max-width:640px){.ta5-lot{max-width:280px}}
+.ta5-bawrap{overflow-x:auto;margin-top:38px;border-radius:18px;border:1px solid rgba(255,255,255,.09)}
+.ta5-ba{width:100%;border-collapse:collapse;min-width:560px;background:rgba(255,255,255,.03)}
+.ta5-ba th,.ta5-ba td{text-align:left;padding:22px 24px;vertical-align:top}
+.ta5-ba thead th{font-family:var(--font-display);font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--text-dim);border-bottom:1px solid rgba(255,255,255,.1)}
+.ta5-ba tbody tr+tr td{border-top:1px solid rgba(255,255,255,.07)}
+.ta5-ba td strong{font-family:var(--font-display);font-size:17px;color:var(--text);display:block;margin-bottom:8px}
+.ta5-ba td span{color:var(--text-dim);line-height:1.7;font-size:15.5px;display:block}
+.ta5-ba tbody td:last-child{background:linear-gradient(135deg,rgba(124,92,255,.10),rgba(34,211,238,.10))}
+@media (max-width:640px){.ta5-ba th,.ta5-ba td{padding:16px}}
+.ta5-n9grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:38px}
+.ta5-n9card{background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.09);border-radius:18px;overflow:hidden}
+.ta5-n9b{padding:24px 26px;margin:0;opacity:.65;border-bottom:1px solid rgba(255,255,255,.08)}
+.ta5-n9a{padding:24px 26px;margin:0;background:linear-gradient(135deg,rgba(124,92,255,.12),rgba(34,211,238,.12))}
+.ta5-n9tag{display:inline-block;font-size:11px;letter-spacing:.22em;font-weight:700;padding:6px 14px;border-radius:999px;margin-bottom:12px}
+.ta5-n9b .ta5-n9tag{background:rgba(255,255,255,.08);color:var(--text-dim)}
+.ta5-n9a .ta5-n9tag{background:linear-gradient(135deg,#7c5cff,#22d3ee);color:#0b0e14}
+.ta5-n9card strong{font-family:var(--font-display);font-size:17px;color:var(--text);display:block;margin-bottom:8px}
+.ta5-n9card span.ta5-n9d{color:var(--text-dim);line-height:1.7;font-size:15px;display:block}
+@media (max-width:640px){.ta5-n9grid{grid-template-columns:1fr}}
+
 </style>
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "Service", "name": "SEO Expert for Tattoo Artists", "description": "SEO expert for tattoo artists: rank for your style and city so dream clients find your portfolio and book consultations. Free audit.", "url": "https://globeskillz.com/industries/tattoo-artists/", "provider": {"@type": "Organization", "name": "Globe Skillz", "url": "https://globeskillz.com/"}, "areaServed": "Tattoo Artists"}
@@ -119,9 +142,9 @@ body{font-family:var(--font-body);}
 
 <style>
 .ta5-hero{position:relative;width:100%;min-height:96vh;display:flex;align-items:center;justify-content:center;overflow:hidden;background:radial-gradient(ellipse at 50% 25%,#12081c 0%,#06070d 62%);}
-.ta5-hero__inner{position:relative;max-width:960px;padding:110px 24px 80px;text-align:center;}
+.ta5-hero__inner{width:100%;position:relative;max-width:1240px;padding:110px 24px 80px;text-align:center;margin:0 auto;}
 .ta5-kicker{display:inline-flex;align-items:center;gap:10px;background:rgba(124,92,255,.12);border:1px solid rgba(124,92,255,.45);color:#ddd0ff;font-size:12.5px;font-weight:700;letter-spacing:1.5px;padding:11px 22px;border-radius:100px;margin-bottom:30px;}
-.ta5-title{font-size:clamp(38px,6.2vw,74px);line-height:1.06;color:#fff;margin:0 0 20px;font-family:var(--font-display);font-weight:800;letter-spacing:-1px;}
+.ta5-title{font-size:clamp(38px,5.4vw,68px);line-height:1.06;color:#fff;margin:0 auto 20px;font-family:var(--font-display);font-weight:800;letter-spacing:-1px;max-width:1100px;text-wrap:balance;}
 .ta5-sub{color:#a2a9bb;font-size:19px;line-height:1.7;margin:0 auto 40px;max-width:720px;}
 .ta5-ctas{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:56px;}
 .ta5-duel{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:860px;margin:0 auto;text-align:left;}
@@ -223,13 +246,13 @@ body{font-family:var(--font-body);}
 <div class="ta5-wrap">
 <span class="ta5-label">HOW CLIENTS ACTUALLY BOOK</span>
 <h2 class="ta5-h2">They pick the style first, the artist second.</h2>
-<div class="ta5-cards"><div class="ta5-card"><strong>Style + city is the search</strong><span>&ldquo;Fine line tattoo Chicago&rdquo; &mdash; clients arrive knowing exactly what they want. The style page that matches wins before the portfolio loads.</span></div><div class="ta5-card"><strong>Healed work closes</strong><span>Fresh photos impress; healed photos convince. Pages built around healed portfolios filter for serious clients.</span></div><div class="ta5-card"><strong>Consultation is the conversion</strong><span>Nobody books a sleeve from a homepage. They book a consultation &mdash; and that page has to be one tap away, everywhere.</span></div><div class="ta5-card"><strong>Instagram is rented</strong><span>An algorithm change can halve your reach overnight. Google is where new clients go looking &mdash; browsing is not buying.</span></div></div>
+<div class="ta5-bawrap"><table class="ta5-ba"><thead><tr><th>Before</th><th>After</th></tr></thead><tbody><tr><td><strong>Style + city is the search</strong><span>“Fine line tattoo Chicago” — clients arrive knowing exactly what they want. The style page that matches wins before the portfolio loads.</span></td><td><strong>Style pages for your real styles</strong><span>Only the styles you actually do — blackwork, realism, fine line — each with its own ranking page and portfolio.</span></td></tr><tr><td><strong>Healed work closes</strong><span>Fresh photos impress; healed photos convince. Pages built around healed portfolios filter for serious clients.</span></td><td><strong>Artist pages for every resident</strong><span>Name, style, healed work, booking path. These rank for style + name searches your competitors ignore.</span></td></tr><tr><td><strong>Consultation is the conversion</strong><span>Nobody books a sleeve from a homepage. They book a consultation — and that page has to be one tap away, everywhere.</span></td><td><strong>Consultation booking that converts</strong><span>Clear process, deposit info, and wait times — so ideal clients book and the rest self-filter.</span></td></tr><tr><td><strong>Instagram is rented</strong><span>An algorithm change can halve your reach overnight. Google is where new clients go looking — browsing is not buying.</span></td><td><strong>Flash day and event pages</strong><span>Dedicated pages for flash days capture timely searches and give people something to share and link to.</span></td></tr></tbody></table></div>
 
 </div>
 </section>
 <section class="ta5-split">
 <div class="ta5-split__grid">
-<div class="ta5-imgwrap"><img src="/assets/img/industries/tattoo-artists-1.jpg" alt="A tattoo artist working on a client's arm in a modern studio" loading="lazy"></div>
+<div class="ta5-imgwrap"><div class="ta5-lot" data-lot="bars-grow.json"><img src="/assets/img/industries/tattoo-artists-1.jpg" alt="A tattoo artist working on a client's arm in a modern studio" loading="lazy"></div></div>
 <div class="ta5-scard">
 <span class="ta5-label">STYLE PAGES THAT FILTER</span>
 <h2>The right clients<br>find the right style.</h2>
@@ -270,10 +293,11 @@ body{font-family:var(--font-body);}
 <div class="ta5-price__top"><strong>Tattoo Studio SEO</strong><span class="ta5-price__amt">$700/month</span></div>
 <ul><li><span>&check;</span>Google Business Profile fully managed &mdash; styles, artists, areas, posts</li><li><span>&check;</span>Style + artist ranking pages &mdash; built for consultations</li><li><span>&check;</span>Review engine &mdash; client reviews, responses, reputation</li><li><span>&check;</span>Monthly report &mdash; rankings, reviews, consultation requests in plain English</li><li><span>&check;</span>Direct line to me &mdash; no ticket queues</li></ul>
 <a href="#contact" class="ta5-cta cta-final">Start With a Free Audit &rarr;</a>
-<p class="ta5-price__note">Same SEO plan as on the homepage &mdash; no industry markup. Covering multiple service areas? <a href="#contact">Ask for a custom quote.</a></p>
+<p class="ta5-price__note">Same SEO plan as on the homepage &mdash; no industry markup. One plan covers every style and artist page; covering multiple cities? <a href="#contact">Ask for a custom quote.</a></p>
 </div>
 </div>
 </section>
+<section class="ta5-sec"><div class="ta5-wrap"><div class="section-head"><p class="eyebrow reveal">Before / after</p><h2 class="h-section reveal">What changes when Google does the finding.</h2></div><div class="ta5-n9grid"><div class="ta5-n9card"><p class="ta5-n9b"><span class="ta5-n9tag">BEFORE</span><strong>Healed work closes</strong><span class="ta5-n9d">Fresh photos impress; healed photos convince.</span></p><p class="ta5-n9a"><span class="ta5-n9tag">AFTER</span><strong>Artist pages for every resident</strong><span class="ta5-n9d">Name, style, healed work, booking path. These rank for style + name searches your competitors ignore.</span></p></div><div class="ta5-n9card"><p class="ta5-n9b"><span class="ta5-n9tag">BEFORE</span><strong>Instagram is rented</strong><span class="ta5-n9d">An algorithm change can halve your reach overnight.</span></p><p class="ta5-n9a"><span class="ta5-n9tag">AFTER</span><strong>Flash day and event pages</strong><span class="ta5-n9d">Dedicated pages for flash days capture timely searches and give people something to share and link to.</span></p></div></div></div></section>
 <section class="ta5-ctaband">
 <div class="ta5-ctaband__in">
 <span class="ta5-label">FREE AUDIT</span>
@@ -288,7 +312,7 @@ body{font-family:var(--font-body);}
     <div class="section-head center">
       <span class="eyebrow reveal">FAQs</span>
       <h2 class="h-section reveal d1">What tattoo artists ask me <span class="text-grad">before we start.</span></h2>
-      <p style="margin:0 auto 40px;text-align:center;max-width:720px;color:#a2a9bb;font-size:16.5px;line-height:1.7;">Straight answers to the questions I hear most &mdash; before you spend anything, know exactly what you are getting into.</p>
+      <p style="margin:0 auto 40px;text-align:center;max-width:720px;color:#a2a9bb;font-size:16.5px;line-height:1.7;">Straight answers to the questions tattoo artists ask me most &mdash; cost, timelines, and whether your books are ready to fill, answered before you commit.</p>
     </div>
     <div class="faq__list" id="faqList"><div class="faq-item"><button class="faq-item__q">Will SEO bring me the right style of clients, or just anyone?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">The right ones, because style pages filter for you. A client who lands on your blackwork page and books a consultation already wants blackwork. That is the whole point of style-led SEO: it pre-qualifies clients before they ever message you, so you spend less time declining mismatched projects.</div></div></div><div class="faq-item"><button class="faq-item__q">How long does tattoo SEO take?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">Style pages can start ranking within two to four months in most cities, because competition for specific styles is thinner than you would expect. Most studios never built these pages, so the field is open. Broader terms take longer, but the style pages are where the dream clients come from anyway.</div></div></div><div class="faq-item"><button class="faq-item__q">I am already fully booked. Why would I need SEO?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">Two reasons: selectivity and security. Selectivity means a waitlist of ideal projects instead of whoever walks in, so you can raise rates and choose work you love. Security means the bookings keep coming when Instagram reach dips or a slow season hits. Fully booked today is the best time to build the pipeline.</div></div></div><div class="faq-item"><button class="faq-item__q">Do I still need Instagram if my site ranks?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">Yes, they do different jobs. Instagram is your living portfolio and where clients check you are active. Google is where new clients with intent find you. The artists winning right now run both: Instagram for proof of life, search for a steady flow of consultations.</div></div></div><div class="faq-item"><button class="faq-item__q">Can SEO help with flash days and events?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">Absolutely. A dedicated page for a flash day captures timely searches and gives people something to share and link to. Single flash day pages have pulled in dozens of bookings, because nobody else in the city bothers to build one.</div></div></div><div class="faq-item"><button class="faq-item__q">My studio has several artists. Should each have their own page?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">Yes. Each resident artist deserves a dedicated page with their style, healed portfolio, and booking path. These pages rank for style-plus-city searches and for the artist's name, turning your roster into a set of landing pages instead of a single staff list.</div></div></div></div>
   </div>
@@ -309,7 +333,7 @@ body{font-family:var(--font-body);}
       <div class="contact__lhs">
         <span class="eyebrow">Let&apos;s rank</span>
         <h2 class="h-section" style="margin-top:18px" id="ctaH2">Someone wants your exact style this week. <span class="text-grad">Will they find you?</span></h2>
-        <p>Book a free 30-minute call. I will audit your visibility live, show you where your customers are going instead, and tell you honestly what it would take to win them. No fluff, no jargon.</p>
+        <p>Book a free 30-minute call. I will audit your visibility live, show you where style-searchers are booking instead, and tell you honestly what it would take to win them. No fluff, no jargon.</p>
         <div class="contact__info">
           <a href="mailto:info@globeskillz.com" data-magnetic>
             <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
@@ -429,19 +453,16 @@ setTimeout(function(){
 (async function(){
   try{
     var posts = await (await fetch('../../data/blog/index.json')).json();
-    var words = (document.title + ' ' + PAGE_KW).toLowerCase().split(/[^a-z]+/).filter(function(w){ return w.length > 3; });
-    var scored = posts.map(function(bp){
-      var hay = (bp.title + ' ' + (bp.keyword || '') + ' ' + bp.excerpt).toLowerCase();
-      var s = 0; words.forEach(function(w){ if (hay.includes(w)) s++; });
-      return {bp: bp, s: s};
-    }).filter(function(x){ return x.s > 0; }).sort(function(a,b){ return b.s - a.s; }).slice(0,3);
+    var RR_PICKS = ['how-to-get-wordpress-website-on-google', 'wordpress-developer-near-me', 'what-to-look-for-when-hiring-an-seo-company'];
+    var RR_TAIL = "Written for artists whose next client is searching a style plus a city.";
+    var scored = RR_PICKS.map(function(sg){ for (var i=0;i<posts.length;i++){ if (posts[i].slug===sg) return {bp: posts[i]}; } return null; }).filter(Boolean);
     if (scored.length){
       var g = document.getElementById('rrGrid');
       g.innerHTML = scored.map(function(x){
         var bp = x.bp;
         return '<a class="blog-card" href="../../blog/' + bp.slug + '/">'
           + '<div class="blog-card__img"><img src="../../' + bp.image + '" alt="' + bp.title + '" loading="lazy"></div>'
-          + '<div class="blog-card__body"><h3>' + bp.title + '</h3><p>' + bp.excerpt + '</p>'
+          + '<div class="blog-card__body"><h3>' + bp.title + '</h3><p>' + bp.excerpt + ' ' + RR_TAIL + '</p>'
           + '<span class="blog-card__link">Read article \u2192</span></div></a>';
       }).join('');
       document.getElementById('relatedReading').style.display = 'block';
@@ -536,5 +557,7 @@ setTimeout(function(){
   });
 })();
 </script>
+<script src="../../assets/js/lottie.min.js"></script>
+<script>(function(){var els=document.querySelectorAll('[data-lot]');if(!els.length||typeof lottie==='undefined')return;els.forEach(function(el){try{var anim=lottie.loadAnimation({container:el,renderer:'svg',loop:true,autoplay:true,path:'../../assets/lottie/'+el.getAttribute('data-lot')});anim.addEventListener('DOMLoaded',function(){var img=el.querySelector('img');if(img)img.style.display='none';});}catch(e){}});})();</script>
 </body>
 </html>

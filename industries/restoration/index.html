@@ -30,6 +30,22 @@
 <style>
 :root{--font-display:"Space Grotesk","Inter",ui-sans-serif,system-ui,sans-serif;--font-body:"Inter",ui-sans-serif,system-ui,sans-serif;}
 body{font-family:var(--font-body);}
+.rs3-lot{width:100%;max-width:320px;aspect-ratio:1;margin:0 auto;position:relative;display:grid;place-items:center}
+.rs3-lot img{width:100%;height:auto;border-radius:20px;display:block;border:1px solid rgba(255,255,255,.1)}
+@media (max-width:640px){.rs3-lot{max-width:280px}}
+.rs3-xtablewrap{overflow-x:auto;margin-top:38px;border-radius:18px;border:1px solid rgba(255,255,255,.09)}
+.rs3-xtable{width:100%;border-collapse:collapse;min-width:540px;background:rgba(255,255,255,.03)}
+.rs3-xtable th,.rs3-xtable td{text-align:left;padding:20px 24px;vertical-align:top}
+.rs3-xtable thead th{font-family:var(--font-display);font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--text-dim);border-bottom:1px solid rgba(255,255,255,.1)}
+.rs3-xtable tbody tr+tr td{border-top:1px solid rgba(255,255,255,.07)}
+.rs3-xtable td strong{font-family:var(--font-display);font-size:17px;color:var(--text);display:block;margin-bottom:6px}
+.rs3-xtable td{color:var(--text-dim);line-height:1.7;font-size:15.5px}
+@media (max-width:640px){.rs3-xtable th,.rs3-xtable td{padding:16px}}
+.rs3-n1chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.rs3-n1chips span{padding:10px 22px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);font-size:14.5px;color:var(--text)}
+.rs3-n1note{color:var(--text-dim);margin:24px 0 0;font-size:16px;line-height:1.7}
+@media (max-width:640px){.rs3-n1chips{gap:10px}}
+
 </style>
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "Service", "name": "SEO For Restoration Companies", "description": "SEO for restoration companies: emergency water, mold, and fire damage pages that turn disaster searches into booked jobs. Free audit.", "url": "https://globeskillz.com/industries/restoration/", "provider": {"@type": "Organization", "name": "Globe Skillz", "url": "https://globeskillz.com/"}, "areaServed": "Restoration"}
@@ -119,13 +135,13 @@ body{font-family:var(--font-body);}
 
 <style>
 .rs3-hero{position:relative;width:100%;min-height:96vh;display:flex;align-items:center;justify-content:center;overflow:hidden;background:radial-gradient(ellipse at 50% 30%,#140d08 0%,#06070d 65%);}
-.rs3-hero__inner{position:relative;max-width:920px;padding:110px 24px 80px;text-align:center;}
+.rs3-hero__inner{width:100%;position:relative;max-width:1240px;padding:110px 24px 80px;text-align:center;margin:0 auto;}
 .rs3-kicker{display:inline-flex;align-items:center;gap:10px;background:rgba(34,211,238,.1);border:1px solid rgba(34,211,238,.4);color:#c9f6ff;font-size:12.5px;font-weight:700;letter-spacing:1.5px;padding:11px 22px;border-radius:100px;margin-bottom:34px;}
 .rs3-quote{background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.12);border-left:5px solid #22d3ee;border-radius:20px;padding:44px 40px;backdrop-filter:blur(10px);text-align:left;max-width:780px;margin:0 auto 40px;position:relative;}
 .rs3-quote::before{content:"\201C";position:absolute;top:6px;left:26px;font-size:90px;color:rgba(34,211,238,.35);font-family:var(--font-display);line-height:1;}
 .rs3-quote p{color:#eef1f7;font-size:clamp(19px,2.6vw,26px);line-height:1.55;margin:20px 0 18px;font-family:var(--font-display);}
 .rs3-quote cite{display:block;color:#a2a9bb;font-size:14px;font-style:normal;}
-.rs3-title{font-size:clamp(38px,6.2vw,72px);line-height:1.06;color:#fff;margin:0 0 20px;font-family:var(--font-display);font-weight:800;letter-spacing:-1px;}
+.rs3-title{font-size:clamp(38px,5.4vw,68px);line-height:1.06;color:#fff;margin:0 auto 20px;font-family:var(--font-display);font-weight:800;letter-spacing:-1px;max-width:1100px;text-wrap:balance;}
 .rs3-sub{color:#a2a9bb;font-size:19px;line-height:1.7;margin:0 auto 38px;max-width:700px;}
 .rs3-ctas{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
 </style>
@@ -202,6 +218,7 @@ body{font-family:var(--font-body);}
 <p class="rs3-lede" style="margin-top:28px;margin-bottom:0;max-width:100%;">Hub and spoke is the structure: an overview page for the trade, dedicated pages for water, mold, and fire, and phase-specific pages beneath each.</p>
 </div>
 </section>
+<section class="rs3-sec"><div class="rs3-wrap"><span class="rs3-label">WHO I WORK WITH</span><h2 class="rs3-h2">Built for the trades <span class="rs3-grad">that answer emergencies.</span></h2><div class="rs3-n1chips"><span>Water damage</span><span>Fire damage</span><span>Mold removal</span><span>Flood cleanup</span></div></div></section>
 <section class="rs3-fix">
 <div class="rs3-fix__in">
 <span class="rs3-label">THE FIX</span>
@@ -211,7 +228,7 @@ body{font-family:var(--font-body);}
 </section>
 <section class="rs3-split">
 <div class="rs3-split__grid">
-<div class="rs3-imgwrap"><img src="/assets/img/industries/restoration-1.jpg" alt="Firefighters battling flames at a residential house" loading="lazy"></div>
+<div class="rs3-imgwrap"><div class="rs3-lot" data-lot="phone-pulse.json"><img src="/assets/img/industries/restoration-1.jpg" alt="Firefighters battling flames at a residential house" loading="lazy"></div></div>
 <div class="rs3-scard">
 <span class="rs3-label">BUILT FOR THE EMERGENCY</span>
 <h2>When the pipe bursts,<br>they should find you first.</h2>
@@ -234,7 +251,7 @@ body{font-family:var(--font-body);}
 <div class="rs3-why__in">
 <span class="rs3-label">WHY ME</span>
 <h2>Why restorers <span class="rs3-grad">pick me.</span></h2>
-<div class="rs3-why__grid"><div class="rs3-wcard"><strong>You talk to me</strong><span>No account managers, no handoffs. The person who audits your listing is the person who fixes it.</span></div><div class="rs3-wcard"><strong>Trades and services, not everything</strong><span>I do local SEO for service businesses specifically &mdash; not &ldquo;we do everything for everyone.&rdquo;</span></div><div class="rs3-wcard"><strong>Plain numbers, no jargon</strong><span>You will see rankings, reviews, and calls. If a report needs a dictionary, it is hiding something.</span></div><div class="rs3-wcard"><strong>One clear plan</strong><span>A single monthly price with visible work every month. No bloated agency layers eating your budget.</span></div></div>
+<div class="rs3-xtablewrap"><table class="rs3-xtable"><thead><tr><th>What you get</th><th>Why it matters</th></tr></thead><tbody><tr><td><strong>You talk to me</strong></td><td>No account managers, no handoffs. The person who audits your listing is the person who fixes it.</td></tr><tr><td><strong>Trades and services, not everything</strong></td><td>I do local SEO for service businesses specifically &mdash; not &ldquo;we do everything for everyone.&rdquo;</td></tr><tr><td><strong>Plain numbers, no jargon</strong></td><td>You will see rankings, reviews, and calls. If a report needs a dictionary, it is hiding something.</td></tr><tr><td><strong>One clear plan</strong></td><td>A single monthly price with visible work every month. No bloated agency layers eating your budget.</td></tr></tbody></table></div>
 </div>
 </section>
 <section class="rs3-price">
@@ -245,7 +262,7 @@ body{font-family:var(--font-body);}
 <div class="rs3-price__top"><strong>Restoration SEO</strong><span class="rs3-price__amt">$700/month</span></div>
 <ul><li><span>&check;</span>Google Business Profile fully managed &mdash; emergency hours, services, areas</li><li><span>&check;</span>Disaster + phase ranking pages &mdash; water, mold, fire, and the searches between</li><li><span>&check;</span>Review engine &mdash; job-specific requests and responses</li><li><span>&check;</span>Monthly report &mdash; rankings, reviews, calls in plain English</li><li><span>&check;</span>Direct line to me &mdash; no ticket queues</li></ul>
 <a href="#contact" class="rs3-cta cta-final">Start With a Free Audit &rarr;</a>
-<p class="rs3-price__note">Same SEO plan as on the homepage &mdash; no industry markup. Covering multiple service areas? <a href="#contact">Ask for a custom quote.</a></p>
+<p class="rs3-price__note">Same SEO plan as on the homepage &mdash; no restoration markup. Water, fire, mold, flood: one plan covers every emergency service; covering multiple service areas? <a href="#contact">Ask for a custom quote.</a></p>
 </div>
 </div>
 </section>
@@ -263,7 +280,7 @@ body{font-family:var(--font-body);}
     <div class="section-head center">
       <span class="eyebrow reveal">FAQs</span>
       <h2 class="h-section reveal d1">What restorers ask me <span class="text-grad">before we start.</span></h2>
-      <p style="margin:0 auto 40px;text-align:center;max-width:720px;color:#a2a9bb;font-size:16.5px;line-height:1.7;">Straight answers to the questions I hear most &mdash; before you spend anything, know exactly what you are getting into.</p>
+      <p style="margin:0 auto 40px;text-align:center;max-width:720px;color:#a2a9bb;font-size:16.5px;line-height:1.7;">Straight answers to the questions restorers ask me most &mdash; cost, speed, and whether your routes are ready, answered before you commit.</p>
     </div>
     <div class="faq__list" id="faqList"><div class="faq-item"><button class="faq-item__q">Should water, mold, and fire each get their own pages?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">Yes. They are distinct searches with distinct intent, and Google rewards the match. Think hub and spoke: an overview page for the trade, then dedicated pages for each disaster and each phase within it. One generic page trying to rank for all three loses to focused pages every time.</div></div></div><div class="faq-item"><button class="faq-item__q">How fast can restoration SEO produce calls?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">Map pack and review fixes can move within weeks, which matters enormously because emergency intent converts immediately. Durable organic rankings for the competitive terms typically take three to six months. The urgency of this trade means even early visibility gains turn into booked jobs fast.</div></div></div><div class="faq-item"><button class="faq-item__q">Do I have to offer genuine 24/7 service?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">Only advertise what you can deliver. If your crew truly answers at 3am, say so on every page, in the headline area. If not, market your real hours brilliantly instead. A missed 3am call while your site promises instant response costs more than honest stated hours.</div></div></div><div class="faq-item"><button class="faq-item__q">What is this adjuster and property-manager channel?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">A large share of restoration work, especially fire and large water losses, comes from insurance adjusters, property managers, and contractors who recommend a restorer they trust. They search differently: company names, commercial terms, credentials. A quiet B2B layer on your site, commercial pages plus proof of capacity, converts them into repeat business.</div></div></div><div class="faq-item"><button class="faq-item__q">Is publishing mold content risky?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">Only if you overclaim. Keep health language measured, never guarantee outcomes you cannot control, and let certifications and process do the persuading. Honest, expert content converts better than hype, and it keeps you clear of trouble.</div></div></div><div class="faq-item"><button class="faq-item__q">We already rank in our town. What is left to win?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">Plenty. Job-type and phase-specific pages, neighboring towns served properly, insurance and claims content, and the B2B layer. Most established restorers rank for their name and one or two terms while leaving the rest of the search landscape open.</div></div></div><div class="faq-item"><button class="faq-item__q">How do you measure success?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">Calls and booked jobs, tracked back to the pages and searches that produced them. Rankings get reported too, but they are the means, not the goal.</div></div></div></div>
   </div>
@@ -284,7 +301,7 @@ body{font-family:var(--font-body);}
       <div class="contact__lhs">
         <span class="eyebrow">Let&apos;s rank</span>
         <h2 class="h-section" style="margin-top:18px" id="ctaH2">The next flooded basement in your area <span class="text-grad">is searching right now.</span></h2>
-        <p>Book a free 30-minute call. I will audit your visibility live, show you where your customers are going instead, and tell you honestly what it would take to win them. No fluff, no jargon.</p>
+        <p>Book a free 30-minute call. I will audit your visibility live, show you where the emergency calls are going instead, and tell you honestly what it would take to win them. No fluff, no jargon.</p>
         <div class="contact__info">
           <a href="mailto:info@globeskillz.com" data-magnetic>
             <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
@@ -404,19 +421,16 @@ setTimeout(function(){
 (async function(){
   try{
     var posts = await (await fetch('../../data/blog/index.json')).json();
-    var words = (document.title + ' ' + PAGE_KW).toLowerCase().split(/[^a-z]+/).filter(function(w){ return w.length > 3; });
-    var scored = posts.map(function(bp){
-      var hay = (bp.title + ' ' + (bp.keyword || '') + ' ' + bp.excerpt).toLowerCase();
-      var s = 0; words.forEach(function(w){ if (hay.includes(w)) s++; });
-      return {bp: bp, s: s};
-    }).filter(function(x){ return x.s > 0; }).sort(function(a,b){ return b.s - a.s; }).slice(0,3);
+    var RR_PICKS = ['how-much-does-seo-cost-uk', 'what-to-look-for-when-hiring-an-seo-company', 'wordpress-developer-near-me'];
+    var RR_TAIL = "Written for restoration contractors who live on emergency calls.";
+    var scored = RR_PICKS.map(function(sg){ for (var i=0;i<posts.length;i++){ if (posts[i].slug===sg) return {bp: posts[i]}; } return null; }).filter(Boolean);
     if (scored.length){
       var g = document.getElementById('rrGrid');
       g.innerHTML = scored.map(function(x){
         var bp = x.bp;
         return '<a class="blog-card" href="../../blog/' + bp.slug + '/">'
           + '<div class="blog-card__img"><img src="../../' + bp.image + '" alt="' + bp.title + '" loading="lazy"></div>'
-          + '<div class="blog-card__body"><h3>' + bp.title + '</h3><p>' + bp.excerpt + '</p>'
+          + '<div class="blog-card__body"><h3>' + bp.title + '</h3><p>' + bp.excerpt + ' ' + RR_TAIL + '</p>'
           + '<span class="blog-card__link">Read article \u2192</span></div></a>';
       }).join('');
       document.getElementById('relatedReading').style.display = 'block';
@@ -511,5 +525,7 @@ setTimeout(function(){
   });
 })();
 </script>
+<script src="../../assets/js/lottie.min.js"></script>
+<script>(function(){var els=document.querySelectorAll('[data-lot]');if(!els.length||typeof lottie==='undefined')return;els.forEach(function(el){try{var anim=lottie.loadAnimation({container:el,renderer:'svg',loop:true,autoplay:true,path:'../../assets/lottie/'+el.getAttribute('data-lot')});anim.addEventListener('DOMLoaded',function(){var img=el.querySelector('img');if(img)img.style.display='none';});}catch(e){}});})();</script>
 </body>
 </html>

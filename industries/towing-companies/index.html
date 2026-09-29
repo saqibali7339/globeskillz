@@ -30,6 +30,22 @@
 <style>
 :root{--font-display:"Space Grotesk","Inter",ui-sans-serif,system-ui,sans-serif;--font-body:"Inter",ui-sans-serif,system-ui,sans-serif;}
 body{font-family:var(--font-body);}
+.tw6-lot{width:100%;max-width:320px;aspect-ratio:1;margin:0 auto;position:relative;display:grid;place-items:center}
+.tw6-lot img{width:100%;height:auto;border-radius:20px;display:block;border:1px solid rgba(255,255,255,.1)}
+@media (max-width:640px){.tw6-lot{max-width:280px}}
+.tw6-tline{display:flex;gap:18px;overflow-x:auto;margin-top:38px;padding-bottom:16px;scroll-snap-type:x mandatory}
+.tw6-tnode{flex:0 0 300px;scroll-snap-align:start;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.09);border-radius:16px;padding:26px}
+.tw6-tn{display:inline-flex;width:44px;height:44px;border-radius:12px;align-items:center;justify-content:center;font-weight:700;color:#0b0e14;background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);margin-bottom:16px;font-family:var(--font-display)}
+.tw6-tnode h3{font-family:var(--font-display);font-size:19px;margin:0 0 8px;color:var(--text)}
+.tw6-tnode p{color:var(--text-dim);line-height:1.65;margin:0;font-size:15.5px}
+@media (max-width:640px){.tw6-tline{flex-direction:column;overflow:visible;scroll-snap-type:none}.tw6-tnode{flex:1 1 auto}}
+.tw6-tline{display:flex;gap:18px;overflow-x:auto;margin-top:38px;padding-bottom:16px;scroll-snap-type:x mandatory}
+.tw6-tnode{flex:0 0 300px;scroll-snap-align:start;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.09);border-radius:16px;padding:26px}
+.tw6-tn{display:inline-flex;width:44px;height:44px;border-radius:12px;align-items:center;justify-content:center;font-weight:700;color:#0b0e14;background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);margin-bottom:16px;font-family:var(--font-display)}
+.tw6-tnode h3{font-family:var(--font-display);font-size:19px;margin:0 0 8px;color:var(--text)}
+.tw6-tnode p{color:var(--text-dim);line-height:1.65;margin:0;font-size:15.5px}
+@media (max-width:640px){.tw6-tline{flex-direction:column;overflow:visible;scroll-snap-type:none}.tw6-tnode{flex:1 1 auto}}
+
 </style>
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "Service", "name": "SEO For Towing Companies", "description": "SEO for towing companies: own the map pack for urgent tow searches and roadside assistance callouts. Get found first. Free audit.", "url": "https://globeskillz.com/industries/towing-companies/", "provider": {"@type": "Organization", "name": "Globe Skillz", "url": "https://globeskillz.com/"}, "areaServed": "Towing Companies"}
@@ -119,9 +135,9 @@ body{font-family:var(--font-body);}
 
 <style>
 .tw6-hero{position:relative;width:100%;min-height:96vh;display:flex;align-items:center;justify-content:center;overflow:hidden;background:radial-gradient(ellipse at 50% 25%,#0a0e1a 0%,#06070d 65%);}
-.tw6-hero__inner{position:relative;max-width:920px;padding:110px 24px 80px;text-align:center;}
+.tw6-hero__inner{width:100%;position:relative;max-width:1240px;padding:110px 24px 80px;text-align:center;margin:0 auto;}
 .tw6-kicker{display:inline-flex;align-items:center;gap:10px;background:rgba(163,255,92,.1);border:1px solid rgba(163,255,92,.4);color:#d9f7b8;font-size:12.5px;font-weight:700;letter-spacing:1.5px;padding:11px 22px;border-radius:100px;margin-bottom:30px;}
-.tw6-title{font-size:clamp(36px,6vw,70px);line-height:1.06;color:#fff;margin:0 0 20px;font-family:var(--font-display);font-weight:800;letter-spacing:-1px;}
+.tw6-title{font-size:clamp(38px,5.4vw,68px);line-height:1.06;color:#fff;margin:0 auto 20px;font-family:var(--font-display);font-weight:800;letter-spacing:-1px;max-width:1100px;text-wrap:balance;}
 .tw6-sub{color:#a2a9bb;font-size:19px;line-height:1.7;margin:0 auto 40px;max-width:720px;}
 .tw6-ctas{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:52px;}
 .tw6-mock{max-width:640px;margin:0 auto;text-align:left;}
@@ -214,7 +230,7 @@ body{font-family:var(--font-body);}
 <main>
 <section class="tw6-split">
 <div class="tw6-split__grid">
-<div class="tw6-imgwrap"><img src="/assets/img/industries/towing-companies-1.jpg" alt="A car being loaded onto a tow truck on the roadside" loading="lazy"></div>
+<div class="tw6-imgwrap"><div class="tw6-lot" data-lot="phone-pulse.json"><img src="/assets/img/industries/towing-companies-1.jpg" alt="A car being loaded onto a tow truck on the roadside" loading="lazy"></div></div>
 <div class="tw6-scard">
 <span class="tw6-label">ONE TAP TO CALL</span>
 <h2>Stranded drivers do not browse.<br>They tap.</h2>
@@ -237,9 +253,10 @@ body{font-family:var(--font-body);}
 <div class="tw6-fix__in">
 <span class="tw6-label">THE FIX</span>
 <h2>Here&rsquo;s exactly <span class="tw6-grad">what I do.</span></h2>
-<div class="tw6-fix__grid"><div class="tw6-fstep"><span>1</span><div><strong>Urgent-keyword map pack</strong><em>&ldquo;Tow truck near me,&rdquo; &ldquo;24 hour towing&rdquo; &mdash; the searches that ring tonight, with a profile built to win them.</em></div></div><div class="tw6-fstep"><span>2</span><div><strong>Service-area pages that are real</strong><em>Every town you serve gets a genuine page &mdash; corridors, landmarks, response notes &mdash; not swapped-name templates.</em></div></div><div class="tw6-fstep"><span>3</span><div><strong>Roadside assistance pages</strong><em>Jump starts, lockouts, fuel, tires: the second keyword market most tow companies leave on the table.</em></div></div><div class="tw6-fstep"><span>4</span><div><strong>Review engine with the right words</strong><em>Reviews that say &ldquo;fast&rdquo; and &ldquo;arrived in 20 minutes&rdquo; &mdash; exactly what the next stranded driver scans for.</em></div></div></div>
+<div class="tw6-tline"><div class="tw6-tnode"><span class="tw6-tn">1</span><div><h3>Urgent-keyword map pack</h3><p>&ldquo;Tow truck near me,&rdquo; &ldquo;24 hour towing&rdquo; &mdash; the searches that ring tonight, with a profile built to win them.</p></div></div><div class="tw6-tnode"><span class="tw6-tn">2</span><div><h3>Service-area pages that are real</h3><p>Every town you serve gets a genuine page &mdash; corridors, landmarks, response notes &mdash; not swapped-name templates.</p></div></div><div class="tw6-tnode"><span class="tw6-tn">3</span><div><h3>Roadside assistance pages</h3><p>Jump starts, lockouts, fuel, tires: the second keyword market most tow companies leave on the table.</p></div></div><div class="tw6-tnode"><span class="tw6-tn">4</span><div><h3>Review engine with the right words</h3><p>Reviews that say &ldquo;fast&rdquo; and &ldquo;arrived in 20 minutes&rdquo; &mdash; exactly what the next stranded driver scans for.</p></div></div></div>
 </div>
 </section>
+<section class="tw6-sec"><div class="tw6-wrap"><div class="section-head"><p class="eyebrow reveal">How the work starts</p><h2 class="h-section reveal">From first call to the phone ringing.</h2></div><div class="tw6-tline"><div class="tw6-tnode"><span class="tw6-tn">1</span><div><h3>The free audit</h3><p>Tell me about your towing operation — I will send back a free audit of your Google presence: what urgent searches show you, what is missing, and which calls are going to competitors.</p></div></div><div class="tw6-tnode"><span class="tw6-tn">2</span><div><h3>Urgent-keyword map pack</h3><p>“Tow truck near me,” “24 hour towing” — the searches that ring tonight, with a profile built to win them.</p></div></div><div class="tw6-tnode"><span class="tw6-tn">3</span><div><h3>Real service-area pages</h3><p>Every town you serve gets a genuine page — corridors, landmarks, response notes — not swapped-name templates.</p></div></div><div class="tw6-tnode"><span class="tw6-tn">4</span><div><h3>Reviews that say “fast”</h3><p>Reviews that say “fast” and “arrived in 20 minutes” — exactly what the next stranded driver scans for.</p></div></div></div></div></section>
 <section class="tw6-sec">
 <div class="tw6-wrap">
 <span class="tw6-label">SPEED BEATS BRAND</span>
@@ -263,7 +280,7 @@ body{font-family:var(--font-body);}
 <div class="tw6-price__top"><strong>Towing SEO</strong><span class="tw6-price__amt">$700/month</span></div>
 <ul><li><span>&check;</span>Google Business Profile fully managed &mdash; 24/7 hours, services, areas</li><li><span>&check;</span>Urgent + roadside ranking pages &mdash; built for calls</li><li><span>&check;</span>Review engine &mdash; requests, responses, reputation</li><li><span>&check;</span>Monthly report &mdash; rankings, reviews, calls in plain English</li><li><span>&check;</span>Direct line to me &mdash; no ticket queues</li></ul>
 <a href="#contact" class="tw6-cta cta-final">Start With a Free Audit &rarr;</a>
-<p class="tw6-price__note">Same SEO plan as on the homepage &mdash; no industry markup. Covering multiple service areas? <a href="#contact">Ask for a custom quote.</a></p>
+<p class="tw6-price__note">Same SEO plan as on the homepage &mdash; no industry markup. Towing, roadside, winch-out: one plan covers every service; covering a wider service area? <a href="#contact">Ask for a custom quote.</a></p>
 </div>
 </div>
 </section>
@@ -281,7 +298,7 @@ body{font-family:var(--font-body);}
     <div class="section-head center">
       <span class="eyebrow reveal">FAQs</span>
       <h2 class="h-section reveal d1">What tow operators ask me <span class="text-grad">before we start.</span></h2>
-      <p style="margin:0 auto 40px;text-align:center;max-width:720px;color:#a2a9bb;font-size:16.5px;line-height:1.7;">Straight answers to the questions I hear most &mdash; before you spend anything, know exactly what you are getting into.</p>
+      <p style="margin:0 auto 40px;text-align:center;max-width:720px;color:#a2a9bb;font-size:16.5px;line-height:1.7;">Straight answers to the questions tow operators ask me most &mdash; cost, coverage, and call readiness, answered before you commit.</p>
     </div>
     <div class="faq__list" id="faqList"><div class="faq-item"><button class="faq-item__q">How fast can SEO work for a towing company?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">Faster than in most trades, because the intent is so urgent. A fixed Google Business Profile, click-to-call pages, and service-area clarity can move the needle in weeks for near me searches. Competitive metro markets take longer, but emergency intent means every position you gain converts immediately.</div></div></div><div class="faq-item"><button class="faq-item__q">What keywords should a towing company target?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">The money is in urgent, specific searches: tow truck near me, 24 hour towing, accident recovery, motorcycle towing, plus each job type combined with the towns you serve. Broad terms matter less than the exact phrase a stranded driver types at 2am.</div></div></div><div class="faq-item"><button class="faq-item__q">Is roadside assistance SEO different from towing SEO?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">Yes, and that is why it has its own section on this page. Towing keywords centre on moving the vehicle, while roadside keywords centre on fixing it on the spot: jump start, lockout service, fuel delivery. The pages, the proof points, and the caller's mindset all differ, so they get separate pages and separate proof.</div></div></div><div class="faq-item"><button class="faq-item__q">Do I need separate pages for each town I serve?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">Yes, but they must be real pages, not cloned templates with the town name swapped. Each service-area page should mention the corridors, landmarks, and job types relevant to that town. Thin doorway pages hurt you; genuinely useful local pages rank.</div></div></div><div class="faq-item"><button class="faq-item__q">How do I compete with the big motoring clubs on roadside calls?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">You do not compete on brand; you compete on speed and locality. Club members wait in a dispatch queue. Your advantage is a direct phone number, faster arrival, and near me visibility at the exact moment of need. SEO puts you in front of non-members and lapsed members the clubs never see.</div></div></div><div class="faq-item"><button class="faq-item__q">How important are reviews for towing SEO?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">Critical. Reviews are the trust signal a stressed searcher reads before calling, and review velocity plus words like fast and arrived quickly feed directly into map rankings. A steady flow of recent, detailed reviews is the single highest-leverage activity for most towers.</div></div></div><div class="faq-item"><button class="faq-item__q">Should I pay for ads or invest in SEO?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">Ads buy you tonight's calls at a price that rises every year. SEO builds an asset that keeps ringing without a per-click cost. Most towing companies I work with do both at first, then lean harder into organic as the rankings compound.</div></div></div></div>
   </div>
@@ -302,7 +319,7 @@ body{font-family:var(--font-body);}
       <div class="contact__lhs">
         <span class="eyebrow">Let&apos;s rank</span>
         <h2 class="h-section" style="margin-top:18px" id="ctaH2">A driver is stranded in your area right now. <span class="text-grad">Will they find you?</span></h2>
-        <p>Book a free 30-minute call. I will audit your visibility live, show you where your customers are going instead, and tell you honestly what it would take to win them. No fluff, no jargon.</p>
+        <p>Book a free 30-minute call. I will audit your visibility live, show you where stranded drivers are calling instead, and tell you honestly what it would take to win them. No fluff, no jargon.</p>
         <div class="contact__info">
           <a href="mailto:info@globeskillz.com" data-magnetic>
             <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
@@ -422,19 +439,16 @@ setTimeout(function(){
 (async function(){
   try{
     var posts = await (await fetch('../../data/blog/index.json')).json();
-    var words = (document.title + ' ' + PAGE_KW).toLowerCase().split(/[^a-z]+/).filter(function(w){ return w.length > 3; });
-    var scored = posts.map(function(bp){
-      var hay = (bp.title + ' ' + (bp.keyword || '') + ' ' + bp.excerpt).toLowerCase();
-      var s = 0; words.forEach(function(w){ if (hay.includes(w)) s++; });
-      return {bp: bp, s: s};
-    }).filter(function(x){ return x.s > 0; }).sort(function(a,b){ return b.s - a.s; }).slice(0,3);
+    var RR_PICKS = ['how-much-does-seo-cost-uk', 'seo-expert-for-small-business', 'wordpress-developer-near-me'];
+    var RR_TAIL = "Written for tow operators who need the phone to ring tonight.";
+    var scored = RR_PICKS.map(function(sg){ for (var i=0;i<posts.length;i++){ if (posts[i].slug===sg) return {bp: posts[i]}; } return null; }).filter(Boolean);
     if (scored.length){
       var g = document.getElementById('rrGrid');
       g.innerHTML = scored.map(function(x){
         var bp = x.bp;
         return '<a class="blog-card" href="../../blog/' + bp.slug + '/">'
           + '<div class="blog-card__img"><img src="../../' + bp.image + '" alt="' + bp.title + '" loading="lazy"></div>'
-          + '<div class="blog-card__body"><h3>' + bp.title + '</h3><p>' + bp.excerpt + '</p>'
+          + '<div class="blog-card__body"><h3>' + bp.title + '</h3><p>' + bp.excerpt + ' ' + RR_TAIL + '</p>'
           + '<span class="blog-card__link">Read article \u2192</span></div></a>';
       }).join('');
       document.getElementById('relatedReading').style.display = 'block';
@@ -529,5 +543,7 @@ setTimeout(function(){
   });
 })();
 </script>
+<script src="../../assets/js/lottie.min.js"></script>
+<script>(function(){var els=document.querySelectorAll('[data-lot]');if(!els.length||typeof lottie==='undefined')return;els.forEach(function(el){try{var anim=lottie.loadAnimation({container:el,renderer:'svg',loop:true,autoplay:true,path:'../../assets/lottie/'+el.getAttribute('data-lot')});anim.addEventListener('DOMLoaded',function(){var img=el.querySelector('img');if(img)img.style.display='none';});}catch(e){}});})();</script>
 </body>
 </html>

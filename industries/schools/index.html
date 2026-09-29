@@ -30,6 +30,23 @@
 <style>
 :root{--font-display:"Space Grotesk","Inter",ui-sans-serif,system-ui,sans-serif;--font-body:"Inter",ui-sans-serif,system-ui,sans-serif;}
 body{font-family:var(--font-body);}
+.sc4-lot{width:100%;max-width:320px;aspect-ratio:1;margin:0 auto;position:relative;display:grid;place-items:center}
+.sc4-lot img{width:100%;height:auto;border-radius:20px;display:block;border:1px solid rgba(255,255,255,.1)}
+@media (max-width:640px){.sc4-lot{max-width:280px}}
+.sc4-accwrap{margin-top:38px;display:grid;gap:12px}
+.sc4-acc{background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.09);border-radius:16px;overflow:hidden}
+.sc4-acc summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 26px;font-family:var(--font-display);font-size:18px;font-weight:600;color:var(--text)}
+.sc4-acc summary::-webkit-details-marker{display:none}
+.sc4-acc summary::after{content:"+";flex:0 0 30px;height:30px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-weight:700;color:#0b0e14;background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);font-size:18px}
+.sc4-acc[open] summary::after{content:"\2212"}
+.sc4-accb{padding:0 26px 24px;color:var(--text-dim);line-height:1.7;font-size:15.5px}
+.sc4-accb p{margin:0}
+@media (max-width:640px){.sc4-acc summary{padding:18px 20px;font-size:16.5px}.sc4-accb{padding:0 20px 20px}}
+.sc4-n1chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.sc4-n1chips span{padding:10px 22px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);font-size:14.5px;color:var(--text)}
+.sc4-n1note{color:var(--text-dim);margin:24px 0 0;font-size:16px;line-height:1.7}
+@media (max-width:640px){.sc4-n1chips{gap:10px}}
+
 </style>
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "Service", "name": "SEO For Local Schools And Tutors", "description": "SEO for local schools and tutors: driving, tutoring, music, dance, martial arts. Rank higher on Google, fill trial lessons. Free audit.", "url": "https://globeskillz.com/industries/schools/", "provider": {"@type": "Organization", "name": "Globe Skillz", "url": "https://globeskillz.com/"}, "areaServed": "Schools"}
@@ -119,9 +136,9 @@ body{font-family:var(--font-body);}
 
 <style>
 .sc4-hero{position:relative;width:100%;min-height:96vh;display:flex;align-items:center;justify-content:center;overflow:hidden;background:radial-gradient(ellipse at 50% 25%,#0d1020 0%,#06070d 62%);}
-.sc4-hero__inner{position:relative;max-width:920px;padding:110px 24px 80px;text-align:center;}
+.sc4-hero__inner{width:100%;position:relative;max-width:1240px;padding:110px 24px 80px;text-align:center;margin:0 auto;}
 .sc4-kicker{display:inline-flex;align-items:center;gap:10px;background:rgba(163,255,92,.1);border:1px solid rgba(163,255,92,.4);color:#d9f7b8;font-size:12.5px;font-weight:700;letter-spacing:1.5px;padding:11px 22px;border-radius:100px;margin-bottom:30px;}
-.sc4-title{font-size:clamp(38px,6.2vw,74px);line-height:1.06;color:#fff;margin:0 0 20px;font-family:var(--font-display);font-weight:800;letter-spacing:-1px;}
+.sc4-title{font-size:clamp(38px,5.4vw,68px);line-height:1.06;color:#fff;margin:0 auto 20px;font-family:var(--font-display);font-weight:800;letter-spacing:-1px;max-width:1100px;text-wrap:balance;}
 .sc4-sub{color:#a2a9bb;font-size:19px;line-height:1.7;margin:0 auto 40px;max-width:720px;}
 .sc4-ctas{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:56px;}
 .sc4-tl{position:relative;max-width:760px;margin:0 auto;text-align:left;padding-left:36px;}
@@ -200,7 +217,7 @@ body{font-family:var(--font-body);}
 <main>
 <section class="sc4-split">
 <div class="sc4-split__grid">
-<div class="sc4-imgwrap"><img src="/assets/img/industries/schools-1.jpg" alt="A young girl learning piano during a lesson with her teacher" loading="lazy"></div>
+<div class="sc4-imgwrap"><div class="sc4-lot" data-lot="star-pop.json"><img src="/assets/img/industries/schools-1.jpg" alt="A young girl learning piano during a lesson with her teacher" loading="lazy"></div></div>
 <div class="sc4-scard">
 <span class="sc4-label">A PAGE FOR EVERY CLASS</span>
 <h2>Every subject is a search.<br>Every search deserves a page.</h2>
@@ -209,6 +226,7 @@ body{font-family:var(--font-body);}
 </div>
 </div>
 </section>
+<section class="sc4-sec"><div class="sc4-wrap"><span class="sc4-label">COVERED SUBJECTS</span><h2 class="sc4-h2">Every subject is a search.</h2><p style="color:var(--text-dim);line-height:1.7;font-size:16px;max-width:62ch">Parents search the class, not the school. Each of these gets its own ranking page, named the way parents actually search.</p><div class="sc4-n1chips"><span>Piano lessons</span><span>Driving schools</span><span>Dance studios</span><span>Martial arts schools</span><span>Tutoring</span><span>Music schools</span></div></div></section>
 <section class="sc4-fix">
 <div class="sc4-fix__in">
 <span class="sc4-label">THE FIX</span>
@@ -238,7 +256,7 @@ body{font-family:var(--font-body);}
 <div class="sc4-why__in">
 <span class="sc4-label">WHY ME</span>
 <h2>Why schools <span class="sc4-grad">pick me.</span></h2>
-<div class="sc4-why__grid"><div class="sc4-wcard"><strong>You talk to me</strong><span>No account managers, no handoffs. The person who audits your listing is the person who fixes it.</span></div><div class="sc4-wcard"><strong>Trades and services, not everything</strong><span>I do local SEO for service businesses specifically &mdash; not &ldquo;we do everything for everyone.&rdquo;</span></div><div class="sc4-wcard"><strong>Plain numbers, no jargon</strong><span>You will see rankings, reviews, and calls. If a report needs a dictionary, it is hiding something.</span></div><div class="sc4-wcard"><strong>One clear plan</strong><span>A single monthly price with visible work every month. No bloated agency layers eating your budget.</span></div></div>
+<div class="sc4-accwrap"><details class="sc4-acc" open><summary>You talk to me</summary><div class="sc4-accb"><p>No account managers, no handoffs. The person who audits your school’s listing is the person who fixes it — me, start to finish.</p></div></details><details class="sc4-acc"><summary>Trades and services, not everything</summary><div class="sc4-accb"><p>I do SEO for schools and education providers specifically — not “we do everything for everyone.”</p></div></details><details class="sc4-acc"><summary>Plain numbers, no jargon</summary><div class="sc4-accb"><p>You’ll see movement in rankings, reviews, and enquiry calls. If a report needs a dictionary, it’s hiding something.</p></div></details><details class="sc4-acc"><summary>One clear plan</summary><div class="sc4-accb"><p>One monthly price, visible work every month. No bloated agency layers eating a school’s budget.</p></div></details></div>
 </div>
 </section>
 <section class="sc4-price">
@@ -249,7 +267,7 @@ body{font-family:var(--font-body);}
 <div class="sc4-price__top"><strong>Schools SEO</strong><span class="sc4-price__amt">$700/month</span></div>
 <ul><li><span>&check;</span>Google Business Profile fully managed &mdash; classes, areas, posts</li><li><span>&check;</span>Subject and class ranking pages &mdash; built for trial bookings</li><li><span>&check;</span>Review engine &mdash; parent reviews, responses, reputation</li><li><span>&check;</span>Monthly report &mdash; rankings, reviews, trial enquiries in plain English</li><li><span>&check;</span>Direct line to me &mdash; no ticket queues</li></ul>
 <a href="#contact" class="sc4-cta cta-final">Start With a Free Audit &rarr;</a>
-<p class="sc4-price__note">Same SEO plan as on the homepage &mdash; no industry markup. Covering multiple service areas? <a href="#contact">Ask for a custom quote.</a></p>
+<p class="sc4-price__note">Same SEO plan as on the homepage &mdash; no education markup. One plan covers every subject and class page; running multiple locations? <a href="#contact">Ask for a custom quote.</a></p>
 </div>
 </div>
 </section>
@@ -267,7 +285,7 @@ body{font-family:var(--font-body);}
     <div class="section-head center">
       <span class="eyebrow reveal">FAQs</span>
       <h2 class="h-section reveal d1">What schools ask me <span class="text-grad">before we start.</span></h2>
-      <p style="margin:0 auto 40px;text-align:center;max-width:720px;color:#a2a9bb;font-size:16.5px;line-height:1.7;">Straight answers to the questions I hear most &mdash; before you spend anything, know exactly what you are getting into.</p>
+      <p style="margin:0 auto 40px;text-align:center;max-width:720px;color:#a2a9bb;font-size:16.5px;line-height:1.7;">Straight answers to the questions school owners ask me most &mdash; fees, timelines, and enrolment readiness, answered before you commit.</p>
     </div>
     <div class="faq__list" id="faqList"><div class="faq-item"><button class="faq-item__q">Do schools really get students from Google?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">Yes. Lesson searches are overwhelmingly local, and parents compare a short list before booking a trial. The schools with dedicated class pages, visible proof of teaching quality, and easy trial booking win those comparisons. Word of mouth starts the idea; Google closes the decision.</div></div></div><div class="faq-item"><button class="faq-item__q">Should each subject, instrument, or class have its own page?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">Yes. Each is a distinct search with distinct intent, and dedicated pages rank better and convert better than combined pages. Name the teacher, describe the approach, show proof, offer the trial. The rule is simple: if parents search for it by name, it gets a page.</div></div></div><div class="faq-item"><button class="faq-item__q">What is the most important page on a school website?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">The trial, taster, or free assessment booking page. Every class and subject page should lead there. It is the lowest risk offer you have, and it is where the decision turns into a student.</div></div></div><div class="faq-item"><button class="faq-item__q">How do I show safeguarding and trust on my website?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">State it plainly: background checks, child protection policies, instructor qualifications, and how sessions are supervised. Do not bury it in a PDF. Parents actively look for this, and addressing it openly builds more trust than any design ever could.</div></div></div><div class="faq-item"><button class="faq-item__q">Is SEO or Google Ads better for a school?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">Most successful schools run both. Ads fill gaps immediately, which matters when you have empty class slots. SEO builds the asset: map pack presence and class pages that keep delivering trial bookings without per-click costs. Over any horizon longer than a few months, SEO wins.</div></div></div><div class="faq-item"><button class="faq-item__q">How long until I see more trial bookings?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">Profile and review work can move the needle within weeks, because so much of this market is decided in the map pack. Website rankings typically take two to four months of consistent work. Either way, I report on trial bookings, not just traffic.</div></div></div><div class="faq-item"><button class="faq-item__q">I teach adults, not children. Does this still work?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">Absolutely. Adult beginners search too, often with more hesitation and more loyalty once they start. Pages written directly to nervous adults face little competition. The trust mechanics are the same; only the message changes.</div></div></div></div>
   </div>
@@ -288,7 +306,7 @@ body{font-family:var(--font-body);}
       <div class="contact__lhs">
         <span class="eyebrow">Let&apos;s rank</span>
         <h2 class="h-section" style="margin-top:18px" id="ctaH2">A parent is comparing schools tonight. <span class="text-grad">Will they find you?</span></h2>
-        <p>Book a free 30-minute call. I will audit your visibility live, show you where your customers are going instead, and tell you honestly what it would take to win them. No fluff, no jargon.</p>
+        <p>Book a free 30-minute call. I will audit your visibility live, show you where parents are enrolling instead, and tell you honestly what it would take to win them. No fluff, no jargon.</p>
         <div class="contact__info">
           <a href="mailto:info@globeskillz.com" data-magnetic>
             <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
@@ -408,19 +426,16 @@ setTimeout(function(){
 (async function(){
   try{
     var posts = await (await fetch('../../data/blog/index.json')).json();
-    var words = (document.title + ' ' + PAGE_KW).toLowerCase().split(/[^a-z]+/).filter(function(w){ return w.length > 3; });
-    var scored = posts.map(function(bp){
-      var hay = (bp.title + ' ' + (bp.keyword || '') + ' ' + bp.excerpt).toLowerCase();
-      var s = 0; words.forEach(function(w){ if (hay.includes(w)) s++; });
-      return {bp: bp, s: s};
-    }).filter(function(x){ return x.s > 0; }).sort(function(a,b){ return b.s - a.s; }).slice(0,3);
+    var RR_PICKS = ['seo-expert-for-small-business', 'how-to-get-wordpress-website-on-google', 'wordpress-website-cost'];
+    var RR_TAIL = "Written for school owners filling trial classes, not just pages.";
+    var scored = RR_PICKS.map(function(sg){ for (var i=0;i<posts.length;i++){ if (posts[i].slug===sg) return {bp: posts[i]}; } return null; }).filter(Boolean);
     if (scored.length){
       var g = document.getElementById('rrGrid');
       g.innerHTML = scored.map(function(x){
         var bp = x.bp;
         return '<a class="blog-card" href="../../blog/' + bp.slug + '/">'
           + '<div class="blog-card__img"><img src="../../' + bp.image + '" alt="' + bp.title + '" loading="lazy"></div>'
-          + '<div class="blog-card__body"><h3>' + bp.title + '</h3><p>' + bp.excerpt + '</p>'
+          + '<div class="blog-card__body"><h3>' + bp.title + '</h3><p>' + bp.excerpt + ' ' + RR_TAIL + '</p>'
           + '<span class="blog-card__link">Read article \u2192</span></div></a>';
       }).join('');
       document.getElementById('relatedReading').style.display = 'block';
@@ -515,5 +530,7 @@ setTimeout(function(){
   });
 })();
 </script>
+<script src="../../assets/js/lottie.min.js"></script>
+<script>(function(){var els=document.querySelectorAll('[data-lot]');if(!els.length||typeof lottie==='undefined')return;els.forEach(function(el){try{var anim=lottie.loadAnimation({container:el,renderer:'svg',loop:true,autoplay:true,path:'../../assets/lottie/'+el.getAttribute('data-lot')});anim.addEventListener('DOMLoaded',function(){var img=el.querySelector('img');if(img)img.style.display='none';});}catch(e){}});})();</script>
 </body>
 </html>

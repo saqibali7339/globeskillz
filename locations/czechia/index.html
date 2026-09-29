@@ -34,8 +34,8 @@
 .cz11-grad{background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;}
 .cz11-hero{width:100%;min-height:88vh;display:flex;align-items:center;justify-content:center;padding:118px 24px 84px;position:relative;overflow:hidden;overflow-x:clip;text-align:center;background:radial-gradient(ellipse 90% 60% at 50% -10%,#0d1226 0%,#06070d 60%),#06070d;}
 .cz11-hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(124,92,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(124,92,255,.05) 1px,transparent 1px);background-size:44px 44px;mask-image:radial-gradient(ellipse 70% 70% at 50% 40%,#000 30%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse 70% 70% at 50% 40%,#000 30%,transparent 75%);pointer-events:none;}
-.cz11-hero__in{position:relative;max-width:940px;margin:0 auto;min-width:0;width:100%;}
-.cz11-hero h1{color:#eef1f7;font-family:var(--font-display);font-weight:700;font-size:clamp(34px,5.4vw,62px);line-height:1.12;margin:0 0 20px;}
+.cz11-hero__in{position:relative;max-width:1240px;margin:0 auto;min-width:0;width:100%;}
+.cz11-hero h1{color:#eef1f7;font-family:var(--font-display);font-weight:700;font-size:clamp(38px,5.4vw,68px);line-height:1.12;margin:0 0 20px;max-width:1100px;margin-left:auto;margin-right:auto;text-wrap:balance;}
 .cz11-sub{color:#a2a9bb;font-size:clamp(15.5px,2vw,18.5px);line-height:1.75;max-width:700px;margin:0 auto 38px;}
 .cz11-ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:0 0 24px;}
 .cz11-cta{display:inline-block;background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);color:#06070d;font-weight:800;font-size:16.5px;padding:16px 42px;border-radius:100px;text-decoration:none;transition:transform .25s;}
@@ -150,6 +150,9 @@
 .cz11-biz span{font-size:12.5px;color:#a2a9bb;}
 @media(max-width:860px){.cz11-pack{grid-template-columns:1fr;}.cz11-q{white-space:normal;}}
 
+.cz11-xtl{overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 2px 18px;}.cz11-xtl__track{display:flex;gap:18px;min-width:680px;}.cz11-xtl__node{flex:1 0 220px;scroll-snap-align:start;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:26px 24px;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);}.cz11-xtl__n{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);color:#06070d;font-weight:800;font-size:18px;margin-bottom:16px;}.cz11-xtl__node strong{display:block;color:#eef1f7;font-size:17px;margin-bottom:10px;}.cz11-xtl__node p{color:#a2a9bb;font-size:15px;line-height:1.7;margin:0;}@media(max-width:640px){.cz11-xtl__track{flex-direction:column;min-width:0;}}
+.cz11-xband{padding:44px 24px;border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.015);}.cz11-xband__in{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center;}.cz11-xband__stat strong{display:block;color:#eef1f7;font-family:var(--font-display);font-size:clamp(30px,3.4vw,44px);font-weight:800;background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;}.cz11-xband__stat span{color:#a2a9bb;font-size:14px;}@media(max-width:640px){.cz11-xband__in{grid-template-columns:repeat(2,1fr);}}
+.cz11-lot{width:100%;max-width:380px;aspect-ratio:1;margin:0 auto;position:relative;display:grid;place-items:center;}.cz11-lot img{max-width:100%;height:auto;}
 </style>
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "Service", "name": "SEO expert in Czechia", "description": "SEO expert in Czechia: Czech-language local SEO (yes, including Seznam) that puts Prague and Brno businesses first. Free audit.", "url": "https://globeskillz.com/locations/czechia/", "provider": {"@type": "Organization", "name": "Globe Skillz", "url": "https://globeskillz.com/"}, "areaServed": {"@type": "Country", "name": "Czechia"}, "offers": {"@type": "Offer", "price": "700", "priceCurrency": "USD", "description": "Monthly SEO plan: audit, keyword mapping, on-page, Business Profile, content, reporting."}}
@@ -248,17 +251,19 @@
     </div>
       <div class="cz11-pack"><div class="cz11-biz"><span class="cz11-bpin">&#x1F4CD;</span><strong>Staré Město</strong><div class="cz11-bstars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><span>Prague · historic centre</span></div><div class="cz11-biz"><span class="cz11-bpin">&#x1F4CD;</span><strong>Brno-střed</strong><div class="cz11-bstars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><span>Brno · business district</span></div><div class="cz11-biz"><span class="cz11-bpin">&#x1F4CD;</span><strong>Moravská Ostrava</strong><div class="cz11-bstars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><span>Ostrava · city centre</span></div></div>
     </div></section>
+<section class="cz11-xband"><div class="cz11-xband__in"><div class="cz11-xband__stat"><strong>$700</strong><span>flat monthly plan</span></div><div class="cz11-xband__stat"><strong>30 min</strong><span>free strategy call</span></div><div class="cz11-xband__stat"><strong>4</strong><span>steps, repeated monthly</span></div><div class="cz11-xband__stat"><strong>3</strong><span>core problems fixed first</span></div></div></section>
+
 
 <section class="cz11-sec"><div class="cz11-in">
   <div class="section-head center"><span class="eyebrow">The problem</span>
   <h2 class="h-section">Why Czechia businesses <span class="text-grad">stay invisible</span></h2>
-  <p class="cz11-lede" style="text-align:center">Three patterns I see again and again — and the thinking behind fixing each one.</p></div>
+  <p class="cz11-lede" style="text-align:center">Three patterns I see in Czech businesses again and again — and the reasoning behind fixing each one.</p></div>
   <div class="cz11-prob__grid"><div class="cz11-pcard"><div class="cz11-pnum">PROBLEM 01</div><strong>Czech queries need Czech research</strong><p>Diacritics, cases, Seznam vs Google behaviour — translated English keyword lists miss how Czechs really type.</p></div><div class="cz11-pcard"><div class="cz11-pnum">PROBLEM 02</div><strong>Prague takes everything</strong><p>The capital dominates broad terms while Brno and Ostrava searches go to whoever targeted them locally.</p></div><div class="cz11-pcard"><div class="cz11-pnum">PROBLEM 03</div><strong>The map pack decides</strong><p>For local services, the three map results get the calls. If your Business Profile is weak, you're not in the conversation.</p></div></div>
   <div class="cz11-sol"><strong>The fix, in one paragraph</strong><p>The map pack above is the prize. I research Czech keywords properly — diacritics and all — optimise your Business Profile for each city you serve, and fix the technical base. One person, full accountability.</p></div>
 </div></section>
 
 <section class="cz11-sec cz11-split cz11-sec--alt"><div class="cz11-split__grid">
-  <figure class="cz11-shot"><img src="../../assets/img/locations/czechia-1.jpg" alt="Prague old town, Czechia" loading="lazy"><figcaption>Prague old town</figcaption></figure>
+  <figure class="cz11-shot"><div class="cz11-lot lot" data-lot="pin-bounce.json"><img src="../../assets/img/locations/czechia-1.jpg" alt="Prague old town, Czechia — hero visual" loading="lazy"></div><figcaption>Prague old town</figcaption></figure>
   <div class="cz11-scopy"><span class="eyebrow">Local approach</span><h2>SEO for Czech search behaviour</h2>
   <p>Czechs search with diacritics and without, mix Czech and English terms, and still check Seznam for some queries. A strategy built for English Google misses the nuances.</p><p>I research keywords the way your customers type them, map them city by city, and make sure your map-pack presence earns the call.</p>
   <ul class="cz11-ticks"><li><span class="cz11-tick">&#10003;</span><span>Czech-language keyword research (with & without diacritics)</span></li><li><span class="cz11-tick">&#10003;</span><span>Google Business Profile per city</span></li><li><span class="cz11-tick">&#10003;</span><span>Technical SEO: speed, mobile, schema</span></li></ul></div>
@@ -275,7 +280,7 @@
   <div class="section-head center"><span class="eyebrow">The fix</span>
   <h2 class="h-section">THE FIX: <span class="text-grad">four steps</span></h2>
   <p class="cz11-lede" style="text-align:center">Four steps, tuned for Czech search.</p></div>
-  <div class="cz11-fix__grid"><div class="cz11-fstep"><span>1</span><div><strong>Deep-dive audit</strong><em>Your site, Business Profile and Czech competitors reviewed — prioritised fix list included.</em></div></div><div class="cz11-fstep"><span>2</span><div><strong>Czech keyword mapping</strong><em>Services mapped to Czech queries, city by city, diacritics included.</em></div></div><div class="cz11-fstep"><span>3</span><div><strong>Fix, build, publish</strong><em>Technical repairs, on-page optimisation and Profile work by impact.</em></div></div><div class="cz11-fstep"><span>4</span><div><strong>Compound monthly</strong><em>Content, citations and reviews monthly, with plain-English reporting.</em></div></div></div>
+  <div class="cz11-xtl"><div class="cz11-xtl__track"><div class="cz11-xtl__node reveal"><span class="cz11-xtl__n">1</span><strong>Deep-dive audit</strong><p>Your site, Business Profile and Czech competitors reviewed — prioritised fix list included.</p></div><div class="cz11-xtl__node reveal"><span class="cz11-xtl__n">2</span><strong>Czech keyword mapping</strong><p>Services mapped to Czech queries, city by city, diacritics included.</p></div><div class="cz11-xtl__node reveal"><span class="cz11-xtl__n">3</span><strong>Fix, build, publish</strong><p>Technical repairs, on-page optimisation and Profile work by impact.</p></div><div class="cz11-xtl__node reveal"><span class="cz11-xtl__n">4</span><strong>Compound monthly</strong><p>Content, citations and reviews monthly, with plain-English reporting.</p></div></div></div>
 </div></section>
 
 <section class="cz11-sec"><div class="cz11-in">
@@ -291,7 +296,7 @@
   <div class="cz11-price__card">
     <div class="cz11-price__top"><strong>Monthly SEO Plan</strong><div class="cz11-price__amt">$700<span>/month</span></div></div>
     <ul><li><b>&#10003;</b><span>Full technical & on-page SEO audit</span></li><li><b>&#10003;</b><span>Czech keyword research & mapping</span></li><li><b>&#10003;</b><span>Google Business Profile management</span></li><li><b>&#10003;</b><span>Content plan + monthly publishing</span></li><li><b>&#10003;</b><span>Citations & review strategy</span></li><li><b>&#10003;</b><span>Plain-English monthly report</span></li></ul>
-    <p class="cz11-price__note">One plan. Everything above, every month. Month to month — cancel anytime.</p>
+    <p class="cz11-price__note">One plan. Everything above, every month. Month to month — cancel any time you like.</p>
   </div>
 </div></div></section>
 
@@ -316,7 +321,7 @@
 <section class="cz11-sec" id="relatedReading"><div class="cz11-in">
   <div class="section-head center"><span class="eyebrow">Related reading</span>
   <h2 class="h-section">SEO guides for Czech businesses.</h2></div>
-</div><div class="cz11-rr__grid"><a class="cz11-rrcard" href="../../blog.html?slug=how-much-does-seo-cost-uk"><div class="cz11-rrk">SEO PRICING</div><strong>How much does SEO cost in the UK?</strong><span>A plain-English breakdown of what SEO really costs, what drives the price, and the questions to ask before you sign anything.</span><span class="cz11-rrmore">Read the guide &rarr;</span></a><a class="cz11-rrcard" href="../../blog.html?slug=what-to-look-for-when-hiring-an-seo-company"><div class="cz11-rrk">HIRING GUIDE</div><strong>What to look for when hiring an SEO company</strong><span>Red flags, green flags and the exact questions that separate real SEO specialists from smooth salespeople.</span><span class="cz11-rrmore">Read the guide &rarr;</span></a><a class="cz11-rrcard" href="../../blog.html?slug=how-to-get-wordpress-website-on-google"><div class="cz11-rrk">GET FOUND</div><strong>How to get your WordPress website on Google</strong><span>The practical steps that take a WordPress site from invisible to indexed, ranking and earning clicks.</span><span class="cz11-rrmore">Read the guide &rarr;</span></a></div></section>
+</div><div class="cz11-rr__grid"><a class="cz11-rrcard" href="../../blog.html?slug=how-many-keywords-use-in-seo"><div class="cz11-rrk">KEYWORD STRATEGY</div><strong>How Many Keywords Should Your SEO Target?</strong><span>You do not need dozens of keywords per page. Here is how many to target per page and across your whole site, and how to pick them.</span><span class="cz11-rrmore">Read the guide &rarr;</span></a><a class="cz11-rrcard" href="../../blog.html?slug=what-to-look-for-when-hiring-an-seo-company"><div class="cz11-rrk">HIRING GUIDE</div><strong>What to Look for When Hiring an SEO Company</strong><span>Choosing an SEO company feels like a gamble. Here are the seven things to check before you sign anything, from someone who does this work every day.</span><span class="cz11-rrmore">Read the guide &rarr;</span></a><a class="cz11-rrcard" href="../../blog.html?slug=seo-expert-for-small-business"><div class="cz11-rrk">SMALL BUSINESS</div><strong>What an SEO Expert for a Small Business Actually Does</strong><span>An SEO expert for a small business is not a magician or a mystery. Here is what the job actually involves, what it should cost you in attention, and how to spot the good ones.</span><span class="cz11-rrmore">Read the guide &rarr;</span></a></div></section>
 
 <section id="contact">
   <div class="container">
@@ -324,7 +329,7 @@
       <div class="contact__lhs">
         <span class="eyebrow">Let's rank</span>
         <h2 class="h-section" style="margin-top:18px" id="ctaH2">Ready to win more customers in <span class="text-grad">Czechia</span>?</h2>
-        <p>Book a free 30-minute strategy call. I'll audit your current visibility live and tell you exactly what it would take to reach the top 3.</p>
+        <p>Book a free 30-minute strategy call. I'll audit your Czech visibility live and tell you exactly what it would take to reach the top 3.</p>
         <div class="contact__info">
           <a href="mailto:info@globeskillz.com" data-magnetic>
             <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
@@ -484,5 +489,7 @@
   }
 })();
 </script>
+<script src="../../assets/js/lottie.min.js"></script>
+<script>(function(){var els=document.querySelectorAll('[data-lot]');if(!els.length||typeof lottie==='undefined')return;els.forEach(function(el){try{var anim=lottie.loadAnimation({container:el,renderer:'svg',loop:true,autoplay:true,path:'../../assets/lottie/'+el.getAttribute('data-lot')});anim.addEventListener('DOMLoaded',function(){var img=el.querySelector('img');if(img)img.style.display='none';});}catch(e){}});})();</script>
 </body>
 </html>

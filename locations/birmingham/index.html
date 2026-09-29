@@ -34,8 +34,8 @@
 .bi4-grad{background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;}
 .bi4-hero{width:100%;min-height:88vh;display:flex;align-items:center;justify-content:center;padding:118px 24px 84px;position:relative;overflow:hidden;overflow-x:clip;text-align:center;background:radial-gradient(ellipse 90% 60% at 50% -10%,#0d1226 0%,#06070d 60%),#06070d;}
 .bi4-hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(124,92,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(124,92,255,.05) 1px,transparent 1px);background-size:44px 44px;mask-image:radial-gradient(ellipse 70% 70% at 50% 40%,#000 30%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse 70% 70% at 50% 40%,#000 30%,transparent 75%);pointer-events:none;}
-.bi4-hero__in{position:relative;max-width:940px;margin:0 auto;min-width:0;width:100%;}
-.bi4-hero h1{color:#eef1f7;font-family:var(--font-display);font-weight:700;font-size:clamp(34px,5.4vw,62px);line-height:1.12;margin:0 0 20px;}
+.bi4-hero__in{position:relative;max-width:1240px;margin:0 auto;min-width:0;width:100%;}
+.bi4-hero h1{color:#eef1f7;font-family:var(--font-display);font-weight:700;font-size:clamp(38px,5.4vw,68px);line-height:1.12;margin:0 0 20px;max-width:1100px;margin-left:auto;margin-right:auto;text-wrap:balance}
 .bi4-sub{color:#a2a9bb;font-size:clamp(15.5px,2vw,18.5px);line-height:1.75;max-width:700px;margin:0 auto 38px;}
 .bi4-ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:0 0 24px;}
 .bi4-cta{display:inline-block;background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);color:#06070d;font-weight:800;font-size:16.5px;padding:16px 42px;border-radius:100px;text-decoration:none;transition:transform .25s;}
@@ -143,6 +143,22 @@
 .bi4-hint{color:#a2a9bb;font-size:13px;margin-top:16px;letter-spacing:1px;}
 @media(max-width:860px){.bi4-toggles{grid-template-columns:1fr;max-width:460px;}.bi4-tcard{min-height:200px;}}
 
+.bi4-lot{width:100%;max-width:320px;aspect-ratio:1;margin:0 auto;position:relative;display:grid;place-items:center;}
+.bi4-lot svg{width:100%!important;height:100%!important;}
+@media(max-width:640px){.bi4-lot{max-width:260px;}}
+.bi4-tl{overflow-x:auto;margin:44px 0 8px;padding-bottom:14px;scroll-snap-type:x mandatory;}
+.bi4-tl__track{display:flex;gap:18px;min-width:max-content;}
+.bi4-tl__node{flex:0 0 270px;scroll-snap-align:start;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:30px 26px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);}
+.bi4-tl__n{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);color:#06070d;font-weight:900;font-size:18px;margin-bottom:18px;font-family:var(--font-display);}
+.bi4-tl__node strong{display:block;color:#eef1f7;font-size:17px;margin-bottom:10px;font-family:var(--font-display);}
+.bi4-tl__node p{color:#a2a9bb;font-size:14.5px;line-height:1.65;margin:0;}
+@media(max-width:640px){.bi4-tl{overflow:visible;scroll-snap-type:none;}.bi4-tl__track{flex-direction:column;min-width:0;}.bi4-tl__node{flex:1 1 auto;}}
+.bi4-n6{margin:70px 0;text-align:center;}
+.bi4-n6 h2{color:#eef1f7;font-family:var(--font-display);font-size:clamp(26px,3.4vw,38px);margin:0 0 12px;}
+.bi4-n6>p{color:#a2a9bb;font-size:16px;margin:0 0 30px;}
+.bi4-n6__chips{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
+.bi4-n6__chips span{font-family:var(--font-display);font-size:14px;color:#eef1f7;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:11px 20px;}
+@media(max-width:640px){.bi4-n6__chips span{padding:9px 16px;font-size:13px;}}
 </style>
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "Service", "name": "SEO expert in Birmingham", "description": "SEO company Birmingham: local SEO for Brum businesses that want calls, not reports. Neighbourhood-level targeting, honest pricing. Free audit.", "url": "https://globeskillz.com/locations/birmingham/", "provider": {"@type": "Organization", "name": "Globe Skillz", "url": "https://globeskillz.com/"}, "areaServed": {"@type": "Country", "name": "Birmingham"}, "offers": {"@type": "Offer", "price": "700", "priceCurrency": "USD", "description": "Monthly SEO plan: audit, keyword mapping, on-page, Business Profile, content, reporting."}}
@@ -255,20 +271,20 @@
 <section class="bi4-sec"><div class="bi4-in">
   <div class="section-head center"><span class="eyebrow">The problem</span>
   <h2 class="h-section">Why Birmingham businesses <span class="text-grad">stay invisible</span></h2>
-  <p class="bi4-lede" style="text-align:center">Three patterns I see again and again — and the thinking behind fixing each one.</p></div>
+  <p class="bi4-lede" style="text-align:center">Three patterns I keep seeing in Birmingham businesses — and the thinking behind fixing each one.</p></div>
   <div class="bi4-prob__grid"><div class="bi4-pcard"><div class="bi4-pnum">PROBLEM 01</div><strong>The West Midlands searches, you don't appear</strong><p>From Solihull to Wolverhampton, customers search “near me” every day. If your site only speaks to one postcode, the rest goes elsewhere.</p></div><div class="bi4-pcard"><div class="bi4-pnum">PROBLEM 02</div><strong>National chains outrank local firms</strong><p>Big brands win broad terms by default. Local businesses win by owning the specific searches chains ignore.</p></div><div class="bi4-pcard"><div class="bi4-pnum">PROBLEM 03</div><strong>Reviews go to competitors</strong><p>Birmingham buyers check reviews before they call. A thin review profile hands warm leads to whoever looks more trusted.</p></div></div>
   <div class="bi4-sol"><strong>The fix, in one paragraph</strong><p>Tap the cards above — each problem has a concrete fix. I map your keywords suburb by suburb, rebuild your Google Business Profile, and fix the technical issues leaking your mobile traffic. One person does it all.</p></div>
 </div></section>
 
 <section class="bi4-sec bi4-split bi4-sec--alt"><div class="bi4-split__grid">
-  <figure class="bi4-shot"><img src="../../assets/img/locations/birmingham-1.jpg" alt="Birmingham canal with narrowboat, England" loading="lazy"><figcaption>Birmingham canal with narrowboat</figcaption></figure>
+  <figure class="bi4-shot"><div class="bi4-lot lot" data-lot="pin-bounce.json"><img src="/assets/img/locations/birmingham-1.jpg" alt="Birmingham canal with narrowboat, England" loading="lazy"></div><figcaption>Birmingham canal with narrowboat</figcaption></figure>
   <div class="bi4-scopy"><span class="eyebrow">Local approach</span><h2>Birmingham is a patchwork — your SEO should be too</h2>
   <p>The Jewellery Quarter, Digbeth, Moseley, Harborne, Sutton Coldfield — each has its own search behaviour. A single generic “Birmingham” page can't serve them all.</p><p>I build location-aware pages and a Business Profile strategy that covers the areas feeding your business, backed by real keyword research — not guesswork.</p>
   <ul class="bi4-ticks"><li><span class="bi4-tick">&#10003;</span><span>Suburb-level keyword maps across the West Midlands</span></li><li><span class="bi4-tick">&#10003;</span><span>Google Business Profile with review & post systems</span></li><li><span class="bi4-tick">&#10003;</span><span>Technical fixes: speed, mobile, structure, schema</span></li></ul></div>
 </div></section>
 
 <section class="bi4-sec bi4-split"><div class="bi4-split__grid bi4-split--flip">
-  <div class="bi4-overlay"><img src="../../assets/img/locations/birmingham-1.jpg" alt="Birmingham canal with narrowboat, England" loading="lazy" style="object-position:center 30%">
+  <div class="bi4-overlay"><img src="/assets/img/locations/birmingham-1.jpg" alt="Birmingham canal with narrowboat, England" loading="lazy" style="object-position:center 30%">
   <div class="bi4-ocard"><strong>One person accountable for your rankings</strong><span>Strategy, execution and reporting — all from the same desk.</span></div></div>
   <div class="bi4-scopy"><span class="eyebrow">Working with me</span><h2>Why a specialist beats an agency here</h2>
   <p>Birmingham agencies sell retainers; I sell outcomes I can explain. You get the audit, the strategy and the monthly work from one person who knows your market.</p><p>Monthly reporting is plain English: what I did, what moved, what's next. You'll never wonder what you're paying for.</p></div>
@@ -278,7 +294,7 @@
   <div class="section-head center"><span class="eyebrow">The fix</span>
   <h2 class="h-section">THE FIX: <span class="text-grad">four steps</span></h2>
   <p class="bi4-lede" style="text-align:center">Four steps from invisible to unavoidable in Birmingham search.</p></div>
-  <div class="bi4-fix__grid"><div class="bi4-fstep"><span>1</span><div><strong>Deep-dive audit</strong><em>Your site, your Business Profile and your Birmingham competitors — every weakness listed in priority order.</em></div></div><div class="bi4-fstep"><span>2</span><div><strong>Keyword & suburb mapping</strong><em>Services mapped to the postcodes and phrases that bring buyers, from the city centre to the suburbs.</em></div></div><div class="bi4-fstep"><span>3</span><div><strong>Fix, build, publish</strong><em>Technical repairs, on-page optimisation, Profile work and useful content — in order of impact.</em></div></div><div class="bi4-fstep"><span>4</span><div><strong>Compound monthly</strong><em>Fresh content, citations and review momentum each month, with reporting you can actually read.</em></div></div></div>
+  <div class="bi4-tl reveal"><div class="bi4-tl__track"><div class="bi4-tl__node"><span class="bi4-tl__n">1</span><strong>Deep-dive audit</strong><p>Your site, your Business Profile and your Birmingham competitors — every weakness listed in priority order.</p></div><div class="bi4-tl__node"><span class="bi4-tl__n">2</span><strong>Keyword & suburb mapping</strong><p>Services mapped to the postcodes and phrases that bring buyers, from the city centre to the suburbs.</p></div><div class="bi4-tl__node"><span class="bi4-tl__n">3</span><strong>Fix, build, publish</strong><p>Technical repairs, on-page optimisation, Profile work and useful content — in order of impact.</p></div><div class="bi4-tl__node"><span class="bi4-tl__n">4</span><strong>Compound monthly</strong><p>Fresh content, citations and review momentum each month, with reporting you can actually read.</p></div></div></div>
 </div></section>
 
 <section class="bi4-sec"><div class="bi4-in">
@@ -294,7 +310,7 @@
   <div class="bi4-price__card">
     <div class="bi4-price__top"><strong>Monthly SEO Plan</strong><div class="bi4-price__amt">$700<span>/month</span></div></div>
     <ul><li><b>&#10003;</b><span>Full technical & on-page SEO audit</span></li><li><b>&#10003;</b><span>Suburb-level keyword research & mapping</span></li><li><b>&#10003;</b><span>Google Business Profile management</span></li><li><b>&#10003;</b><span>Content plan + monthly publishing</span></li><li><b>&#10003;</b><span>Citations & review strategy</span></li><li><b>&#10003;</b><span>Plain-English monthly report</span></li></ul>
-    <p class="bi4-price__note">One plan. Everything above, every month. Month to month — cancel anytime.</p>
+    <p class="bi4-price__note">One plan for Birmingham. Everything above, every month. Month to month — cancel anytime.</p>
   </div>
 </div></div></section>
 
@@ -314,12 +330,17 @@
   </div>
 </div></section>
 
+<section class="bi4-n6"><h2>Areas I cover in Birmingham</h2><p>In the West Midlands, the map pack decides who gets the call. These are the Birmingham-area places I optimise for — each covered by the same hands-on local SEO, from Business Profile to reviews.</p><div class="bi4-n6__chips reveal"><span>Manchester</span><span>Liverpool</span><span>Glasgow</span><span>Nottingham</span><span>Chester</span><span>Gloucester</span><span>Norwich</span><span>Edinburgh</span></div></section>
 <section class="bi4-chips"><div class="bi4-chips__in"><span class="bi4-chips__t">ALSO RANKED:</span><span>Manchester SEO Expert</span><span>Liverpool SEO Expert</span><span>Glasgow SEO Expert</span><span>Nottingham SEO Expert</span><span>Chester SEO Expert</span><span>Gloucester SEO Expert</span><span>Norwich SEO Expert</span><span>Edinburgh SEO Expert</span></div></section>
 
 <section class="bi4-sec" id="relatedReading"><div class="bi4-in">
   <div class="section-head center"><span class="eyebrow">Related reading</span>
   <h2 class="h-section">SEO guides for Birmingham businesses.</h2></div>
-</div><div class="bi4-rr__grid"><a class="bi4-rrcard" href="../../blog.html?slug=how-much-does-seo-cost-uk"><div class="bi4-rrk">SEO PRICING</div><strong>How much does SEO cost in the UK?</strong><span>A plain-English breakdown of what SEO really costs, what drives the price, and the questions to ask before you sign anything.</span><span class="bi4-rrmore">Read the guide &rarr;</span></a><a class="bi4-rrcard" href="../../blog.html?slug=what-to-look-for-when-hiring-an-seo-company"><div class="bi4-rrk">HIRING GUIDE</div><strong>What to look for when hiring an SEO company</strong><span>Red flags, green flags and the exact questions that separate real SEO specialists from smooth salespeople.</span><span class="bi4-rrmore">Read the guide &rarr;</span></a><a class="bi4-rrcard" href="../../blog.html?slug=how-to-get-wordpress-website-on-google"><div class="bi4-rrk">GET FOUND</div><strong>How to get your WordPress website on Google</strong><span>The practical steps that take a WordPress site from invisible to indexed, ranking and earning clicks.</span><span class="bi4-rrmore">Read the guide &rarr;</span></a></div></section>
+</div><div class="bi4-rr__grid">
+<a class="bi4-rrcard" href="../../blog.html?slug=what-to-look-for-when-hiring-an-seo-company"><div class="bi4-rrk">HIRING GUIDE</div><strong>What to look for when hiring an SEO company</strong><span>Red flags, green flags and the exact questions that separate real SEO specialists from smooth salespeople.</span><span class="bi4-rrmore">Read the guide →</span></a>
+<a class="bi4-rrcard" href="../../blog.html?slug=shopify-seo-expert"><div class="bi4-rrk">SHOPIFY SEO</div><strong>Shopify SEO expert: rank your store</strong><span>The Shopify-specific fixes that move product and collection pages up Google — speed, schema, and internal links.</span><span class="bi4-rrmore">Read the guide →</span></a>
+<a class="bi4-rrcard" href="../../blog.html?slug=how-many-keywords-use-in-seo"><div class="bi4-rrk">KEYWORDS</div><strong>How many keywords should you use in SEO?</strong><span>One page, one intent: how to map keywords across your site without cannibalising your own rankings.</span><span class="bi4-rrmore">Read the guide →</span></a>
+</div></section>
 
 <section id="contact">
   <div class="container">
@@ -327,7 +348,7 @@
       <div class="contact__lhs">
         <span class="eyebrow">Let's rank</span>
         <h2 class="h-section" style="margin-top:18px" id="ctaH2">Ready to dominate <span class="text-grad">Birmingham</span>?</h2>
-        <p>Book a free 30-minute strategy call. I'll audit your current visibility live and tell you exactly what it would take to reach the top 3.</p>
+        <p>Book a free 30-minute strategy call. I’ll audit your Birmingham visibility live — your map listing, your reviews, your pages — and tell you exactly what it would take to crack the top 3.</p>
         <div class="contact__info">
           <a href="mailto:info@globeskillz.com" data-magnetic>
             <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
@@ -487,5 +508,7 @@
   }
 })();
 </script>
+<script src="/assets/js/lottie.min.js"></script>
+<script>(function(){var els=document.querySelectorAll('[data-lot]');if(!els.length||typeof lottie==='undefined')return;els.forEach(function(el){try{var anim=lottie.loadAnimation({container:el,renderer:'svg',loop:true,autoplay:true,path:'/assets/lottie/'+el.getAttribute('data-lot')});anim.addEventListener('DOMLoaded',function(){var img=el.querySelector('img');if(img)img.style.display='none';});}catch(e){}});})();</script>
 </body>
 </html>

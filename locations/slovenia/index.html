@@ -29,9 +29,9 @@
 :root{--font-display:'Space Grotesk',sans-serif;--font-body:'Inter',sans-serif;}
 
 .si12-hero{width:100%;min-height:94vh;display:flex;align-items:center;padding:110px 24px 80px;background:radial-gradient(ellipse 80% 60% at 50% 0%,#0b1020 0%,#06070d 62%),#06070d;position:relative;overflow:hidden;overflow-x:clip;}
-.si12-hero__grid{position:relative;max-width:1120px;margin:0 auto;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;width:100%;}
+.si12-hero__grid{position:relative;max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;width:100%;}
 .si12-eyebrow{background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;font-size:12px;font-weight:800;letter-spacing:3px;}
-.si12-hero h1{color:#eef1f7;font-family:var(--font-display);font-weight:700;font-size:clamp(36px,5.2vw,62px);line-height:1.1;margin:18px 0 22px;}
+.si12-hero h1{color:#eef1f7;font-family:var(--font-display);font-weight:700;font-size:clamp(38px,5.4vw,68px);line-height:1.1;margin:18px 0 22px;max-width:1100px;margin-left:auto;margin-right:auto;text-wrap:balance}
 .si12-grad{background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;}
 .si12-sub{color:#a2a9bb;font-size:clamp(16px,2vw,19px);line-height:1.75;margin:0 0 38px;max-width:560px;}
 .si12-ctas{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:44px;}
@@ -209,6 +209,28 @@ img{max-width:100%;}
 }
 
 
+.si12-lot{width:100%;max-width:320px;aspect-ratio:1;margin:0 auto;position:relative;display:grid;place-items:center;}
+.si12-lot svg{width:100%!important;height:100%!important;}
+@media(max-width:640px){.si12-lot{max-width:260px;}}
+.si12-acc{max-width:880px;margin:44px auto 8px;display:flex;flex-direction:column;gap:12px;}
+.si12-acc__item{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.1);border-radius:16px;overflow:hidden;}
+.si12-acc__item summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 24px;color:#eef1f7;font-weight:700;font-size:16.5px;font-family:var(--font-display);}
+.si12-acc__item summary::-webkit-details-marker{display:none;}
+.si12-acc__item summary::after{content:"+";font-size:22px;color:#22d3ee;flex-shrink:0;line-height:1;}
+.si12-acc__item[open] summary::after{content:"3";}
+.si12-acc__item p{color:#a2a9bb;font-size:15px;line-height:1.7;margin:0;padding:0 24px 22px;}
+@media(max-width:640px){.si12-acc__item summary{padding:16px 20px;font-size:15.5px;}}
+.si12-n1{margin:70px 0;overflow:hidden;}
+.si12-n1__grid{display:grid;grid-template-columns:1fr 340px;gap:44px;align-items:start;}
+.si12-n1__list{display:flex;flex-direction:column;gap:20px;}
+.si12-n1__item{display:flex;gap:18px;align-items:flex-start;}
+.si12-n1__n{flex-shrink:0;width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#7c5cff,#22d3ee);color:#06070d;font-weight:900;font-family:var(--font-display);}
+.si12-n1__item strong{display:block;color:#eef1f7;font-size:17px;margin-bottom:6px;font-family:var(--font-display);}
+.si12-n1__item p{color:#a2a9bb;font-size:15px;line-height:1.65;margin:0;}
+.si12-n1__card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:34px 30px;float:right;}
+.si12-n1__card h3{color:#eef1f7;font-family:var(--font-display);font-size:20px;margin:0 0 12px;}
+.si12-n1__card p{color:#a2a9bb;font-size:15px;line-height:1.7;margin:0 0 22px;}
+@media(max-width:820px){.si12-n1__grid{grid-template-columns:1fr;}.si12-n1__card{float:none;}}
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TVYVGRLRW"></script>
@@ -295,22 +317,23 @@ Ljubljana holds the business capital's share of demand: finance, IT, services, t
 The language picture is straightforward with a twist. Slovenians search in Slovenian. English proficiency is solid, especially among the young and in business, but commercial queries, the ones with money behind them, are typed in Slovenian. The twist is the border effect: Italian matters on the coast, German near the Austrian border, and English for anything touching tourism. Done right, each language is a separate ranking opportunity. Done lazily, as a mixed-language mess, it helps nobody.
 
 Google controls about 92.24 percent of Slovenian search, so the technical playbook is familiar. What is unfamiliar to outsiders is the local layer: Najdi.si, the homegrown search portal; RumeneStrani.si, the Yellow Pages with 32 years of history; the TiS telephone directory tradition. These are the trust signals Google cross-checks in this market. I am a one-person studio, which fits Slovenia perfectly: you get the person doing the research, writing the plan and answering your questions. The audit is free, the strategy is built for how Slovenians actually search, and we start where a small market lets you win fastest. One more thing I tell every Slovenian client in the first call: your website does not need to impress Ljubljana agencies. It needs to answer the exact question a customer in Kranj or Novo mesto typed into Google, in Slovenian, with proof you can do the job. I have seen one-page sites outrank corporate portals here simply because the one-page site answered the query and the portal did not. In a market this small, relevance beats production value every time.</p>
-<p>I work with a small number of clients at a time, so every business gets <strong>hands-on work and direct answers</strong> — not a ticket queue, not a junior account manager.</p>
+<p>I keep my client list deliberately small, so your Slovenian business gets hands-on work and straight answers from me — no ticket queue, no junior account manager.</p>
 <ul class="si12-ticks"><li><span class="si12-tick">✓</span>Free audit shows exactly where you stand</li><li><span class="si12-tick">✓</span>Fixed monthly plan — no hourly billing surprises</li><li><span class="si12-tick">✓</span>Reports in plain language, every month</li></ul>
 </div>
-<div class="si12-img reveal d1"><img src="assets/img/locations/slovenia-1.jpg" alt="Old town architecture in Ljubljana, Slovenia" loading="lazy"></div>
+<div class="si12-img reveal d1"><div class="si12-lot lot" data-lot="bars-grow.json"><img src="/assets/img/locations/slovenia-1.jpg" alt="Old town architecture in Ljubljana, Slovenia" loading="lazy"></div></div>
 </div>
 </div>
 </section>
 
+<section class="si12-n1"><div style="max-width:880px;margin:0 0 40px"><p class="si12-kicker">WHY ME</p><h2>Why Ljubljana shops choose me</h2></div><div class="si12-n1__grid"><div class="si12-n1__list"><div class="si12-n1__item reveal"><span class="si12-n1__n">1</span><div><strong>Built for Slovenian search, not translated</strong><p>Four steps, repeated monthly — I research, rebuild, promote, and report. And in Slovenia, the research is the differentiator: Slovenian queries, Slovenian review habits, Slovenian competitors.</p></div></div><div class="si12-n1__item reveal"><span class="si12-n1__n">2</span><div><strong>Local SEO that covers the whole country</strong><p>Ljubljana, Maribor, Celje and Koper each get their own approach, instead of one generic page hoping to rank everywhere.</p></div></div><div class="si12-n1__item reveal"><span class="si12-n1__n">3</span><div><strong>Slow, boring, compounding work</strong><p>Content, citations and reviews every month. No tricks, no overnight miracles — just the basics done relentlessly until Google trusts you more than the business across the street.</p></div></div></div><aside class="si12-n1__card reveal"><h3>See what I would fix first</h3><p>A free audit of your site, profile and reviews — benchmarked against the Slovenian competitors winning your searches.</p><a href="#contact" class="si12-btn">Get my free audit →</a></aside></div></section>
 <section class="si12-fix">
 <div class="si12-fix__in">
 <div class="si12-fix__head">
 <span class="si12-kicker" style="background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;font-size:12px;font-weight:800;letter-spacing:3px;">THE FIX</span>
 <h2>What I do for <span class="si12-grad">Slovenia businesses</span></h2>
-<p>Four steps. No jargon, no 40-page reports you will never read — just the work that moves the needle.</p>
+<p>Four steps, built for Slovenian search. No jargon, no 40-page reports you will never read — just the work that moves the needle.</p>
 </div>
-<div class="si12-steps"><div class="si12-step reveal d0"><span class="si12-step__n">1</span><strong>Know your starting line</strong><p>A scored audit across your site, profile and reviews, benchmarked against the Slovenia competitors winning your searches.</p></div><div class="si12-step reveal d1"><span class="si12-step__n">2</span><strong>Fix what leaks first</strong><p>The quick wins: profile gaps, wrong categories, broken basics — fixed in the first weeks, not someday.</p></div><div class="si12-step reveal d2"><span class="si12-step__n">3</span><strong>Build the moat</strong><p>Ongoing pages, reviews and authority that make your Slovenia rankings harder to take every month.</p></div><div class="si12-step reveal d0"><span class="si12-step__n">4</span><strong>Watch it compound</strong><p>Monthly reporting in plain language, so you always know what the work bought you.</p></div></div>
+<div class="si12-steps"><div class="si12-step reveal d0"><span class="si12-step__n">1</span><strong>Know your starting line</strong><p>A scored audit across your site, profile and reviews, benchmarked against the Slovenia competitors winning your searches.</p></div><div class="si12-step reveal d1"><span class="si12-step__n">2</span><strong>Fix what leaks first</strong><p>The Slovenian quick wins: profile gaps, wrong categories, broken basics — fixed in the first weeks, not someday.</p></div><div class="si12-step reveal d2"><span class="si12-step__n">3</span><strong>Build the moat</strong><p>Ongoing pages, reviews and authority that make your Slovenia rankings harder to take every month.</p></div><div class="si12-step reveal d0"><span class="si12-step__n">4</span><strong>Watch it compound</strong><p>Monthly reporting on your Slovenian rankings in plain language, so you always know what the work bought you.</p></div></div>
 </div>
 </section>
 
@@ -335,21 +358,21 @@ Google controls about 92.24 percent of Slovenian search, so the technical playbo
 <div class="si12-why__head">
 <span style="background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;font-size:12px;font-weight:800;letter-spacing:3px;">WHY ME</span>
 <h2>Why <span class="si12-grad">Slovenia</span> businesses hire me</h2>
-<p>I am not an agency with a sales team. I am the person who does the work — and the person who answers when you ask what is happening.</p>
+<p>I am not an agency with a sales team. I am the person doing the SEO for your Slovenian business — and the person who answers when you ask what is happening.</p>
 </div>
-<div class="si12-cards"><div class="si12-card reveal d0"><div class="si12-card__icon">◈</div><strong>I have done this before</strong><p>Years of ranking local businesses across Slovenia. The patterns are the same; the local details are what I get right.</p></div><div class="si12-card reveal d1"><div class="si12-card__icon">○</div><strong>Strategy, not checklists</strong><p>Every Slovenia market is different. Your plan is built from your audit and your competitors — not a template.</p></div><div class="si12-card reveal d2"><div class="si12-card__icon">▣</div><strong>Honest about timelines</strong><p>Local SEO takes months, not days. I will tell you what is realistic for your market instead of selling a fantasy.</p></div><div class="si12-card reveal d0"><div class="si12-card__icon">◎</div><strong>You see all the work</strong><p>Every change documented, every month. Nothing hidden, nothing vague, nothing you cannot verify yourself.</p></div></div>
+<div class="si12-acc reveal"><details class="si12-acc__item" open><summary><strong>I have done this before</strong></summary><p>Years of ranking local businesses across Slovenia. The patterns are the same; the local details are what I get right.</p></details><details class="si12-acc__item"><summary><strong>Strategy, not checklists</strong></summary><p>Every Slovenia market is different. Your plan is built from your audit and your competitors — not a template.</p></details><details class="si12-acc__item"><summary><strong>Honest about timelines</strong></summary><p>Slovenian SEO takes months, not days. I will tell you what is realistic for your market instead of selling a fantasy.</p></details><details class="si12-acc__item"><summary><strong>You see all the work</strong></summary><p>Every change to your Slovenian campaign documented, every month. Nothing hidden, nothing vague, nothing you cannot verify yourself.</p></details></div>
 </div>
 </section>
 
 <section class="si12-sec2">
 <div class="si12-sec2__in">
 <div class="si12-split2">
-<div class="si12-img2 reveal"><img src="assets/img/locations/slovenia-1.jpg" alt="Old town architecture in Ljubljana, Slovenia" loading="lazy"></div>
+<div class="si12-img2 reveal"><img src="/assets/img/locations/slovenia-1.jpg" alt="Old town architecture in Ljubljana, Slovenia" loading="lazy"></div>
 <div class="reveal d1">
 <span class="si12-kicker2" style="background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;font-size:12px;font-weight:800;letter-spacing:3px;">HOW IT WORKS</span>
 <h2>Local SEO for <span class="si12-grad">Slovenia</span>, done the honest way</h2>
 <p>Ranking in Slovenia is not about tricks. It is about <strong>being the most complete, most trusted answer</strong> when a local customer searches — on your website, on your Google Business Profile, and across the local web.</p>
-<p>That is what I build: a profile that looks alive, pages that match how locals actually search, and a review flow that keeps working while you run your business.</p>
+<p>That is what I build in Slovenia: a profile that looks alive, pages that match how locals actually search — Ljubljana, Maribor, Celje, Koper — and a review flow that keeps working while you run your business.</p>
 </div>
 </div>
 </div>
@@ -408,7 +431,7 @@ Google controls about 92.24 percent of Slovenian search, so the technical playbo
 <section class="si12-ranked">
 <div class="si12-ranked__in">
 <h2 class="reveal">ALSO RANKED</h2>
-<p class="reveal d1">I also help businesses in these nearby areas rank on Google.</p>
+<p class="reveal d1">I also help businesses in the surrounding countries rank on Google.</p>
 <div class="si12-rchips reveal d2"><span class="si12-rchip">Ljubljana</span><span class="si12-rchip">Maribor</span><span class="si12-rchip">Celje</span><span class="si12-rchip">Kranj</span><span class="si12-rchip">Koper</span><span class="si12-rchip">Novo Mesto</span><span class="si12-rchip">Ptuj</span><span class="si12-rchip">Velenje</span></div>
 </div>
 </section>
@@ -416,7 +439,11 @@ Google controls about 92.24 percent of Slovenian search, so the technical playbo
 <section class="si12-rel">
 <div class="si12-rel__in">
 <h2 class="reveal">Related reading</h2>
-<div class="si12-rel__grid"><a class="si12-rel__card reveal d0" href="/locations/austria/"><span>NEARBY</span><strong>SEO Expert in Austria</strong></a><a class="si12-rel__card reveal d1" href="/locations/italy/"><span>NEARBY</span><strong>SEO Expert in Italy</strong></a><a class="si12-rel__card reveal d2" href="/locations/croatia/"><span>NEARBY</span><strong>SEO Expert in Croatia</strong></a></div>
+<div class="si12-rel__grid">
+<a class="si12-rel__card reveal d0" href="/locations/croatia/"><span>NEARBY</span><strong>SEO Expert in Croatia</strong></a>
+<a class="si12-rel__card reveal d1" href="/locations/austria/"><span>ALSO SERVED</span><strong>SEO expert in Austria</strong></a>
+<a class="si12-rel__card reveal d2" href="/locations/hungary/"><span>ALSO SERVED</span><strong>SEO expert in Hungary</strong></a>
+</div>
 </div>
 </section>
 
@@ -426,7 +453,7 @@ Google controls about 92.24 percent of Slovenian search, so the technical playbo
       <div class="contact__lhs">
         <span class="eyebrow">Let's rank</span>
         <h2 class="h-section" style="margin-top:18px" id="ctaH2">Ready to improve your visibility in <span class="text-grad">Slovenia</span>?</h2>
-        <p>Book a free 30-minute strategy call. I'll audit your current visibility live and tell you exactly what it would take to reach the top 3.</p>
+        <p>Book a free 30-minute strategy call. I’ll audit your Slovenian visibility live — your Ljubljana listings, your reviews, your pages — and tell you exactly what it would take to crack the top 3.</p>
         <div class="contact__info">
           <a href="mailto:info@globeskillz.com" data-magnetic>
             <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
@@ -670,5 +697,7 @@ Google controls about 92.24 percent of Slovenian search, so the technical playbo
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "SEO expert in Slovenia", "description": "SEO expert in Slovenia: Slovenian-language local SEO for a small market where a few rankings decide everything. Free audit.", "url": "https://globeskillz.com/locations/slovenia/", "provider": {"@type": "Organization", "name": "Globe Skillz", "url": "https://globeskillz.com/"}, "areaServed": "Slovenia"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://globeskillz.com/"}, {"@type": "ListItem", "position": 2, "name": "Locations", "item": "https://globeskillz.com/#coverage"}, {"@type": "ListItem", "position": 3, "name": "SEO expert in Slovenia", "item": "https://globeskillz.com/locations/slovenia/"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Slovenia is tiny. Is SEO really worth it with only 2 million people?","acceptedAnswer":{"@type":"Answer","text":"Yes, and small is exactly why. With just over 2 million people, search volumes per keyword are modest, but so is the competition. A focused business with proper Slovenian pages, a complete profile and steady reviews can own its trade's searches nationally. The investment is smaller than in big markets and the share of voice available is larger. Small markets reward precision, not budget."}},{"@type":"Question","name":"Do I need my website in Slovenian, or will English rank?","acceptedAnswer":{"@type":"Answer","text":"Slovenian is the foundation for local customers, full stop. Slovenians search in Slovenian even though most speak good English. Add other languages only where the buyers justify it: Italian on the coast, German near the Austrian border, English for tourism businesses. Each language is a separate set of rankings your competitors are probably ignoring, so multilingual expansion here is offense, not overhead."}},{"@type":"Question","name":"How do I compete with Austrian and Italian companies showing up in Slovenian results?","acceptedAnswer":{"@type":"Answer","text":"By being unmistakably Slovenian. Austrian and Italian competitors show up in Slovenian results, but they rarely invest in proper Slovenian content, local reviews or Slovenian directory listings. That is their weakness and your opening. Native-language pages, a complete Google Business Profile with Slovenian reviews, and citations on RumeneStrani.si signal local relevance that a foreign site cannot fake. I build the local trust layer they skip."}},{"@type":"Question","name":"What is RumeneStrani.si, and do I still need a listing there?","acceptedAnswer":{"@type":"Answer","text":"Yes. RumeneStrani.si has three decades of recognition as Slovenia's business directory, and Google treats long-standing local directories as trust signals. It is not where customers discover you first, that is Google, but a correct, complete listing there strengthens the citation footprint that helps you rank on Google. I claim and clean it as part of the standard citation work, because in a small market every trust signal counts double."}},{"@type":"Question","name":"Do Slovenians buy online or still visit the shop first?","acceptedAnswer":{"@type":"Answer","text":"Both, and the mix depends on your trade. Slovenians research online first, then visit for high-consideration purchases. Your job is to win the research phase: be the business with the clearest information, the best reviews and the easiest contact path. For shops, that means accurate hours, real photos and stock-aware pages. For services, it means proof: reviews, case examples, transparent pricing. I optimize for the researcher, because the researcher becomes the visitor."}}]}</script>
+<script src="/assets/js/lottie.min.js"></script>
+<script>(function(){var els=document.querySelectorAll('[data-lot]');if(!els.length||typeof lottie==='undefined')return;els.forEach(function(el){try{var anim=lottie.loadAnimation({container:el,renderer:'svg',loop:true,autoplay:true,path:'/assets/lottie/'+el.getAttribute('data-lot')});anim.addEventListener('DOMLoaded',function(){var img=el.querySelector('img');if(img)img.style.display='none';});}catch(e){}});})();</script>
 </body>
 </html>
