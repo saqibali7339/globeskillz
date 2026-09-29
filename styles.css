@@ -1304,3 +1304,10 @@ section table:not([class]) tr:last-child td { border-bottom: none; }
   .float-card, .ai-phone, .ai-chart .bar, .ai-pin, .ai-shield, .ai-star, .ai-rocket, .ai-search { animation: none; }
   .ai-check { stroke-dashoffset: 0; }
 }
+
+/* ---------- Conversion pages: centered content + robust cards ---------- */
+.conv-hero ~ section .section-head { align-items: center; text-align: center; margin-left: auto; margin-right: auto; }
+.conv-hero ~ section .section-head__sub { margin-left: auto; margin-right: auto; }
+.whyme-card, .pain-card, .proof-card { display: flex; flex-direction: column; }
+.whyme-card .anim-icon, .pain-card .anim-icon { width: 44px; height: 44px; min-width: 44px; min-height: 44px; }
+.whyme-card .anim-icon svg, .pain-card .anim-icon svg { width: 44px; height: 44px; }
