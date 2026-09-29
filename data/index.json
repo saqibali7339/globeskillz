@@ -1,471 +1,479 @@
 {
- "locations": [
-  {
-   "slug": "birmingham",
-   "place": "Birmingham",
-   "keyword": "SEO expert in Birmingham",
-   "type": "city",
-   "region": "uk"
-  },
-  {
-   "slug": "manchester",
-   "place": "Manchester",
-   "keyword": "SEO expert in Manchester",
-   "type": "city",
-   "region": "uk"
-  },
-  {
-   "slug": "liverpool",
-   "place": "Liverpool",
-   "keyword": "SEO expert in Liverpool",
-   "type": "city",
-   "region": "uk"
-  },
-  {
-   "slug": "nottingham",
-   "place": "Nottingham",
-   "keyword": "SEO expert in Nottingham",
-   "type": "city",
-   "region": "uk"
-  },
-  {
-   "slug": "chester",
-   "place": "Chester",
-   "keyword": "SEO expert in Chester",
-   "type": "city",
-   "region": "uk"
-  },
-  {
-   "slug": "gloucester",
-   "place": "Gloucester",
-   "keyword": "SEO expert in Gloucester",
-   "type": "city",
-   "region": "uk"
-  },
-  {
-   "slug": "norwich",
-   "place": "Norwich",
-   "keyword": "SEO expert in Norwich",
-   "type": "city",
-   "region": "uk"
-  },
-  {
-   "slug": "edinburgh",
-   "place": "Edinburgh",
-   "keyword": "SEO expert in Edinburgh",
-   "type": "city",
-   "region": "uk"
-  },
-  {
-   "slug": "glasgow",
-   "place": "Glasgow",
-   "keyword": "SEO expert in Glasgow",
-   "type": "city",
-   "region": "uk"
-  },
-  {
-   "slug": "austria",
-   "place": "Austria",
-   "keyword": "SEO expert in Austria",
-   "type": "eu-country",
-   "region": "eu"
-  },
-  {
-   "slug": "belgium",
-   "place": "Belgium",
-   "keyword": "SEO expert in Belgium",
-   "type": "eu-country",
-   "region": "eu"
-  },
-  {
-   "slug": "bulgaria",
-   "place": "Bulgaria",
-   "keyword": "SEO expert in Bulgaria",
-   "type": "eu-country",
-   "region": "eu"
-  },
-  {
-   "slug": "croatia",
-   "place": "Croatia",
-   "keyword": "SEO expert in Croatia",
-   "type": "eu-country",
-   "region": "eu"
-  },
-  {
-   "slug": "cyprus",
-   "place": "Cyprus",
-   "keyword": "SEO expert in Cyprus",
-   "type": "eu-country",
-   "region": "eu"
-  },
-  {
-   "slug": "czechia",
-   "place": "Czechia",
-   "keyword": "SEO expert in Czechia",
-   "type": "eu-country",
-   "region": "eu"
-  },
-  {
-   "slug": "denmark",
-   "place": "Denmark",
-   "keyword": "SEO expert in Denmark",
-   "type": "eu-country",
-   "region": "eu"
-  },
-  {
-   "slug": "estonia",
-   "place": "Estonia",
-   "keyword": "SEO expert in Estonia",
-   "type": "eu-country",
-   "region": "eu"
-  },
-  {
-   "slug": "finland",
-   "place": "Finland",
-   "keyword": "SEO expert in Finland",
-   "type": "eu-country",
-   "region": "eu"
-  },
-  {
-   "slug": "france",
-   "place": "France",
-   "keyword": "SEO expert in France",
-   "type": "eu-country",
-   "region": "eu"
-  },
-  {
-   "slug": "germany",
-   "place": "Germany",
-   "keyword": "SEO expert in Germany",
-   "type": "eu-country",
-   "region": "eu"
-  },
-  {
-   "slug": "greece",
-   "place": "Greece",
-   "keyword": "SEO expert in Greece",
-   "type": "eu-country",
-   "region": "eu"
-  },
-  {
-   "slug": "hungary",
-   "place": "Hungary",
-   "keyword": "SEO expert in Hungary",
-   "type": "eu-country",
-   "region": "eu"
-  },
-  {
-   "slug": "ireland",
-   "place": "Ireland",
-   "keyword": "SEO expert in Ireland",
-   "type": "eu-country",
-   "region": "eu"
-  },
-  {
-   "slug": "italy",
-   "place": "Italy",
-   "keyword": "SEO expert in Italy",
-   "type": "eu-country",
-   "region": "eu"
-  },
-  {
-   "slug": "latvia",
-   "place": "Latvia",
-   "keyword": "SEO expert in Latvia",
-   "type": "eu-country",
-   "region": "eu"
-  },
-  {
-   "slug": "lithuania",
-   "place": "Lithuania",
-   "keyword": "SEO expert in Lithuania",
-   "type": "eu-country",
-   "region": "eu"
-  },
-  {
-   "slug": "luxembourg",
-   "place": "Luxembourg",
-   "keyword": "SEO expert in Luxembourg",
-   "type": "eu-country",
-   "region": "eu"
-  },
-  {
-   "slug": "malta",
-   "place": "Malta",
-   "keyword": "SEO expert in Malta",
-   "type": "eu-country",
-   "region": "eu"
-  },
-  {
-   "slug": "netherlands",
-   "place": "Netherlands",
-   "keyword": "SEO expert in Netherlands",
-   "type": "eu-country",
-   "region": "eu"
-  },
-  {
-   "slug": "poland",
-   "place": "Poland",
-   "keyword": "SEO expert in Poland",
-   "type": "eu-country",
-   "region": "eu"
-  },
-  {
-   "slug": "portugal",
-   "place": "Portugal",
-   "keyword": "SEO expert in Portugal",
-   "type": "eu-country",
-   "region": "eu"
-  },
-  {
-   "slug": "romania",
-   "place": "Romania",
-   "keyword": "SEO expert in Romania",
-   "type": "eu-country",
-   "region": "eu"
-  },
-  {
-   "slug": "slovakia",
-   "place": "Slovakia",
-   "keyword": "SEO expert in Slovakia",
-   "type": "eu-country",
-   "region": "eu"
-  },
-  {
-   "slug": "slovenia",
-   "place": "Slovenia",
-   "keyword": "SEO expert in Slovenia",
-   "type": "eu-country",
-   "region": "eu"
-  },
-  {
-   "slug": "spain",
-   "place": "Spain",
-   "keyword": "SEO expert in Spain",
-   "type": "eu-country",
-   "region": "eu"
-  },
-  {
-   "slug": "sweden",
-   "place": "Sweden",
-   "keyword": "SEO expert in Sweden",
-   "type": "eu-country",
-   "region": "eu"
-  },
-  {
-   "slug": "switzerland",
-   "place": "Switzerland",
-   "keyword": "SEO expert in Switzerland",
-   "type": "country",
-   "region": "eu"
-  },
-  {
-   "slug": "usa",
-   "place": "USA",
-   "keyword": "SEO expert in USA",
-   "type": "country",
-   "region": "us"
-  },
-  {
-   "slug": "uk",
-   "place": "UK",
-   "keyword": "SEO expert in UK",
-   "type": "country",
-   "region": "uk"
-  },
-  {
-   "slug": "canada",
-   "place": "Canada",
-   "keyword": "SEO expert in Canada",
-   "type": "country",
-   "region": "canada"
-  },
-  {
-   "slug": "australia",
-   "place": "Australia",
-   "keyword": "SEO expert in Australia",
-   "type": "country",
-   "region": "specialty"
-  },
-  {
-   "slug": "singapore",
-   "place": "Singapore",
-   "keyword": "SEO expert in Singapore",
-   "type": "country",
-   "region": "specialty"
-  },
-  {
-   "slug": "rossendale",
-   "place": "Rossendale",
-   "keyword": "SEO expert in Rossendale",
-   "type": "city",
-   "region": "uk"
-  },
-  {
-   "slug": "devon",
-   "place": "Devon",
-   "keyword": "SEO expert in Devon",
-   "type": "city",
-   "region": "uk"
-  },
-  {
-   "slug": "stockport",
-   "place": "Stockport",
-   "keyword": "SEO expert in Stockport",
-   "type": "city",
-   "region": "uk"
-  },
-  {
-   "slug": "colorado-springs",
-   "place": "Colorado Springs",
-   "keyword": "SEO expert in Colorado Springs",
-   "type": "city",
-   "region": "us"
-  },
-  {
-   "slug": "san-jose",
-   "place": "San Jose",
-   "keyword": "SEO expert in San Jose",
-   "type": "city",
-   "region": "us"
-  },
-  {
-   "slug": "melbourne",
-   "place": "Melbourne",
-   "keyword": "SEO expert in Melbourne",
-   "type": "city",
-   "region": "specialty"
-  },
-  {
-   "slug": "dubai",
-   "place": "Dubai",
-   "keyword": "local seo packages in dubai",
-   "type": "city",
-   "region": "specialty"
-  },
-  {
-   "slug": "johannesburg",
-   "place": "Johannesburg",
-   "keyword": "SEO expert in Johannesburg",
-   "type": "city",
-   "region": "specialty"
-  },
-  {
-   "slug": "bolton",
-   "place": "Bolton",
-   "keyword": "SEO expert in Bolton",
-   "type": "city",
-   "region": "uk"
-  },
-  {
-   "slug": "huddersfield",
-   "place": "Huddersfield",
-   "keyword": "SEO expert in Huddersfield",
-   "type": "city",
-   "region": "uk"
-  },
-  {
-   "slug": "macclesfield",
-   "place": "Macclesfield",
-   "keyword": "SEO expert in Macclesfield",
-   "type": "city",
-   "region": "uk"
-  },
-  {
-   "slug": "sri-lanka",
-   "place": "Sri Lanka",
-   "keyword": "SEO expert in Sri Lanka",
-   "type": "country",
-   "region": "specialty"
-  }
- ],
- "niches": [
-  {
-   "slug": "tattoo-artists",
-   "niche": "tattoo artists",
-   "keyword": "SEO expert for tattoo artists"
-  },
-  {
-   "slug": "pest-control-companies",
-   "niche": "pest control companies",
-   "keyword": "SEO expert for pest control companies"
-  },
-  {
-   "slug": "towing-companies",
-   "niche": "towing companies",
-   "keyword": "SEO expert for towing companies"
-  },
-  {
-   "slug": "restaurant",
-   "niche": "restaurants",
-   "keyword": "Restaurant SEO Services"
-  },
-  {
-   "slug": "packaging-manufacturers",
-   "niche": "packaging manufacturers",
-   "keyword": "SEO for Packaging Manufacturers"
-  },
-  {
-   "slug": "plumbing-companies",
-   "keyword": "SEO for plumbing companies"
-  },
-  {
-   "slug": "lawyers",
-   "keyword": "SEO for lawyers"
-  },
-  {
-   "slug": "doctors",
-   "keyword": "SEO for doctors"
-  },
-  {
-   "slug": "aesthetics",
-   "keyword": "SEO for aesthetics businesses"
-  },
-  {
-   "slug": "schools",
-   "niche": "schools and tutors",
-   "keyword": "SEO for local schools and tutors"
-  },
-  {
-   "slug": "local-services",
-   "keyword": "SEO for local service businesses"
-  },
-  {
-   "slug": "professional-services",
-   "niche": "professional services",
-   "keyword": "SEO for professional services"
-  },
-  {
-   "slug": "auto-repair",
-   "keyword": "SEO for auto repair shops"
-  },
-  {
-   "slug": "restoration",
-   "keyword": "SEO for restoration companies"
-  },
-  {
-   "slug": "fitness",
-   "niche": "fitness businesses",
-   "keyword": "SEO for fitness businesses"
-  },
-  {
-   "slug": "home-services",
-   "keyword": "SEO for home service businesses"
-  },
-  {
-   "slug": "pet-care",
-   "niche": "pet care businesses",
-   "keyword": "SEO for pet care businesses"
-  },
-  {
-   "slug": "wedding",
-   "niche": "wedding businesses",
-   "keyword": "SEO for wedding businesses"
-  },
-  {
-   "slug": "e-commerce",
-   "niche": "e-commerce businesses",
-   "keyword": "e-commerce SEO services"
-  }
- ]
+  "locations": [
+    {
+      "slug": "birmingham",
+      "place": "Birmingham",
+      "keyword": "SEO expert in Birmingham",
+      "type": "city",
+      "region": "uk"
+    },
+    {
+      "slug": "manchester",
+      "place": "Manchester",
+      "keyword": "SEO expert in Manchester",
+      "type": "city",
+      "region": "uk"
+    },
+    {
+      "slug": "liverpool",
+      "place": "Liverpool",
+      "keyword": "SEO expert in Liverpool",
+      "type": "city",
+      "region": "uk"
+    },
+    {
+      "slug": "nottingham",
+      "place": "Nottingham",
+      "keyword": "SEO expert in Nottingham",
+      "type": "city",
+      "region": "uk"
+    },
+    {
+      "slug": "chester",
+      "place": "Chester",
+      "keyword": "SEO expert in Chester",
+      "type": "city",
+      "region": "uk"
+    },
+    {
+      "slug": "gloucester",
+      "place": "Gloucester",
+      "keyword": "SEO expert in Gloucester",
+      "type": "city",
+      "region": "uk"
+    },
+    {
+      "slug": "norwich",
+      "place": "Norwich",
+      "keyword": "SEO expert in Norwich",
+      "type": "city",
+      "region": "uk"
+    },
+    {
+      "slug": "edinburgh",
+      "place": "Edinburgh",
+      "keyword": "SEO expert in Edinburgh",
+      "type": "city",
+      "region": "uk"
+    },
+    {
+      "slug": "glasgow",
+      "place": "Glasgow",
+      "keyword": "SEO expert in Glasgow",
+      "type": "city",
+      "region": "uk"
+    },
+    {
+      "slug": "austria",
+      "place": "Austria",
+      "keyword": "SEO expert in Austria",
+      "type": "eu-country",
+      "region": "eu"
+    },
+    {
+      "slug": "belgium",
+      "place": "Belgium",
+      "keyword": "SEO expert in Belgium",
+      "type": "eu-country",
+      "region": "eu"
+    },
+    {
+      "slug": "bulgaria",
+      "place": "Bulgaria",
+      "keyword": "SEO expert in Bulgaria",
+      "type": "eu-country",
+      "region": "eu"
+    },
+    {
+      "slug": "croatia",
+      "place": "Croatia",
+      "keyword": "SEO expert in Croatia",
+      "type": "eu-country",
+      "region": "eu"
+    },
+    {
+      "slug": "cyprus",
+      "place": "Cyprus",
+      "keyword": "SEO expert in Cyprus",
+      "type": "eu-country",
+      "region": "eu"
+    },
+    {
+      "slug": "czechia",
+      "place": "Czechia",
+      "keyword": "SEO expert in Czechia",
+      "type": "eu-country",
+      "region": "eu"
+    },
+    {
+      "slug": "denmark",
+      "place": "Denmark",
+      "keyword": "SEO expert in Denmark",
+      "type": "eu-country",
+      "region": "eu"
+    },
+    {
+      "slug": "estonia",
+      "place": "Estonia",
+      "keyword": "SEO expert in Estonia",
+      "type": "eu-country",
+      "region": "eu"
+    },
+    {
+      "slug": "finland",
+      "place": "Finland",
+      "keyword": "SEO expert in Finland",
+      "type": "eu-country",
+      "region": "eu"
+    },
+    {
+      "slug": "france",
+      "place": "France",
+      "keyword": "SEO expert in France",
+      "type": "eu-country",
+      "region": "eu"
+    },
+    {
+      "slug": "germany",
+      "place": "Germany",
+      "keyword": "SEO expert in Germany",
+      "type": "eu-country",
+      "region": "eu"
+    },
+    {
+      "slug": "greece",
+      "place": "Greece",
+      "keyword": "SEO expert in Greece",
+      "type": "eu-country",
+      "region": "eu"
+    },
+    {
+      "slug": "hungary",
+      "place": "Hungary",
+      "keyword": "SEO expert in Hungary",
+      "type": "eu-country",
+      "region": "eu"
+    },
+    {
+      "slug": "ireland",
+      "place": "Ireland",
+      "keyword": "SEO expert in Ireland",
+      "type": "eu-country",
+      "region": "eu"
+    },
+    {
+      "slug": "italy",
+      "place": "Italy",
+      "keyword": "SEO expert in Italy",
+      "type": "eu-country",
+      "region": "eu"
+    },
+    {
+      "slug": "latvia",
+      "place": "Latvia",
+      "keyword": "SEO expert in Latvia",
+      "type": "eu-country",
+      "region": "eu"
+    },
+    {
+      "slug": "lithuania",
+      "place": "Lithuania",
+      "keyword": "SEO expert in Lithuania",
+      "type": "eu-country",
+      "region": "eu"
+    },
+    {
+      "slug": "luxembourg",
+      "place": "Luxembourg",
+      "keyword": "SEO expert in Luxembourg",
+      "type": "eu-country",
+      "region": "eu"
+    },
+    {
+      "slug": "malta",
+      "place": "Malta",
+      "keyword": "SEO expert in Malta",
+      "type": "eu-country",
+      "region": "eu"
+    },
+    {
+      "slug": "netherlands",
+      "place": "Netherlands",
+      "keyword": "SEO expert in Netherlands",
+      "type": "eu-country",
+      "region": "eu"
+    },
+    {
+      "slug": "poland",
+      "place": "Poland",
+      "keyword": "SEO expert in Poland",
+      "type": "eu-country",
+      "region": "eu"
+    },
+    {
+      "slug": "portugal",
+      "place": "Portugal",
+      "keyword": "SEO expert in Portugal",
+      "type": "eu-country",
+      "region": "eu"
+    },
+    {
+      "slug": "romania",
+      "place": "Romania",
+      "keyword": "SEO expert in Romania",
+      "type": "eu-country",
+      "region": "eu"
+    },
+    {
+      "slug": "slovakia",
+      "place": "Slovakia",
+      "keyword": "SEO expert in Slovakia",
+      "type": "eu-country",
+      "region": "eu"
+    },
+    {
+      "slug": "slovenia",
+      "place": "Slovenia",
+      "keyword": "SEO expert in Slovenia",
+      "type": "eu-country",
+      "region": "eu"
+    },
+    {
+      "slug": "spain",
+      "place": "Spain",
+      "keyword": "SEO expert in Spain",
+      "type": "eu-country",
+      "region": "eu"
+    },
+    {
+      "slug": "sweden",
+      "place": "Sweden",
+      "keyword": "SEO expert in Sweden",
+      "type": "eu-country",
+      "region": "eu"
+    },
+    {
+      "slug": "switzerland",
+      "place": "Switzerland",
+      "keyword": "SEO expert in Switzerland",
+      "type": "country",
+      "region": "eu"
+    },
+    {
+      "slug": "usa",
+      "place": "USA",
+      "keyword": "SEO expert in USA",
+      "type": "country",
+      "region": "us"
+    },
+    {
+      "slug": "uk",
+      "place": "UK",
+      "keyword": "SEO expert in UK",
+      "type": "country",
+      "region": "uk"
+    },
+    {
+      "slug": "canada",
+      "place": "Canada",
+      "keyword": "SEO expert in Canada",
+      "type": "country",
+      "region": "canada"
+    },
+    {
+      "slug": "australia",
+      "place": "Australia",
+      "keyword": "SEO expert in Australia",
+      "type": "country",
+      "region": "specialty"
+    },
+    {
+      "slug": "singapore",
+      "place": "Singapore",
+      "keyword": "SEO expert in Singapore",
+      "type": "country",
+      "region": "specialty"
+    },
+    {
+      "slug": "rossendale",
+      "place": "Rossendale",
+      "keyword": "SEO expert in Rossendale",
+      "type": "city",
+      "region": "uk"
+    },
+    {
+      "slug": "devon",
+      "place": "Devon",
+      "keyword": "SEO expert in Devon",
+      "type": "city",
+      "region": "uk"
+    },
+    {
+      "slug": "stockport",
+      "place": "Stockport",
+      "keyword": "SEO expert in Stockport",
+      "type": "city",
+      "region": "uk"
+    },
+    {
+      "slug": "colorado-springs",
+      "place": "Colorado Springs",
+      "keyword": "SEO expert in Colorado Springs",
+      "type": "city",
+      "region": "us"
+    },
+    {
+      "slug": "san-jose",
+      "place": "San Jose",
+      "keyword": "SEO expert in San Jose",
+      "type": "city",
+      "region": "us"
+    },
+    {
+      "slug": "melbourne",
+      "place": "Melbourne",
+      "keyword": "SEO expert in Melbourne",
+      "type": "city",
+      "region": "specialty"
+    },
+    {
+      "slug": "dubai",
+      "place": "Dubai",
+      "keyword": "local seo packages in dubai",
+      "type": "city",
+      "region": "specialty"
+    },
+    {
+      "slug": "johannesburg",
+      "place": "Johannesburg",
+      "keyword": "SEO expert in Johannesburg",
+      "type": "city",
+      "region": "specialty"
+    },
+    {
+      "slug": "bolton",
+      "place": "Bolton",
+      "keyword": "SEO expert in Bolton",
+      "type": "city",
+      "region": "uk"
+    },
+    {
+      "slug": "huddersfield",
+      "place": "Huddersfield",
+      "keyword": "SEO expert in Huddersfield",
+      "type": "city",
+      "region": "uk"
+    },
+    {
+      "slug": "macclesfield",
+      "place": "Macclesfield",
+      "keyword": "SEO expert in Macclesfield",
+      "type": "city",
+      "region": "uk"
+    },
+    {
+      "slug": "sri-lanka",
+      "place": "Sri Lanka",
+      "keyword": "SEO expert in Sri Lanka",
+      "type": "country",
+      "region": "specialty"
+    }
+  ],
+  "niches": [
+    {
+      "slug": "tattoo-artists",
+      "niche": "tattoo artists",
+      "keyword": "SEO expert for tattoo artists"
+    },
+    {
+      "slug": "pest-control-companies",
+      "niche": "pest control companies",
+      "keyword": "SEO expert for pest control companies"
+    },
+    {
+      "slug": "towing-companies",
+      "niche": "towing companies",
+      "keyword": "SEO expert for towing companies"
+    },
+    {
+      "slug": "restaurant",
+      "niche": "restaurants",
+      "keyword": "Restaurant SEO Services"
+    },
+    {
+      "slug": "packaging-manufacturers",
+      "niche": "packaging manufacturers",
+      "keyword": "SEO for Packaging Manufacturers"
+    },
+    {
+      "slug": "plumbing-companies",
+      "keyword": "SEO for plumbing companies",
+      "niche": "plumbing companies"
+    },
+    {
+      "slug": "lawyers",
+      "keyword": "SEO for lawyers",
+      "niche": "lawyers"
+    },
+    {
+      "slug": "doctors",
+      "keyword": "SEO for doctors",
+      "niche": "doctors"
+    },
+    {
+      "slug": "aesthetics",
+      "keyword": "SEO for aesthetics businesses",
+      "niche": "aesthetics businesses"
+    },
+    {
+      "slug": "schools",
+      "niche": "schools and tutors",
+      "keyword": "SEO for local schools and tutors"
+    },
+    {
+      "slug": "local-services",
+      "keyword": "SEO for local service businesses",
+      "niche": "local service businesses"
+    },
+    {
+      "slug": "professional-services",
+      "niche": "professional services",
+      "keyword": "SEO for professional services"
+    },
+    {
+      "slug": "auto-repair",
+      "keyword": "SEO for auto repair shops",
+      "niche": "auto repair shops"
+    },
+    {
+      "slug": "restoration",
+      "keyword": "SEO for restoration companies",
+      "niche": "restoration companies"
+    },
+    {
+      "slug": "fitness",
+      "niche": "fitness businesses",
+      "keyword": "SEO for fitness businesses"
+    },
+    {
+      "slug": "home-services",
+      "keyword": "SEO for home service businesses",
+      "niche": "home service businesses"
+    },
+    {
+      "slug": "pet-care",
+      "niche": "pet care businesses",
+      "keyword": "SEO for pet care businesses"
+    },
+    {
+      "slug": "wedding",
+      "niche": "wedding businesses",
+      "keyword": "SEO for wedding businesses"
+    },
+    {
+      "slug": "e-commerce",
+      "niche": "e-commerce businesses",
+      "keyword": "e-commerce SEO services"
+    }
+  ]
 }

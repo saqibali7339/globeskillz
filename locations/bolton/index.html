@@ -710,7 +710,7 @@
 
   // Kick hero words
   requestAnimationFrame(() => {
-    document.querySelectorAll('.loc-hero .split').forEach(el => {
+    document.querySelectorAll('.loc-hero .split, .conv-hero .split').forEach(el => {
       el.querySelectorAll('.word').forEach((c, j) => c.style.transitionDelay = (j * 0.06) + 's');
       el.classList.add('in');
     });
