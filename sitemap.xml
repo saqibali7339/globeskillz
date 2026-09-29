@@ -112,4 +112,10 @@
   <url><loc>https://globeskillz.com/industries/towing-companies/</loc><lastmod>2026-09-28</lastmod></url>
   <url><loc>https://globeskillz.com/industries/wedding/</loc><lastmod>2026-09-28</lastmod></url>
   <url><loc>https://globeskillz.com/locations/switzerland/</loc><lastmod>2026-09-28</lastmod></url>
+  <url>
+    <loc>https://globeskillz.com/results/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
