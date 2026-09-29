@@ -101,8 +101,133 @@
   ]
 }
 </script>
+
+<style>
+
+/* ===== bo5 base ===== */
+.bo5-grad{background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.bo5-hero{width:100%;min-height:88vh;display:flex;align-items:center;justify-content:center;padding:118px 24px 84px;position:relative;overflow:hidden;overflow-x:clip;text-align:center;background:radial-gradient(ellipse 90% 60% at 50% -10%,#0d1226 0%,#06070d 60%),#06070d;}
+.bo5-hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(124,92,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(124,92,255,.05) 1px,transparent 1px);background-size:44px 44px;mask-image:radial-gradient(ellipse 70% 70% at 50% 40%,#000 30%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse 70% 70% at 50% 40%,#000 30%,transparent 75%);pointer-events:none;}
+.bo5-hero__in{position:relative;max-width:940px;margin:0 auto;min-width:0;width:100%;}
+.bo5-hero h1{color:#eef1f7;font-family:var(--font-display);font-weight:700;font-size:clamp(34px,5.4vw,62px);line-height:1.12;margin:0 0 20px;}
+.bo5-sub{color:#a2a9bb;font-size:clamp(15.5px,2vw,18.5px);line-height:1.75;max-width:700px;margin:0 auto 38px;}
+.bo5-ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:0 0 24px;}
+.bo5-cta{display:inline-block;background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);color:#06070d;font-weight:800;font-size:16.5px;padding:16px 42px;border-radius:100px;text-decoration:none;transition:transform .25s;}
+.bo5-cta:hover{transform:scale(1.05);}
+.bo5-ghost{display:inline-block;color:#eef1f7;font-weight:700;font-size:16.5px;padding:15px 38px;border-radius:100px;text-decoration:none;border:1px solid rgba(255,255,255,.2);transition:border-color .25s,background .25s;}
+.bo5-ghost:hover{border-color:rgba(124,92,255,.6);background:rgba(124,92,255,.08);}
+.bo5-in{max-width:1120px;margin:0 auto;padding:0 24px;min-width:0;}
+.bo5-sec{padding:92px 0;overflow-x:clip;}
+.bo5-sec--alt{background:#0a0e1a;}
+.bo5-lede{color:#a2a9bb;font-size:17px;line-height:1.75;max-width:760px;margin:0 auto;}
+/* problem / solution */
+.bo5-prob__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:44px 0 40px;}
+.bo5-pcard{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:28px;backdrop-filter:blur(10px);min-width:0;}
+.bo5-pcard .bo5-pnum{font-size:12px;font-weight:800;letter-spacing:2.5px;color:#f87171;margin-bottom:12px;}
+.bo5-pcard strong{display:block;color:#eef1f7;font-size:17px;margin-bottom:8px;font-family:var(--font-display);}
+.bo5-pcard p{color:#a2a9bb;font-size:14.5px;line-height:1.65;margin:0;}
+.bo5-sol{max-width:820px;margin:0 auto;background:rgba(163,255,92,.05);border:1px solid rgba(163,255,92,.28);border-radius:22px;padding:38px 42px;}
+.bo5-sol strong{display:block;color:#eef1f7;font-size:21px;margin-bottom:12px;font-family:var(--font-display);}
+.bo5-sol p{color:#a2a9bb;font-size:16px;line-height:1.75;margin:0;}
+/* splits */
+.bo5-split__grid{max-width:1120px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,64px);align-items:center;min-width:0;}
+.bo5-split--flip .bo5-split__grid{direction:rtl;}
+.bo5-split--flip .bo5-split__grid>*{direction:ltr;}
+.bo5-shot{margin:0;border-radius:24px;overflow:hidden;border:1px solid rgba(255,255,255,.1);position:relative;min-width:0;}
+.bo5-shot img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;}
+.bo5-shot figcaption{position:absolute;left:16px;bottom:14px;font-size:12.5px;color:#eef1f7;background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.15);padding:8px 14px;border-radius:100px;backdrop-filter:blur(8px);}
+.bo5-scopy{min-width:0;}
+.bo5-scopy h2{color:#eef1f7;font-size:clamp(28px,3.6vw,42px);margin:14px 0 18px;font-family:var(--font-display);font-weight:700;line-height:1.15;}
+.bo5-scopy p{color:#a2a9bb;font-size:16px;line-height:1.75;margin:0 0 16px;}
+.bo5-ticks{list-style:none;margin:22px 0 0;padding:0;}
+.bo5-ticks li{display:flex;gap:12px;align-items:flex-start;color:#cdd3e1;font-size:15.5px;padding:10px 0;border-top:1px solid rgba(255,255,255,.08);line-height:1.55;}
+.bo5-tick{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);color:#06070d;font-weight:900;font-size:14px;display:flex;align-items:center;justify-content:center;margin-top:1px;}
+.bo5-overlay{position:relative;border-radius:24px;overflow:hidden;border:1px solid rgba(255,255,255,.1);min-height:380px;display:flex;align-items:flex-end;min-width:0;}
+.bo5-overlay img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.bo5-overlay::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,7,13,.05) 30%,rgba(6,7,13,.88) 100%);}
+.bo5-ocard{position:relative;z-index:1;margin:22px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:24px 26px;backdrop-filter:blur(12px);}
+.bo5-ocard strong{display:block;color:#eef1f7;font-size:16.5px;margin-bottom:6px;font-family:var(--font-display);}
+.bo5-ocard span{color:#a2a9bb;font-size:14px;line-height:1.6;}
+/* fix */
+.bo5-fix__grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:44px;}
+.bo5-fstep{display:flex;gap:18px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:28px;min-width:0;}
+.bo5-fstep>span{flex-shrink:0;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);color:#06070d;font-weight:900;font-size:19px;display:flex;align-items:center;justify-content:center;}
+.bo5-fstep strong{display:block;color:#eef1f7;font-size:17.5px;margin-bottom:8px;font-family:var(--font-display);}
+.bo5-fstep em{color:#a2a9bb;font-size:14.5px;font-style:normal;line-height:1.65;}
+/* why */
+.bo5-why__grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:44px;}
+.bo5-wcard{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:30px;min-width:0;}
+.bo5-wcard .bo5-wico{font-size:26px;margin-bottom:14px;display:block;}
+.bo5-wcard strong{display:block;color:#eef1f7;font-size:18.5px;margin-bottom:10px;font-family:var(--font-display);}
+.bo5-wcard span{color:#a2a9bb;font-size:15px;line-height:1.65;}
+/* price */
+.bo5-price__in{max-width:720px;margin:0 auto;text-align:center;min-width:0;}
+.bo5-price__card{background:rgba(255,255,255,.03);border:1px solid rgba(163,255,92,.35);border-radius:24px;padding:42px 38px;text-align:left;margin-top:40px;}
+.bo5-price__top{display:flex;justify-content:space-between;align-items:center;margin-bottom:26px;flex-wrap:wrap;gap:12px;}
+.bo5-price__top strong{color:#eef1f7;font-size:21px;font-family:var(--font-display);}
+.bo5-price__amt{font-size:44px;font-weight:900;background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;white-space:nowrap;}
+.bo5-price__amt span{font-size:15px;font-weight:400;color:#a2a9bb;-webkit-text-fill-color:#a2a9bb;}
+.bo5-price__card ul{margin:0 0 30px;padding:0;list-style:none;}
+.bo5-price__card li{display:flex;gap:12px;align-items:flex-start;color:#a2a9bb;font-size:15.5px;padding:9px 0;border-top:1px solid rgba(255,255,255,.07);line-height:1.55;}
+.bo5-price__card li b{color:#a3ff5c;font-weight:900;}
+.bo5-price__note{color:#a2a9bb;font-size:14px;margin:0;text-align:center;}
+/* cta band */
+.bo5-ctaband{padding:100px 24px;background:radial-gradient(ellipse at 50% 0%,#0d1226 0%,#06070d 65%);text-align:center;overflow-x:clip;}
+.bo5-ctaband__in{max-width:760px;margin:0 auto;min-width:0;}
+.bo5-ctaband h2{color:#eef1f7;font-size:clamp(30px,4vw,48px);margin:16px 0 18px;font-family:var(--font-display);font-weight:700;line-height:1.15;}
+.bo5-ctaband p{color:#a2a9bb;font-size:17.5px;line-height:1.7;margin:0 0 36px;}
+/* chips */
+.bo5-chips{padding:36px 24px;overflow-x:clip;}
+.bo5-chips__in{max-width:1120px;margin:0 auto;display:flex;flex-wrap:wrap;gap:10px;align-items:center;}
+.bo5-chips__t{color:#a2a9bb;font-size:13px;letter-spacing:2px;font-weight:700;margin-right:8px;}
+.bo5-chips__in span:not(.bo5-chips__t){color:#eef1f7;font-size:14px;padding:9px 18px;border-radius:100px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03);cursor:default;}
+/* faq */
+.bo5-faq__intro{color:#a2a9bb;font-size:16.5px;line-height:1.7;max-width:640px;margin:6px auto 0;}
+.bo5-faq__list{max-width:820px;margin:40px auto 0;display:flex;flex-direction:column;gap:14px;}
+.bo5-faq__empty{max-width:820px;margin:40px auto 0;text-align:center;color:#a2a9bb;font-size:16px;line-height:1.7;background:rgba(255,255,255,.03);border:1px dashed rgba(255,255,255,.18);border-radius:18px;padding:34px 30px;}
+.bo5-faq__empty a{color:#22d3ee;font-weight:700;}
+/* related reading */
+.bo5-rr__grid{max-width:1120px;margin:44px auto 0;padding:0 24px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.bo5-rrcard{display:block;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:28px;text-decoration:none;transition:border-color .25s,transform .25s;min-width:0;}
+.bo5-rrcard:hover{border-color:rgba(124,92,255,.55);transform:translateY(-4px);}
+.bo5-rrcard .bo5-rrk{font-size:11.5px;font-weight:800;letter-spacing:2.5px;color:#22d3ee;margin-bottom:12px;}
+.bo5-rrcard strong{display:block;color:#eef1f7;font-size:17.5px;line-height:1.4;margin-bottom:10px;font-family:var(--font-display);}
+.bo5-rrcard span{color:#a2a9bb;font-size:14.5px;line-height:1.6;}
+.bo5-rrcard .bo5-rrmore{display:inline-block;margin-top:14px;color:#a3ff5c;font-weight:700;font-size:14px;}
+@media(max-width:860px){
+ .bo5-prob__grid,.bo5-fix__grid,.bo5-why__grid,.bo5-split__grid,.bo5-rr__grid{grid-template-columns:1fr !important;gap:22px;}
+ .bo5-split--flip .bo5-split__grid{direction:ltr;}
+ .bo5-sol,.bo5-price__card{padding:30px 24px;}
+ .bo5-hero{padding:104px 18px 64px;}
+ .bo5-sec{padding:64px 0;}
+ .bo5-fstep{padding:22px;}
+}
+
+.bo5-audit{max-width:640px;margin:0 auto;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:34px 36px;backdrop-filter:blur(12px);display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:center;text-align:left;}
+.bo5-score{position:relative;width:150px;height:150px;flex-shrink:0;}
+.bo5-score svg{transform:rotate(-90deg);}
+.bo5-score .bo5-snum{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+.bo5-score .bo5-snum b{font-size:34px;font-weight:900;background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.bo5-score .bo5-snum span{font-size:11.5px;color:#a2a9bb;letter-spacing:1.5px;font-weight:700;}
+.bo5-checks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;min-width:0;}
+.bo5-checks li{display:flex;gap:12px;align-items:flex-start;font-size:14.5px;color:#cdd3e1;line-height:1.5;}
+.bo5-ck{flex-shrink:0;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;margin-top:1px;}
+.bo5-ok{background:rgba(163,255,92,.15);color:#a3ff5c;border:1px solid rgba(163,255,92,.4);}
+.bo5-warn{background:rgba(248,113,113,.12);color:#f87171;border:1px solid rgba(248,113,113,.4);}
+@media(max-width:860px){.bo5-audit{grid-template-columns:1fr;justify-items:center;text-align:center;}}
+
+</style>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Service", "name": "SEO expert in Bolton", "description": "SEO company in Bolton: I help Bolton businesses outrank Manchester competitors on Google and turn local searches into calls. Greater Manchester expertise. Free audit.", "url": "https://globeskillz.com/locations/bolton/", "provider": {"@type": "Organization", "name": "Globe Skillz", "url": "https://globeskillz.com/"}, "areaServed": {"@type": "Country", "name": "Bolton"}, "offers": {"@type": "Offer", "price": "700", "priceCurrency": "USD", "description": "Monthly SEO plan: audit, keyword mapping, on-page, Business Profile, content, reporting."}}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://globeskillz.com/"}, {"@type": "ListItem", "position": 2, "name": "Locations", "item": "https://globeskillz.com/#coverage"}, {"@type": "ListItem", "position": 3, "name": "Bolton", "item": "https://globeskillz.com/locations/bolton/"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "My customers are split between Middlebrook and the town centre — where do I focus?", "acceptedAnswer": {"@type": "Answer", "text": "Both, but with different content. Middlebrook traffic is shopper and office-worker intent — 'lunch near Middlebrook', 'parking at Middlebrook' — while town-centre traffic leans toward events, evenings and the Food & Drink Festival. Build separate location-aware pages or profile posts for each rather than one generic Bolton page. specific, useful pages tend to perform better for both audiences, and you'll find the two audiences barely overlap in what they search."}}, {"@type": "Question", "name": "How do I rank in Bolton when Manchester agencies dominate the results?", "acceptedAnswer": {"@type": "Answer", "text": "You out-local them. Manchester firms rank on domain authority but usually have thin Bolton relevance — no Bolton reviews, no local photos, no suburb-specific content. A Bolton business with a fully optimised profile, 100+ local reviews, pages for Horwich, Farnworth and Westhoughton, and links from Bolton organisations beats a Manchester landing page in the map pack consistently. Local relevance is the ranking factor money can't shortcut."}}, {"@type": "Question", "name": "We supply trade customers from Logistics North — is Google worth it for B2B?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — B2B buyers start on Google exactly like consumers do. 'Warehouse space Bolton', 'palletised distribution Greater Manchester', 'industrial electrician North West' are all real, high-value searches. What closes B2B buyers is capability proof: real numbers, case studies, accreditations up front. Combine Google with trade-directory citations and LinkedIn telling the same story, and even a dozen detailed Google reviews from trade clients will separate you from competitors with empty profiles."}}, {"@type": "Question", "name": "Do match days at the stadium actually change search demand?", "acceptedAnswer": {"@type": "Answer", "text": "For businesses near the stadium and Middlebrook, yes — noticeably. Every home fixture creates a surge in 'near Bolton Wanderers' searches for food, drink, parking and hotels from visitors who don't know the area. Keep your profile hours accurate for fixtures, post match-day offers, and mention the stadium corridor naturally in your content. Almost nobody optimises for this, which is exactly why it works."}}, {"@type": "Question", "name": "What's the fastest win for a Bolton business starting SEO from zero?", "acceptedAnswer": {"@type": "Answer", "text": "The Google Business Profile rebuild plus a review engine — typically a small one-off project. Most Bolton businesses I audit have the wrong primary category, half their services unlisted, three photos from 2021 and a dozen stale reviews. Fixing that alone often moves the needle on 'near me' calls within weeks, before a single blog post is written. It's the highest-ROI first step in local SEO, and it's where every engagement I run starts."}}]}
+</script>
 </head>
-<body data-theme="iridescent">
+<body data-pagep="bo5" data-theme="iridescent">
 <script>var PAGE_TYPE='loc';var PAGE_SLUG='bolton';var PAGE_DEPTH=2;</script>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -152,195 +277,89 @@
 </nav>
 
 <main>
-
-<!-- ================= LOC HERO ================= -->
-<section class="bol-hero-section">
-<div class="container">
-<div class="bol-hero">
-<div class="bol-hero__text">
-<div class="bol-crumb"><a href="/">Home</a> / <a href="/locations/">Locations</a> / <span>Bolton</span></div>
-<h1>SEO for Bolton Businesses <span class="text-grad">Ready to Outrank Manchester</span></h1>
-<p class="bol-hero__sub">I'm a solo SEO specialist helping Bolton businesses get more calls, bookings, and customers from Google. No agencies, no account managers — just direct, honest SEO.</p>
-<div class="bol-hero__ctas">
-<a href="#contact" class="btn btn-primary" data-magnetic>Get a free audit</a>
-<a href="#how" class="btn btn-ghost" data-magnetic>See how I work</a>
-</div>
-</div>
-<div class="bol-hero__visual">
-<div class="bol-glass" style="padding:40px;text-align:center">
-<div style="font-size:64px;margin-bottom:16px">📍</div>
-<div style="color:#fff;font-size:20px;font-weight:700;margin-bottom:8px">Bolton, UK</div>
-<div style="color:rgba(255,255,255,.6);font-size:15px">Local SEO specialist<br>for Bolton businesses</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<style>
-/* Bolton: screenshot-inspired layout, site design tokens */
-.bol-glass { background:rgba(255,255,255,.04); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border:1px solid rgba(255,255,255,.1); border-radius:20px; }
-.bol-hero-section { padding:60px 0 40px; }
-.bol-hero { display:grid; grid-template-columns:1.1fr .9fr; gap:48px; align-items:center; }
-.bol-hero h1 { font-size:clamp(36px,5vw,60px); line-height:1.1; color:#fff; margin:0 0 20px; font-family:var(--font-display); }
-.bol-crumb { font-size:13px; color:var(--text-dim); margin-bottom:20px; text-transform:uppercase; letter-spacing:1px; }
-.bol-crumb a { color:#22d3ee; text-decoration:none; }
-.bol-hero__sub { color:var(--text-dim); font-size:18px; line-height:1.7; margin-bottom:32px; }
-.bol-hero__ctas { display:flex; gap:16px; flex-wrap:wrap; }
-.bol-hero__visual { display:flex; align-items:center; justify-content:center; }
-@media (max-width:860px){ .bol-hero{grid-template-columns:1fr} }
-.bol-pill { display:inline-block; padding:8px 20px; border:1px solid rgba(34,211,238,.35); border-radius:999px; font-size:12px; letter-spacing:2px; text-transform:uppercase; color:#22d3ee; margin-bottom:20px; }
-.bol-stats { display:grid; grid-template-columns:repeat(3,1fr); gap:32px; text-align:center; padding:20px 0; }
-.bol-stat__num { font-size:clamp(40px,5vw,64px); font-weight:800; color:#fff; font-family:var(--font-display); }
-.bol-stat__num .accent { color:#22d3ee; }
-.bol-stat__label { color:var(--text-dim); margin-top:8px; font-size:15px; line-height:1.6; }
-.bol-cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:24px; }
-.bol-card { background:rgba(255,255,255,.04);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px); border:1px solid rgba(255,255,255,.08); border-radius:24px; padding:36px 28px; }
-.bol-card h3 { color:#fff; font-size:20px; margin:16px 0 12px; }
-.bol-card p { color:rgba(255,255,255,.65); font-size:15px; line-height:1.7; margin:0; }
-.bol-card .bol-icon { width:48px; height:48px; border-radius:12px; background:linear-gradient(135deg,rgba(34,211,238,.15),rgba(124,92,255,.15)); display:flex; align-items:center; justify-content:center; font-size:24px; }
-.bol-split { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; }
-.bol-split h2 { color:#fff; font-size:clamp(28px,4vw,44px); margin:0 0 16px; font-family:var(--font-display); }
-.bol-split .lede { color:rgba(255,255,255,.65); font-size:16px; line-height:1.7; margin-bottom:28px; }
-.bol-check { display:flex; gap:12px; align-items:flex-start; margin-bottom:16px; color:#fff; font-size:15px; }
-.bol-check .tick { color:#22d3ee; font-weight:700; flex-shrink:0; }
-.bol-visual { border-radius:24px; overflow:hidden; background:rgba(255,255,255,.04);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px); border:1px solid rgba(255,255,255,.08); min-height:320px; display:flex; align-items:center; justify-content:center; }
-.bol-visual .lottie-wrap { width:100%; max-width:420px; height:320px; }
-.bol-audit { display:grid; grid-template-columns:1fr 1fr; gap:0; background:rgba(255,255,255,.04);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px); border-radius:32px; overflow:hidden; border:1px solid rgba(255,255,255,.08); }
-.bol-audit__text { padding:56px 48px; }
-.bol-audit__text .gold-bar { width:80px; height:4px; background:#7c5cff; margin-bottom:28px; }
-.bol-audit__text p { color:rgba(255,255,255,.75); font-size:16px; line-height:1.8; margin-bottom:20px; }
-.bol-audit__form { background:rgba(0,0,0,.4);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px); padding:56px 48px; }
-.bol-audit__form h3 { color:#fff; font-size:28px; margin:0 0 8px; font-family:var(--font-display); }
-.bol-audit__form .gold-bar { width:80px; height:4px; background:#7c5cff; margin-bottom:20px; }
-.bol-audit__form p.sub { color:rgba(255,255,255,.65); font-size:15px; margin-bottom:28px; }
-@media (max-width:820px){ .bol-split,.bol-audit{grid-template-columns:1fr} .bol-stats{grid-template-columns:1fr;gap:24px} }
-</style>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
-
-<!-- ============ STATS ============ -->
-<section><div class="container">
-<div class="bol-stats">
-<div class="reveal"><div class="bol-stat__num"><span class="accent">100</span>%</div><div class="bol-stat__label"><strong style="color:#fff">Dedicated attention</strong><br>You work with me directly.<br>No account managers.</div></div>
-<div class="reveal d1"><div class="bol-stat__num"><span class="accent">24</span>h</div><div class="bol-stat__label"><strong style="color:#fff">Response time</strong><br>I reply to every message<br>within 24 hours.</div></div>
-<div class="reveal d2"><div class="bol-stat__num"><span class="accent">0</span></div><div class="bol-stat__label"><strong style="color:#fff">Long contracts</strong><br>Month-to-month.<br>Cancel anytime.</div></div>
-</div>
-</div></section>
-
-<!-- ============ HOW I GET RESULTS ============ -->
-<section><div class="container">
-<div class="section-head reveal"><h2 style="color:#fff">How I Get Results</h2><div style="width:80px;height:4px;background:linear-gradient(90deg,#22d3ee,#7c5cff);margin:20px auto 0;border-radius:2px"></div></div>
-<div class="prose reveal d1" style="text-align:center;max-width:680px;margin:0 auto 48px"><p style="color:rgba(255,255,255,.65)">Tired of SEO agencies that disappear after the contract is signed? I built my process around what actually matters: direct communication, honest work, and complete visibility into what I'm doing and why.</p></div>
-<div class="bol-cards">
-<div class="bol-card reveal"><div class="bol-icon">👤</div><h3>You Work With Me</h3><p>No juniors learning on your account. You'll work directly with me — an experienced SEO specialist, not an account manager relaying messages.</p></div>
-<div class="bol-card reveal d1"><div class="bol-icon">💬</div><h3>Clear Communication</h3><p>Straight talk, no jargon. You'll always know what I'm doing, why I'm doing it, and what it means for your Bolton business.</p></div>
-<div class="bol-card reveal d2"><div class="bol-icon">📊</div><h3>Honest Reporting</h3><p>Real numbers, plain English. Monthly updates on rankings, traffic, and calls — no vanity metrics, no fluff.</p></div>
-<div class="bol-card reveal d3"><div class="bol-icon">🔄</div><h3>Continuous Improvement</h3><p>SEO isn't set-and-forget. I monitor, adjust, and refine every month to keep you ahead of Bolton competitors.</p></div></div>
-</div></section>
-
-<!-- ============ PATH TO RANKINGS ============ -->
-<section class="sec--tint"><div class="container">
-<div class="bol-split">
-<div class="reveal">
-<div class="bol-pill">What you get</div>
-<h2>Your Path to Top Rankings</h2>
-<p class="lede">My SEO process blends strategic insight with technical precision, ensuring every action supports your business growth and visibility in Bolton.</p>
-<div class="bol-check"><span class="tick">✓</span><span>Local SEO strategies focused on the Bolton market</span></div>
-<div class="bol-check"><span class="tick">✓</span><span>Targeted keyword research backed by real data</span></div>
-<div class="bol-check"><span class="tick">✓</span><span>Google Business Profile optimisation for the map pack</span></div>
-<div style="margin-top:32px"><a href="#contact" class="btn btn-primary" data-magnetic>Start Today</a></div>
-</div>
-<div class="bol-visual reveal d1"><div class="lottie-wrap" id="lottie-growth"></div></div>
-</div>
-</div></section>
-
-<!-- ============ TAILORED SOLUTIONS ============ -->
-<section><div class="container">
-<div class="bol-split">
-<div class="bol-visual reveal"><div class="lottie-wrap" id="lottie-strategy"></div></div>
-<div class="reveal d1">
-<div class="bol-pill">Solutions</div>
-<h2>Tailored SEO for Bolton Businesses</h2>
-<p class="lede">I focus on SEO strategies that align with your goals, helping your business improve visibility, drive traffic, and generate more leads through search.</p>
-<div class="bol-check"><span class="tick">🔍</span><span><strong>Strategic SEO Planning</strong><br><span style="color:rgba(255,255,255,.6);font-size:14px">Custom strategies based on your industry, competitors, and target audience.</span></span></div>
-<div class="bol-check"><span class="tick">⚙️</span><span><strong>On-Page & Technical SEO</strong><br><span style="color:rgba(255,255,255,.6);font-size:14px">From content optimisation to performance fixes, built for better rankings.</span></span></div>
-</div>
-</div>
-</div></section>
-
-<!-- ============ FREE AUDIT ============ -->
-<section><div class="container">
-<div class="bol-audit reveal">
-<div class="bol-audit__text">
-<div class="gold-bar"></div>
-<p><strong style="color:#fff">Direct access, not account managers. Real work, not vanity metrics. Straight talk, not jargon.</strong></p>
-<p>I've spent years building SEO campaigns that actually move the needle — and I'm confident enough to prove it upfront. No long contracts, no run-around, just someone who knows what they're doing and communicates like a human.</p>
-<p>Your free audit is the first step. Let me show you what I can do for your Bolton business.</p>
-</div>
-<div class="bol-audit__form">
-<h3>Free SEO Audit</h3>
-<div class="gold-bar"></div>
-<p class="sub">Fill in the form below to receive your free, no-obligation SEO audit.</p>
-<a class="btn btn-primary" href="#contact" style="width:100%;text-align:center">Get My Free Audit</a>
-<p class="sub" style="margin-top:20px;font-size:13px">No call required — I can send it by email.</p>
-</div>
-</div>
-</div></section>
-
-<script>
-// Lottie animations
-(function(){
-  if (typeof lottie === 'undefined') return;
-  var anims = [
-    {id:'lottie-growth', path:'https://assets2.lottiefiles.com/packages/lf20_qp1q7mct.json'},
-    {id:'lottie-strategy', path:'https://assets2.lottiefiles.com/packages/lf20_ikvz7qhc.json'}
-  ];
-  anims.forEach(function(a){
-    var el = document.getElementById(a.id);
-    if (el) { try { lottie.loadAnimation({container:el, renderer:'svg', loop:true, autoplay:true, path:a.path}); } catch(e){} }
-  });
-})();
-</script>
-<section class="sec--tint"><div class="container"><div class="section-head"><p class="eyebrow reveal">Proof</p><h2 class="h-section reveal">Real reviews, <span class="text-grad">real clients.</span></h2><p class="section-head__sub reveal" style="color:var(--text-dim);max-width:62ch">I don't have case studies with made-up numbers. What I have is a public track record — here's what buyers said on Fiverr, verbatim.</p></div><div class="proof-cards"><div class="proof-card reveal"><div class="proof-card__stars">★★★★★</div><p>&ldquo;Quick filled order. Another great gig with Saqib. A+&rdquo;</p><div class="proof-card__who">ricksanchezc132 · Fiverr buyer · Spain</div></div><div class="proof-card reveal"><div class="proof-card__stars">★★★★★</div><p>&ldquo;very helpfull, thanks for the support&rdquo;</p><div class="proof-card__who">esek_rc · Fiverr buyer · Italy</div></div><div class="proof-card reveal"><div class="proof-card__stars">★★★★★</div><p>&ldquo;He did a great job and fast!&rdquo;</p><div class="proof-card__who">lariiscool · Fiverr buyer · United States</div></div></div><p class="reveal" style="margin-top:26px;color:var(--text-mute);font-size:13.5px">Full reviews with typos intact live on the <a href="../../#testimonials" style="color:#8fd8ff">homepage</a> — I show them verbatim, good and bad.</p></div></section>
-<section id="faq">
-  <div class="container">
-    <div class="section-head center">
-      <span class="eyebrow reveal">FAQs</span>
-      <h2 class="h-section reveal d1">Bolton <span class="text-grad">questions, answered.</span></h2>
+<section class="bo5-hero">
+    <div class="bo5-hero__in">
+      <h1>SEO Expert in <span class="bo5-grad">Bolton</span></h1>
+      <p class="bo5-sub">Middlebrook to the town centre, Logistics North to the stadium — Bolton customers search with local intent. I help Bolton businesses turn those searches into work.</p>
+      <div class="bo5-ctas">
+      <a class="bo5-cta" href="#contact">Get my free audit</a>
+      <a class="bo5-ghost" href="#fix">See how it works</a>
     </div>
-    <div class="faq__list" id="faqList"><div class="faq-item reveal"><button class="faq-item__q">My customers are split between Middlebrook and the town centre — where do I focus?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">Both, but with different content. Middlebrook traffic is shopper and office-worker intent — 'lunch near Middlebrook', 'parking at Middlebrook' — while town-centre traffic leans toward events, evenings and the Food & Drink Festival. Build separate location-aware pages or profile posts for each rather than one generic Bolton page. Google rewards the specificity, and you'll find the two audiences barely overlap in what they search.</div></div></div><div class="faq-item reveal d1"><button class="faq-item__q">How do I rank in Bolton when Manchester agencies dominate the results?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">You out-local them. Manchester firms rank on domain authority but usually have thin Bolton relevance — no Bolton reviews, no local photos, no suburb-specific content. A Bolton business with a fully optimised profile, 100+ local reviews, pages for Horwich, Farnworth and Westhoughton, and links from Bolton organisations beats a Manchester landing page in the map pack consistently. Local relevance is the ranking factor money can't shortcut.</div></div></div><div class="faq-item reveal d2"><button class="faq-item__q">We supply trade customers from Logistics North — is Google worth it for B2B?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">Yes — B2B buyers start on Google exactly like consumers do. 'Warehouse space Bolton', 'palletised distribution Greater Manchester', 'industrial electrician North West' are all real, high-value searches. What closes B2B buyers is capability proof: real numbers, case studies, accreditations up front. Combine Google with trade-directory citations and LinkedIn telling the same story, and even a dozen detailed Google reviews from trade clients will separate you from competitors with empty profiles.</div></div></div><div class="faq-item reveal d3"><button class="faq-item__q">Do match days at the stadium actually change search demand?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">For businesses near the stadium and Middlebrook, yes — noticeably. Every home fixture creates a surge in 'near Bolton Wanderers' searches for food, drink, parking and hotels from visitors who don't know the area. Keep your profile hours accurate for fixtures, post match-day offers, and mention the stadium corridor naturally in your content. Almost nobody optimises for this, which is exactly why it works.</div></div></div><div class="faq-item reveal d4"><button class="faq-item__q">What's the fastest win for a Bolton business starting SEO from zero?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">The Google Business Profile rebuild plus a review engine — typically a £350 one-off. Most Bolton businesses I audit have the wrong primary category, half their services unlisted, three photos from 2021 and a dozen stale reviews. Fixing that alone often moves the needle on 'near me' calls within weeks, before a single blog post is written. It's the highest-ROI first step in local SEO, and it's where every engagement I run starts.</div></div></div></div></section>
-<section id="related">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow reveal">Related pages</span>
-      <h2 class="h-section reveal d1">More places we rank in <span class="text-grad">beyond Bolton.</span></h2>
-    </div>
-    <div class="loc-related" id="relatedGrid">
-<a href="/locations/bury/" class="loc-related__card">
-<span class="loc-related__name">SEO Expert in Bury</span>
-<span class="loc-related__arrow">→</span>
-</a>
-<a href="/locations/wigan/" class="loc-related__card">
-<span class="loc-related__name">SEO Expert in Wigan</span>
-<span class="loc-related__arrow">→</span>
-</a>
-<a href="/locations/manchester/" class="loc-related__card">
-<span class="loc-related__name">SEO Expert in Manchester</span>
-<span class="loc-related__arrow">→</span>
-</a>
-<a href="/locations/salford/" class="loc-related__card">
-<span class="loc-related__name">SEO Expert in Salford</span>
-<span class="loc-related__arrow">→</span>
-</a>
-<a href="/locations/stockport/" class="loc-related__card">
-<span class="loc-related__name">SEO Expert in Stockport</span>
-<span class="loc-related__arrow">→</span>
-</a>
-<a href="/locations/oldham/" class="loc-related__card">
-<span class="loc-related__name">SEO Expert in Oldham</span>
-<span class="loc-related__arrow">→</span>
-</a></div>
+      <div class="bo5-audit"><div class="bo5-score"><svg width="150" height="150" viewBox="0 0 150 150">
+      <circle cx="75" cy="75" r="64" stroke="rgba(255,255,255,.08)" stroke-width="12" fill="none"/>
+      <circle cx="75" cy="75" r="64" stroke="url(#hgradbold)" stroke-width="12" fill="none" stroke-linecap="round" stroke-dasharray="402" stroke-dashoffset="113"/>
+      </svg><div class="bo5-snum"><b>72</b><span>SEO HEALTH</span></div></div><ul class="bo5-checks"><li><span class="bo5-ck bo5-ok">&#10003;</span><span>Google Business Profile<br><small style="color:#a2a9bb">Categories set, but posts and services need work.</small></span></li><li><span class="bo5-ck bo5-warn">!</span><span>Local keyword coverage<br><small style="color:#a2a9bb">Missing Middlebrook & town-centre intent pages.</small></span></li><li><span class="bo5-ck bo5-warn">!</span><span>Site speed (mobile)<br><small style="color:#a2a9bb">Loads slowly on 4G — losing mobile searchers.</small></span></li><li><span class="bo5-ck bo5-ok">&#10003;</span><span>Review velocity<br><small style="color:#a2a9bb">Steady base — system needed to keep it growing.</small></span></li></ul></div>
+    </div></section>
+
+<section class="bo5-sec"><div class="bo5-in">
+  <div class="section-head center"><span class="eyebrow">The problem</span>
+  <h2 class="h-section">Why Bolton businesses <span class="text-grad">stay invisible</span></h2>
+  <p class="bo5-lede" style="text-align:center">Three patterns I see again and again — and the thinking behind fixing each one.</p></div>
+  <div class="bo5-prob__grid"><div class="bo5-pcard"><div class="bo5-pnum">PROBLEM 01</div><strong>Manchester agencies dominate the results</strong><p>Bigger budgets and older domains push Bolton firms down. You need sharper local targeting, not a bigger ad spend.</p></div><div class="bo5-pcard"><div class="bo5-pnum">PROBLEM 02</div><strong>Two audiences, one generic site</strong><p>Middlebrook shoppers and town-centre visitors search differently. One generic page serves neither properly.</p></div><div class="bo5-pcard"><div class="bo5-pnum">PROBLEM 03</div><strong>Trade customers can't find you</strong><p>Logistics North and the industrial estates run on Google too — “supplier near me” decides shortlists.</p></div></div>
+  <div class="bo5-sol"><strong>The fix, in one paragraph</strong><p>The audit card above is the kind of review I start with. Then I fix it: location-aware pages for each Bolton audience, a Business Profile that earns the call, and technical repairs that stop mobile visitors bouncing. One person, full accountability.</p></div>
+</div></section>
+
+<section class="bo5-sec bo5-split bo5-sec--alt"><div class="bo5-split__grid">
+  <figure class="bo5-shot"><img src="../../assets/img/locations/bolton-1.jpg" alt="Manchester skyline near Bolton, England" loading="lazy"><figcaption>Manchester skyline near Bolton</figcaption></figure>
+  <div class="bo5-scopy"><span class="eyebrow">Local approach</span><h2>Bolton isn't one market — it's several</h2>
+  <p>Middlebrook retail traffic, town-centre evenings and events, trade buyers around Logistics North, match-day surges at the stadium — each searches differently.</p><p>I build separate keyword maps and pages for each audience instead of one generic “Bolton” page, so the right searchers find the right offer.</p>
+  <ul class="bo5-ticks"><li><span class="bo5-tick">&#10003;</span><span>Audience-specific keyword maps (retail, town centre, trade)</span></li><li><span class="bo5-tick">&#10003;</span><span>Google Business Profile tuned for each audience</span></li><li><span class="bo5-tick">&#10003;</span><span>Technical fixes: speed, mobile, structure</span></li></ul></div>
+</div></section>
+
+<section class="bo5-sec bo5-split"><div class="bo5-split__grid bo5-split--flip">
+  <div class="bo5-overlay"><img src="../../assets/img/locations/bolton-1.jpg" alt="Manchester skyline near Bolton, England" loading="lazy" style="object-position:center 30%">
+  <div class="bo5-ocard"><strong>Seasonal & event-aware SEO</strong><span>Your visibility planned around Bolton's real calendar, not a generic schedule.</span></div></div>
+  <div class="bo5-scopy"><span class="eyebrow">Working with me</span><h2>Built for Bolton's real search moments</h2>
+  <p>Match days spike “near the stadium” searches. The Food & Drink Festival floods the town centre with phones out. Your SEO should be ready for those moments — not just the average Tuesday.</p><p>I plan content and Profile posts around Bolton's calendar, so you're visible when demand spikes.</p></div>
+</div></section>
+
+<section class="bo5-sec bo5-sec--alt" id="fix"><div class="bo5-in">
+  <div class="section-head center"><span class="eyebrow">The fix</span>
+  <h2 class="h-section">THE FIX: <span class="text-grad">four steps</span></h2>
+  <p class="bo5-lede" style="text-align:center">Four steps, tuned for how Bolton actually searches.</p></div>
+  <div class="bo5-fix__grid"><div class="bo5-fstep"><span>1</span><div><strong>Deep-dive audit</strong><em>Your site, Business Profile and Bolton competitors — the exact review shown above, with a prioritised fix list.</em></div></div><div class="bo5-fstep"><span>2</span><div><strong>Audience keyword mapping</strong><em>Retail, town-centre and trade intent mapped to pages that serve each one.</em></div></div><div class="bo5-fstep"><span>3</span><div><strong>Fix, build, publish</strong><em>Technical repairs, on-page work, Profile optimisation and content — by impact order.</em></div></div><div class="bo5-fstep"><span>4</span><div><strong>Compound monthly</strong><em>Content, citations and reviews every month, timed to Bolton's events calendar.</em></div></div></div>
+</div></section>
+
+<section class="bo5-sec"><div class="bo5-in">
+  <div class="section-head center"><span class="eyebrow">Why me</span>
+  <h2 class="h-section">Why Bolton businesses <span class="text-grad">choose Globe Skillz</span></h2>
+  <p class="bo5-lede" style="text-align:center">Why Bolton businesses work with Globe Skillz.</p></div>
+  <div class="bo5-why__grid"><div class="bo5-wcard"><span class="bo5-wico">👨‍💻</span><strong>One specialist, whole job</strong><span>Audit, strategy, execution, reporting — I do all of it. Nothing handed down a chain.</span></div><div class="bo5-wcard"><span class="bo5-wico">🏙️</span><strong>Local intent first</strong><span>Middlebrook, town centre, Logistics North — your plan reflects Bolton's real geography.</span></div><div class="bo5-wcard"><span class="bo5-wico">📊</span><strong>Plain-English reporting</strong><span>Monthly: what I did, what moved, what's next. Five minutes to read.</span></div><div class="bo5-wcard"><span class="bo5-wico">💬</span><strong>Direct line, always</strong><span>Questions go to the person doing the work — me — not a support desk.</span></div></div>
+</div></section>
+
+<section class="bo5-sec bo5-sec--alt" id="pricing"><div class="bo5-in"><div class="bo5-price__in">
+  <div class="section-head center"><span class="eyebrow">Pricing</span>
+  <h2 class="h-section">One plan. <span class="text-grad">Everything included.</span></h2></div>
+  <div class="bo5-price__card">
+    <div class="bo5-price__top"><strong>Monthly SEO Plan</strong><div class="bo5-price__amt">$700<span>/month</span></div></div>
+    <ul><li><b>&#10003;</b><span>Full technical & on-page SEO audit</span></li><li><b>&#10003;</b><span>Audience-level keyword research & mapping</span></li><li><b>&#10003;</b><span>Google Business Profile management</span></li><li><b>&#10003;</b><span>Content plan + monthly publishing</span></li><li><b>&#10003;</b><span>Citations & review strategy</span></li><li><b>&#10003;</b><span>Plain-English monthly report</span></li></ul>
+    <p class="bo5-price__note">One plan. Everything above, every month. Month to month — cancel anytime.</p>
   </div>
-</section>
+</div></div></section>
+
+<section class="bo5-ctaband"><div class="bo5-ctaband__in">
+  <span class="eyebrow">Free audit</span>
+  <h2>Get your free SEO audit <span class="bo5-grad">for your business</span></h2>
+  <p>I'll run the same health check shown above on your site — personally — and send you the prioritised fix list. Free.</p>
+  <a class="bo5-cta" href="#contact">Claim my free audit</a>
+</div></section>
+
+<section class="bo5-sec" id="faq"><div class="bo5-in">
+  <div class="bo5-faq__in">
+  <div class="section-head center"><span class="eyebrow">FAQs</span>
+  <h2 class="h-section">Bolton <span class="text-grad">questions, answered.</span></h2>
+  <p class="bo5-faq__intro" style="text-align:center">Real answers for Bolton businesses, from the questions I'm asked most. Anything else — message me below.</p></div>
+  <div class="bo5-faq__list"><div class="faq-item"><button class="faq-item__q" type="button">My customers are split between Middlebrook and the town centre — where do I focus?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">Both, but with different content. Middlebrook traffic is shopper and office-worker intent — &#x27;lunch near Middlebrook&#x27;, &#x27;parking at Middlebrook&#x27; — while town-centre traffic leans toward events, evenings and the Food &amp; Drink Festival. Build separate location-aware pages or profile posts for each rather than one generic Bolton page. specific, useful pages tend to perform better for both audiences, and you&#x27;ll find the two audiences barely overlap in what they search.</div></div></div><div class="faq-item"><button class="faq-item__q" type="button">How do I rank in Bolton when Manchester agencies dominate the results?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">You out-local them. Manchester firms rank on domain authority but usually have thin Bolton relevance — no Bolton reviews, no local photos, no suburb-specific content. A Bolton business with a fully optimised profile, 100+ local reviews, pages for Horwich, Farnworth and Westhoughton, and links from Bolton organisations beats a Manchester landing page in the map pack consistently. Local relevance is the ranking factor money can&#x27;t shortcut.</div></div></div><div class="faq-item"><button class="faq-item__q" type="button">We supply trade customers from Logistics North — is Google worth it for B2B?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">Yes — B2B buyers start on Google exactly like consumers do. &#x27;Warehouse space Bolton&#x27;, &#x27;palletised distribution Greater Manchester&#x27;, &#x27;industrial electrician North West&#x27; are all real, high-value searches. What closes B2B buyers is capability proof: real numbers, case studies, accreditations up front. Combine Google with trade-directory citations and LinkedIn telling the same story, and even a dozen detailed Google reviews from trade clients will separate you from competitors with empty profiles.</div></div></div><div class="faq-item"><button class="faq-item__q" type="button">Do match days at the stadium actually change search demand?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">For businesses near the stadium and Middlebrook, yes — noticeably. Every home fixture creates a surge in &#x27;near Bolton Wanderers&#x27; searches for food, drink, parking and hotels from visitors who don&#x27;t know the area. Keep your profile hours accurate for fixtures, post match-day offers, and mention the stadium corridor naturally in your content. Almost nobody optimises for this, which is exactly why it works.</div></div></div><div class="faq-item"><button class="faq-item__q" type="button">What&#x27;s the fastest win for a Bolton business starting SEO from zero?<span class="faq-item__toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-item__a"><div class="faq-item__a-inner">The Google Business Profile rebuild plus a review engine — typically a small one-off project. Most Bolton businesses I audit have the wrong primary category, half their services unlisted, three photos from 2021 and a dozen stale reviews. Fixing that alone often moves the needle on &#x27;near me&#x27; calls within weeks, before a single blog post is written. It&#x27;s the highest-ROI first step in local SEO, and it&#x27;s where every engagement I run starts.</div></div></div></div>
+  </div>
+</div></section>
+
+<section class="bo5-chips"><div class="bo5-chips__in"><span class="bo5-chips__t">ALSO RANKED:</span><span>Manchester SEO Expert</span><span>Liverpool SEO Expert</span><span>Birmingham SEO Expert</span><span>Nottingham SEO Expert</span><span>Glasgow SEO Expert</span><span>Chester SEO Expert</span><span>Gloucester SEO Expert</span><span>Norwich SEO Expert</span></div></section>
+
+<section class="bo5-sec" id="relatedReading"><div class="bo5-in">
+  <div class="section-head center"><span class="eyebrow">Related reading</span>
+  <h2 class="h-section">SEO guides for Bolton businesses.</h2></div>
+</div><div class="bo5-rr__grid"><a class="bo5-rrcard" href="../../blog.html?slug=how-much-does-seo-cost-uk"><div class="bo5-rrk">SEO PRICING</div><strong>How much does SEO cost in the UK?</strong><span>A plain-English breakdown of what SEO really costs, what drives the price, and the questions to ask before you sign anything.</span><span class="bo5-rrmore">Read the guide &rarr;</span></a><a class="bo5-rrcard" href="../../blog.html?slug=what-to-look-for-when-hiring-an-seo-company"><div class="bo5-rrk">HIRING GUIDE</div><strong>What to look for when hiring an SEO company</strong><span>Red flags, green flags and the exact questions that separate real SEO specialists from smooth salespeople.</span><span class="bo5-rrmore">Read the guide &rarr;</span></a><a class="bo5-rrcard" href="../../blog.html?slug=how-to-get-wordpress-website-on-google"><div class="bo5-rrk">GET FOUND</div><strong>How to get your WordPress website on Google</strong><span>The practical steps that take a WordPress site from invisible to indexed, ranking and earning clicks.</span><span class="bo5-rrmore">Read the guide &rarr;</span></a></div></section>
+
 <section id="contact">
   <div class="container">
     <div class="contact__panel reveal">
@@ -383,24 +402,7 @@
     </div>
   </div>
 </section>
-<script>
-/* Independent FAQ toggle - runs regardless of data loader */
-(function(){
-  document.querySelectorAll('.faq-item').forEach(function(item){
-    var q = item.querySelector('.faq-item__q');
-    var a = item.querySelector('.faq-item__a');
-    if (q && a && !q.dataset.wired) {
-      q.dataset.wired = '1';
-      q.addEventListener('click', function(){
-        var open = item.classList.toggle('open');
-        a.style.maxHeight = open ? a.scrollHeight + 'px' : '0px';
-      });
-    }
-  });
-})();
-</script>
 </main>
-
 <footer class="footer">
   <div class="container">
     <div class="footer__wordmark">GLOBE SKILLZ</div>
@@ -458,386 +460,6 @@
     </div>
   </div>
 </footer>
-
-<script>
-/* ==== Load dynamic page data ==== */
-(async () => {
-  const RP = (typeof PAGE_DEPTH !== 'undefined' && PAGE_DEPTH) ? '../'.repeat(PAGE_DEPTH) : '';
-  const GS_SITE = 'https://globeskillz.com';
-  const params = new URLSearchParams(location.search);
-  const slug = (typeof PAGE_SLUG !== 'undefined' && PAGE_SLUG) || params.get('slug') || params.get('loc') || 'alabama';
-  const type = (typeof PAGE_TYPE !== 'undefined' && PAGE_TYPE) || params.get('type') || (params.get('niche') ? 'niche' : 'loc');
-  const folder = type === 'niche' ? 'niche' : 'loc';
-
-  let data;
-  try {
-    const res = await fetch(RP + `data/${folder}/${slug}.json`);
-    if (!res.ok) throw new Error('not found');
-    data = await res.json();
-  } catch (e) {
-    document.getElementById('locH1').innerHTML = `<span class="split in"><span class="word">Page</span> <span class="word">not</span> <span class="word text-grad">found</span></span>`;
-    document.getElementById('locSub').textContent = 'That page slug is not in our catalog yet. Head back to the coverage grid and pick another.';
-    return;
-  }
-
-  const isNiche = !!data.niche;
-  const displayName = isNiche ? data.niche : data.place;
-  const typeLabel = isNiche ? 'Niche' : 'Location';
-  const setT = (id, v) => { const el = document.getElementById(id); if (el && v != null) el.textContent = v; };
-  const setH = (id, v) => { const el = document.getElementById(id); if (el && v != null) el.innerHTML = v; };
-
-  setT('pageTitle', `${data.keyword} \u00b7 Globe Skillz`);
-  document.getElementById('pageTitle') && document.title = `${data.keyword} \u00b7 Globe Skillz`;
-  const pd = document.getElementById('pageDesc'); if (pd) pd.setAttribute('content', data.meta || (data.intro || '').slice(0, 160));
-  const cleanPath = (type === 'niche' ? '/industries/' : '/locations/') + data.slug + '/';
-  const canonUrl = GS_SITE + cleanPath;
-  const pc = document.getElementById('pageCanon'); if (pc) pc.setAttribute('href', canonUrl);
-  const ogT = document.getElementById('ogTitle'); if (ogT) ogT.setAttribute('content', data.keyword + ' \u00b7 Globe Skillz');
-  const ogD = document.getElementById('ogDesc'); if (ogD) ogD.setAttribute('content', data.meta || (data.intro || '').slice(0, 160));
-  const ogU = document.getElementById('ogUrl'); if (ogU) ogU.setAttribute('content', canonUrl);
-  const twT = document.getElementById('twitterTitle'); if (twT) twT.setAttribute('content', data.keyword + ' \u00b7 Globe Skillz');
-  const twD = document.getElementById('twitterDesc'); if (twD) twD.setAttribute('content', data.meta || (data.intro || '').slice(0, 160));
-
-  // JSON-LD: Service + FAQPage (static FAQPage also in head; this mirrors the industry-page pattern)
-  (function () {
-    const serviceLd = {
-      '@context': 'https://schema.org',
-      '@type': 'Service',
-      name: data.keyword,
-      description: data.meta || (data.intro || '').slice(0, 200),
-      url: canonUrl,
-      provider: { '@type': 'Organization', name: 'Globe Skillz', url: GS_SITE + '/' },
-      areaServed: displayName
-    };
-    const faqLd = {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      mainEntity: (data.faqs || []).map(f => ({
-        '@type': 'Question',
-        name: f.q,
-        acceptedAnswer: { '@type': 'Answer', text: f.a }
-      }))
-    };
-    [serviceLd, faqLd].forEach(o => {
-      const el = document.createElement('script');
-      el.type = 'application/ld+json';
-      el.textContent = JSON.stringify(o);
-      document.head.appendChild(el);
-    });
-    const bc = {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: GS_SITE + '/' },
-        { '@type': 'ListItem', position: 2, name: isNiche ? 'Industries' : 'Locations', item: GS_SITE + '/#' + (isNiche ? 'niches' : 'coverage') },
-        { '@type': 'ListItem', position: 3, name: data.keyword, item: canonUrl }
-      ]
-    };
-    const bcEl = document.createElement('script');
-    bcEl.type = 'application/ld+json';
-    bcEl.textContent = JSON.stringify(bc);
-    document.head.appendChild(bcEl);
-  })();
-
-  setT('crumbType', typeLabel);
-  setT('crumbName', displayName);
-
-  // Split H1 into words for reveal (guarded: static HTML already carries the split)
-  const h1El = document.getElementById('locH1') && document.getElementById('locH1').querySelector('.split');
-  if (h1El && data.h1) {
-    h1El.innerHTML = '';
-    const words = data.h1.split(/\s+/);
-    const highlightIdx = new Set();
-    for (let k = Math.max(0, words.length - 3); k < words.length; k++) highlightIdx.add(k);
-    words.forEach((w, i) => {
-      const span = document.createElement('span');
-      span.className = 'word';
-      if (highlightIdx.has(i)) span.innerHTML = `<span class="text-grad"></span>`;
-      if (highlightIdx.has(i)) span.querySelector('.text-grad').textContent = w;
-      else span.textContent = w;
-      h1El.appendChild(span);
-    });
-  }
-
-  setT('locSub', data.subhead || data.intro);
-
-  const faqList = document.getElementById('faqList');
-  if (faqList && data.faqs) {
-    faqList.innerHTML = data.faqs.map((f, i) => `
-      <div class="faq-item reveal${i > 0 ? ' d' + Math.min(i,4) : ''}">
-        <button class="faq-item__q"></button>
-        <div class="faq-item__a"><div class="faq-item__a-inner"></div></div>
-      </div>
-    `).join('');
-    faqList.querySelectorAll('.faq-item').forEach((item, i) => {
-      item.querySelector('.faq-item__q').textContent = data.faqs[i].q;
-      const tg = document.createElement('span');
-      tg.className = 'faq-item__toggle';
-      tg.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>';
-      item.querySelector('.faq-item__q').appendChild(tg);
-      item.querySelector('.faq-item__a-inner').textContent = data.faqs[i].a;
-    });
-  }
-
-  setH('ctaH2', `Ready to dominate <span class="text-grad"></span>?`);
-  const ctaGrad = document.querySelector('#ctaH2 .text-grad'); if (ctaGrad) ctaGrad.textContent = displayName;
-
-  // Load index for related pages
-  try {
-    const idx = await (await fetch(RP + 'data/index.json')).json();
-    const pool = isNiche ? idx.niches : idx.locations;
-    const others = pool.filter(x => x.slug !== data.slug).sort(() => Math.random() - 0.5).slice(0, 12);
-    const relatedGrid = document.getElementById('relatedGrid');
-    if (relatedGrid) relatedGrid.innerHTML = others.map(o => {
-      const name = isNiche ? o.niche : o.place;
-      return `<a href="${RP}${isNiche ? 'industries' : 'locations'}/${o.slug}/">${o.keyword} \u00b7 ${name}</a>`;
-    }).join('');
-  } catch (e) {}
-
-  // Related reading: blog posts matched by keyword overlap (max 3)
-  try {
-    const posts = await (await fetch(RP + 'data/blog/index.json')).json();
-    const words = (data.keyword + ' ' + displayName).toLowerCase().split(/[^a-z]+/).filter(w => w.length > 3);
-    const scored = posts.map(bp => {
-      const hay = (bp.title + ' ' + (bp.keyword || '') + ' ' + bp.excerpt).toLowerCase();
-      let s = 0; words.forEach(w => { if (hay.includes(w)) s++; });
-      return { bp, s };
-    }).filter(x => x.s > 0).sort((a, b) => b.s - a.s).slice(0, 3);
-    if (scored.length) {
-      const rrN = document.getElementById('rrName'); if (rrN) rrN.textContent = displayName + '.';
-      const rrG = document.getElementById('rrGrid');
-      if (rrG) rrG.innerHTML = scored.map(({ bp }) => `
-        <a class="blog-card" href="${RP}blog/${bp.slug}/">
-          <div class="blog-card__img"><img src="${RP}${bp.image}" alt="${bp.title}" loading="lazy"></div>
-          <div class="blog-card__body">
-            <h3>${bp.title}</h3>
-            <p>${bp.excerpt}</p>
-            <span class="blog-card__link">Read article \u2192</span>
-          </div>
-        </a>`).join('');
-    } else {
-      const rr = document.getElementById('relatedReading'); if (rr) rr.style.display = 'none';
-    }
-  } catch (e) { const rr = document.getElementById('relatedReading'); if (rr) rr.style.display = 'none'; }
-
-  // Wire up FAQ toggle
-  document.querySelectorAll('.faq-item').forEach(item => {
-    const q = item.querySelector('.faq-item__q');
-    const a = item.querySelector('.faq-item__a');
-    q.addEventListener('click', () => {
-      const open = item.classList.toggle('open');
-      a.style.maxHeight = open ? a.scrollHeight + 'px' : '0px';
-    });
-  });
-
-})(); /* end data loader — reveal runs independently below */
-</script>
-<script>
-/* ==== Load dynamic page data ==== */
-(async () => {
-  const RP = (typeof PAGE_DEPTH !== 'undefined' && PAGE_DEPTH) ? '../'.repeat(PAGE_DEPTH) : '';
-  const GS_SITE = 'https://globeskillz.com';
-  const params = new URLSearchParams(location.search);
-  const slug = (typeof PAGE_SLUG !== 'undefined' && PAGE_SLUG) || params.get('slug') || params.get('loc') || 'alabama';
-  const type = (typeof PAGE_TYPE !== 'undefined' && PAGE_TYPE) || params.get('type') || (params.get('niche') ? 'niche' : 'loc');
-  const folder = type === 'niche' ? 'niche' : 'loc';
-
-  let data;
-  try {
-    const res = await fetch(RP + `data/${folder}/${slug}.json`);
-    if (!res.ok) throw new Error('not found');
-    data = await res.json();
-  } catch (e) {
-    document.getElementById('locH1').innerHTML = `<span class="split in"><span class="word">Page</span> <span class="word">not</span> <span class="word text-grad">found</span></span>`;
-    document.getElementById('locSub').textContent = 'That page slug is not in our catalog yet. Head back to the coverage grid and pick another.';
-    return;
-  }
-
-  const isNiche = !!data.niche;
-  const displayName = isNiche ? data.niche : data.place;
-  const typeLabel = isNiche ? 'Niche' : 'Location';
-  const setT = (id, v) => { const el = document.getElementById(id); if (el && v != null) el.textContent = v; };
-  const setH = (id, v) => { const el = document.getElementById(id); if (el && v != null) el.innerHTML = v; };
-
-  setT('pageTitle', `${data.keyword} \u00b7 Globe Skillz`);
-  document.getElementById('pageTitle') && document.title = `${data.keyword} \u00b7 Globe Skillz`;
-  const pd = document.getElementById('pageDesc'); if (pd) pd.setAttribute('content', data.meta || (data.intro || '').slice(0, 160));
-  const cleanPath = (type === 'niche' ? '/industries/' : '/locations/') + data.slug + '/';
-  const canonUrl = GS_SITE + cleanPath;
-  const pc = document.getElementById('pageCanon'); if (pc) pc.setAttribute('href', canonUrl);
-  const ogT = document.getElementById('ogTitle'); if (ogT) ogT.setAttribute('content', data.keyword + ' \u00b7 Globe Skillz');
-  const ogD = document.getElementById('ogDesc'); if (ogD) ogD.setAttribute('content', data.meta || (data.intro || '').slice(0, 160));
-  const ogU = document.getElementById('ogUrl'); if (ogU) ogU.setAttribute('content', canonUrl);
-  const twT = document.getElementById('twitterTitle'); if (twT) twT.setAttribute('content', data.keyword + ' \u00b7 Globe Skillz');
-  const twD = document.getElementById('twitterDesc'); if (twD) twD.setAttribute('content', data.meta || (data.intro || '').slice(0, 160));
-
-  // JSON-LD: Service + FAQPage (static FAQPage also in head; this mirrors the industry-page pattern)
-  (function () {
-    const serviceLd = {
-      '@context': 'https://schema.org',
-      '@type': 'Service',
-      name: data.keyword,
-      description: data.meta || (data.intro || '').slice(0, 200),
-      url: canonUrl,
-      provider: { '@type': 'Organization', name: 'Globe Skillz', url: GS_SITE + '/' },
-      areaServed: displayName
-    };
-    const faqLd = {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      mainEntity: (data.faqs || []).map(f => ({
-        '@type': 'Question',
-        name: f.q,
-        acceptedAnswer: { '@type': 'Answer', text: f.a }
-      }))
-    };
-    [serviceLd, faqLd].forEach(o => {
-      const el = document.createElement('script');
-      el.type = 'application/ld+json';
-      el.textContent = JSON.stringify(o);
-      document.head.appendChild(el);
-    });
-    const bc = {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: GS_SITE + '/' },
-        { '@type': 'ListItem', position: 2, name: isNiche ? 'Industries' : 'Locations', item: GS_SITE + '/#' + (isNiche ? 'niches' : 'coverage') },
-        { '@type': 'ListItem', position: 3, name: data.keyword, item: canonUrl }
-      ]
-    };
-    const bcEl = document.createElement('script');
-    bcEl.type = 'application/ld+json';
-    bcEl.textContent = JSON.stringify(bc);
-    document.head.appendChild(bcEl);
-  })();
-
-  setT('crumbType', typeLabel);
-  setT('crumbName', displayName);
-
-  // Split H1 into words for reveal (guarded: static HTML already carries the split)
-  const h1El = document.getElementById('locH1') && document.getElementById('locH1').querySelector('.split');
-  if (h1El && data.h1) {
-    h1El.innerHTML = '';
-    const words = data.h1.split(/\s+/);
-    const highlightIdx = new Set();
-    for (let k = Math.max(0, words.length - 3); k < words.length; k++) highlightIdx.add(k);
-    words.forEach((w, i) => {
-      const span = document.createElement('span');
-      span.className = 'word';
-      if (highlightIdx.has(i)) span.innerHTML = `<span class="text-grad"></span>`;
-      if (highlightIdx.has(i)) span.querySelector('.text-grad').textContent = w;
-      else span.textContent = w;
-      h1El.appendChild(span);
-    });
-  }
-
-  setT('locSub', data.subhead || data.intro);
-
-  const faqList = document.getElementById('faqList');
-  if (faqList && data.faqs) {
-    faqList.innerHTML = data.faqs.map((f, i) => `
-      <div class="faq-item reveal${i > 0 ? ' d' + Math.min(i,4) : ''}">
-        <button class="faq-item__q"></button>
-        <div class="faq-item__a"><div class="faq-item__a-inner"></div></div>
-      </div>
-    `).join('');
-    faqList.querySelectorAll('.faq-item').forEach((item, i) => {
-      item.querySelector('.faq-item__q').textContent = data.faqs[i].q;
-      const tg = document.createElement('span');
-      tg.className = 'faq-item__toggle';
-      tg.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>';
-      item.querySelector('.faq-item__q').appendChild(tg);
-      item.querySelector('.faq-item__a-inner').textContent = data.faqs[i].a;
-    });
-  }
-
-  setH('ctaH2', `Ready to dominate <span class="text-grad"></span>?`);
-  const ctaGrad = document.querySelector('#ctaH2 .text-grad'); if (ctaGrad) ctaGrad.textContent = displayName;
-
-  // Load index for related pages
-  try {
-    const idx = await (await fetch(RP + 'data/index.json')).json();
-    const pool = isNiche ? idx.niches : idx.locations;
-    const others = pool.filter(x => x.slug !== data.slug).sort(() => Math.random() - 0.5).slice(0, 12);
-    const relatedGrid = document.getElementById('relatedGrid');
-    if (relatedGrid) relatedGrid.innerHTML = others.map(o => {
-      const name = isNiche ? o.niche : o.place;
-      return `<a href="${RP}${isNiche ? 'industries' : 'locations'}/${o.slug}/">${o.keyword} \u00b7 ${name}</a>`;
-    }).join('');
-  } catch (e) {}
-
-  // Related reading: blog posts matched by keyword overlap (max 3)
-  try {
-    const posts = await (await fetch(RP + 'data/blog/index.json')).json();
-    const words = (data.keyword + ' ' + displayName).toLowerCase().split(/[^a-z]+/).filter(w => w.length > 3);
-    const scored = posts.map(bp => {
-      const hay = (bp.title + ' ' + (bp.keyword || '') + ' ' + bp.excerpt).toLowerCase();
-      let s = 0; words.forEach(w => { if (hay.includes(w)) s++; });
-      return { bp, s };
-    }).filter(x => x.s > 0).sort((a, b) => b.s - a.s).slice(0, 3);
-    if (scored.length) {
-      const rrN = document.getElementById('rrName'); if (rrN) rrN.textContent = displayName + '.';
-      const rrG = document.getElementById('rrGrid');
-      if (rrG) rrG.innerHTML = scored.map(({ bp }) => `
-        <a class="blog-card" href="${RP}blog/${bp.slug}/">
-          <div class="blog-card__img"><img src="${RP}${bp.image}" alt="${bp.title}" loading="lazy"></div>
-          <div class="blog-card__body">
-            <h3>${bp.title}</h3>
-            <p>${bp.excerpt}</p>
-            <span class="blog-card__link">Read article \u2192</span>
-          </div>
-        </a>`).join('');
-    } else {
-      const rr = document.getElementById('relatedReading'); if (rr) rr.style.display = 'none';
-    }
-  } catch (e) { const rr = document.getElementById('relatedReading'); if (rr) rr.style.display = 'none'; }
-
-  // Wire up FAQ toggle
-  document.querySelectorAll('.faq-item').forEach(item => {
-    const q = item.querySelector('.faq-item__q');
-    const a = item.querySelector('.faq-item__a');
-    q.addEventListener('click', () => {
-      const open = item.classList.toggle('open');
-      a.style.maxHeight = open ? a.scrollHeight + 'px' : '0px';
-    });
-  });
-
-})(); /* end data loader — reveal runs independently below */
-</script>
-<script>
-/* ==== Reveal animations (independent of data loading) ==== */
-(function () {
-  // Reveal
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('in');
-        io.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.1 });
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-  // Fallback: force-reveal above-fold elements after 1s
-  setTimeout(() => {
-    document.querySelectorAll('.reveal:not(.in)').forEach(el => {
-      const r = el.getBoundingClientRect();
-      if (r.top < window.innerHeight && r.bottom > 0) el.classList.add('in');
-    });
-  }, 1000);
-
-  // Kick hero words
-  requestAnimationFrame(() => {
-    document.querySelectorAll('.loc-hero .split, .conv-hero .split').forEach(el => {
-      el.querySelectorAll('.word').forEach((c, j) => c.style.transitionDelay = (j * 0.06) + 's');
-      el.classList.add('in');
-    });
-  });
-})();
-</script>
-
-
-<!-- Contact form: deliver enquiries to Gmail via FormSubmit (same as index) -->
 <script>
 (function () {
   var form = document.getElementById('contactForm');
@@ -878,58 +500,31 @@
 })();
 </script>
 
-
-<!-- Cursor + magnetic + nav -->
 <script>
-(() => {
-  const $ = (s, r = document) => r.querySelector(s);
-  const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
-  const isTouch = matchMedia('(hover: none), (pointer: coarse)').matches;
-
-  const cDot = $('.cursor-dot'), cRing = $('.cursor-ring');
-  if (!isTouch && cDot && cRing) {
-    let mx = innerWidth/2, my = innerWidth/2, rx = mx, ry = my;
-    addEventListener('mousemove', e => {
-      mx = e.clientX; my = e.clientY;
-      cDot.style.transform = `translate(${mx}px, ${my}px) translate(-50%,-50%)`;
-    }, { passive: true });
-    (function tick() {
-      rx += (mx - rx) * 0.18; ry += (my - ry) * 0.18;
-      cRing.style.transform = `translate(${rx}px, ${ry}px) translate(-50%,-50%)`;
-      requestAnimationFrame(tick);
-    })();
-    const hoverSel = 'a, button, [data-magnetic], .faq-item__q, .loc-related a, .content-block';
-    document.addEventListener('mouseover', e => e.target.closest(hoverSel) && document.body.classList.add('cursor-hover'));
-    document.addEventListener('mouseout',  e => e.target.closest(hoverSel) && document.body.classList.remove('cursor-hover'));
-  } else {
-    document.body.classList.add('no-cursor');
-  }
-
-  if (!isTouch) {
-    setTimeout(() => {
-      $$('[data-magnetic]').forEach(el => {
-        let raf, tx = 0, ty = 0, targetX = 0, targetY = 0;
-        el.addEventListener('mousemove', e => {
-          const r = el.getBoundingClientRect();
-          targetX = (e.clientX - r.left - r.width/2) * 0.3;
-          targetY = (e.clientY - r.top - r.height/2) * 0.3;
-          if (!raf) raf = requestAnimationFrame(tick);
-        });
-        el.addEventListener('mouseleave', () => { targetX = targetY = 0; if (!raf) raf = requestAnimationFrame(tick); });
-        function tick() {
-          tx += (targetX - tx) * 0.2; ty += (targetY - ty) * 0.2;
-          el.style.transform = `translate(${tx}px,${ty}px)`;
-          if (Math.abs(tx-targetX) > 0.05 || Math.abs(ty-targetY) > 0.05) raf = requestAnimationFrame(tick);
-          else raf = null;
-        }
+(function(){
+  document.querySelectorAll('.faq-item__q').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.closest('.faq-item');
+      var ans = item.querySelector('.faq-item__a');
+      var open = item.classList.toggle('open');
+      ans.style.maxHeight = open ? ans.scrollHeight + 'px' : '0px';
+    });
+  });
+  var P = document.body.getAttribute('data-pagep');
+  if (P) {
+    document.querySelectorAll('.' + P + '-tcard').forEach(function(c){
+      c.addEventListener('click', function(){ c.classList.toggle(P + '-flipped'); });
+    });
+    document.querySelectorAll('.' + P + '-ahead').forEach(function(b){
+      b.addEventListener('click', function(){
+        var row = b.closest('.' + P + '-arow');
+        var body = row.querySelector('.' + P + '-abody');
+        var open = row.classList.toggle(P + '-open');
+        body.style.maxHeight = open ? body.scrollHeight + 'px' : '0px';
       });
-    }, 300);
+    });
   }
-
-  const nav = $('#nav');
-  addEventListener('scroll', () => nav?.classList.toggle('scrolled', scrollY > 40), { passive: true });
 })();
 </script>
 </body>
 </html>
-
