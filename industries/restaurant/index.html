@@ -77,54 +77,111 @@
 </nav>
 
 <main>
-<!-- ================= LOC HERO ================= -->
-<section class="rest-hero">
-<div class="rest-hero__bg"></div>
-<div class="rest-hero__inner">
-<span class="eyebrow reveal">🍽️ Restaurant SEO</span>
-<h1 class="rest-title reveal d1">They're Hungry.<br>They're Searching.<br><span class="text-grad">Are You There?</span></h1>
-<p class="rest-sub reveal d2">When someone Googles "best pasta near me" at 7pm, your restaurant should be the first craving they see. Menu SEO, Google Business, review strategy — served fresh.</p>
-<div class="rest-search-demo reveal d3">
-<div class="rest-search-bar"><span>🔍</span><span class="rest-search-text">best italian restaurant near me</span></div>
-<div class="rest-search-result"><strong>⭐ 4.9 Your Restaurant</strong><span>0.2 miles · Open till 11pm · "Amazing pasta!"</span></div>
-</div>
-<div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center" class="reveal d4">
-<a href="#contact" class="btn btn-primary" data-magnetic>Fill My Tables</a>
-<a href="#pricing" class="btn btn-ghost" data-magnetic>See Pricing</a>
+<!-- RESTAURANT: WARM DISCOVERY REDESIGN -->
+<section class="rt-hero" style="background-image:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600')">
+<div class="rt-hero__overlay"></div>
+<div class="rt-hero__inner">
+<p class="rt-eyebrow">🍽️ RESTAURANT SEO</p>
+<h1 class="rt-title">Empty Tables<br>Are a Choice.</h1>
+<p class="rt-sub">Every night, hundreds of hungry people search for somewhere to eat near you. Let's make sure they find YOUR door.</p>
+<div class="rt-search">
+<div class="rt-search__bar">🔍 &nbsp;best restaurant near me</div>
+<div class="rt-search__you">📍 <strong>Your Restaurant</strong> — 0.3 mi · ⭐ 4.9 (847) · Open Now</div>
 </div>
 </div>
 </section>
-<section><div class="container" style="text-align:center">
-<div class="section-head" style="display:flex;flex-direction:column;align-items:center">
-<span class="eyebrow reveal">Discovery</span>
-<h2 class="h-section reveal d1">How Diners <span class="text-grad">Find You First</span></h2>
+
+<section class="rt-split">
+<div class="rt-split__grid">
+<div class="rt-img"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800" alt="Restaurant interior" loading="lazy"></div>
+<div class="rt-card">
+<span class="rt-label">THE MOMENT</span>
+<h2>7:43 PM. Stomach Growling. Phone Out.</h2>
+<p>That's your customer. They're not browsing food blogs. They're not reading reviews for fun. They're <strong>HUNGRY NOW</strong> and they need a decision in 30 seconds.</p>
+<p>What do they see? Your Google listing. Your photos. Your rating. Your hours. That's your entire sales pitch — in a 3-inch screen.</p>
+<a href="#contact" class="rt-link">Make them choose you →</a>
 </div>
-<div class="lottie-wrap reveal" id="lottie-rest" style="width:180px;height:180px;margin:0 auto 32px"></div>
-<div class="whyme-grid">
-<div class="whyme-card reveal"><h3>🔍 "Near Me" Moments</h3><p>"Restaurants near me", "best sushi downtown" — capture the hungry searchers within walking distance.</p></div>
-<div class="whyme-card reveal d1"><h3>📋 Menu SEO</h3><p>Your dishes are keywords. "Truffle pasta", "wood-fired pizza" — rank for what you actually serve.</p></div>
-<div class="whyme-card reveal d2"><h3>⭐ Review Magnet</h3><p>4.8 stars with 500+ reviews beats 5.0 with 12. We build review velocity that Google rewards.</p></div>
-<div class="whyme-card reveal d3"><h3>📸 Visual Search</h3><p>Food photos in search results. Optimized images that make mouths water before they click.</p></div>
 </div>
-</div></section>
+</section>
+
+<section class="rt-menu-bg">
+<div class="rt-menu__inner">
+<span class="rt-label" style="color:#ffb347">YOUR MENU IS YOUR KEYWORD LIST</span>
+<h2>Every Dish Is a Search Term</h2>
+<div class="rt-dishes">
+<div class="rt-dish"><span class="rt-dish__name">Truffle Risotto</span><span class="rt-dish__kw">"best truffle risotto near me" — 1,200/mo</span></div>
+<div class="rt-dish"><span class="rt-dish__name">Wood-Fired Pizza</span><span class="rt-dish__kw">"wood fired pizza downtown" — 890/mo</span></div>
+<div class="rt-dish"><span class="rt-dish__name">Craft Cocktails</span><span class="rt-dish__kw">"cocktail bar with dinner" — 650/mo</span></div>
+</div>
+<p>We optimize every dish, every category, every "near me" variation. Your menu becomes a keyword magnet.</p>
+</div>
+</section>
+
+<section class="rt-split rt-split--flip">
+<div class="rt-split__grid">
+<div class="rt-card">
+<span class="rt-label">REVIEWS = RANKINGS</span>
+<h2>4.9 Stars Isn't Luck.<br>It's Strategy.</h2>
+<p>Google ranks restaurants with more reviews, better ratings, and fresher feedback. It's not complicated — it's just consistent.</p>
+<ul class="rt-list">
+<li><strong>Review requests</strong> — automated after every visit</li>
+<li><strong>Response strategy</strong> — every review answered, every concern addressed</li>
+<li><strong>Photo optimization</strong> — your best dishes in search results</li>
+</ul>
+</div>
+<div class="rt-anim"><div class="lottie-wrap" id="rt-lottie" style="width:280px;height:280px"></div></div>
+</div>
+</section>
+
+<style>
+.rt-hero { position:relative; width:100%; min-height:95vh; background-size:cover; background-position:center; display:flex; align-items:center; justify-content:center; }
+.rt-hero__overlay { position:absolute; inset:0; background:linear-gradient(to bottom, rgba(10,5,0,.7), rgba(10,5,0,.85)); }
+.rt-hero__inner { position:relative; max-width:800px; padding:120px 24px; text-align:center; }
+.rt-eyebrow { color:#ffb347; font-size:14px; font-weight:700; letter-spacing:4px; margin:0 0 24px; }
+.rt-title { font-size:clamp(48px,8vw,96px); line-height:1; color:#fff; margin:0 0 24px; font-family:var(--font-display); font-weight:900; text-shadow:0 4px 30px rgba(0,0,0,.5); }
+.rt-sub { color:#f0e0cc; font-size:21px; max-width:600px; margin:0 auto 40px; }
+.rt-search { max-width:520px; margin:0 auto; text-align:left; }
+.rt-search__bar { background:rgba(255,255,255,.95); border-radius:100px; padding:18px 28px; color:#666; margin-bottom:12px; font-size:17px; }
+.rt-search__you { background:rgba(255,180,70,.15); border:2px solid #ffb347; border-radius:16px; padding:18px 24px; color:#fff; backdrop-filter:blur(10px); }
+.rt-search__you strong { color:#ffb347; }
+.rt-split { width:100%; padding:90px 24px; }
+.rt-split__grid { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; }
+.rt-split--flip .rt-split__grid { direction:rtl; }
+.rt-split--flip .rt-split__grid > * { direction:ltr; }
+.rt-img img { width:100%; border-radius:24px; box-shadow:0 20px 60px rgba(0,0,0,.4); }
+.rt-anim { display:flex; justify-content:center; }
+.rt-card { background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.1); border-radius:24px; padding:48px; backdrop-filter:blur(12px); }
+.rt-label { color:#22d3ee; font-size:12px; font-weight:700; letter-spacing:3px; }
+.rt-card h2 { color:#fff; font-size:34px; margin:16px 0 20px; font-family:var(--font-display); line-height:1.2; }
+.rt-card p { color:var(--text-dim); line-height:1.8; margin:0 0 16px; font-size:17px; }
+.rt-card p strong { color:#ffb347; }
+.rt-link { display:inline-block; color:#ffb347; font-weight:700; font-size:18px; text-decoration:none; margin-top:12px; }
+.rt-list { list-style:none; padding:0; margin:20px 0 0; }
+.rt-list li { color:var(--text-dim); padding:12px 0; border-bottom:1px solid rgba(255,255,255,.08); font-size:16px; }
+.rt-list strong { color:#fff; }
+.rt-menu-bg { width:100%; background:linear-gradient(135deg, #2a1503, #1a0d02); padding:100px 24px; text-align:center; }
+.rt-menu__inner { max-width:800px; margin:0 auto; }
+.rt-menu__inner h2 { color:#fff; font-size:clamp(32px,5vw,52px); margin:16px 0 40px; font-family:var(--font-display); }
+.rt-dishes { display:grid; gap:16px; margin:0 0 40px; text-align:left; }
+.rt-dish { background:rgba(255,180,70,.06); border:1px solid rgba(255,180,70,.2); border-radius:16px; padding:24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; }
+.rt-dish__name { color:#fff; font-size:20px; font-weight:700; font-family:var(--font-display); }
+.rt-dish__kw { color:#ffb347; font-size:14px; font-style:italic; }
+.rt-menu__inner p { color:#d0b896; font-size:18px; max-width:600px; margin:0 auto; }
+@media (max-width:860px){ .rt-split__grid{grid-template-columns:1fr} }
+</style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+<script>
+(function(){ if(typeof lottie==='undefined')return; var el=document.getElementById('rt-lottie'); if(el){ try{ lottie.loadAnimation({container:el,renderer:'svg',loop:true,autoplay:true,path:'https://assets9.lottiefiles.com/packages/lf20_qp1q7mct.json'}); }catch(e){} } })();
+</script>
+
+<!-- ================= LOC HERO ================= -->
+
+
 <script>
 (function(){ if(typeof lottie==='undefined')return; var el=document.getElementById('lottie-rest'); if(el){ try{ lottie.loadAnimation({container:el,renderer:'svg',loop:true,autoplay:true,path:'https://assets9.lottiefiles.com/packages/lf20_qp1q7mct.json'}); }catch(e){} } })();
 </script>
 
-<style>
-.rest-hero { width:100%; padding:140px 24px 80px; text-align:center; position:relative; overflow:hidden; }
-.rest-hero__bg { position:absolute; inset:0; background:radial-gradient(ellipse at 50% 30%, rgba(255,180,80,.1), transparent 60%); pointer-events:none; }
-.rest-hero__inner { max-width:800px; margin:0 auto; position:relative; display:flex; flex-direction:column; align-items:center; }
-.rest-title { font-size:clamp(40px,6vw,72px); line-height:1.1; color:#fff; margin:20px 0 24px; font-family:var(--font-display); font-weight:800; }
-.rest-sub { color:var(--text-dim); font-size:19px; line-height:1.7; max-width:620px; margin:0 0 36px; }
-.rest-search-demo { width:100%; max-width:520px; margin:0 auto 36px; text-align:left; }
-.rest-search-bar { background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.15); border-radius:100px; padding:16px 24px; display:flex; gap:12px; align-items:center; color:var(--text-dim); margin-bottom:12px; }
-.rest-search-text { color:#fff; }
-.rest-search-result { background:rgba(163,255,92,.08); border:1px solid rgba(163,255,92,.25); border-radius:16px; padding:18px 22px; }
-.rest-search-result strong { color:#a3ff5c; display:block; margin-bottom:4px; }
-.rest-search-result span { color:var(--text-dim); font-size:14px; }
-</style>
+
 <style>
   @media (max-width: 820px) { #intro > .container > div { grid-template-columns: 1fr !important; } }
   .content-block { padding: clamp(30px,4vw,50px); border-radius: var(--radius-lg); background: linear-gradient(135deg, rgba(255,255,255,.05), rgba(255,255,255,.01)); border: 1px solid var(--border); position: relative; overflow: hidden; }
