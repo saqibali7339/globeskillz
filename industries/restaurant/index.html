@@ -259,12 +259,99 @@
 .rt2-occ__card span{display:block;color:#a3ff5c;font-style:italic;margin:8px 0;font-size:15px;}
 .rt2-occ__card em{color:#a2a9bb;font-size:14px;font-style:normal;}
 
+
+.rt2-fix{width:100%;padding:90px 24px;background:#06070d;}
+.rt2-fix__in{max-width:1120px;margin:0 auto;}
+.rt2-fix h2,.rt2-why h2,.rt2-price h2,.rt2-ctaband h2{color:#eef1f7;font-size:clamp(30px,4vw,48px);margin:18px 0 40px;font-family:Georgia,serif;font-weight:700;line-height:1.15;}
+.rt2-fix__grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.rt2-fstep{display:flex;gap:20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:30px;}
+.rt2-fstep>span{flex-shrink:0;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);color:#06070d;font-weight:900;font-size:20px;display:flex;align-items:center;justify-content:center;}
+.rt2-fstep strong{display:block;color:#eef1f7;font-size:18px;margin-bottom:8px;}
+.rt2-fstep em{color:#a2a9bb;font-size:14.5px;font-style:normal;line-height:1.6;}
+.rt2-why{width:100%;padding:90px 24px;background:#0a0e1a;}
+.rt2-why__in{max-width:1120px;margin:0 auto;}
+.rt2-why__grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.rt2-wcard{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:32px;}
+.rt2-wcard strong{display:block;color:#eef1f7;font-size:19px;margin-bottom:10px;}
+.rt2-wcard span{color:#a2a9bb;font-size:15px;line-height:1.6;}
+.rt2-price{width:100%;padding:90px 24px;background:#06070d;}
+.rt2-price__in{max-width:720px;margin:0 auto;text-align:center;}
+.rt2-price__in h2{margin-bottom:36px;}
+.rt2-price__card{background:rgba(255,255,255,.03);border:1px solid rgba(163,255,92,.35);border-radius:24px;padding:44px 40px;text-align:left;}
+.rt2-price__top{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px;flex-wrap:wrap;gap:12px;}
+.rt2-price__top strong{color:#eef1f7;font-size:22px;}
+.rt2-price__amt{font-size:44px;font-weight:900;background:linear-gradient(135deg,#7c5cff,#22d3ee,#a3ff5c);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.rt2-price__amt span{font-size:16px;font-weight:400;color:#a2a9bb;-webkit-text-fill-color:#a2a9bb;}
+.rt2-price__card ul{margin:0 0 32px;padding:0;list-style:none;}
+.rt2-price__card li{display:flex;gap:14px;align-items:flex-start;color:#a2a9bb;font-size:15.5px;padding:9px 0;border-top:1px solid rgba(255,255,255,.07);}
+.rt2-price__card li span{color:#a3ff5c;font-weight:900;}
+.rt2-price__card .rt2-cta{display:block;text-align:center;}
+.rt2-price__note{color:#a2a9bb;font-size:14px;margin:20px 0 0;text-align:center;}
+.rt2-price__note a{color:#a3ff5c;}
+.rt2-ctaband{width:100%;padding:100px 24px;background:radial-gradient(ellipse at 50% 0%,#0a0e1a 0%,#06070d 65%);text-align:center;}
+.rt2-ctaband__in{max-width:760px;margin:0 auto;}
+.rt2-ctaband p{color:#a2a9bb;font-size:18px;line-height:1.7;margin:0 0 36px;}
+@media(max-width:860px){.rt2-fix__grid,.rt2-why__grid{grid-template-columns:1fr !important;}}
+
 </style>
 <script src="../../assets/js/lottie.min.js"></script>
 <script>
 (function(){document.querySelectorAll('[data-lot]').forEach(function(el){if(typeof lottie==='undefined')return;try{lottie.loadAnimation({container:el,renderer:'svg',loop:true,autoplay:true,path:'../../assets/lottie/'+el.getAttribute('data-lot')});}catch(e){}});})();
 </script>
 <!-- ============ /RESTAURANT v3 ============ -->
+<section class="rt2-fix">
+<div class="rt2-fix__in">
+<span class="rt2-label">THE FIX</span>
+<h2>Here&rsquo;s exactly <span class="rt2-grad">what I do.</span></h2>
+<div class="rt2-fix__grid rt2-newgrid">
+<div class="rt2-fstep"><span>1</span><div><strong>Rebuild your Google listing</strong><em>Categories, services, photos, menu, Q&amp;A &mdash; your profile becomes a menu that sells before they arrive.</em></div></div>
+<div class="rt2-fstep"><span>2</span><div><strong>Turn reviews into a machine</strong><em>Automatic requests after every visit. Every review answered. Bad ones handled before they spread.</em></div></div>
+<div class="rt2-fstep"><span>3</span><div><strong>Own every search</strong><em>Ranking pages for your dishes, occasions, and neighborhoods &mdash; &ldquo;best italian near me&rdquo; finds YOU.</em></div></div>
+<div class="rt2-fstep"><span>4</span><div><strong>Stay on top</strong><em>Fresh posts, new photos, new reviews every month &mdash; Google rewards the living, not the listed.</em></div></div>
+</div>
+</div>
+</section>
+
+<section class="rt2-why">
+<div class="rt2-why__in">
+<span class="rt2-label">WHY ME</span>
+<h2>Why restaurant owners <span class="rt2-grad">pick me.</span></h2>
+<div class="rt2-why__grid rt2-newgrid">
+<div class="rt2-wcard"><strong>You talk to me</strong><span>No account managers, no handoffs. The person who audits your listing is the person who fixes it.</span></div>
+<div class="rt2-wcard"><strong>Restaurants aren&rsquo;t a sideline</strong><span>I do local SEO for restaurants specifically &mdash; not &ldquo;we do everything for everyone.&rdquo;</span></div>
+<div class="rt2-wcard"><strong>Plain numbers, no jargon</strong><span>You&rsquo;ll see rankings, reviews, and calls. If a report needs a dictionary, it&rsquo;s hiding something.</span></div>
+<div class="rt2-wcard"><strong>One clear plan</strong><span>A single monthly price with visible work every month. No bloated agency layers eating your budget.</span></div>
+</div>
+</div>
+</section>
+
+<section class="rt2-price">
+<div class="rt2-price__in">
+<span class="rt2-label">PRICING</span>
+<h2>One plan. <span class="rt2-grad">Everything included.</span></h2>
+<div class="rt2-price__card">
+<div class="rt2-price__top"><strong>Restaurant SEO</strong><span class="rt2-price__amt">$700<span>/month</span></span></div>
+<ul>
+<li><span>&check;</span> Google Business Profile fully managed &mdash; posts, photos, Q&amp;A</li>
+<li><span>&check;</span> Review engine &mdash; requests, responses, damage control</li>
+<li><span>&check;</span> Ongoing ranking pages &mdash; dishes, occasions, areas</li>
+<li><span>&check;</span> Monthly report &mdash; rankings, reviews, calls in plain English</li>
+<li><span>&check;</span> Direct line to me &mdash; no ticket queues</li>
+</ul>
+<a href="#contact" class="rt2-cta">Start With a Free Audit &rarr;</a>
+<p class="rt2-price__note">Same SEO plan as on the homepage &mdash; no restaurant markup. Running 2+ locations? <a href="#contact">Ask for a custom quote.</a></p>
+</div>
+</div>
+</section>
+
+<section class="rt2-ctaband">
+<div class="rt2-ctaband__in">
+<span class="rt2-label">FREE AUDIT</span>
+<h2>Hungry customers are searching <span class="rt2-grad">right now.</span></h2>
+<p>Tell me about your restaurant &mdash; I&rsquo;ll send back a free audit of your Google presence: what shows up, what&rsquo;s missing, and what&rsquo;s costing you tables.</p>
+<a href="#contact" class="rt2-cta">Get My Free Audit &rarr;</a>
+</div>
+</section>
 <section id="faq">
   <div class="container">
     <div class="section-head">
