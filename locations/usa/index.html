@@ -82,28 +82,49 @@
 
 
 <!-- ================= LOC HERO ================= -->
-<section class="usa-hero">
-<div class="container">
-<div class="usa-hero__grid">
-<div class="usa-hero__text">
-<div class="bol-crumb reveal"><a href="/">Home</a> / <a href="/locations/">Coverage</a> / <span>USA</span></div>
-<h1 class="reveal d1">SEO Expert in USA:<br><span class="text-grad">Win Your City, Then the Country</span></h1>
-<p class="reveal d2">Local SEO for the USA, from single-city shops to multi-state brands. Market-by-market strategies that turn search visibility into revenue.</p>
-<div class="reveal d3" style="display:flex;gap:16px;flex-wrap:wrap;margin-top:32px">
+<section class="usa-hero-redesigned">
+<div class="uhr-inner">
+<div class="uhr-crumb"><a href="/">Home</a> <span>/</span> <a href="/locations/">Coverage</a> <span>/</span> <strong>USA</strong></div>
+<div class="uhr-badge">🇺🇸 &nbsp;UNITED STATES</div>
+<h1 class="uhr-title">SEO Expert in USA:<br><span class="uhr-grad">Win Your City,<br>Then the Country</span></h1>
+<p class="uhr-sub">Local SEO for the USA, from single-city shops to multi-state brands.<br>Market-by-market strategies that turn search visibility into revenue.</p>
+<div class="uhr-btns">
 <a href="#contact" class="btn btn-primary" data-magnetic>Get a free audit</a>
 <a href="#pricing" class="btn btn-ghost" data-magnetic>See pricing</a>
 </div>
-</div>
-
-</div>
-<div class="usa-hero__stats reveal d3">
-<div class="usa-stat"><div class="usa-stat__num">335M+</div><div class="usa-stat__label">US Population</div></div>
-<div class="usa-stat"><div class="usa-stat__num">50</div><div class="usa-stat__label">States, Each a Market</div></div>
-<div class="usa-stat"><div class="usa-stat__num">90%+</div><div class="usa-stat__label">Google Search Share</div></div>
-<div class="usa-stat"><div class="usa-stat__num">EN + ES</div><div class="usa-stat__label">Search Languages</div></div>
+<div class="uhr-stats">
+<div class="uhr-stat"><div class="uhr-num">335M+</div><div class="uhr-lbl">US Population</div></div>
+<div class="uhr-stat"><div class="uhr-num">50</div><div class="uhr-lbl">States, Each a Market</div></div>
+<div class="uhr-stat"><div class="uhr-num">90%+</div><div class="uhr-lbl">Google Search Share</div></div>
+<div class="uhr-stat"><div class="uhr-num">EN + ES</div><div class="uhr-lbl">Search Languages</div></div>
 </div>
 </div>
 </section>
+<style>
+/* === USA REDESIGNED HERO — full width, truly centered === */
+.usa-hero-redesigned { width:100%; padding:150px 24px 70px; text-align:center; }
+.uhr-inner { width:100%; max-width:1000px; margin:0 auto; display:flex; flex-direction:column; align-items:center; }
+.uhr-crumb { font-size:12px; letter-spacing:2px; text-transform:uppercase; color:var(--text-dim); margin-bottom:24px; }
+.uhr-crumb a { color:#22d3ee; text-decoration:none; }
+.uhr-crumb span { margin:0 8px; opacity:.5; }
+.uhr-badge { display:inline-block; font-size:13px; font-weight:700; letter-spacing:3px; padding:10px 24px; border-radius:100px; border:1px solid rgba(255,255,255,.15); background:rgba(255,255,255,.05); backdrop-filter:blur(10px); margin-bottom:28px; color:#fff; }
+.uhr-title { font-size:clamp(40px,6vw,72px); line-height:1.08; color:#fff; margin:0 0 24px; font-family:var(--font-display); font-weight:800; }
+.uhr-grad { background:linear-gradient(90deg,#7c5cff,#22d3ee,#a3ff5c); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.uhr-sub { color:var(--text-dim); font-size:19px; line-height:1.7; margin:0 0 36px; max-width:640px; }
+.uhr-btns { display:flex; gap:16px; flex-wrap:wrap; justify-content:center; margin-bottom:56px; }
+.uhr-stats { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; width:100%; max-width:900px; }
+.uhr-stat { background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.1); border-radius:18px; padding:28px 16px; backdrop-filter:blur(12px); }
+.uhr-num { font-size:34px; font-weight:800; background:linear-gradient(90deg,#22d3ee,#a3ff5c); -webkit-background-clip:text; background-clip:text; color:transparent; font-family:var(--font-display); }
+.uhr-lbl { color:var(--text-dim); font-size:11px; text-transform:uppercase; letter-spacing:1.5px; margin-top:10px; }
+@media (max-width:700px){ .uhr-stats{grid-template-columns:repeat(2,1fr)} }
+/* === All USA sections: full width, inner centered === */
+body[data-theme="iridescent"] main > section { width:100%; }
+body[data-theme="iridescent"] main > section .container { width:100%; max-width:1100px; margin:0 auto; padding-left:24px; padding-right:24px; text-align:center; display:flex; flex-direction:column; align-items:center; }
+body[data-theme="iridescent"] .section-head { display:flex; flex-direction:column; align-items:center; text-align:center; width:100%; }
+body[data-theme="iridescent"] .eyebrow { margin:0 auto; }
+body[data-theme="iridescent"] .prose { max-width:760px; margin:0 auto; text-align:center; width:100%; }
+body[data-theme="iridescent"] .section-head__sub { max-width:640px; margin:0 auto; }
+</style>
 <style>
 .usa-hero { padding:140px 0 60px; }
 .usa-hero__grid { display:block; margin-bottom:48px; }
@@ -498,19 +519,7 @@
 
 
 
-<style>
-/* USA page: truly centered */
-body[data-theme="iridescent"] main { text-align:center; }
-body[data-theme="iridescent"] main section .container { max-width:1100px; margin-left:auto; margin-right:auto; text-align:center; }
-body[data-theme="iridescent"] .usa-hero .container { max-width:900px; }
-body[data-theme="iridescent"] .section-head { display:flex; flex-direction:column; align-items:center; text-align:center; }
-body[data-theme="iridescent"] .eyebrow { margin-left:auto; margin-right:auto; }
-body[data-theme="iridescent"] .prose { max-width:760px; margin-left:auto; margin-right:auto; text-align:center; }
-body[data-theme="iridescent"] .section-head__sub { max-width:640px; margin-left:auto; margin-right:auto; }
-body[data-theme="iridescent"] .usa-hero__grid { display:block; text-align:center; }
-body[data-theme="iridescent"] .usa-hero__grid > div:first-child { display:flex; flex-direction:column; align-items:center; }
-body[data-theme="iridescent"] .usa-hero__grid .bol-crumb { text-align:center; }
-</style>
+
 </main>
 
 <!-- Footer -->
