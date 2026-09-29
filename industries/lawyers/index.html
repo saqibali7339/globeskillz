@@ -86,20 +86,56 @@
 
 <main>
 <!-- ================= LOC HERO ================= -->
-<section class="loc-hero">
-  <div class="container">
-    <div class="loc-hero__breadcrumb reveal">
-      <a href="../../">Home</a> / <a href="../../#coverage">Coverage</a> / <span id="crumbType">Niche</span> / <span id="crumbName">lawyers</span>
-    </div>
-    <h1 class="h-display loc-hero__title" id="locH1"><span class="split" data-split="words"><span class="word">SEO</span> <span class="word">for</span> <span class="word">Lawyers</span> <span class="word">That</span> <span class="word"><span class="text-grad">Brings</span></span> <span class="word"><span class="text-grad">Consultations</span></span> </span></h1>
-    <p class="loc-hero__sub reveal" id="locSub">Ethical, authoritative visibility for your practice.</p>
-    <div class="hero__cta-row reveal" style="margin-top:36px">
-      <a href="#contact" class="btn btn-primary" data-magnetic>Get a free audit</a>
-      <a href="../../#pricing" class="btn btn-ghost" data-magnetic>See pricing</a>
-    </div>
-
-      </div>
+<section class="law-hero">
+<div class="law-hero__grid">
+<div class="law-hero__text">
+<span class="eyebrow reveal">⚖️ Legal SEO</span>
+<h1 class="law-title reveal d1">When Someone Needs a Lawyer,<br><span class="text-grad">They Don't Browse.<br>They Decide.</span></h1>
+<p class="law-sub reveal d2">Personal injury, family law, criminal defense — high-value cases start with a Google search. Be the firm they trust in that critical moment.</p>
+<div class="law-cred reveal d3">
+<div class="law-cred__item"><strong>E-E-A-T</strong><span>Optimized</span></div>
+<div class="law-cred__item"><strong>Avvo</strong><span>Integrated</span></div>
+<div class="law-cred__item"><strong>GBP</strong><span>Dominance</span></div>
+</div>
+<div class="reveal d4" style="display:flex;gap:16px;flex-wrap:wrap;margin-top:32px">
+<a href="#contact" class="btn btn-primary" data-magnetic>Book Consultation</a>
+</div>
+</div>
+<div class="law-hero__visual reveal d2">
+<div class="lottie-wrap" id="lottie-law" style="width:100%;max-width:320px;height:320px"></div>
+</div>
+</div>
 </section>
+<section><div class="container" style="text-align:center">
+<div class="section-head" style="display:flex;flex-direction:column;align-items:center">
+<span class="eyebrow reveal">Practice Areas</span>
+<h2 class="h-section reveal d1">SEO for Every <span class="text-grad">Type of Law</span></h2>
+<p class="section-head__sub reveal d2">Different cases, different searches, different strategies.</p>
+</div>
+<div class="whyme-grid">
+<div class="whyme-card reveal"><h3>🚗 Personal Injury</h3><p>"Car accident lawyer near me" — the highest-value search in legal. We dominate it.</p></div>
+<div class="whyme-card reveal d1"><h3>👨‍👩‍👧 Family Law</h3><p>Divorce, custody, support — sensitive searches that need trust signals everywhere.</p></div>
+<div class="whyme-card reveal d2"><h3>🔒 Criminal Defense</h3><p>"DUI lawyer", "criminal defense attorney" — urgent, high-stakes, immediate calls.</p></div>
+<div class="whyme-card reveal d3"><h3>🏠 Real Estate Law</h3><p>Closing attorneys, title disputes — local authority that converts.</p></div>
+</div>
+</div></section>
+
+<style>
+.law-hero { width:100%; padding:140px 24px 70px; }
+.law-hero__grid { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:1.1fr .9fr; gap:56px; align-items:center; }
+.law-title { font-size:clamp(34px,4.5vw,56px); line-height:1.15; color:#fff; margin:20px 0 24px; font-family:var(--font-display); font-weight:800; }
+.law-sub { color:var(--text-dim); font-size:18px; line-height:1.7; margin:0 0 28px; }
+.law-cred { display:flex; gap:24px; }
+.law-cred__item { text-align:center; }
+.law-cred__item strong { display:block; color:#fff; font-size:20px; font-family:var(--font-display); }
+.law-cred__item span { color:var(--text-dim); font-size:12px; text-transform:uppercase; letter-spacing:1px; }
+.law-hero__visual { display:flex; align-items:center; justify-content:center; background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.08); border-radius:24px; backdrop-filter:blur(12px); min-height:340px; }
+@media (max-width:860px){ .law-hero__grid{grid-template-columns:1fr} }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+<script>
+(function(){ if(typeof lottie==='undefined')return; var el=document.getElementById('lottie-law'); if(el){ try{ lottie.loadAnimation({container:el,renderer:'svg',loop:true,autoplay:true,path:'https://assets2.lottiefiles.com/packages/lf20_wd1vssir.json'}); }catch(e){} } })();
+</script>
 <section>
   <div class="container">
     <div class="section-head">
