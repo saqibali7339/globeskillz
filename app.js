@@ -16,7 +16,9 @@
     prVal = Math.min(100, prVal + Math.random() * 9 + 4);
     if (prCount) prCount.textContent = 'LOADING · ' + String(Math.round(prVal)).padStart(3, '0');
     if (prVal >= 100) clearInterval(prTick);
-  }, 90);
+  }, 350);
+  // Stop the counter the moment the preloader lifts: every tick emits a new
+  // LCP candidate for #prCount, which drags LCP later with each update.
 
   // If the URL carries a hash (e.g. #contact from a blog CTA), the
   // preloader overlay defeats the browser's native anchor jump, so re-apply it
@@ -30,6 +32,7 @@
   // Lift on DOMContentLoaded (not window load): load waits for every asset,
   // which kept the overlay up ~3s on mobile and hurt LCP. The intro still plays.
   const liftPreloader = () => {
+    clearInterval(prTick);
     setTimeout(() => {
       if (!preloader) { revealHero(); honorHash(); return; }
       if (preloader.classList.contains('done')) return;
