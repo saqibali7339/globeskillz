@@ -1328,5 +1328,5 @@ main .conv-hero ~ section .prose { max-width: 680px; margin-left: auto !importan
 }
 
 @media (max-width:768px){
-  .hero__headline{animation-delay:0s!important}
+  .hero__headline{animation:none!important;opacity:1!important;transform:none!important}
 }
