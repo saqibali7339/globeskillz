@@ -1158,7 +1158,14 @@
 
 
 
-<script defer src="app.js?v=20260930b"></script>
+<script>
+/* Load app.js after window.load to avoid blocking LCP. Hero reveal handled by 900ms timer. */
+window.addEventListener('load', function() {
+  var s = document.createElement('script');
+  s.src = 'app.js?v=20260930b';
+  document.body.appendChild(s);
+});
+</script>
 
 <script>
 /* Critical-path hero reveal: lifts the preloader and reveals hero content on
