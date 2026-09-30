@@ -102,6 +102,7 @@
   const blogGrid = $('#blogGrid');
   if (blogGrid && !blogGrid.children.length) {
     const fmtD = iso => new Date(iso + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+    const loadBlog = () => {
     fetch('data/blog/index.json').then(r => r.json()).then(posts => {
       const cards = posts.slice(0, 3).map(p => `
         <a class="blog-card" href="blog/${p.slug}/">
@@ -116,6 +117,9 @@
       blogGrid.innerHTML = cards.join('');
       $$('.blog-card', blogGrid).forEach(el => { el.classList.add('reveal'); io.observe(el); });
     }).catch(() => { blogGrid.innerHTML = ''; });
+    };
+    if (document.readyState === 'complete') loadBlog();
+    else window.addEventListener('load', loadBlog, { once: true });
   }
   $$('.split').forEach(el => {
     if (!el.closest('#hero')) io.observe(el);
@@ -429,6 +433,7 @@
     document.head.appendChild(el);
   }
 
+  const loadCoverage = () => {
   Promise.all([
     fetch('data/index.json').then(r => r.json()),
     fetch('data/card_descriptions.json').then(r => r.json()).catch(() => ({}))
@@ -444,6 +449,9 @@
     if (nicheGrid) nicheGrid.innerHTML = msg;
     console.warn('coverage index load failed', err);
   });
+  };
+  if (document.readyState === 'complete') loadCoverage();
+  else window.addEventListener('load', loadCoverage, { once: true });
 
   $$('#covTabs .coverage__tab').forEach(tab => {
     tab.addEventListener('click', () => {
