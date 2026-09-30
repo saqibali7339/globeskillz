@@ -169,7 +169,7 @@ body.no-cursor, body.no-cursor button, body.no-cursor a { cursor: auto; }
   position: fixed; inset: 0; z-index: 10000;
   background: var(--bg);
   display: grid; place-items: center;
-  transition: opacity .8s var(--ease-out), visibility .8s;
+  transition: opacity .4s var(--ease-out), visibility .4s;
 }
 .preloader.done { opacity: 0; visibility: hidden; }
 .preloader__inner { position: relative; width: min(78vw, 520px); aspect-ratio: 1; display: grid; place-items: center; }
