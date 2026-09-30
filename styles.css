@@ -1346,3 +1346,7 @@ main .conv-hero ~ section .prose { max-width: 680px; margin-left: auto !importan
 @media (max-width:768px){
   .hero__stage{isolation:auto!important}
 }
+
+@media (max-width:768px){
+  .bg-mesh{display:none!important}
+}
