@@ -1144,5 +1144,22 @@
 
 
 <script defer src="app.js"></script>
+<script>
+/* Critical-path hero reveal: lifts the preloader and reveals hero content on
+   a timer, without waiting for deferred app.js (slow connections delay it 1s+,
+   which dragged mobile LCP to ~4s). app.js no-ops if already done. */
+setTimeout(function() {
+  var p = document.getElementById('preloader');
+  if (p && !p.classList.contains('done')) {
+    p.classList.add('done');
+    document.body.classList.add('loaded');
+  }
+  var hero = document.getElementById('hero');
+  if (hero) {
+    var els = hero.querySelectorAll('.reveal:not(.in)');
+    for (var i = 0; i < els.length; i++) els[i].classList.add('in');
+  }
+}, 900);
+</script>
 </body>
 </html>
