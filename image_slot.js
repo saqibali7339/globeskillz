@@ -406,7 +406,12 @@
       // re-seeds _view from stored before clamp/apply, so a shrink→grow
       // cycle round-trips instead of ratcheting x/y toward the narrower
       // frame's clamp range.
-      this._ro = new ResizeObserver(() => this._render());
+      this._roQueued = false;
+      this._ro = new ResizeObserver(() => {
+        if (this._roQueued) return;
+        this._roQueued = true;
+        requestAnimationFrame(() => { this._roQueued = false; this._render(); });
+      });
       this._ro.observe(this);
       load();
       this._render();
