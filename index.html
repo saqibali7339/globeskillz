@@ -17,7 +17,20 @@
 <meta name="description" content="Web development & SEO services for service businesses and growing brands: lightning-fast WordPress & Shopify websites and Google-first SEO that turns searches into customers. Serving the US & worldwide." />
 
 <link rel="preload" href="assets/fonts/Inter-var.woff2" as="font" type="font/woff2" crossorigin>
-<style>@font-face{TEMP400;font-display:optional;src:url(assets/fonts/SpaceGrotesk-var.woff2) format('woff2')}@font-face{TEMP500;font-display:optional;src:url(assets/fonts/SpaceGrotesk-var.woff2) format('woff2')}@font-face{TEMP600;font-display:optional;src:url(assets/fonts/SpaceGrotesk-var.woff2) format('woff2')}@font-face{TEMP700;font-display:optional;src:url(assets/fonts/SpaceGrotesk-var.woff2) format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:optional;src:url(assets/fonts/Inter-var.woff2) format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:optional;src:url(assets/fonts/Inter-var.woff2) format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:optional;src:url(assets/fonts/Inter-var.woff2) format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:700;font-display:optional;src:url(assets/fonts/Inter-var.woff2) format('woff2')}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:optional;src:url(assets/fonts/JetBrainsMono-var.woff2) format('woff2')}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:optional;src:url(assets/fonts/JetBrainsMono-var.woff2) format('woff2')}</style>
+<style>@font-face{TEMP400;font-display:optional;src:url(assets/fonts/SpaceGrotesk-var.woff2) format('woff2')}@font-face{TEMP500;font-display:optional;src:url(assets/fonts/SpaceGrotesk-var.woff2) format('woff2')}@font-face{TEMP600;font-display:optional;src:url(assets/fonts/SpaceGrotesk-var.woff2) format('woff2')}@font-face{TEMP700;font-display:optional;src:url(assets/fonts/SpaceGrotesk-var.woff2) format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:optional;src:url(assets/fonts/Inter-var.woff2) format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:optional;src:url(assets/fonts/Inter-var.woff2) format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:optional;src:url(assets/fonts/Inter-var.woff2) format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:700;font-display:optional;src:url(assets/fonts/Inter-var.woff2) format('woff2')}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:optional;src:url(assets/fonts/JetBrainsMono-var.woff2) format('woff2')}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:optional;src:url(assets/fonts/JetBrainsMono-var.woff2) format('woff2')}
+.mobile-hero{display:none}
+@media (max-width:768px){
+  .mobile-hero{display:block;text-align:center;padding:100px 20px 60px;max-width:600px;margin:0 auto}
+  .mobile-hero h1{font-family:system-ui,-apple-system,sans-serif;font-weight:800;font-size:32px;line-height:1.15;color:#fff;margin:0 0 16px}
+  .mobile-hero p{font-size:16px;color:rgba(255,255,255,.7);margin:0 0 24px;line-height:1.5}
+  .mobile-hero .mh-cta{display:inline-block;background:#7c5cff;color:#fff;padding:14px 28px;border-radius:8px;text-decoration:none;font-weight:600;margin:4px}
+  .mobile-hero .mh-cta2{display:inline-block;border:1px solid rgba(255,255,255,.3);color:#fff;padding:14px 28px;border-radius:8px;text-decoration:none;font-weight:600;margin:4px}
+  #hero{display:none!important}
+}
+@media (min-width:769px){
+  .mobile-hero{display:none!important}
+}
+</style>
 <link rel="stylesheet" href="styles.css?v=20260930i" />
 <link rel="icon" type="image/png" href="favicon.png" />
 <link rel="canonical" href="https://globeskillz.com/" />
@@ -63,6 +76,13 @@
 </style>
 </head>
 <body data-theme="iridescent">
+<div class="mobile-hero">
+  <h1>Web Development &amp; SEO Services That Turn Visitors into Customers</h1>
+  <p>I build fast websites and rank them on Google so small businesses get more customers. No agency fluff, just results.</p>
+  <a class="mh-cta" href="#contact">Get Free Audit</a>
+  <a class="mh-cta2" href="#results">See Results</a>
+</div>
+
 
 <!-- SVG gradient defs (shared) -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
