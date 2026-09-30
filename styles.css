@@ -172,18 +172,7 @@ body.no-cursor, body.no-cursor button, body.no-cursor a { cursor: auto; }
   transition: opacity .4s var(--ease-out), visibility .4s;
 }
 .preloader.done { opacity: 0; visibility: hidden; }
-/* CSS backstop: lift the preloader even if JS is blocked on slow connections.
-   JS (.done) acts earlier when the main thread is free. */
-.preloader { animation: preloader-autolift .4s var(--ease-out) 1.4s forwards; }
-@keyframes preloader-autolift { to { opacity: 0; visibility: hidden; } }
-/* CSS backstop: reveal hero content without waiting for deferred JS. */
-#hero .reveal { animation: hero-autoreveal .9s var(--ease-out) 1.4s forwards; }
-#hero .reveal.d1 { animation-delay: 1.48s; }
-#hero .reveal.d2 { animation-delay: 1.56s; }
-#hero .reveal.d3 { animation-delay: 1.64s; }
-#hero .reveal.d4 { animation-delay: 1.72s; }
-#hero .reveal.d5 { animation-delay: 1.8s; }
-@keyframes hero-autoreveal { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: none; } }
+
 .preloader__inner { position: relative; width: min(78vw, 520px); aspect-ratio: 1; display: grid; place-items: center; }
 .preloader__globe {
   position: absolute; inset: 0;
