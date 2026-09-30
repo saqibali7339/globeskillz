@@ -1340,6 +1340,5 @@ main .conv-hero ~ section .prose { max-width: 680px; margin-left: auto !importan
 }
 
 @media (max-width:768px){
-  #hero *, #hero{animation:none!important;transition:none!important}
-  #hero .reveal, #hero__eyebrow, .hero__headline{opacity:1!important;transform:none!important}
+  .hero__eyebrow{animation:none!important;opacity:1!important;transform:none!important}
 }
