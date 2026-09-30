@@ -306,7 +306,10 @@
     }
   };
   window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
+  // Defer the initial call: it forces multiple synchronous layouts
+  // (getBoundingClientRect in loops) which counted as blocking time.
+  if ('requestIdleCallback' in window) requestIdleCallback(() => onScroll(), { timeout: 1500 });
+  else setTimeout(onScroll, 0);
 
   /* ---------- Count-up ---------- */
   const counters = $$('[data-count]');
