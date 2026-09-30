@@ -1326,3 +1326,7 @@ main .conv-hero ~ section .prose { max-width: 680px; margin-left: auto !importan
   .hero__headline{filter:none!important}
   .bg-noise{display:none!important}
 }
+
+@media (max-width:768px){
+  .hero__headline{animation-delay:0s!important}
+}
