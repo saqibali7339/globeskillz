@@ -50,7 +50,8 @@
 /* Critical: lift preloader + reveal hero without waiting for styles.css.
    Anchored at HTML parse time so the delay counts from navigation start. */
 /* Mobile: no preloader at all — it was the LCP blocker. Desktop keeps it. */
-@media (max-width:768px){#preloader{display:none!important}}
+@media (max-width:768px){#preloader{display:none!important}
+#hero .reveal{opacity:1!important;transform:none!important;animation:none!important;transition:none!important}}
 #preloader{animation:pl-lift .4s ease-out 1s forwards}
 @keyframes pl-lift{to{opacity:0;visibility:hidden}}
 #hero .reveal{animation:hero-in .9s cubic-bezier(.16,1,.3,1) 1s forwards}
