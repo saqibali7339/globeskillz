@@ -99,7 +99,7 @@
   if (blogGrid && !blogGrid.children.length) {
     const fmtD = iso => new Date(iso + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
     const loadBlog = () => {
-    fetch('data/blog/index.json').then(r => r.json()).then(posts => {
+    fetch('/data/blog/index.json').then(r => r.json()).then(posts => {
       const cards = posts.slice(0, 3).map(p => `
         <a class="blog-card" href="blog/${p.slug}/">
           <div class="blog-card__img"><img src="${p.image}" alt="${p.title.replace(/"/g, '')}" loading="lazy"></div>
@@ -434,8 +434,8 @@
 
   const loadCoverage = () => {
   Promise.all([
-    fetch('data/index.json').then(r => r.json()),
-    fetch('data/card_descriptions.json').then(r => r.json()).catch(() => ({}))
+    fetch('/data/index.json').then(r => r.json()),
+    fetch('/data/card_descriptions.json').then(r => r.json()).catch(() => ({}))
   ]).then(([idx, descs]) => {
     covIndex = idx;
     cardDesc = descs || {};
