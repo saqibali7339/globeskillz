@@ -356,7 +356,11 @@
   let query = '';
 
   function kindLabel(t) {
-    return { 'us': 'United States', 'uk': 'United Kingdom', 'canada': 'Canada', 'eu': 'Europe', 'specialty': 'Specialty' }[t] || 'Location';
+    const isFr = document.documentElement.lang === 'fr' || location.pathname.startsWith('/fr/');
+    const labels = isFr
+      ? { 'us': 'États-Unis', 'uk': 'Royaume-Uni', 'canada': 'Canada', 'eu': 'Europe', 'specialty': 'Spécialité' }
+      : { 'us': 'United States', 'uk': 'United Kingdom', 'canada': 'Canada', 'eu': 'Europe', 'specialty': 'Specialty' };
+    return labels[t] || (isFr ? 'Lieu' : 'Location');
   }
 
   let cardDesc = {};
