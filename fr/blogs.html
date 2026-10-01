@@ -78,17 +78,17 @@
 <a href="./">Sommaire</a> / <span>Blog</span>
 </div>
 <span class="eyebrow reveal">Le blog</span>
-<h1 class="h-display reveal">SEO donne des conseils<span class="text-grad">J'aide vraiment.</span></h1>
+<h1 class="h-display reveal">SEO donne des conseils <span class="text-grad">J'aide vraiment.</span></h1>
 <p class="p-lead reveal d1" style="margin-top:20px">Guides en anglais simple sur le référencement, WordPress, et Shopify. Ecrit pour les propriétaires d'entreprise, pas les commerçants.</p>
 </div>
 </section>
 <section class="blogs-intro" style="padding-top:0">
 <div class="container" style="max-width:860px">
-<h2 class="h-section reveal">Quoi ?<span class="text-grad">écrire sur.</span></h2>
+<h2 class="h-section reveal">Quoi ? <span class="text-grad">écrire sur.</span></h2>
 <p class="reveal" style="color:var(--text-dim); font-size:16px; line-height:1.7; margin:14px 0 34px">Les questions propriétaires d'entreprise me demandent en fait : ce que coûte le référencement, comment embaucher une entreprise de référencement sans se brûler, comment obtenir un site WordPress sur Google, ce qu'un expert de référencement Shopify fait vraiment. Chaque guide répond à une question correctement, avec les compromis honnêtes inclus.</p>
-<h2 class="h-section reveal">Qui ça ?<span class="text-grad">C'est pour.</span></h2>
+<h2 class="h-section reveal">Qui ça ? <span class="text-grad">C'est pour.</span></h2>
 <p class="reveal" style="color:var(--text-dim); font-size:16px; line-height:1.7; margin:14px 0 34px">J'écris la façon dont je parle aux clients: l'anglais ordinaire, pas de jargon, pas de fluff, et pas de pression. Si un post vous fait vouloir une seconde paire d'yeux sur votre site, l'offre d'audit gratuite à la fin de chaque article est la prochaine étape naturelle.</p>
-<h2 class="h-section reveal">Commencez par<span class="text-grad">les fondamentaux.</span></h2>
+<h2 class="h-section reveal">Commencez par <span class="text-grad">les fondamentaux.</span></h2>
 <p class="reveal" style="color:var(--text-dim); font-size:16px; line-height:1.7; margin:14px 0 6px">Nouveau ici? Les guides de coût et d'embauche sont les meilleurs lus en premier. Ils répondent aux deux questions presque chaque propriétaire pose avant de dépenser un dollar sur le référencement: ce qui devrait coûter, et qui devrais-je faire confiance avec elle. De là, suivez tout problème que vous essayez de résoudre.</p>
 </div>
 </section>
@@ -257,7 +257,7 @@
     const idx = await (await fetch(RP + 'data/blog/fr/index.json')).json();
     const __grid=document.getElementById('allGrid');
     if(idx.length!==__grid.querySelectorAll('.blog-card').length){__grid.innerHTML = idx.map(p => `
-      <a class="blog-card" href="${RP}blog/${p.slug}/">
+      <a class="blog-card" href="${RP}fr/blog/${p.slug}/">
         <div class="blog-card__img"><picture><source type="image/webp" srcset="${RP}${p.image.replace(/\.jpe?g$/, '')}-800.webp 800w, ${RP}${p.image.replace(/\.jpe?g$/, '')}-1200.webp 1200w" sizes="(max-width: 720px) 100vw, 400px"><img src="${RP}${p.image}" alt="${esc(p.title)}" loading="lazy" width="800" height="450"></picture></div>
         <div class="blog-card__body">
           <div class="blog-card__date">${fmtDate(p.date)} · ${p.read_time} min read</div>
