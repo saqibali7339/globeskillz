@@ -1,0 +1,91 @@
+{
+ "slug": "wordpress-website-cost",
+ "keyword": "wordpress website cost",
+ "title": "Combien coûte un site web WordPress ?",
+ "date": "2026-09-25",
+ "image": "assets/blog/wordpress-website-cost.jpg",
+ "excerpt": "Les prix du site WordPress vont d'un bricolage de week-end à des projets d'agence à cinq chiffres. Voici ce que vous payez réellement à chaque niveau et comment éviter le surpaiement.",
+ "meta": "Combien coûte un site WordPress ? Une ventilation pratique des prix réels, des coûts cachés, et ce qu'une petite entreprise devrait réellement budget.",
+ "intro": "Demandez à trois développeurs web ce qu'un site WordPress coûte et vous obtiendrez trois réponses très différentes. On dit que vous pouvez le faire vous-même pour presque rien, une autre cite quelques centaines, et une troisième main vous une proposition à cinq chiffres. Ils peuvent tous avoir raison, ce qui est exactement pourquoi la question est si confuse.\n\nJe construis des sites WordPress pour vivre, donc voici la version honnête: ce qu'un site WordPress coûte réellement, ce qui pousse le prix à la hausse ou à la baisse, les coûts cachés qui attrapent les gens hors de garde, et combien une petite entreprise devrait réalistement budget.",
+ "sections": [
+  {
+   "heading": "Les prix typiques du site WordPress en un coup d'oeil",
+   "body": [
+    "Un nom de domaine coûte environ dix à quinze par an, l'hébergement partagé de base fonctionne quelques livres par mois, et le logiciel WordPress lui-même est gratuit. Avec un thème gratuit et des plugins gratuits, votre dépense en espèces pour l'année une peut rester bien moins de deux cents.",
+    "Le métier est votre temps, et c'est un plus grand métier que la plupart des gens s'attendent. Apprendre l'hébergement, les thèmes, les constructeurs de pages et les bases de sécurité prend de vraies soirées et week-ends, et une première tentative semble rarement professionnelle.",
+    "L'embauche d'un freelancer pour un site basé sur des modèles se situe généralement entre quelques centaines et quelques milliers, selon les pages et les fonctionnalités. Une construction freelance conçue sur mesure, où le design est fait pour votre entreprise au lieu d'être adapté d'un thème, fonctionne généralement d'environ quinze cents à cinq mille.",
+    "Les agences commencent plus haut, souvent cinq mille et plus, et de grands projets sur mesure avec le commerce électronique, les systèmes de réservation, ou les intégrations peuvent fonctionner en cinq chiffres. Pour un simple site de brochure qui est surqualifié."
+   ]
+  },
+  {
+   "heading": "Ce qui fait une citation quelques centaines et dix mille",
+   "body": [
+    "Un site de brochure de cinq pages est une chose. Ajoutez une réservation en ligne, une boutique, un espace de connexion client, ou plusieurs langues, et le travail multiplie rapidement. Chaque fonction doit être construite, testée et maintenue.",
+    "Le design compte aussi. L'adaptation d'un thème prêt à l'emploi est rapide. La conception de quelque chose d'unique pour votre marque prend des heures réelles de designer, et cela apparaît dans la citation.",
+    "Le contenu est le tueur de budget silencieux. Si vous remettez du texte fini et des photos, la construction se déplace rapidement. Si le développeur doit vous poursuivre pour du contenu pendant six semaines, ou l'écrire lui-même, attendez le prix pour refléter cela.",
+    "Les intégrations s'additionnent également. Connecter des passerelles de paiement, un CRM, du marketing par e-mail ou un logiciel de réservation prend chacun configuration et test. Et une échéance précipitée coûte presque toujours plus cher, parce que cela signifie soirées et week-ends pour le développeur."
+   ]
+  },
+  {
+   "heading": "Les coûts cachés personne ne cite à l'avance",
+   "body": [
+    "Le devis de construction n'est qu'une partie de l'histoire. Les renouvellements d'hébergement sont la surprise classique: de nombreux hôtes annoncent une première année bon marché, puis le prix double ou triple sur le renouvellement.",
+    "Les thèmes Premium et les plugins sont généralement livrés avec des licences annuelles. Ils valent la peine de payer, mais les ajouter à votre budget annuel afin qu'ils ne vous embuscadent pas.",
+    "WordPress a besoin de mises à jour régulières de son cœur, des thèmes, et des plugins, ainsi que des sauvegardes et du suivi de sécurité. Sautez ceci et votre site devient lent, puis piraté. Vous payez pour un plan de soins ou passez votre propre temps sur lui chaque mois.",
+    "Des extras plus petits s'additionnent aussi : l'hébergement de courriels d'affaires, les photos de stock, un certificat SSL si votre hôte en facture un, et tout outil payant comme les constructeurs de formulaires avancés ou les plugins SEO."
+   ]
+  },
+  {
+   "heading": "Bricolage vs recrutement d'un développeur",
+   "body": [
+    "Pour un site de base qui a juste besoin d'exister, comme un portfolio ou une présence d'une page, le bricolage est un choix raisonnable.",
+    "Si le chargement lent, les mises en page mobiles cassées, ou un look amateur vous coûtera des questions, le développeur paie pour lui-même. Louez également lorsque votre propre temps vaut plus que le coût de construction: dix week-ends de votre vie n'est pas gratuit.",
+    "Il y a un terrain intermédiaire beaucoup d'entreprises manquent. Avoir un développeur construire le site correctement, puis apprendre juste assez pour mettre à jour le texte, les photos, et les messages de blog vous-même."
+   ]
+  },
+  {
+   "heading": "Drapeaux rouges en guillemets bon marché",
+   "body": [
+    "Une citation sans portée écrite est un signe d'avertissement. S'il ne dit pas exactement ce qui est inclus, combien de pages, quelles fonctionnalités, et ce qui se passe après le lancement, vous discuterez à ce sujet plus tard.",
+    "Attention à toute personne qui enregistre votre domaine et l'hébergement dans son propre nom. Si jamais vous vous séparez, vous pouvez perdre le contrôle de votre propre site Web. Tout devrait être en votre nom, toujours.",
+    "Méfiez-vous des prix de fond de roche jumelés à de grandes promesses. Les constructions extrêmement bon marché utilisent souvent des thèmes pirates et des plugins, qui sont un désastre de sécurité, ou le développeur disparaît au moment où le paiement final s'efface.",
+    "Pas de portfolio, pas de critiques, pas de détails d'affaires réels: s'en aller. Un développeur légitime peut vous montrer des sites en direct qu'ils ont construits et des clients qui s'en porteront garants."
+   ]
+  },
+  {
+   "heading": "Combien une petite entreprise devrait-elle budgeter?",
+   "body": [
+    "Pour une entreprise locale qui a besoin d'un site de brochure professionnel, une gamme réaliste avec un freelance est de quelques centaines à environ deux mille. Cela vous donne un site propre, rapide, mobile-friendly construit sur un thème solide, avec la configuration de base de référencement.",
+    "Si le site doit générer des leads ou des ventes, traitez-le comme un investissement, pas une dépense. Dépensez plus sur la conception personnalisée, l'optimisation de vitesse appropriée, et les fondations de référencement dès le premier jour. Un site qui apporte des clients chaque mois est bon marché à deux fois le prix.",
+    "Quel que soit votre budget pour la construction, aussi budget pour l'année une de l'exécution: hébergement, domaine, renouvellements de plugins, et soit un plan de maintenance ou votre propre temps. Un site Web n'est pas un achat ponctuel."
+   ]
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Puis-je construire un site WordPress gratuitement ?",
+   "a": "Presque. Le logiciel WordPress lui-même est libre et open source. Ce qui coûte de l'argent, c'est tout ce qui l'entoure : un nom de domaine, un hébergement, et en option des thèmes ou des plugins premium. Ensuite, il y a le plus grand coût caché de tous, votre temps."
+  },
+  {
+   "q": "Dois-je payer pour WordPress lui-même ?",
+   "a": "Non. WordPress est gratuit, pour toujours. Vous payez pour un nom de domaine, l'hébergement web, et si vous les voulez, les thèmes premium et les plugins avec des licences annuelles. Vous payez également pour le temps et la compétence d'un développeur si vous l'embauchez."
+  },
+  {
+   "q": "Pourquoi les développeurs WordPress chargent-ils autant ?",
+   "a": "Parce qu'un site Web n'est pas seulement des pages sur un écran. Un bon développeur gère la conception, la réactivité mobile, la vitesse de chargement, la sécurité, les sauvegardes et la configuration SEO de base, puis teste tout avant le lancement. Un site bon marché qui se charge lentement, semble cassé sur les téléphones, et apporte zéro clients est l'option coûteuse. Vous payez pour le résultat, pas les heures."
+  },
+  {
+   "q": "Combien de temps un site WordPress prend-il pour construire ?",
+   "a": "Cela dépend de l'itinéraire. Faire vous-même avec un constructeur de page peut prendre quelques jours à quelques semaines de temps libre. Un freelancer construire un site de petite entreprise a généralement besoin d'une à quatre semaines. Un projet d'agence avec un design personnalisé et beaucoup de fonctionnalités peut fonctionner six à douze semaines ou plus."
+  }
+ ],
+ "read_time": 6,
+ "service": {
+  "path": "services/développement du Web/",
+  "label": "Développement Web",
+  "blurb": "Vous voulez une réponse directe sur ce que votre site WordPress devrait coûter ? Dites-moi ce dont vous avez besoin."
+ },
+ "faq_topic": "Coût du site WordPress",
+ "image_w": 2048,
+ "image_h": 1152
+}

@@ -1,0 +1,77 @@
+{
+ "keyword": "how to get wordpress website on google",
+ "title": "Comment obtenir le site WordPress sur Google en 7 étapes",
+ "excerpt": "Lancé un site WordPress mais ne peut pas le trouver sur Google? Suivez ces sept étapes pour obtenir indexé et commencer à grimper le classement.",
+ "meta": "Comment obtenir le site WordPress sur Google: 7 étapes du déblocage des moteurs de recherche à la soumission de votre plan de site, la vitesse de fixation, et les résultats de suivi.",
+ "intro": "Vous avez lancé votre site WordPress, tapé votre nom d'entreprise dans Google, et rien. Ne paniquez pas. Presque chaque nouveau site WordPress est invisible au début, et la plupart du temps le correctif est plus simple que vous le pensez. Voici le processus exact étape par étape pour obtenir votre site WordPress sur Google et commencer à grimper.",
+ "sections": [
+  {
+   "heading": "Étape 1: Assurez-vous de ne pas bloquer Google",
+   "body": [
+    "Cela semble trop simple, mais c'est la raison la plus courante pour laquelle les nouveaux sites WordPress ne s'affichent pas. Dans votre tableau de bord, allez dans Paramètres, puis Lecture, et recherchez la case à cocher qui dit 'Décourager les moteurs de recherche de l'indexation de ce site'.\n\nLes développeurs cochent souvent cette case en construisant le site et oublient de la décocher au lancement. J'ai vu des entreprises attendre des mois pour les classements avec cette case cochée."
+   ]
+  },
+  {
+   "heading": "Étape 2: Configurez Google Search Console",
+   "body": [
+    "Search Console est l'outil gratuit de Google qui vous indique comment votre site apparaît dans la recherche. Inscrivez-vous, ajoutez votre site et vérifiez la propriété. WordPress rend cela facile : la plupart des plugins SEO ont un champ où vous collez votre code de vérification.\n\nUne fois qu'il est configuré, cela devient votre contrôle de mission. Vous verrez quelles recherches montrent votre site, quelles pages obtiennent des clics, et quelles erreurs Google trouve."
+   ]
+  },
+  {
+   "heading": "Étape 3: Soumettre votre plan du site",
+   "body": [
+    "Un sitemap est une liste de toutes vos pages qui aide Google à les découvrir plus rapidement. Si vous avez un plugin SEO comme Rank Math ou Yoast installé, il en crée un automatiquement, généralement sur votredomaine.com/sitemap index.xml.\n\nDans Search Console, allez sur Plan du site dans le menu de gauche, collez cette URL, et appuyez sur soumettre. Ensuite, utilisez l'outil d'inspection URL pour demander l'indexation de votre page d'accueil et de vos pages les plus importantes."
+   ]
+  },
+  {
+   "heading": "Étape 4: Fixez vos titres et votre vitesse",
+   "body": [
+    "Chaque page a besoin d'un titre clair qui dit ce qu'est la page et pour qui elle est. 'Bienvenue sur notre site Web' ne dit rien à Google. 'Plumber d'urgence à Manchester, 24/7 Callouts' dit à Google tout.\n\nLa vitesse compte aussi. Compresser vos images, supprimer les plugins que vous n'utilisez pas, et choisir un thème rapide. Un site lent n'ennuie pas seulement les visiteurs, il rend Google ramper moins de vos pages."
+   ]
+  },
+  {
+   "heading": "Étape 5: Publier des pages qui correspondent aux recherches réelles",
+   "body": [
+    "Google classe les pages qui répondent à ce type de personnes. Pensez comme votre client. Une boulangerie n'a pas seulement besoin d'une page d'accueil, il a besoin de pages pour 'cakes de naissance Leeds', 'cakes de mariage Leeds', ' pain de sourdough près de moi'.\n\nUne page focalisée par service par zone bat une longue page essayant de tout couvrir. Écrire comme un humain, répondre aux questions évidentes, et inclure votre ville ou ville naturellement dans le texte."
+   ]
+  },
+  {
+   "heading": "Étape 6: Obtenez vos premiers liens et listes",
+   "body": [
+    "Les liens sont encore la façon dont Google décide qui faire confiance. Commencez par les gains faciles: votre profil Google Business, les annuaires locaux, les sites Web de vos fournisseurs, les nouvelles locales, et toutes les associations professionnelles dont vous appartenez.\n\nPuis créez quelque chose qui mérite d'être relié à: un guide vraiment utile, des données locales, ou un outil gratuit."
+   ]
+  },
+  {
+   "heading": "Étape 7: Soyez patient et continuez",
+   "body": [
+    "Voici la partie honnête. Même avec tout ce qui a été fait correctement, un nouveau site prend généralement de 3 à 6 mois pour se classer pour tout ce qui est compétitif. Google a besoin de temps pour vous faire confiance.\n\nCe qui sépare les sites qui se classent de ceux qui ne sont pas cohérents. Continuez à publier des pages utiles, continuez à résoudre des problèmes techniques, continuez à gagner des liens. La plupart de vos concurrents cesseront après un mois. Ne soyez pas la plupart des concurrents."
+   ]
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Combien de temps faut-il pour qu'un site WordPress apparaisse sur Google ?",
+   "a": "L'indexation peut se faire en quelques jours une fois que vous soumettez votre plan de site dans Search Console. Les classements sont plus lents : attendez 3 à 6 mois de travail cohérent avant qu'un nouveau site ne rivalise pour des mots clés précieux."
+  },
+  {
+   "q": "Pourquoi mon site WordPress n'apparaît-il pas sur Google ?",
+   "a": "Les causes les plus courantes sont la case à cocher « moteurs de recherche de découragement », pas de plan de site soumis, ou le site étant tout neuf."
+  },
+  {
+   "q": "Ai-je besoin d'un plugin SEO pour WordPress ?",
+   "a": "Vous n'en avez pas besoin, mais Rank Math ou Yoast facilite la vie : titres, méta descriptions, plan de site et schéma sans toucher au code. Installez-en un, configurez-le correctement et n'installez pas deux à la fois."
+  }
+ ],
+ "slug": "how-to-get-wordpress-website-on-google",
+ "date": "2026-09-24",
+ "image": "assets/blog/how-to-get-wordpress-website-on-google.jpg",
+ "read_time": 4,
+ "service": {
+  "path": "les services/vérifications périodiques/",
+  "label": "Vérifications d'observations",
+  "blurb": "Un mini-audit gratuit montre exactement ce qui retient votre site sur Google."
+ },
+ "faq_topic": "SEO WordPress",
+ "image_w": 2048,
+ "image_h": 1152
+}
