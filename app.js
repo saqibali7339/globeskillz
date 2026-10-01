@@ -433,9 +433,11 @@
   }
 
   const loadCoverage = () => {
+  const isFr = document.documentElement.lang === 'fr' || location.pathname.startsWith('/fr/');
+  const dp = isFr ? '/fr/data/' : '/data/';
   Promise.all([
-    fetch('/data/index.json').then(r => r.json()),
-    fetch('/data/card_descriptions.json').then(r => r.json()).catch(() => ({}))
+    fetch(dp + 'index.json').then(r => r.json()),
+    fetch(dp + 'card_descriptions.json').then(r => r.json()).catch(() => ({}))
   ]).then(([idx, descs]) => {
     covIndex = idx;
     cardDesc = descs || {};
