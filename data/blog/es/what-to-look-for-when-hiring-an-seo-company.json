@@ -1,0 +1,77 @@
+{
+ "keyword": "what to look for when hiring an seo company",
+ "title": "Qué buscar al contratar una empresa de SEO",
+ "excerpt": "Elegir una empresa de SEO parece una apuesta. Estas son las siete cosas que debe verificar antes de firmar cualquier cosa, de parte de alguien que hace este trabajo todos los días.",
+ "meta": "Qué buscar al contratar una empresa de SEO: 7 comprobaciones que debe realizar antes de firmar, las señales de alerta que significan alejarse y las preguntas que debe hacer en la primera llamada.",
+ "intro": "Todas las semanas hablo con el propietario de un negocio que ha sido quemado por una empresa de SEO. La misma historia cada vez: una gran promesa, un débito directo mensual, seis meses de informes vagos y nada que mostrar. Contratar ayuda de SEO no debería parecer una apuesta. Esto es lo que debe buscar antes de firmar algo, de alguien que hace este trabajo todos los días.",
+ "sections": [
+  {
+   "heading": "1. Auditan antes de cotizar",
+   "body": [
+    "A serious SEO company looks at your website before talking about price. They check your rankings, your technical health, your competitors, and then tell you what the job actually is.\n\nIf someone quotes you £1,000 a month without ever opening your site, they are selling a package, not a solution. Packages are built for the seller's convenience, not your results."
+   ]
+  },
+  {
+   "heading": "2. Pueden explicar qué harán cada mes",
+   "body": [
+    "Ask a simple question: what exactly will you do in month one, month two, and month three? You should hear concrete answers. Technical fixes. Content improvements. Pages built for the searches your customers make. Outreach for genuine links.\n\nIf the answer is vague, something like 'we will optimise your presence and build authority', keep your wallet closed. Real work can be described in plain English."
+   ]
+  },
+  {
+   "heading": "3. Muestran pruebas, no promesas",
+   "body": [
+    "Do not ask for promises. Ask for proof. Real ranking improvements, real traffic growth, real Search Console screenshots. A good provider has these and shares them proudly.\n\nBe slightly suspicious of case studies with no data, and very suspicious of anyone who guarantees specific rankings. Google's algorithm is not theirs to guarantee."
+   ]
+  },
+  {
+   "heading": "4. Informan sobre métricas monetarias, no sobre métricas de vanidad.",
+   "body": [
+    "Your monthly report should connect to your business: rankings for keywords that bring customers, organic traffic growth, and ideally enquiries or sales. If the report is full of jargon like 'visibility scores' and 'domain authority' with no mention of leads, the work probably is not producing any.\n\nAsk them directly: how will we know this is working? The answer should be specific and measurable."
+   ]
+  },
+  {
+   "heading": "5. Te dan la propiedad de todo",
+   "body": [
+    "Your Google Search Console, your Analytics, your website logins, your content. All of it stays yours. Some shady operators keep everything in their own accounts so you can never leave. That is a hostage situation, not a partnership.\n\nA trustworthy company sets everything up in your name from day one and hands you the keys."
+   ]
+  },
+  {
+   "heading": "6. Banderas rojas: cuándo alejarse",
+   "body": [
+    "Walk away from guaranteed rankings, secret proprietary methods they cannot explain, pressure to sign a long contract on the first call, and anyone who badmouths every other provider in the industry.\n\nAlso walk away from prices that seem too good to be true. They are. A £99-a-month SEO package is an automated report with your logo on it."
+   ]
+  },
+  {
+   "heading": "7. Preguntas para hacer en la primera llamada",
+   "body": [
+    "Take these to your next sales call and watch how they react. What will you do in the first 90 days? How do you build links? What happens if we part ways, do I keep everything? How do you measure success? Can I speak to a current client?\n\nGood providers welcome these questions. Bad ones get uncomfortable. That reaction tells you everything."
+   ]
+  }
+ ],
+ "faqs": [
+  {
+   "q": "¿Cuánto tiempo tarda el SEO en mostrar resultados?",
+   "a": "Para la mayoría de los sitios de pequeñas empresas, espere un movimiento significativo en 3 a 6 meses y resultados sólidos en 6 a 12. Cualquiera que prometa la página uno en 30 días está mintiendo o apuntando a palabras clave que nadie busca."
+  },
+  {
+   "q": "¿Debo contratar a un autónomo o una agencia?",
+   "a": "Un buen profesional independiente suele ofrecer más valor para una empresa local: menores gastos generales, comunicación directa y trabajo de alto nivel. Las agencias tienen sentido cuando se necesita un equipo que cubra contenido, aspectos técnicos y de divulgación a escala. Juzga a la persona y la prueba, no la etiqueta."
+  },
+  {
+   "q": "¿Qué debería contener un contrato de SEO?",
+   "a": "Una lista clara de los entregables mensuales, cómo se mide el éxito, quién es el propietario de las cuentas y el contenido, el período de notificación y qué sucede con todo si cancela. Si falta algo de eso, solicítelo por escrito antes de firmar."
+  }
+ ],
+ "slug": "what-to-look-for-when-hiring-an-seo-company",
+ "date": "2026-09-24",
+ "image": "assets/blog/what-to-look-for-when-hiring-an-seo-company.jpg",
+ "read_time": 3,
+ "service": {
+  "path": "servicios/seo-auditorías/",
+  "label": "Auditorías SEO",
+  "blurb": "Júzgame con la misma lista de verificación: comience con una miniauditoría gratuita y vea cómo trabajo."
+ },
+ "faq_topic": "Contratar una empresa de SEO",
+ "image_w": 2048,
+ "image_h": 1152
+}

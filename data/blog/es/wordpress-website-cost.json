@@ -1,0 +1,91 @@
+{
+ "slug": "wordpress-website-cost",
+ "keyword": "wordpress website cost",
+ "title": "¿Cuánto cuesta un sitio web de WordPress? (Desglose honesto)",
+ "date": "2026-09-25",
+ "image": "assets/blog/wordpress-website-cost.jpg",
+ "excerpt": "Los precios de los sitios web de WordPress varían desde una construcción de bricolaje de fin de semana hasta proyectos de agencia de cinco cifras. Esto es lo que realmente paga en cada nivel y cómo evitar pagar de más.",
+ "meta": "¿Cuánto cuesta un sitio web de WordPress? Un desglose práctico de los precios reales, los costos ocultos y lo que realmente debería presupuestar una pequeña empresa.",
+ "intro": "Ask three web developers what a WordPress website costs and you will get three very different answers. One says you can do it yourself for almost nothing, another quotes a few hundred, and a third hands you a five-figure proposal. They can all be right, which is exactly why the question is so confusing.\n\nI build WordPress websites for a living, so here is the honest version: what a WordPress site actually costs, what pushes the price up or down, the hidden costs that catch people off guard, and how much a small business should realistically budget.",
+ "sections": [
+  {
+   "heading": "Precios típicos de sitios web de WordPress de un vistazo",
+   "body": [
+    "La ruta más barata es hacerlo tú mismo. Un nombre de dominio cuesta aproximadamente entre diez y quince al año, el alojamiento compartido básico cuesta unas pocas libras al mes y el software WordPress en sí es gratuito. Con un tema gratuito y complementos gratuitos, su desembolso de efectivo durante el primer año puede mantenerse por debajo de los doscientos.",
+    "El intercambio es su momento y es un intercambio más grande de lo que la mayoría de la gente espera. Aprender alojamiento, temas, creadores de páginas y conceptos básicos de seguridad requiere noches y fines de semana reales, y un primer intento rara vez parece profesional.",
+    "Contratar a un profesional independiente para un sitio basado en plantillas generalmente genera entre unos pocos cientos y un par de miles, dependiendo de las páginas y las características. Una construcción independiente diseñada a medida, donde el diseño se hace para su negocio en lugar de adaptarse a un tema, generalmente oscila entre mil quinientos y cinco mil.",
+    "Las agencias comienzan con precios más altos, a menudo cinco mil dólares o más, y los grandes proyectos personalizados con comercio electrónico, sistemas de reservas o integraciones pueden alcanzar las cinco cifras. Para un sitio de folletos simple que es excesivo. Para un sitio que tiene que generar importantes ingresos, puede valer la pena."
+   ]
+  },
+  {
+   "heading": "¿Qué hace que una cotización valga unos cientos y otra diez mil?",
+   "body": [
+    "El factor que más influye en el precio son las características. Un sitio con folletos de cinco páginas es una cosa. Agregue reservas en línea, una tienda, un área de inicio de sesión para clientes o varios idiomas y el trabajo se multiplica rápidamente. Cada función debe crearse, probarse y mantenerse.",
+    "El diseño también importa. Adaptar un tema ya preparado es rápido. Diseñar algo único para su marca le lleva horas reales a un diseñador, y eso se refleja en la cotización.",
+    "El contenido es el asesino silencioso del presupuesto. Si entrega el texto y las fotografías terminados, la construcción avanza rápidamente. Si el desarrollador tiene que perseguirlo en busca de contenido durante seis semanas, o escribirlo él mismo, espere que el precio lo refleje.",
+    "Las integraciones también se suman. Conectar pasarelas de pago, un CRM, marketing por correo electrónico o software de reservas requiere configuración y prueba. Y un plazo apresurado casi siempre cuesta más, porque significa tardes y fines de semana para el desarrollador."
+   ]
+  },
+  {
+   "heading": "Los costos ocultos nadie los cita por adelantado",
+   "body": [
+    "La cotización de construcción es sólo una parte de la historia. Las renovaciones de hosting son la clásica sorpresa: muchos hosting anuncian un primer año económico y luego el precio se duplica o triplica en el momento de la renovación. Consulta el precio de renovación antes de comprar, no después.",
+    "Los temas y complementos premium suelen venir con licencias anuales. Vale la pena pagar por ellos, pero agrégalos a tu presupuesto anual para que no te tiendan una emboscada.",
+    "Luego está el mantenimiento. WordPress necesita actualizaciones periódicas de su núcleo, temas y complementos, además de copias de seguridad y monitoreo de seguridad. Si omite esto, su sitio se volverá lento y luego será pirateado. O pagas un plan de atención o dedicas tu propio tiempo a él todos los meses.",
+    "Los extras más pequeños también se suman: alojamiento de correo electrónico empresarial, fotografías de archivo, un certificado SSL si su proveedor de alojamiento cobra por uno y cualquier herramienta paga, como creadores de formularios avanzados o complementos de SEO."
+   ]
+  },
+  {
+   "heading": "Hazlo tú mismo versus contratar a un desarrollador",
+   "body": [
+    "Construirlo usted mismo tiene sentido cuando el dinero es escaso, el sitio es simple y realmente tiene tiempo para aprender. Para un sitio básico que sólo necesita existir, como un portafolio o una presencia de una sola página, el bricolaje es una opción razonable.",
+    "Contrate a alguien cuando el sitio necesite atraer clientes. Si una carga lenta, diseños móviles rotos o una apariencia amateur le costarán consultas, el desarrollador paga por sí mismo. Contrata también cuando tu propio tiempo vale más que el coste de construcción: diez fines de semana de tu vida no son gratis.",
+    "Hay un término medio que muchas empresas pasan por alto. Haga que un desarrollador cree el sitio correctamente y luego aprenda lo suficiente para actualizar usted mismo el texto, las fotos y las publicaciones del blog. Obtienes una base profesional sin pagarle a nadie cada vez que necesitas cambiar un número de teléfono."
+   ]
+  },
+  {
+   "heading": "Banderas rojas en cotizaciones baratas",
+   "body": [
+    "Una cita sin alcance escrito es una señal de advertencia. Si no dice exactamente qué incluye, cuántas páginas, qué características y qué sucede después del lanzamiento, discutirá sobre ello más adelante.",
+    "Ojo con cualquiera que registre tu dominio y hosting a su propio nombre. Si alguna vez se separa, puede perder el control de su propio sitio web. Todo debe estar a tu nombre, siempre.",
+    "Tenga cuidado con los precios bajísimos combinados con grandes promesas. Las compilaciones extremadamente baratas a menudo utilizan temas y complementos pirateados, que son un desastre de seguridad, o el desarrollador desaparece en el momento en que se liquida el pago final.",
+    "Sin cartera, sin reseñas, sin detalles comerciales reales: aléjese. Un desarrollador legítimo puede mostrarle los sitios activos que creó y los clientes que responderán por ellos."
+   ]
+  },
+  {
+   "heading": "¿Cuánto debería presupuestar realmente una pequeña empresa?",
+   "body": [
+    "Para una empresa local que necesita un sitio de folletos profesional, un rango realista con un profesional independiente es de unos cientos a alrededor de dos mil. Esto le brinda un sitio limpio, rápido y optimizado para dispositivos móviles, construido sobre un tema sólido, con una configuración básica de SEO.",
+    "Si el sitio web tiene que generar clientes potenciales o ventas, trátelo como una inversión, no como un gasto. Gaste más en diseño personalizado, optimización adecuada de la velocidad y bases de SEO desde el primer día. Un sitio que atrae clientes todos los meses es barato y cuesta el doble.",
+    "Cualquiera que sea su presupuesto para la compilación, también presupuesta el primer año de ejecución: alojamiento, dominio, renovaciones de complementos y un plan de mantenimiento o su propio tiempo. Un sitio web no es una compra única. Es un activo empresarial que necesita cuidados."
+   ]
+  }
+ ],
+ "faqs": [
+  {
+   "q": "¿Puedo crear un sitio web de WordPress gratis?",
+   "a": "Casi. El software WordPress en sí es gratuito y de código abierto. Lo que cuesta dinero es todo lo que lo rodea: un nombre de dominio, alojamiento y, opcionalmente, temas o complementos premium. Luego está el mayor costo oculto de todos: su tiempo. Un sitio empresarial serio necesita su propio dominio y un hosting decente, así que presupuesta al menos una pequeña cantidad de dinero y muchas horas."
+  },
+  {
+   "q": "¿Tengo que pagar por WordPress?",
+   "a": "No. WordPress es gratis, para siempre. Pagas por un nombre de dominio, alojamiento web y, si lo deseas, temas y complementos premium con licencias anuales. También paga por el tiempo y la habilidad de un desarrollador si contrata uno. Cualquiera que le pida que pague por WordPress le está vendiendo algo que puede obtener a cambio de nada."
+  },
+  {
+   "q": "¿Por qué los desarrolladores de WordPress cobran tanto?",
+   "a": "Porque un sitio web no son sólo páginas en una pantalla. Un buen desarrollador se encarga del diseño, la capacidad de respuesta móvil, la velocidad de carga, la seguridad, las copias de seguridad y la configuración básica de SEO, y luego prueba todo antes del lanzamiento. Un sitio económico que se carga lentamente, parece roto en los teléfonos y no atrae clientes es la opción costosa. Estás pagando por el resultado, no por las horas."
+  },
+  {
+   "q": "¿Cuánto tiempo lleva construir un sitio web de WordPress?",
+   "a": "Depende de la ruta. Hacerlo usted mismo con un creador de páginas puede llevarle desde unos días hasta algunas semanas de tiempo libre. Un profesional independiente que crea un sitio para pequeñas empresas suele necesitar de una a cuatro semanas. Un proyecto de agencia con diseño personalizado y muchas funciones puede durar de seis a doce semanas o más. Cualquiera que prometa un sitio completamente personalizado en dos días está tomando atajos en alguna parte."
+  }
+ ],
+ "read_time": 6,
+ "service": {
+  "path": "servicios/desarrollo-web/",
+  "label": "Desarrollo web",
+  "blurb": "¿Quiere una respuesta directa sobre cuánto debería costar su sitio de WordPress? Dime lo que necesitas."
+ },
+ "faq_topic": "Costo del sitio web de WordPress",
+ "image_w": 2048,
+ "image_h": 1152
+}

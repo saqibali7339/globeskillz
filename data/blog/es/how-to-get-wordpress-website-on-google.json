@@ -1,0 +1,77 @@
+{
+ "keyword": "how to get wordpress website on google",
+ "title": "Cómo conseguir un sitio web de WordPress en Google en 7 pasos",
+ "excerpt": "¿Lanzaste un sitio de WordPress pero no puedes encontrarlo en Google? Siga estos siete pasos para indexarse ​​y comenzar a ascender en la clasificación.",
+ "meta": "Cómo conseguir un sitio web de WordPress en Google: 7 pasos desde desbloquear motores de búsqueda hasta enviar su mapa del sitio, corregir la velocidad y rastrear los resultados.",
+ "intro": "Lanzaste tu sitio web de WordPress, escribiste el nombre de tu empresa en Google y nada. No entre en pánico. Casi todos los sitios nuevos de WordPress son invisibles al principio y la mayoría de las veces la solución es más sencilla de lo que cree. Aquí está el proceso exacto paso a paso para colocar su sitio de WordPress en Google y comenzar a escalar.",
+ "sections": [
+  {
+   "heading": "Paso 1: asegúrate de no estar bloqueando a Google",
+   "body": [
+    "This sounds too simple, but it is the most common reason new WordPress sites do not show up. In your dashboard, go to Settings, then Reading, and look for the checkbox that says 'Discourage search engines from indexing this site'. If it is ticked, untick it and save.\n\nDevelopers often tick this box while building the site and forget to untick it at launch. I have seen businesses wait months for rankings with this one box checked."
+   ]
+  },
+  {
+   "heading": "Paso 2: configurar Google Search Console",
+   "body": [
+    "Search Console is Google's free tool that tells you how your site appears in search. Sign up, add your website, and verify ownership. WordPress makes this easy: most SEO plugins have a field where you paste your verification code.\n\nOnce it is set up, this becomes your mission control. You will see which searches show your site, which pages get clicks, and what errors Google finds."
+   ]
+  },
+  {
+   "heading": "Paso 3: envíe su mapa del sitio",
+   "body": [
+    "A sitemap is a list of all your pages that helps Google discover them faster. If you have an SEO plugin like Rank Math or Yoast installed, it creates one automatically, usually at yourdomain.com/sitemap_index.xml.\n\nIn Search Console, go to Sitemaps in the left menu, paste that URL, and hit submit. Then use the URL Inspection tool to request indexing of your homepage and your most important pages. This alone can get a new site indexed within days."
+   ]
+  },
+  {
+   "heading": "Paso 4: arregla tus títulos y tu velocidad",
+   "body": [
+    "Every page needs a clear title that says what the page is about and who it is for. 'Welcome to our website' tells Google nothing. 'Emergency Plumber in Manchester, 24/7 Callouts' tells Google everything.\n\nSpeed matters too. Compress your images, remove plugins you do not use, and pick a fast theme. A slow site does not just annoy visitors, it makes Google crawl fewer of your pages. Test with PageSpeed Insights and fix what it flags."
+   ]
+  },
+  {
+   "heading": "Paso 5: Publica páginas que coincidan con búsquedas reales",
+   "body": [
+    "Google ranks pages that answer what people actually type. Think like your customer. A bakery does not just need a homepage, it needs pages for 'birthday cakes Leeds', 'wedding cakes Leeds', 'sourdough bread near me'.\n\nOne focused page per service per area beats one long page trying to cover everything. Write like a human, answer the obvious questions, and include your town or city naturally in the text."
+   ]
+  },
+  {
+   "heading": "Paso 6: obtenga sus primeros enlaces y listados",
+   "body": [
+    "Links are still how Google decides who to trust. Start with the easy wins: your Google Business Profile, local directories, your suppliers' websites, local news, and any trade associations you belong to.\n\nThen create something worth linking to: a genuinely useful guide, local data, or a free tool. One real link from a respected local site beats a hundred spammy directory submissions."
+   ]
+  },
+  {
+   "heading": "Paso 7: tenga paciencia y siga adelante",
+   "body": [
+    "Here is the honest part. Even with everything done right, a brand-new site usually takes 3 to 6 months to rank for anything competitive. Google needs time to trust you.\n\nWhat separates the sites that rank from the ones that do not is consistency. Keep publishing useful pages, keep fixing technical issues, keep earning links. Most of your competitors will quit after a month. Do not be most competitors."
+   ]
+  }
+ ],
+ "faqs": [
+  {
+   "q": "¿Cuánto tiempo tarda un sitio de WordPress en aparecer en Google?",
+   "a": "La indexación puede realizarse en cuestión de días una vez que envíe su mapa del sitio en Search Console. Las clasificaciones son más lentas: espere de 3 a 6 meses de trabajo constante antes de que un nuevo sitio compita por palabras clave valiosas."
+  },
+  {
+   "q": "¿Por qué mi sitio de WordPress no aparece en Google?",
+   "a": "Las causas más comunes son que la casilla \"desalentar los motores de búsqueda\" esté marcada, que no se envíe ningún mapa del sitio o que el sitio sea nuevo. Verifíquelos primero en ese orden antes de asumir algo más complicado."
+  },
+  {
+   "q": "¿Necesito un complemento SEO para WordPress?",
+   "a": "No es estrictamente necesario, pero Rank Math o Yoast hacen la vida mucho más fácil: títulos, meta descripciones, mapas de sitio y esquemas sin tocar el código. Instale uno, configúrelo correctamente y no instale dos a la vez."
+  }
+ ],
+ "slug": "how-to-get-wordpress-website-on-google",
+ "date": "2026-09-24",
+ "image": "assets/blog/how-to-get-wordpress-website-on-google.jpg",
+ "read_time": 4,
+ "service": {
+  "path": "servicios/seo-auditorías/",
+  "label": "Auditorías SEO",
+  "blurb": "¿Prefieres que lo revise por ti? Una miniauditoría gratuita muestra exactamente qué es lo que frena a su sitio en Google."
+ },
+ "faq_topic": "SEO en WordPress",
+ "image_w": 2048,
+ "image_h": 1152
+}

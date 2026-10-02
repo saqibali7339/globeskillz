@@ -1,0 +1,81 @@
+{
+ "date": "2026-09-28",
+ "excerpt": "¿Busca un desarrollador de WordPress cerca de usted? Aquí se explica cómo juzgar uno correctamente, qué preguntar antes de pagar y las señales de alerta que significan alejarse.",
+ "faqs": [
+  {
+   "a": "No necesariamente. El trabajo de WordPress se realiza en línea, por lo que un desarrollador remoto puede ser tan bueno como uno en tu ciudad. La ventaja del servicio local es el encuentro cara a cara y las llamadas en la misma zona horaria. La ventaja de lo remoto es una mayor reserva de talento, a menudo a mejores precios.",
+   "q": "¿Mi desarrollador de WordPress necesita ser local?"
+  },
+  {
+   "a": "Un sitio con un simple folleto o una actualización pueden tardar de una a dos semanas. Un tema personalizado o una creación compleja con reservas, pagos o integraciones puede tardar de tres a seis semanas. Cualquiera que prometa un sitio totalmente personalizado en dos días está tomando atajos que pagará más adelante.",
+   "q": "¿Cuánto tiempo suele tardar un proyecto de WordPress?"
+  },
+  {
+   "a": "Pregunte por los sitios recientes de WordPress que crearon y luego visítelos en su teléfono. Verifique la velocidad, el diseño y si los formularios de contacto funcionan. Luego, pídale a un cliente anterior una breve llamada de referencia. Diez minutos de verificación le ahorran meses de arrepentimiento.",
+   "q": "¿Cómo puedo comprobar si un desarrollador es realmente bueno?"
+  },
+  {
+   "a": "La mayoría de los desarrolladores independientes realizan un depósito antes de comenzar, normalmente alrededor de la mitad. Nunca pague el monto total por adelantado. Vincule el pago final a que el sitio entre en funcionamiento y funcione según lo acordado.",
+   "q": "¿Debo pagar un depósito antes de que comience el trabajo?"
+  }
+ ],
+ "image": "assets/blog/wordpress-developer-near-me.jpg",
+ "intro": "When something breaks on your website, or you finally want a site that actually brings in customers, the first thing most business owners do is search for a WordPress developer near them. It feels like the safe move: someone local, someone you can meet, someone who picks up the phone.\n\nLocal is nice, but it is not what makes a developer good. A bad developer is bad whether they sit two streets away or two countries away. What matters is how they work, what they have built before, and whether they understand that your website is a sales tool, not a decoration.\n\nThis guide walks you through how to find the right person, the questions that separate the pros from the cowboys, and the warning signs that should make you walk away before you hand over a penny.",
+ "keyword": "wordpress developer near me",
+ "meta": "¿Busca un desarrollador de WordPress cerca de mí? Aprenda cómo juzgar uno, qué preguntar antes de pagar y las señales de alerta que debe evitar.",
+ "read_time": 5,
+ "sections": [
+  {
+   "body": [
+    "Comience con los lugares obvios: Google, pero mire más allá de los anuncios y verifique los resultados orgánicos. Un desarrollador que no puede clasificar su propio sitio es una mala señal. Luego busque directorios como Clutch o Bark y pregunte en grupos de empresas locales en Facebook o LinkedIn donde los propietarios comparten experiencias honestas.",
+    "Cuando encuentre candidatos, haga una lista corta de tres a cinco. Ignore los que no tienen portafolio o un portafolio de capturas de pantalla de plantillas. Quiere ver sitios web reales y en vivo que crearon para empresas reales."
+   ],
+   "heading": "Dónde buscar y qué incluir en su lista corta"
+  },
+  {
+   "body": [
+    "Abra todos los sitios de su cartera en su teléfono. Si su trabajo parece roto, lento o anticuado en el móvil, eso lo dice todo: más de la mitad de sus visitantes vendrán desde teléfonos, y al desarrollador claramente no le importan.",
+    "Haga clic alrededor. ¿Funcionan los formularios? ¿Las páginas se cargan rápido? ¿Es fácil encontrar el número de teléfono y el botón de reserva? Un buen desarrollador crea sitios que facilitan que un visitante se convierta en cliente."
+   ],
+   "heading": "Juzga su trabajo como un cliente, no como un diseñador."
+  },
+  {
+   "body": [
+    "Pregunte quién hará realmente el trabajo. Algunas agencias le muestran un portafolio pulido y luego entregan su proyecto a un pasante. Pregunte cuántas revisiones se incluyen, quién es el propietario del sitio y el dominio cuando esté terminado y qué sucede si algo falla un mes después del lanzamiento.",
+    "Obtenga las respuestas por escrito, en un contrato simple o incluso en un resumen por correo electrónico. Las promesas verbales sobre soporte y plazos se evaporan en el momento en que surge un problema."
+   ],
+   "heading": "Haga estas preguntas antes de aceptar cualquier cosa"
+  },
+  {
+   "body": [
+    "Tenga cuidado con cualquiera que no pueda mostrarle un sitio activo que haya creado. Tenga cuidado con los precios que parecen demasiado buenos para ser verdad, porque arreglar un sitio construido por unos centavos le costará una fortuna. Y tenga cuidado con los desarrolladores que no le darán acceso de administrador o que registrarán su dominio con su propio nombre: así es como los propietarios de empresas terminan siendo rehenes de su propio sitio web.",
+    "Otra señal de alerta es un desarrollador que solo habla sobre cómo se verá el sitio y nunca pregunta sobre sus clientes, sus servicios o cómo hacer negocios. Están construyendo una imagen, no una herramienta."
+   ],
+   "heading": "Banderas rojas que significan alejarse"
+  },
+  {
+   "body": [
+    "Una simple actualización del sitio realizada por un profesional independiente a menudo cuesta menos de lo que temes, mientras que una creación totalmente personalizada por parte de una agencia cuesta más de lo que esperas. Lo que importa más que el número es lo que se incluye: contenido, imágenes, trabajo rápido, SEO básico y una entrega donde te muestran cómo actualizar las cosas tú mismo.",
+    "Obtenga cotizaciones detalladas de su lista corta para compararlas de forma similar. La cotización más barata rara vez es el proyecto más barato."
+   ],
+   "heading": "¿Qué pasa con el precio?"
+  },
+  {
+   "body": [
+    "Los buenos desarrolladores no desaparecen después del lanzamiento. WordPress necesita actualizaciones, copias de seguridad y alguna que otra solución, y vale la pena hacer un pequeño arreglo mensual para que la misma persona que creó el sitio lo cuide.",
+    "Pregunte con anticipación cuánto cuesta el mantenimiento y qué cubre. Un desarrollador que ofrece atención continua es un desarrollador que planea que el sitio funcione a largo plazo, que es exactamente el tipo de persona que desea que lo construya en primer lugar."
+   ],
+   "heading": "Piense en después del lanzamiento, no solo en el lanzamiento."
+  }
+ ],
+ "slug": "wordpress-developer-near-me",
+ "title": "Desarrollador de WordPress cerca de mí: cómo encontrar uno bueno",
+ "service": {
+  "path": "servicios/desarrollo-web/",
+  "label": "Desarrollo web",
+  "blurb": "¿Necesita el desarrollador, no sólo el consejo? Construyo sitios web de WordPress para pequeñas empresas."
+ },
+ "faq_topic": "desarrollador de WordPress",
+ "image_w": 2048,
+ "image_h": 1152
+}
