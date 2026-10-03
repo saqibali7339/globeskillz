@@ -8,43 +8,43 @@
   {
    "heading": "Paso 1: asegúrate de no estar bloqueando a Google",
    "body": [
-    "This sounds too simple, but it is the most common reason new WordPress sites do not show up. In your dashboard, go to Settings, then Reading, and look for the checkbox that says 'Discourage search engines from indexing this site'. If it is ticked, untick it and save.\n\nDevelopers often tick this box while building the site and forget to untick it at launch. I have seen businesses wait months for rankings with this one box checked."
+    "Suena demasiado sencillo, pero es la razón más común por la que los sitios nuevos de WordPress no aparecen. En su panel, vaya a Ajustes, luego Lectura, y busque la casilla que dice «Disuade a los motores de búsqueda de indexar este sitio». Si está marcada, desmárquela y guarde.\n\nLos desarrolladores suelen marcar esta casilla mientras construyen el sitio y se olvidan de desmarcarla al lanzarlo. He visto negocios esperar meses el posicionamiento con esa casilla marcada."
    ]
   },
   {
    "heading": "Paso 2: configurar Google Search Console",
    "body": [
-    "Search Console is Google's free tool that tells you how your site appears in search. Sign up, add your website, and verify ownership. WordPress makes this easy: most SEO plugins have a field where you paste your verification code.\n\nOnce it is set up, this becomes your mission control. You will see which searches show your site, which pages get clicks, and what errors Google finds."
+    "Search Console es la herramienta gratuita de Google que le dice cómo aparece su sitio en el buscador. Regístrese, añada su sitio web y verifique la propiedad. WordPress lo pone fácil: la mayoría de los plugins de SEO tienen un campo donde pegar su código de verificación.\n\nUna vez configurado, esto se convierte en su centro de mando. Verá con qué búsquedas aparece su sitio, qué páginas reciben clics y qué errores encuentra Google."
    ]
   },
   {
    "heading": "Paso 3: envíe su mapa del sitio",
    "body": [
-    "A sitemap is a list of all your pages that helps Google discover them faster. If you have an SEO plugin like Rank Math or Yoast installed, it creates one automatically, usually at yourdomain.com/sitemap_index.xml.\n\nIn Search Console, go to Sitemaps in the left menu, paste that URL, and hit submit. Then use the URL Inspection tool to request indexing of your homepage and your most important pages. This alone can get a new site indexed within days."
+    "Un mapa del sitio es una lista de todas sus páginas que ayuda a Google a descubrirlas más rápido. Si tiene instalado un complemento de SEO como Rank Math o Yoast, crea uno automáticamente, generalmente en yourdomain.com/sitemap_index.xml.\n\nEn Search Console, vaya a Sitemaps en el menú de la izquierda, pegue esa URL y presione enviar. Luego utilice la herramienta de inspección de URL para solicitar la indexación de su página de inicio y de sus páginas más importantes. Esto por sí solo puede hacer que un nuevo sitio sea indexado en cuestión de días."
    ]
   },
   {
    "heading": "Paso 4: arregla tus títulos y tu velocidad",
    "body": [
-    "Every page needs a clear title that says what the page is about and who it is for. 'Welcome to our website' tells Google nothing. 'Emergency Plumber in Manchester, 24/7 Callouts' tells Google everything.\n\nSpeed matters too. Compress your images, remove plugins you do not use, and pick a fast theme. A slow site does not just annoy visitors, it makes Google crawl fewer of your pages. Test with PageSpeed Insights and fix what it flags."
+    "Cada página necesita un título claro que diga de qué trata y para quién es. 'Bienvenido a nuestro sitio web' no le dice nada a Google. 'Plomero de emergencia en Manchester, llamadas 24 horas al día, 7 días a la semana' le cuenta todo a Google.\n\nLa velocidad también importa. Comprime tus imágenes, elimina complementos que no utilices y elige un tema rápido. Un sitio lento no sólo molesta a los visitantes, sino que hace que Google rastree menos páginas suyas. Pruebe con PageSpeed ​​Insights y corrija lo que marca."
    ]
   },
   {
    "heading": "Paso 5: Publica páginas que coincidan con búsquedas reales",
    "body": [
-    "Google ranks pages that answer what people actually type. Think like your customer. A bakery does not just need a homepage, it needs pages for 'birthday cakes Leeds', 'wedding cakes Leeds', 'sourdough bread near me'.\n\nOne focused page per service per area beats one long page trying to cover everything. Write like a human, answer the obvious questions, and include your town or city naturally in the text."
+    "Google posiciona las páginas que responden a lo que la gente realmente escribe. Piense como su cliente. Una panadería no solo necesita una página de inicio, necesita páginas para 'birthday cakes Leeds', 'wedding cakes Leeds', 'sourdough bread near me'.\n\nUna página enfocada por servicio y por zona supera a una página larga que intenta cubrirlo todo. Escriba como una persona, responda a las preguntas obvias e incluya su ciudad de forma natural en el texto."
    ]
   },
   {
    "heading": "Paso 6: obtenga sus primeros enlaces y listados",
    "body": [
-    "Links are still how Google decides who to trust. Start with the easy wins: your Google Business Profile, local directories, your suppliers' websites, local news, and any trade associations you belong to.\n\nThen create something worth linking to: a genuinely useful guide, local data, or a free tool. One real link from a respected local site beats a hundred spammy directory submissions."
+    "Los enlaces siguen siendo la forma en que Google decide en quién confiar. Empiece por las victorias fáciles: su perfil de empresa de Google, los directorios locales, los sitios web de sus proveedores, la prensa local y cualquier asociación profesional a la que pertenezca.\n\nDespués cree algo que merezca enlaces: una guía realmente útil, datos locales o una herramienta gratuita. Un enlace real de un sitio local respetado vale más que cien envíos a directorios de spam."
    ]
   },
   {
    "heading": "Paso 7: tenga paciencia y siga adelante",
    "body": [
-    "Here is the honest part. Even with everything done right, a brand-new site usually takes 3 to 6 months to rank for anything competitive. Google needs time to trust you.\n\nWhat separates the sites that rank from the ones that do not is consistency. Keep publishing useful pages, keep fixing technical issues, keep earning links. Most of your competitors will quit after a month. Do not be most competitors."
+    "Aquí viene la parte honesta. Incluso haciéndolo todo bien, un sitio nuevo suele tardar de 3 a 6 meses en posicionar para algo competitivo. Google necesita tiempo para confiar en usted.\n\nLo que separa a los sitios que posicionan de los que no es la constancia. Siga publicando páginas útiles, siga corrigiendo problemas técnicos, siga ganando enlaces. La mayoría de sus competidores lo dejará al mes. No sea como la mayoría."
    ]
   }
  ],
