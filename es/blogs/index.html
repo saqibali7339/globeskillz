@@ -251,7 +251,7 @@
 </footer><script>
 (async () => {
   const RP = '../'.repeat(2);
-  const fmtDate = iso => new Date(iso + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  const fmtDate = iso => new Date(iso + 'T12:00:00').toLocaleDateString('es-ES', { month: 'short', day: 'numeric', year: 'numeric' });
   const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;');
   // Contact links: point at the homepage contact form on both hosts
   const base = location.hostname.endsWith('github.io') ? '/globeskillz' : '';
@@ -263,10 +263,10 @@
       <a class="blog-card" href="${RP}es/blog/${p.slug}/">
         <div class="blog-card__img"><picture><source type="image/webp" srcset="${RP}${p.image.replace(/\.jpe?g$/, '')}-800.webp 800w, ${RP}${p.image.replace(/\.jpe?g$/, '')}-1200.webp 1200w" sizes="(max-width: 720px) 100vw, 400px"><img src="${RP}${p.image}" alt="${esc(p.title)}" loading="lazy" width="800" height="450"></picture></div>
         <div class="blog-card__body">
-          <div class="blog-card__date">${fmtDate(p.date)} · ${p.read_time} min read</div>
+          <div class="blog-card__date">${fmtDate(p.date)} · ${p.read_time} min de lectura</div>
           <h3>${esc(p.title)}</h3>
           <p>${esc(p.excerpt)}</p>
-          <span class="blog-card__link">Read article →</span>
+          <span class="blog-card__link">Leer artículo →</span>
         </div>
       </a>`).join('');}
   } catch (e) {
