@@ -95,7 +95,7 @@ def bake_page(template_name, out_dir, page_type, slug, depth, clean_path,
     html = read(template_name)
     # Baked pages must never redirect: strip any meta-refresh redirect tag
     # inherited from the template (2026-09-28: it bounced a live post to /blogs/).
-    html = re.sub(r'<meta http-equiv="refresh"[^>]*>\s*', '', html)
+    html = re.sub(r'<meta[^>]*http-equiv="refresh"[^>]*>\s*', '', html)
     bake = ("<script>var PAGE_TYPE='%s';var PAGE_SLUG='%s';var PAGE_DEPTH=%d;</script>"
             % (page_type, slug, depth))
     m = re.search(r'<body[^>]*>', html)
