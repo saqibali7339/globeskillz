@@ -30,7 +30,7 @@
 <link href="https://globeskillz.com/blog/shopify-seo-expert/" hreflang="en" rel="alternate"/><link href="https://globeskillz.com/fr/blog/shopify-seo-expert/" hreflang="fr" rel="alternate"/><link href="https://globeskillz.com/es/blog/shopify-seo-expert/" hreflang="es" rel="alternate"/><link href="https://globeskillz.com/blog/shopify-seo-expert/" hreflang="x-default" rel="alternate"/><meta content="es_ES" property="og:locale"/></head>
 <body data-theme="iridescent">
 <script>var PAGE_TYPE='post';var PAGE_SLUG='shopify-seo-expert';var PAGE_DEPTH=2;</script>
-<script>if(typeof PAGE_SLUG==='undefined')location.replace("https://globeskillz.com/blogs/")</script>
+<script>if(typeof PAGE_SLUG==='undefined')location.replace("https://globeskillz.com/es/blogs/")</script>
 <svg aria-hidden="true" height="0" style="position:absolute" width="0">
 <defs>
 <lineargradient id="pgrad" x1="0" x2="1" y1="0" y2="1">
@@ -226,7 +226,7 @@
   // Contact links: point at the homepage contact form on both hosts
   const base = location.hostname.endsWith('github.io') ? '/globeskillz' : '';
   document.querySelectorAll('[data-contact-link]').forEach(a => { a.href = base + '/#contact'; });
-  const fmtDate = iso => new Date(iso + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  const fmtDate = iso => new Date(iso + 'T12:00:00').toLocaleDateString('es-ES', { month: 'short', day: 'numeric', year: 'numeric' });
   const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;');
 
   let data;
@@ -235,13 +235,13 @@
     if (!res.ok) throw new Error('not found');
     data = await res.json();
   } catch (e) {
-    $('#artTitle').textContent = 'Article not found';
+    $('#artTitle').textContent = 'Artículo no encontrado';
     return;
   }
 
-  document.getElementById('pageTitle').textContent = data.title + ' \u00b7 Globe Skillz Blog';
+  document.getElementById('pageTitle').textContent = data.title + ' \u00b7 Blog Globe Skillz';
   document.getElementById('pageDesc').setAttribute('content', data.meta);
-  const canonUrl = GS_SITE + '/blog/' + slug + '/';
+  const canonUrl = GS_SITE + '/es/blog/' + slug + '/';
   document.getElementById('pageCanon').setAttribute('href', canonUrl);
   document.getElementById('ogTitle').setAttribute('content', data.title);
   document.getElementById('ogDesc').setAttribute('content', data.meta);
@@ -371,10 +371,10 @@
     return `<a class="blog-card" href="${RP}es/blog/${p.slug}/">
       <div class="blog-card__img"><img src="${RP}${p.image}" alt="${esc(p.title)}" loading="lazy"></div>
       <div class="blog-card__body">
-        <div class="blog-card__date">${fmtDate(p.date)} · ${p.read_time} min read</div>
+        <div class="blog-card__date">${fmtDate(p.date)} · ${p.read_time} min de lectura</div>
         <h3>${esc(p.title)}</h3>
         <p>${esc(p.excerpt)}</p>
-        <span class="blog-card__link">Read article →</span>
+        <span class="blog-card__link">Leer artículo →</span>
       </div>
     </a>`;
   }
