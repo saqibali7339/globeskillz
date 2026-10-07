@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-07",
+  "excerpt": "SEO looked very different ten years ago. Here is how search optimization changed, what actually still works, and what it means for your business.",
+  "faqs": [
+    {
+      "a": "It still works, but not the way it did in 2012. Search engines got much better at judging real value, so old tricks like buying links or stuffing keywords can now hurt you. The core idea never changed: make the best page for the searcher and make it easy for Google to understand.",
+      "q": "Is SEO dead, or does it still work?"
+    },
+    {
+      "a": "Most small businesses feel the difference within 3 to 6 months of consistent work, but it depends on how competitive your market is and how much needs fixing. Be wary of anyone who promises page one in a week.",
+      "q": "How long does modern SEO take to work?"
+    },
+    {
+      "a": "They are different jobs. A fast site with thin content will not rank, and great content on a broken site may never be found. You need both working together, and the content side usually decides who actually wins.",
+      "q": "Which matters more now, content or technical SEO?"
+    },
+    {
+      "a": "Yes, especially for local businesses. People search for services near them every day, and a complete Google Business Profile plus strong reviews can bring calls without a big website overhaul. It is the fastest win for most service businesses.",
+      "q": "Does local SEO still matter with AI search growing?"
+    }
+  ],
+  "image": "assets/blog/how-has-the-field-of-seo-evolved-over-time.jpg",
+  "intro": "If you paid for SEO five years ago, the playbook you got is probably out of date today. Search engines have changed how they judge websites several times over, and tactics that used to work can now drag a site down.\n\nHere is the honest version of that history, written for business owners instead of marketers. Knowing how SEO evolved helps you spot outdated advice, ask better questions of any agency you hire, and understand why your competitors are ranking where they rank.",
+  "keyword": "how has the field of seo evolved over time",
+  "meta": "How has the field of SEO evolved over time? A plain-English history for business owners, from keyword stuffing to AI search.",
+  "read_time": 5,
+  "sections": [
+    {
+      "body": [
+        "In the late 90s and early 2000s, ranking was almost mechanical. Search engines counted how many times a keyword appeared on a page and how many links pointed at it. If you put your main keyword in the title, the headings, and the text often enough, you had a real shot at the top spot.",
+        "That simplicity created an entire industry of shortcuts. Websites hid white text on white backgrounds to cram in keywords. Companies bought thousands of links from unrelated sites. For a while it worked, and it trained a generation of business owners to think of SEO as a trick you could buy."
+      ],
+      "heading": "The early days: keywords and link counting"
+    },
+    {
+      "body": [
+        "Around 2011, Google started pushing back hard. A series of updates, most famously Panda and Penguin, began punishing thin copied content and paid link schemes. Businesses that had relied on shortcuts watched their traffic fall off a cliff overnight.",
+        "This was the first big lesson the industry learned: anything that tries to game the system eventually breaks. The sites that survived were the ones with genuinely useful pages and links they had earned rather than bought."
+      ],
+      "heading": "2011 to 2014: Google fights back against spam"
+    },
+    {
+      "body": [
+        "Then came mobile. Google announced that most searches were happening on phones and began judging sites on their mobile experience first. A site that looked fine on a desktop but pinched and zoomed badly on a phone started losing rankings.",
+        "At the same time, Google introduced RankBrain and then BERT, its first serious attempts at understanding the meaning behind a search instead of just matching words. If someone searched for the best plumber near me open late, Google got better at understanding intent, not just the literal keywords."
+      ],
+      "heading": "2015 to 2019: mobile first and understanding intent"
+    },
+    {
+      "body": [
+        "Google started publishing clearer guidance about experience, expertise, authority, and trust, and later added a second E for experience. In plain terms: who wrote this, why should anyone believe them, and did they actually do the thing they are writing about?",
+        "For business owners this was good news. A real dentist writing about real dental procedures had an advantage over a content farm. Reviews, real photos, clear contact information, and an obvious human being behind the business all became quiet ranking factors."
+      ],
+      "heading": "2019 to 2022: experience and trust take center stage"
+    },
+    {
+      "body": [
+        "In 2022 and 2023, Google rolled out helpful content updates aimed at pages written for search engines instead of people. AI writing tools flooded the web with generic articles, and Google responded by rewarding first-hand experience and punishing content with no original value.",
+        "This is also when AI-generated answers started appearing directly in search results. Fewer people click through for simple questions, which means the clicks that remain go to pages that answer deeper questions. Your job is to be the page with the answer worth clicking for."
+      ],
+      "heading": "2022 to 2024: helpful content and AI answers"
+    },
+    {
+      "body": [
+        "So what does SEO look like now, in practical terms for a business owner?",
+        "First, the fundamentals never died. A fast site, clear page titles, real content about your services, and genuine reviews still carry most of the weight. The technical details matter less than they used to for small businesses, but getting them wrong can still hold you back.",
+        "Second, local search keeps getting more important. If you serve customers in person, your Google Business Profile often matters more than your website. Keep it complete, keep your hours accurate, and ask happy customers for reviews.",
+        "Third, shortcuts are more dangerous than ever. Buying links, copying content, or churning out AI filler can get a site filtered out of results. The recovery is slow and expensive, so it is cheaper to do it right the first time."
+      ],
+      "heading": "Where SEO stands today, and what to do about it"
+    }
+  ],
+  "slug": "how-has-the-field-of-seo-evolved-over-time",
+  "title": "How SEO Has Evolved Over Time (and What Still Works)"
+}
