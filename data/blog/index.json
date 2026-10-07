@@ -1,122 +1,130 @@
 [
- {
-  "slug": "why-our-seo-company-is-the-best-in-houston",
-  "title": "Why Our SEO Company Is the Best in Houston",
-  "excerpt": "Dozens of Houston SEO companies promise the moon. Here is how we earn the top spot: real work, plain-English reports, and rankings that turn into calls.",
-  "date": "2026-10-06",
-  "image": "assets/blog/why-our-seo-company-is-the-best-in-houston.jpg",
-  "read_time": 5
- },
- {
-  "slug": "how-to-use-customer-reviews-in-local-seo",
-  "title": "How to Use Customer Reviews in Local SEO",
-  "excerpt": "Customer reviews are one of the strongest local ranking signals. Here is how to collect more of them and put them to work on your site.",
-  "date": "2026-10-05",
-  "image": "assets/blog/how-to-use-customer-reviews-in-local-seo.jpg",
-  "read_time": 6
- },
- {
-  "slug": "what-to-expect-from-an-seo-agency",
-  "title": "What to Expect from an SEO Agency (and What Not To)",
-  "excerpt": "A plain-English look at what a good SEO agency actually does in the first 90 days, and the red flags that tell you to walk away.",
-  "date": "2026-10-04",
-  "image": "assets/blog/what-to-expect-from-an-seo-agency.jpg",
-  "read_time": 5
- },
- {
-  "slug": "how-is-ranking-different-when-comparing-ppc-vs-seo",
-  "title": "PPC vs SEO: How Rankings Really Differ",
-  "excerpt": "Paid ads and organic results play by different rules. Here is how rankings differ between PPC and SEO, and what that means for your marketing budget.",
-  "date": "2026-10-03",
-  "image": "assets/blog/how-is-ranking-different-when-comparing-ppc-vs-seo.jpg",
-  "read_time": 4
- },
- {
-  "slug": "what-is-seo-friendly-content",
-  "title": "What Is SEO Friendly Content? A Simple Guide for Owners",
-  "excerpt": "SEO friendly content is simply writing that both Google and your customers can understand easily. Here is what it looks like in plain English.",
-  "date": "2026-10-02",
-  "image": "assets/blog/what-is-seo-friendly-content.jpg",
-  "read_time": 3
- },
- {
-  "slug": "what-is-a-good-seo-visibility-score",
-  "title": "What Is a Good SEO Visibility Score?",
-  "excerpt": "Your SEO visibility score tells you how much of the search pie you actually own. Here is what the number really means, and what counts as good.",
-  "date": "2026-10-01",
-  "image": "assets/blog/what-is-a-good-seo-visibility-score.jpg",
-  "read_time": 5
- },
- {
-  "slug": "what-is-an-seo-manager",
-  "title": "What Is an SEO Manager? A Simple Guide for Business Owners",
-  "excerpt": "An SEO manager runs your search strategy: research, on-page fixes, content direction, and reporting. Here is what a good one does and how to hire one.",
-  "date": "2026-09-30",
-  "image": "assets/blog/what-is-an-seo-manager.jpg",
-  "read_time": 4
- },
- {
-  "slug": "how-many-keywords-use-in-seo",
-  "title": "How Many Keywords Should Your SEO Target?",
-  "excerpt": "You do not need dozens of keywords per page. Here is how many to target per page and across your whole site, and how to pick them.",
-  "date": "2026-09-29",
-  "image": "assets/blog/how-many-keywords-use-in-seo.jpg",
-  "read_time": 5
- },
- {
-  "slug": "wordpress-developer-near-me",
-  "title": "How to Find a Good WordPress Developer Near You",
-  "excerpt": "Searching for a WordPress developer near you? Here is how to judge one properly, what to ask before you pay, and the red flags that mean walk away.",
-  "date": "2026-09-28",
-  "image": "assets/blog/wordpress-developer-near-me.jpg",
-  "read_time": 5
- },
- {
-  "slug": "shopify-seo-expert",
-  "title": "What a Shopify SEO Expert Actually Does for Your Store",
-  "excerpt": "A Shopify SEO expert makes your store show up when buyers search for what you sell. Here is what the work really involves, what it should fix, and how to hire the right one.",
-  "date": "2026-09-27",
-  "image": "assets/blog/shopify-seo-expert.jpg",
-  "read_time": 6
- },
- {
-  "slug": "seo-expert-for-small-business",
-  "title": "What an SEO Expert for a Small Business Actually Does",
-  "excerpt": "An SEO expert for a small business is not a magician or a mystery. Here is what the job actually involves, what it should cost you in attention, and how to spot the good ones.",
-  "date": "2026-09-26",
-  "image": "assets/blog/seo-expert-for-small-business.jpg",
-  "read_time": 6
- },
- {
-  "slug": "wordpress-website-cost",
-  "title": "How Much Does a WordPress Website Cost? (Honest Breakdown)",
-  "excerpt": "WordPress website prices range from a weekend DIY build to five-figure agency projects. Here is what you actually pay for at each level and how to avoid overpaying.",
-  "date": "2026-09-25",
-  "image": "assets/blog/wordpress-website-cost.jpg",
-  "read_time": 6
- },
- {
-  "slug": "how-much-does-seo-cost-uk",
-  "title": "How Much Does SEO Cost in the UK? An Honest Breakdown",
-  "excerpt": "UK SEO prices range from £300 a month to £10,000+. Here is what you actually get at each price point, what drives the cost up, and how to avoid paying for nothing.",
-  "date": "2026-09-24",
-  "image": "assets/blog/how-much-does-seo-cost-uk.jpg",
-  "read_time": 4
- },
- {
-  "slug": "what-to-look-for-when-hiring-an-seo-company",
-  "title": "What to Look for When Hiring an SEO Company",
-  "excerpt": "Choosing an SEO company feels like a gamble. Here are the seven things to check before you sign anything, from someone who does this work every day.",
-  "date": "2026-09-24",
-  "image": "assets/blog/what-to-look-for-when-hiring-an-seo-company.jpg",
-  "read_time": 3
- },
- {
-  "slug": "how-to-get-wordpress-website-on-google",
-  "title": "How to Get Your WordPress Website on Google (Step by Step)",
-  "excerpt": "Launched a WordPress site but cannot find it on Google? Follow these seven steps to get indexed and start climbing the rankings.",
-  "date": "2026-09-24",
-  "image": "assets/blog/how-to-get-wordpress-website-on-google.jpg",
-  "read_time": 4
- }
+  {
+    "slug": "how-has-the-field-of-seo-evolved-over-time",
+    "title": "How SEO Has Evolved Over Time (and What Still Works)",
+    "excerpt": "SEO looked very different ten years ago. Here is how search optimization changed, what actually still works, and what it means for your business.",
+    "date": "2026-10-07",
+    "image": "assets/blog/how-has-the-field-of-seo-evolved-over-time.jpg",
+    "read_time": 5
+  },
+  {
+    "slug": "why-our-seo-company-is-the-best-in-houston",
+    "title": "Why Our SEO Company Is the Best in Houston",
+    "excerpt": "Dozens of Houston SEO companies promise the moon. Here is how we earn the top spot: real work, plain-English reports, and rankings that turn into calls.",
+    "date": "2026-10-06",
+    "image": "assets/blog/why-our-seo-company-is-the-best-in-houston.jpg",
+    "read_time": 5
+  },
+  {
+    "slug": "how-to-use-customer-reviews-in-local-seo",
+    "title": "How to Use Customer Reviews in Local SEO",
+    "excerpt": "Customer reviews are one of the strongest local ranking signals. Here is how to collect more of them and put them to work on your site.",
+    "date": "2026-10-05",
+    "image": "assets/blog/how-to-use-customer-reviews-in-local-seo.jpg",
+    "read_time": 6
+  },
+  {
+    "slug": "what-to-expect-from-an-seo-agency",
+    "title": "What to Expect from an SEO Agency (and What Not To)",
+    "excerpt": "A plain-English look at what a good SEO agency actually does in the first 90 days, and the red flags that tell you to walk away.",
+    "date": "2026-10-04",
+    "image": "assets/blog/what-to-expect-from-an-seo-agency.jpg",
+    "read_time": 5
+  },
+  {
+    "slug": "how-is-ranking-different-when-comparing-ppc-vs-seo",
+    "title": "PPC vs SEO: How Rankings Really Differ",
+    "excerpt": "Paid ads and organic results play by different rules. Here is how rankings differ between PPC and SEO, and what that means for your marketing budget.",
+    "date": "2026-10-03",
+    "image": "assets/blog/how-is-ranking-different-when-comparing-ppc-vs-seo.jpg",
+    "read_time": 4
+  },
+  {
+    "slug": "what-is-seo-friendly-content",
+    "title": "What Is SEO Friendly Content? A Simple Guide for Owners",
+    "excerpt": "SEO friendly content is simply writing that both Google and your customers can understand easily. Here is what it looks like in plain English.",
+    "date": "2026-10-02",
+    "image": "assets/blog/what-is-seo-friendly-content.jpg",
+    "read_time": 3
+  },
+  {
+    "slug": "what-is-a-good-seo-visibility-score",
+    "title": "What Is a Good SEO Visibility Score?",
+    "excerpt": "Your SEO visibility score tells you how much of the search pie you actually own. Here is what the number really means, and what counts as good.",
+    "date": "2026-10-01",
+    "image": "assets/blog/what-is-a-good-seo-visibility-score.jpg",
+    "read_time": 5
+  },
+  {
+    "slug": "what-is-an-seo-manager",
+    "title": "What Is an SEO Manager? A Simple Guide for Business Owners",
+    "excerpt": "An SEO manager runs your search strategy: research, on-page fixes, content direction, and reporting. Here is what a good one does and how to hire one.",
+    "date": "2026-09-30",
+    "image": "assets/blog/what-is-an-seo-manager.jpg",
+    "read_time": 4
+  },
+  {
+    "slug": "how-many-keywords-use-in-seo",
+    "title": "How Many Keywords Should Your SEO Target?",
+    "excerpt": "You do not need dozens of keywords per page. Here is how many to target per page and across your whole site, and how to pick them.",
+    "date": "2026-09-29",
+    "image": "assets/blog/how-many-keywords-use-in-seo.jpg",
+    "read_time": 5
+  },
+  {
+    "slug": "wordpress-developer-near-me",
+    "title": "How to Find a Good WordPress Developer Near You",
+    "excerpt": "Searching for a WordPress developer near you? Here is how to judge one properly, what to ask before you pay, and the red flags that mean walk away.",
+    "date": "2026-09-28",
+    "image": "assets/blog/wordpress-developer-near-me.jpg",
+    "read_time": 5
+  },
+  {
+    "slug": "shopify-seo-expert",
+    "title": "What a Shopify SEO Expert Actually Does for Your Store",
+    "excerpt": "A Shopify SEO expert makes your store show up when buyers search for what you sell. Here is what the work really involves, what it should fix, and how to hire the right one.",
+    "date": "2026-09-27",
+    "image": "assets/blog/shopify-seo-expert.jpg",
+    "read_time": 6
+  },
+  {
+    "slug": "seo-expert-for-small-business",
+    "title": "What an SEO Expert for a Small Business Actually Does",
+    "excerpt": "An SEO expert for a small business is not a magician or a mystery. Here is what the job actually involves, what it should cost you in attention, and how to spot the good ones.",
+    "date": "2026-09-26",
+    "image": "assets/blog/seo-expert-for-small-business.jpg",
+    "read_time": 6
+  },
+  {
+    "slug": "wordpress-website-cost",
+    "title": "How Much Does a WordPress Website Cost? (Honest Breakdown)",
+    "excerpt": "WordPress website prices range from a weekend DIY build to five-figure agency projects. Here is what you actually pay for at each level and how to avoid overpaying.",
+    "date": "2026-09-25",
+    "image": "assets/blog/wordpress-website-cost.jpg",
+    "read_time": 6
+  },
+  {
+    "slug": "how-much-does-seo-cost-uk",
+    "title": "How Much Does SEO Cost in the UK? An Honest Breakdown",
+    "excerpt": "UK SEO prices range from £300 a month to £10,000+. Here is what you actually get at each price point, what drives the cost up, and how to avoid paying for nothing.",
+    "date": "2026-09-24",
+    "image": "assets/blog/how-much-does-seo-cost-uk.jpg",
+    "read_time": 4
+  },
+  {
+    "slug": "what-to-look-for-when-hiring-an-seo-company",
+    "title": "What to Look for When Hiring an SEO Company",
+    "excerpt": "Choosing an SEO company feels like a gamble. Here are the seven things to check before you sign anything, from someone who does this work every day.",
+    "date": "2026-09-24",
+    "image": "assets/blog/what-to-look-for-when-hiring-an-seo-company.jpg",
+    "read_time": 3
+  },
+  {
+    "slug": "how-to-get-wordpress-website-on-google",
+    "title": "How to Get Your WordPress Website on Google (Step by Step)",
+    "excerpt": "Launched a WordPress site but cannot find it on Google? Follow these seven steps to get indexed and start climbing the rankings.",
+    "date": "2026-09-24",
+    "image": "assets/blog/how-to-get-wordpress-website-on-google.jpg",
+    "read_time": 4
+  }
 ]
