@@ -90,6 +90,35 @@ def bake_head(html, clean_path, title, desc):
     return html
 
 
+def bake_hreflang(html, clean_path):
+    """Replace template hreflang with page-level alternates.
+
+    Added 2026-10-10: baked pages inherited the template's hreflang (pointing
+    at /blog.html etc.) instead of post-level alternates. A language alternate
+    is declared ONLY when that language's page file exists in the repo —
+    never declare an alternate for a missing translation (404 alternates).
+    """
+    html = re.sub(r'<link\s+[^>]*hreflang="[^"]*"[^>]*>\s*', '', html)
+    en_url = SITE_BASE + clean_path
+    alts = [('en', en_url)]
+    for lang in ('fr', 'es'):
+        if clean_path == '/':
+            lang_path = '/%s/' % lang
+            fpath = os.path.join(ROOT, lang, 'index.html')
+        elif clean_path.endswith('/'):
+            lang_path = '/%s%s' % (lang, clean_path)
+            fpath = os.path.join(ROOT, lang + clean_path, 'index.html')
+        else:
+            lang_path = '/%s%s' % (lang, clean_path)
+            fpath = os.path.join(ROOT, lang + clean_path)
+        if os.path.exists(fpath):
+            alts.append((lang, SITE_BASE + lang_path))
+    alts.append(('x-default', en_url))
+    tags = ''.join('<link href="%s" hreflang="%s" rel="alternate"/>' % (href, hl)
+                   for hl, href in alts)
+    return html.replace('</head>', tags + '</head>', 1)
+
+
 def bake_page(template_name, out_dir, page_type, slug, depth, clean_path,
               title, desc):
     html = read(template_name)
@@ -103,6 +132,7 @@ def bake_page(template_name, out_dir, page_type, slug, depth, clean_path,
     html = html[:m.end()] + '\n' + bake + html[m.end():]
     html = rewrite_relative_urls(html, depth)
     html = bake_head(html, clean_path, title, desc)
+    html = bake_hreflang(html, clean_path)
     out = os.path.join(ROOT, out_dir, 'index.html')
     os.makedirs(os.path.dirname(out), exist_ok=True)
     with open(out, 'w', encoding='utf-8') as f:
