@@ -61,6 +61,7 @@
   }
   .proj-shot image-slot { display: block; width: 100%; height: 100%; }
   .proj-shot::after { content: attr(data-empty-label); position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--font-mono); font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--text-mute); pointer-events: none; }
+  .proj-shot.is-loading::after { display: none; }
   .proj-shot.has-img::after { display: none; }
 
   .proj-body { max-width: 780px; margin: 0 auto; padding: 40px 0 80px; display: grid; gap: 40px; }
@@ -437,6 +438,7 @@ const PROJECTS = {
   // Screenshot: if assets/projects/screenshots/<file> exists, use it
   const shot = document.getElementById('projShot');
   const shotFile = RP + `assets/projects/screenshots/${p.shot}`;
+  shot.classList.add('is-loading');
   fetch(shotFile, { method: 'HEAD' }).then(r => {
     if (!r.ok) throw new Error('missing');
     const webp = shotFile.replace(/\.jpe?g$/, '.webp');
@@ -444,7 +446,9 @@ const PROJECTS = {
     const d = SHOT_DIMS[p.shot] || [800, 600];
     shot.innerHTML = `<picture><source type="image/webp" srcset="${small} 480w, ${webp} 800w" sizes="(max-width: 1180px) 100vw, 1100px"><img src="${shotFile}" width="${d[0]}" height="${d[1]}" alt="${p.name} website screenshot" loading="lazy"></picture>`;
     shot.classList.add('has-img');
+    shot.classList.remove('is-loading');
   }).catch(() => {
+    shot.classList.remove('is-loading');
     // keep image-slot fallback
   });
 
