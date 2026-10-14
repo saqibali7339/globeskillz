@@ -1,0 +1,87 @@
+{
+ "date": "2026-10-14",
+ "excerpt": "Adding a product to Shopify takes a few minutes once you know where everything goes. Here is the full walkthrough, from title to publish.",
+ "faqs": [
+  {
+   "a": "Yes. Save the product as a draft while you work on it, and switch the status to Active only when the photos, price, and description are ready. Drafts are not visible in your store.",
+   "q": "Can I add a product without publishing it right away?"
+  },
+  {
+   "a": "Shopify lets you add up to 250 images per product on most plans, but one strong main image and two or three supporting shots are plenty for most products. More images help only if each one shows something new.",
+   "q": "How many photos should I add to each product?"
+  },
+  {
+   "a": "Yes, variants are built for that. Add options like size or color and Shopify creates a variant for each combination, each with its own price, SKU, and stock level if you need them.",
+   "q": "Can one product listing cover several sizes or colors?"
+  },
+  {
+   "a": "Mostly it is a content problem. Check that the product title matches what shoppers search for, that the description answers their questions, and that the search engine listing preview has a clear title and description.",
+   "q": "Why is my product not showing up on Google?"
+  }
+ ],
+ "image": "assets/blog/how-to-add-a-product-on-shopify.jpg",
+ "intro": "Adding a product on Shopify is one of the first things every store owner learns, and it is simpler than it looks. The whole process lives on one page, and once you have done it once, the next product takes only a few minutes.\n\nThe trick is not just getting the product listed. Each field on the add product page affects how shoppers see your product, whether they trust it enough to buy, and whether search engines can find it. A few extra minutes on the title, photos, and description pay off on every single order.\n\nThis guide walks through the full process in order, so you can add your first product with confidence and set up a repeatable routine for the rest of your catalog.",
+ "keyword": "how to add a product on shopify",
+ "read_time": 6,
+ "sections": [
+  {
+   "body": [
+    "From your Shopify admin, click Products in the left sidebar, then click the Add product button at the top of the page. That opens a blank product form with every field you need, all on one screen.",
+    "Start with the Title field. Use the name your customers would actually search for, not an internal code or a clever nickname. If you sell handmade candles, a title like Lavender Soy Candle, 8 oz tells a shopper far more than Product 12 or Lavender Dream.",
+    "Next comes the Description. Write it for a person who cannot pick the product up and look at it. Cover what it is, what it is made of, how big it is, and how it is used. Short paragraphs and a few bullet points beat one long wall of text, because most shoppers scan before they read."
+   ],
+   "heading": "Open the add product page and start with the basics"
+  },
+  {
+   "body": [
+    "Scroll to the Media section and upload your product photos. Your first image matters most, because it is the one shoppers see in your store listings, in search results, and in shared links. Use a clean, well lit photo on a plain background, and make sure the product fills most of the frame.",
+    "Add two or three more images if they show something useful: a different angle, the product in use, or a close up of an important detail. Every image should earn its place. Blurry or duplicate photos make a store look careless, even when the product itself is great.",
+    "If you have a short product video, you can add it in the same Media section. A 10 to 30 second clip showing the product in action can answer questions that photos cannot, and it often keeps shoppers on the page longer."
+   ],
+   "heading": "Add clear product photos and video"
+  },
+  {
+   "body": [
+    "In the Pricing section, enter your regular price. If the product is on sale, add the Compare at price as well, and Shopify will show the discount to shoppers automatically. Keep your pricing honest: a fake compare at price erodes trust fast once customers notice.",
+    "Below pricing, you will find Cost per item, which only you can see. Entering your real cost lets Shopify calculate your profit margin on every order, which is useful when you decide whether a product is worth advertising.",
+    "If you charge tax on the product, leave the Charge tax on this product box checked. Shopify handles the tax math for you based on your store settings and the customer location."
+   ],
+   "heading": "Set your price, compare at price, and cost"
+  },
+  {
+   "body": [
+    "The Inventory section is where you tell Shopify how much stock you have. If you want Shopify to stop selling the product when it runs out, check Track quantity and enter the number you have on hand. If you sell made to order items or digital products, you can leave tracking off.",
+    "Give each product a SKU, which is your own internal code for finding and organizing stock. It can be as simple as CANDLE-LAV-8OZ. A consistent system saves real time once your catalog grows past a dozen products.",
+    "If the product has a barcode from a supplier, add it here too. It helps with point of sale scanning and with keeping your records straight if you ever sell through other channels."
+   ],
+   "heading": "Track inventory, SKUs, and barcodes"
+  },
+  {
+   "body": [
+    "In the Shipping section, check This is a physical product if the item needs to be shipped, and enter its weight. Shopify uses the weight to calculate accurate shipping rates at checkout, so a wrong weight either overcharges your customers or eats into your margin.",
+    "If the product is digital, like a download or a service, uncheck the physical product box and Shopify will skip the shipping step for it at checkout.",
+    "Below that, the Variants section covers options like size, color, or material. Add each option, and Shopify creates a variant for every combination. You can set a separate price, SKU, and stock level for each variant, which keeps everything tidy in one listing instead of ten separate ones."
+   ],
+   "heading": "Set shipping details and add variants if needed"
+  },
+  {
+   "body": [
+    "Before you publish, scroll to the Search engine listing section and click Edit. This controls how your product appears in Google: the page title, the web address, and the short description under it. Write a title that includes the product name in plain words, and a description that tells a searcher why to click.",
+    "Next, set the product Status. Active means it is live in your store right away. Draft keeps it hidden while you finish it. You can also schedule an Active date if you want the product to go live later, for example on a launch day.",
+    "Finally, check Product organization on the right side. Add the product to the right collections, set the product type and vendor, and add tags. Collections control which category pages the product shows up on, and tags help you filter and find products inside your own admin. Click Save, preview the product in your store, and fix anything that looks off before you move on."
+   ],
+   "heading": "Finish the search listing, collections, and status"
+  },
+  {
+   "body": [
+    "The most common mistake is publishing with a placeholder photo or a one line description and planning to fix it later. Shoppers judge a store by its weakest product page, and later rarely comes. Finish one product properly before starting the next.",
+    "A second mistake is writing titles for yourself instead of your customers. Internal codes, abbreviations, and brand jargon might make sense in your office, but shoppers search with plain words. Match their language and your products get found.",
+    "Finally, check your work on a phone before you call it done. Most Shopify traffic comes from mobile, so a description that looks fine on a desktop can feel endless on a small screen. If the page reads well on your phone, it is ready."
+   ],
+   "heading": "Common mistakes to avoid"
+  }
+ ],
+ "slug": "how-to-add-a-product-on-shopify",
+ "title": "How to Add a Product on Shopify (Step by Step)",
+ "meta": "Learn how to add a product on Shopify step by step: photos, pricing, inventory, variants, and the search listing that gets it found."
+}
