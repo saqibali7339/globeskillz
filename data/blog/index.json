@@ -1,5 +1,13 @@
 [
  {
+  "slug": "how-to-add-canonical-tag-in-wordpress",
+  "title": "How to Add a Canonical Tag in WordPress (The Easy Way)",
+  "excerpt": "A canonical tag tells Google which version of a page is the main one. Here is how to add it to a WordPress site the easy way.",
+  "date": "2026-10-17",
+  "image": "assets/blog/how-to-add-canonical-tag-in-wordpress.jpg",
+  "read_time": 6
+ },
+ {
   "slug": "what-is-bounce-rate-on-shopify",
   "title": "What Is Bounce Rate on Shopify (And Why It Hurts Your Sales)",
   "excerpt": "Bounce rate on Shopify tells you how many visitors leave your store without doing anything. Here is what it means, what a good rate looks like, and how to lower it.",
@@ -178,7 +186,7 @@
  {
   "slug": "how-much-does-seo-cost-uk",
   "title": "How Much Does SEO Cost in the UK? An Honest Breakdown",
-  "excerpt": "UK SEO prices range from \u00a3300 a month to \u00a310,000+. Here is what you actually get at each price point, what drives the cost up, and how to avoid paying for nothing.",
+  "excerpt": "UK SEO prices range from £300 a month to £10,000+. Here is what you actually get at each price point, what drives the cost up, and how to avoid paying for nothing.",
   "date": "2026-09-24",
   "image": "assets/blog/how-much-does-seo-cost-uk.jpg",
   "read_time": 4
