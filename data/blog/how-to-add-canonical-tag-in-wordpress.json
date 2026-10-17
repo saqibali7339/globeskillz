@@ -1,0 +1,75 @@
+{
+ "date": "2026-10-17",
+ "excerpt": "A canonical tag tells Google which version of a page is the main one. Here is how to add it to a WordPress site the easy way.",
+ "faqs": [
+  {
+   "a": "No. Each URL can only point to one canonical. Listing two or more confuses search engines, and they will usually ignore both and pick the version themselves. Always declare a single canonical URL per page.",
+   "q": "Can a page have more than one canonical tag?"
+  },
+  {
+   "a": "It usually means the site has the same page served under two or more URLs, for example the www and non-www versions, or a product page reached through several category paths. The fix is to set one canonical to the main version instead of removing the duplicate URL.",
+   "q": "Google says my site has duplicate content. Will canonical tags fix it?"
+  },
+  {
+   "a": "Not on its own. Both tags point at one preferred URL, and they solve similar problems. But a canonical tag fixes duplicates while a redirect moves visitors too. Use a redirect when a page should not be visited at all, and a canonical when both versions are legitimately needed.",
+   "q": "Is a canonical tag the same as a 301 redirect?"
+  }
+ ],
+ "image": "assets/blog/how-to-add-canonical-tag-in-wordpress.jpg",
+ "intro": "A canonical tag is a small line of code in a page's head section that tells search engines which version of a page counts as the original. Think of it as a name tag for your page: when two pages look similar, the canonical tag says, this is the main one.\n\nWordPress sites end up with duplicate pages more often than most owners realize. The home page can load with and without www, shop pages show under several category URLs, and tag or category archives repeat post content. Without canonical tags, Google splits the ranking strength between the copies instead of giving it all to one page.\n\nThe good news is that adding canonical tags to WordPress takes minutes. Most sites already have them and just need a quick check, and sites that don't can add them with a plugin or a small snippet. This post walks through both paths.",
+ "keyword": "how to add canonical tag in wordpress",
+ "meta": "Learn how to add a canonical tag in WordPress the easy way, plus how to check they are set up correctly on your site.",
+ "read_time": 6,
+ "sections": [
+  {
+   "body": [
+    "A canonical tag looks like this in the page source: <link rel=\"canonical\" href=\"https://yoursite.com/page/\" />. You never see it on the page itself, because it lives in the <head> section of the HTML that only browsers and search engines read.",
+    "Every page gets exactly one canonical, and it should point to that page's main URL. On most pages the canonical simply points to itself. It earns its keep on pages that exist under more than one address, like paginated archives or filtered shop listings.",
+    "Its job is to prevent duplicate content problems. When Google finds two pages with nearly identical content, it often picks one to rank and ignores the other, and sometimes it splits the ranking power between them. A canonical tag removes the guesswork."
+   ],
+   "heading": "What a canonical tag actually does"
+  },
+  {
+   "body": [
+    "The most common cause is simple: your site answers under several addresses. The www version and the plain version, the HTTP and HTTPS versions, a URL with a trailing slash and one without, and URLs with tracking parameters from social shares or ads all count as separate pages to a search engine.",
+    "WordPress makes this easy to happen. Category and tag archives show the same post text, WooCommerce product pages appear under every category they are assigned to, and pagination creates page two, page three, and so on. None of this is a bug, but it needs canonical tags so Google knows the real address.",
+    "A quick check: view the source of a few key pages (right click, View Page Source in your browser) and search for the word canonical. If the line is there on the home page, a post, and a product page, you are likely covered."
+   ],
+   "heading": "Why WordPress sites get duplicates in the first place"
+  },
+  {
+   "body": [
+    "If you run Yoast SEO or Rank Math, canonical tags are already handled. Both plugins add a correct canonical tag to every page automatically, pointing each page to its main URL. This is the easiest path, and it is what most WordPress sites should use.",
+    "You can also review and change a canonical on any individual page. In Yoast, open the page editor, scroll to the Yoast panel, click the Advanced tab, and you will see a Canonical URL field. Leave it blank on normal pages; fill it in only when a specific page should point elsewhere.",
+    "Rank Math does the same in its page-level settings panel. One tip for either plugin: after changing your site address or switching www preferences, recheck a few pages, because the canonical follows your settings and a site move can change what it outputs."
+   ],
+   "heading": "The easy path: let your SEO plugin handle it"
+  },
+  {
+   "body": [
+    "If you do not use an SEO plugin, or you prefer not to depend on one, a few lines in your theme's functions.php file will add canonical tags. It is cleaner to use a child theme or a code-snippets plugin so a theme update does not wipe it out.",
+    "The snippet hooks into the head section and outputs the canonical link for the current page. The code is short and standard, and any WordPress developer can drop it in within minutes. If you are not comfortable editing theme files, this is a five minute job to hand to your developer rather than a reason to learn PHP.",
+    "The manual route gives you control, but the plugin route gives you page-by-page editing without code. Pick the one you will actually maintain, because a canonical setup nobody checks is barely better than none."
+   ],
+   "heading": "The manual path: a small code snippet"
+  },
+  {
+   "body": [
+    "Checking is more important than adding, because most problems are misconfiguration rather than absence. Open several page types, the home page, a blog post, a category page, a shop or product page, and search the source for rel=\"canonical\". Confirm each page's canonical points to one clean URL, not to a page with odd parameters.",
+    "Watch for these mistakes. A canonical that points to the home page from every page on the site is a classic error, usually from a bad plugin setting. Canonicals on 404 pages or on paginated pages that point to page one are also wrong: each page should stand on its own.",
+    "Google Search Console can help too. The URL Inspection tool shows which URL Google picked as canonical versus which one you declared. If the two disagree often, look for conflicting signals like mismatched redirects or internal links pointing at the duplicate version."
+   ],
+   "heading": "How to check yours are correct"
+  },
+  {
+   "body": [
+    "Canonicals work best alongside the other duplicate-content basics. Set your preferred site address once, either www or non-www, and redirect the other version with a proper 301 redirect. Force HTTPS everywhere so the HTTP versions cannot be reached. These redirects fix what visitors reach; canonicals fix what search engines index.",
+    "Keep internal linking consistent too. If your menu links to one version of a page while your canonical declares another, you are sending mixed signals. Pick the main URL once and link to that version everywhere on the site.",
+    "Finally, remember that a canonical tag is a suggestion, not a command. Google follows it most of the time, but it can override you if the pages differ too much or your signals conflict. Canonicals reduce duplicates; they do not fix thin or competing content. Use them as part of a tidy site, not as a bandage over one."
+   ],
+   "heading": "Keeping duplicates away for good"
+  }
+ ],
+ "slug": "how-to-add-canonical-tag-in-wordpress",
+ "title": "How to Add a Canonical Tag in WordPress (The Easy Way)"
+}
