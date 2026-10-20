@@ -1,5 +1,13 @@
 [
  {
+  "slug": "how-to-remove-title-on-wordpress-page",
+  "title": "How to Remove the Title on a WordPress Page",
+  "excerpt": "That default page title can ruin an otherwise clean design. Here are five safe ways to remove it without breaking your site.",
+  "date": "2026-10-20",
+  "image": "assets/blog/how-to-remove-title-on-wordpress-page.jpg",
+  "read_time": 5
+ },
+ {
   "slug": "how-to-add-meta-keywords-in-wordpress-without-plugin",
   "title": "How to Add Meta Keywords in WordPress Without a Plugin",
   "excerpt": "You do not need a plugin to add meta keywords in WordPress. Here are the safe ways to do it with a little code or the block editor.",
@@ -202,7 +210,7 @@
  {
   "slug": "how-much-does-seo-cost-uk",
   "title": "How Much Does SEO Cost in the UK? An Honest Breakdown",
-  "excerpt": "UK SEO prices range from £300 a month to £10,000+. Here is what you actually get at each price point, what drives the cost up, and how to avoid paying for nothing.",
+  "excerpt": "UK SEO prices range from \u00a3300 a month to \u00a310,000+. Here is what you actually get at each price point, what drives the cost up, and how to avoid paying for nothing.",
   "date": "2026-09-24",
   "image": "assets/blog/how-much-does-seo-cost-uk.jpg",
   "read_time": 4
