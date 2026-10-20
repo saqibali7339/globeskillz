@@ -1,0 +1,76 @@
+{
+ "date": "2026-10-20",
+ "excerpt": "That default page title can ruin an otherwise clean design. Here are five safe ways to remove it without breaking your site.",
+ "faqs": [
+  {
+   "a": "Hiding it with CSS leaves the heading in the code, so search engines still read it. That is generally fine. Actually deleting the H1 from key pages can weaken your on-page signals, so keep a clear H1 somewhere in the content.",
+   "q": "Does hiding the page title hurt SEO?"
+  },
+  {
+   "a": "Yes. The theme, Elementor, Divi, and plugin methods all work per page, so the rest of your site keeps its titles. Only a global CSS rule applied site-wide would affect every page, so keep CSS scoped to one page when possible.",
+   "q": "Can I remove the title from just one page?"
+  },
+  {
+   "a": "Most of the time it is cache. Clear your caching plugin, hard-refresh, and purge your CDN. If it still returns, you may be editing the page while a template controls the title, in which case the hide setting needs to go in the template.",
+   "q": "Why does the title keep coming back after I hide it?"
+  }
+ ],
+ "image": "assets/blog/how-to-remove-title-on-wordpress-page.jpg",
+ "intro": "Every WordPress page shows a title at the top by default. That is fine for blog posts, but on pages like your homepage, landing pages, or contact page, the big title can wreck the design you worked so hard on.\n\nThe good news is that removing it takes less than a minute. The bad news is that the exact steps depend on which theme and page builder you use. Below are five methods, starting with the easiest. Pick the one that matches your setup.",
+ "keyword": "how to remove title on wordpress page",
+ "meta": "Need to remove the title on a WordPress page? Five safe methods using the block editor, your theme settings, CSS, or a plugin, explained simply.",
+ "read_time": 5,
+ "sections": [
+  {
+   "body": [
+    "If you build pages with the default WordPress block editor, check the page settings panel first. Open the page, click the settings gear icon, and look under the Page tab for a toggle like \"Hide title\" or \"Disable title\".",
+    "Not every theme supports this option. Some show it, some do not. If you do not see it, your theme simply does not offer it, and one of the methods below will do the job."
+   ],
+   "heading": "Method 1: Hide the title in the block editor"
+  },
+  {
+   "body": [
+    "Many popular themes add their own controls to every page. Look in the right-hand panel or in a meta box below the editor for a section from your theme with options like \"Hide page title\", \"Hide header\", or \"Page layout\".",
+    "With most themes, setting the layout to something like \"Full width\" or \"No title\" on a per-page basis removes the title only from that page. This is the cleanest approach because it affects nothing else on your site."
+   ],
+   "heading": "Method 2: Use your theme's page settings"
+  },
+  {
+   "body": [
+    "If you use Elementor, open the page, click the gear icon at the bottom left of the editor panel, and flip the \"Hide Title\" switch to yes. Publish the page and the title is gone. In Divi, open the page settings and set \"Page Title\" to hide.",
+    "These builders make the process painless, and because the setting is saved per page, your blog posts and other pages keep their titles untouched."
+   ],
+   "heading": "Method 3: The hide-title toggle in Elementor or Divi"
+  },
+  {
+   "body": [
+    "When nothing above works, a line of CSS will hide the title visually. Go to Appearance, then Customize, then Additional CSS, and add a rule that targets the title element of your theme. Every theme names its title class differently, so this is the part where people get stuck.",
+    "A common pattern looks like `.entry-title { display: none; }`, but on your theme the class may be `.page-title` or something else. Right-click the title in your browser, choose Inspect, and copy the exact class you see. Never paste random CSS from a forum without checking it matches your theme. Test on one page and view the site on your phone before moving on."
+   ],
+   "heading": "Method 4: Remove it with a small snippet of CSS"
+  },
+  {
+   "body": [
+    "If you would rather not touch code at all, there are small plugins whose only job is hiding page titles, such as the ones named for this exact purpose in the WordPress plugin directory. Install one, activate it, and each page gets a simple checkbox to hide the title.",
+    "Keep the number of plugins lean, though. A whole plugin for one checkbox is worth it only if you need the feature on many pages. For a single page, one of the theme or CSS methods above is lighter."
+   ],
+   "heading": "Method 5: Use a dedicated plugin"
+  },
+  {
+   "body": [
+    "A page title is usually your page's main heading, the H1 tag. Google uses it to understand what the page is about. Hiding it with CSS keeps the text in the code, which is fine, but deleting the H1 entirely from important pages can weaken your on-page SEO.",
+    "Be especially careful with service pages and location pages that you want ranking. If you hide the title on those pages for design reasons, make sure another clear H1 exists in the content, so search engines and screen readers still get a proper heading."
+   ],
+   "heading": "When you should NOT remove the title"
+  },
+  {
+   "body": [
+    "If the title survives all five methods, the usual culprit is page cache. Clear any caching plugin, then hard-refresh your browser. If you use a CDN, purge the cache there too.",
+    "The second most common cause is editing a template instead of the page. Page builders and themes like Divi sometimes pull the title from a header template, so the per-page setting never fires. Check whether your theme has a separate template assigned to that page, and apply the hide setting there."
+   ],
+   "heading": "What to do if the title is still showing"
+  }
+ ],
+ "slug": "how-to-remove-title-on-wordpress-page",
+ "title": "How to Remove the Title on a WordPress Page"
+}
