@@ -60,33 +60,53 @@ def rewrite_relative_urls(html, depth):
 
 
 def bake_head(html, clean_path, title, desc):
-    """Bake absolute canonical/OG URLs and title/description into <head>."""
+    """Bake absolute canonical/OG URLs and title/description into <head>.
+
+    Attribute-order agnostic (2026-10-20 fix): the old regexes assumed
+    property="..."/rel="..." came before content="..."/href="...", but the
+    templates write content="..."/href="..." first, so 7 of 8 substitutions
+    silently no-opped and baked pages shipped the template's default
+    canonical/OG tags (e.g. the Oct 19 post canonicalized to blog.html).
+    Each tag is now matched by its identifying attribute and only the
+    value attribute is replaced, whatever order the attributes are in.
+    """
     url = SITE_BASE + clean_path
 
-    def rep(new):
-        return lambda m: m.group(1) + new + m.group(2)
+    def set_attr(tag_pattern, attr, new):
+        """Set attr="new" inside the first tag matching tag_pattern."""
+        def fix(m):
+            tag = m.group(0)
+            new_tag, n = re.subn(
+                r'(' + re.escape(attr) + r'=")[^"]*(")',
+                lambda mm: mm.group(1) + new + mm.group(2),
+                tag, count=1)
+            return new_tag if n else tag
+        return re.subn(tag_pattern, fix, html, count=1)
 
-    html = re.sub(r'(<link (?:id="pageCanon" )?rel="canonical" href=")[^"]*(")',
-                  rep(url), html)
-    html = re.sub(r'(<meta property="og:url"(?: id="ogUrl")? content=")[^"]*(")',
-                  rep(url), html)
+    substitutions = [
+        (r'<link\b[^>]*\brel="canonical"[^>]*>', 'href', url),
+        (r'<meta\b[^>]*\bproperty="og:url"[^>]*>', 'content', url),
+        (r'<meta\b[^>]*\bproperty="og:title"[^>]*>', 'content', title),
+        (r'<meta\b[^>]*\bname="twitter:title"[^>]*>', 'content', title),
+        (r'<meta\b[^>]*\bproperty="og:description"[^>]*>', 'content', desc),
+        (r'<meta\b[^>]*\bname="twitter:description"[^>]*>', 'content', desc),
+        (r'<meta\b[^>]*\bname="description"[^>]*>', 'content', desc),
+    ]
+    for tag_pattern, attr, new in substitutions:
+        html, _ = set_attr(tag_pattern, attr, new)
+
     html = re.sub(r'(<title(?: id="pageTitle")?>)[^<]*(</title>)',
-                  rep(title), html, count=1)
-    html = re.sub(r'(<meta id="pageDesc" name="description" content=")[^"]*(")',
-                  rep(desc), html)
-    html = re.sub(r'(<meta name="description" content=")[^"]*(")',
-                  rep(desc), html, count=1)
-    html = re.sub(r'(<meta property="og:title"(?: id="ogTitle")? content=")[^"]*(")',
-                  rep(title), html)
-    html = re.sub(r'(<meta name="twitter:title"(?: id="ogTitle")? content=")[^"]*(")',
-                  rep(title), html)
-    html = re.sub(r'(<meta property="og:description"(?: id="ogDesc")? content=")[^"]*(")',
-                  rep(desc), html)
-    html = re.sub(r'(<meta name="twitter:description"(?: id="ogDesc")? content=")[^"]*(")',
-                  rep(desc), html)
+                  lambda m: m.group(1) + title + m.group(2), html, count=1)
     # Point runtime canonical/JSON-LD builders at the same base
     html = html.replace("const GS_SITE = '" + OLD_SITE + "'",
                         "const GS_SITE = '" + SITE_BASE + "'")
+    # Loud verification: the baked canonical must be this page's own URL.
+    # A template-default canonical used to ship silently; fail the bake
+    # instead so the daily run reports it rather than publishing it.
+    m = re.search(r'<link\b[^>]*\brel="canonical"[^>]*>', html)
+    if m and url not in m.group(0):
+        raise ValueError('bake_head: canonical not baked for ' + clean_path
+                         + ' (still ' + m.group(0)[:120] + ')')
     return html
 
 
