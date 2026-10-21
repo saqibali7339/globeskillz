@@ -1,0 +1,79 @@
+{
+ "date": "2026-10-21",
+ "excerpt": "Need to take your WordPress site offline for a while? Here is how to unpublish it safely, without losing your content or your search rankings.",
+ "faqs": [
+  {
+   "a": "Yes. Open the page in the editor, change its status from Published to Draft, and update it. The page disappears from your site immediately but stays saved in your dashboard, ready to publish again later. This is the safest way to hide one page without touching the rest of the site.",
+   "q": "Can I unpublish a single WordPress page instead of the whole site?"
+  },
+  {
+   "a": "Not if you only hide it. Maintenance mode, private settings, and password protection all leave your content untouched on your hosting account. Content is only lost when you delete the WordPress installation or cancel hosting without a backup, so always export and back up first.",
+   "q": "Does unpublishing my site delete my content?"
+  },
+  {
+   "a": "There is no fixed limit, but the longer it stays offline, the more likely Google is to drop its pages from search results. A pause of a few weeks usually recovers well. A pause of many months may mean rebuilding rankings from scratch, so keep a holding page live if you plan to return.",
+   "q": "How long can a WordPress site stay unpublished?"
+  },
+  {
+   "a": "For most businesses, a coming soon or maintenance page is the safest choice. It keeps your content safe, looks professional to visitors, and leaves the door open to a quick return. Delete the site only when you are certain you will never need it again, and only after you have a full backup.",
+   "q": "What is the safest way to unpublish a business website?"
+  }
+ ],
+ "image": "assets/blog/how-do-you-unpublish-a-wordpress-site.jpg",
+ "intro": "Sometimes a business needs to take its website offline for a while. Maybe you are rebranding, rebuilding the site from scratch, or pausing trading for a season. Whatever the reason, you want to do it properly, not just pull the plug and hope for the best.\n\nThe good news is that WordPress does not have a single big red unpublish button, but it does give you several safe ways to hide your site from the public. Which one you pick depends on whether you want the site back later, and whether anyone should still be able to see it in the meantime.\n\nThis guide walks through each option in plain terms, so you can choose the right one and avoid the mistakes that cost businesses their content and their Google rankings.",
+ "keyword": "how do you unpublish a wordpress site",
+ "meta": "Learn how to unpublish a WordPress site safely: private mode, password protection, or full removal, plus how to bring it back later.",
+ "read_time": 6,
+ "sections": [
+  {
+   "body": [
+    "Unpublishing a WordPress site usually means one of three things. You might want to hide the site from visitors while you work on it, restrict it to a small group of people, or remove it from the web completely. Each of these is a different job, and each has different consequences.",
+    "The most important distinction is between hiding and deleting. Hiding a site keeps all your pages, posts, images, and settings safe on your hosting account, ready to switch back on. Deleting a site wipes it out, and getting it back depends entirely on whether you have a backup.",
+    "Before you change anything, decide which outcome you actually want. If there is any chance you will need the site again, do not delete it. Hide it instead. That one decision protects most of the value you have built up over the years."
+   ],
+   "heading": "What Unpublishing Actually Means"
+  },
+  {
+   "body": [
+    "The gentlest option is to discourage search engines and hide the site from casual visitors while you sort things out. In your WordPress dashboard, go to Settings, then Reading, and tick the box that discourages search engines from indexing the site. This tells Google not to show your pages, though it is a request rather than a guarantee.",
+    "For a stronger result, use a coming soon or maintenance mode plugin. These show visitors a simple holding page, something like \"We are working on something new, check back soon,\" while you and your team can still log in and work behind the scenes. Your content stays untouched.",
+    "This option suits a rebrand or a rebuild. Customers see a professional holding message instead of a broken site or a blank page, and you can switch the full site back on the moment it is ready."
+   ],
+   "heading": "Option 1: Make Your Site Private While You Work"
+  },
+  {
+   "body": [
+    "If only certain people should see the site, password protection is the better choice. Some hosting providers offer this in their control panel with a single setting. Otherwise, a plugin can add a password screen across the entire site.",
+    "Anyone without the password sees only a login screen, while staff, clients, or a developer with the password can browse normally. This is useful when a site is in development, under review, or meant for a limited audience rather than the general public.",
+    "One warning: a password protected site will gradually drop out of Google, because Google cannot get past the password either. That is fine if the site is meant to stay private, but do not use this method if you still want search traffic coming in."
+   ],
+   "heading": "Option 2: Password Protect the Whole Site"
+  },
+  {
+   "body": [
+    "If you are closing the business or moving to a completely different platform, you may want the site gone entirely. In that case, the safe order matters. First, export your content from Tools, then Export in the WordPress dashboard, so you keep a copy of your posts and pages.",
+    "Next, take a full backup through your hosting provider, including the database and media files. That backup is your safety net. Only then should you delete the WordPress installation or cancel the hosting.",
+    "Never delete first and look for a backup later. Hosting companies do keep backups for a time, but they are not obliged to keep them forever, and restoring from an old backup can be messy. Your own copy, downloaded and stored safely, is the only one you can rely on."
+   ],
+   "heading": "Option 3: Take the Site Fully Offline"
+  },
+  {
+   "body": [
+    "This is the part most business owners worry about, and rightly so. If your site goes offline for a short period, a few weeks for example, Google will usually keep your pages in its index for a while and rankings often recover once the site returns. There is no guarantee, but a brief pause rarely wipes out years of work.",
+    "A longer absence is a different story. If Google repeatedly finds your pages missing, it will eventually drop them from search results, and rebuilding those rankings takes real time and effort. That is why a holding page is often smarter than a dead site: it tells both visitors and Google that something is still there.",
+    "If you are closing for good, consider redirecting your most visited pages to a new site or a single contact page, rather than letting them return errors. That way, anyone who finds an old link still reaches a real person instead of a dead end."
+   ],
+   "heading": "What Happens to Your Google Rankings?"
+  },
+  {
+   "body": [
+    "Bringing a hidden site back is usually simple. Turn off maintenance mode or remove the password, then go back to Settings, then Reading, and untick the box that discourages search engines. Your site is live again, and Google will gradually recheck your pages.",
+    "If you deleted the site and kept a backup, restoration means reinstalling WordPress, importing your content, and restoring the database and media files. Your hosting provider or developer can usually handle this, but it takes longer and costs more than simply switching a hidden site back on.",
+    "Give the restored site a quick check before you announce it: homepage, contact page, contact form, and a few key service pages. A short test now saves you from discovering a broken form through a lost enquiry later."
+   ],
+   "heading": "How to Bring Your Site Back"
+  }
+ ],
+ "slug": "how-do-you-unpublish-a-wordpress-site",
+ "title": "How Do You Unpublish a WordPress Site?"
+}
