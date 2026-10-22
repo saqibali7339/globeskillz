@@ -1,0 +1,87 @@
+{
+ "date": "2026-10-22",
+ "excerpt": "Your old HTML site still works, but it is hard to update. Here is how to move it to WordPress without losing your content, design, or search rankings.",
+ "faqs": [
+  {
+   "a": "It should not, if the move is done carefully. Keep your page addresses the same where possible, carry over your titles and descriptions, and set up redirects for any address that changes. A short, temporary dip can happen while Google recrawls the site, but lost rankings usually trace back to broken links or missing redirects, both of which are preventable.",
+   "q": "Will converting HTML to WordPress hurt my Google rankings?"
+  },
+  {
+   "a": "A small site with a handful of pages can take a few days to a couple of weeks, depending on the design route and how much content needs moving. Larger sites, custom features, and a full design refresh add time. Ask for a timeline based on your actual page count and features, not a generic promise.",
+   "q": "How long does an HTML to WordPress conversion take?"
+  },
+  {
+   "a": "No. Your existing text and images move across as they are. You may tidy up outdated details or improve weak pages while you are at it, but a rewrite is not required. The main work is rebuilding the layout inside WordPress, not writing everything from scratch.",
+   "q": "Do I need to rewrite all my content for WordPress?"
+  },
+  {
+   "a": "Yes, if you rebuild it as a custom WordPress theme. That route reproduces your look while making the content editable. If you choose a ready made theme instead, expect the design to change somewhat, though a good theme can still feel very much like your brand.",
+   "q": "Can I keep my current design exactly?"
+  }
+ ],
+ "image": "assets/blog/how-to-convert-html-to-wordpress.jpg",
+ "intro": "A plain HTML website can serve a business well for years. Then one day you need to change a phone number, add a new service page, or publish a blog post, and every small edit means opening code files and hoping nothing breaks.\n\nWordPress solves that problem. It lets you edit pages, add posts, and update images from a simple dashboard, without touching code each time. Converting an HTML site to WordPress is very doable, but it needs a plan. Rushed conversions lose content, break links, and confuse Google.\n\nThis guide walks through the conversion in plain terms, so you know what to expect, what to check, and when it makes sense to get help.",
+ "keyword": "how to convert html to wordpress",
+ "meta": "Learn how to convert HTML to WordPress safely: backup, content, design, SEO settings, and testing before you go live.",
+ "read_time": 7,
+ "sections": [
+  {
+   "body": [
+    "Converting an HTML site to WordPress does not mean copying files into a new folder and calling it done. Your HTML pages are fixed files. WordPress builds pages from a theme, which controls the design, and a database, which holds your content. The conversion means splitting your old pages into those two parts: design goes into the theme, content goes into WordPress.",
+    "That split is actually good news. Once it is done, changing the header, footer, or menu updates every page at once. You no longer edit the same phone number on twenty separate files. Your content also becomes easy to search, edit, and back up.",
+    "The goal is simple: the new WordPress site should look like your old site, or better, while keeping the same pages, the same web addresses where possible, and the same search visibility."
+   ],
+   "heading": "What Converting to WordPress Really Means"
+  },
+  {
+   "body": [
+    "Start with a full backup of your HTML site: every file, every image, and a list of every page address. Download the whole site folder to your computer. If you are unsure how, ask your hosting company to take a backup for you before any work starts.",
+    "Next, make a simple inventory. List each page, what it is for, and whether it still earns visits or enquiries. Many old sites have pages nobody visits anymore, like outdated offers or old staff bios. A conversion is a good time to drop dead weight, but do it deliberately, not by accident.",
+    "Note anything special on the site too: contact forms, maps, photo galleries, booking buttons, and any code that tracks visits. Each of those needs a WordPress replacement, and it is much easier to plan for them now than to discover them missing after launch."
+   ],
+   "heading": "Before You Touch Anything: Back Up and Take Stock"
+  },
+  {
+   "body": [
+    "The cleanest route is to rebuild your design as a WordPress theme. A developer takes your HTML and CSS and turns the repeating parts, like the header, footer, and sidebar, into theme templates. Your pages then become WordPress pages that use those templates.",
+    "This route keeps your look and gives you the most control. It also takes the most time, because it is real development work, not a one-click import. For a small business site with a handful of pages, it is usually straightforward. For a large site with custom features, it takes longer and costs more.",
+    "If your current design is dated, this is also the moment to refresh it. Keep what customers recognize, like your colors and logo, and fix what frustrates them, like tiny text on phones or a buried contact button."
+   ],
+   "heading": "Option 1: Rebuild the Design as a WordPress Theme"
+  },
+  {
+   "body": [
+    "The faster route is to pick a solid WordPress theme that looks close to what you want, then move your content into it. You set up WordPress, install the theme, adjust the colors and logo, and recreate each page inside WordPress.",
+    "This works well when you are happy to change the design a little. It is usually cheaper and quicker than a custom theme rebuild, and you get a modern, mobile friendly layout out of the box. The trade off is less control: your site will look like a polished version of the theme, not an exact copy of your old site.",
+    "Whichever route you choose, avoid themes packed with features you will never use. A bloated theme slows your site down and makes future edits harder. Pick a theme that does what you need and nothing more."
+   ],
+   "heading": "Option 2: Use a Theme and Move Your Content Into It"
+  },
+  {
+   "body": [
+    "Content comes next, page by page. Copy the text into WordPress pages, upload the images, and rebuild the layout with the block editor. Do not paste straight from a web page into WordPress without checking the result, because hidden formatting often comes along and makes text look messy.",
+    "Forms deserve special attention. An HTML form may send mail through a script on your server. In WordPress, a form plugin replaces that script. Test every form after the move, and confirm the messages actually reach your inbox before launch.",
+    "SEO settings are easy to lose and painful to rebuild. Keep your page titles and descriptions, keep your page addresses the same where you can, and set up redirects for any address that changes. A redirect tells visitors and Google where the old page moved to, so links and rankings do not hit a dead end."
+   ],
+   "heading": "Moving Content, Images, Forms, and SEO Settings"
+  },
+  {
+   "body": [
+    "Never launch a converted site without testing it first. Build it on a staging copy or a temporary address, then click through every page on a phone and a computer. Check the menu, the contact form, the images, and the loading speed.",
+    "Ask someone who has never seen the site to find your phone number and your main service page. If they struggle, your customers will too. Fix those problems now, while the old site is still live and taking enquiries.",
+    "When launch day comes, the switch itself is usually quick: point your domain to the WordPress install and check the live site immediately. Keep your HTML backup safe for at least a few months, just in case you need to recover anything."
+   ],
+   "heading": "Test Everything Before You Go Live"
+  },
+  {
+   "body": [
+    "A very small site with a few simple pages can be a reasonable do it yourself project, especially if you are comfortable with WordPress already. A larger site, a site with custom features, or a site that brings in steady enquiries is worth professional help.",
+    "A developer or agency can handle the theme build, the redirects, and the testing, and they can spot the SEO details that are easy to miss. Ask upfront what is included: design, content migration, forms, redirects, and post launch checks should all be in the quote, not surprises later.",
+    "Either way, the payoff is the same: a site you can actually update yourself. New service, new photo, new post, all without opening a code file. That freedom is the whole point of moving to WordPress."
+   ],
+   "heading": "When to Get Help With the Conversion"
+  }
+ ],
+ "slug": "how-to-convert-html-to-wordpress",
+ "title": "How to Convert HTML to WordPress the Right Way"
+}
