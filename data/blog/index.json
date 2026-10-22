@@ -1,5 +1,13 @@
 [
  {
+  "slug": "how-to-convert-html-to-wordpress",
+  "title": "How to Convert HTML to WordPress the Right Way",
+  "excerpt": "Your old HTML site still works, but it is hard to update. Here is how to move it to WordPress without losing your content, design, or search rankings.",
+  "date": "2026-10-22",
+  "image": "assets/blog/how-to-convert-html-to-wordpress.jpg",
+  "read_time": 7
+ },
+ {
   "slug": "how-do-you-unpublish-a-wordpress-site",
   "title": "How Do You Unpublish a WordPress Site?",
   "excerpt": "Need to take your WordPress site offline for a while? Here is how to unpublish it safely, without losing your content or your search rankings.",
