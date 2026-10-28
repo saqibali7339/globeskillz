@@ -1,0 +1,87 @@
+{
+ "date": "2026-10-28",
+ "excerpt": "Your links should stand out, not blend into the text. Here is how to change link color in WordPress, one link at a time or across your whole site.",
+ "faqs": [
+  {
+   "a": "Use the block editor for a single link, the Customizer or Site Editor for a site wide change, or the Additional CSS panel for full control. None of these methods needs a plugin, and all of them are built into WordPress.",
+   "q": "How do I change the link color in WordPress without a plugin?"
+  },
+  {
+   "a": "The usual causes are browser or plugin caching, a theme or page builder rule that overrides your setting, or a change that was previewed but never published. Clear your caches, check for a page builder color setting, and confirm you clicked Update or Publish.",
+   "q": "Why is my link color not changing in WordPress?"
+  },
+  {
+   "a": "There is no single best color. The classic blue works because visitors recognize it instantly, but a brand color works just as well if it stands out clearly from your body text and background. Readability matters more than the exact shade.",
+   "q": "What is the best color for links on a website?"
+  },
+  {
+   "a": "Underlines help visitors recognize links at a glance, and they help visitors who cannot distinguish colors easily. Keeping underlines, or at least showing them on hover, is the safer and more accessible choice for most business websites.",
+   "q": "Should links be underlined in WordPress?"
+  }
+ ],
+ "image": "assets/blog/how-to-change-link-color-in-wordpress.jpg",
+ "intro": "Links do a lot of quiet work on your website. They guide visitors to your services, your contact page, and your best content. When they blend into the surrounding text, visitors miss them, and you miss clicks.\n\nThe good news is that changing link color in WordPress is a small job. You can change a single link inside one post, or you can change every link on your site at once. This guide walks through all three common methods, so you can pick the one that fits what you are trying to do.",
+ "keyword": "how to change link color in wordpress",
+ "meta": "Learn how to change link color in WordPress using the block editor, the Customizer, or a little CSS, and pick colors visitors can actually read.",
+ "read_time": 6,
+ "sections": [
+  {
+   "body": [
+    "Most visitors scan a page before they read it. A link that looks different from the body text tells them at a glance that something is clickable. If your links are the same color as your paragraphs, they are practically invisible.",
+    "Color also shapes trust. A site with one consistent link color looks planned and professional. A site where links are blue on one page, red on another, and barely visible on a third looks unfinished, even if the content is good.",
+    "Before you change anything, decide on one link color and one hover color, and use them everywhere. Matching your brand color is a safe choice, as long as the color is easy to read against your page background."
+   ],
+   "heading": "Why Link Color Matters More Than You Think"
+  },
+  {
+   "body": [
+    "This is the right method when only one link needs to stand out, for example a call to action inside a blog post. Open the post or page in the WordPress editor and click on the link text so it is selected.",
+    "In the block toolbar, look for the text color option. In a paragraph block, it sits under the block settings panel on the right, in the Color section. Choose Text, then pick a color from the palette or enter a custom color code.",
+    "Click Update or Publish, then check the live page. This change affects only the text you selected, so the rest of your links keep their normal color. That is useful for emphasis, but do not use it for every link on your site, or you will end up with a patchwork of colors that is hard to manage."
+   ],
+   "heading": "Method 1: Change One Link in the Block Editor"
+  },
+  {
+   "body": [
+    "If you want a site wide change, the Customizer is usually the simplest route. From your dashboard, go to Appearance, then Customize. The exact options depend on your theme, but many themes include a Colors section or a link color setting under the general color options.",
+    "Some themes put link colors under a section called Typography or Global Colors instead. If you use a block theme, look in the Site Editor under Styles, then Colors, where you can set the link color for the whole site.",
+    "Pick your color, watch the live preview update, and click Publish. This is the cleanest way to change link color because it keeps everything consistent, and you can change it back just as easily if you change your mind."
+   ],
+   "heading": "Method 2: Change Every Link at Once in the Customizer"
+  },
+  {
+   "body": [
+    "When your theme does not offer a link color setting, a small piece of CSS does the job. Go to Appearance, then Customize, then Additional CSS. This panel lets you add your own styles without editing theme files, so an update will not wipe your change out.",
+    "To change all links, add a rule that targets links and sets their color. To change only links inside blog posts, target the post content area instead. If you are not comfortable writing CSS, ask your developer to add two lines for you. It is a five minute job for someone who works with WordPress regularly.",
+    "The advantage of CSS is control. You can set one color for normal links, a different color for links visitors have already clicked, and a third color for the moment a visitor hovers over a link. That level of detail is hard to get from theme settings alone."
+   ],
+   "heading": "Method 3: Change Link Color With a Little CSS"
+  },
+  {
+   "body": [
+    "A hover color is the color a link turns when a visitor moves their mouse over it. It is a small detail, but it gives instant feedback that the text is clickable, which encourages clicks.",
+    "A good hover color is a slightly darker or brighter version of your main link color. Avoid a hover color that is close to your body text color, because then the link seems to disappear exactly when someone tries to click it.",
+    "If your theme settings do not include a hover option, CSS can handle it with a hover rule. This is worth doing, because it makes your site feel more responsive without changing anything else about your design."
+   ],
+   "heading": "Do Not Forget the Hover Color"
+  },
+  {
+   "body": [
+    "A link color that looks great in a design tool can be hard to read on a real page. Light yellow on a white background, or pale blue on a light grey background, will strain your visitors eyes and push some of them away.",
+    "Test your choice on a real page, not just in the editor. Read it on a phone screen in bright light, and on a laptop at normal brightness. If you have to squint, pick a darker shade.",
+    "Also remember that some visitors cannot tell colors apart easily. Color alone should never be the only signal that text is a link. Keeping an underline on your links, or at least on hover, helps everyone, and it is the safer choice for accessibility."
+   ],
+   "heading": "Pick Colors People Can Actually Read"
+  },
+  {
+   "body": [
+    "If you changed the color and nothing happened on the live page, the most common cause is caching. Clear your browser cache, and if you use a caching plugin, clear its cache too, then reload the page.",
+    "Another common cause is a theme or plugin rule that overrides your setting. A page builder, for example, may set its own link colors that beat the Customizer. In that case, change the color inside the page builder settings, or use CSS written for that specific area.",
+    "Finally, check that you saved and published. Changes in the block editor need Update, and changes in the Customizer need Publish. It sounds obvious, but it is the most common reason a change seems to vanish."
+   ],
+   "heading": "What to Do If the Color Does Not Change"
+  }
+ ],
+ "slug": "how-to-change-link-color-in-wordpress",
+ "title": "How to Change Link Color in WordPress"
+}
