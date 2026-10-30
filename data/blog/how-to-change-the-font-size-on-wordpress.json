@@ -1,0 +1,79 @@
+{
+ "date": "2026-10-30",
+ "excerpt": "Text that is too small drives visitors away, and text that is too big looks messy. Here is how to change the font size on WordPress.",
+ "faqs": [
+  {
+   "a": "Click the paragraph block in the editor, then use the font size control in the settings panel on the right. Pick a preset size or type a custom size. The change applies only to that block, so the rest of your site stays the same.",
+   "q": "How do I change the font size of just one paragraph in WordPress?"
+  },
+  {
+   "a": "Use your theme settings. In a classic theme, go to Appearance, then Customize, and look for the typography section. In a block theme, go to Appearance, then Editor, and open the styles panel. Set the body text size there and it will apply across your site.",
+   "q": "How do I change the font size for my whole WordPress site?"
+  },
+  {
+   "a": "Yes. The block editor, the customizer, and the site editor all include font size controls, and a small CSS rule covers anything else. You only need a plugin if your theme offers no typography settings at all, which is uncommon.",
+   "q": "Can I change font size in WordPress without a plugin?"
+  },
+  {
+   "a": "There is no single perfect size, because themes and fonts differ. What matters is that normal visitors can read comfortably without zooming, on both phones and computers. Pick a size that reads easily on a phone first, then confirm it still looks balanced on a larger screen.",
+   "q": "What is a good font size for website body text?"
+  }
+ ],
+ "image": "assets/blog/how-to-change-the-font-size-on-wordpress.jpg",
+ "intro": "Font size sounds like a small detail, but it decides whether people actually read your website. If your text is too small, visitors strain their eyes and leave. If it is too big, your pages look loud and hard to scan.\n\nThe good news is that WordPress gives you several ways to change font size, and none of them require rebuilding your site. You can change a single paragraph, a single heading, or every page at once. The right method depends on how much you want to change.\n\nThis guide walks through each method in plain steps, starting with the easiest one. It also covers the mistakes that make a site look inconsistent, so you can avoid them.",
+ "keyword": "how to change the font size on wordpress",
+ "meta": "Learn how to change the font size on WordPress with the block editor, the customizer, or a little CSS, without breaking your site design.",
+ "read_time": 5,
+ "sections": [
+  {
+   "body": [
+    "The quickest way to change font size in WordPress is inside the block editor. Click the paragraph or heading you want to change, then look at the settings panel on the right hand side of the screen.",
+    "Under the typography settings you will see a font size control. Many themes offer preset sizes like small, medium, large, and extra large. Pick one and the text updates right away. If your theme allows it, you can also type in a custom size in pixels.",
+    "This method is best when you only want to change one piece of text, such as a single heading on a sales page or a call to action. It does not affect the rest of your site, which keeps the change safe and easy to undo."
+   ],
+   "heading": "Change the Font Size of One Block"
+  },
+  {
+   "body": [
+    "If your body text feels too small everywhere, changing one block at a time will take forever. Instead, change the size in your theme settings so the whole site updates at once.",
+    "Go to Appearance and then Customize in your WordPress dashboard, and look for a typography or fonts section. The exact location depends on your theme, but most themes put body text size and heading sizes there. Set the body text to a size that is comfortable to read, usually somewhere in the range most readers expect for normal paragraph text, then check your headings still stand out clearly from the body.",
+    "After you save, open a few different pages on your site and read them on a phone as well as on a computer. A size that looks fine on a large screen can feel cramped or oversized on a small one, so check both before you call it done."
+   ],
+   "heading": "Change Font Sizes Across Your Whole Site"
+  },
+  {
+   "body": [
+    "If your theme is a newer block theme, you may not see the old customizer at all. Instead, go to Appearance and then Editor. This opens the site editor, where you can change typography for your whole site.",
+    "In the site editor, open the styles panel and look for typography. There you can set the font size for text, headings, and links separately. The changes apply everywhere that style is used, which keeps your site consistent.",
+    "One tip worth following: change heading sizes in proportion. If your main heading is much larger than your subheadings, readers can scan the page at a glance. If every heading is nearly the same size, the page loses its structure."
+   ],
+   "heading": "Use the Site Editor for Block Themes"
+  },
+  {
+   "body": [
+    "Sometimes the theme settings do not offer the exact size you want, or they do not cover a particular element. In that case, a small amount of CSS gives you full control.",
+    "Go to Appearance and then Customize, then open the additional CSS panel. To make all paragraph text larger, for example, you would add a rule that targets paragraphs and sets their font size. To change only headings on one page, you would target headings instead. Save the change and refresh your site to see the result.",
+    "Keep your CSS changes small and specific. Changing too many elements at once makes the site hard to manage later. If you are not comfortable writing CSS, ask your developer to add the rule for you, or stick with the editor and customizer methods, which cover most needs."
+   ],
+   "heading": "Change Font Size with a Little CSS"
+  },
+  {
+   "body": [
+    "There are plugins that add extra font size controls to WordPress, and they can be useful if your theme is very limited. They let you pick sizes from a dropdown or add a font size button to the editor toolbar.",
+    "Before installing one, ask whether you really need it. Every plugin adds a little weight to your site, and a font size plugin rarely does something the editor cannot already do. If your theme already has typography settings, use those first.",
+    "If you do install a plugin, test it on a staging copy of your site first when possible, and check that it does not clash with your theme. Remove any plugin you stop using so it does not sit idle on your site."
+   ],
+   "heading": "Use a Plugin Only If You Need To"
+  },
+  {
+   "body": [
+    "The most common mistake is using too many different sizes across a site. When every page has its own sizes, the site feels patched together and unprofessional. Pick one size for body text and a clear set of heading sizes, then use them everywhere.",
+    "Another mistake is making text tiny to fit more words on the page. Small text may look tidy, but it pushes readers away, especially older visitors and anyone reading on a phone. Readability always matters more than fitting extra words above the fold.",
+    "Finally, remember to test after every change. Open your site on a phone, a tablet, and a computer. Check that headings do not overlap, buttons still look right, and no text runs off the edge of the screen. A two minute check now saves an embarrassing fix later."
+   ],
+   "heading": "Mistakes That Make a Site Look Messy"
+  }
+ ],
+ "slug": "how-to-change-the-font-size-on-wordpress",
+ "title": "How to Change the Font Size on WordPress"
+}
