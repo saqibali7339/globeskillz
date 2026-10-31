@@ -1,5 +1,13 @@
 [
  {
+  "slug": "what-is-a-wordpress-featured-image",
+  "title": "What Is a WordPress Featured Image?",
+  "excerpt": "The featured image is the picture that represents your post everywhere it appears. Here is what it does, where it shows up, and how to set one.",
+  "date": "2026-10-31",
+  "image": "assets/blog/what-is-a-wordpress-featured-image.jpg",
+  "read_time": 6
+ },
+ {
   "slug": "how-to-change-the-font-size-on-wordpress",
   "title": "How to Change the Font Size on WordPress",
   "excerpt": "Text that is too small drives visitors away, and text that is too big looks messy. Here is how to change the font size on WordPress.",
@@ -274,7 +282,7 @@
  {
   "slug": "how-much-does-seo-cost-uk",
   "title": "How Much Does SEO Cost in the UK? An Honest Breakdown",
-  "excerpt": "UK SEO prices range from \u00a3300 a month to \u00a310,000+. Here is what you actually get at each price point, what drives the cost up, and how to avoid paying for nothing.",
+  "excerpt": "UK SEO prices range from £300 a month to £10,000+. Here is what you actually get at each price point, what drives the cost up, and how to avoid paying for nothing.",
   "date": "2026-09-24",
   "image": "assets/blog/how-much-does-seo-cost-uk.jpg",
   "read_time": 4
