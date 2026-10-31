@@ -1,0 +1,79 @@
+{
+ "date": "2026-10-31",
+ "excerpt": "The featured image is the picture that represents your post everywhere it appears. Here is what it does, where it shows up, and how to set one.",
+ "faqs": [
+  {
+   "a": "Yes, they are the same thing. Post thumbnail was the original name in WordPress, and featured image is the name used in the editor today. Both refer to the single representative image attached to a post or page.",
+   "q": "Is a featured image the same as a post thumbnail?"
+  },
+  {
+   "a": "Check what your theme recommends, because themes crop images differently. A wide image around 1200 pixels across is a safe starting point for most themes, and it also looks good when shared on social media. Avoid very tall or very small images, since cropping can cut off the subject.",
+   "q": "What size should a WordPress featured image be?"
+  },
+  {
+   "a": "No, in most cases you should not. Your theme already displays the featured image at the top of the post, so adding it again inside the article usually creates an unwanted duplicate. Add images inside the post only when they illustrate a specific point.",
+   "q": "Do I need to put the featured image inside the post as well?"
+  },
+  {
+   "a": "First, check that a featured image is actually set on the post, since a missing image is the most common cause. If it is set but the preview still looks wrong, the social platform may be showing an old cached preview. Resharing after a short wait, or using the platform's link debugger to refresh the preview, usually fixes it.",
+   "q": "Why is my featured image not showing when I share my post?"
+  }
+ ],
+ "image": "assets/blog/what-is-a-wordpress-featured-image.jpg",
+ "intro": "Every WordPress post has a main picture. That picture is called the featured image, and it is the image people see before they ever read a word of your post.\n\nThink of it as the cover of a book. On your blog page, in search results previews, and when someone shares your post on social media, the featured image is what catches the eye first. A post with no featured image often shows up as a blank box or a plain text link, and that is easy to scroll past.\n\nIf you run a business website, the featured image is not decoration. It is part of how people judge whether your post is worth opening. This guide explains what it is, where it appears, and how to set one properly.",
+ "keyword": "what is a wordpress featured image",
+ "meta": "What is a WordPress featured image? Learn where it appears, how to set one, and what makes a good one for your business website.",
+ "read_time": 6,
+ "sections": [
+  {
+   "body": [
+    "A featured image is the single representative image you attach to a post or page in WordPress. It is separate from the images you place inside the article itself. You set it in the post editor, and your theme decides how and where to display it.",
+    "Most themes show the featured image at the top of the post, above the title or just below it. They also use it on archive pages, such as your blog listing and category pages, where each post appears as a card with an image, a title, and a short excerpt.",
+    "You may also hear it called a post thumbnail. That is the older name for the same thing. In the WordPress editor, the panel is usually labelled Featured image, and that is the name most people use today."
+   ],
+   "heading": "What a Featured Image Actually Is"
+  },
+  {
+   "body": [
+    "The first place is your own site. On your blog page, visitors scan a list of posts, and the image is usually the first thing they notice. A clear, relevant image tells them what the post is about in a second, while a missing or random image tells them nothing.",
+    "The second place is social media. When someone shares your post link on Facebook, LinkedIn, or X, the platform pulls the featured image into the preview card. A good preview makes the link look professional and trustworthy. A missing image makes the same link look unfinished, even if the article itself is excellent.",
+    "The third place is search and messaging apps. Search engines and chat apps often show a thumbnail next to a shared link. Again, the featured image is doing the first impression work before anyone reads your headline."
+   ],
+   "heading": "Where Visitors See Your Featured Image"
+  },
+  {
+   "body": [
+    "This is where many site owners get confused, so it is worth being clear. Images inside your post illustrate specific points as the reader goes through the article. The featured image represents the whole post from the outside.",
+    "That means you do not need to insert the featured image into the article body as well. In fact, doing so often creates a duplicate, because your theme already displays it at the top of the post. If you see the same picture twice, once at the top and once in the first paragraph, that is usually why.",
+    "A simple rule works well. Use the featured image to represent the topic. Use images inside the post only when they add something, such as a screenshot, a diagram, or a photo of the work you are describing."
+   ],
+   "heading": "Featured Image vs Images Inside the Post"
+  },
+  {
+   "body": [
+    "Open the post in the WordPress editor and look for the Featured image panel in the right hand sidebar. If you do not see it, open the post settings and check that the panel is switched on. Click Set featured image, then choose an image from your media library or upload a new one.",
+    "Before you confirm, check the image itself. It should be sharp, well lit, and clearly related to the topic. A blurry photo, a stock image that has nothing to do with the subject, or a picture with small unreadable text will hurt more than help.",
+    "After setting it, preview the post and check the blog page too. Look at how the image is cropped. WordPress themes often crop featured images to a wide rectangle, so a tall portrait photo can lose its top and bottom. If the crop cuts off something important, choose a wider image or adjust the crop in your media library."
+   ],
+   "heading": "How to Set a Featured Image in WordPress"
+  },
+  {
+   "body": [
+    "Relevance comes first. The image should match what the post is actually about. If the post explains how to fix a leaking tap, a photo of a tap being repaired beats a generic office photo every time, even if the generic photo looks prettier.",
+    "Clarity comes second. Simple images work better than busy ones, because featured images are often seen small, on a phone screen or in a social preview. One clear subject, good contrast, and no tiny text will read well at any size.",
+    "Consistency comes third. If every post on your blog uses a similar style, your blog page looks like a professional publication rather than a random collection. You do not need a designer for this. A consistent photo style, or a simple branded template you reuse, is enough."
+   ],
+   "heading": "What Makes a Good Featured Image"
+  },
+  {
+   "body": [
+    "The most common mistake is leaving the featured image empty. WordPress will still publish the post, but it will look unfinished everywhere it is listed or shared. Setting an image takes less than a minute, and it is worth doing for every post, not just the important ones.",
+    "Another mistake is using images you do not have the right to use. Downloading a photo from a search engine and uploading it to your site can create copyright problems. Use your own photos, images from a stock library you have paid for or licensed, or images with a clear free licence.",
+    "A third mistake is uploading huge files. A photo straight from a phone can be several megabytes, and that slows your page down for every visitor. Resize the image to a sensible width for your theme, usually around 1200 pixels wide, and compress it before uploading. Your visitors, and your search rankings, will both benefit."
+   ],
+   "heading": "Common Mistakes to Avoid"
+  }
+ ],
+ "slug": "what-is-a-wordpress-featured-image",
+ "title": "What Is a WordPress Featured Image?"
+}
