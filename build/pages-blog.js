@@ -5,7 +5,7 @@ G.posts = [
     "date": "2026-11-04",
     "read": "6 min",
     "title": "How Is Shopify Perceived as an AI Website Builder?",
-    "metaTitle": "Shopify as an AI Website Builder | Globe Skillz",
+    "metaTitle": "How Is Shopify Perceived as an AI Website Builder?",
     "desc": "Shopify is often called an AI website builder, but that label tells half the story. Here is how reviewers and merchants actually see its AI tools.",
     "excerpt": "Shopify has real AI tools, but reviewers do not treat it as a pure AI website builder. Here is what the perception gets right, where it overpromises, and what to check before you rely on it.",
     "service": "shopify-ai-search-optimization",
