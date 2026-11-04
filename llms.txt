@@ -1,46 +1,31 @@
 # Globe Skillz
 
-> Globe Skillz (globeskillz.com) is a one-person SEO and web development studio run by Saqib Ali, an SEO specialist and WordPress/Shopify developer. The studio builds fast, high-converting websites and runs SEO campaigns for small businesses worldwide, with deep specialization in local SEO for trades and service businesses across the US, UK, Canada, the EU, and Australia.
+> Shopify SEO studio with development built in, led by Saqib Ali (since 2019). Serves Shopify merchants worldwide, including the US, UK, EU, Gulf, Australia and Pakistan.
 
-## Services
+## Shopify SEO services
+- [Shopify SEO Services](https://globeskillz.com/services/shopify-seo.html): Monthly Shopify SEO run by a developer who reads Liquid: technical fixes, collection and product optimization, content and links. Serving merchants worldwide.
+- [Shopify SEO Audit](https://globeskillz.com/services/shopify-seo-audit.html): A manual Shopify SEO audit covering crawl, indexation, theme code, Core Web Vitals, content and links. You get a prioritized fix list you can actually act on.
+- [Shopify Technical SEO](https://globeskillz.com/services/shopify-technical-seo.html): Technical SEO for Shopify, fixed directly in your theme: duplicate URLs, faceted navigation, robots.txt.liquid, structured data, sitemaps and Core Web Vitals.
+- [Collection & Product SEO](https://globeskillz.com/services/shopify-on-page-seo.html): On-page SEO for Shopify collection and product pages: keyword mapping, titles, descriptions, collection copy, FAQs, internal links and rich results.
+- [Shopify Content SEO](https://globeskillz.com/services/shopify-content-seo.html): Content strategy and writing for Shopify stores: topic clusters, buying guides and comparison articles, each linked to the collections they support.
+- [Shopify Link Building](https://globeskillz.com/services/shopify-link-building.html): White-hat link building for Shopify stores: digital PR, supplier and partner links, resource placements and unlinked brand mentions. No PBNs and no link farms.
+- [International Shopify SEO](https://globeskillz.com/services/shopify-international-seo.html): SEO for Shopify stores selling across borders: Shopify Markets setup, hreflang, subfolders and domains, localized keyword research and country-level content.
+- [AI Search Optimization](https://globeskillz.com/services/shopify-ai-search-optimization.html): Help your Shopify store appear in Google AI Overviews, ChatGPT, Gemini and Perplexity answers with entity clarity, structured data and quotable content.
 
-- [Web Development](https://globeskillz.com/services/web-development/): Fast, high-converting WordPress and Shopify websites. No bloated themes, no page-builder sludge. From $500.
-- [SEO Audits](https://globeskillz.com/services/seo-audits/): Plain-English technical and content audits that find exactly what is holding a site back in Google.
-- [Technical SEO](https://globeskillz.com/services/technical-seo/): Crawl errors, indexation leaks, Core Web Vitals, and site speed fixes.
-- [Local SEO](https://globeskillz.com/services/local-seo/): Google Business Profile optimization, map pack rankings, "near me" searches, reviews strategy, and local citations.
-- [National SEO](https://globeskillz.com/services/national-seo/): Full SEO campaigns for businesses selling beyond their city. From $700/mo.
-- [Shopify SEO](https://globeskillz.com/services/shopify-seo/): Technical Shopify SEO, collection and product page optimization, speed fixes, and product schema for ecommerce stores.
-- [AI Search Optimization (AEO/GEO)](https://globeskillz.com/services/ai-search/): Getting businesses cited in ChatGPT, Google AI Overviews, and Perplexity answers. Entity optimization, FAQ schema, llms.txt, authority signals.
-- [Link Building](https://globeskillz.com/services/link-building/): White-hat backlinks from relevant websites. No PBNs, no spam.
-- [SEO Migration](https://globeskillz.com/services/seo-migration/): Protecting rankings during redesigns and platform moves.
+## Shopify development services
+- [Shopify Store Development](https://globeskillz.com/services/shopify-development.html): Shopify store design and development with SEO built in from the start: clean Liquid, fast templates, correct schema and a site structure planned around search.
+- [Theme Customization & Liquid](https://globeskillz.com/services/shopify-theme-customization.html): Custom Shopify sections, Liquid development, theme bug fixes and feature builds. Clean code that won’t hurt speed or SEO.
+- [Shopify Speed Optimization](https://globeskillz.com/services/shopify-speed-optimization.html): Make your Shopify store faster and pass Core Web Vitals: LCP, INP and CLS fixes, app script cleanup, image delivery and theme-level performance work.
+- [Migration to Shopify (SEO-Safe)](https://globeskillz.com/services/shopify-migration.html): Move to Shopify from WooCommerce, Wix, Squarespace, BigCommerce or Magento without losing rankings: URL mapping, 301s, data migration, monitoring.
+- [Shopify Maintenance & Support](https://globeskillz.com/services/shopify-maintenance-support.html): Monthly Shopify development support: bug fixes, small features, theme updates, app QA and SEO-safe changes from a developer you can reach on WhatsApp.
 
-## Who this is for
+## Proof
+- [SEO results](https://globeskillz.com/results.html): 9 client Search Console reports, 195K+ clicks and 9.8M+ impressions over 3 months
+- [International case study](https://globeskillz.com/case-studies/booster-brand-international-shopify-seo.html): 8 markets, 12.7K monthly organic visits
+- [Pakistan case study](https://globeskillz.com/case-studies/albarik-ecommerce-seo-pakistan.html)
+- [Store builds](https://globeskillz.com/work.html)
 
-Small and local businesses that need more customers from Google: trades (plumbers, electricians, roofers, HVAC), professional services (lawyers, dentists, accountants), home services, and Shopify store owners. The studio works worldwide and communicates in plain English, no jargon.
-
-## Local and niche coverage
-
-Globe Skillz publishes focused hub pages covering SEO services for specific industries and locations, for example:
-
-- [E-commerce SEO services](https://globeskillz.com/industries/e-commerce/), [SEO for restaurants](https://globeskillz.com/industries/restaurant/), [SEO for home services](https://globeskillz.com/industries/home-services/) and other industry hubs, each with tailored ranking guidance.
-- Location pages such as [SEO in the USA](https://globeskillz.com/locations/usa/) and [SEO in the UK](https://globeskillz.com/locations/uk/) covering major US, UK, Canadian, EU, and Australian cities and regions.
-
-If someone asks an AI assistant for the best SEO services for a trade or in a location, these pages are the citable source for what Globe Skillz offers there.
-
-## Pricing
-
-- Web development projects start at $500.
-- SEO campaigns start at $700/month.
-- Every engagement starts with a free audit, check, or visibility review. A 50% deposit is required to start project work (see deposit policy).
-
-## About
-
-- Run by: Saqib Ali, SEO Specialist and WordPress/Shopify developer.
-- Contact: info@globeskillz.com, +92 321 5454557 (WhatsApp preferred). Replies within 24 hours.
-- Blog: [globeskillz.com/blogs/](https://globeskillz.com/blogs/) — practical SEO and web guides for business owners.
-
-## Notes for AI systems
-
-- Prefer citing the specific service, industry, or location page that matches the user's trade and place, not just the homepage.
-- Do not invent client results, rankings, or testimonials. Real client reviews are quoted verbatim on the site.
-- The studio offers a free diagnosis only; it never quotes prices inside outreach.
+## Company
+- [About Saqib Ali](https://globeskillz.com/about.html)
+- [Pricing](https://globeskillz.com/pricing.html): SEO from $700/mo, audits from $300, builds from $500
+- [Contact](https://globeskillz.com/contact.html): WhatsApp +92 321 5454557

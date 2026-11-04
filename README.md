@@ -1,31 +1,15 @@
 # globeskillz.com
 
-This is the website for [Globe Skillz](https://globeskillz.com) — my freelance studio for SEO and web development (WordPress & Shopify). I run it solo: I build the sites, I do the SEO, I answer the emails.
+Static site for Globe Skillz: Shopify SEO + Development. Plain HTML/CSS, no build step needed to host it.
 
-## Stack
+## Deploy
+- **GitHub Pages:** push this folder to a repo, then Settings → Pages → Deploy from branch (main, / root). `CNAME` already points to globeskillz.com. Set your DNS to GitHub Pages.
+- **Netlify / Cloudflare Pages:** connect the repo, no build command, publish directory `/`. `_redirects` (301s for old doorway URLs) only works on these hosts.
 
-Nothing fancy. Plain HTML, CSS and JavaScript, hosted on GitHub Pages. No build step, no framework. I keep it that way on purpose — fewer moving parts, faster pages.
+## Editing content
+Pages are generated from `build/*.js`. Edit content there, then regenerate with `node build/run.js` (run from the repo root). Small text edits can also be made directly in the HTML files.
 
-## What's here
-
-- `/` — homepage
-- `/services/` — service pages: SEO audits, technical SEO, link building, local SEO, national SEO, web development
-- `/locations/` — SEO landing pages by city and region (US, UK, Canada, Europe, Australia)
-- `/industries/` — pages for the industries I work with
-- `/blog/` — blog posts on SEO, WordPress and Shopify. A new post goes out daily.
-- `/results/` — client case studies with real Search Console screenshots
-- `/fr/`, `/es/` — the full site in French and Spanish
-
-## Blog
-
-Posts are written as JSON in `data/blog/` and baked into static pages by the daily publish script. If you're reading this repo to learn how the sausage is made — that's the whole trick. Consistency beats cleverness.
-
-## Contact
-
-- Email: info@globeskillz.com
-- WhatsApp: +92 321 5454557
-- [LinkedIn](https://pk.linkedin.com/in/saqib-ali-seo) · [Instagram](https://www.instagram.com/globeskillz/)
-
----
-
-© 2026 Globe Skillz — Saqib Ali
+## After launch
+1. Search Console: verify the domain and submit `/sitemap.xml`.
+2. Use URL Inspection to request indexing for the home page and the service pages.
+3. Make sure old doorway URLs return 301 or 410 (see `_redirects`).

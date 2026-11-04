@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shopify Duplicate Content: Fix Product URLs | Globe Skillz</title>
+<meta name="description" content="Why Shopify creates several URLs for every product, what that does to crawl budget and rankings, and the exact Liquid change that fixes it.">
+<link rel="canonical" href="https://globeskillz.com/blog/shopify-duplicate-content-collection-product-urls.html">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<link rel="alternate" hreflang="x-default" href="https://globeskillz.com/blog/shopify-duplicate-content-collection-product-urls.html">
+<link rel="alternate" hreflang="en" href="https://globeskillz.com/blog/shopify-duplicate-content-collection-product-urls.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Globe Skillz">
+<meta property="og:title" content="Shopify Duplicate Content: Fix Product URLs | Globe Skillz">
+<meta property="og:description" content="Why Shopify creates several URLs for every product, what that does to crawl budget and rankings, and the exact Liquid change that fixes it.">
+<meta property="og:url" content="https://globeskillz.com/blog/shopify-duplicate-content-collection-product-urls.html">
+<meta property="og:image" content="https://globeskillz.com/assets/brand/og-default.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" type="image/png" href="../assets/brand/favicon.png">
+<link rel="apple-touch-icon" href="../assets/brand/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["Organization","ProfessionalService"],"@id":"https://globeskillz.com/#org","name":"Globe Skillz","alternateName":"GlobeSkillz","url":"https://globeskillz.com/","logo":{"@type":"ImageObject","url":"https://globeskillz.com/assets/brand/logo.jpg","width":813,"height":813},"image":"https://globeskillz.com/assets/brand/og-default.jpg","description":"Shopify SEO and Shopify development studio led by Saqib Ali. Technical SEO, content, links and international SEO for Shopify stores, backed by development support. Serving merchants worldwide since 2019.","foundingDate":"2019","founder":{"@id":"https://globeskillz.com/#saqib"},"areaServed":{"@type":"Place","name":"Worldwide"},"priceRange":"$$","knowsAbout":["Shopify SEO","Technical SEO","Shopify Liquid","Shopify theme development","Core Web Vitals","International SEO","hreflang","Shopify Markets","Structured data","Link building","Generative engine optimization"],"contactPoint":[{"@type":"ContactPoint","contactType":"sales","url":"https://wa.me/923215454557","availableLanguage":["English","Urdu"],"areaServed":"Worldwide"}],"sameAs":["https://www.fiverr.com/saqibali000786"]},{"@type":"WebSite","@id":"https://globeskillz.com/#website","url":"https://globeskillz.com/","name":"Globe Skillz","publisher":{"@id":"https://globeskillz.com/#org"},"inLanguage":"en"},{"@type":"WebPage","@id":"https://globeskillz.com/blog/shopify-duplicate-content-collection-product-urls.html#webpage","url":"https://globeskillz.com/blog/shopify-duplicate-content-collection-product-urls.html","name":"Shopify Duplicate Content: Fix Product URLs | Globe Skillz","description":"Why Shopify creates several URLs for every product, what that does to crawl budget and rankings, and the exact Liquid change that fixes it.","isPartOf":{"@id":"https://globeskillz.com/#website"},"inLanguage":"en","dateModified":"2026-11-04"},{"@type":"Person","@id":"https://globeskillz.com/#saqib","name":"Saqib Ali","jobTitle":"Shopify SEO Lead & Developer","worksFor":{"@id":"https://globeskillz.com/#org"},"image":"https://globeskillz.com/assets/brand/saqib-ali.jpg","url":"https://globeskillz.com/about.html","sameAs":["https://www.fiverr.com/saqibali000786"],"knowsAbout":["Shopify SEO","Technical SEO","Shopify development","Liquid","Core Web Vitals","International SEO"]},{"@type":"BlogPosting","@id":"https://globeskillz.com/blog/shopify-duplicate-content-collection-product-urls.html#article","headline":"Shopify Duplicate Content: Fixing /collections/*/products/* URLs","description":"Why Shopify creates several URLs for every product, what that does to crawl budget and rankings, and the exact Liquid change that fixes it.","datePublished":"2026-10-14","dateModified":"2026-11-04","author":{"@id":"https://globeskillz.com/#saqib"},"publisher":{"@id":"https://globeskillz.com/#org"},"mainEntityOfPage":"https://globeskillz.com/blog/shopify-duplicate-content-collection-product-urls.html","image":"https://globeskillz.com/assets/brand/og-default.jpg","inLanguage":"en","isPartOf":{"@id":"https://globeskillz.com/blog.html#blog"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://globeskillz.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://globeskillz.com/blog.html"},{"@type":"ListItem","position":3,"name":"Shopify Duplicate Content","item":"https://globeskillz.com/blog/shopify-duplicate-content-collection-product-urls.html"}]}]}</script>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="../index.html" aria-label="Globe Skillz home">
+        <img src="../assets/brand/logo-mark.jpg" alt="" width="38" height="38">
+        <span>Globe Skillz<small>Shopify SEO + Dev</small></span>
+      </a>
+      <ul class="nav-links">
+        <li class="has-mega"><button type="button" aria-expanded="false">Services</button>
+          <div class="mega">
+            <div><h4>Shopify SEO</h4><ul><li><a href="../services/shopify-seo.html">Shopify SEO Services<span>The full monthly program</span></a></li><li><a href="../services/shopify-seo-audit.html">Shopify SEO Audit<span>A prioritized fix list</span></a></li><li><a href="../services/shopify-technical-seo.html">Shopify Technical SEO<span>Crawl, index, schema, code</span></a></li><li><a href="../services/shopify-on-page-seo.html">Collection &amp; Product SEO<span>On-page optimization</span></a></li><li><a href="../services/shopify-content-seo.html">Shopify Content SEO<span>Guides that sell</span></a></li><li><a href="../services/shopify-link-building.html">Shopify Link Building<span>Authority that sticks</span></a></li></ul></div>
+            <div><h4>Shopify Development</h4><ul><li><a href="../services/shopify-development.html">Shopify Store Development<span>SEO-ready store builds</span></a></li><li><a href="../services/shopify-theme-customization.html">Theme Customization &amp; Liquid<span>Sections, features, fixes</span></a></li><li><a href="../services/shopify-speed-optimization.html">Shopify Speed Optimization<span>Core Web Vitals</span></a></li><li><a href="../services/shopify-migration.html">Migration to Shopify (SEO-Safe)<span>Keep your rankings</span></a></li><li><a href="../services/shopify-maintenance-support.html">Shopify Maintenance &amp; Support<span>Your on-call developer</span></a></li></ul></div>
+            <div class="all"><a href="../services.html">All 13 services →</a></div>
+          </div>
+        </li>
+        <li><a href="../results.html">SEO Results</a></li>
+        <li><a href="../work.html">Work</a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../blog.html" aria-current="page">Blog</a></li>
+      </ul>
+      <a class="btn btn-primary nav-cta" href="../contact.html">Get a free store review</a>
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </nav>
+    <div class="mobile-nav">
+      <h4>Shopify SEO</h4><a href="../services/shopify-seo.html">Shopify SEO Services</a><a href="../services/shopify-seo-audit.html">Shopify SEO Audit</a><a href="../services/shopify-technical-seo.html">Shopify Technical SEO</a><a href="../services/shopify-on-page-seo.html">Collection &amp; Product SEO</a><a href="../services/shopify-content-seo.html">Shopify Content SEO</a><a href="../services/shopify-link-building.html">Shopify Link Building</a><a href="../services/shopify-international-seo.html">International Shopify SEO</a><a href="../services/shopify-ai-search-optimization.html">AI Search Optimization</a>
+      <h4>Shopify Development</h4><a href="../services/shopify-development.html">Shopify Store Development</a><a href="../services/shopify-theme-customization.html">Theme Customization &amp; Liquid</a><a href="../services/shopify-speed-optimization.html">Shopify Speed Optimization</a><a href="../services/shopify-migration.html">Migration to Shopify (SEO-Safe)</a><a href="../services/shopify-maintenance-support.html">Shopify Maintenance &amp; Support</a>
+      <h4>Globe Skillz</h4>
+      <a href="../results.html">SEO Results</a><a href="../work.html">Work</a><a href="../pricing.html">Pricing</a><a href="../about.html">About</a><a href="../blog.html">Blog</a><a href="../faq.html">FAQ</a>
+      <a class="btn btn-primary" href="../contact.html">Get a free store review</a>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-hero"><div class="container narrow" style="max-width:900px"><ol class="crumbs"><li><a href="../index.html">Home</a></li><li><a href="../blog.html">Blog</a></li><li aria-current="page">Shopify Duplicate Content</li></ol>
+  <span class="eyebrow">Guide · Shopify Technical SEO</span><h1>Shopify Duplicate Content: Fixing /collections/*/products/* URLs</h1><p class="lead">Each product on Shopify can be reached at more than one URL. Here’s why that matters, and the one-line Liquid change that fixes it.</p>
+  <div class="article-meta"><img src="../assets/brand/saqib-ali.jpg" alt="" width="36" height="36"><span>By <a href="../about.html" style="color:#fff">Saqib Ali</a></span><span>Published 2026-10-14</span><span>8 min read</span></div>
+</div></section>
+<section class="section"><div class="container"><div class="split" style="grid-template-columns:240px 1fr">
+  <aside class="sticky"><nav class="toc" aria-label="Contents"><h4>Contents</h4><ol><li><a href="#s1">The problem</a></li><li><a href="#s2">Why canonicals aren’t enough</a></li><li><a href="#s3">The fix in Liquid</a></li><li><a href="#s4">How to check it worked</a></li></ol></nav>
+    <a class="related" style="display:block;margin-top:16px" href="../services/shopify-technical-seo.html"><span style="display:block;padding:18px;border:1px solid var(--line);border-radius:12px;font-weight:650;color:var(--ink)">Related service<span style="display:block;font-weight:400;color:var(--muted);font-size:.88rem;margin-top:4px">Shopify Technical SEO →</span></span></a></aside>
+  <article class="prose" style="max-width:760px"><h2 id="s1">The problem</h2>
+<p>On Shopify, a product called “Linen Shirt” is available at <code>/products/linen-shirt</code>. It’s also available at <code>/collections/shirts/products/linen-shirt</code>, <code>/collections/sale/products/linen-shirt</code>, and once for every other collection that includes it.</p>
+<p>A product that sits in eight collections ends up with nine URLs. If your theme’s product cards link to the collection-aware versions (and many themes do), Google discovers all nine.</p>
+<h2 id="s2">Why canonicals aren’t enough</h2>
+<p>Shopify adds a canonical tag that points every version to <code>/products/linen-shirt</code>, which helps. But a canonical tag is a hint, not a directive. Google still has to crawl each copy to see the tag. When your internal links consistently point to a non-canonical URL, you’re sending mixed signals.</p>
+<p>On large catalogs this shows up in Search Console as a growing number of “Alternate page with proper canonical tag” and “Duplicate without user-selected canonical” entries, and as crawl budget spent on copies instead of new products.</p>
+<h2 id="s3">The fix in Liquid</h2>
+<p>Find the product card snippet. It’s usually <code>card-product.liquid</code>, <code>product-card.liquid</code> or <code>product-grid-item.liquid</code>. Look for:</p>
+<pre>{{ product.url | within: collection }}</pre>
+<p>and change it to:</p>
+<pre>{{ product.url }}</pre>
+<p>That’s the whole fix. Products still appear in your collections as before. Only the link destination changes, so every internal link now points to the canonical URL.</p>
+<div class="callout"><b>Breadcrumbs:</b> some themes use the collection-aware URL to build breadcrumbs. If yours does, add a fallback that uses the product’s first collection, so breadcrumbs keep working.</div>
+<h2 id="s4">How to check it worked</h2>
+<ol><li>Crawl the store with Screaming Frog and filter internal links containing <code>/collections/</code> and <code>/products/</code>. The count should be close to zero.</li>
+<li>In Search Console, watch the “Duplicate” reasons under Pages. They should level off and then fall over 4–8 weeks.</li>
+<li>Check that breadcrumbs and “back to collection” links still work.</li></ol>
+<p>This is one of the first fixes in almost every <a href="../services/shopify-technical-seo.html">technical SEO sprint</a> I run on a Shopify store.</p>
+    <div class="author-box"><img src="../assets/brand/saqib-ali.jpg" alt="Saqib Ali" width="72" height="72" loading="lazy"><p><b style="color:var(--ink)">Saqib Ali</b> runs Globe Skillz, a Shopify SEO studio with development built in. Since 2019 he has worked on 180+ projects for merchants in 42 countries. <a href="../about.html">More about Saqib →</a></p></div>
+  </article>
+</div></div></section>
+
+<section class="section-sm"><div class="container">
+  <div class="cta">
+    <div><h2>Want to know what’s holding your store back?</h2><p>Send me your store URL. I’ll record a short review of the biggest SEO and technical issues I can find — free, and yours to keep whether we work together or not.</p></div>
+    <div class="btn-row"><a class="btn btn-light" href="../contact.html">Request a free review <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a class="btn btn-outline-light" href="https://wa.me/923215454557" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.2.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1.1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg> WhatsApp</a></div>
+  </div>
+</div></section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="../index.html"><img src="../assets/brand/logo-mark.jpg" alt="" width="38" height="38"><span>Globe Skillz<small>Shopify SEO + Dev</small></span></a>
+        <p class="foot-about">A Shopify SEO studio with development built in. Led by Saqib Ali. Working with merchants worldwide since 2019.</p>
+        <a class="btn btn-green" href="https://wa.me/923215454557" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.2.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1.1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg> WhatsApp Saqib</a>
+      </div>
+      <div><h4>Shopify SEO</h4><ul><li><a href="../services/shopify-seo.html">Shopify SEO Services</a></li><li><a href="../services/shopify-seo-audit.html">Shopify SEO Audit</a></li><li><a href="../services/shopify-technical-seo.html">Shopify Technical SEO</a></li><li><a href="../services/shopify-on-page-seo.html">Collection &amp; Product SEO</a></li><li><a href="../services/shopify-content-seo.html">Shopify Content SEO</a></li><li><a href="../services/shopify-link-building.html">Shopify Link Building</a></li><li><a href="../services/shopify-international-seo.html">International Shopify SEO</a></li><li><a href="../services/shopify-ai-search-optimization.html">AI Search Optimization</a></li></ul></div>
+      <div><h4>Development</h4><ul><li><a href="../services/shopify-development.html">Shopify Store Development</a></li><li><a href="../services/shopify-theme-customization.html">Theme Customization &amp; Liquid</a></li><li><a href="../services/shopify-speed-optimization.html">Shopify Speed Optimization</a></li><li><a href="../services/shopify-migration.html">Migration to Shopify (SEO-Safe)</a></li><li><a href="../services/shopify-maintenance-support.html">Shopify Maintenance &amp; Support</a></li></ul></div>
+      <div><h4>Company</h4><ul>
+        <li><a href="../about.html">About Saqib</a></li>
+        <li><a href="../results.html">SEO results</a></li>
+        <li><a href="../work.html">Store builds</a></li>
+        <li><a href="../case-studies/booster-brand-international-shopify-seo.html">Case studies</a></li>
+        <li><a href="../reviews.html">Client reviews</a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul></div>
+    </div>
+    <div class="foot-mark" aria-hidden="true">Globe Skillz</div>
+    <div class="foot-bottom">
+      <span>© 2026 Globe Skillz. Shopify is a trademark of Shopify Inc. Globe Skillz is an independent studio.</span>
+      <span><a href="../privacy.html">Privacy</a> · <a href="../terms.html">Terms</a> · <a href="../sitemap.xml">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/923215454557" target="_blank" rel="noopener" aria-label="Chat with Saqib on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.2.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1.1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg></a>
+<div class="vmodal" role="dialog" aria-label="Case study video"><button type="button" aria-label="Close video">×</button><video controls playsinline preload="none"></video></div>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>
