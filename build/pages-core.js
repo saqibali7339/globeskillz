@@ -15,13 +15,17 @@ G.renderHome = () => {
   const graph = [ G.schema.page('WebPage', path, title, desc, { about:{ '@id': G.SITE.url+'/#org' } }), G.schema.person(), G.schema.faq(homeFaqs) ];
   G.page({ path, title, desc, graph, priority:1.0, body:(R)=>`
 <section class="hero"><div class="container">
-  <div class="hero-grid solo">
+  <div class="hero-grid">
     <div class="hero-copy">
       <span class="eyebrow">Shopify SEO + development · worldwide</span>
-      <h1>Shopify SEO that <em>ships</em> in your theme.</h1>
+      <h1>Get More <em>Organic Traffic &amp; Orders</em> with Expert Shopify SEO</h1>
       <p class="lead">I’m Saqib Ali. I help Shopify stores rank on Google and in AI search, and I make the code changes SEO needs in your theme myself. One person handles the strategy and the code.</p>
       <div class="btn-row"><a class="btn btn-primary" href="${R}contact.html">Get a free store review ${G.icon.arrow}</a><a class="btn btn-ghost" href="${R}results.html">See real GSC results</a></div>
       <ul class="hero-ticks"><li>Shopify-only since 2019</li><li>White-hat, update-safe</li><li>US · UK · EU · Gulf · Pakistan</li></ul>
+    </div>
+    <div class="hero-lottie" aria-hidden="true">
+      <script type="module" src="https://cdn.jsdelivr.net/npm/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"></script>
+      <dotlottie-player src="${R}assets/lottie/shopify-push-notifications.lottie" autoplay loop style="width:100%;height:100%;display:block"></dotlottie-player>
     </div>
   </div>
 </div></section>
