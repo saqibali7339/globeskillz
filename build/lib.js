@@ -86,7 +86,7 @@ G.header = (R, path) => {
 <header class="site-header">
   <div class="container">
     <nav class="nav" aria-label="Main">
-      <a class="brand" href="${R}index.html" aria-label="Globe Skillz home">
+      <a class="brand" href="${R === '' ? '/' : R}" aria-label="Globe Skillz home">
         <img src="${R}assets/brand/logo-mark.png" alt="" width="38" height="38">
         <span>Globe Skillz<small>Shopify SEO + Dev</small></span>
       </a>
@@ -125,7 +125,7 @@ G.footer = (R) => {
   <div class="container">
     <div class="foot-grid">
       <div>
-        <a class="brand" href="${R}index.html"><img src="${R}assets/brand/logo-mark-white.png" alt="" width="38" height="38"><span>Globe Skillz<small>Shopify SEO + Dev</small></span></a>
+        <a class="brand" href="${R === '' ? '/' : R}"><img src="${R}assets/brand/logo-mark-white.png" alt="" width="38" height="38"><span>Globe Skillz<small>Shopify SEO + Dev</small></span></a>
         <p class="foot-about">A Shopify SEO studio with development built in. Led by Saqib Ali. Working with merchants worldwide since 2019.</p>
         <a class="btn btn-green" href="${S.wa}" rel="noopener" target="_blank">${G.icon.wa} WhatsApp Saqib</a>
       </div>
@@ -162,7 +162,7 @@ G.page = ({ path, title, desc, body, graph = [], crumbs, ogType = 'website', noi
   const og = image ? G.abs(image) : S.url + '/assets/brand/og-default.jpg';
   const fullGraph = [G.schema.org(), G.schema.website(), ...graph];
   if (crumbs) fullGraph.push(G.schema.crumbs(crumbs));
-  const crumbHtml = crumbs ? `<ol class="crumbs">${crumbs.map((c,i)=> i<crumbs.length-1 ? `<li><a href="${R}${c[1]}">${G.esc(c[0])}</a></li>` : `<li aria-current="page">${G.esc(c[0])}</li>`).join('')}</ol>` : '';
+  const crumbHtml = crumbs ? `<ol class="crumbs">${crumbs.map((c,i)=> i<crumbs.length-1 ? `<li><a href="${c[1] === 'index.html' ? (R === '' ? '/' : R) : R + c[1]}">${G.esc(c[0])}</a></li>` : `<li aria-current="page">${G.esc(c[0])}</li>`).join('')}</ol>` : '';
   const html = `<!doctype html>
 <html lang="en">
 <head>
