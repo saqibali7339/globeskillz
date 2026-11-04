@@ -145,7 +145,6 @@ G.footer = (R) => {
         <li><a href="${R}contact/">Contact</a></li>
       </ul></div>
     </div>
-    <div class="foot-mark" aria-hidden="true">Globe Skillz</div>
     <div class="foot-bottom">
       <span>© 2026 Globe Skillz. Shopify is a trademark of Shopify Inc. Globe Skillz is an independent studio.</span>
       <span><a href="${R}privacy/">Privacy</a> · <a href="${R}terms/">Terms</a> · <a href="${R}sitemap.xml">Sitemap</a></span>

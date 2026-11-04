@@ -436,8 +436,6 @@ aside .related>span{border:var(--b)!important;border-radius:0!important}
 .site-footer .brand{color:#fff}
 .site-footer .brand small{color:#9A9A9A}
 .foot-about{max-width:340px;margin:20px 0 24px}
-.site-footer > .container{container-type:inline-size}
-.foot-mark{font:900 clamp(3rem,13vw,11rem) var(--f);letter-spacing:-.06em;text-transform:uppercase;color:transparent;-webkit-text-stroke:1.5px #3a3a3a;line-height:.85;margin-top:64px;white-space:nowrap;overflow:hidden;user-select:none;font-size:12cqw}
 .foot-bottom{border-top:2px solid #333;margin-top:24px;padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font:500 .7rem var(--mono);text-transform:uppercase;letter-spacing:.05em}
 
 /* WhatsApp float */
