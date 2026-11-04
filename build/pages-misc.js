@@ -46,29 +46,28 @@ ${G.cta(R)}`});
 
 G.renderAbout = () => {
   const path='about.html';
-  const title='About Saqib Ali — Shopify SEO Developer | Globe Skillz';
-  const desc='Saqib Ali founded Globe Skillz in 2019. He’s a Shopify SEO specialist who also writes Liquid, with 180+ projects for merchants in 42 countries.';
+  const title='About Saqib Ali — SEO Specialist & Shopify Developer | Globe Skillz';
+  const desc='Saqib Ali is an SEO Specialist from Gojra, Punjab, Pakistan. He founded Globe Skillz, where he helps Shopify stores grow through organic search — 15+ businesses ranked #1.';
   const graph=[ G.schema.page('AboutPage',path,title,desc,{ mainEntity:{ '@id':G.SITE.url+'/#saqib' } }), G.schema.person() ];
   G.page({ path,title,desc,graph,priority:0.8,crumbs:[['Home','index.html'],['About',path]], ogType:'profile', body:(R,crumbHtml)=>`
 <section class="page-hero"><div class="container">${crumbHtml}
-  <span class="eyebrow">About</span><h1>Hi, I’m Saqib Ali. I do Shopify SEO, and I also write the code.</h1>
+  <span class="eyebrow">About</span><h1>Hi, I’m Saqib Ali — SEO Specialist and Shopify developer.</h1>
 </div></section>
 <section class="section"><div class="container">
   <div class="split">
     <div class="sticky"><div class="about-photo"><img src="${R}assets/brand/saqib-ali.jpg" alt="Portrait of Saqib Ali, founder of Globe Skillz" width="800" height="821"></div></div>
     <div class="prose">
-      <p class="lead" style="color:var(--ink)">I started Globe Skillz in 2019 as a freelance web studio. After seven years, 180+ projects and clients in 42 countries, I’ve narrowed it to the work I do best: helping Shopify stores grow through organic search.</p>
-      <h2>Why I changed focus</h2>
-      <p>The older Globe Skillz built WordPress and Shopify sites for any business, and it had pages targeting every city and industry. When Google’s updates started penalizing that kind of scaled, location-targeted content, my own site was hit. It was a useful lesson in what search engines now reward: real expertise, focus, and pages that exist because they’re useful.</p>
-      <p>So I rebuilt the studio around one platform and one goal. Every page on this site describes something I actually do, backed by client work you can check.</p>
+      <p class="lead" style="color:var(--ink)">I’m Saqib Ali, an SEO Specialist from Gojra, Punjab, Pakistan. SEO is my main craft — the work I’ve done for 5+ years and the niche I love — and my background is in WordPress and Shopify development. So far, I’ve helped 15+ businesses rank #1 on Google.</p>
+      <h2>Globe Skillz and me</h2>
+      <p>Globe Skillz is my own studio, and this website is my own work — not an agency’s. I founded it in 2019. Today it focuses on one niche: Shopify — SEO first, with development built in to support it.</p>
       <h2>How I work</h2>
       <ul><li><b>SEO first, with development built in.</b> I diagnose the problem and fix it in your theme myself.</li>
-      <li><b>White-hat only.</b> No PBNs and no doorway pages. These tactics hurt my own site, and I won’t use them on yours.</li>
+      <li><b>White-hat only.</b> No PBNs and no doorway pages.</li>
       <li><b>Your data, your accounts.</b> Reports come from your own Search Console, and everything I build belongs to you.</li>
       <li><b>Direct line.</b> You talk to me on WhatsApp, not to an account manager.</li></ul>
       <h2>Who I work with</h2>
-      <p>Shopify merchants worldwide, from new DTC brands to established catalogs selling in 20+ countries: fashion labels in Switzerland, supplements brands in the EU, e-bike and furniture makers, and retailers in Pakistan.</p>
-      <div class="stat-row"><div><b>180+</b><span>projects shipped</span></div><div><b>42</b><span>countries served</span></div><div><b>2019</b><span>working since</span></div></div>
+      <p>Shopify merchants worldwide, from new DTC brands to established catalogs.</p>
+      <div class="stat-row"><div><b>15+</b><span>businesses ranked #1</span></div><div><b>5+</b><span>years in SEO</span></div><div><b>2019</b><span>Globe Skillz founded</span></div></div>
       <h2>Platforms & tools</h2>
       <div class="platforms">${['Shopify','Liquid','Online Store 2.0','Shopify Markets','Hydrogen (review)','Google Search Console','GA4','Screaming Frog','Ahrefs','Semrush','PageSpeed / CrUX','Schema.org','Figma'].map(t=>`<span class="chip">${t}</span>`).join('')}</div>
       <p style="margin-top:2em"><a class="btn btn-primary" href="${R}contact.html">Work with me ${G.icon.arrow}</a></p>

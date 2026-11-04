@@ -130,7 +130,7 @@ ul,ol{padding-left:1.2em}
 .hero-ticks li+li{border-left:var(--b)}
 .hero-ticks li::before{content:"✓";color:var(--green);font-weight:800}
 .hero-figure{position:relative;align-self:end;border:var(--b);border-bottom:0;background:#000}
-.hero-lottie{align-self:center;border:var(--b);background:#fff;width:100%;aspect-ratio:532/975;max-height:680px;overflow:hidden}
+.hero-lottie{align-self:center;background:#fff;width:100%;aspect-ratio:532/975;max-height:680px;overflow:hidden}
 .hero-lottie:empty{display:none}
 .hero-lottie dotlottie-player{width:100%;height:100%;display:block}
 .hero-figure img{width:100%;display:block}
