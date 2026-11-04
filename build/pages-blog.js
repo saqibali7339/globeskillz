@@ -5,7 +5,7 @@ G.posts = [
     "date": "2026-10-16",
     "read": "5 min",
     "title": "What Is Bounce Rate on Shopify (And Why It Hurts Your Sales)",
-    "metaTitle": "What Is Bounce Rate on Shopify (And Why It Hurts Your Sales) | Globe Skillz",
+    "metaTitle": "What Is Bounce Rate on Shopify? | Globe Skillz",
     "desc": "Bounce rate on Shopify explained in plain English: what it means, what a healthy rate looks like, and practical ways to keep visitors from leaving.",
     "excerpt": "Bounce rate on Shopify tells you how many visitors leave your store without doing anything. Here is what it means, what a good rate looks like, and how to lower it.",
     "service": "shopify-seo-audit",
@@ -62,7 +62,7 @@ G.posts = [
     "date": "2026-10-14",
     "read": "6 min",
     "title": "How to Add a Product on Shopify (Step by Step)",
-    "metaTitle": "How to Add a Product on Shopify (Step by Step) | Globe Skillz",
+    "metaTitle": "How to Add a Product on Shopify | Globe Skillz",
     "desc": "Learn how to add a product on Shopify step by step: photos, pricing, inventory, variants, and the search listing that gets it found.",
     "excerpt": "Adding a product to Shopify takes a few minutes once you know where everything goes. Here is the full walkthrough, from title to publish.",
     "service": "shopify-development",
@@ -83,7 +83,7 @@ G.posts = [
     "date": "2026-10-13",
     "read": "6 min",
     "title": "How to Connect Shopify to AliExpress for Dropshipping",
-    "metaTitle": "How to Connect Shopify to AliExpress for Dropshipping | Globe Skillz",
+    "metaTitle": "How to Connect Shopify to AliExpress | Globe Skillz",
     "desc": "Want to sell AliExpress products on your Shopify store? Here is how to connect the two, import products, and start dropshipping the right way.",
     "excerpt": "Want to sell AliExpress products on your Shopify store? Here is how to connect the two, import products, and start dropshipping the right way.",
     "service": "shopify-development",
@@ -103,7 +103,7 @@ G.posts = [
     "date": "2026-10-12",
     "read": "4 min",
     "title": "What Is a Shopify Session? A Simple Guide for Store Owners",
-    "metaTitle": "What Is a Shopify Session? A Simple Guide for Store Owners | Globe Skillz",
+    "metaTitle": "What Is a Shopify Session? | Globe Skillz",
     "desc": "What is a Shopify session? A simple explanation of how Shopify counts store visits and how to use session data to improve your store.",
     "excerpt": "A Shopify session is one visit to your store by one shopper. Here is what it means, how Shopify counts it, and how to use it to grow sales.",
     "service": "shopify-seo-audit",
@@ -122,7 +122,7 @@ G.posts = [
     "date": "2026-10-11",
     "read": "6 min",
     "title": "Open Source Ecommerce vs Shopify: Which Is Right for You?",
-    "metaTitle": "Open Source Ecommerce vs Shopify: Which Is Right for You? | Globe Skillz",
+    "metaTitle": "Open Source Ecommerce vs Shopify | Globe Skillz",
     "desc": "Open source ecommerce vs Shopify compared for business owners: costs, control, maintenance, and SEO. Plain advice on which platform fits your store.",
     "excerpt": "Shopify or an open source store like WooCommerce? A plain-English breakdown of cost, control, and upkeep so you can pick with confidence.",
     "service": "shopify-migration",
@@ -160,7 +160,7 @@ G.posts = [
     "date": "2026-09-27",
     "read": "6 min",
     "title": "What a Shopify SEO Expert Actually Does for Your Store",
-    "metaTitle": "What a Shopify SEO Expert Actually Does for Your Store | Globe Skillz",
+    "metaTitle": "What a Shopify SEO Expert Does | Globe Skillz",
     "desc": "What does a Shopify SEO expert do? A plain-English guide for store owners: technical fixes, product pages, collections, and how to hire the right expert.",
     "excerpt": "A Shopify SEO expert makes your store show up when buyers search for what you sell. Here is what the work really involves, what it should fix, and how to hire the right one.",
     "service": "shopify-seo",
@@ -181,7 +181,7 @@ G.posts = [
     "date": "2026-09-12",
     "read": "9 min",
     "title": "Hit by a Google Update? Thin Pages, Doorway Pages and How to Recover",
-    "metaTitle": "Google Update Recovery: Thin & Doorway Pages | Globe Skillz",
+    "metaTitle": "Google Update Recovery for Shopify | Globe Skillz",
     "desc": "What Google’s core and spam updates penalize, how to find thin and doorway pages on your store, and a recovery plan, from first-hand experience.",
     "excerpt": "My own site was hit for having too many location pages. Here’s what I learned and the recovery plan I now use with stores.",
     "service": "shopify-seo-audit",
@@ -207,12 +207,25 @@ G.renderBlog = () => {
 <section class="section"><div class="container"><div class="grid g3">${G.posts.map(p=>`<a class="post-card" href="${R}blog/${p.slug}.html"><span class="meta">${new Date(p.date).toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'})} · ${p.read}</span><h3>${G.esc(p.title)}</h3><p>${G.esc(p.excerpt)}</p><span class="more" style="color:var(--blue-ink);font-weight:650;font-size:.92rem">Read the guide →</span></a>`).join('')}</div></div></section>
 ${G.cta(R)}`});
 
+const faqFromBody = (body) => {
+  const i = body.indexOf('Frequently asked questions</h2>');
+  if (i < 0) return [];
+  const seg = body.slice(i);
+  const out = [];
+  const re = /<h3>([^<]*)<\/h3>\s*<p>([\s\S]*?)<\/p>/g;
+  let m;
+  const unesc = (s) => s.replace(/&amp;/g, '&').replace(/&#x27;/g, "'").replace(/&quot;/g, '"');
+  while ((m = re.exec(seg))) out.push({ q: unesc(m[1]), a: m[2] });
+  return out;
+};
   G.posts.forEach(p => {
     const ppath='blog/'+p.slug+'.html';
     const svc=G.svc(p.service);
+    const bfaqs = faqFromBody(p.body);
     G.page({ path:ppath, title:p.metaTitle, desc:p.desc, ogType:'article', priority:0.6,
       crumbs:[['Home','index.html'],['Blog','blog.html'],[p.title.replace(/:.*/,''),ppath]],
       graph:[ G.schema.page('WebPage',ppath,p.metaTitle,p.desc), G.schema.person(),
+        ...(bfaqs.length ? [G.schema.faq(bfaqs)] : []),
         { '@type':'BlogPosting', '@id':G.abs(ppath)+'#article', headline:p.title, description:p.desc, datePublished:p.date, dateModified:G.SITE.updated, author:{ '@id':G.SITE.url+'/#saqib' }, publisher:{ '@id':G.SITE.url+'/#org' }, mainEntityOfPage:G.abs(ppath), image:G.SITE.url+'/assets/brand/og-default.jpg', inLanguage:'en', isPartOf:{ '@id':G.abs('blog.html')+'#blog' } } ],
       body:(R,crumbHtml)=>`
 <section class="page-hero"><div class="container narrow" style="max-width:900px">${crumbHtml}

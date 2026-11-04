@@ -3,13 +3,13 @@ const W = G.SITE.wa;
 
 G.renderHome = () => {
   const path = 'index.html';
-  const title = 'Globe Skillz | Shopify SEO & Development Services, Worldwide';
+  const title = 'Shopify SEO & Development Services | Globe Skillz';
   const desc = 'Shopify SEO with development built in: technical SEO, collection pages, content and links for stores worldwide. 9.8M+ client impressions. Free store review.';
   const seo = G.services.filter(s=>s.pillar==='seo'), dev = G.services.filter(s=>s.pillar==='dev');
   const homeFaqs = [
     {q:'What does Globe Skillz do?',a:'Globe Skillz is a Shopify SEO studio with development built in. I help Shopify stores rank higher on Google and in AI search, and I make the theme changes that SEO needs myself.'},
     {q:'Do you work with stores in my country?',a:'Yes. I work with Shopify merchants worldwide: the US, UK, EU, Middle East, Australia, Pakistan and elsewhere. Work is remote, with an agreed overlap window for your timezone.'},
-    {q:'How much does Shopify SEO cost?',a:'Monthly Shopify SEO starts at $700/mo. One-time audits start at $300 and store builds at $500. See the pricing page for details.'},
+    {q:'How much does Shopify SEO cost?',a:'Monthly Shopify SEO starts at $500/mo. One-time audits start at $200 and store builds at $400. See the pricing page for details.'},
     {q:'Why Shopify only?',a:'Working on one platform means I know its quirks, like duplicate product paths, tag pages, Markets and app bloat, and can fix them quickly. Every client benefits from that.'},
   ];
   const graph = [ G.schema.page('WebPage', path, title, desc, { about:{ '@id': G.SITE.url+'/#org' } }), G.schema.person(), G.schema.faq(homeFaqs) ];
@@ -31,9 +31,9 @@ G.renderHome = () => {
 <section class="section"><div class="container">
   <div class="sec-head center"><span class="eyebrow">Services</span><h2>SEO is the main work. Development is there to support it.</h2><p class="lead">Every service has one goal: more revenue from organic search for Shopify merchants.</p></div>
   <div class="pillar-split">
-    <div class="pillar"><div class="pillar-head"><div><span class="eyebrow">01 · Shopify SEO</span><h3 style="font-size:1.6rem;margin:0">Rank and get found</h3></div><div class="price">from<b>$700/mo</b></div></div>
+    <div class="pillar"><div class="pillar-head"><div><span class="eyebrow">01 · Shopify SEO</span><h3 style="font-size:1.6rem;margin:0">Rank and get found</h3></div><div class="price">from<b>$500/mo</b></div></div>
       <ul class="pillar-list">${seo.map(s=>`<li><a href="${R}services/${s.slug}.html"><b>${G.esc(s.short)}</b><span>${G.esc(s.navNote)}</span></a></li>`).join('')}</ul></div>
-    <div class="pillar"><div class="pillar-head"><div><span class="eyebrow">02 · Shopify Development</span><h3 style="font-size:1.6rem;margin:0">Build it to rank</h3></div><div class="price">from<b>$500</b></div></div>
+    <div class="pillar"><div class="pillar-head"><div><span class="eyebrow">02 · Shopify Development</span><h3 style="font-size:1.6rem;margin:0">Build it to rank</h3></div><div class="price">from<b>$400</b></div></div>
       <ul class="pillar-list">${dev.map(s=>`<li><a href="${R}services/${s.slug}.html"><b>${G.esc(s.short)}</b><span>${G.esc(s.navNote)}</span></a></li>`).join('')}</ul>
       <div class="callout" style="margin:18px 0 0"><b>Why both?</b> SEO recommendations only help once they’re live. Because I handle the development too, fixes go out the same week.</div></div>
   </div>
@@ -94,7 +94,7 @@ ${G.cta(R)}`});
 
 G.renderResults = () => {
   const path='results.html';
-  const title='Shopify SEO Results & Case Studies (Real GSC Data) | Globe Skillz';
+  const title='Shopify SEO Results & Case Studies | Globe Skillz';
   const desc='Nine Shopify and e-commerce SEO results with unedited Google Search Console screenshots: 195K+ clicks and 9.8M+ impressions in three months.';
   const graph=[ G.schema.page('CollectionPage',path,title,desc),
     { '@type':'ItemList', name:'SEO case results', itemListElement: G.caseOrder.map((k,i)=>({ '@type':'ListItem', position:i+1, name:G.cases[k].title })) },
@@ -119,7 +119,7 @@ ${G.cta(R,'Want results like these for your store?')}`});
 
 G.renderWork = () => {
   const path='work.html';
-  const title='Shopify Store Design & Development Portfolio | Globe Skillz';
+  const title='Shopify Store Design Portfolio | Globe Skillz';
   const desc='Shopify and e-commerce sites designed and built by Globe Skillz: fashion, supplements, e-bikes, furniture, home & garden and multi-market brands.';
   const keys=Object.keys(G.work);
   const graph=[ G.schema.page('CollectionPage',path,title,desc),
@@ -145,7 +145,7 @@ ${G.cta(R,'Planning a new Shopify store?','Tell me what you sell and where. I’
 G.renderCaseStudies = () => {
   // 1. Booster brand
   let path='case-studies/booster-brand-international-shopify-seo.html';
-  let title='International Shopify SEO Case Study: 8 Markets | Globe Skillz';
+  let title='Shopify SEO Case Study: 8 Markets | Globe Skillz';
   let desc='How a kids’ travel brand launched in 8 markets on Shopify, then 20+ countries, reaching 12.7K monthly organic visits (+17%) and 3.4K keywords.';
   G.page({ path,title,desc,priority:0.8, ogType:'article', image:'assets/projects/confidential-booster-brand-traffic.webp',
     crumbs:[['Home','index.html'],['Work','work.html'],['Booster brand case study',path]],

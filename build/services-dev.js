@@ -2,12 +2,12 @@
 G.services.push(
 {
   slug:'shopify-development', pillar:'dev', hub:true, short:'Shopify Store Development', navNote:'SEO-ready store builds',
-  serviceType:'Shopify store development', price:500, unit:null, priceLabel:'From $500',
+  serviceType:'Shopify store development', price:400, unit:null, priceLabel:'From $400',
   title:'Shopify Store Development, Built SEO-Ready | Globe Skillz',
   desc:'Shopify store design and development with SEO built in from the start: clean Liquid, fast templates, correct schema and a site structure planned around search.',
   h1:'Shopify store development, with the SEO built in from the start',
   lead:'Most stores get built first and handed to an SEO later. I plan the site structure, URLs and schema before the first line of Liquid, so the store is ready to rank on launch day.',
-  facts:[['Starts at','$500 (5–8 templates)'],['Timeline','2–4 weeks typical'],['Design','Figma preview first'],['Includes','On-page SEO baseline'],['Handover','Full ownership, day one']],
+  facts:[['Starts at','$400 (5–8 templates)'],['Timeline','2–4 weeks typical'],['Design','Figma preview first'],['Includes','On-page SEO baseline'],['Handover','Full ownership, day one']],
   signals:['You’re launching a new brand on Shopify','Your current theme is slow and hard to edit','The store looks generic next to your competitors','You’re planning a rebrand and want to keep your rankings','Multiple markets are coming soon','You want a developer who also understands SEO'],
   included:[
     ['Search-led sitemap','The collection structure and navigation are planned from keyword research, so every important search has a page to land on.'],
@@ -27,7 +27,7 @@ G.services.push(
 <p>Fashion labels in Switzerland, supplements brands in the EU, e-bike brands, furniture makers, and a kids’ travel brand selling in 20+ countries. <a href="../work.html">See the store builds →</a></p>`,
   proof:'work',
   faqs:[
-    {q:'How much does a Shopify store build cost?',a:'Builds start at $500 for a theme-based store with 5–8 customized templates. Custom themes, complex catalogs and multi-market setups are quoted after a discovery call.'},
+    {q:'How much does a Shopify store build cost?',a:'Builds start at $400 for a theme-based store with 5–8 customized templates. Custom themes, complex catalogs and multi-market setups are quoted after a discovery call.'},
     {q:'Do you design from scratch or customize a theme?',a:'Either. For most stores a well-chosen premium theme with custom sections is the fastest and most cost-effective option. Fully custom themes are best when your brand or catalog needs them.'},
     {q:'Will I be able to edit the store myself?',a:'Yes. Everything is built with Online Store 2.0 sections and blocks, and you get a short video guide for your team.'},
     {q:'Do you build on platforms other than Shopify?',a:'My focus is Shopify. I’ve built on WooCommerce and WordPress in the past, but new development work is Shopify-only, so every build gets my full platform expertise.'},
@@ -36,12 +36,12 @@ G.services.push(
 },
 {
   slug:'shopify-theme-customization', pillar:'dev', short:'Theme Customization & Liquid', navNote:'Sections, features, fixes',
-  serviceType:'Shopify theme development', price:50, unit:'HUR', priceLabel:'From $50/hr or fixed quote',
-  title:'Shopify Theme Customization & Liquid Development | Globe Skillz',
+  serviceType:'Shopify theme development', price:35, unit:'HUR', priceLabel:'From $35/hr or fixed quote',
+  title:'Shopify Theme Customization & Liquid | Globe Skillz',
   desc:'Custom Shopify sections, Liquid development, theme bug fixes and feature builds. Clean code that won’t hurt speed or SEO.',
   h1:'Shopify theme customization and Liquid development',
   lead:'Custom sections, product page features, CSS bugs and odd layouts. I write clean Liquid that fits your theme without slowing down the store.',
-  facts:[['Format','Fixed quote or hourly'],['Hourly','From $50'],['Small fixes','Often same-day'],['Works on','Dawn & all OS 2.0 themes'],['Process','Duplicate theme, then publish']],
+  facts:[['Format','Fixed quote or hourly'],['Hourly','From $35'],['Small fixes','Often same-day'],['Works on','Dawn & all OS 2.0 themes'],['Process','Duplicate theme, then publish']],
   signals:['A layout bug your theme developer couldn’t fix','You need a section your theme doesn’t include','The product page needs bundles, size guides or custom options','An app is doing something a few lines of Liquid could do','The theme update wiped out your customizations','Mobile layout is broken on certain devices'],
   included:[
     ['Custom sections & blocks','Comparison tables, size guides, lookbooks, FAQ sections, and anything else your merchandising team needs, all editable in the theme editor.'],
@@ -67,12 +67,12 @@ G.services.push(
 },
 {
   slug:'shopify-speed-optimization', pillar:'dev', short:'Shopify Speed Optimization', navNote:'Core Web Vitals',
-  serviceType:'Website speed optimization', price:350, unit:null, priceLabel:'From $350, fixed scope',
-  title:'Shopify Speed Optimization & Core Web Vitals | Globe Skillz',
+  serviceType:'Website speed optimization', price:250, unit:null, priceLabel:'From $250, fixed scope',
+  title:'Shopify Speed Optimization | Globe Skillz',
   desc:'Make your Shopify store faster and pass Core Web Vitals: LCP, INP and CLS fixes, app script cleanup, image delivery and theme-level performance work.',
   h1:'Shopify speed optimization that passes Core Web Vitals',
   lead:'I make stores faster by fixing what slows them down: app scripts, oversized images, render-blocking code and layout shift. Speed scores improve as a result.',
-  facts:[['Format','Fixed-scope project'],['Starts at','$350'],['Turnaround','5–10 working days'],['Measured by','CrUX field data + lab'],['Covers','Home, collection, product, cart']],
+  facts:[['Format','Fixed-scope project'],['Starts at','$250'],['Turnaround','5–10 working days'],['Measured by','CrUX field data + lab'],['Covers','Home, collection, product, cart']],
   signals:['Search Console reports “Poor” or “Needs improvement” URLs','The mobile PageSpeed score is in the 20s or 30s','Product images load slowly or jump around','The store got slower as you added apps','Conversion rate is lower on mobile than on desktop','A speed app promised results and didn’t deliver them'],
   included:[
     ['LCP: hero & product images','Correctly sized, preloaded and modern-format images on the templates that matter most.'],
@@ -103,12 +103,12 @@ G.services.push(
 },
 {
   slug:'shopify-migration', pillar:'dev', short:'Migration to Shopify (SEO-Safe)', navNote:'Keep your rankings',
-  serviceType:'Ecommerce platform migration', price:800, unit:null, priceLabel:'From $800',
+  serviceType:'Ecommerce platform migration', price:600, unit:null, priceLabel:'From $600',
   title:'SEO-Safe Migration to Shopify | Globe Skillz',
   desc:'Move to Shopify from WooCommerce, Wix, Squarespace, BigCommerce or Magento without losing rankings: URL mapping, 301s, data migration, monitoring.',
   h1:'Move to Shopify without losing your Google rankings',
   lead:'A migration is the riskiest time for a store’s SEO. I map every URL that has rankings or links, redirect each one correctly, and monitor Search Console until traffic is back to where it was.',
-  facts:[['Starts at','$800'],['Timeline','3–6 weeks'],['From','WooCommerce, Wix, Squarespace, BigCommerce, Magento'],['Includes','URL map + 301s + monitoring'],['Monitoring','8 weeks post-launch']],
+  facts:[['Starts at','$600'],['Timeline','3–6 weeks'],['From','WooCommerce, Wix, Squarespace, BigCommerce, Magento'],['Includes','URL map + 301s + monitoring'],['Monitoring','8 weeks post-launch']],
   signals:['You’ve outgrown WooCommerce hosting and plugins','You’re moving from Wix or Squarespace to a proper commerce platform','A previous migration lost you traffic','Thousands of products and URLs to move','You want a redesign and a platform change at the same time','Your agency doesn’t mention redirects when you bring up the migration'],
   included:[
     ['URL inventory','Every URL with traffic, rankings or backlinks, pulled from Search Console, analytics, crawls and backlink data.'],
@@ -139,12 +139,12 @@ G.services.push(
 },
 {
   slug:'shopify-maintenance-support', pillar:'dev', short:'Shopify Maintenance & Support', navNote:'Your on-call developer',
-  serviceType:'Website maintenance and support', price:250, unit:'MON', priceLabel:'From $250/mo',
-  title:'Shopify Maintenance & Development Support Retainer | Globe Skillz',
+  serviceType:'Website maintenance and support', price:200, unit:'MON', priceLabel:'From $200/mo',
+  title:'Shopify Maintenance & Support | Globe Skillz',
   desc:'Monthly Shopify development support: bug fixes, small features, theme updates, app QA and SEO-safe changes from a developer you can reach on WhatsApp.',
   h1:'Shopify maintenance and development support',
   lead:'A developer you can message on WhatsApp. Bugs get fixed, small features get built, and each change is checked for its SEO impact before it goes live.',
-  facts:[['Format','Monthly block of hours'],['Starts at','$250 / month'],['Response','Within 1 business day'],['Channel','WhatsApp, email or Slack'],['Rollover','Unused hours roll 1 month']],
+  facts:[['Format','Monthly block of hours'],['Starts at','$200 / month'],['Response','Within 1 business day'],['Channel','WhatsApp, email or Slack'],['Rollover','Unused hours roll 1 month']],
   signals:['You keep posting small tasks on freelance marketplaces','Theme updates or new apps keep breaking things','Your marketing team waits weeks for simple page changes','No one is checking what new apps do to speed and SEO','Seasonal campaigns need landing pages quickly','You want the same developer every time'],
   included:[
     ['Bug fixes','Layout, cart, checkout extension and app conflicts, fixed at the root cause.'],

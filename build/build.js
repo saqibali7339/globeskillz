@@ -42,7 +42,7 @@ ${G.services.filter(s=>s.pillar==='dev').map(s=>`- [${s.short}](${G.abs('service
 
 ## Company
 - [About Saqib Ali](${G.abs('about.html')})
-- [Pricing](${G.abs('pricing.html')}): SEO from $700/mo, audits from $300, builds from $500
+- [Pricing](${G.abs('pricing.html')}): SEO from $500/mo, audits from $200, builds from $400
 - [Contact](${G.abs('contact.html')}): WhatsApp ${G.SITE.waDisplay}
 `;
 G.redirects = `# Netlify/Cloudflare Pages style _redirects — retire old doorway URLs (410 = gone for good)

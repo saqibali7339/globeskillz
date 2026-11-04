@@ -42,7 +42,7 @@ ul,ol{padding-left:1.2em}
 .site-header{position:sticky;top:0;z-index:50;background:var(--paper);border-bottom:var(--b)}
 .nav{display:flex;align-items:center;gap:28px;height:72px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);font-weight:900;letter-spacing:-.03em;font-size:1.2rem;text-transform:uppercase;flex-shrink:0}
-.brand img{width:40px;height:40px;border:var(--b)}
+.brand img{width:40px;height:40px;border:0}
 .brand small{display:block;font-family:var(--mono);font-size:.6rem;font-weight:500;color:var(--muted);letter-spacing:.08em;margin-top:2px}
 .nav-links{display:flex;align-items:center;gap:2px;margin:0;padding:0;list-style:none;margin-left:auto}
 .nav-links>li{position:relative}
@@ -432,9 +432,9 @@ aside .related>span{border:var(--b)!important;border-radius:0!important}
 .site-footer a:hover{color:#fff;text-decoration:underline;text-decoration-color:var(--blue)}
 .site-footer .brand{color:#fff}
 .site-footer .brand small{color:#9A9A9A}
-.site-footer .brand img{border-color:#fff}
 .foot-about{max-width:340px;margin:20px 0 24px}
-.foot-mark{font:900 clamp(3rem,13vw,11rem) var(--f);letter-spacing:-.06em;text-transform:uppercase;color:transparent;-webkit-text-stroke:1.5px #3a3a3a;line-height:.85;margin-top:64px;white-space:nowrap;overflow:hidden;user-select:none}
+.site-footer > .container{container-type:inline-size}
+.foot-mark{font:900 clamp(3rem,13vw,11rem) var(--f);letter-spacing:-.06em;text-transform:uppercase;color:transparent;-webkit-text-stroke:1.5px #3a3a3a;line-height:.85;margin-top:64px;white-space:nowrap;overflow:hidden;user-select:none;font-size:12cqw}
 .foot-bottom{border-top:2px solid #333;margin-top:24px;padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font:500 .7rem var(--mono);text-transform:uppercase;letter-spacing:.05em}
 
 /* WhatsApp float */

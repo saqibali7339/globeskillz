@@ -3,12 +3,12 @@ G.services = G.services || [];
 G.services.push(
 {
   slug:'shopify-seo', pillar:'seo', hub:true, short:'Shopify SEO Services', navNote:'The full monthly program',
-  serviceType:'Shopify SEO', price:700, unit:'MON', priceLabel:'From $700/mo',
+  serviceType:'Shopify SEO', price:500, unit:'MON', priceLabel:'From $500/mo',
   title:'Shopify SEO Services | Globe Skillz',
   desc:'Monthly Shopify SEO run by a developer who reads Liquid: technical fixes, collection and product optimization, content and links. Serving merchants worldwide.',
   h1:'Shopify SEO services, run by someone who can also edit your theme',
   lead:'Most Shopify SEO stalls at the theme layer. An SEO points out a duplicate-URL problem and someone else has to fix it. I find the problem and I fix it in your theme code too, every month.',
-  facts:[['Engagement','Monthly retainer'],['Starts at','$700 / month'],['First results','Usually 8–12 weeks'],['Reporting','Monthly, from GSC data'],['Contract','Month to month']],
+  facts:[['Engagement','Monthly retainer'],['Starts at','$500 / month'],['First results','Usually 8–12 weeks'],['Reporting','Monthly, from GSC data'],['Contract','Month to month']],
   signals:['Traffic dipped after a Google core or helpful-content update and never came back','Collection pages are thin: a grid of products with no copy','Search Console shows thousands of “Crawled — currently not indexed” URLs','Products rank in position 11–30 and won’t move to page one','You installed SEO apps but rankings didn’t change','Variant, tag and filter URLs are splitting your rankings'],
   included:[
     ['Technical SEO, fixed in code','Canonicals, duplicate /collections/*/products/* paths, tag pages, faceted filters, robots.txt.liquid, sitemaps, pagination. I fix these in the theme myself.'],
@@ -42,12 +42,12 @@ G.services.push(
 },
 {
   slug:'shopify-seo-audit', pillar:'seo', short:'Shopify SEO Audit', navNote:'A prioritized fix list',
-  serviceType:'SEO audit', price:300, unit:null, priceLabel:'From $300, one-time',
-  title:'Shopify SEO Audit: Prioritized, Developer-Ready Fix List | Globe Skillz',
+  serviceType:'SEO audit', price:200, unit:null, priceLabel:'From $200, one-time',
+  title:'Shopify SEO Audit: Developer-Ready Fix List | Globe Skillz',
   desc:'A manual Shopify SEO audit covering crawl, indexation, theme code, Core Web Vitals, content and links. You get a prioritized fix list you can actually act on.',
   h1:'A Shopify SEO audit that ends in a fix list, not a 90-page PDF',
   lead:'I crawl your store, read your theme, and go through Search Console line by line. Then you get every issue ranked by revenue impact, with the exact fix for each one.',
-  facts:[['Deliverable','Audit doc + video walkthrough'],['Price','From $300'],['Turnaround','5–7 working days'],['Includes','30-min review call'],['Credit','Fee counted toward a retainer']],
+  facts:[['Deliverable','Audit doc + video walkthrough'],['Price','From $200'],['Turnaround','5–7 working days'],['Includes','30-min review call'],['Credit','Fee counted toward a retainer']],
   signals:['Organic traffic fell and you don’t know why','You’re about to redesign or migrate and want a baseline','An agency sent a generic tool export and nothing changed','Search Console has coverage errors you don’t understand','Your theme was heavily customized by several developers','You want a second opinion before signing a retainer'],
   included:[
     ['Crawl & indexation','Full crawl compared against your Search Console index report. Orphan pages, duplicate paths, tag and filter bloat, and what Google is choosing to ignore.'],
@@ -70,7 +70,7 @@ G.services.push(
 <p>If your traffic dropped after a core, spam or helpful-content update, the audit includes a look at quality: thin or near-duplicate pages, doorway-style location or keyword pages, and content that doesn’t show first-hand expertise. These are the patterns updates penalize, and fixing them is usually the first step to recovering.</p>`,
   proof:'scaleup',
   faqs:[
-    {q:'How much does a Shopify SEO audit cost?',a:'Audits start at $300 for stores up to roughly 1,000 URLs. Larger catalogs or multi-market setups are quoted after a quick look. If you start a monthly retainer within 30 days, the audit fee is credited back.'},
+    {q:'How much does a Shopify SEO audit cost?',a:'Audits start at $200 for stores up to roughly 1,000 URLs. Larger catalogs or multi-market setups are quoted after a quick look. If you start a monthly retainer within 30 days, the audit fee is credited back.'},
     {q:'Will you implement the fixes?',a:'If you want me to. Many clients hand the audit to their in-house developer. Others hire me to implement it as a fixed project or as part of a retainer.'},
     {q:'What access do you need?',a:'Shopify collaborator access (read-only is fine to start), Search Console and GA4. Ahrefs or Semrush access helps but isn’t required, since I use my own tools.'},
     {q:'Can an audit help recover from a Google update?',a:'It’s the right first step. The audit shows which pages Google is likely seeing as low-value, and that tells you what to merge, improve or remove.'},
@@ -79,12 +79,12 @@ G.services.push(
 },
 {
   slug:'shopify-technical-seo', pillar:'seo', short:'Shopify Technical SEO', navNote:'Crawl, index, schema, code',
-  serviceType:'Technical SEO', price:500, unit:null, priceLabel:'From $500 per sprint',
-  title:'Shopify Technical SEO: Indexation, Canonicals & Schema | Globe Skillz',
+  serviceType:'Technical SEO', price:350, unit:null, priceLabel:'From $350 per sprint',
+  title:'Shopify Technical SEO | Globe Skillz',
   desc:'Technical SEO for Shopify, fixed directly in your theme: duplicate URLs, faceted navigation, robots.txt.liquid, structured data, sitemaps and Core Web Vitals.',
   h1:'Shopify technical SEO, fixed in the theme code',
   lead:'Duplicate product paths, filter URLs and broken structured data hold back stores that already have good products. I find these problems and fix them in your Liquid code.',
-  facts:[['Format','Fixed-scope sprint'],['Starts at','$500'],['Typical sprint','1–2 weeks'],['Works with','Online Store 2.0 & legacy themes'],['Handover','Git-tracked changes + notes']],
+  facts:[['Format','Fixed-scope sprint'],['Starts at','$350'],['Typical sprint','1–2 weeks'],['Works with','Online Store 2.0 & legacy themes'],['Handover','Git-tracked changes + notes']],
   signals:['“Duplicate without user-selected canonical” keeps growing in GSC','Filtered collection URLs are getting indexed','Product rich results disappeared or show errors','Old app code is still loading on every page','Pagination pages outrank the main collection','Hreflang errors after enabling Shopify Markets'],
   included:[
     ['Internal link path cleanup','Collection grids link to /products/handle, not the /collections/x/products/handle path. That one change removes a large source of duplicate URLs.'],
@@ -115,12 +115,12 @@ G.services.push(
 },
 {
   slug:'shopify-on-page-seo', pillar:'seo', short:'Collection & Product SEO', navNote:'On-page optimization',
-  serviceType:'On-page SEO', price:400, unit:null, priceLabel:'From $400 per batch',
+  serviceType:'On-page SEO', price:300, unit:null, priceLabel:'From $300 per batch',
   title:'Shopify Collection & Product Page SEO | Globe Skillz',
   desc:'On-page SEO for Shopify collection and product pages: keyword mapping, titles, descriptions, collection copy, FAQs, internal links and rich results.',
   h1:'Collection and product page SEO for Shopify',
   lead:'Most of your commercial keywords land on collection pages. I turn them from a plain grid of products into pages that rank well and convert visitors once they arrive.',
-  facts:[['Format','Batches of 10 pages'],['Starts at','$400 / batch'],['Turnaround','7–10 days per batch'],['Includes','Keyword map + copy + schema'],['Writing','Human-written, brand voice']],
+  facts:[['Format','Batches of 10 pages'],['Starts at','$300 / batch'],['Turnaround','7–10 days per batch'],['Includes','Keyword map + copy + schema'],['Writing','Human-written, brand voice']],
   signals:['Collections have no descriptive copy at all','Product descriptions are copied from the manufacturer','Several pages target the same keyword','Titles are just the product name plus the store name','Low CTR even when you rank on page one','Customers ask the same questions that your pages don’t answer'],
   included:[
     ['Keyword-to-page mapping','Each target keyword is assigned to one page, which removes cannibalization between collections, products and blog posts.'],
@@ -152,12 +152,12 @@ G.services.push(
 },
 {
   slug:'shopify-content-seo', pillar:'seo', short:'Shopify Content SEO', navNote:'Guides that sell',
-  serviceType:'Content marketing and SEO copywriting', price:600, unit:'MON', priceLabel:'From $600/mo',
-  title:'Shopify Content SEO: Blog & Buying Guides That Rank | Globe Skillz',
+  serviceType:'Content marketing and SEO copywriting', price:450, unit:'MON', priceLabel:'From $450/mo',
+  title:'Shopify Content SEO: Guides That Rank | Globe Skillz',
   desc:'Content strategy and writing for Shopify stores: topic clusters, buying guides and comparison articles, each linked to the collections they support.',
   h1:'Shopify blog content that leads readers to your products',
   lead:'Content strategy for Shopify stores, where every article has a clear job: answer a real question, build topical authority, and send readers to a collection.',
-  facts:[['Format','Monthly content plan'],['Starts at','$600 / month'],['Output','4 long-form pieces / mo'],['Includes','Briefs, writing, linking'],['Review','You approve every topic']],
+  facts:[['Format','Monthly content plan'],['Starts at','$450 / month'],['Output','4 long-form pieces / mo'],['Includes','Briefs, writing, linking'],['Review','You approve every topic']],
   signals:['Your blog has posts but none of them get traffic','Articles don’t link to any products','You’re competing with bigger stores for broad keywords','Customers do a lot of research before they buy','Your niche gets a lot of “best X for Y” searches','You want to show up in AI answers and Google AI Overviews'],
   included:[
     ['Topic cluster map','One hub topic per core collection, supported by the questions people search for before they buy.'],
@@ -184,12 +184,12 @@ G.services.push(
 },
 {
   slug:'shopify-link-building', pillar:'seo', short:'Shopify Link Building', navNote:'Authority that sticks',
-  serviceType:'Link building', price:500, unit:'MON', priceLabel:'From $500/mo',
-  title:'Shopify Link Building: Niche-Relevant, Penalty-Safe | Globe Skillz',
+  serviceType:'Link building', price:400, unit:'MON', priceLabel:'From $400/mo',
+  title:'Shopify Link Building | Globe Skillz',
   desc:'White-hat link building for Shopify stores: digital PR, supplier and partner links, resource placements and unlinked brand mentions. No PBNs and no link farms.',
   h1:'Link building for Shopify stores, safe enough to survive the next update',
   lead:'The links Google trusts come from sites in your niche with real readers. Getting them is slower work, but those rankings don’t vanish after an update.',
-  facts:[['Format','Monthly campaign'],['Starts at','$500 / month'],['Reporting','Every link, live URL'],['Methods','PR, partners, resources'],['Never','PBNs, link farms, spam']],
+  facts:[['Format','Monthly campaign'],['Starts at','$400 / month'],['Reporting','Every link, live URL'],['Methods','PR, partners, resources'],['Never','PBNs, link farms, spam']],
   signals:['Your content is good but competitors with more links still outrank you','You bought cheap links in the past and are worried about them','You have suppliers, stockists or partners who don’t link to you','The brand gets mentioned online without a link','A new store with no authority at all','Rankings dropped after a spam update'],
   included:[
     ['Link gap analysis','Who links to your top competitors but not to you, sorted by how realistic each link is to get.'],
@@ -219,12 +219,12 @@ G.services.push(
 },
 {
   slug:'shopify-international-seo', pillar:'seo', short:'International Shopify SEO', navNote:'Markets, hreflang, multi-country',
-  serviceType:'International SEO', price:900, unit:'MON', priceLabel:'From $900/mo',
-  title:'International Shopify SEO: Markets & Hreflang | Globe Skillz',
+  serviceType:'International SEO', price:700, unit:'MON', priceLabel:'From $700/mo',
+  title:'International Shopify SEO | Globe Skillz',
   desc:'SEO for Shopify stores selling across borders: Shopify Markets setup, hreflang, subfolders and domains, localized keyword research and country-level content.',
   h1:'International Shopify SEO for stores selling in more than one country',
   lead:'Shopify Markets makes selling abroad easy. Ranking abroad needs more: the correct URL structure, working hreflang, and keyword research done separately for each market.',
-  facts:[['Format','Monthly, per-market roadmap'],['Starts at','$900 / month'],['Markets','2 to 20+'],['Setup','Subfolders, domains or both'],['Recent','8-market & 20+ country builds']],
+  facts:[['Format','Monthly, per-market roadmap'],['Starts at','$700 / month'],['Markets','2 to 20+'],['Setup','Subfolders, domains or both'],['Recent','8-market & 20+ country builds']],
   signals:['The US version of your store ranks in the UK','You enabled Markets and traffic in your home country dropped','Translated pages aren’t indexed','Prices or currency look wrong in search results','You’re launching in a new region and want it set up correctly','Several country stores are competing with each other'],
   included:[
     ['Market architecture','Subfolders vs. country domains vs. separate stores, chosen based on your brand, logistics and existing authority.'],
@@ -255,12 +255,12 @@ G.services.push(
 },
 {
   slug:'shopify-ai-search-optimization', pillar:'seo', short:'AI Search Optimization', navNote:'AEO / GEO for stores',
-  serviceType:'Generative engine optimization', price:400, unit:'MON', priceLabel:'Included in retainers · from $400/mo',
-  title:'AI Search Optimization for Shopify (AEO & GEO) | Globe Skillz',
+  serviceType:'Generative engine optimization', price:300, unit:'MON', priceLabel:'Included in retainers · from $300/mo',
+  title:'AI Search Optimization for Shopify | Globe Skillz',
   desc:'Help your Shopify store appear in Google AI Overviews, ChatGPT, Gemini and Perplexity answers with entity clarity, structured data and quotable content.',
   h1:'Get your Shopify store into AI answers',
   lead:'Shoppers now ask ChatGPT, Gemini and Google’s AI Overviews what to buy. I make sure those systems understand your brand, trust your pages and cite your store.',
-  facts:[['Format','Add-on or standalone'],['Starts at','$400 / month'],['Covers','AI Overviews, ChatGPT, Perplexity'],['Foundation','Schema + entity + content'],['Tracking','Prompt-level visibility']],
+  facts:[['Format','Add-on or standalone'],['Starts at','$300 / month'],['Covers','AI Overviews, ChatGPT, Perplexity'],['Foundation','Schema + entity + content'],['Tracking','Prompt-level visibility']],
   signals:['Competitors are cited in AI Overviews for your category and you aren’t','ChatGPT describes your brand incorrectly or doesn’t know it','Your store has little structured data','Brand facts (founder, materials, origin) are scattered or inconsistent','High-consideration products that people research a lot','You want to future-proof the organic channel'],
   included:[
     ['Entity foundation','Consistent Organization, Brand and Product data across your site, Google Merchant Center and third-party profiles.'],

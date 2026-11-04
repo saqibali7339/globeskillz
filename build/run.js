@@ -18,7 +18,6 @@ const files = [
 for (const f of files) {
   vm.runInContext(fs.readFileSync(path.join(root, f), 'utf8'), sandbox, { filename: f });
 }
-console.log(`pages: ${G.pages.length}`);
 for (const p of G.pages) {
   const dest = path.join(root, p.path);
   fs.mkdirSync(path.dirname(dest), { recursive: true });
@@ -27,4 +26,3 @@ for (const p of G.pages) {
 for (const [name, content] of [['sitemap.xml', G.sitemap], ['robots.txt', G.robots], ['llms.txt', G.llms], ['_redirects', G.redirects]]) {
   fs.writeFileSync(path.join(root, name), content);
 }
-console.log('done');

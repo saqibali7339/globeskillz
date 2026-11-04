@@ -37,7 +37,7 @@ G.schema = {
     areaServed: { '@type':'Place', name:'Worldwide' },
     priceRange: '$$',
     knowsAbout: ['Shopify SEO','Technical SEO','Shopify Liquid','Shopify theme development','Core Web Vitals','International SEO','hreflang','Shopify Markets','Structured data','Link building','Generative engine optimization'],
-    contactPoint: [{ '@type':'ContactPoint', contactType:'sales', url: S.wa, availableLanguage:['English','Urdu'], areaServed:'Worldwide' }],
+    contactPoint: [{ '@type':'ContactPoint', contactType:'sales', url: S.wa, email:'info@globeskillz.com', availableLanguage:['English','Urdu'], areaServed:'Worldwide' }],
     sameAs: [S.fiverr],
   }),
   person: () => ({
@@ -87,7 +87,7 @@ G.header = (R, path) => {
   <div class="container">
     <nav class="nav" aria-label="Main">
       <a class="brand" href="${R}index.html" aria-label="Globe Skillz home">
-        <img src="${R}assets/brand/logo-mark.jpg" alt="" width="38" height="38">
+        <img src="${R}assets/brand/logo-mark.png" alt="" width="38" height="38">
         <span>Globe Skillz<small>Shopify SEO + Dev</small></span>
       </a>
       <ul class="nav-links">
@@ -125,7 +125,7 @@ G.footer = (R) => {
   <div class="container">
     <div class="foot-grid">
       <div>
-        <a class="brand" href="${R}index.html"><img src="${R}assets/brand/logo-mark.jpg" alt="" width="38" height="38"><span>Globe Skillz<small>Shopify SEO + Dev</small></span></a>
+        <a class="brand" href="${R}index.html"><img src="${R}assets/brand/logo-mark-white.png" alt="" width="38" height="38"><span>Globe Skillz<small>Shopify SEO + Dev</small></span></a>
         <p class="foot-about">A Shopify SEO studio with development built in. Led by Saqib Ali. Working with merchants worldwide since 2019.</p>
         <a class="btn btn-green" href="${S.wa}" rel="noopener" target="_blank">${G.icon.wa} WhatsApp Saqib</a>
       </div>
