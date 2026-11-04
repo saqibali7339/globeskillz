@@ -23,10 +23,7 @@ G.renderHome = () => {
       <div class="btn-row"><a class="btn btn-primary" href="${R}contact.html">Get a free store review ${G.icon.arrow}</a><a class="btn btn-ghost" href="${R}results.html">See real GSC results</a></div>
       <ul class="hero-ticks"><li>Shopify-only since 2019</li><li>White-hat, update-safe</li><li>US · UK · EU · Gulf · Pakistan</li></ul>
     </div>
-    <div class="hero-lottie" aria-hidden="true">
-      <script type="module" src="https://cdn.jsdelivr.net/npm/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"></script>
-      <dotlottie-player src="${R}assets/lottie/shopify-push-notifications.lottie" autoplay loop style="width:100%;height:100%;display:block"></dotlottie-player>
-    </div>
+    <div class="hero-lottie" id="heroLottie" data-src="${R}assets/lottie/shopify-push-notifications.lottie" aria-hidden="true"></div>
   </div>
 </div></section>
 
