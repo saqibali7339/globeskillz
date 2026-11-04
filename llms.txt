@@ -3,29 +3,29 @@
 > Shopify SEO studio with development built in, led by Saqib Ali (since 2019). Serves Shopify merchants worldwide, including the US, UK, EU, Gulf, Australia and Pakistan.
 
 ## Shopify SEO services
-- [Shopify SEO Services](https://globeskillz.com/services/shopify-seo.html): Monthly Shopify SEO run by a developer who reads Liquid: technical fixes, collection and product optimization, content and links. Serving merchants worldwide.
-- [Shopify SEO Audit](https://globeskillz.com/services/shopify-seo-audit.html): A manual Shopify SEO audit covering crawl, indexation, theme code, Core Web Vitals, content and links. You get a prioritized fix list you can actually act on.
-- [Shopify Technical SEO](https://globeskillz.com/services/shopify-technical-seo.html): Technical SEO for Shopify, fixed directly in your theme: duplicate URLs, faceted navigation, robots.txt.liquid, structured data, sitemaps and Core Web Vitals.
-- [Collection & Product SEO](https://globeskillz.com/services/shopify-on-page-seo.html): On-page SEO for Shopify collection and product pages: keyword mapping, titles, descriptions, collection copy, FAQs, internal links and rich results.
-- [Shopify Content SEO](https://globeskillz.com/services/shopify-content-seo.html): Content strategy and writing for Shopify stores: topic clusters, buying guides and comparison articles, each linked to the collections they support.
-- [Shopify Link Building](https://globeskillz.com/services/shopify-link-building.html): White-hat link building for Shopify stores: digital PR, supplier and partner links, resource placements and unlinked brand mentions. No PBNs and no link farms.
-- [International Shopify SEO](https://globeskillz.com/services/shopify-international-seo.html): SEO for Shopify stores selling across borders: Shopify Markets setup, hreflang, subfolders and domains, localized keyword research and country-level content.
-- [AI Search Optimization](https://globeskillz.com/services/shopify-ai-search-optimization.html): Help your Shopify store appear in Google AI Overviews, ChatGPT, Gemini and Perplexity answers with entity clarity, structured data and quotable content.
+- [Shopify SEO Services](https://globeskillz.com/services/shopify-seo/): Monthly Shopify SEO run by a developer who reads Liquid: technical fixes, collection and product optimization, content and links. Serving merchants worldwide.
+- [Shopify SEO Audit](https://globeskillz.com/services/shopify-seo-audit/): A manual Shopify SEO audit covering crawl, indexation, theme code, Core Web Vitals, content and links. You get a prioritized fix list you can actually act on.
+- [Shopify Technical SEO](https://globeskillz.com/services/shopify-technical-seo/): Technical SEO for Shopify, fixed directly in your theme: duplicate URLs, faceted navigation, robots.txt.liquid, structured data, sitemaps and Core Web Vitals.
+- [Collection & Product SEO](https://globeskillz.com/services/shopify-on-page-seo/): On-page SEO for Shopify collection and product pages: keyword mapping, titles, descriptions, collection copy, FAQs, internal links and rich results.
+- [Shopify Content SEO](https://globeskillz.com/services/shopify-content-seo/): Content strategy and writing for Shopify stores: topic clusters, buying guides and comparison articles, each linked to the collections they support.
+- [Shopify Link Building](https://globeskillz.com/services/shopify-link-building/): White-hat link building for Shopify stores: digital PR, supplier and partner links, resource placements and unlinked brand mentions. No PBNs and no link farms.
+- [International Shopify SEO](https://globeskillz.com/services/shopify-international-seo/): SEO for Shopify stores selling across borders: Shopify Markets setup, hreflang, subfolders and domains, localized keyword research and country-level content.
+- [AI Search Optimization](https://globeskillz.com/services/shopify-ai-search-optimization/): Help your Shopify store appear in Google AI Overviews, ChatGPT, Gemini and Perplexity answers with entity clarity, structured data and quotable content.
 
 ## Shopify development services
-- [Shopify Store Development](https://globeskillz.com/services/shopify-development.html): Shopify store design and development with SEO built in from the start: clean Liquid, fast templates, correct schema and a site structure planned around search.
-- [Theme Customization & Liquid](https://globeskillz.com/services/shopify-theme-customization.html): Custom Shopify sections, Liquid development, theme bug fixes and feature builds. Clean code that won’t hurt speed or SEO.
-- [Shopify Speed Optimization](https://globeskillz.com/services/shopify-speed-optimization.html): Make your Shopify store faster and pass Core Web Vitals: LCP, INP and CLS fixes, app script cleanup, image delivery and theme-level performance work.
-- [Migration to Shopify (SEO-Safe)](https://globeskillz.com/services/shopify-migration.html): Move to Shopify from WooCommerce, Wix, Squarespace, BigCommerce or Magento without losing rankings: URL mapping, 301s, data migration, monitoring.
-- [Shopify Maintenance & Support](https://globeskillz.com/services/shopify-maintenance-support.html): Monthly Shopify development support: bug fixes, small features, theme updates, app QA and SEO-safe changes from a developer you can reach on WhatsApp.
+- [Shopify Store Development](https://globeskillz.com/services/shopify-development/): Shopify store design and development with SEO built in from the start: clean Liquid, fast templates, correct schema and a site structure planned around search.
+- [Theme Customization & Liquid](https://globeskillz.com/services/shopify-theme-customization/): Custom Shopify sections, Liquid development, theme bug fixes and feature builds. Clean code that won’t hurt speed or SEO.
+- [Shopify Speed Optimization](https://globeskillz.com/services/shopify-speed-optimization/): Make your Shopify store faster and pass Core Web Vitals: LCP, INP and CLS fixes, app script cleanup, image delivery and theme-level performance work.
+- [Migration to Shopify (SEO-Safe)](https://globeskillz.com/services/shopify-migration/): Move to Shopify from WooCommerce, Wix, Squarespace, BigCommerce or Magento without losing rankings: URL mapping, 301s, data migration, monitoring.
+- [Shopify Maintenance & Support](https://globeskillz.com/services/shopify-maintenance-support/): Monthly Shopify development support: bug fixes, small features, theme updates, app QA and SEO-safe changes from a developer you can reach on WhatsApp.
 
 ## Proof
-- [SEO results](https://globeskillz.com/results.html): 9 client Search Console reports, 195K+ clicks and 9.8M+ impressions over 3 months
-- [International case study](https://globeskillz.com/case-studies/booster-brand-international-shopify-seo.html): 8 markets, 12.7K monthly organic visits
-- [Pakistan case study](https://globeskillz.com/case-studies/albarik-ecommerce-seo-pakistan.html)
-- [Store builds](https://globeskillz.com/work.html)
+- [SEO results](https://globeskillz.com/results/): 9 client Search Console reports, 195K+ clicks and 9.8M+ impressions over 3 months
+- [International case study](https://globeskillz.com/case-studies/booster-brand-international-shopify-seo/): 8 markets, 12.7K monthly organic visits
+- [Pakistan case study](https://globeskillz.com/case-studies/albarik-ecommerce-seo-pakistan/)
+- [Store builds](https://globeskillz.com/work/)
 
 ## Company
-- [About Saqib Ali](https://globeskillz.com/about.html)
-- [Pricing](https://globeskillz.com/pricing.html): SEO from $500/mo, audits from $200, builds from $400
-- [Contact](https://globeskillz.com/contact.html): WhatsApp +92 321 5454557
+- [About Saqib Ali](https://globeskillz.com/about/)
+- [Pricing](https://globeskillz.com/pricing/): SEO from $500/mo, audits from $200, builds from $400
+- [Contact](https://globeskillz.com/contact/): WhatsApp +92 321 5454557

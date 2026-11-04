@@ -12,7 +12,9 @@ G.SITE = {
 const S = G.SITE;
 
 G.esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-G.abs = p => S.url + (p === 'index.html' ? '/' : '/' + p);
+G.clean = p => p === 'index.html' ? '' : (p === '404.html' ? '404.html' : p.replace(/\.html$/, '/'));
+G.out = p => p === 'index.html' ? 'index.html' : (p === '404.html' ? '404.html' : p.replace(/\.html$/, '/index.html'));
+G.abs = p => S.url + '/' + G.clean(p);
 
 G.icon = {
   wa: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.2.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1.1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>',
@@ -47,7 +49,7 @@ G.schema = {
     jobTitle: 'Shopify SEO Lead & Developer',
     worksFor: { '@id': S.url + '/#org' },
     image: S.url + '/assets/brand/saqib-ali.jpg',
-    url: S.url + '/about.html',
+    url: S.url + '/about/',
     sameAs: [S.fiverr],
     knowsAbout: ['Shopify SEO','Technical SEO','Shopify development','Liquid','Core Web Vitals','International SEO'],
   }),
@@ -79,8 +81,8 @@ G.nav = () => {
 G.header = (R, path) => {
   const { seo, dev } = G.nav();
   const cur = p => path === p || path.startsWith(p.replace('.html','/')) ? ' aria-current="page"' : '';
-  const li = s => `<li><a href="${R}services/${s.slug}.html">${G.esc(s.short)}<span>${G.esc(s.navNote)}</span></a></li>`;
-  const mli = s => `<a href="${R}services/${s.slug}.html">${G.esc(s.short)}</a>`;
+  const li = s => `<li><a href="${R}services/${s.slug}/">${G.esc(s.short)}<span>${G.esc(s.navNote)}</span></a></li>`;
+  const mli = s => `<a href="${R}services/${s.slug}/">${G.esc(s.short)}</a>`;
   return `
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
@@ -95,24 +97,24 @@ G.header = (R, path) => {
           <div class="mega">
             <div><h4>Shopify SEO</h4><ul>${seo.slice(0,6).map(li).join('')}</ul></div>
             <div><h4>Shopify Development</h4><ul>${dev.map(li).join('')}</ul></div>
-            <div class="all"><a href="${R}services.html">All ${G.services.length} services →</a></div>
+            <div class="all"><a href="${R}services/">All ${G.services.length} services →</a></div>
           </div>
         </li>
-        <li><a href="${R}results.html"${cur('results.html')}>SEO Results</a></li>
-        <li><a href="${R}work.html"${cur('work.html')}>Work</a></li>
-        <li><a href="${R}pricing.html"${cur('pricing.html')}>Pricing</a></li>
-        <li><a href="${R}about.html"${cur('about.html')}>About</a></li>
-        <li><a href="${R}blog.html"${cur('blog.html')}>Blog</a></li>
+        <li><a href="${R}results/"${cur('results.html')}>SEO Results</a></li>
+        <li><a href="${R}work/"${cur('work.html')}>Work</a></li>
+        <li><a href="${R}pricing/"${cur('pricing.html')}>Pricing</a></li>
+        <li><a href="${R}about/"${cur('about.html')}>About</a></li>
+        <li><a href="${R}blog/"${cur('blog.html')}>Blog</a></li>
       </ul>
-      <a class="btn btn-primary nav-cta" href="${R}contact.html">Get a free store review</a>
+      <a class="btn btn-primary nav-cta" href="${R}contact/">Get a free store review</a>
       <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </nav>
     <div class="mobile-nav">
       <h4>Shopify SEO</h4>${seo.map(mli).join('')}
       <h4>Shopify Development</h4>${dev.map(mli).join('')}
       <h4>Globe Skillz</h4>
-      <a href="${R}results.html">SEO Results</a><a href="${R}work.html">Work</a><a href="${R}pricing.html">Pricing</a><a href="${R}about.html">About</a><a href="${R}blog.html">Blog</a><a href="${R}faq.html">FAQ</a>
-      <a class="btn btn-primary" href="${R}contact.html">Get a free store review</a>
+      <a href="${R}results/">SEO Results</a><a href="${R}work/">Work</a><a href="${R}pricing/">Pricing</a><a href="${R}about/">About</a><a href="${R}blog/">Blog</a><a href="${R}faq/">FAQ</a>
+      <a class="btn btn-primary" href="${R}contact/">Get a free store review</a>
     </div>
   </div>
 </header>`;
@@ -129,24 +131,24 @@ G.footer = (R) => {
         <p class="foot-about">A Shopify SEO studio with development built in. Led by Saqib Ali. Working with merchants worldwide since 2019.</p>
         <a class="btn btn-green" href="${S.wa}" rel="noopener" target="_blank">${G.icon.wa} WhatsApp Saqib</a>
       </div>
-      <div><h4>Shopify SEO</h4><ul>${seo.map(s=>`<li><a href="${R}services/${s.slug}.html">${G.esc(s.short)}</a></li>`).join('')}</ul></div>
-      <div><h4>Development</h4><ul>${dev.map(s=>`<li><a href="${R}services/${s.slug}.html">${G.esc(s.short)}</a></li>`).join('')}</ul></div>
+      <div><h4>Shopify SEO</h4><ul>${seo.map(s=>`<li><a href="${R}services/${s.slug}/">${G.esc(s.short)}</a></li>`).join('')}</ul></div>
+      <div><h4>Development</h4><ul>${dev.map(s=>`<li><a href="${R}services/${s.slug}/">${G.esc(s.short)}</a></li>`).join('')}</ul></div>
       <div><h4>Company</h4><ul>
-        <li><a href="${R}about.html">About Saqib</a></li>
-        <li><a href="${R}results.html">SEO results</a></li>
-        <li><a href="${R}work.html">Store builds</a></li>
-        <li><a href="${R}case-studies/booster-brand-international-shopify-seo.html">Case studies</a></li>
-        <li><a href="${R}reviews.html">Client reviews</a></li>
-        <li><a href="${R}pricing.html">Pricing</a></li>
-        <li><a href="${R}blog.html">Blog</a></li>
-        <li><a href="${R}faq.html">FAQ</a></li>
-        <li><a href="${R}contact.html">Contact</a></li>
+        <li><a href="${R}about/">About Saqib</a></li>
+        <li><a href="${R}results/">SEO results</a></li>
+        <li><a href="${R}work/">Store builds</a></li>
+        <li><a href="${R}case-studies/booster-brand-international-shopify-seo/">Case studies</a></li>
+        <li><a href="${R}reviews/">Client reviews</a></li>
+        <li><a href="${R}pricing/">Pricing</a></li>
+        <li><a href="${R}blog/">Blog</a></li>
+        <li><a href="${R}faq/">FAQ</a></li>
+        <li><a href="${R}contact/">Contact</a></li>
       </ul></div>
     </div>
     <div class="foot-mark" aria-hidden="true">Globe Skillz</div>
     <div class="foot-bottom">
       <span>© 2026 Globe Skillz. Shopify is a trademark of Shopify Inc. Globe Skillz is an independent studio.</span>
-      <span><a href="${R}privacy.html">Privacy</a> · <a href="${R}terms.html">Terms</a> · <a href="${R}sitemap.xml">Sitemap</a></span>
+      <span><a href="${R}privacy/">Privacy</a> · <a href="${R}terms/">Terms</a> · <a href="${R}sitemap.xml">Sitemap</a></span>
     </div>
   </div>
 </footer>
@@ -156,13 +158,14 @@ G.footer = (R) => {
 /* ---------- Page shell ---------- */
 G.pages = [];
 G.page = ({ path, title, desc, body, graph = [], crumbs, ogType = 'website', noindex = false, priority = 0.6, image }) => {
-  const depth = path.split('/').length - 1;
+  const out = G.out(path);
+  const depth = out.split('/').length - 1;
   const R = '../'.repeat(depth);
   const canonical = G.abs(path);
   const og = image ? G.abs(image) : S.url + '/assets/brand/og-default.jpg';
   const fullGraph = [G.schema.org(), G.schema.website(), ...graph];
   if (crumbs) fullGraph.push(G.schema.crumbs(crumbs));
-  const crumbHtml = crumbs ? `<ol class="crumbs">${crumbs.map((c,i)=> i<crumbs.length-1 ? `<li><a href="${c[1] === 'index.html' ? (R === '' ? '/' : R) : R + c[1]}">${G.esc(c[0])}</a></li>` : `<li aria-current="page">${G.esc(c[0])}</li>`).join('')}</ol>` : '';
+  const crumbHtml = crumbs ? `<ol class="crumbs">${crumbs.map((c,i)=> i<crumbs.length-1 ? `<li><a href="${c[1] === 'index.html' ? (R === '' ? '/' : R) : R + G.clean(c[1])}">${G.esc(c[0])}</a></li>` : `<li aria-current="page">${G.esc(c[0])}</li>`).join('')}</ol>` : '';
   const html = `<!doctype html>
 <html lang="en">
 <head>
@@ -200,7 +203,7 @@ ${G.footer(R)}
 <script src="${R}assets/js/site.js" defer></script>
 </body>
 </html>`;
-  G.pages.push({ path, html, noindex, priority });
+  G.pages.push({ path, out, html, noindex, priority });
 };
 
 /* ---------- Reusable blocks ---------- */
@@ -208,7 +211,7 @@ G.cta = (R, h = 'Want to know what’s holding your store back?', p = 'Send me y
 <section class="section-sm"><div class="container">
   <div class="cta">
     <div><h2>${h}</h2><p>${p}</p></div>
-    <div class="btn-row"><a class="btn btn-light" href="${R}contact.html">Request a free review ${G.icon.arrow}</a><a class="btn btn-outline-light" href="${S.wa}" target="_blank" rel="noopener">${G.icon.wa} WhatsApp</a></div>
+    <div class="btn-row"><a class="btn btn-light" href="${R}contact/">Request a free review ${G.icon.arrow}</a><a class="btn btn-outline-light" href="${S.wa}" target="_blank" rel="noopener">${G.icon.wa} WhatsApp</a></div>
   </div>
 </div></section>`;
 

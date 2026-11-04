@@ -20,7 +20,7 @@ G.renderHome = () => {
       <span class="eyebrow">Shopify SEO + development · worldwide</span>
       <h1>Get More <em>Organic Traffic &amp; Orders</em> with Expert Shopify SEO</h1>
       <p class="lead">I’m Saqib Ali. I help Shopify stores rank on Google and in AI search, and I make the code changes SEO needs in your theme myself. One person handles the strategy and the code.</p>
-      <div class="btn-row"><a class="btn btn-primary" href="${R}contact.html">Get a free store review ${G.icon.arrow}</a><a class="btn btn-ghost" href="${R}results.html">See real GSC results</a></div>
+      <div class="btn-row"><a class="btn btn-primary" href="${R}contact/">Get a free store review ${G.icon.arrow}</a><a class="btn btn-ghost" href="${R}results/">See real GSC results</a></div>
       <ul class="hero-ticks"><li>Shopify-only since 2019</li><li>White-hat, update-safe</li><li>US · UK · EU · Gulf · Pakistan</li></ul>
     </div>
     <div class="hero-lottie" id="heroLottie" data-src="${R}assets/lottie/shopify-push-notifications.lottie" aria-hidden="true"></div>
@@ -33,15 +33,15 @@ G.renderHome = () => {
   <div class="sec-head center"><span class="eyebrow">Services</span><h2>SEO is the main work. Development is there to support it.</h2><p class="lead">Every service has one goal: more revenue from organic search for Shopify merchants.</p></div>
   <div class="pillar-split">
     <div class="pillar"><div class="pillar-head"><div><span class="eyebrow">01 · Shopify SEO</span><h3 style="font-size:1.6rem;margin:0">Rank and get found</h3></div><div class="price">from<b>$500/mo</b></div></div>
-      <ul class="pillar-list">${seo.map(s=>`<li><a href="${R}services/${s.slug}.html"><b>${G.esc(s.short)}</b><span>${G.esc(s.navNote)}</span></a></li>`).join('')}</ul></div>
+      <ul class="pillar-list">${seo.map(s=>`<li><a href="${R}services/${s.slug}/"><b>${G.esc(s.short)}</b><span>${G.esc(s.navNote)}</span></a></li>`).join('')}</ul></div>
     <div class="pillar"><div class="pillar-head"><div><span class="eyebrow">02 · Shopify Development</span><h3 style="font-size:1.6rem;margin:0">Build it to rank</h3></div><div class="price">from<b>$400</b></div></div>
-      <ul class="pillar-list">${dev.map(s=>`<li><a href="${R}services/${s.slug}.html"><b>${G.esc(s.short)}</b><span>${G.esc(s.navNote)}</span></a></li>`).join('')}</ul>
+      <ul class="pillar-list">${dev.map(s=>`<li><a href="${R}services/${s.slug}/"><b>${G.esc(s.short)}</b><span>${G.esc(s.navNote)}</span></a></li>`).join('')}</ul>
       <div class="callout" style="margin:18px 0 0"><b>Why both?</b> SEO recommendations only help once they’re live. Because I handle the development too, fixes go out the same week.</div></div>
   </div>
 </div></section>
 
 <section class="section section-bg"><div class="container">
-  <div class="sec-head-row"><div class="sec-head"><span class="eyebrow">SEO results</span><h2>Real Search Console data from client stores</h2><p class="lead">Last three months of data. Names withheld; the numbers are as reported.</p></div><a class="btn btn-ghost" href="${R}results.html">All 9 case results</a></div>
+  <div class="sec-head-row"><div class="sec-head"><span class="eyebrow">SEO results</span><h2>Real Search Console data from client stores</h2><p class="lead">Last three months of data. Names withheld; the numbers are as reported.</p></div><a class="btn btn-ghost" href="${R}results/">All 9 case results</a></div>
   <div class="grid g3 trio">${['jewelry','bookstore','vytal'].map(k=>G.caseCard(R,G.cases[k])).join('')}</div>
 </div></section>
 
@@ -52,7 +52,7 @@ G.renderHome = () => {
       <h2>A kids’ travel brand, 8 markets, one Shopify store</h2>
       <p class="lead">A Shopify redesign plus international SEO for a flagship product launch. Then a conversion-focused redesign rolled out to more than 20 countries.</p>
       <div class="stat-row"><div><b>12.7K</b><span>monthly organic visits</span></div><div><b>+17%</b><span>organic growth</span></div><div><b>3.4K</b><span>ranking keywords</span></div></div>
-      <div class="btn-row" style="margin-top:28px"><a class="btn btn-primary" href="${R}case-studies/booster-brand-international-shopify-seo.html">Read the case study ${G.icon.arrow}</a></div>
+      <div class="btn-row" style="margin-top:28px"><a class="btn btn-primary" href="${R}case-studies/booster-brand-international-shopify-seo/">Read the case study ${G.icon.arrow}</a></div>
     </div>
     ${G.workCard(R, G.work.booster)}
   </div>
@@ -69,12 +69,12 @@ G.renderHome = () => {
 </div></section>
 
 <section class="section"><div class="container">
-  <div class="sec-head-row"><div class="sec-head"><span class="eyebrow">Store builds</span><h2>Shopify stores I’ve designed and built</h2></div><a class="btn btn-ghost" href="${R}work.html">All 14 projects</a></div>
+  <div class="sec-head-row"><div class="sec-head"><span class="eyebrow">Store builds</span><h2>Shopify stores I’ve designed and built</h2></div><a class="btn btn-ghost" href="${R}work/">All 14 projects</a></div>
   <div class="grid g3 trio">${['zermatt','ebike','sensibelle'].map(k=>G.workCard(R,G.work[k])).join('')}</div>
 </div></section>
 
 <section class="section section-bg"><div class="container">
-  <div class="sec-head-row"><div class="sec-head"><span class="eyebrow">Client reviews</span><h2>What merchants say</h2><p class="lead">Verified reviews from Fiverr buyers in Ireland, the UK, Canada, France and elsewhere.</p></div><a class="btn btn-ghost" href="${R}reviews.html">Read all reviews</a></div>
+  <div class="sec-head-row"><div class="sec-head"><span class="eyebrow">Client reviews</span><h2>What merchants say</h2><p class="lead">Verified reviews from Fiverr buyers in Ireland, the UK, Canada, France and elsewhere.</p></div><a class="btn btn-ghost" href="${R}reviews/">Read all reviews</a></div>
   <div class="reviews">${G.reviews.slice(0,6).map(G.reviewCard).join('')}</div>
 </div></section>
 
@@ -85,9 +85,9 @@ G.renderHome = () => {
       <h2>A focused studio, not a large agency</h2>
       <p>Globe Skillz is me, Saqib Ali, working with a small group of trusted writers and outreach partners. You talk to the person doing the work, and that person knows Liquid as well as SEO.</p>
       <p>Since 2019 I’ve shipped 180+ projects for merchants in 42 countries. This version of Globe Skillz focuses on one platform and one goal: Shopify stores that grow through organic search.</p>
-      <p><a href="${R}about.html">More about how I work →</a></p>
+      <p><a href="${R}about/">More about how I work →</a></p>
     </div>
-    <div>${G.faqBlock(homeFaqs)}<p style="margin-top:20px"><a href="${R}faq.html">All frequently asked questions →</a></p></div>
+    <div>${G.faqBlock(homeFaqs)}<p style="margin-top:20px"><a href="${R}faq/">All frequently asked questions →</a></p></div>
   </div>
 </div></section>
 ${G.cta(R)}`});
@@ -177,7 +177,7 @@ G.renderCaseStudies = () => {
       <h2>Results</h2>
       <p>The September 2026 traffic estimate shows <b>12.7K monthly organic visits</b>, up 17%, with <b>3.4K ranking keywords</b> and an authority score of 35.</p>
       <img src="${R}assets/projects/confidential-booster-brand-traffic.webp" alt="Traffic estimate: 12.7K organic monthly traffic (+17%), 3.4K keywords, authority score 35" width="1078" height="400" loading="lazy" style="border-radius:12px;border:1px solid var(--line)">
-      <p style="margin-top:2em"><a href="${R}services/shopify-international-seo.html">International Shopify SEO service →</a></p>
+      <p style="margin-top:2em"><a href="${R}services/shopify-international-seo/">International Shopify SEO service →</a></p>
     </div>
   </div>
 </div></section>${G.cta(R,'Selling in more than one country?')}`});
@@ -213,7 +213,7 @@ G.renderCaseStudies = () => {
       <img src="${R}assets/projects/albarik-traffic.webp" alt="Analytics: 3.6K active users, 28K views, 28.2% bounce rate" width="817" height="459" loading="lazy" style="border-radius:12px;border:1px solid var(--line)">
       <p style="margin-top:1.6em">In Search Console over a later three-month period, the site recorded <b>2.67K clicks and 185K impressions at an average position of 9.2</b>.</p>
       <img src="${R}assets/projects/pr6.webp" alt="Search Console: 2.67K clicks, 185K impressions, 1.4% CTR, position 9.2" width="900" height="364" loading="lazy" style="border-radius:12px;border:1px solid var(--line)">
-      <div class="callout"><b>Note:</b> Albarik is built on WooCommerce. I now develop only on Shopify, and the SEO work for Shopify stores in Pakistan follows the same approach. <a href="${R}services/shopify-migration.html">Moving from WooCommerce to Shopify?</a></div>
+      <div class="callout"><b>Note:</b> Albarik is built on WooCommerce. I now develop only on Shopify, and the SEO work for Shopify stores in Pakistan follows the same approach. <a href="${R}services/shopify-migration/">Moving from WooCommerce to Shopify?</a></div>
     </div>
   </div>
 </div></section>${G.cta(R)}`});

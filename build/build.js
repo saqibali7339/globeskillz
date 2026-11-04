@@ -46,8 +46,8 @@ ${G.services.filter(s=>s.pillar==='dev').map(s=>`- [${s.short}](${G.abs('service
 - [Contact](${G.abs('contact.html')}): WhatsApp ${G.SITE.waDisplay}
 `;
 G.redirects = `# Netlify/Cloudflare Pages style _redirects — retire old doorway URLs (410 = gone for good)
-/locations/*   /services.html   301
-/industries/*  /services.html   301
-/seo-*         /services/shopify-seo.html  301
-/wordpress*    /services.html   301
+/locations/*   /services/   301
+/industries/*  /services/   301
+/seo-*         /services/shopify-seo/  301
+/wordpress*    /services/   301
 `;

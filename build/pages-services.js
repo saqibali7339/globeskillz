@@ -7,12 +7,12 @@ G.proofBlock = (R, key) => {
       <div><span class="eyebrow">Real client data</span><h3>${G.esc(c.title)}</h3><p class="muted">${G.esc(c.note)}</p>
         <dl class="case-stats"><div class="c"><dt>Clicks</dt><dd>${c.clicks}</dd></div><div class="i"><dt>Impr.</dt><dd>${c.imp}</dd></div><div><dt>CTR</dt><dd>${c.ctr}</dd></div><div><dt>Pos.</dt><dd>${c.pos}</dd></div></dl>
         ${c.video?`<button class="video-btn" type="button" data-video="${R}assets/videos/${c.video}">Watch the walkthrough</button>`:''}
-        <p style="margin-top:18px"><a href="${R}results.html">See all SEO results →</a></p></div></div>`;
+        <p style="margin-top:18px"><a href="${R}results/">See all SEO results →</a></p></div></div>`;
   }
   if (key === 'booster') return `<div class="proof">
       <img src="${R}assets/projects/confidential-booster-brand-traffic.webp" alt="Organic traffic estimate for the booster brand: 12.7K monthly organic visits, 3.4K ranking keywords" width="1078" height="400" loading="lazy">
       <div><span class="eyebrow">Case study</span><h3>8 markets, 12.7K monthly organic visits</h3><p class="muted">Shopify redesign and international SEO for a kids’ travel booster brand. Organic traffic up 17%, ranking for 3.4K keywords.</p>
-      <p><a href="${R}case-studies/booster-brand-international-shopify-seo.html">Read the case study →</a></p></div></div>`;
+      <p><a href="${R}case-studies/booster-brand-international-shopify-seo/">Read the case study →</a></p></div></div>`;
   if (key === 'work') return `<div class="grid g3 trio">${['zermatt','vytal','ebike'].map(k=>G.workCard(R,G.work[k])).join('')}</div>`;
   if (key === 'reviews') return `<div class="reviews">${G.reviews.slice(0,3).map(G.reviewCard).join('')}</div>`;
   return '';
@@ -47,7 +47,7 @@ G.renderService = (s) => {
       <span class="eyebrow">${pillarName}</span>
       <h1>${G.esc(s.h1)}</h1>
       <p class="lead">${G.esc(s.lead)}</p>
-      <div class="btn-row"><a class="btn btn-primary" href="${R}contact.html?service=${s.slug}">Get a free store review ${G.icon.arrow}</a><a class="btn btn-outline-light" href="${G.SITE.wa}" target="_blank" rel="noopener">${G.icon.wa} Ask on WhatsApp</a></div>
+      <div class="btn-row"><a class="btn btn-primary" href="${R}contact/?service=${s.slug}">Get a free store review ${G.icon.arrow}</a><a class="btn btn-outline-light" href="${G.SITE.wa}" target="_blank" rel="noopener">${G.icon.wa} Ask on WhatsApp</a></div>
     </div>
     <aside class="hero-facts" aria-label="Service at a glance"><dl>${s.facts.map(f=>`<div><dt>${G.esc(f[0])}</dt><dd>${G.esc(f[1])}</dd></div>`).join('')}</dl></aside>
   </div>
@@ -89,7 +89,7 @@ G.renderService = (s) => {
 
 <section class="section-sm"><div class="container">
   <div class="sec-head"><span class="eyebrow">Related services</span><h2>Often paired with</h2></div>
-  <div class="related">${s.related.map(r=>{const x=G.svc(r);return `<a href="${R}services/${x.slug}.html">${G.esc(x.short)}<span>${G.esc(x.navNote)} · ${G.esc(x.priceLabel)}</span></a>`}).join('')}</div>
+  <div class="related">${s.related.map(r=>{const x=G.svc(r);return `<a href="${R}services/${x.slug}/">${G.esc(x.short)}<span>${G.esc(x.navNote)} · ${G.esc(x.priceLabel)}</span></a>`}).join('')}</div>
 </div></section>
 ${G.cta(R)}`});
 };
@@ -103,7 +103,7 @@ G.renderServicesHub = () => {
     G.schema.page('CollectionPage', path, title, desc),
     { '@type':'ItemList', name:'Globe Skillz services', itemListElement: G.services.map((s,i)=>({ '@type':'ListItem', position:i+1, url: G.abs('services/'+s.slug+'.html'), name: s.short })) },
   ];
-  const card = (R,s,feature) => `<a class="card svc-card${feature?' feature':''}" href="${R}services/${s.slug}.html"><span class="tag">${G.esc(s.priceLabel)}</span><h3>${G.esc(s.short)}</h3><p>${G.esc(s.lead)}</p><span class="more">Learn more</span></a>`;
+  const card = (R,s,feature) => `<a class="card svc-card${feature?' feature':''}" href="${R}services/${s.slug}/"><span class="tag">${G.esc(s.priceLabel)}</span><h3>${G.esc(s.short)}</h3><p>${G.esc(s.lead)}</p><span class="more">Learn more</span></a>`;
   G.page({ path, title, desc, graph, priority:0.9, crumbs:[['Home','index.html'],['Services',path]], body:(R,crumbHtml)=>`
 <section class="page-hero"><div class="container">${crumbHtml}
   <span class="eyebrow">Services</span>
@@ -111,11 +111,11 @@ G.renderServicesHub = () => {
   <p class="lead">Thirteen services in two groups. SEO is the main work. Development is there so every SEO recommendation can be shipped quickly and correctly.</p>
 </div></section>
 <section class="section"><div class="container">
-  <div class="sec-head-row"><div class="sec-head"><span class="eyebrow">Shopify SEO</span><h2>Rank and get found</h2></div><a class="btn btn-ghost" href="${R}results.html">See SEO results</a></div>
+  <div class="sec-head-row"><div class="sec-head"><span class="eyebrow">Shopify SEO</span><h2>Rank and get found</h2></div><a class="btn btn-ghost" href="${R}results/">See SEO results</a></div>
   <div class="grid g4">${seo.map((s,i)=>card(R,s,i===0)).join('')}</div>
 </div></section>
 <section class="section section-bg"><div class="container">
-  <div class="sec-head-row"><div class="sec-head"><span class="eyebrow">Shopify Development</span><h2>Build it so it can rank</h2></div><a class="btn btn-ghost" href="${R}work.html">See store builds</a></div>
+  <div class="sec-head-row"><div class="sec-head"><span class="eyebrow">Shopify Development</span><h2>Build it so it can rank</h2></div><a class="btn btn-ghost" href="${R}work/">See store builds</a></div>
   <div class="grid g3">${dev.map((s,i)=>card(R,s,i===0)).join('')}</div>
 </div></section>
 ${G.cta(R,'Not sure which service you need?','Most stores start with an audit or a free review. Tell me what’s going on and I’ll point you to the right starting point, even if that isn’t me.')}`});

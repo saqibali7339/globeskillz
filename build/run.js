@@ -19,7 +19,7 @@ for (const f of files) {
   vm.runInContext(fs.readFileSync(path.join(root, f), 'utf8'), sandbox, { filename: f });
 }
 for (const p of G.pages) {
-  const dest = path.join(root, p.path);
+  const dest = path.join(root, p.out || p.path);
   fs.mkdirSync(path.dirname(dest), { recursive: true });
   fs.writeFileSync(dest, p.html);
 }

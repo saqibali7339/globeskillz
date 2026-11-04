@@ -236,7 +236,7 @@ G.services.push(
   ],
   prose:`<h2>Case in point: one brand, 8 markets</h2>
 <p>For a kids’ travel booster brand, I redesigned the Shopify store and set up SEO across <b>8 markets</b> for a flagship product launch. Later, a conversion-focused redesign rolled out to <b>20+ countries</b>. The store now gets about <b>12.7K organic visits a month</b> (+17%) and ranks for 3.4K keywords.</p>
-<p><a href="../case-studies/booster-brand-international-shopify-seo.html">Read the full case study →</a></p>
+<p><a href="../../case-studies/booster-brand-international-shopify-seo/">Read the full case study →</a></p>
 <h2>Common Shopify Markets mistakes</h2>
 <ul><li>Leaving auto-redirects by IP on, so Googlebot (crawling from the US) never sees your other markets</li>
 <li>Translated content with English handles and English meta descriptions</li>

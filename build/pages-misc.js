@@ -34,11 +34,11 @@ G.renderPricing = () => {
   <p class="lead">Every engagement is scoped on a call and confirmed in writing. Prices are in USD. I serve clients worldwide, and for clients in Pakistan, PKR invoicing is available.</p>
 </div></section>
 <section class="section"><div class="container">
-  <div class="plans">${plans.map(p=>`<div class="plan${p.pop?' pop':''}">${p.pop?'<span class="badge">Most popular</span>':''}<span class="for">${p.for}</span><h3>${p.name}</h3><div class="amt">${p.amt} <small>${p.unit}</small></div><p class="${p.pop?'':'muted'}">${p.p}</p><ul class="checks">${p.items.map(i=>`<li>${i}</li>`).join('')}</ul><a class="btn ${p.pop?'btn-light':'btn-primary'}" href="${R}contact.html?service=${p.svc}">${p.cta}</a></div>`).join('')}</div>
+  <div class="plans">${plans.map(p=>`<div class="plan${p.pop?' pop':''}">${p.pop?'<span class="badge">Most popular</span>':''}<span class="for">${p.for}</span><h3>${p.name}</h3><div class="amt">${p.amt} <small>${p.unit}</small></div><p class="${p.pop?'':'muted'}">${p.p}</p><ul class="checks">${p.items.map(i=>`<li>${i}</li>`).join('')}</ul><a class="btn ${p.pop?'btn-light':'btn-primary'}" href="${R}contact/?service=${p.svc}">${p.cta}</a></div>`).join('')}</div>
 </div></section>
 <section class="section section-bg"><div class="container">
   <div class="sec-head"><span class="eyebrow">À la carte</span><h2>Individual services</h2></div>
-  <div class="related" style="grid-template-columns:repeat(4,1fr)">${addons.map(a=>`<a href="${R}services/${a[2]}.html">${a[0]}<span>${a[1]}</span></a>`).join('')}</div>
+  <div class="related" style="grid-template-columns:repeat(4,1fr)">${addons.map(a=>`<a href="${R}services/${a[2]}/">${a[0]}<span>${a[1]}</span></a>`).join('')}</div>
 </div></section>
 <section class="section"><div class="container"><div class="split"><div><span class="eyebrow">FAQ</span><h2>Pricing questions</h2></div>${G.faqBlock(priceFaqs)}</div></div></section>
 ${G.cta(R)}`});
@@ -78,7 +78,7 @@ G.renderAbout = () => {
       <div class="stat-row"><div><b>15+</b><span>businesses ranked #1</span></div><div><b>5+</b><span>years in SEO</span></div><div><b>2019</b><span>Globe Skillz founded</span></div></div>
       <h2>Platforms & tools</h2>
       <div class="platforms">${['Shopify','Liquid','Online Store 2.0','Shopify Markets','Hydrogen (review)','Google Search Console','GA4','Screaming Frog','Ahrefs','Semrush','PageSpeed / CrUX','Schema.org','Figma'].map(t=>`<span class="chip">${t}</span>`).join('')}</div>
-      <p style="margin-top:2em"><a class="btn btn-primary" href="${R}contact.html">Work with me ${G.icon.arrow}</a></p>
+      <p style="margin-top:2em"><a class="btn btn-primary" href="${R}contact/">Work with me ${G.icon.arrow}</a></p>
     </div>
   </div>
 </div></section>`});
@@ -136,5 +136,5 @@ G.renderLegal = () => {
   legal('privacy.html','Privacy Policy',`<p>Globe Skillz (“I”, “me”) respects your privacy. This site doesn’t use advertising trackers.</p><h2>What I collect</h2><p>The contact form sends your brief to FormSubmit, which forwards it to info@globeskillz.com. FormSubmit’s privacy policy applies to that transfer. If you contact me, I keep your name, email and project details only for as long as needed to respond and deliver work.</p><h2>Analytics</h2><p>I may use privacy-friendly analytics to count visits. No personal profiles are built from this data.</p><h2>Client data</h2><p>Access to your Shopify, Search Console or analytics accounts is used only for the agreed work and can be removed by you at any time. I sign NDAs on request.</p><h2>Contact</h2><p>Questions about privacy: message me on <a href="${G.SITE.wa}">WhatsApp</a>.</p>`);
   legal('terms.html','Terms of Service',`<h2>Scope</h2><p>Every engagement is scoped in writing before work begins. Work outside that scope is quoted separately.</p><h2>Payment</h2><p>Projects: 50% upfront, 50% on delivery. Retainers: billed monthly in advance, cancel anytime with 14 days’ notice.</p><h2>Ownership</h2><p>On payment, all deliverables (code, content, designs) belong to the client.</p><h2>No ranking guarantees</h2><p>Search rankings depend on factors outside anyone’s control. I guarantee the agreed work and honest reporting, not specific positions.</p><h2>Liability</h2><p>Work is done on duplicate themes and approved before publishing. My liability is limited to the fees paid for the affected work.</p>`);
   G.page({ path:'404.html', title:'Page not found | Globe Skillz', desc:'This page doesn’t exist.', noindex:true, body:(R)=>`
-<section class="page-hero" style="padding:120px 0"><div class="container"><span class="eyebrow">404</span><h1>This page doesn’t exist</h1><p class="lead">Globe Skillz was rebuilt around Shopify SEO and development, and some older pages were removed. Try one of these instead:</p><div class="btn-row"><a class="btn btn-light" href="${R}services.html">All services</a><a class="btn btn-outline-light" href="${R === '' ? '/' : R}">Home</a></div></div></section>`});
+<section class="page-hero" style="padding:120px 0"><div class="container"><span class="eyebrow">404</span><h1>This page doesn’t exist</h1><p class="lead">Globe Skillz was rebuilt around Shopify SEO and development, and some older pages were removed. Try one of these instead:</p><div class="btn-row"><a class="btn btn-light" href="${R}services/">All services</a><a class="btn btn-outline-light" href="${R === '' ? '/' : R}">Home</a></div></div></section>`});
 };

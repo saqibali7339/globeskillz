@@ -24,7 +24,7 @@ G.services.push(
 <li><b>Content areas on collections</b>, so you can add copy without asking a developer.</li>
 <li><b>Fast by default:</b> lazy-loaded media, critical CSS, and a small number of apps.</li></ul>
 <h2>Recent Shopify builds</h2>
-<p>Fashion labels in Switzerland, supplements brands in the EU, e-bike brands, furniture makers, and a kids’ travel brand selling in 20+ countries. <a href="../work.html">See the store builds →</a></p>`,
+<p>Fashion labels in Switzerland, supplements brands in the EU, e-bike brands, furniture makers, and a kids’ travel brand selling in 20+ countries. <a href="../../work/">See the store builds →</a></p>`,
   proof:'work',
   faqs:[
     {q:'How much does a Shopify store build cost?',a:'Builds start at $400 for a theme-based store with 5–8 customized templates. Custom themes, complex catalogs and multi-market setups are quoted after a discovery call.'},
@@ -127,7 +127,7 @@ G.services.push(
 <li>Pre-launch crawl of the development store against the old site</li>
 <li>Launch, then redirect upload and immediate verification</li>
 <li>Eight weeks of monitoring and fixes</li></ol>
-<p>I’ve worked with WooCommerce stores, including <a href="../work.html">Albarik</a>, a 6-department megastore in Pakistan, so I know both platforms well.</p>`,
+<p>I’ve worked with WooCommerce stores, including <a href="../../work/">Albarik</a>, a 6-department megastore in Pakistan, so I know both platforms well.</p>`,
   proof:'albarik',
   faqs:[
     {q:'Will I lose SEO rankings moving to Shopify?',a:'A short dip in the first 2–4 weeks is normal while Google processes the redirects. With a complete redirect map and matching content, most stores recover within 4–8 weeks and often improve after that, because Shopify is faster.'},
