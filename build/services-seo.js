@@ -39,6 +39,7 @@ G.services.push(
     {q:'What do you need from me to start?',a:'Collaborator access to Shopify, Search Console and GA4 access, and a 30-minute call about your margins, best sellers and target customers. I handle the rest.'},
   ],
   related:['shopify-seo-audit','shopify-technical-seo','shopify-on-page-seo'],
+  guides:['shopify-seo-expert','shopify-collection-page-seo-guide'],
 },
 {
   slug:'shopify-seo-audit', pillar:'seo', short:'Shopify SEO Audit', navNote:'A prioritized fix list',
@@ -76,6 +77,7 @@ G.services.push(
     {q:'Can an audit help recover from a Google update?',a:'It’s the right first step. The audit shows which pages Google is likely seeing as low-value, and that tells you what to merge, improve or remove.'},
   ],
   related:['shopify-technical-seo','shopify-seo','shopify-speed-optimization'],
+  guides:['shopify-seo-expert','what-is-bounce-rate-on-shopify'],
 },
 {
   slug:'shopify-technical-seo', pillar:'seo', short:'Shopify Technical SEO', navNote:'Crawl, index, schema, code',
@@ -112,6 +114,7 @@ G.services.push(
     {q:'Do you work on headless Shopify (Hydrogen)?',a:'Yes, for technical SEO reviews: rendering, routing, canonicals and sitemaps. Large Hydrogen builds are scoped on a case-by-case basis.'},
   ],
   related:['shopify-seo-audit','shopify-speed-optimization','shopify-international-seo'],
+  guides:['shopify-duplicate-content-collection-product-urls','google-update-recovery-shopify-doorway-pages'],
 },
 {
   slug:'shopify-on-page-seo', pillar:'seo', short:'Collection & Product SEO', navNote:'On-page optimization',
@@ -149,6 +152,7 @@ G.services.push(
     {q:'Can you work in languages other than English?',a:'Keyword research and structure, yes, for any market. Copy in other languages is written together with native-speaking writers.'},
   ],
   related:['shopify-content-seo','shopify-seo','shopify-technical-seo'],
+  guides:['shopify-collection-page-seo-guide','shopify-duplicate-content-collection-product-urls'],
 },
 {
   slug:'shopify-content-seo', pillar:'seo', short:'Shopify Content SEO', navNote:'Guides that sell',
@@ -181,6 +185,7 @@ G.services.push(
     {q:'Can content help with AI search results?',a:'Yes. Clear, well-structured, factual content written by a named author is what AI systems tend to quote. See the AI search optimization service for more detail.'},
   ],
   related:['shopify-on-page-seo','shopify-ai-search-optimization','shopify-link-building'],
+  guides:['shopify-seo-expert','how-is-shopify-perceived-as-an-ai-website-builder'],
 },
 {
   slug:'shopify-link-building', pillar:'seo', short:'Shopify Link Building', navNote:'Authority that sticks',
@@ -216,6 +221,7 @@ G.services.push(
     {q:'Should I disavow old links?',a:'Only if there’s a clear pattern of manipulative links or a manual action. Google ignores most spam on its own. I’ll review your profile before recommending anything.'},
   ],
   related:['shopify-content-seo','shopify-seo','shopify-seo-audit'],
+  guides:['google-update-recovery-shopify-doorway-pages'],
 },
 {
   slug:'shopify-international-seo', pillar:'seo', short:'International Shopify SEO', navNote:'Markets, hreflang, multi-country',
@@ -252,6 +258,7 @@ G.services.push(
     {q:'Can you handle Pakistan or other emerging markets?',a:'Yes. Search behavior and competition are different in each market, and I adjust the keyword research and content to match.'},
   ],
   related:['shopify-technical-seo','shopify-seo','shopify-migration'],
+  guides:['how-is-shopify-different-from-amazon'],
 },
 {
   slug:'shopify-ai-search-optimization', pillar:'seo', short:'AI Search Optimization', navNote:'AEO / GEO for stores',
@@ -286,5 +293,6 @@ G.services.push(
     {q:'Is this included in your monthly Shopify SEO?',a:'The basics are included in every retainer. The standalone service adds deeper content restructuring, third-party outreach and prompt tracking.'},
   ],
   related:['shopify-content-seo','shopify-seo','shopify-on-page-seo'],
+  guides:['how-is-shopify-perceived-as-an-ai-website-builder','google-update-recovery-shopify-doorway-pages'],
 }
 );

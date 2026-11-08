@@ -81,7 +81,7 @@
 <pre>{{ product.url | within: collection }}</pre>
 <p>and change it to:</p>
 <pre>{{ product.url }}</pre>
-<p>That’s the whole fix. Products still appear in your collections as before. Only the link destination changes, so every internal link now points to the canonical URL.</p>
+<p>That’s the whole fix. Products still appear in <a href="../../blog/shopify-collection-page-seo-guide/">your collections</a> as before. Only the link destination changes, so every internal link now points to the canonical URL.</p>
 <div class="callout"><b>Breadcrumbs:</b> some themes use the collection-aware URL to build breadcrumbs. If yours does, add a fallback that uses the product’s first collection, so breadcrumbs keep working.</div>
 <h2 id="s4">How to check it worked</h2>
 <ol><li>Crawl the store with Screaming Frog and filter internal links containing <code>/collections/</code> and <code>/products/</code>. The count should be close to zero.</li>

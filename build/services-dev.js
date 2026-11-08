@@ -33,6 +33,7 @@ G.services.push(
     {q:'Do you build on platforms other than Shopify?',a:'My focus is Shopify. I’ve built on WooCommerce and WordPress in the past, but new development work is Shopify-only, so every build gets my full platform expertise.'},
   ],
   related:['shopify-theme-customization','shopify-speed-optimization','shopify-migration'],
+  guides:['how-much-does-it-cost-to-build-a-shopify-website','how-to-add-a-product-on-shopify'],
 },
 {
   slug:'shopify-theme-customization', pillar:'dev', short:'Theme Customization & Liquid', navNote:'Sections, features, fixes',
@@ -64,6 +65,7 @@ G.services.push(
     {q:'Can you replace an app with custom code?',a:'Often, yes, especially for badges, size charts, simple bundles and FAQ sections. I’ll tell you when an app is actually the better choice.'},
   ],
   related:['shopify-maintenance-support','shopify-development','shopify-technical-seo'],
+  guides:['how-to-adjust-width-of-column-in-shopify-pagefly','how-to-change-a-shopify-store-name'],
 },
 {
   slug:'shopify-speed-optimization', pillar:'dev', short:'Shopify Speed Optimization', navNote:'Core Web Vitals',
@@ -100,6 +102,7 @@ G.services.push(
     {q:'Will speed work break any features?',a:'No. Everything is done on a duplicate theme and tested across your key user flows before it goes live.'},
   ],
   related:['shopify-technical-seo','shopify-theme-customization','shopify-seo-audit'],
+  guides:['what-is-bounce-rate-on-shopify'],
 },
 {
   slug:'shopify-migration', pillar:'dev', short:'Migration to Shopify (SEO-Safe)', navNote:'Keep your rankings',
@@ -136,6 +139,7 @@ G.services.push(
     {q:'Can you redesign during the migration?',a:'Yes, and it’s often the most efficient approach. The SEO checks stay the same, and content parity on key pages becomes even more important.'},
   ],
   related:['shopify-development','shopify-technical-seo','shopify-international-seo'],
+  guides:['how-does-open-source-ecommerce-compare-to-shopify','how-is-shopify-different-from-amazon'],
 },
 {
   slug:'shopify-maintenance-support', pillar:'dev', short:'Shopify Maintenance & Support', navNote:'Your on-call developer',
@@ -170,6 +174,8 @@ G.services.push(
     {q:'Which timezone do you work in?',a:'I’m based in Pakistan (PKT, UTC+5) and work with clients worldwide. We agree on a daily overlap window during onboarding.'},
   ],
   related:['shopify-theme-customization','shopify-speed-optimization','shopify-seo'],
+  guides:['how-to-password-protect-a-shopify-store','what-is-shopify-sessions'],
 }
 );
 G.svc = slug => G.services.find(s=>s.slug===slug);
+G.post = slug => G.posts.find(p=>p.slug===slug);

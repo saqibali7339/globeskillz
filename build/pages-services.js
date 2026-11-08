@@ -91,6 +91,10 @@ G.renderService = (s) => {
   <div class="sec-head"><span class="eyebrow">Related services</span><h2>Often paired with</h2></div>
   <div class="related">${s.related.map(r=>{const x=G.svc(r);return `<a href="${R}services/${x.slug}/">${G.esc(x.short)}<span>${G.esc(x.navNote)} · ${G.esc(x.priceLabel)}</span></a>`}).join('')}</div>
 </div></section>
+${s.guides?`<section class="section-sm section-bg"><div class="container">
+  <div class="sec-head"><span class="eyebrow">Guides</span><h2>Guides on this topic</h2></div>
+  <div class="related">${s.guides.map(g=>{const p=G.post(g);return `<a href="${R}blog/${p.slug}/">${G.esc(p.title)}<span>${p.read} · ${new Date(p.date).toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'})}</span></a>`}).join('')}</div>
+</div></section>`:''}
 ${G.cta(R)}`});
 };
 
