@@ -9,7 +9,7 @@ G.proofBlock = (R, key) => {
         ${c.video?`<button class="video-btn" type="button" data-video="${R}assets/videos/${c.video}">Watch the walkthrough</button>`:''}
         <p style="margin-top:18px"><a href="${R}results/">See all SEO results →</a></p></div></div>`;
   }
-  if (key === 'booster') return `<div class="proof">
+  if (key === 'booster') return `<div class="proof proof-wide">
       <img src="${R}assets/projects/confidential-booster-brand-traffic.webp" alt="Organic traffic estimate for the booster brand: 12.7K monthly organic visits, 3.4K ranking keywords" width="1078" height="400" loading="lazy">
       <div><span class="eyebrow">Case study</span><h3>8 markets, 12.7K monthly organic visits</h3><p class="muted">Shopify redesign and international SEO for a kids’ travel booster brand. Organic traffic up 17%, ranking for 3.4K keywords.</p>
       <p><a href="${R}case-studies/booster-brand-international-shopify-seo/">Read the case study →</a></p></div></div>`;
