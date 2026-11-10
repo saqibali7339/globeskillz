@@ -313,6 +313,7 @@ ul,ol{padding-left:1.2em}
 .proof>img{border-right:var(--b);height:100%;object-fit:cover;object-position:left top}
 .proof>div{padding:32px}
 .proof h3{font-size:1.5rem}
+.proof-wide>img{object-fit:contain}
 
 /* ---------- Reviews ---------- */
 .reviews{columns:3;column-gap:28px}
@@ -345,6 +346,7 @@ ul,ol{padding-left:1.2em}
 /* ---------- FAQ ---------- */
 .faq{border:var(--b);background:#fff}
 .faq details{border-bottom:var(--b)}
+.faq details,.faq summary{scroll-margin-top:96px}
 .faq details:last-child{border-bottom:0}
 .faq summary{list-style:none;cursor:pointer;padding:22px 64px 22px 24px;font-weight:800;font-size:1.06rem;color:var(--ink);position:relative;line-height:1.3}
 .faq summary::-webkit-details-marker{display:none}
