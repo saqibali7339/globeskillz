@@ -238,7 +238,7 @@ ul,ol{padding-left:1.2em}
 .split-even{grid-template-columns:1fr 1fr}
 .sticky{position:sticky;top:104px}
 .prose{font-size:1.07rem}
-.prose h2{font-size:clamp(1.6rem,2.6vw,2.2rem);margin-top:1.6em}
+.prose h2{font-size:clamp(1.6rem,2.6vw,2.2rem);margin-top:1.6em;word-spacing:.1em}
 .prose h3{margin-top:1.6em}
 .prose h2:first-child,.prose h3:first-child{margin-top:0}
 .prose ul,.prose ol{margin:0 0 1.2em}
@@ -247,7 +247,7 @@ ul,ol{padding-left:1.2em}
 .prose blockquote{margin:1.8em 0;padding:22px 26px;border:var(--b);background:var(--yellow);color:var(--ink);font-size:1.12rem;font-weight:600;box-shadow:var(--sh-sm)}
 .prose blockquote small{font-family:var(--mono);font-weight:500;font-size:.75rem;color:var(--ink)!important}
 .prose code{font-family:var(--mono);font-size:.86em;background:var(--bg);border:1px solid var(--ink);padding:1px 6px}
-.prose pre{background:var(--ink);color:#EDEDED;padding:20px 22px;overflow:auto;font-family:var(--mono);font-size:.86rem;line-height:1.6;border:var(--b);box-shadow:6px 6px 0 var(--blue)}
+.prose pre{background:var(--ink);color:#EDEDED;padding:20px 22px;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere;font-family:var(--mono);font-size:.86rem;line-height:1.6;border:var(--b);box-shadow:6px 6px 0 var(--blue)}
 .prose table{width:100%;border-collapse:collapse;margin:1.4em 0;font-size:.94rem;border:var(--b)}
 .prose th,.prose td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--ink);vertical-align:top}
 .prose th{font:600 .72rem var(--mono);text-transform:uppercase;letter-spacing:.06em;color:#fff;background:var(--ink)}
