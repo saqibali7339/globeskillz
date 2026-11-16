@@ -377,6 +377,8 @@ ul,ol{padding-left:1.2em}
 .related[style*="repeat(4"]>a{border-bottom:var(--b)}
 .related[style*="repeat(4"]>a:nth-child(4n){border-right:0}
 .related[style*="repeat(4"]>a:nth-last-child(-n+4){border-bottom:0}
+div.related:has(>a:nth-child(2):last-child){grid-template-columns:repeat(2,1fr)}
+div.related:has(>a:only-child){grid-template-columns:1fr}
 
 /* About */
 .about-photo{border:var(--b);box-shadow:var(--sh);overflow:hidden;background:#000}
