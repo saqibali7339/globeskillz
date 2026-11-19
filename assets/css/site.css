@@ -141,7 +141,7 @@ ul,ol{padding-left:1.2em}
 
 /* Page hero (inner pages) */
 .page-hero{background:var(--paper);padding:56px 0 72px;border-bottom:var(--b);position:relative}
-.page-hero h1{font-size:clamp(2.3rem,5.2vw,4.6rem);max-width:1000px}
+.page-hero h1{font-size:clamp(2.3rem,5.2vw,4.6rem);max-width:1000px;word-spacing:.1em}
 .page-hero .lead{margin-top:6px}
 .page-hero .lead a{color:var(--ink)!important}
 .page-hero .btn-row{margin-top:32px}
