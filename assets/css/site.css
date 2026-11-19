@@ -141,7 +141,7 @@ ul,ol{padding-left:1.2em}
 
 /* Page hero (inner pages) */
 .page-hero{background:var(--paper);padding:56px 0 72px;border-bottom:var(--b);position:relative}
-.page-hero h1{font-size:clamp(2.3rem,5.2vw,4.6rem);max-width:1000px;word-spacing:.1em}
+.page-hero h1{font-size:clamp(2.3rem,5.2vw,4.6rem);max-width:1000px;word-spacing:.2em}
 .page-hero .lead{margin-top:6px}
 .page-hero .lead a{color:var(--ink)!important}
 .page-hero .btn-row{margin-top:32px}
@@ -239,6 +239,7 @@ ul,ol{padding-left:1.2em}
 .sticky{position:sticky;top:104px}
 .prose{font-size:1.07rem}
 .prose h2{font-size:clamp(1.6rem,2.6vw,2.2rem);margin-top:1.6em;word-spacing:.1em}
+.prose b,.prose strong{word-spacing:.1em}
 .prose h3{margin-top:1.6em}
 .prose h2:first-child,.prose h3:first-child{margin-top:0}
 .prose ul,.prose ol{margin:0 0 1.2em}
